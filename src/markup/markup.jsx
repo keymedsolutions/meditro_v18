@@ -55,6 +55,7 @@ import HomePage2 from "./pages/home-2";
 import ThankYouPage from "./pages/thank-you";
 import { addCanonical, updateMetaTag } from "../lib/utils";
 import { SiteMetaData } from "../data/meta-data";
+import { NoIndexPath } from "../data/site-data";
 // import handler from './pages/api/mail';
 
 const metaInformation = [
@@ -95,8 +96,12 @@ const Markup = () => {
       }
     }
 
-    const canonicalUrl = `${window.location.origin}${path.pathname}`;
-    addCanonical(canonicalUrl);
+
+    if(!NoIndexPath.includes(path.pathname)){
+
+      const canonicalUrl = `${window.location.origin}${path.pathname}`;
+      addCanonical(canonicalUrl);
+    }
   }, [path.pathname]);
 
   return (
