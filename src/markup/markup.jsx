@@ -97,10 +97,13 @@ const Markup = () => {
     }
 
 
-    [...Object.keys(SiteMetaData),"/free-ationevalu", "/rcm-assessment"].forEach((key) => {
-      const canonicalUrl = `${window.location.origin}${key}`;
+    
+
+    if([...Object.keys(SiteMetaData),"/free-ationevalu", "/rcm-assessment"].includes(path.pathname)){
+
+      const canonicalUrl = `${window.location.origin}${path.pathname}`;
       addCanonical(canonicalUrl);
-    });
+    }
   }, [path.pathname]);
 
   return (
