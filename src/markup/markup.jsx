@@ -95,7 +95,7 @@ const Markup = () => {
       }
     }
 
-    const canonicalUrl = `https://keymedsolutions.com${path.pathname}`;
+    const canonicalUrl = `${window.location.origin}${path.pathname}`;
     addCanonical(canonicalUrl);
   }, [path.pathname]);
 
