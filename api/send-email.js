@@ -3,6 +3,11 @@ const nodemailer = require("nodemailer");
 export default async function handler(req, res) {
   const SmtpEmail = process.env.NEXT_EMAIL_ADDRESS;
   const SmtpPassword = process.env.NEXT_EMAIL_PASSWORD;
+
+  console.log("Sssss",{
+    SmtpPassword,
+    SmtpEmail
+  })
   if (req.method === "POST") {
     const transporter = nodemailer.createTransport({
       host: "smtp.hostinger.com", // Hostinger SMTP server
