@@ -68,7 +68,7 @@ export default async function handler(req, res) {
     }
     const mailOptions = {
       from: `"KeyMed Solution" <${SmtpEmail}>`, // Sender name & email
-      to: "kishan@yopmail.com", // Recipient email
+      to: SmtpEmail, // Recipient email
       subject: subject,
       html: html,
     };
