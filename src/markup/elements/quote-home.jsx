@@ -36,6 +36,8 @@ const QuoteHome = () => {
       });
 
     const resData = await response.json();
+
+	console.log(resData);
       if (response.ok) {
         setIsError(false);
         setResponseMessage("Your request has been submitted successfully!");

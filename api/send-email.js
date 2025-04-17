@@ -72,7 +72,7 @@ export default async function handler(req, res) {
       res.status(200).json({ status: "SUCCESS" });
     } catch (error) {
       console.error("Error sending email:", error);
-      res.status(200).json({ status: "FAILURE", error });
+      res.status(400).json({ status: "FAILURE", error });
     }
   }
 }
