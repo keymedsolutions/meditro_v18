@@ -2,7 +2,7 @@ const nodemailer = require("nodemailer");
 
 export default async function handler(req, res) {
   const SmtpEmail = process.env.NEXT_EMAIL_ADDRESS;
-  const SmtpPassword = process.env.NEXT_EMAIL_PASSWORD;
+  const SmtpPassword = process.env.NEXT_EMAIL_PASS;
 
   console.log("Sssss",{
     SmtpPassword,
