@@ -14,8 +14,8 @@ export default async function handler(req, res) {
       port: 587, // Use 465 for SSL, 587 for TLS
       secure: false, // true for SSL, false for TLS
       auth: {
-        user: SmtpEmail,
-        pass: SmtpPassword, // Your Hostinger email password
+        user:"info@digitechnobytes.com",
+        pass:"DigiA1b29099@@" , // Your Hostinger email password
       },
       tls: {
         rejectUnauthorized: false, // Prevents SSL issues
