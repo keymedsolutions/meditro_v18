@@ -67,7 +67,7 @@ export default async function handler(req, res) {
     <p><strong>Practice Name:</strong> ${practice}</p>`;
     }
     const mailOptions = {
-      from: `"KeyMed Solution" <${SmtpEmail}>`, // Sender name & email
+      from: `"KeyMed Solution" <info@digitechnobytes.com>`, // Sender name & email
       to: SmtpEmail, // Recipient email
       subject: subject,
       html: html,
