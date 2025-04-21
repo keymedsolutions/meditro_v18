@@ -12,10 +12,11 @@
 	z-index: 1;
 	
 	@include respond('tab-port'){
-		height: 320px;
+		height: auto;
 	}
 	@include respond('phone-land'){
-		height: 280px;		
+		height: auto;		
+		padding: 30px 0;
 	}
 	.container{
 		display: table;
@@ -53,7 +54,7 @@
 	}
 	&:after{
 		content: "";
-		background-image: url(../../../images/banner/shape.png);
+		background-image: url("/images/banner/shape.png");
 		position: absolute;
 		bottom: 0;
 		left: 0;

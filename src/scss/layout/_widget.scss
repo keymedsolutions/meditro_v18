@@ -19,7 +19,7 @@
 		left: 0;
 		width: 85px;
 		height: 7px;
-		background-image: url(../../images/shap/footer-line.png);
+		background-image: url("/images/shap/footer-line.png");
 		background-repeat: no-repeat;
 	}
 	@include respond('phone-land'){

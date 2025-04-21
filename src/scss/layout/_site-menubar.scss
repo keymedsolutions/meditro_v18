@@ -1,0 +1,17 @@
+.site-menubar{
+  .sub-menu.open {
+        margin-top: 0;
+        opacity: 1;
+        transition: all .5s;
+        visibility: visible;
+        // background: red !important;
+    }
+    .sub-menu{
+        // background-color:green !important;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    
+
+}

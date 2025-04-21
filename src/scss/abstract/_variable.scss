@@ -3,7 +3,7 @@ $enable-deprecation-messages: false;
 $ignore-warning             : true;
 
 // stylelint-disable-next-line scss/dollar-variable-default
-$primary   : #565acf;
+$primary   : #565acf !default;
 $secondary : #f17732 !default;
 $success   : #209f84 !default;
 $info      : #2754e6 !default;
@@ -54,3 +54,6 @@ $border-radius-base   : 8px !default;
 $border-radius-lg   : 20px !default;
 $shadow-color: rgba(160, 159, 202, 0.15);
 $ft-color: #878e9c;
+$white:#fff;
+
+$table-striped-order: odd !default;
