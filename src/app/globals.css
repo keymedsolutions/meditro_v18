@@ -699,44 +699,85 @@ body {
 
 
 .text-stroke-green {
-  -webkit-text-stroke: 2px rgb(134 239 172 / var(--tw-text-opacity, 1)) !important; /* green-300 */
+  -webkit-text-stroke: 2px rgb(134 239 172 / var(--tw-text-opacity, 1)) !important;
+  /* green-300 */
 }
 
 .rcm_stat_card .text-stroke-yellow {
-  -webkit-text-stroke: 2px rgb(250 204 21 / var(--tw-text-opacity, 1)) !important; /* yellow-400 */
+  -webkit-text-stroke: 2px rgb(250 204 21 / var(--tw-text-opacity, 1)) !important;
+  /* yellow-400 */
 }
-.rcm_stat_card:hover p{
-color:white !important
+
+.rcm_stat_card:hover p {
+  color: white !important
 }
+
 .text-stroke-sky {
-  -webkit-text-stroke: 2px rgb(56 189 248 / var(--tw-text-opacity, 1)) !important; /* sky-400 */
+  -webkit-text-stroke: 2px rgb(56 189 248 / var(--tw-text-opacity, 1)) !important;
+  /* sky-400 */
 }
 
 
 .scroll-thin {
-  scrollbar-width: thin; /* Firefox */
+  scrollbar-width: thin;
+  /* Firefox */
   scrollbar-color: #999 transparent;
 
   /* Chrome, Edge, Safari */
 }
+
 .scroll-thin::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
+
 .scroll-thin::-webkit-scrollbar-thumb {
   background-color: #999;
   border-radius: 2px;
 }
+
 .scroll-thin::-webkit-scrollbar-track {
   background: transparent;
 }
 
 
 .scroll-hidden {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
 }
 
 .scroll-hidden::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none;
+  /* Chrome, Safari, and Opera */
+}
+
+
+/* For Mobile: ≤1091px */
+@media (max-width: 1091px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+  .desktop-menu .btn-area{
+    display: none;
+  }
+}
+
+/* For Desktop: >1091px */
+@media (min-width: 1092px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+  .desktop-menu .btn-area{
+    display: block;
+  }
 }

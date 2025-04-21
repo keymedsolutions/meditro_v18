@@ -8,17 +8,18 @@ import { DesktopMenu } from './desktop-menu';
 import { MenuItems } from '@/lib/menu-items';
 import { MobileMenu } from './mobile-menu';
 import { usePathname } from 'next/navigation';
+import { Menu } from 'lucide-react';
 
 
 
 const MainHeader = () => {
 
     const [isOpen, setIsOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
         const checkIfMobile = () => {
-
-            console.log(window.innerWidth)
+            setIsMobile(window.innerWidth < 1091)
             if (window.innerWidth > 1091) {
                 setIsOpen(false)
             }
@@ -38,6 +39,8 @@ const MainHeader = () => {
         setIsOpen(false)
     },[pathName])
 
+
+
     return (
         <>
             <header className="header rs-nav siste-menubar">
@@ -55,14 +58,12 @@ const MainHeader = () => {
 
                             {/* Toggle Icon */}
                             <button
-                                className="navbar-toggler collapsed menuicon justify-content-end !tw-ml-auto"
+                                className="mobile-menu tw-bg-transparent tw-border-none  justify-content-end !tw-ml-auto"
                                 type="button"
                          
                                 onClick={() => setIsOpen(!isOpen)}
                             >
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <Menu className="tw-h-10 tw-w-10" />
                             </button>
 
 
@@ -70,19 +71,19 @@ const MainHeader = () => {
 
                             {/* <div className='menu-links'> */}
 
-                           {!isOpen &&  <DesktopMenu items={MenuItems} />}
+                           {!isMobile &&  <DesktopMenu items={MenuItems} />}
 
                             {/* </div> */}
 
                             {/* Right Side */}
-                            <div className="secondary-menu">
+                            <div className="secondary-menu desktop-menu">
                                 <ul>
                                     <li className="num-bx">
                                         <a href="tel:+13364999299">
                                             <i className="fas fa-phone-alt"></i>+1 (336) 499-9299
                                         </a>
                                     </li>
-                                    <li className="btn-area">
+                                    <li className="btn-area ">
                                         <Link href="/contact-us" className="btn btn-primary shadow">
                                             CONTACT US <i className="btn-icon-bx fas fa-chevron-right"></i>
                                         </Link>

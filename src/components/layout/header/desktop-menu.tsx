@@ -116,7 +116,7 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
 
 return (
 
-  <div className='menu-links site-menubar' ref={navRef}>
+  <div className='menu-links site-menubar desktop-menu ' ref={navRef}>
     {/* // <nav className="tw-hidden lg:tw-flex tw-items-center" ref={navRef}> */}
     <ul className="tw-flex tw-m-0 tw-flex-wrap nav navbar-nav tw-gap-x-4">{items.map((item) => renderMenuItem(item))}</ul>
 
