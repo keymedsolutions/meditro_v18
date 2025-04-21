@@ -1,20 +1,31 @@
-import * as React from "react"
+import { useEffect, useState } from "react";
 
-const MOBILE_BREAKPOINT = 1091
+const useResponsiveOpen = () => {
+    const [isOpen, setIsOpen] = useState(false);
 
-export function useResponsiveOpen() {
-  const [breakpoint, setBreakpoint] = React.useState<number>(MOBILE_BREAKPOINT)
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
+    useEffect(() => {
+        const checkIfMobile = () => {
+            if (typeof window !== "undefined") {
+                const width = window.innerWidth;
+                console.log(width);
 
-  React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${breakpoint - 1}px)`)
-    const onChange = () => {
-      setIsMobile(window.innerWidth < breakpoint)
-    }
-    mql.addEventListener("change", onChange)
-    setIsMobile(window.innerWidth < breakpoint)
-    return () => mql.removeEventListener("change", onChange)
-  }, [])
+                if (width > 1091) {
+                    setIsOpen(false);
+                } else {
+                    setIsOpen(true);
+                }
+            }
+        };
 
-  return { isMobile: !!isMobile ,setBreakpoint,setIsMobile}
-}
+        checkIfMobile(); // run initially
+        window.addEventListener("resize", checkIfMobile); // run on resize
+
+        return () => {
+            window.removeEventListener("resize", checkIfMobile);
+        };
+    }, []);
+
+    return isOpen;
+};
+
+export default useResponsiveOpen;

@@ -98,7 +98,7 @@ export const MobileMenu = ({ items, isOpen, onClose }: MobileMenuProps) => {
     return (
         <div
             className={cn(
-                "tw-fixed  tw-flex tw-justify-center tw-items-center tw-p-8 tw-inset-0 tw-bg-white tw-z-50 lg:tw-hidden tw-transition-transform tw-duration-300 tw-ease-in-out tw-overflow-hidden",
+                "tw-fixed  tw-flex tw-justify-center tw-items-center tw-p-8 tw-inset-0 tw-bg-white tw-z-50  tw-transition-transform tw-duration-300 tw-ease-in-out tw-overflow-hidden",
                 isOpen ? "tw-translate-x-0" : "tw-translate-x-full",
             )}
         >

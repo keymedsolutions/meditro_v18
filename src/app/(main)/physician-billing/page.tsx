@@ -6,14 +6,13 @@ import PhysicianBilling from '@/components/services/physician-billing/PhysicianB
 import ServiceSection from '@/components/services/physician-billing/ServiceSection'
 import WhatOurClientsSay from '@/components/services/physician-billing/WhatOurClientsSay'
 import WhyUsSection from '@/components/services/physician-billing/WhyUsSection'
-import React from 'react'
 
 const PhysicianBillingPage = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-slate-50">
       ccccc
       <Hero />
-      <ServiceSection />
+      <ServiceSection />  
       <BenefitsSection />
       <WhyUsSection />
       <PhysicianBilling />
