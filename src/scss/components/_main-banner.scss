@@ -9,6 +9,7 @@
 	overflow:hidden;
 	z-index:1;
 	height: 1085px;
+	top:-107px !important;
 	
 	&:after{
 		content: "";
@@ -17,7 +18,7 @@
 		left: 0;
 		bottom: 0;
 		position: absolute;
-		background-image: url(../../images/main-banner/shape1.png);
+		background-image: url("/images/main-banner/shape1.png");
 		background-repeat: no-repeat;
 		background-position: bottom left;
 		background-size: 100%;
@@ -43,10 +44,10 @@
 		background-position: center;
 		background-repeat: repeat;
 		&.text-primary{
-			background-image: url(../../images/shap/ext-blue.png);
+			background-image: url("/images/shap/ext-blue.png");
 		}
 		&.text-secondary{
-			background-image: url(../../images/shap/ext-orange.png);
+			background-image: url("/images/shap/ext-orange.png");
 		}
 	}
 	.tag-list{
@@ -96,6 +97,8 @@
 	}
 	@include respond('laptop'){
 		height: 800px;
+		top: -110px !important;
+
 		.banner-img {
 			margin-right: 0;
 			margin-left: 0px;
@@ -111,6 +114,7 @@
 	}
 	@include respond('tab-land'){
 		height: 700px;	
+		top: -110px !important;
 		h1{
 			margin-bottom: 30px;
 			font-size: 36px;
@@ -121,7 +125,7 @@
 		}
 	}
 	@include respond('tab-port'){
-		height: 500px;
+		height: 840px;
 		h1{
 			font-size: 28px;
 			margin-bottom: 20px;
@@ -152,7 +156,7 @@
 	}
 	@include respond('phone'){
 		height: auto;
-		padding-top: 100px;
+		padding-top: 148px;
 		.banner-img {
 			margin: 30px 10px;
 		}

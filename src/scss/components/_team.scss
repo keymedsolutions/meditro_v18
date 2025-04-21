@@ -26,8 +26,8 @@
 		position: relative;
 		margin-bottom: 20px;
 		img {
-			-webkit-mask-image: url(../../images/team/shape3.png);
-			mask-image: url(../../images/team/shape3.png);
+			-webkit-mask-image: url("/images/team/shape3.png");
+			mask-image: url("/images/team/shape3.png");
 			-webkit-mask-position: center center;
 			mask-position: center center;
 			-webkit-mask-repeat: no-repeat;
@@ -51,11 +51,11 @@
 			left: 50%;
 		}
 		&:after{
-			background-image: url(../../images/team/shape1.png);
+			background-image: url("/images/team/shape1.png");
 			background-size: 100%;
 		}
 		&:before{
-			background-image: url(../../images/team/shape2.png);
+			background-image: url("/images/team/shape2.png");
 			background-size: 77%;
 		}
 	}
