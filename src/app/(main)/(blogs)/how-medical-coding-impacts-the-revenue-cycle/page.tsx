@@ -1,15 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
+
+import Breadcrumb from "@/components/ui/breadcrumb";
+
 /* eslint-disable react/no-unescaped-entities */
 const blogDefaultPic1 = "/images/blog/default/pic1.jpg";
 const galleryPic2 = "/images/gallery/pic2.jpg";
 const galleryPic5 = "/images/gallery/pic5.jpg";
 const HowMedicalCodingImpactsTheRevenueCyclePage = () => {
+    const title = "How Medical Coding Improves Revenue Cycle and Boosts Financial Efficiency?"
+    const path = "/how-medical-coding-impacts-the-revenue-cycle"
     return (
         <div className="page-content bg-white">
+
+            <Breadcrumb title={title}
+                breadcrumb={[{ label: "Blogs", href: "/blogs" }, { label: title, href: path }]} />
+
+
             <section className="section-area section-sp1 bg-white blog1">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 col-lg-7 col-xl-8 mb-30 mb-md-50">
+                    <div className="row justify-content-center">
+                        <div className="col-md-12 col-lg-8  !tw-mx-auto col-xl-8 mb-30 mb-md-50">
                             <div className="blog-card blog-single">
                                 <div className="post-media">
                                     <img src={blogDefaultPic1} alt="how-medical-coding-impactsthe-revenue-cycle" />
@@ -20,7 +30,7 @@ const HowMedicalCodingImpactsTheRevenueCyclePage = () => {
                                         <li className="date"><i className="far fa-calendar-alt"></i> 15 July 2023</li>
                                     </ul>
                                     <div className="ttr-post-title">
-                                        <h2 className="post-title">How Medical Coding Impacts the Revenue Cycle?</h2>
+                                        <h2 className="post-title">{title}</h2>
                                     </div>
                                     <div className="ttr-post-text">
                                         <p>At Key Medsolution, we understand the vital role that medical coding plays in optimizing the revenue cycle for healthcare providers. Effective medical coding not only ensures accurate documentation of patient encounters but also facilitates seamless billing and reimbursement processes. In this article, we delve into the intricacies of medical coding and explore its profound impact on the revenue cycle.</p>

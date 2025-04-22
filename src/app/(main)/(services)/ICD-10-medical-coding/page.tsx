@@ -16,16 +16,9 @@ const ICD10MedicalCodingPage = () => {
                             <div className="heading-bx text-center">
                                 <h3 className="title">{title}</h3>
                             </div>
-                            <p>
-                                ICD-10 medical coding is a standardized system used by healthcare providers to accurately document and code patient diagnoses and procedures for billing and insurance purposes. The system includes over 68,000 diagnosis codes and 87,000 procedure codes, allowing for greater specificity and accuracy in medical billing.At Key MedSolutions, we understand the importance of ICD-10 medical coding in the revenue cycle management process. Our team of expert coders is well-versed in the latest ICD-10 guidelines and offers comprehensive coding solutions that cater to the unique needs of healthcare providers.Our ICD-10 coding solutions are designed to minimize errors, expedite payments, and optimize revenue management. We work closely with healthcare providers to ensure compliance and reduce the risk of claim denials.
-                            </p>
-                            <h5>
-                                If you're a healthcare provider looking to streamline your revenue cycle management process and achieve greater financial success.
-                            </h5>
-                            <div className="text-center">
-                                <Link href="/contact-us" className="btn btn-primary shadow">CONTACT US <i className="btn-icon-bx fas fa-chevron-right"></i></Link>
-                            </div>
-
+                            <p>Healthcare professionals utilize the standardized ICD-10 restorative coding system to accurately record and categorize patient diagnoses and procedures for billing and insurance purposes. It allows for greater precision and specificity in medical billing with over 68,000 diagnosis codes and 87,000 procedure codes. We understand the importance of ICD-10 coding in the revenue cycle management process and are pleased to provide reliable ICD-10 Medical Billing and Coding Services.</p>
+                            <p>Our group of professional coders is familiar with the newest ICD-10 guidelines and provides complete ICD-10 Medical Coding Services to Healthcare Providers. Solutions are designed to minimize errors, accelerate payments, and enhance revenue management for practices of all sizes. As a trustworthy ICD-10 Coding Services Company, we collaborate closely with healthcare providers to fulfill needs, reduce the chances of claim rejections, and improve reimbursement levels.</p>
+                            <p>Trust Key MedSolutions Key MedSolutions to provide you with precise, effective, and compliant ICD-10 Medical Coding Solutions suited to the requirements of your practice.   <Link className='tw-font-bold tw-text-inherit' href={"/contact-us"}>Contact us</Link> today to find out how we can enhance your revenue cycle management and expedite your ICD-10 coding procedures.</p>
                         </div>
                         {/* <div className="col"></div> */}
                     </div>

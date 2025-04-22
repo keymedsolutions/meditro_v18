@@ -4,12 +4,15 @@ import InquirySection from "@/components/Home/InquirySection";
 import ServicesSection from "@/components/Home/ServicesSection";
 import TestimonialSection from "@/components/Home/TestimonialSection";
 import WorkSection from "@/components/Home/WorkSection";
-import MainBannerSection from "@/components/ui/MainBannerSection";
+import MainBanner from "@/components/ui/MainBanner";
+// import MainBannerSection from "@/components/ui/MainBannerSection";
+// import MainBannerSection1 from "@/components/ui/MainBannerSection1";
 
 export default function Home() {
   return (
     <>
-      <MainBannerSection />
+      <MainBanner />
+      {/* <MainBannerSection1 /> */}
       <WorkSection />
       <AboutSection />
       <ServicesSection />

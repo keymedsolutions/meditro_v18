@@ -1,22 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
-import { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/ui/breadcrumb";
 
-export const generateMetadata = (): Metadata => {
-    return {
-        title: "Chiropractic Billing for Medicare | Key MedSolutions",
-        description: "Explore chiropractic billing for Medicare beneficiaries - coverage, codes, compliance. Partner with Key MedSolutions for expert guidance.",
-        keywords: "Key Medsolutions, coverage, codes, compliance, chiropractic billing, Medicare Beneficiaries",
-    };
-};
 
 const galleryPic4 = "/images/gallery/pic4.jpg";
 const galleryPic3 = "/images/gallery/pic3.jpg";
 const blogGridPic6 = "/images/blog/grid/pic6.jpg";
 const HowChiropracticBillingServicesWorkForMedicareBeneficiariesPage = () => {
+    const title = "How Chiropractic Billing Services Work for Medicare Beneficiaries?"
+    const path = "/how-chiropractic-billing-services-work-for-medicare-beneficiaries"
+
     return (
         <div className="page-content bg-white">
+
+
+
+            <Breadcrumb title={title}
+                breadcrumb={[{ label: "Blogs", href: "/blogs" }, { label: title, href: path }]} />
+
+
             <section className="section-area section-sp1 bg-white blog1">
                 <div className="container">
                     <div className="row">
@@ -31,7 +34,7 @@ const HowChiropracticBillingServicesWorkForMedicareBeneficiariesPage = () => {
                                         <li className="date"><i className="far fa-calendar-alt"></i>26 October 2023</li>
                                     </ul>
                                     <div className="ttr-post-title">
-                                        <h2 className="post-title">How Chiropractic Billing Services Work for Medicare Beneficiaries</h2>
+                                        <h2 className="post-title">{title}</h2>
                                     </div>
                                     <div className="ttr-post-text">
                                         <h3>Introduction:</h3>

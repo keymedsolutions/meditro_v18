@@ -1,16 +1,28 @@
 /* eslint-disable @next/next/no-img-element */
+
+import Breadcrumb from "@/components/ui/breadcrumb";
+
 /* eslint-disable react/no-unescaped-entities */
 const galleryPic2 = "/images/gallery/pic2.jpg";
 const galleryPic5 = "/images/gallery/pic5.jpg";
 const blogGridPic2 = "/images/blog/grid/pic2.jpg";
 
 const HowAIIsImprovingMedicalCodingProcessesAccuracyAndEfficiencyPage = () => {
+
+    const title = "Improving Medical Coding Accuracy and Efficiency with AI Technology"
+    const path = "/how-AI-is-improving-medical-coding-processes-accuracy-and-efficiency"
     return (
         <div className="page-content bg-white">
+
+
+            <Breadcrumb title={title}
+                breadcrumb={[{ label: "Blogs", href: "/blogs" }, { label: title, href: path }]} />
+
+
             <section className="section-area section-sp1 bg-white blog1">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-md-12 col-lg-7 col-xl-8 mb-30 mb-md-50">
+                    <div className="row justify-content-center">
+                        <div className="col-md-12 col-lg-10 col-xl-10 mb-30 mb-md-50">
                             <div className="blog-card blog-single">
                                 <div className="post-media">
                                     <img src={blogGridPic2} alt="how-ai-is-improving-medical-coding-processes-accuracy-and-efficiency" />
@@ -21,7 +33,7 @@ const HowAIIsImprovingMedicalCodingProcessesAccuracyAndEfficiencyPage = () => {
                                         <li className="date"><i className="far fa-calendar-alt"></i> 19 August 2023</li>
                                     </ul>
                                     <div className="ttr-post-title">
-                                        <h2 className="post-title">How AI is Improving Medical Coding Processes Accuracy and Efficiency</h2>
+                                        <h2 className="post-title">{title}</h2>
                                     </div>
                                     <div className="ttr-post-text">
                                         <p>Medical coding is an essential function in the healthcare industry as it involves translating clinical information into

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Breadcrumb from "@/components/ui/breadcrumb";
+import Link from "next/link";
 
 const VerificationOfHealthcareInsuranceEligibilityPage = () => {
     const title = "Boost Efficiency with Fast and Accurate Healthcare Insurance Eligibility Verification"
@@ -15,14 +16,14 @@ const VerificationOfHealthcareInsuranceEligibilityPage = () => {
                         {/* <div className="col"></div> */}
                         <div className="col-md-10">
                             <div className="heading-bx text-center">
-                                <h3 className="title">Verification of healthcare insurance eligibility</h3>
+                                <h3 className="title">{title}y</h3>
                             </div>
-                            <p>
-                                Insurance eligibility verification has become increasingly crucial with the implementation of the Affordable Care Act. Nowadays, it's possible for an ACA patient to have insurance one month but not pay premiums in subsequent months. Qualified health plans must pay claims for services rendered during the first month of the grace period, while carriers will delay claims until the second or third month. This delay means that patients must pay for services rendered or their insurance premium during this period. If patients cannot afford these payments, any pending physician claims during the 2 and 3 months will remain unpaid, resulting in an increase in bad debt collections.
-                            </p>
-                            <p>
-                                Verifying a patient's insurance eligibility is crucial to ensure coverage for provided services, minimize denials and appeals, and expedite payments at the correct rates. Denied claims caused by inactive coverage, out-of-network services, or unauthorized procedures can result in significant revenue loss, and therefore, should not be disregarded.
-                            </p>
+                            <p>Verifying insurance eligibility has gained importance since the implementation of the Affordable Care Act (ACA). A patient may possess active insurance coverage for one month but lose it the next month due to untimely premium payments. Qualified health plans are required to cover services rendered in the first month of the ACA's grace period, but claims made during the second and third months may be denied or delayed if the premium remains unpaid. This leads to a shared reason for significant revenue decline and increased bad debt collection for providers.</p>
+<p>At Key MedSolutions, we offer comprehensive Eligibility Verification Services to help healthcare providers confirm patient coverage before delivering services. By promptly identifying inactive coverage, we avoid claim denials and ensure timely reimbursements. It reduces administrative complexity and financial risk, optimizing your revenue cycle.</p>
+<p>Our Insurance Verification Services include real-time checks on current insurance, coverage amounts, and out-of-network status. Our support enables providers to enhance communication with patients regarding their responsibilities and avoid unexpected bills later on. These services are essential for practices aiming to improve patient communication and cost transparency. </p>
+<p>Through our sophisticated Insurance Eligibility and Benefits Verification Services, we verify all aspects including copays, deductibles, and authorizations. In this manner, claims are submitted correctly the first time, reducing the need for rework and appeals. For practices that demand precision and effectiveness, it is a crucial phase in the billing process.</p>
+<p>We additionally provide Insurance Benefits Verification Service and Medical Insurance Eligibility Verification Service, ensuring that each patient's plan is thoroughly examined. Our system minimizes uncertainty and supports decision-making regarding coverage and service approval.</p>
+  <p><Link className='tw-font-bold tw-text-inherit' href={"/contact-us"}>Contact us</Link> to learn how our eligibility verification solutions can prevent revenue loss and improve your cash flow.</p>
                         </div>
                         {/* <div className="col"></div> */}
                     </div>

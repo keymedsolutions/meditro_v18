@@ -1,4 +1,5 @@
 import Breadcrumb from '@/components/ui/breadcrumb';
+import Link from 'next/link';
 import React from 'react'
 
 const Page = () => {
@@ -19,9 +20,10 @@ const Page = () => {
 									<div className="heading-bx text-center">
 										<h3 className="title">{title}</h3>
 									</div>
-									<p>
-									Key MedSolutions is a trusted healthcare revenue cycle management (RCM) company in North Carolina, providing end-to-end solutions to healthcare providers to optimize their revenue cycle operations. With years of experience, our team of experts understands the unique challenges of the healthcare industry and provides tailored solutions to meet the specific needs of each client. From insurance eligibility verification to claims submission and denial management, our RCM healthcare solutions ensure timely reimbursements and improved revenue flow. We leverage the latest technology and industry best practices to maximize your revenue and minimize your financial risk. Trust Key MedSolutions for reliable and comprehensive RCM services to improve your bottom line.
-									</p>
+									<p>Key MedSolutions is a well-known Revenue Cycle Management firm in North Carolina offering comprehensive Healthcare Revenue Cycle Management Solutions tailored to meet the unique requirements of healthcare providers. We possess years of experience in the healthcare industry and understand the unique challenges that practices face. Our specialists provide tailored solutions to enhance and refine your revenue cycle processes, covering everything from patient registration to claims submission and payment processing.</p>
+<p>Our Revenue Cycle Services are designed to optimize your revenue and reduce administrative burdens. Whether handling RCM Billing Services or addressing insurance eligibility and claims denials, we take initiative to ensure prompt reimbursements and improved cash flow. With our support, you can focus on patient care while we handle the complexities of revenue cycle management.</p>
+<p>At Key MedSolutions, we employ cutting-edge technology and top industry practices to lower your financial risks and enhance reimbursements. As your partner in Revenue Cycle Management Services, our goal is to offer an efficient and seamless billing process that reduces errors and accelerates revenue generation.</p>
+  <p><Link className='tw-font-bold tw-text-inherit' href={"/contact-us"}>Contact us</Link> today to discover how our RCM services can optimize your practice’s financial success.</p>
 								</div>
 								{/* <div className="col"></div> */}
 							</div>

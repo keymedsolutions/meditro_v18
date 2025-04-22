@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { ISiteMetaData } from "@/types/app.types";
 
@@ -119,20 +118,20 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Discover how AI boosts accuracy and efficiency in medical coding, streamlining processes, reducing errors, and improving reimbursement cycles.",
   },
-  "/boost-your-practice's-performance-with-revenue-cycle-kpis": {
-    title: "Boost Practice Performance with Revenue Cycle KPIs",
+  "/boost-your-practices-performance-with-revenue-cycle-kpis": {
+    title: "Revenue Cycle KPIs to Boost Practice Performance",
     description:
-      "Improve your practice's revenue cycle with KeyMed's KPIs. Optimize financial performance, reduce inefficiencies, and enhance growth using targeted metrics.",
+      "Discover key revenue cycle KPIs that help improve efficiency, reduce denials, and maximize financial performance for your healthcare practice.",
   },
   "/how-chiropractic-billing-services-work-for-medicare-beneficiaries": {
     title: "Chiropractic Billing Services for Medicare Beneficiaries",
     description:
-      "Learn how chiropractic billing services help Medicare beneficiaries. Ensure accurate claims processing and maximize reimbursement with professional billing support.",
+      "Learn how chiropractic billing services handle Medicare claims, ensure compliance, and help providers receive timely reimbursements for covered treatments.",
   },
   "/optimize-healthcare-Finances-rcm-mastery-unleashed": {
-    title: "Optimize Healthcare Finances: RCM Mastery Unleashed",
+    title: "Master RCM Solutions Boost Healthcare Financial Performance",
     description:
-      "Unlock the potential of your healthcare finances with RCM mastery. Improve efficiency, reduce errors, and boost revenue with expert management solutions.",
+      "Enhance your healthcare finances with expert RCM solutions to optimize billing, reduce denials, and boost revenue performance.",
   },
   "/free-ationevalu": {
     title: "Medical Billing for New Clinics | Expert RCM Services",
