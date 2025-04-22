@@ -763,9 +763,16 @@ body {
   .desktop-menu {
     display: none;
   }
-  .desktop-menu .btn-area{
+
+  .desktop-menu .btn-area {
     display: none;
   }
+
+  .main-banner {
+    top: -100px !important;
+    padding-top: 451px !important;
+  }
+
 }
 
 /* For Desktop: >1091px */
@@ -774,10 +781,38 @@ body {
     display: none;
   }
 
+  .main-banner {
+    top: -100px !important;
+    padding-top: 303px !important;
+  }
+
+
+
+
   .desktop-menu {
     display: block;
   }
-  .desktop-menu .btn-area{
+
+  .desktop-menu .btn-area {
     display: block;
   }
+}
+
+.main-hero-section {
+  background-image: url('/images/main-banner/bg1.jpg');
+  position: relative;
+}
+
+.main-hero-section:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url(/images/main-banner/shape1.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100%;
+  z-index: -1;
 }

@@ -1,22 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { Metadata } from "next";
+import Breadcrumb from "@/components/ui/breadcrumb";
 import Link from "next/link";
-
-export const generateMetadata = (): Metadata => {
-  return {
-    title: "RCM Mastery | Key MedSolutions",
-    description: "Discover the power of RCM Mastery in our latest blog. Navigate the complexities of healthcare finance, reduce denials, and enhance revenue flow.",
-    keywords: "healthcare, revenue cycle management, RCM, medical practices, financial stability, patient care, comprehensive guide, key components, benefits, technological influences, compliance, financial success, medical billing company, Key MedSolutions",
-  };
-};
-
 
 
 const OptimizeHealthcareFinancesRcmMastersUnleashedPage = () => {
+    const title = "From Billing to Payment: Master the RCM Process for Financial Excellence"
+    const path = "/optimize-healthcare-Finances-rcm-mastery-unleashed"
     return (
 
         <div className="page-content bg-white">
+
+            <Breadcrumb title={title}
+                breadcrumb={[{ label: "Blogs", href: "/blogs" }, { label: title, href: path }]} />
+
+
             <section className="section-area section-sp1 bg-white blog1">
                 <div className="container">
                     <div className="row">
@@ -28,7 +26,7 @@ const OptimizeHealthcareFinancesRcmMastersUnleashedPage = () => {
                                 <div className="info-bx">
 
                                     <div className="ttr-post-title">
-                                        <h2 className="post-title">Optimize Healthcare Finances: RCM Mastery Unleashed</h2>
+                                        <h2 className="post-title">{title}</h2>
                                         <ul className="post-meta">
                                             {/* <li className="author"><Link to="/blog-details"><img src={testPic3} alt=""/> Sonar Moyna</Link></li> */}
                                             <li className="date"><i className="far fa-calendar-alt"></i>21 December 2023</li>
