@@ -66,7 +66,7 @@ export async function POST(req: Request) {
 
     await transporter.sendMail({
       from: `"KeyMed Solution" <info@digitechnobytes.com>`,
-      to: "kishan@yopmail.com",
+      to: "info@keymedsolution.com",
       subject,
       html,
     });
