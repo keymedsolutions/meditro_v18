@@ -754,50 +754,6 @@ body {
 }
 
 
-/* For Mobile: ≤1091px */
-@media (max-width: 1091px) {
-  .mobile-menu {
-    display: block;
-  }
-
-  .desktop-menu {
-    display: none;
-  }
-
-  .desktop-menu .btn-area {
-    display: none;
-  }
-
-  .main-banner {
-    top: -100px !important;
-    padding-top: 451px !important;
-  }
-
-}
-
-/* For Desktop: >1091px */
-@media (min-width: 1092px) {
-  .mobile-menu {
-    display: none;
-  }
-
-  .main-banner {
-    top: -100px !important;
-    padding-top: 303px !important;
-  }
-
-
-
-
-  .desktop-menu {
-    display: block;
-  }
-
-  .desktop-menu .btn-area {
-    display: block;
-  }
-}
-
 .main-hero-section {
   background-image: url('/images/main-banner/bg1.jpg');
   position: relative;
@@ -815,4 +771,39 @@ body {
   background-position: 0 100%;
   background-size: 100%;
   z-index: -1;
+}
+
+/* Mobile: up to 1097px */
+@media (max-width: 1097px) {
+
+  .desktop-menu ul {
+    gap: 13px !important;
+    /* background: #ffcccc !important; */
+  }
+
+  .main-banner {
+    top: -100px !important;
+    padding-top: 451px !important;
+  }
+}
+
+/* Tablet: 1098px to 1239px */
+@media (min-width: 1098px) and (max-width: 1239px) {
+  .desktop-menu ul {
+    gap: 20px !important;
+    /* background: #ccffcc  */
+  }
+
+  .main-banner {
+    top: -100px !important;
+    padding-top: 303px !important;
+  }
+}
+
+/* Desktop: 1240px and up */
+@media (min-width: 1240px) {
+  .desktop-menu ul {
+    gap: 35px !important;
+    /* background: #ccccff !important;  */
+  }
 }

@@ -126,7 +126,12 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-bottom">
                     <div className="row">
-                        <div className="col-12 text-center">
+                        <div className="col-6 col-md-6 col-12 text-center">
+                            <p className="copyright-text">
+                                Key MedSolutions operates under the domain <Link href={'/'}>keymedsolution.com</Link>
+                            </p>
+                        </div>
+                        <div className="col-6 col-md-6 col-12 text-center">
                             <p className="copyright-text">
                                 Copyright © {new Date().getFullYear()} Key MedSolutions
                             </p>

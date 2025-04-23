@@ -25,6 +25,7 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
   const [openSubMenus, setOpenSubMenus] = useState<Record<string, boolean>>({})
   const navRef = useRef<HTMLDivElement>(null)
 
+
   const pathName = usePathname()
 
   useEffect(() => {
@@ -52,74 +53,74 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
 
   // Recursive function to render menu items at any level
   const renderMenuItem = useCallback((item: MenuItem, level = 0, parentPath = "") => {
-      const hasSubMenu = item.subMenu && item.subMenu.length > 0
-      const fullPath = parentPath ? `${parentPath}-${item.path}` : item.path
-      const isSubMenuOpen = openSubMenus[fullPath] || false
+    const hasSubMenu = item.subMenu && item.subMenu.length > 0
+    const fullPath = parentPath ? `${parentPath}-${item.path}` : item.path
+    const isSubMenuOpen = openSubMenus[fullPath] || false
 
-      return (
-        <li
-          key={fullPath}
-          className={cn("tw-relative", level === 0 && "group", level > 0 && "tw-w-full")}
-          onMouseEnter={() => handleMouseEnter(fullPath)}
-          onMouseLeave={() => handleMouseLeave(fullPath)}
-        >
-          {item.external ? (
-            <a
-              href={item.path}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+    return (
+      <li
+        key={fullPath}
+        className={cn("tw-relative", level === 0 && "group", level > 0 && "tw-w-full")}
+        onMouseEnter={() => handleMouseEnter(fullPath)}
+        onMouseLeave={() => handleMouseLeave(fullPath)}
+      >
+        {item.external ? (
+          <a
+            href={item.path}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {item.label}
+          </a>
+        ) : (
+
+          <Link
+            href={item.path}
+            className={`${item.path === pathName ? "active" : ""}`}
+          // onClick={() =>setOpenSubMenus({})}
+          >
+
+            <span>
+
               {item.label}
-            </a>
-          ) : (
-
-            <Link
-              href={item.path}
-              className={`${item.path === pathName ? "active" : ""}`}
-              // onClick={() =>setOpenSubMenus({})}
-            >
-
-              <span>
-
-                {item.label}
-                {/* {hasSubMenu && (
+              {/* {hasSubMenu && (
                 <span className="tw-absolute tw-right-1 tw-top-1/2 tw-transform -tw-translate-y-1/2 p-1">
                   <ChevronDown className={cn("tw-h-4 tw-w-4 tw-transition-transform", isSubMenuOpen && "tw-transform tw-rotate-180")} />
                 </span>
               )} */}
-              </span>
+            </span>
 
 
-            </Link>
+          </Link>
 
 
-          )}
+        )}
 
-          {hasSubMenu && (
-            <ul
-              className={cn(
-                level === 0
-                  ? "sub-menu lg-menu tw-absolute tw-right-0 tw-top-full tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20"
-                  : "tw-absolute sub-menu md-menu  tw-right-full tw-top-0 ",
-                isSubMenuOpen ? "tw-opacity-100 tw-visible open" : "tw-opacity-0 tw-invisible tw-pointer-events-none",
-                "tw-transition-all tw-duration-200",
+        {hasSubMenu && (
+          <ul
+            className={cn(
+              level === 0
+                ? "sub-menu lg-menu tw-absolute tw-right-0 tw-top-full tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20"
+                : "tw-absolute sub-menu md-menu  tw-right-full tw-top-0 ",
+              isSubMenuOpen ? "tw-opacity-100 tw-visible open" : "tw-opacity-0 tw-invisible tw-pointer-events-none",
+              "tw-transition-all tw-duration-200",
 
-              )}
-            >
-              {item?.subMenu?.map((subItem) => renderMenuItem(subItem, level + 1, fullPath))}
-            </ul>
-          )}
-        </li>
-      )
-    },[openSubMenus,pathName])
+            )}
+          >
+            {item?.subMenu?.map((subItem) => renderMenuItem(subItem, level + 1, fullPath))}
+          </ul>
+        )}
+      </li>
+    )
+  }, [openSubMenus, pathName])
 
 
-return (
+  return (
 
-  <div className='menu-links site-menubar desktop-menu ' ref={navRef}>
-    {/* // <nav className="tw-hidden lg:tw-flex tw-items-center" ref={navRef}> */}
-    <ul className="tw-flex tw-m-0 tw-flex-wrap nav navbar-nav tw-gap-x-4">{items.map((item) => renderMenuItem(item))}</ul>
+    <div className='menu-links site-menubar desktop-menu ' ref={navRef}>
+      {/* // <nav className="tw-hidden lg:tw-flex tw-items-center" ref={navRef}> */}
+      <ul className="tw-flex tw-m-0 tw-flex-wrap nav navbar-nav ">{items.map((item) => renderMenuItem(item))}</ul>
 
-  </div>
-)
+    </div>
+  )
 }

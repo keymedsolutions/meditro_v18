@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
-import Link from 'next/link';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -128,12 +127,12 @@ const ContactUsForm = () => {
                                     <h4 className="title mb-30">Contact Us For Any Information</h4>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-map-alt"></i> Location</h6>
-                                        <p>Greensboro, North Carolina, USA</p>
+                                        <p className='tw-text-white'>717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States</p>
                                     </div>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-id-badge"></i> Email &amp; Phone</h6>
-                                        <Link href="#" className="text-white">info@keymedsolution.com</Link>
-                                        <p>+1 (336) 496-8296</p>
+                                        <a href="mailto:info@keymedsolution.com" className="text-white">info@keymedsolution.com</a><br />
+                                        <a href='tel:+13364968296' className='tw-text-white'>+1 (336) 496-8296</a>
                                     </div>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-world"></i> Follow Us</h6>
