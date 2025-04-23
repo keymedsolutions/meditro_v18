@@ -42,7 +42,6 @@ const MainHeader = () => {
 
 
 
-    console?.debug("isMobile", isMobile)
 
 
     return (

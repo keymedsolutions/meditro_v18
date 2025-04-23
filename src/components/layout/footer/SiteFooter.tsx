@@ -77,7 +77,7 @@ const SiteFooter = () => {
                   <a href="tel:+13364999299">+1 (336) 499-9299</a>
                   <br />
                   <a href="javascript:void(0)">
-                    Greensboro, North Carolina, USA
+                  717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States
                   </a>
                 </div>
               </div>
@@ -117,10 +117,10 @@ const SiteFooter = () => {
           </div>
           <div className="tw-mt-6 tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-2 tw-text-center tw-mb-4">
             <h6 className="tw-font-semibold tw-text-accent-400 !tw-mb-0">Disclaimer:</h6>
-              <p className=" tw-leading-tight !tw-p-0 !tw-m-0">
-                All services are subject to a <b className="tw-font-extrabold">24-month contract</b> unless
-                stated otherwise. Terms & Conditions apply.
-              </p>
+            <p className=" tw-leading-tight !tw-p-0 !tw-m-0">
+              All services are subject to a <b className="tw-font-extrabold">24-month contract</b> unless
+              stated otherwise. Terms & Conditions apply.
+            </p>
           </div>
         </div>
       </div>
@@ -131,6 +131,12 @@ const SiteFooter = () => {
               <p className="copyright-text">
                 Copyright © {new Date().getFullYear()} Key MedSolutions
                 {/* Design & Developed by <a href="https://themeforest.net/user/themetrades" rel="noreferrer" target="_blank" className="text-secondary">ThemeTrades</a> */}
+              </p>
+            </div>
+
+            <div className="col-12 col-md-12 col-12 text-center">
+              <p className="copyright-text">
+                Key MedSolutions operates under the domain <Link href={'/'}>keymedsolution.com</Link>
               </p>
             </div>
           </div>
