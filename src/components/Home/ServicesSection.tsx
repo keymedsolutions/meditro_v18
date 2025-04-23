@@ -4,9 +4,8 @@ const ServicesSection = () => {
   const specialties = [
     "Anesthesiology", "Cardiology", "Dermatology", "Endocrinology", "ENT",
     "Family Medicine", "Gastroenterology", "Hospitalists", "Internal Medicine",
-    "Nephrology", "Neurology", "OB/GYN", "Ophthalmology", "Optometry",
-    "Pain Medicine", "Pediatric Cardiology", "Physiatrist", "Podiatry",
-    "Pulmonology", "Radiology", "Rheumatology", "Sleep Study Centers"
+    "Nephrology", "Neurology","Endocrinology", "OB/GYN", "Ophthalmology", "Optometry",
+    "Pain Medicine", "Pediatric Cardiology", "Physiatrist", "Podiatry","Urology"
   ];
 
   return (
