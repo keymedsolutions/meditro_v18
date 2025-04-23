@@ -9,18 +9,18 @@ import { MenuItems } from '@/lib/menu-items';
 import { MobileMenu } from './mobile-menu';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 
 
 const MainHeader = () => {
 
     const [isOpen, setIsOpen] = useState(false)
-    const [isMobile, setIsMobile] = useState(false)
+    const isMobile = useIsMobile()
 
     useEffect(() => {
         const checkIfMobile = () => {
-            setIsMobile(window.innerWidth < 1091)
-            if (window.innerWidth > 1091) {
+            if (window.innerWidth > 1197) {
                 setIsOpen(false)
             }
         }
@@ -33,12 +33,16 @@ const MainHeader = () => {
         }
     }, [])
 
-    const pathName =usePathname()
+    const pathName = usePathname()
 
     useEffect(() => {
         setIsOpen(false)
-    },[pathName])
+    }, [pathName])
 
+
+
+
+    console?.debug("isMobile", isMobile)
 
 
     return (
@@ -57,21 +61,21 @@ const MainHeader = () => {
 
 
                             {/* Toggle Icon */}
-                            <button
+                            {isMobile && <button
                                 className="mobile-menu tw-bg-transparent tw-border-none  justify-content-end !tw-ml-auto"
                                 type="button"
-                         
+
                                 onClick={() => setIsOpen(!isOpen)}
                             >
                                 <Menu className="tw-h-10 tw-w-10" />
-                            </button>
+                            </button>}
 
 
 
 
                             {/* <div className='menu-links'> */}
 
-                           {!isMobile &&  <DesktopMenu items={MenuItems} />}
+                            {!isMobile && <DesktopMenu items={MenuItems} />}
 
                             {/* </div> */}
 
