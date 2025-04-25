@@ -1,3 +1,5 @@
 User-Agent: *
 Allow: *.js
 Allow: *.css
+Disallow: 
+Sitemap: https://www.keymedsolution.com/sitemap.xml
