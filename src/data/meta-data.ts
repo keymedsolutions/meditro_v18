@@ -1,10 +1,8 @@
-
 import { ISiteMetaData } from "@/types/app.types";
 
 export const SiteMetaData: ISiteMetaData = {
   "/": {
-    title:
-      "Healthcare Medical Billing Services and RCM Company",
+    title: "Healthcare Medical Billing Services and RCM Company",
     description:
       "Key Medsolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
   },
@@ -55,9 +53,8 @@ export const SiteMetaData: ISiteMetaData = {
   },
   "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
     {
-      title: "Expert Medical Billing & Collection Services | Boost Revenue",
-      description:
-        "Partner with our expert team for medical billing and collection services. Reduce claim denials, accelerate reimbursements, and enhance revenue cycle efficiency.",
+      title: "Medical Debt Collection Service for Healthcare Practitioners",
+      description:"Professional Medical Debt Collection Services for healthcare providers to recover unpaid claims, reduce bad debt, and improve overall cash flow.",
     },
   "/streamlining-medical-AR-recovery": {
     title: "Accounts Receivable Recovery Services | AR Recovery Solution",
@@ -149,21 +146,24 @@ export const SiteMetaData: ISiteMetaData = {
       google: "iPYAcF8mibClwS4PeljKHWU6Vfz5TIOP09L3h8wh8TI",
     },
   },
-  "/team":{
+  "/team": {
     title: "Our Team | Experienced Healthcare Billing & RCM Professionals",
-    description: " Meet the team driving our medical billing and RCM success—experienced professionals committed to accuracy and healthcare excellence.",
+    description:
+      " Meet the team driving our medical billing and RCM success—experienced professionals committed to accuracy and healthcare excellence.",
   },
-  "/services":{
-    title:"Medical Billing and RCM Services | Key MedSolutions",
-    description:" Explore our full range of medical billing, coding, and revenue cycle management services designed to optimize healthcare performance and collections.",
-
+  "/services": {
+    title: "Medical Billing and RCM Services | Key MedSolutions",
+    description:
+      " Explore our full range of medical billing, coding, and revenue cycle management services designed to optimize healthcare performance and collections.",
   },
-  "/booking":{
-    title:"Schedule a Call | Medical Billing & RCM Consultation",
-    description:"Easily book a consultation with our medical billing and RCM specialists. Discover how we can streamline your revenue cycle and boost collections."
+  "/booking": {
+    title: "Schedule a Call | Medical Billing & RCM Consultation",
+    description:
+      "Easily book a consultation with our medical billing and RCM specialists. Discover how we can streamline your revenue cycle and boost collections.",
   },
-  "/service-detail":{
-    title:"Healthcare Billing Services and RCM Company in US",
-    description:"Key MedSolution is a trusted Billing Services and RCM Company in the US. Improve claim accuracy, accelerate reimbursements, and boost your revenue cycle."
-  }
+  "/service-detail": {
+    title: "Healthcare Billing Services and RCM Company in US",
+    description:
+      "Key MedSolution is a trusted Billing Services and RCM Company in the US. Improve claim accuracy, accelerate reimbursements, and boost your revenue cycle.",
+  },
 };
