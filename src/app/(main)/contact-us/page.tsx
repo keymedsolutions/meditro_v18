@@ -1,7 +1,7 @@
 
-import ContactForm from "@/components/elements/ContactForm";
+// import ContactForm from "@/components/elements/ContactForm";
+import ConatctDetsilsForm1 from "@/components/elements/ConatctDetsilsForm1";
 import Breadcrumb from "@/components/ui/breadcrumb";
-
 
 const pic1 = "/images/about/pic-1.jpg";
 const icon1 = "/images/icon/icon1.png";
@@ -11,7 +11,7 @@ const icon3 = "/images/icon/icon3.png";
 
 const ContactUsPage = () => {
 	const title = "Contact Us for Expert Healthcare Billing and RCM Solutions";
-	
+
 	return (
 		<div className="page-content bg-white aboutus">
 			<Breadcrumb title={title} breadcrumb={[{ label: title, href: "/contact-us" }]} />
@@ -25,7 +25,9 @@ const ContactUsPage = () => {
 					<div className="contact-wraper">
 						<div className="row">
 							<div className="col-lg-6 mb-30">
-								<ContactForm />
+								{/* <ContactForm /> */}
+								<ConatctDetsilsForm1
+								/>
 							</div>
 							<div className="col-lg-6 mb-30">
 								<div className="contact-info ovpr-dark" style={{ backgroundImage: "url(" + pic1 + ")" }}>

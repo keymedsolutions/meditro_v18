@@ -14,8 +14,12 @@ export async function POST(req: Request) {
       const details: any = [];
       delete data.usedFor;
       Object.keys(data).forEach((key) => {
-        const html = `<p style="margin: 10px 0;text-transform: capitalize;"><strong style="margin-right: 10px;" >${key.replaceAll("_"," ")}:</strong>${data[key]}</p>`;
-        details.push(html);
+
+        if(data[key]){
+          const html = `<p style="margin: 10px 0;text-transform: capitalize;"><strong style="margin-right: 10px;" >${key.replaceAll("_"," ")}:</strong>${data[key]}</p>`;
+          details.push(html);
+
+        }
       });
 
       html = `<!DOCTYPE html>
