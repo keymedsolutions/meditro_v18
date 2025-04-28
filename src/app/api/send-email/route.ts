@@ -14,7 +14,7 @@ export async function POST(req: Request) {
       const details: any = [];
       delete data.usedFor;
       Object.keys(data).forEach((key) => {
-        const html = `<p style="margin: 10px 0;text-transform: capitalize;"><strong style="margin-right: 10px;" >${key}:</strong>${data[key]}</p>`;
+        const html = `<p style="margin: 10px 0;text-transform: capitalize;"><strong style="margin-right: 10px;" >${key.replaceAll("_"," ")}:</strong>${data[key]}</p>`;
         details.push(html);
       });
 
@@ -52,12 +52,12 @@ export async function POST(req: Request) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: "smtp.hostinger.com",
+      host: "smtp.gmail.com",
       port: 587,
       secure: false,
       auth: {
-        user: "info@digitechnobytes.com",
-        pass: "DigiA1b29099@@",
+        user: "keymedsolution@gmail.com",
+        pass: "ahmd alek qpfi nrse",
       },
       tls: {
         rejectUnauthorized: false,
@@ -65,7 +65,7 @@ export async function POST(req: Request) {
     });
 
     await transporter.sendMail({
-      from: `"KeyMed Solution" <info@digitechnobytes.com>`,
+      from: `"KeyMed Solution" <keymedsolution@gmail.com>`,
       to: "info@keymedsolution.com",
       subject,
       html,

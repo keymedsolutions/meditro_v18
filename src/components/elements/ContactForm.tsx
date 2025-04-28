@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactSchema, ContactFormValues } from '@/validations/contact.schema';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function ContactForm() {
     const {
@@ -18,6 +19,8 @@ export default function ContactForm() {
 
     const [responseMessage, setResponseMessage] = useState('');
     const [isError, setIsError] = useState(false);
+
+    const router = useRouter();
 
     const onSubmit = async (data: ContactFormValues) => {
         try {
@@ -38,6 +41,7 @@ export default function ContactForm() {
                 setResponseMessage("Your message was sent successfully!");
                 setIsError(false);
                 reset()
+                router.replace("/thank-you")
 
             } else {
                 setResponseMessage(result.error || "Something went wrong.");
@@ -63,7 +67,7 @@ export default function ContactForm() {
                     <input
                         {...register('name')}
                         className="form-control"
-                        placeholder="Your Name"
+                        placeholder="Full Name"
                     />
                     {errors.name && <small className="text-danger">{errors.name.message}</small>}
                 </div>
@@ -72,7 +76,7 @@ export default function ContactForm() {
                         {...register('email')}
                         type="email"
                         className="form-control"
-                        placeholder="Email"
+                        placeholder="Email Address"
                     />
                     {errors.email && <small className="text-danger">{errors.email.message}</small>}
                 </div>
@@ -86,15 +90,15 @@ export default function ContactForm() {
                 </div>
                 <div className="form-group col-md-12">
                     <select
-                        {...register('department')}
+                        {...register('inquiry_for')}
                         className="form-select form-control"
                     >
-                        <option value="">Select Department</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option value="">What Are You Contacting Us About?</option>
+                        <option value="Student Inquiry">Student Inquiry</option>
+                        <option value="Medical Billing Services">Medical Billing Services</option>
+                        <option value="Other">Other</option>
                     </select>
-                    {errors.department && <small className="text-danger">{errors.department.message}</small>}
+                    {errors.inquiry_for && <small className="text-danger">{errors.inquiry_for.message}</small>}
                 </div>
                 <div className="form-group col-md-12">
                     <textarea
