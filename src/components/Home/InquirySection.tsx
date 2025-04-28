@@ -1,4 +1,5 @@
-import ConatctDetsilsForm1 from "../elements/ConatctDetsilsForm1";
+import ConatctInquiryForm from "../ConatctInquiryForm";
+import ContactUsForm from "../ContactUsForm";
 
 const React = 'react'
 // const Images
@@ -20,8 +21,8 @@ const InquirySection = () => {
                     <img className="pt-img3 animate-rotate" src={animateRotate} alt="" />
                 </div>
 
-                <ConatctDetsilsForm1 />
-
+                {/* <ContactUsForm /> */}
+<ConatctInquiryForm />
 
             </div>
         </>
