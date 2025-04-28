@@ -1,5 +1,4 @@
 import ConatctInquiryForm from "../ConatctInquiryForm";
-import ContactUsForm from "../ContactUsForm";
 
 const React = 'react'
 // const Images
