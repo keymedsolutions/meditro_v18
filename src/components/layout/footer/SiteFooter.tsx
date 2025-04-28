@@ -50,6 +50,11 @@ const SiteFooter = () => {
                       <span>FAQs</span>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/privacy-policy">
+                      Privacy Policy
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -77,7 +82,7 @@ const SiteFooter = () => {
                   <a href="tel:+13364999299">+1 (336) 499-9299</a>
                   <br />
                   <a href="javascript:void(0)">
-                  717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States
+                    717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States
                   </a>
                 </div>
               </div>

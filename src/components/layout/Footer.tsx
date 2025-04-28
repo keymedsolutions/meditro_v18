@@ -42,6 +42,12 @@ const Footer = () => {
                                             ICD-10 Medical Coding
                                         </Link>
                                     </li>
+
+                                    <li>
+                                        <Link href="/privacy-policy">
+                                            Privacy Policy
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -126,7 +132,7 @@ const Footer = () => {
             <div className="container">
                 <div className="footer-bottom">
                     <div className="row">
-                      
+
                         <div className="col-12 col-md-12 col-12 text-center">
                             <p className="copyright-text">
                                 Copyright © {new Date().getFullYear()} Key MedSolutions
