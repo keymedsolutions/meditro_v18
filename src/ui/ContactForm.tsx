@@ -59,7 +59,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
                 value={formData.name}
                 onChange={handleChange}
                 className="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-input tw-rounded-lg focus:tw-ring-2 focus:tw-ring-primary/20 focus:tw-border-primary tw-transition-all tw-duration-200 tw-outline-none"
-                placeholder="Your name"
+                placeholder="Full Name"
                 required
               />
             </div>
@@ -75,7 +75,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className = '' }) => {
                 value={formData.email}
                 onChange={handleChange}
                 className="tw-w-full tw-px-4 tw-py-2 tw-border tw-border-input tw-rounded-lg focus:tw-ring-2 focus:tw-ring-primary/20 focus:tw-border-primary tw-transition-all tw-duration-200 tw-outline-none"
-                placeholder="your@email.com"
+                placeholder="Email Address"
                 required
               />
             </div>
