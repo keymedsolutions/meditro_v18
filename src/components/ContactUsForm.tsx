@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactSchema, ContactFormValues } from '@/validations/contact.schema';
 import { useRouter } from 'next/navigation';
+import { ContactInfo, SocialAccountLinks } from '@/constant/constatnt';
 
 
 const ContactUsForm = () => {
@@ -131,19 +132,19 @@ const ContactUsForm = () => {
                                     <h4 className="title mb-30">Contact Us For Any Information</h4>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-map-alt"></i> Location</h6>
-                                        <p className='tw-text-white'>717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States</p>
+                                        <p className='tw-text-white'>{ContactInfo.location}</p>
                                     </div>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-id-badge"></i> Email &amp; Phone</h6>
-                                        <a href="mailto:info@keymedsolution.com" className="text-white">info@keymedsolution.com</a><br />
-                                        <a href='tel:+13364968296' className='tw-text-white'>+1 (336) 496-8296</a>
+                                        <a href={`mailto:${ContactInfo.email}`} className="text-white">{ContactInfo.email}</a><br />
+                                        <a href='tel:+13364968296' className='tw-text-white'>{ContactInfo.phone}</a>
                                     </div>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-world"></i> Follow Us</h6>
                                         <ul className="social-media">
-                                            <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/people/Key-Medsolution/100093008652071/"><i className="fab fa-facebook"></i></a></li>
-                                            <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/key-medsolutions/"><i className="fab fa-linkedin"></i></a></li>
-                                            <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/key_medsolution/"><i className="fab fa-instagram"></i></a></li>
+                                            <li><a rel="noreferrer" target="_blank" href={SocialAccountLinks.FACEBOOK}><i className="fab fa-facebook"></i></a></li>
+                                            <li><a rel="noreferrer" target="_blank" href={SocialAccountLinks.LINKEDIN}><i className="fab fa-linkedin"></i></a></li>
+                                            <li><a rel="noreferrer" target="_blank" href={SocialAccountLinks.INSTAGRAM}><i className="fab fa-instagram"></i></a></li>
                                         </ul>
                                     </div>
                                 </div>

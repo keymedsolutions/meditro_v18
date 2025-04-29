@@ -1,394 +1,141 @@
-const { data } = require("autoprefixer");
 const fs = require("fs");
- 
- const SiteMetaData = {
-  "/": {
-    title:
-      "Expert Medical Billing & Revenue Cycle Management Company | Key MedSolutions ",
-    data: [
+const MenuItems = [
+  { label: "Home", path: "/" },
+  { label: "About Us", path: "/about-us" },
+  {
+    label: "Services",
+    path: "/services",
+    subMenu: [
       {
-        key: "title",
-        value:
-          "Expert Medical Billing & Revenue Cycle Management Company | Key MedSolutions ",
+        label: "Physician Billing Services",
+        path: "/physician-billing-services",
+        subMenu: [
+          { label: "Medical Claim Billing", path: "/medical-claim-billing" },
+          {
+            label: "Internal Medicine & Nephrology Billing Services",
+            path: "/internal-medicine-and-nephrology-billing-service",
+          },
+          {
+            label: "Radiology Billing Services",
+            path: "/radiology-billing-services",
+          },
+          {
+            label: "Cardiology Medical Billing",
+            path: "/cardiology-medical-billing",
+          },
+        ],
       },
       {
-        key: "description",
-        value:
-          "Key MedSolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
+        label:
+          "Improving Your Financial Health with Profit Enhancement Services",
+        path: "/improving-your-financial-health-with-profit-enhancement-services",
       },
+      {
+        label: "Medical Billing & Coding Services",
+        path: "/medical-billing-coding-services",
+        subMenu: [
+          { label: "ICD-10 Medical Coding", path: "/ICD-10-medical-coding" },
+        ],
+      },
+      {
+        label:
+          "Maximize Your Reimbursement Rate with Our Medical Billing and Collection Services",
+        path: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+      },
+      {
+        label: "Streamlining Medical AR Recovery",
+        path: "/streamlining-medical-AR-recovery",
+      },
+      { label: "Practice Management", path: "/practice-management" },
+      {
+        label: "Verification of Healthcare Insurance Eligibility",
+        path: "/verification-of-healthcare-insurance-eligibility",
+      },
+      {
+        label: "Revenue Cycle Management Company (RCM)",
+        path: "/revenue-cycle-management-company",
+      },
+      {
+        label: "Denial Management Services",
+        path: "/denial-management-service",
+      },
+      { label: "Physician Credentialing", path: "/physician-credentialing" },
+      { label: "Medical Billing Services", path: "/medical-billing-services" },
     ],
   },
-  "/medical-claim-billing": {
-    title: "Medical Claim Billing Services and Solutions | Key Medsolutions",
-    data: [
-      {
-        key: "title",
-        value:
-          "Medical Claim Billing Services and Solutions | Key Medsolutions",
-      },
-      {
-        key: "description",
-        value:
-          "We are a medical billing services company offering medical claims billing solutions to healthcare providers in the USA. Book a free consultation today!",
-      },
-    ],
+  { label: "Our Specialties", path: "/our-specialities" },
+  { label: "Blogs", path: "/blogs" },
+  {
+    label: "Book an Appointment",
+    path: "https://calendly.com/key_medsolutions_inc/30min",
+    external: true,
   },
-  "/medical-billing-coding-services": {
-    title: "Medical Coding Services | Medical Billing Services",
-    data: [
-      {
-        key: "title",
-        value: "Medical Coding Services | Medical Billing Services",
-      },
-      {
-        key: "description",
-        value:
-          "Certified medical coding services ensure accuracy. Our medical billing services reduce denials and speed up reimbursements for your practice.",
-      },
-    ],
-  },
-  "/about-us": {
-    title: "About Key MedSolutions | Medical Billing Experts",
-    data: [
-      {
-        key: "title",
-        value: "About Key MedSolutions | Medical Billing Experts",
-      },
-      {
-        key: "description",
-        value:
-          "Discover how Key MedSolutions delivers expert medical billing and coding services to help healthcare providers boost revenue and streamline operations.",
-      },
-    ],
-  },
-  "/internal-medicine-and-nephrology-billing-service": {
-    title: "Internal Medicine and Nephrology Medical Billing Services",
-    data: [
-      {
-        key: "title",
-        value: "Internal Medicine and Nephrology Medical Billing Services",
-      },
-      {
-        key: "description",
-        value:
-          "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
-      },
-    ],
-  },
-  "/physician-billing-services": {
-    title: "Physician Billing Services | Physician Billing Company",
-    data: [
-      {
-        key: "title",
-        value: "Physician Billing Services | Physician Billing Company",
-      },
-      {
-        key: "description",
-        value:
-          "Boost revenue and streamline your practice with Key MedSolutions' physician billing services. Tailored solutions and efficient RCM. Request a free demo today!",
-      },
-    ],
-  },
-  "/ICD-10-medical-coding": {
-    title: "ICD-10 Medical Coding Services for Healthcare Providers ",
-    data: [
-      {
-        key: "title",
-        value: "ICD-10 Medical Coding Services for Healthcare Providers ",
-      },
-      {
-        key: "description",
-        value:
-          "Ensure accurate, compliant ICD-10 medical coding with our expert services. Maximize reimbursements, reduce errors, and streamline your revenue cycle.",
-      },
-    ],
-  },
-  "/radiology-billing-services": {
-    title: "Specialized Radiology Medical Billing Services by KeyMed",
-    data: [
-      {
-        key: "title",
-        value: "Specialized Radiology Medical Billing Services by KeyMed",
-      },
-      {
-        key: "description",
-        value:
-          "Increase revenue with specialized radiology billing services, expert coding, accurate claim submissions, and enhanced collection processes. Book a demo today!",
-      },
-    ],
-  },
-  "/cardiology-medical-billing": {
-    title: "Expert Cardiology Medical Billing Services by KeyMed",
-    data: [
-      {
-        key: "title",
-        value: "Expert Cardiology Medical Billing Services by KeyMed",
-      },
-      {
-        key: "description",
-        value:
-          "Our cardiology medical billing services streamline revenue cycle management, boosting collections and financial outcomes for your practice. Book a demo today!",
-      },
-    ],
-  },
-  "/improving-your-financial-health-with-profit-enhancement-services": {
-    title: "Boost Profitability with Expert Profit Enhancement Services",
-    data: [
-      {
-        key: "title",
-        value: "Boost Profitability with Expert Profit Enhancement Services",
-      },
-      {
-        key: "description",
-        value:
-          "Enhance financial health with tailored profit enhancement services. Reduce costs, maximize revenue, and improve business growth with expert financial strategies.",
-      },
-    ],
-  },
-  "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
-    {
-      title: "Expert Medical Billing & Collection Services | Boost Revenue",
-      data: [
-        {
-          key: "title",
-          value: "Expert Medical Billing & Collection Services | Boost Revenue",
-        },
-        {
-          key: "description",
-          value:
-            "Partner with our expert team for medical billing and collection services. Reduce claim denials, accelerate reimbursements, and enhance revenue cycle efficiency.",
-        },
-      ],
-    },
-  "/streamlining-medical-AR-recovery": {
-    title: "AR Recovery Services | Accounts Receivable Recovery Solutions",
-    data: [
-      {
-        key: "title",
-        value: "AR Recovery Services | Accounts Receivable Recovery Solutions",
-      },
-      {
-        key: "description",
-        value:
-          "Maximize collections with accounts receivable recovery solutions. AR recovery services help improve cash flow and reduce outstanding balances effectively.",
-      },
-    ],
-  },
-  "/practice-management": {
-    title: "Physician Practice Management Services | Key MedSolutions ",
-    data: [
-      {
-        key: "title",
-        value: "Physician Practice Management Services | Key MedSolutions ",
-      },
-      {
-        key: "description",
-        value:
-          "Optimize your practice with expert physician practice management services. Enhance efficiency, compliance, and revenue with tailored solutions. Book a demo today!",
-      },
-    ],
-  },
-  "/verification-of-healthcare-insurance-eligibility": {
-    title: "Realtime Insurance Eligibility Verification Services",
-    data: [
-      {
-        key: "title",
-        value: "Realtime Insurance Eligibility Verification Services",
-      },
-      {
-        key: "description",
-        value:
-          "Ensure accurate insurance eligibility with real-time verification services. Improve patient intake and reduce claim issues. Book a demo today!",
-      },
-    ],
-  },
-  "/revenue-cycle-management-company": {
-    title: "Healthcare Revenue Cycle Management Solutions | RCM Services",
-    data: [
-      {
-        key: "title",
-        value: "Healthcare Revenue Cycle Management Solutions | RCM Services",
-      },
-      {
-        key: "description",
-        value:
-          "Optimize revenue with our healthcare revenue cycle management solutions and services. Expert billing, coding, and claims management to increase reimbursements.",
-      },
-    ],
-  },
-  "/denial-management-service": {
-    title: "Denial Management And Resolution Services | Key Medsolution",
-    data: [
-      {
-        key: "title",
-        value: "Denial Management And Resolution Services | Key Medsolution",
-      },
-      {
-        key: "description",
-        value:
-          "KeyMed's denial management and resolution services help reduce claim denials, improve recovery rates, and streamline your revenue cycle with expert support.",
-      },
-    ],
-  },
-  "/physician-credentialing": {
-    title: "Medical Credentialing and Insurance Credentialing Services",
-    data: [
-      {
-        key: "title",
-        value: "Medical Credentialing and Insurance Credentialing Services",
-      },
-      {
-        key: "description",
-        value:
-          "Optimize your practice with medical and insurance credentialing services. Ensure timely approvals, reduce claim denials, and improve revenue cycle efficiency.",
-      },
-    ],
-  },
-  "/our-specialities": {
-    title: "KeyMed Revenue Support for Healthcare & Multiple Specialties",
-    data: [
-      {
-        key: "title",
-        value: "KeyMed Revenue Support for Healthcare & Multiple Specialties",
-      },
-      {
-        key: "description",
-        value:
-          "KeyMed offers expert revenue support for healthcare providers across specialties, optimizing revenue cycles and reducing claim denials with tailored solutions.",
-      },
-    ],
-  },
-  "/blogs": {
-    title: "KeyMed Solutions Blog: Healthcare Insights & Revenue Tips",
-    data: [
-      {
-        key: "title",
-        value: "KeyMed Solutions Blog: Healthcare Insights & Revenue Tips",
-      },
-      {
-        key: "description",
-        value:
-          "Explore KeyMed's blog for expert insights on healthcare trends, revenue cycle management, and solutions to optimize your practice's financial performance.",
-      },
-    ],
-  },
-  "/contact-us": {
-    title: "Contact KeyMed for Expert Healthcare Revenue Solutions",
-    data: [
-      {
-        key: "title",
-        value: "Contact KeyMed for Expert Healthcare Revenue Solutions",
-      },
-      {
-        key: "description",
-        value:
-          "Reach out to KeyMed for expert revenue cycle management and healthcare support. Our team is ready to help optimize your processes and reduce claim denials.",
-      },
-    ],
-  },
-  Blogs: {
-    title:"",
-    data: [
-      {
-        key: "title",
-        value: "Blogs",
-      },
-      {
-        key: "description",
-        value:""
-      },
-    ],
-  },
-  "/how-medical-coding-impacts-the-revenue-cycle": {
-    title: "How Medical Coding Impacts Your Revenue Cycle Management?",
-    data: [
-      {
-        key: "title",
-        value: "How Medical Coding Impacts Your Revenue Cycle Management?",
-      },
-      {
-        key: "description",
-        value:
-          "Explore how precise medical coding enhances the revenue cycle by ensuring accurate claims, improving reimbursement, and reducing denials for healthcare providers.",
-      },
-    ],
-  },
-  "/how-AI-is-improving-medical-coding-processes-accuracy-and-efficiency": {
-    title: "How AI Improving Medical Coding Accuracy and Efficiency?",
-    data: [
-      {
-        key: "title",
-        value: "How AI Improving Medical Coding Accuracy and Efficiency?",
-      },
-      {
-        key: "description",
-        value:
-          "Discover how AI boosts accuracy and efficiency in medical coding, streamlining processes, reducing errors, and improving reimbursement cycles.",
-      },
-    ],
-  },
-  "/boost-your-practice's-performance-with-revenue-cycle-kpis": {
-    title: "Boost Practice Performance with Revenue Cycle KPIs",
-    data: [
-      {
-        key: "title",
-        value: "Boost Practice Performance with Revenue Cycle KPIs",
-      },
-      {
-        key: "description",
-        value:
-          "Improve your practice's revenue cycle with KeyMed's KPIs. Optimize financial performance, reduce inefficiencies, and enhance growth using targeted metrics.",
-      },
-    ],
-  },
-  "/how-chiropractic-billing-services-work-for-medicare-beneficiaries": {
-    title: "Chiropractic Billing Services for Medicare Beneficiaries",
-    data: [
-      {
-        key: "title",
-        value: "Chiropractic Billing Services for Medicare Beneficiaries",
-      },
-      {
-        key: "description",
-        value:
-          "Learn how chiropractic billing services help Medicare beneficiaries. Ensure accurate claims processing and maximize reimbursement with professional billing support.",
-      },
-    ],
-  },
-  "/optimize-healthcare-Finances-rcm-mastery-unleashed": {
-    title: "Optimize Healthcare Finances: RCM Mastery Unleashed",
-    data: [
-      {
-        key: "title",
-        value: "Optimize Healthcare Finances: RCM Mastery Unleashed",
-      },
-      {
-        key: "description",
-        value:
-          "Unlock the potential of your healthcare finances with RCM mastery. Improve efficiency, reduce errors, and boost revenue with expert management solutions.",
-      },
-    ],
-  },
+];
+
+// Key mapping for clarity and small related keys
+const customKeyMap= {
+  "Home": "home",
+  "About Us": "about",
+  "Services": "services",
+  "Physician Billing Services": "physicianBilling",
+  "Medical Claim Billing": "claimBilling",
+  "Internal Medicine & Nephrology Billing Services": "internalMedicine",
+  "Radiology Billing Services": "radiologyBilling",
+  "Cardiology Medical Billing": "cardiologyBilling",
+  "Improving Your Financial Health with Profit Enhancement Services": "profitEnhancement",
+  "Medical Billing & Coding Services": "codingServices",
+  "ICD-10 Medical Coding": "icd10Coding",
+  "Maximize Your Reimbursement Rate with Our Medical Billing and Collection Services": "reimbursementRate",
+  "Streamlining Medical AR Recovery": "arRecovery",
+  "Practice Management": "practiceMgmt",
+  "Verification of Healthcare Insurance Eligibility": "insuranceVerification",
+  "Revenue Cycle Management Company (RCM)": "rcmCompany",
+  "Denial Management Services": "denialMgmt",
+  "Physician Credentialing": "credentialing",
+  "Medical Billing Services": "billingServices",
+  "Our Specialties": "specialties",
+  "Blogs": "blogs",
+  "Book an Appointment": "appointment",
 };
 
+function buildNestedMap(items) {
+  const result = {};
 
-const metaData={}
+  for (const item of items) {
+    const key = customKeyMap[item.label] || camelize(item.label);
 
-Object.keys(SiteMetaData).forEach((key) => {
+    const entry = { path: item.path };
+    if (item.external) entry.external = true;
 
-    const items={}
-    const data=SiteMetaData[key].data
-    data.forEach((item) => {
-      items[item.key] = item.value;
-    });
+    if (item.subMenu) {
+      entry.children = buildNestedMap(item.subMenu);
+    }
 
-    metaData[key] = {
-      ...items,
-      title: SiteMetaData[key].title,
-    };
+    result[key] = entry;
+  }
+
+  return result;
+}
+
+function camelize(label) {
+  return label
+    .replace(/[^a-zA-Z0-9 ]/g, "")
+    .split(" ")
+    .map((w, i) =>
+      i === 0 ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()
+    )
+    .join("");
+}
+
+const PATH_APP = buildNestedMap(MenuItems);
+
+console.log(PATH_APP);
+
+
+fs.writeFile("PATH_APP.ts", JSON.stringify(PATH_APP), (err) => {
+  if (err) {
+    console.error("Error writing file:", err);
+  } else {
+    console.log("File has been saved!");
+  }
 });
-
-fs.writeFileSync(
-  "./src/metaData.json",
-  JSON.stringify(metaData, null, 2)
-);

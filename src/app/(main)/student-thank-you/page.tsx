@@ -42,7 +42,7 @@ const Thankyou = () => {
                 >
                     Our team will contact you shortly to discuss the next steps.
                 </motion.div>
-                <p className="tw-font-bold tw-my-3 tw-text-wrap tw-text-sm">If you need immediate assistance, feel free to call us at  +1 (336) 496-8296.</p>
+                <p className="tw-font-bold tw-my-3 tw-text-wrap tw-text-sm">If you need immediate assistance, feel free to call us at  {ContactInfo.phone}.</p>
                 <Link href="/"> <button type="button" className="tw-py-3 tw-px-6 tw-bg-accentOrange-500 tw-text-white tw-rounded-3xl hover:tw-bg-white hover:tw-text-accentOrange-500 tw-transition-colors tw-duration-300">Back to home</button></Link>
             </motion.div>
         </BackgroundLines>

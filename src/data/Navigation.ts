@@ -60,6 +60,7 @@ export const MenuItems: any = [
         path: "/denial-management-service",
       },
       { label: "Physician Credentialing", path: "/physician-credentialing" },
+      { label: "Medical Billing Services", path: "/medical-billing-services" },
     ],
   },
   { label: "Our Specialties", path: "/our-specialities" },

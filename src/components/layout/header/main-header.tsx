@@ -5,12 +5,13 @@ import Sticky from "react-stickynode";
 const logo = "/images/logo/logo.png";
 import Link from "next/link";
 import { DesktopMenu } from './desktop-menu';
-import { MenuItems } from '@/lib/menu-items';
 import { MobileMenu } from './mobile-menu';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
-
+import { ContactInfo } from '@/constant/constatnt';
+import {sanitizePhoneNumber } from '@/lib/utils';
+import { MenuItems } from '@/data/menu-items';
 
 
 const MainHeader = () => {
@@ -82,8 +83,8 @@ const MainHeader = () => {
                             <div className="secondary-menu desktop-menu">
                                 <ul>
                                     <li className="num-bx">
-                                        <a href="tel:+13364999299">
-                                            <i className="fas fa-phone-alt"></i>+1 (336) 499-9299
+                                        <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone2)}`}>
+                                            <i className="fas fa-phone-alt"></i>{ContactInfo.phone2}
                                         </a>
                                     </li>
                                     <li className="btn-area ">

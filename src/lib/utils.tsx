@@ -96,3 +96,9 @@ export const GeratePageMetaData = (pathName: string, url: string = ""): Metadata
 
   return { ...data, ...metaDetails }
 }
+
+
+export function sanitizePhoneNumber(phone: string): string {
+  return phone.replace(/[\s()-]/g, '');
+}
+
