@@ -7,14 +7,14 @@ export const SiteMetaData: ISiteMetaData = {
       "Key Medsolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
   },
   "/medical-claim-billing": {
-    title: "Medical Claim Billing Services & Solutions | Key MedSolution",
+    title: "Top Medical Claims Services and Solutions for Healthcare",
     description:
-      "Optimize your revenue cycle with our expert medical claim billing services and solutions. Ensure accurate claims processing and maximize reimbursements.",
+      "Streamline your healthcare billing with our top Medical Claims Services and Solutions. Maximize reimbursements, ensure accuracy, and improve claim efficiency.",
   },
   "/medical-billing-coding-services": {
-    title: "Medical Coding Services | Medical Billing Services",
+    title: "Accurate Medical Coding Services | HIPAA-Compliant",
     description:
-      "Certified medical coding services ensure accuracy. Our medical billing services reduce denials and speed up reimbursements for your practice.",
+      "Get Accurate Medical Coding Services with full HIPAA compliance. Ensure precise coding, faster claims processing, and secure healthcare data management.",
   },
   "/about-us": {
     title: "About Key MedSolutions | Medical Billing Experts",
@@ -27,9 +27,9 @@ export const SiteMetaData: ISiteMetaData = {
       "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
   },
   "/physician-billing-services": {
-    title: "Physician Billing Services | Physician Billing Company",
+    title: "Physician Billing Solutions | Physician Billing Services",
     description:
-      "Boost revenue and streamline your practice with Key MedSolutions' physician billing services. Tailored solutions and efficient RCM. Request a free demo today!",
+      " Discover reliable physician billing services and physician billing solutions to streamline revenue cycle management, reduce denials, and boost practice profitability.",
   },
   "/ICD-10-medical-coding": {
     title: "ICD-10 Medical Coding Services for Healthcare Providers ",
