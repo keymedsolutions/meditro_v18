@@ -1,5 +1,8 @@
 User-Agent: *
 Allow: *.js
 Allow: *.css
-Disallow: 
+Disallow: /doctor-thank-you
+Disallow: /student-thank-you
+Disallow: /privacy-policy
+
 Sitemap: https://www.keymedsolution.com/sitemap.xml

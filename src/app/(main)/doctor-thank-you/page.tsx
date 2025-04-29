@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion"
 import { BackgroundLines } from "@/components/ui/background-lines";
 import Link from "next/link";
+import { ContactInfo } from "@/constant/constatnt";
 const ThankYouImage = "/images/home/thank-you.jpg";
 
 const Thankyou = () => {
@@ -43,7 +44,7 @@ const Thankyou = () => {
                 >
                    A member of our team will reach out shortly to discuss how we can support your practice.
                 </motion.div>
-                <p className="tw-font-bold tw-my-3 tw-text-wrap tw-text-sm">For urgent inquiries, please call us directly at  +1 (336) 496-8296.</p>
+                <p className="tw-font-bold tw-my-3 tw-text-wrap tw-text-sm">For urgent inquiries, please call us directly at  {ContactInfo.phone}.</p>
                 <Link href="/"> <button type="button" className="tw-py-3 tw-px-6 tw-bg-accentOrange-500 tw-text-white tw-rounded-3xl hover:tw-bg-white hover:tw-text-accentOrange-500 tw-transition-colors tw-duration-300">Back to home</button></Link>
             </motion.div>
         </BackgroundLines>

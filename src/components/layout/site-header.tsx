@@ -5,9 +5,9 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, ChevronDown, ChevronRight, Phone, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
+import { MenuItems } from "@/data/menu-items"
 
 // Import the menu items
-import { MenuItems } from "@/lib/menu-items"
 
 export default function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false)

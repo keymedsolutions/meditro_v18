@@ -166,4 +166,8 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Key MedSolution is a trusted Billing Services and RCM Company in the US. Improve claim accuracy, accelerate reimbursements, and boost your revenue cycle.",
   },
+  "/medical-billing-services":{
+    title:"Medical Billing Company | Trusted Medical Billing Service",
+    description:"Reliable, HIPAA-compliant medical billing services from a top-rated medical billing company. Boost revenue, reduce denials, and streamline your practice today."
+  }
 };

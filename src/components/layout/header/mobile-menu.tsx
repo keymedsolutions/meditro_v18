@@ -6,6 +6,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { SocialAccountLinks } from "@/constant/constatnt"
 
 interface MenuItem {
     label: string
@@ -130,16 +131,16 @@ export const MobileMenu = ({ items, isOpen, onClose }: MobileMenuProps) => {
                 <div className="tw-p-4 tw-border-t  tw-flex tw-justify-center tw-space-x-4">
                     <ul className="social-media !tw-m-0 !tw-p-0">
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" className=" btn-primary"><i className="fab fa-facebook-f"></i></a>
+                            <a target="_blank" rel="noreferrer" href={SocialAccountLinks.FACEBOOK} className=" btn-primary"><i className="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://www.google.com/" className=" btn-primary"><i className="fab fa-google"></i></a>
+                            <a target="_blank" rel="noreferrer" href={SocialAccountLinks.GOOGLE} className=" btn-primary"><i className="fab fa-google"></i></a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/" className=" btn-primary"><i className="fab fa-linkedin-in"></i></a>
+                            <a target="_blank" rel="noreferrer" href={SocialAccountLinks.LINKEDIN} className=" btn-primary"><i className="fab fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="https://twitter.com/" className=" btn-primary"><i className="fab fa-twitter"></i></a>
+                            <a target="_blank" rel="noreferrer" href={SocialAccountLinks.TWITTER} className=" btn-primary"><i className="fab fa-twitter"></i></a>
                         </li>
                     </ul>
                 </div>

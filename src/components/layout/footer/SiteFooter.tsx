@@ -1,3 +1,5 @@
+import { ContactInfo, SocialAccountLinks } from "@/constant/constatnt";
+import { sanitizePhoneNumber } from "@/lib/utils";
 import Link from "next/link";
 
 // Images
@@ -75,15 +77,11 @@ const SiteFooter = () => {
                 </div>
                 <div className="contact-number">
                   <span>Contact Us</span>
-                  <a href="mailto:info@keymedsolution.com">
-                    info@keymedsolution.com
+                  <a href={`mailto:${ContactInfo.email}`}>
+                    {ContactInfo.email}
                   </a>
                   <br />
-                  <a href="tel:+13364999299">+1 (336) 499-9299</a>
-                  <br />
-                  <a href="javascript:void(0)">
-                    717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States
-                  </a>
+                  <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`}>{ContactInfo.phone}</a>
                 </div>
               </div>
               <br />
@@ -93,7 +91,7 @@ const SiteFooter = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      href="https://www.facebook.com/people/Key-Medsolution/100093008652071/"
+                      href={SocialAccountLinks.FACEBOOK}
                     >
                       <i className="fab fa-facebook"></i>
                     </a>
@@ -102,7 +100,7 @@ const SiteFooter = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      href="https://www.linkedin.com/company/key-medsolutions/"
+                      href={SocialAccountLinks.LINKEDIN}
                     >
                       <i className="fab fa-linkedin"></i>
                     </a>
@@ -111,7 +109,7 @@ const SiteFooter = () => {
                     <a
                       rel="noreferrer"
                       target="_blank"
-                      href="https://www.instagram.com/key_medsolution/"
+                      href={SocialAccountLinks.INSTAGRAM}
                     >
                       <i className="fab fa-instagram"></i>
                     </a>

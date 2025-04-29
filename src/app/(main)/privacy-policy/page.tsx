@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import Breadcrumb from '@/components/ui/breadcrumb'
+import { ContactInfo } from '@/constant/constatnt'
 import React from 'react'
 
 const PrivacyPolicy = () => {
@@ -114,8 +115,8 @@ const PrivacyPolicy = () => {
 
                             <div >
                                 <p><strong className="tw-font-bold">Key Medsolutions Inc.</strong><br />
-                                    Email: <a href="mailto:info@keymedsolution.com">info@keymedsolution.com</a><br />
-                                    Phone: <a href="tel:+13364968296">+1 (336) 496-8296</a>
+                                    Email: <a href={`mailto:${ContactInfo.email}`}>{ContactInfo.email}</a><br />
+                                    Phone: <a href="tel:+13364968296">{ContactInfo.phone}</a>
                                 </p>
                             </div>
                         </div>

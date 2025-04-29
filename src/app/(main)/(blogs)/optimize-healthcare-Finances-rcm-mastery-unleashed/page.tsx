@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import BlogShareButton from "@/components/blog/blog-share-button";
 import Breadcrumb from "@/components/ui/breadcrumb";
 import Link from "next/link";
 
@@ -105,14 +106,7 @@ const OptimizeHealthcareFinancesRcmMastersUnleashedPage = () => {
                                                 <Link to="#">Growth</Link> 
                                                 <Link to="#">Life</Link> 
                                             </div> */}
-                                        <div className="share-post ml-auto">
-                                            <ul className="social-media mb-0">
-                                                <li><strong>Share:</strong></li>
-                                                <li><a rel="noreferrer" target="_blank" href="https://www.facebook.com/people/Key-Medsolution/100093008652071/"><i className="fab fa-facebook"></i></a></li>
-                                                <li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/company/key-medsolutions/"><i className="fab fa-linkedin"></i></a></li>
-                                                <li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/key_medsolution/"><i className="fab fa-instagram"></i></a></li>
-                                            </ul>
-                                        </div>
+                                       <BlogShareButton />
                                     </div>
                                 </div>
                             </div>

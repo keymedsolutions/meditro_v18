@@ -2,6 +2,8 @@
 // import ContactForm from "@/components/elements/ContactForm";
 import ConatctDetsilsForm1 from "@/components/elements/ConatctDetsilsForm1";
 import Breadcrumb from "@/components/ui/breadcrumb";
+import { ContactInfo, SocialAccountLinks } from "@/constant/constatnt";
+import { sanitizePhoneNumber } from "@/lib/utils";
 
 const pic1 = "/images/about/pic-1.jpg";
 const icon1 = "/images/icon/icon1.png";
@@ -35,20 +37,20 @@ const ContactUsPage = () => {
 										<h4 className="title mb-30">Contact Us For Any Informations</h4>
 										<div className="icon-box">
 											<h6 className="title"><i className="ti-map-alt"></i>Location</h6>
-											<p className="tw-text-white">717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States</p>
+											<p className="tw-text-white">{ContactInfo.location}</p>
 										</div>
 										<div className="icon-box">
 											<h6 className="title"><i className="ti-id-badge"></i>Email &amp; Phone</h6>
-											<a href="mailto:info@keymedsolution.com" className="tw-text-white">info@keymedsolution.com</a>
+											<a href={`mailto:${ContactInfo.email}`} className="tw-text-white">{ContactInfo.email}</a>
 											<br />
-											<a href="tel:+13362906077" className="tw-text-white">+1 (336) 290-6077</a>
+											<a href={sanitizePhoneNumber(ContactInfo.phone)} className="tw-text-white">{ContactInfo.phone}</a>
 										</div>
 										<div className="icon-box">
 											<h6 className="title"><i className="ti-world"></i>Follow Us</h6>
 											<ul className="social-media">
-												<li><a rel="noreferrer" target="_blank" href="https://twitter.com/"><i className="fab fa-twitter"></i></a></li>
-												<li><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/"><i className="fab fa-linkedin"></i></a></li>
-												<li><a rel="noreferrer" target="_blank" href="https://www.instagram.com/"><i className="fab fa-instagram"></i></a></li>
+												<li><a rel="noreferrer" target="_blank" href={SocialAccountLinks.TWITTER}><i className="fab fa-twitter"></i></a></li>
+												<li><a rel="noreferrer" target="_blank" href={SocialAccountLinks.INSTAGRAM}><i className="fab fa-linkedin"></i></a></li>
+												<li><a rel="noreferrer" target="_blank" href={SocialAccountLinks.INSTAGRAM}><i className="fab fa-instagram"></i></a></li>
 											</ul>
 										</div>
 									</div>
@@ -69,7 +71,7 @@ const ContactUsPage = () => {
 								</div>
 								<div className="icon-content">
 									<h5 className="ttr-title">Contact Number</h5><br />
-									<p><a href="tel:+13362906077">+1 (336) 290-6077</a></p>
+									<a href={sanitizePhoneNumber(ContactInfo.phone)} className="tw-text-white">{ContactInfo.phone}</a>
 								</div>
 							</div>
 						</div>
@@ -80,7 +82,7 @@ const ContactUsPage = () => {
 								</div>
 								<div className="icon-content">
 									<h5 className="ttr-title">Email Address</h5>
-									<p>info@keymedsolution.com</p>
+									<p>{ContactInfo.email}</p>
 								</div>
 							</div>
 						</div>
@@ -91,7 +93,7 @@ const ContactUsPage = () => {
 								</div>
 								<div className="icon-content">
 									<h5 className="ttr-title">Address</h5>
-									<p>717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States</p>
+									<p>{ContactInfo.location}</p>
 								</div>
 							</div>
 						</div>
