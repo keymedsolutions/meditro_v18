@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion"
 import { BackgroundLines } from "@/components/ui/background-lines";
 import Link from "next/link";
+import { ContactInfo } from "@/constant/constatnt";
 const ThankYouImage = "/images/home/thank-you.jpg";
 
 const Thankyou = () => {
