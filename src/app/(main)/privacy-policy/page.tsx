@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Breadcrumb from '@/components/ui/breadcrumb'
 import { ContactInfo } from '@/constant/constatnt'
+import { sanitizePhoneNumber } from '@/lib/utils'
 import React from 'react'
 
 const PrivacyPolicy = () => {
@@ -116,7 +117,7 @@ const PrivacyPolicy = () => {
                             <div >
                                 <p><strong className="tw-font-bold">Key Medsolutions Inc.</strong><br />
                                     Email: <a href={`mailto:${ContactInfo.email}`}>{ContactInfo.email}</a><br />
-                                    Phone: <a href="tel:+13364968296">{ContactInfo.phone}</a>
+                                    Phone: <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`}>{ContactInfo.phone}</a>
                                 </p>
                             </div>
                         </div>

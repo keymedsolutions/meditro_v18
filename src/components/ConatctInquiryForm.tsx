@@ -2,6 +2,7 @@
 "use client"
 import { ContactInfo, SocialAccountLinks } from '@/constant/constatnt';
 import ConatctDetsilsForm1 from './elements/ConatctDetsilsForm1';
+import { sanitizePhoneNumber } from '@/lib/utils';
 
 
 const ConatctInquiryForm = () => {
@@ -12,7 +13,7 @@ const ConatctInquiryForm = () => {
                 <div className="contact-wraper">
                     <div className="row">
                         <div className="col-lg-6 mb-30">
-                         <ConatctDetsilsForm1 />
+                            <ConatctDetsilsForm1 />
                         </div>
                         <div className="col-lg-6 mb-30">
                             <div className="contact-info ovpr-dark" style={{ backgroundImage: `url("/images/about/pic-1.jpg")` }}>
@@ -25,7 +26,7 @@ const ConatctInquiryForm = () => {
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-id-badge"></i> Email &amp; Phone</h6>
                                         <a href={`mailto:${ContactInfo.email}`} className="text-white">{ContactInfo.email}</a><br />
-                                        <a href='tel:+13364968296' className='tw-text-white'>{ContactInfo.phone}</a>
+                                        <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className='tw-text-white'>{ContactInfo.phone}</a>
                                     </div>
                                     <div className="icon-box">
                                         <h6 className="title"><i className="ti-world"></i> Follow Us</h6>
