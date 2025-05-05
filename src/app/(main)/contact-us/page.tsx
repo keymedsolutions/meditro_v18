@@ -43,7 +43,7 @@ const ContactUsPage = () => {
 											<h6 className="title"><i className="ti-id-badge"></i>Email &amp; Phone</h6>
 											<a href={`mailto:${ContactInfo.email}`} className="tw-text-white">{ContactInfo.email}</a>
 											<br />
-											<a href={sanitizePhoneNumber(ContactInfo.phone)} className="tw-text-white">{ContactInfo.phone}</a>
+											<a href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className="tw-text-white">{ContactInfo.phone}</a>
 										</div>
 										<div className="icon-box">
 											<h6 className="title"><i className="ti-world"></i>Follow Us</h6>
@@ -71,7 +71,7 @@ const ContactUsPage = () => {
 								</div>
 								<div className="icon-content">
 									<h5 className="ttr-title">Contact Number</h5><br />
-									<a href={sanitizePhoneNumber(ContactInfo.phone)} className="tw-text-white">{ContactInfo.phone}</a>
+									<a  href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className="tw-text-white">{ContactInfo.phone}</a>
 								</div>
 							</div>
 						</div>
