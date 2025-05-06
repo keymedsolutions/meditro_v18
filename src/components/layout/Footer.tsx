@@ -44,6 +44,12 @@ const Footer = () => {
                                             ICD-10 Medical Coding
                                         </Link>
                                     </li>
+                                    <li>
+                                        <Link href="/pricing">
+                                            Pricing and Plans
+                                        </Link>
+                                    </li>
+
 
                                     <li>
                                         <Link href="/privacy-policy">
