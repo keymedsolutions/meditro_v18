@@ -1,6 +1,8 @@
 /* ==================
 	8.23 Work Box
 =================== */
+
+
 .work-area{
 	.pt-img1{
 		bottom: 15%;
@@ -118,6 +120,49 @@
 			.btn-icon-bx {
 				background-color: $secondary;
 				color: #fff;
+			}
+		}
+	}
+}
+.plan-sections{
+
+	.work-bx{
+min-height: 600px !important;
+display: flex;
+flex-direction:column;
+justify-content:space-around;
+align-items:center;
+
+
+.work-content{
+	margin-top: 30px;
+}
+
+		&:hover{
+			.work-content{
+				li{
+					color:white !important;
+					
+				}
+				.list-check-squer li:before{
+					background-color:white!important;
+					color: $secondary!important;
+					border-radius: 50% !important;
+				}
+			}
+
+		}
+	}
+	.work-bx.active{
+		.work-content{
+			li{
+				color:white !important;
+				
+			}
+			.list-check-squer li:before{
+				background-color:white!important;
+				color: $secondary!important;
+				border-radius: 50% !important;
 			}
 		}
 	}
