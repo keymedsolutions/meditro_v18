@@ -9,16 +9,21 @@ export async function POST(req: Request) {
     let subject = "New Evaluation Form Submission";
 
     let html = "";
-    if (data.usedFor === "contactus") {
-      subject = "New Contact Form Submission";
+
+    if (["contactus", "plans"].includes(data.usedFor)) {
+      subject =
+        data.usedFor === "plans"
+          ? "Plan Subscribe Submission"
+          : "New Contact Form Submission";
       const details: any = [];
       delete data.usedFor;
       Object.keys(data).forEach((key) => {
-
-        if(data[key]){
-          const html = `<p style="margin: 10px 0;text-transform: capitalize;"><strong style="margin-right: 10px;" >${key.replaceAll("_"," ")}:</strong>${data[key]}</p>`;
+        if (data[key]) {
+          const html = `<p style="margin: 10px 0;text-transform: capitalize;"><strong style="margin-right: 10px;" >${key.replaceAll(
+            "_",
+            " "
+          )}:</strong>${data[key]}</p>`;
           details.push(html);
-
         }
       });
 
@@ -27,13 +32,13 @@ export async function POST(req: Request) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Contact Form Submission</title>
+    <title>${subject}</title>
 </head>
 <body style="font-family: Arial, sans-serif; color: #333; line-height: 1.6; margin: 0; padding: 0;">
 
     <div style="width: 100%; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f4f4f4;">
         <div style="background-color: #007BFF; color: white; padding: 10px; text-align: center; border-radius: 8px;">
-            <h2 style="margin: 0; font-size: 24px;">New Contact Form Submission</h2>
+            <h2 style="margin: 0; font-size: 24px;">${subject}</h2>
         </div>
 
         <div style="background-color: #ffffff; padding: 20px; border-radius: 8px; margin-top: 20px; border: 1px solid #ddd;">
