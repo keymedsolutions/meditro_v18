@@ -34,11 +34,12 @@
 			&:after {
 				content: "";
 				height: 100%;
-				width: 100%;
+				width: 100% !important;
 				background-color: $secondary;
 				position: absolute;
 				top: auto;
 				bottom: 0;
+				left: 0;
 				z-index: -1;
 				transform-origin: bottom;
 				animation-duration: 0.5s;
