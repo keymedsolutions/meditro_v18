@@ -769,4 +769,98 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
+
+  "/medical-billing-services": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          name: "Medical Billing Services | Trusted Medical Billing Company",
+          serviceType: "Medical Billing Services",
+          description:
+            "Get HIPAA-compliant medical billing services from Key MedSolutions — a trusted partner for revenue cycle management. Reduce denials, improve cash flow, and ensure accurate reimbursements.",
+          category: "Healthcare RCM Service",
+          audience: {
+            "@type": "Audience",
+            audienceType: "Healthcare Providers",
+          },
+          provider: {
+            "@type": "Organization",
+            name: "Key MedSolutions",
+            url: "https://www.keymedsolution.com/",
+            logo: "https://www.keymedsolution.com/images/logo/logo.png",
+            email: "info@keymedsolution.com",
+            telephone: "‪+1-336-499-9299‬",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "717 Green Valley Rd Suite 200",
+              addressLocality: "Greensboro",
+              addressRegion: "NC",
+              postalCode: "27408",
+              addressCountry: "US",
+            },
+          },
+          areaServed: {
+            "@type": "Country",
+            name: "United States",
+          },
+          url: "https://www.keymedsolution.com/medical-billing-services",
+        },
+        {
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "What are medical billing services and how do they help my practice?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Medical billing services handle claim submissions and follow-ups with insurance companies to ensure timely and accurate reimbursement for your practice.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Are your billing services HIPAA-compliant?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes, all our medical billing services are fully HIPAA-compliant, with encrypted systems and strict protocols to protect sensitive patient data.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How do your services benefit healthcare providers in Greensboro, NC?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "We offer localized support in Greensboro, NC, delivering affordable medical billing solutions that reduce claim denials and enhance your revenue cycle.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Can I outsource only certain parts of the billing process?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes! We offer flexible solutions that let you outsource specific billing functions like coding, claim submissions, or denial management.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does your team stay current with changing regulations?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Our certified coders and billing experts undergo regular training and use the latest tools to stay compliant with Medicare, Medicaid, and private insurer policies.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What makes you the best medical billing company in Greensboro, USA?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "We combine value, technology, and expert support to help healthcare providers maximize revenue and patient satisfaction in Greensboro and beyond.",
+              },
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
