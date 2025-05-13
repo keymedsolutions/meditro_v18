@@ -7,9 +7,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Key Medsolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
   },
   "/medical-claim-billing": {
-    title: "Top Medical Claims Services and Solutions for Healthcare",
+    title: "Outsourced Healthcare Medical Claims Management Solutions",
     description:
-      "Streamline your healthcare billing with our top Medical Claims Services and Solutions. Maximize reimbursements, ensure accuracy, and improve claim efficiency.",
+      "Streamline your revenue with expert medical claims management outsourcing solutions. Reduce denials, boost collections, and improve operational efficiency.",
   },
   "/medical-billing-coding-services": {
     title: "Accurate Medical Coding Services | HIPAA-Compliant",
@@ -169,5 +169,9 @@ export const SiteMetaData: ISiteMetaData = {
   "/medical-billing-services":{
     title:"Medical Billing Services | Trusted Medical Billing Company",
     description:"Reliable, HIPAA-compliant medical billing services from a top-rated medical billing company. Boost revenue, reduce denials, and streamline your practice today."
+  },
+  "/pricing":{
+    title:"Affordable Online Medical Billing, Coding and RCM Courses",
+    description:"Start your career with affordable online courses in medical billing, coding, and revenue cycle management. Learn anytime with expert support from KeyMed Solution."
   }
 };
