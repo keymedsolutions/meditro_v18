@@ -10,7 +10,7 @@ export const AppConstant = {
 
 export const ContactInfo={
   email:"info@keymedsolution.com",
-  phone:"+1 (336) 496-8296",
+  phone:"+1 (336) 499-9299",
   phone2:"+1 (336) 499-9299",
   location:"717 Green Valley Rd Suite 200, Greensboro, NC 27408, United States"
 }
