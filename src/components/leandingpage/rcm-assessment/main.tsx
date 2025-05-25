@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { motion } from "framer-motion";
 import { Stethoscope, HeartPulse, Pill } from "lucide-react";

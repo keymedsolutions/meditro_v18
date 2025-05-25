@@ -19,7 +19,7 @@ const ServicesSection = () => {
         </div>
         <div className="row services">
           {specialties.map((title, index) => (
-            <div key={index} className="col-md-3 col-sm-6 col-12 mb-30">
+            <div key={index} className="col-md-4 col-sm-6 col-12 mb-30">
               <div className="feature-container feature-bx3">
                 <h5 className="ttr-title">{title}</h5>
               </div>
