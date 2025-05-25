@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // const Images
 const bg1 = '/images/background/line-bg1.png';
 const ptImg1 = '/images/shap/circle-orange.png';
@@ -11,12 +12,15 @@ const drchrono = '/images/drchrono.png'
 const eClinicWorks = '/images/eclinicalworks.svg'
 const epic = '/images/epic.png'
 const officeAlly = '/images/officeAlly.png'
-const practiceSuite = '/images/practicesuite.png'
+const practiceSuite = '/images/practicesuite1.png'
+
 
 
 const WorkSection = () => {
     return (
         <>
+
+
 
             <section className="section-area section-sp5 work-area" style={{ backgroundImage: "url(" + bg1 + ")", backgroundRepeat: " no-repeat", backgroundPosition: "center", backgroundSize: "100%" }}>
                 <div className="container-xl">
@@ -98,11 +102,10 @@ const WorkSection = () => {
                         </div>
                     </div>
                 </div>
-                <img className="pt-img1 animate1" src={ptImg1} alt="" />
-                <img className="pt-img2 animate2" src={ptImg2} alt="" />
-                <img className="pt-img3 animate3" src={ptImg3} alt="" />
+                <img className="pt-img1 animate1 tw-top-4" src={ptImg1} alt="" />
+                <img className="pt-img2  tw-bottom-5 tw-left-6" src={ptImg2} alt="" />
+                <img className="pt-img3 animate3 tw-right-2 tw-bottom-6" src={ptImg3} alt="" />
             </section>
-
         </>
     )
 }

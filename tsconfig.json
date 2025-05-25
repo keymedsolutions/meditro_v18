@@ -23,6 +23,6 @@
     },
     "typeRoots": ["./node_modules/@types", "./src/types"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/elements/Apo"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/elements/Apo", "src/components/v2/services/streamlining-medical-AR-recovery/StreamliningMedicalARRecoveryV12tsx"],
   "exclude": ["node_modules"]
 }

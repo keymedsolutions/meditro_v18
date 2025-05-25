@@ -12,9 +12,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Streamline your revenue with expert medical claims management outsourcing solutions. Reduce denials, boost collections, and improve operational efficiency.",
   },
   "/medical-billing-coding-services": {
-    title: "Accurate Medical Coding Services | HIPAA-Compliant",
+    title: "Medical Coding Services and Solutions | HIPAA-Compliant",
     description:
-      "Get Accurate Medical Coding Services with full HIPAA compliance. Ensure precise coding, faster claims processing, and secure healthcare data management.",
+      "Accurate, secure medical coding services and solutions for healthcare providers—ensuring HIPAA compliance, faster reimbursements, and revenue cycle improvement.",
   },
   "/about-us": {
     title: "About Key MedSolutions | Medical Billing Experts",
@@ -27,29 +27,29 @@ export const SiteMetaData: ISiteMetaData = {
       "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
   },
   "/physician-billing-services": {
-    title: "Physician Billing Solutions | Physician Billing Services",
+    title: "Trusted Physician Billing Solutions for Healthcare Providers",
     description:
-      " Discover reliable physician billing services and physician billing solutions to streamline revenue cycle management, reduce denials, and boost practice profitability.",
+      "Trusted physician billing solutions for healthcare providers to boost efficiency, reduce claim denials, and ensure accurate, timely reimbursements.",
   },
   "/ICD-10-medical-coding": {
-    title: "ICD-10 Medical Coding Services for Healthcare Providers ",
+    title: "ICD-10 Medical Coding Services for Precise Reimbursement ",
     description:
-      "Ensure accurate, compliant ICD-10 medical coding with our expert services. Maximize reimbursements, reduce errors, and streamline your revenue cycle.",
+      " Ensure accurate claims and faster reimbursements with expert ICD-10 medical coding services tailored for healthcare providers and facilities.",
   },
   "/radiology-billing-services": {
-    title: "Specialized Radiology Medical Billing Services by KeyMed",
+    title: "Specialized Radiology Medical Billing and Coding Services",
     description:
-      "Increase revenue with specialized radiology billing services, expert coding, accurate claim submissions, and enhanced collection processes. Book a demo today!",
+      " Expert radiology medical billing and coding services tailored for imaging centers. Ensure accuracy, compliance, and faster reimbursements with trusted solutions",
   },
   "/cardiology-medical-billing": {
-    title: "Expert Cardiology Medical Billing Services by KeyMed",
+    title: "Specialized Cardiology Medical Billing and Coding Services",
     description:
-      "Our cardiology medical billing services streamline revenue cycle management, boosting collections and financial outcomes for your practice. Book a demo today!",
+      "Get specialized cardiology medical billing and coding services to reduce claim denials, speed up reimbursements, and improve your practice’s revenue cycle.",
   },
   "/improving-your-financial-health-with-profit-enhancement-services": {
-    title: "Boost Profitability with Expert Profit Enhancement Services",
+    title: "Profit Enhancement Services for Healthcare Providers",
     description:
-      "Enhance financial health with tailored profit enhancement services. Reduce costs, maximize revenue, and improve business growth with expert financial strategies.",
+      "Improve financial performance with tailored profit enhancement services designed to help healthcare providers increase revenue and reduce inefficiencies.",
   },
   "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
     {
@@ -67,9 +67,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Optimize your practice with expert physician practice management services. Enhance efficiency, compliance, and revenue with tailored solutions. Book a demo today!",
   },
   "/verification-of-healthcare-insurance-eligibility": {
-    title: "Realtime Insurance Eligibility Verification Services",
+    title: "Insurance Eligibility and Benefits Verification Services",
     description:
-      "Ensure accurate insurance eligibility with real-time verification services. Improve patient intake and reduce claim issues. Book a demo today!",
+      " Ensure accurate insurance eligibility and benefits verification to reduce denials, improve patient experience, and accelerate your revenue cycle.",
   },
   "/revenue-cycle-management-company": {
     title: "Healthcare Revenue Cycle Management Solutions | RCM Services",

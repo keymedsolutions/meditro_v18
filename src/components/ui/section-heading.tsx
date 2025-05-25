@@ -1,9 +1,10 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion';
+import { cn } from '@/lib/utils';
 
 
-const SectionHeading = ({ title, subtitle, description, showUnderline = true }: { title: string, subtitle: string, description?: string, showUnderline?: boolean }) => {
+const SectionHeading = ({ title, subtitle, description, showUnderline = true, className }: { title: string, subtitle: string, description?: string, showUnderline?: boolean, className?: string }) => {
     return (
         <>
             {/* Title + Subtitle */}
@@ -24,11 +25,11 @@ const SectionHeading = ({ title, subtitle, description, showUnderline = true }: 
                 }
 
 
-                <motion.h2
+                <motion.h3
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.5 }}
-                    className="tw-text-3xl md:tw-text-4xl tw-font-bold tw-bg-clip-text tw-bg-gradient-to-r tw-from-primary-700 tw-to-secondary-700 tw-font-serif tw-relative tw-inline-block"
+                    className={cn('tw-text-2xl md:tw-text-4xl tw-font-bold tw-bg-clip-text tw-bg-gradient-to-r tw-from-primary-700 tw-to-secondary-700 tw-font-serif tw-relative tw-inline-block', className)}
                 >
                     {title}
                     {showUnderline && (
@@ -39,7 +40,7 @@ const SectionHeading = ({ title, subtitle, description, showUnderline = true }: 
                             transition={{ delay: 1.2, duration: 0.8 }}
                         />
                     )}
-                </motion.h2>
+                </motion.h3>
             </div>
 
             {

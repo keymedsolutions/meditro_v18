@@ -31,7 +31,6 @@ export default {
         sky: "0 0 10px rgb(56 189 248 / var(--tw-text-opacity, 1))", // sky-400
       },
       colors: {
-        border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",

@@ -415,6 +415,7 @@
 		svg{
 			width:45px;
 			height:45px;
+			animation: vibrate 0.5s alternate !important;
 		}
 	}
 	&:after{
@@ -422,10 +423,11 @@
 		width:85px;
 		height:85px;
 		position:absolute;
-		border-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-top-right-radius: 50%;
 		z-index: -1;
-		top: -8px;
-		left: -12px;
+		top: 0;
+		left: -11px;
 	}
 	
 	&.feature1{
@@ -462,6 +464,11 @@
 	}
 	&:hover{
 		.icon-cell{
+			.text-icon{
+				display: inline-block; /* necessary for transform animations */
+				-webkit-animation: vibrate 0.5s alternate !important;
+				animation: vibrate 0.5s alternate !important;
+			}
 			svg{
 				-webkit-animation: vibrate 0.5s alternate;
 				animation: vibrate 0.5s alternate;
@@ -505,6 +512,7 @@
 		.feature-box-xl{
 			i,
 			svg,
+			.text-icon,
 			img{
 				-webkit-animation: vibrate 0.5s alternate;
 				animation: vibrate 0.5s alternate;

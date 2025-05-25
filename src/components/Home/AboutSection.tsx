@@ -25,7 +25,7 @@ const AboutSection = () => {
                                     <li><img className="about-thumb1" src={aboutThumb1} alt="key-medsolutions-doctor-image-one" /></li>
                                     <li><img className="about-thumb2" src={aboutThumb2} alt="key-medsolutions-doctor-image-two" /></li>
                                     <li><img className="about-thumb3" src={aboutThumb3} alt="key-medsolutions-doctor-image-three" /></li>
-                                    <li><div className="exp-bx">06<span>Years of Experience</span></div></li>
+                                    <li><div className="exp-bx">08<span>Years of Experience</span></div></li>
                                 </ul>
                             </div>
                         </div>
