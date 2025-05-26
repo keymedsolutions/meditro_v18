@@ -7,9 +7,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Key Medsolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
   },
   "/medical-claim-billing": {
-    title: "Outsourced Healthcare Medical Claims Management Solutions",
+    title: "Healthcare Medical claims processing and Management service",
     description:
-      "Streamline your revenue with expert medical claims management outsourcing solutions. Reduce denials, boost collections, and improve operational efficiency.",
+      "Streamline your revenue cycle with expert healthcare medical claims processing and management services. Reduce denials, ensure compliance, and boost reimbursements.",
   },
   "/medical-billing-coding-services": {
     title: "Medical Coding Services and Solutions | HIPAA-Compliant",

@@ -5,6 +5,7 @@ type PropsType = {
     firstHalf: string[],
     secondHalf?: string[],
     title: string
+    description?: string
 
 }
 const SolutionsWeOffer = (props: PropsType) => {
@@ -20,6 +21,13 @@ const SolutionsWeOffer = (props: PropsType) => {
                         <div className="heading-bx text-left">
                             <h3 className="tw-text-2xl md:tw-text-3xl tw-text-center">{props.title}</h3>
                         </div>
+
+                        {
+                            props.description &&
+                            <div>
+                                <p>{props.description}</p>
+                            </div>
+                        }
 
 
                         <div className="row ">

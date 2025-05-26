@@ -22,7 +22,7 @@ const PhysicianBillingServicesV2 = () => {
         "Customized Solutions for Primary Care & Specialists"
     ]
 
-    const title = "Trusted Physician Billing Solutions for Healthcare Providers";
+    const title = "Reliable Physician Medical Billing Services and Solutions to Maximize Reimbursement";
     const path = "/revenue-cycle-management-company"
 
     const mid = Math.ceil(services.length / 2);

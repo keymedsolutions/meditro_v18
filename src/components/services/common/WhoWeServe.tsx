@@ -4,7 +4,7 @@ type ClientType = {
     icon: string;
     text: string;
 };
-const WhoWeServe = ({data,title}:{data:ClientType[],title:string}) => {
+const WhoWeServe = ({data,title,description}:{data:ClientType[],title:string,description?:string}) => {
     return (
         <>
 
@@ -15,6 +15,13 @@ const WhoWeServe = ({data,title}:{data:ClientType[],title:string}) => {
                         <div className="heading-bx text-left">
                             <h3 className="tw-text-2xl md:tw-text-2xl tw-text-center">{title}</h3>
                         </div>
+                        {
+                            description &&
+                            <div>
+                                <p>{description}</p>
+                            </div>
+                        }
+                
                         <div className="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6">
                             {data.map((client, index) => (
                                 <Card key={index} className="tw-text-center hover:tw-shadow-lg tw-transition-shadow" style={{
