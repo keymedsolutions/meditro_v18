@@ -71,7 +71,8 @@ const ContactUsPage = () => {
 								</div>
 								<div className="icon-content">
 									<h5 className="ttr-title">Contact Number</h5><br />
-									<a  href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className="tw-text-white">{ContactInfo.phone}</a>
+									<a   href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className="tw-text-balck">
+									<p>{ContactInfo.phone}</p></a>
 								</div>
 							</div>
 						</div>
