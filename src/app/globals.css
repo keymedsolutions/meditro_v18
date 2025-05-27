@@ -809,18 +809,20 @@ body {
 }
 
 
-.tw-shimmer{
+.tw-shimmer {
   position: relative;
 }
 
 
 .tw-shimmer:hover {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 165, 0, 0.15) 25%,    /* light orange */
-    rgba(255, 140, 0, 0.5) 50%,     /* medium orange */
-    rgba(255, 165, 0, 0.15) 75%     /* light orange */
-  ) !important;
+  background: linear-gradient(135deg,
+      rgba(255, 165, 0, 0.15) 25%,
+      /* light orange */
+      rgba(255, 140, 0, 0.5) 50%,
+      /* medium orange */
+      rgba(255, 165, 0, 0.15) 75%
+      /* light orange */
+    ) !important;
   background-size: 400% 400% !important;
   animation: shimmerMove 1.2s linear infinite !important;
   background-blend-mode: screen !important;
@@ -830,6 +832,7 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   100% {
     background-position: 100% 50%;
   }
@@ -846,7 +849,8 @@ body {
 }
 
 .tw-shimmer:hover {
-  background: #f97316 !important; /* Orange to rose gradient */
+  background: #f97316 !important;
+  /* Orange to rose gradient */
 }
 
 /* White shimmer swipe overlay */
@@ -857,12 +861,10 @@ body {
   left: -100%;
   width: 60%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-20deg);
   pointer-events: none;
   z-index: 1;
@@ -877,7 +879,38 @@ body {
   0% {
     left: -100%;
   }
+
   100% {
     left: 100%;
   }
+}
+
+
+.trustpilot-widget {
+  height: 100% !important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  width: 100%!important;
+  height: 100%!important;
+  align-self: stretch!important;
+}
+
+#tp-widget-wrapper {
+  background: blue !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  align-self: stretch !important;
+}
+#proSealWidget{
+  width: 100%!important;
+}
+.pe-front-page, .pe-pro-seal-inner {
+  width: 100%!important;
+}
+.pe-back-page, .pe-front-page{
+  box-shadow: none!important;
 }
