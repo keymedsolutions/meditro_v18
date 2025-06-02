@@ -49,7 +49,7 @@ const AboutUsPage = () => {
                             {/* <div className="col"></div> */}
                         </div>
 
-                     <BrandRattings/>
+                     
                     </div>
                 </section>
             </div>
