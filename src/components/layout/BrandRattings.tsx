@@ -46,63 +46,38 @@ const BrandRatings = () => {
   }, []);
 
   return (
-    <div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-3 lg:tw-grid-cols-6 tw-gap-4 tw-p-4">
-      {/* BusinessFirms */}
-      <div className="tw-bg-white tw-rounded-xl tw-shadow-md tw-p-4 tw-flex tw-flex-col tw-items-center tw-gap-2">
-        <a href="https://businessfirms.co/company/key-medsolutions" target="_blank" rel="noopener noreferrer">
-          <img height="220" width="200" alt="BusinessFirms Badge" src="https://businessfirms.co/images/bfirms-certified.png" />
-        </a>
-        <span className="tw-text-center tw-text-sm tw-font-medium">BusinessFirms Badge</span>
-      </div>
+<div class="tw-grid tw-grid-cols-3 md:tw-grid-cols-6 tw-gap-6 tw-p-6 tw-bg-white">
+  <!-- Logo 1 -->
+  <a href="https://www.goodfirms.co/company/key-medsolutions" target="_blank" class="tw-bg-white tw-border tw-border-purple-200 tw-rounded-xl tw-p-4 tw-flex tw-justify-center tw-items-center tw-shadow-sm tw-transition-transform hover:tw-scale-105">
+    <img src="/images/logo/1.png" alt="GoodFirms" class="tw-w-16 tw-h-16 tw-object-contain">
+  </a>
 
-      {/* Trustpilot */}
-      <div className="tw-bg-white tw-rounded-xl tw-shadow-md">
-        <div
-          className="trustpilot-widget"
-          data-locale="en-US"
-          data-template-id="56278e9abfbbba0bdcd568bc"
-          data-businessunit-id="67dd01024e5a60fbbd3ce1c6"
-          data-style-height="150px"
-          data-style-width=""
-          data-theme="light"
-        >
-          <a href="https://www.trustpilot.com/review/keymedsolution.com" target="_blank" rel="noopener noreferrer">Trustpilot</a>
-        </div>
-      </div>
+  <!-- Logo 2 -->
+  <a href="https://www.crunchbase.com/organization/key-medsolutions" target="_blank" class="tw-bg-white tw-border tw-border-purple-200 tw-rounded-xl tw-p-4 tw-flex tw-justify-center tw-items-center tw-shadow-sm tw-transition-transform hover:tw-scale-105">
+    <img src="/images/logo/2.png" alt="Crunchbase" class="tw-w-16 tw-h-16 tw-object-contain">
+  </a>
 
-      {/* DesignRush */}
-      <div className="tw-bg-white tw-rounded-xl tw-shadow-md tw-p-4">
-        <div data-designrush-widget data-agency-id="88980" data-style="dark" />
-        <noscript>
-          <a href="https://www.designrush.com/agency/profile/key-medsolutions#reviews" target="_blank">REVIEW US ON DESIGNRUSH</a>
-        </noscript>
-      </div>
+  <!-- Logo 3 -->
+  <a href="https://clutch.co/profile/key-medsolutions" target="_blank" class="tw-bg-white tw-border tw-border-purple-200 tw-rounded-xl tw-p-4 tw-flex tw-justify-center tw-items-center tw-shadow-sm tw-transition-transform hover:tw-scale-105">
+    <img src="/images/logo/3.png" alt="Clutch" class="tw-w-16 tw-h-16 tw-object-contain">
+  </a>
 
-      {/* ProvenExpert */}
-      <div className="tw-bg-white tw-rounded-xl tw-shadow-md tw-p-4">
-        <div id="proSealWidget"></div>
-      </div>
+  <!-- Logo 4 -->
+  <a href="https://www.truefirms.co/company/Key-MedSolutions/3265" target="_blank" class="tw-bg-white tw-border tw-border-purple-200 tw-rounded-xl tw-p-4 tw-flex tw-justify-center tw-items-center tw-shadow-sm tw-transition-transform hover:tw-scale-105">
+    <img src="/images/logo/4.png" alt="TrueFirms" class="tw-w-16 tw-h-16 tw-object-contain">
+  </a>
 
-      {/* TrueFirms */}
-      <div className="tw-bg-white tw-rounded-xl tw-shadow-md tw-p-4">
-        <div
-          className="truefirm-widget"
-          data-widget-type="w1"
-          data-width="100"
-          data-height="146"
-          data-company-id="3265"
-        ></div>
-      </div>
+  <!-- Logo 5 -->
+  <a href="https://businessfirms.co/company/key-medsolutions" target="_blank" class="tw-bg-white tw-border tw-border-purple-200 tw-rounded-xl tw-p-4 tw-flex tw-justify-center tw-items-center tw-shadow-sm tw-transition-transform hover:tw-scale-105">
+    <img src="/images/logo/5.png" alt="BusinessFirms" class="tw-w-16 tw-h-16 tw-object-contain">
+  </a>
 
-      {/* GoodFirms */}
-      <div className="tw-bg-white tw-rounded-xl tw-shadow-md tw-p-4">
-        <div
-          className="goodfirm-widget"
-          data-widget-type="goodfirms-widget-t1"
-          data-company-id="173317"
-        ></div>
-      </div>
-    </div>
+  <!-- Logo 6 -->
+  <a href="https://www.trustpilot.com/review/keymedsolution.com" target="_blank" class="tw-bg-white tw-border tw-border-purple-200 tw-rounded-xl tw-p-4 tw-flex tw-justify-center tw-items-center tw-shadow-sm tw-transition-transform hover:tw-scale-105">
+    <img src="/images/logo/6.png" alt="Trustpilot" class="tw-w-16 tw-h-16 tw-object-contain">
+  </a>
+</div>
+
   );
 };
 
