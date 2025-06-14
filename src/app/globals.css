@@ -891,9 +891,10 @@ body {
   display: flex!important;
   justify-content: center!important;
   align-items: center!important;
-  width: 100%!important;
+  width: 98%!important;
   height: 100%!important;
   align-self: stretch!important;
+  margin-left: auto !important;
 }
 
 #tp-widget-wrapper {
