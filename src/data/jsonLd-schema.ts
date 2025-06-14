@@ -1458,4 +1458,44 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
+  "/rcm-plan": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is included in the $8 full insurance verification service?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Our $8 service includes full insurance plan details, patient eligibility, deductible and coverage status, and past treatment history — tailored to your practice needs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can I get same-day verification?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, for an additional $3 per ticket, we offer same or next business day insurance verification.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does the $2 eligibility check cover?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The $2 service verifies if coverage is active and includes deductible balance and recent treatment history when available.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the benefits of hiring a dedicated agent?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A dedicated agent ensures consistent insurance verification, reduces admin load, and provides real-time follow-ups — all without the burden of full-time hiring.",
+          },
+        },
+      ],
+    },
+  ],
 };

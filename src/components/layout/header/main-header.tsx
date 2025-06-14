@@ -9,8 +9,6 @@ import { MobileMenu } from './mobile-menu';
 import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { ContactInfo } from '@/constant/constatnt';
-import {sanitizePhoneNumber } from '@/lib/utils';
 import { MenuItems } from '@/data/menu-items';
 
 
@@ -82,11 +80,11 @@ const MainHeader = () => {
                             {/* Right Side */}
                             <div className="secondary-menu desktop-menu">
                                 <ul>
-                                    <li className="num-bx">
+                                    {/* <li className="num-bx">
                                         <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone2)}`}>
                                             <i className="fas fa-phone-alt"></i>{ContactInfo.phone2}
                                         </a>
-                                    </li>
+                                    </li> */}
                                     <li className="btn-area ">
                                         <Link href="/contact-us" className="btn btn-primary shadow">
                                             CONTACT US <i className="btn-icon-bx fas fa-chevron-right"></i>
