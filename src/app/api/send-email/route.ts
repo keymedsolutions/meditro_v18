@@ -10,11 +10,22 @@ export async function POST(req: Request) {
 
     let html = "";
 
-    if (["contactus", "plans"].includes(data.usedFor)) {
-      subject =
-        data.usedFor === "plans"
-          ? "Plan Subscribe Submission"
-          : "New Contact Form Submission";
+    if (["contactus", "plans", "rcm-plans"].includes(data.usedFor)) {
+      switch (data.usedFor) {
+        case "contactus":
+          subject = "New Contact Form Submission";
+          break;
+        case "plans":
+          subject = "Plan Subscribe Submission";
+          break;
+        case "rcm-plans":
+          subject = "RCM Plan Subscribe Submission";
+          break;
+        default:
+          subject = "New Contact Form Submission";
+          break;
+      }
+
       const details: any = [];
       delete data.usedFor;
       Object.keys(data).forEach((key) => {

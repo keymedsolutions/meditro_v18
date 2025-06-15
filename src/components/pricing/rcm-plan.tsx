@@ -1,3 +1,4 @@
+"use client"
 /* eslint-disable react/no-unescaped-entities */
 import { Badge } from "@/ui/badge";
 import { Button } from "@/ui/button";
@@ -16,8 +17,16 @@ import {
     Clock,
     Star,
 } from "lucide-react";
+import RCMPlanSelectModalFormModal from "../Model/RCMPlanSelectModalFormModal";
+import { useState } from "react";
 
 const RCMPlansList = () => {
+
+    
+    const [open, setOpen] = useState(false);
+    const [plan, setPlan] = useState("$8-Complete-Insurance-Breakdown");
+
+
     const featureList = [
         "Full plan benefits (up to 85+ data points)",
         "Detailed patient eligibility",
@@ -114,7 +123,13 @@ const RCMPlansList = () => {
                             </p>
                         </div>
 
-                        <Button className="tw-w-full !tw-bg-emerald-600 hover:!tw-bg-emerald-700 tw-mt-6 !tw-border-0">
+                        <Button
+                        
+                        onClick={()=>{
+                            setPlan("$8-Complete-Insurance-Breakdown")
+                            setOpen(true)
+                        }}
+                        className="tw-w-full !tw-bg-emerald-600 hover:!tw-bg-emerald-700 tw-mt-6 !tw-border-0">
                             Get Started
                         </Button>
                     </CardContent>
@@ -203,7 +218,15 @@ const RCMPlansList = () => {
                             </p>
                         </div>
 
-                        <Button variant="outline" style={{
+                        <Button
+                        
+                            
+                        onClick={()=>{
+                            setPlan("$2-Eligibility-Only-Verification")
+                            setOpen(true)
+                        }}
+                        
+                        variant="outline" style={{
                             border: "1px solid hsl(240 5.9% 90%)!important",
                         }} className="tw-w-full tw-mt-6 !tw-bg-transparent hover:tw-bg-transparent hover:tw-text-black">
                             Get Started
@@ -311,12 +334,19 @@ const RCMPlansList = () => {
                         </div>
 
 
-                        <Button className="tw-w-full !tw-bg-purple-600 hover:!tw-bg-purple-700 tw-mt-6 !tw-border-0">
+                        <Button    onClick={()=>{
+                            setPlan("Subscription-Dedicated-Verification-Agents")
+                            setOpen(true)
+                        }}
+                         className="tw-w-full !tw-bg-purple-600 hover:!tw-bg-purple-700 tw-mt-6 !tw-border-0">
                             Get Started
                         </Button>
                     </CardContent>
                 </Card>
             </div>
+
+            <RCMPlanSelectModalFormModal show={open} handleClose={() => { setOpen(false) }} plan={plan} />
+
         </>
     );
 };
