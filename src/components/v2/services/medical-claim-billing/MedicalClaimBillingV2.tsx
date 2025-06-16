@@ -19,7 +19,7 @@ const MedicalClaimBillingV2 = () => {
     "Reporting and Analytics",
   ]
 
-  const title = "Professional Medical Claims Billing Services Provider for Faster Reimbursements";
+  const title = "Professional Medical Claims Service and Management Solutions Provider for Faster Reimbursements";
   const path = "/"
 
   const mid = Math.ceil(services.length / 2);

@@ -2,14 +2,14 @@ import { ISiteMetaData } from "@/types/app.types";
 
 export const SiteMetaData: ISiteMetaData = {
   "/": {
-    title: "Healthcare Medical Billing Services and RCM Company",
+    title: "Healthcare Medical Billing Services Company & RCM Solutions",
     description:
-      "Key Medsolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
+      "Trusted healthcare medical billing services company offering complete",
   },
   "/medical-claim-billing": {
-    title: "Healthcare Medical claims processing and Management service",
+    title: "Medical Claims Processing Service and Management Solutions",
     description:
-      "Streamline your revenue cycle with expert healthcare medical claims processing and management services. Reduce denials, ensure compliance, and boost reimbursements.",
+      "Medical claims processing service with expert management solutions to reduce denials, boost reimbursements, and improve cash flow for your healthcare practice.",
   },
   "/medical-billing-coding-services": {
     title: "Medical Coding Services and Solutions | HIPAA-Compliant",
@@ -27,9 +27,8 @@ export const SiteMetaData: ISiteMetaData = {
       "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
   },
   "/physician-billing-services": {
-    title: "Trusted Physician Billing Solutions for Healthcare Providers",
-    description:
-      "Trusted physician billing solutions for healthcare providers to boost efficiency, reduce claim denials, and ensure accurate, timely reimbursements.",
+    title: "Physician Billing Solutions for Physician Practices & Groups",
+    description:"End-to-end physician billing solutions for practices and groups. Improve cash flow, reduce denials, and streamline RCM with, accurate medical billing services."
   },
   "/ICD-10-medical-coding": {
     title: "ICD-10 Medical Coding Services for Precise Reimbursement ",
@@ -72,14 +71,14 @@ export const SiteMetaData: ISiteMetaData = {
       " Ensure accurate insurance eligibility and benefits verification to reduce denials, improve patient experience, and accelerate your revenue cycle.",
   },
   "/revenue-cycle-management-company": {
-    title: "Healthcare Revenue Cycle Management Solutions | RCM Services",
+    title: "Healthcare Revenue Cycle Management Solutions | RCM Software",
     description:
-      "Optimize revenue with our healthcare revenue cycle management solutions and services. Expert billing, coding, and claims management to increase reimbursements.",
+      "End-to-end healthcare revenue cycle management solutions and RCM software. Boost cash flow, reduce denials, and streamline billing for providers and medical practices.",
   },
   "/denial-management-service": {
-    title: "Denial Management And Resolution Services | Key Medsolution",
+    title: "Denial Management Services and Solutions for Healthcare",
     description:
-      "KeyMed's denial management and resolution services help reduce claim denials, improve recovery rates, and streamline your revenue cycle with expert support.",
+      " Reduce claim denials and recover lost revenue with expert denial management services and solutions for healthcare providers. Fast resolution. Proven RCM strategies.",
   },
   "/physician-credentialing": {
     title: "Physician Medical and Insurance Credentialing Services",
@@ -175,6 +174,7 @@ export const SiteMetaData: ISiteMetaData = {
     description:"Start your career with affordable online courses in medical billing, coding, and revenue cycle management. Learn anytime with expert support from KeyMed Solution."
   },
   "/rcm-plan":{
+    title:"Insurance Verification Pricing | Checks Eligibility & Patient Data",
     description:"Key Medsolutions Insurance Verification Pricing – Affordable, fast, and accurate verification. From just $2 per request or $1,000/month for a dedicated billing expert. See our transparent pricing plans now"
   }
 };

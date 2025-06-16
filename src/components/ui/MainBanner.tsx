@@ -34,9 +34,11 @@ export default function MainBanner() {
 <h6 className="title-ext text-primary">Who we are</h6>
             {/* <h6 className="tw-text-sm tw-font-medium tw-text-blue-600 tw-uppercase tw-tracking-wider">Who we are</h6> */}
 
-            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-bold ">
-              Trusted Medical Billing Services &<br />
-              Revenue Cycle Management Company for Healthcare
+            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-3xl tw-font-bold ">
+
+            Trusted Medical Billing Services Company &<br /> Revenue Cycle Management Solutions for Healthcare
+              {/* Trusted Medical Billing Services &<br />
+              Revenue Cycle Management Company for Healthcare */}
             </h1>
 
             <div className="tw-space-y-4 tw-text-gray-700 tw-text-sm sm:tw-text-base">
