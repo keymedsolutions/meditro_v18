@@ -23,7 +23,7 @@ const RevenueCycleSectionV2 = () => {
     "HIPAA-Compliant and Secure Billing Solutions",
   ]
 
-  const title = "Trusted Revenue Cycle Management Company for Improved Financial Performance";
+  const title = "Trusted Healthcare Revenue Cycle Management Solutions for Improved Financial Performance";
   const path = "/revenue-cycle-management-company"
 
   const mid = Math.ceil(services.length / 2);

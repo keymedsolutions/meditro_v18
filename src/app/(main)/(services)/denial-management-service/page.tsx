@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/ui/breadcrumb";
 import Link from "next/link";
 
 const DenialManagementServicePage = () => {
-    const title = "Resolve Insurance Denials Quickly with Trusted Denial Management Solutions";
+    const title = "Resolve Insurance Denials Quickly with Trusted Denial Management Services and Solutions for Healthcare";
     return (
 
         <div className="page-content bg-white aboutus">
