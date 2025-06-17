@@ -3,8 +3,7 @@ import { ISiteMetaData } from "@/types/app.types";
 export const SiteMetaData: ISiteMetaData = {
   "/": {
     title: "Healthcare Medical Billing Services Company & RCM Solutions",
-    description:
-      "Trusted healthcare medical billing services company offering complete",
+    description:" Reliable healthcare medical billing and coding services and RCM solutions to maximize revenue, reduce denials, and streamline your practice's financial performance.",
   },
   "/medical-claim-billing": {
     title: "Medical Claims Processing Service and Management Solutions",
