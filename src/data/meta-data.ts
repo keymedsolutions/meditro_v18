@@ -85,9 +85,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Collaborate with our physician credentialing company for smooth credentialing services. Guarantee compliance and productivity in your medical practice.",
   },
   "/our-specialities": {
-    title: "KeyMed Revenue Support for Healthcare & Multiple Specialties",
+    title: "Specialties in Medical Billing Services and RCM Solutions",
     description:
-      "KeyMed offers expert revenue support for healthcare providers across specialties, optimizing revenue cycles and reducing claim denials with tailored solutions.",
+      "Explore specialties in medical billing services and RCM solutions. Boost revenue, ensure compliance, and streamline your healthcare practice operations.",
   },
   "/blogs": {
     title: "KeyMed Solutions Blog: Healthcare Insights & Revenue Tips",
@@ -150,9 +150,9 @@ export const SiteMetaData: ISiteMetaData = {
       " Meet the team driving our medical billing and RCM success—experienced professionals committed to accuracy and healthcare excellence.",
   },
   "/services": {
-    title: "Medical Billing and RCM Services | Key MedSolutions",
+    title: "Comprehensive Medical Billing Services and RCM Solutions",
     description:
-      " Explore our full range of medical billing, coding, and revenue cycle management services designed to optimize healthcare performance and collections.",
+      "End-to-end healthcare Medical billing services and RCM Solutions—from credentialing to denial management. Improve cash flow, reduce errors, & grow your practice.",
   },
   "/booking": {
     title: "Schedule a Call | Medical Billing & RCM Consultation",
