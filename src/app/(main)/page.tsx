@@ -18,7 +18,7 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <TestimonialSection />
-      <PricingPlans />
+      <PricingPlans isHomePage={true}/>
       <FAQSection />
       <InquirySection />
     </>

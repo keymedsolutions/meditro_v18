@@ -1,3 +1,4 @@
+import PricingPlans from '@/components/pricing/PricingPlans';
 import Breadcrumb from '@/components/ui/breadcrumb'
 import React from 'react'
 
@@ -57,45 +58,40 @@ const OurSpecialtiesList = [
     "Laboratory & Ultrasound Billing",
 ];
 const OurSpecialties = () => {
-    const title = "Our Specialties in Healthcare Revenue Cycle and Medical Billing Solutions"
+    const title = "Our Specialties in Healthcare RCM Solutions & Medical Billing Services for Medical Practices"
     return (
         <div className="page-content bg-white aboutus">
             <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/our-specialities" }]} />
 
-            <section>
+            <section  className="section-area work-area" style={{ backgroundImage: "url(" + BG1 + ")", backgroundRepeat: "repeat", backgroundPosition: "center", backgroundSize: "100%" }}>
                 <div className="container">
                     <div className="row justify-content-center">
                         {/* <div className="col"></div> */}
-                        <div className="col-md-10">
+                        <div className="col-md-12">
                             <div className="heading-bx text-center">
                                 <h3 className="title">{title}</h3>
                             </div>
-
-                            <section className="section-area work-area" style={{ backgroundImage: "url(" + BG1 + ")", backgroundRepeat: "repeat", backgroundPosition: "center", backgroundSize: "100%" }}>
-                                <div className="container-xl">
-
                                     <div className="row justify-content-center btn-group">
                                         {
                                             OurSpecialtiesList.map((item, index) => (
-                                                <div className="col-lg-3 col-sm-6 mb-30" key={index}>
-                                                    <div className="work-bx" style={{ width: "220px" }}>
-                                                        <h6 className='mb-0'>{item}</h6>
+                                                <div className="col-lg-3 col-sm-12 mb-30" key={index}>
+                                                    <div className="work-bx  sm:!tw-w-full">
+                                                        <h6 className='mb-0 tw-text-center'>{item}</h6>
                                                     </div>
                                                 </div>
                                             ))
                                         }
 
-                                    </div>
                                 </div>
-                                <img className="pt-img1 animate1" src={PTImg1} alt="" />
-                                <img className="pt-img2 animate2" src={PTImg2} alt="" />
-                                <img className="pt-img3 animate3" src={PTImg3} alt="" />
-                            </section>
+                                <img className="pt-img1 animate1 tw-top-0" src={PTImg1} alt="" />
+                                <img className="pt-img2 animate2 tw-top-0 tw-left-0" src={PTImg2} alt="" />
+                                <img className="pt-img3 animate3 tw-bottom-10 tw-right-6" src={PTImg3} alt="" />
 
                         </div>
                         {/* <div className="col"></div> */}
                     </div>
                 </div>
+<PricingPlans />
             </section>
 
 

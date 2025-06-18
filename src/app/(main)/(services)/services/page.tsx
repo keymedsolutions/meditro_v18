@@ -1,4 +1,5 @@
 "use client"
+import PricingPlans from "@/components/pricing/PricingPlans";
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Breadcrumb from "@/components/ui/breadcrumb";
@@ -8,7 +9,7 @@ import {motion} from "framer-motion";
 import { useMediaQuery } from "usehooks-ts";
 
 const ServicePage = () => {
-    const title = "Comprehensive Healthcare Billing and Revenue Cycle Management Services";
+    const title = "End-to-end Medical Billing Services and RCM Solutions for Healthcare Providers";
     const path = "/services"
     const mdMatches = useMediaQuery("(min-width: 1024px)");
 
@@ -75,6 +76,8 @@ const ServicePage = () => {
                             })}
                         </div>
                     </div>
+
+                    <PricingPlans />
                 </section>
 
             </div >
