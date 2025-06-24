@@ -15,8 +15,8 @@ const PricingPlans = ({isHomePage=false}:{isHomePage?:boolean}) => {
                     backgroundImage: `url(images/background/line-bg1.png)`,
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    backgroundSize: '100%',
-                    marginTop: "8rem"
+                    backgroundSize: '100%', 
+                    marginTop: isHomePage ? "" :"8rem"
                 }}
             >
                 <div className="container plan-sections">
