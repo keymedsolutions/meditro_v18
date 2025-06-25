@@ -60,7 +60,7 @@ const PlansAndPricing = () => {
         )}
         {activeTab === "price" && (
           <div id="price" role="tabpanel">
-            <PricingPlans isHomePage={false} />
+            <PricingPlans isHomePage={true} />
           </div>
         )}
       </div>
