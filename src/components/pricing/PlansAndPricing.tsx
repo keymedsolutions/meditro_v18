@@ -33,7 +33,7 @@ const PlansAndPricing = () => {
         </ul>
       </div>
 
-      <div className="tw-p-5 tw-relative before:tw-content-[''] before:tw-absolute before:tw-inset-0 before:tw-rounded-2xl before:tw-bg-purple-300 before:tw-blur-3xl before:tw-opacity-30 before:tw-z-[-1]">
+      <div className=" tw-relative before:tw-content-[''] before:tw-absolute before:tw-inset-0 before:tw-rounded-2xl before:tw-bg-purple-300 before:tw-blur-3xl before:tw-opacity-30 before:tw-z-[-1]">
         {activeTab === "RCM Plan" && (
           <div id="RCM Plan" role="tabpanel">
             <div className="tw-container plan-sections">
