@@ -226,7 +226,7 @@ const RCMPlansList = () => {
               style={{
                 border: "1px solid hsl(240 5.9% 90%)!important",
               }}
-              className="tw-w-full tw-mt-6 hover:tw-bg-amber-600 tw-bg-amber-500 tw-text-white"
+              className="tw-w-full tw-mt-6 hover:!tw-bg-amber-600 !tw-bg-amber-500 tw-text-white"
             >
               Get Started
             </Button>
