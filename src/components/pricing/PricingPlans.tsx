@@ -174,7 +174,7 @@ const PricingPlans = ({isHomePage=false}:{isHomePage?:boolean}) => {
                 {/* <img className="pt-img3 animate3" src="images/shap/circle-dots.png" alt="" /> */}
 
 
-{isHomePage && <RCMPlanBanner />}
+               
             </section>
 
 
