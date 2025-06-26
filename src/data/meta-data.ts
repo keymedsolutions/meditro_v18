@@ -35,7 +35,7 @@ export const SiteMetaData: ISiteMetaData = {
       " Ensure accurate claims and faster reimbursements with expert ICD-10 medical coding services tailored for healthcare providers and facilities.",
   },
   "/radiology-billing-services": {
-    title: "Specialized Radiology Medical Billing and Coding Services",
+    title: "Expert Radiology Billing Services to Maximize Reimbursements",
     description:
       " Expert radiology medical billing and coding services tailored for imaging centers. Ensure accuracy, compliance, and faster reimbursements with trusted solutions",
   },
@@ -65,9 +65,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Optimize your practice with expert physician practice management services. Enhance efficiency, compliance, and revenue with tailored solutions. Book a demo today!",
   },
   "/verification-of-healthcare-insurance-eligibility": {
-    title: "Insurance Eligibility and Benefits Verification Services",
+    title: "Insurance Verification Services | Verify Eligibility & Benefits",
     description:
-      " Ensure accurate insurance eligibility and benefits verification to reduce denials, improve patient experience, and accelerate your revenue cycle.",
+      "Streamline patient intake with expert insurance verification services. Verify eligibility and benefits accurately to reduce denials and improve cash flow.",
   },
   "/revenue-cycle-management-company": {
     title: "Healthcare Revenue Cycle Management Solutions | RCM Software",
@@ -175,5 +175,10 @@ export const SiteMetaData: ISiteMetaData = {
   "/rcm-plan":{
     title:"Insurance Verification Pricing | Checks Eligibility & Patient Data",
     description:"Key Medsolutions Insurance Verification Pricing – Affordable, fast, and accurate verification. From just $2 per request or $1,000/month for a dedicated billing expert. See our transparent pricing plans now"
+  },
+  "/online-medical-billing-coding-training": {
+    title: "Online Medical Billing and Coding Training Program",
+    description:
+      "Enroll in an online medical billing and coding training program. Gain in-demand skills, get certified, and start your career in healthcare administration.",
   }
 };
