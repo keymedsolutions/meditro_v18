@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import PlanSelectModalFormModal from '../Model/PlanSelectModalFormModal';
 
-import RCMPlanBanner from './RCMPlanBanner';
 const PricingPlans = ({isHomePage=false}:{isHomePage?:boolean}) => {
 
     const [open, setOpen] = useState(false);
