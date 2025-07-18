@@ -6,37 +6,56 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useRouter } from "next/navigation";
 
-// Define Zod schema for form validation
-const schema = z.object({
-  name: z.string().min(1, "Name is required"),
-  email: z.string().min(1, "Email is required").email("Invalid email address"),
-  phone: z.string().min(10, "Phone number must be at least 10 digits"),
-  plan: z.string().min(1, "Plan  is required"),
-});
-
 const RCMPlanSelectModalFormModal = ({ show, handleClose, plan }: any) => {
+  // Define Zod schema for form validation
+  const schema = z.object({
+    name: z.string().min(1, "Name is required"),
+    email: z
+      .string()
+      .min(1, "Email is required")
+      .email("Invalid email address"),
+    phone: z.string().min(10, "Phone number must be at least 10 digits"),
+    volumeDay:
+      plan !== "Subscription-Dedicated-Verification-Agents"
+        ? z.string().min(1, "Volume Day is required")
+        : z.string().optional(),
+    plan:
+      plan !== "Subscription-Dedicated-Verification-Agents"
+        ? z.string().optional()
+        : z.string().min(1, "Plan is required"),
+    numberOfAgent:
+      plan !== "Subscription-Dedicated-Verification-Agents"
+        ? z.string().optional()
+        : z.string().min(1, "Number Of Agent is required"),
+  });
+
   const {
     register,
     handleSubmit,
-    formState: { errors, },
+    formState: { errors },
     reset,
+    watch,
   } = useForm({
     resolver: zodResolver(schema),
   });
-
 
   useEffect(() => {
     if (!show) {
       reset();
     }
 
-    if (plan) {
+    if (plan == "Subscription-Dedicated-Verification-Agents") {
       reset({
-        plan: plan,
+        plan: "Eligibility-And-Benefits-Check",
       });
+    } else {
+      reset(); // or set other default values if needed
     }
   }, [show, plan]);
+
   const navigate = useRouter();
+
+  const ServicePlan = watch("plan");
 
   const [responseMessage, setResponseMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -49,19 +68,19 @@ const RCMPlanSelectModalFormModal = ({ show, handleClose, plan }: any) => {
 
   // Handle form submission
   const onSubmit = async (data: any) => {
+    if (plan !== "Subscription-Dedicated-Verification-Agents") {
+      delete data.plan;
+    }
     setResponseMessage(""); // Reset previous message
     setIsLoading(true);
     try {
-      const response = await fetch(
-        "/api/send-email",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ ...data, "usedFor": "rcm-plans" }),
-        }
-      );
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...data, usedFor: "rcm-plans" }),
+      });
 
       if (response.ok) {
         setResponseMessage("✅ Your request has been submitted successfully!");
@@ -139,39 +158,84 @@ const RCMPlanSelectModalFormModal = ({ show, handleClose, plan }: any) => {
               )}
             </div>
 
-            {/* Service Type (Dropdown) */}
-            <div className="tw-mb-4">
-              <label
-                htmlFor="practice"
-                className="tw-block tw-text-accentOrange-500 tw-font-bold tw-mb-2"
-              >
-                Plan
-              </label>
-              <select
-                id="practice"
-                {...register("plan")}
-                className="tw-w-full tw-px-3 tw-py-2 tw-border tw-border-gray-300 tw-bg-transparent tw-rounded-lg focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-accentOrange-500"
-              >
-                <option value="">Select a Plan</option>
+            {plan !== "Subscription-Dedicated-Verification-Agents" && (
+              <div className="tw-mb-4">
+                <label className="tw-block tw-text-accentOrange-500 tw-font-bold tw-mb-2">
+                  Volume/Day
+                </label>
+                <input
+                  type="text"
+                  {...register("volumeDay")}
+                  className="tw-w-full tw-px-3 tw-py-2 tw-border tw-rounded-lg"
+                />
+                {errors.volumeDay && (
+                  <p className="tw-text-red-500 tw-text-sm">
+                    {errors.volumeDay.message}
+                  </p>
+                )}
+              </div>
+            )}
 
-                <option value="$8-Complete-Insurance-Breakdown">Complete Insurance Breakdown</option>
-                <option value="$2-Eligibility-Only-Verification">Eligibility-Only Verification</option>
-                <option value="Subscription-Dedicated-Verification-Agents">Dedicated Verification Agents</option>
-              </select>
-              {errors.plan && (
-                <p className="tw-text-red-500 tw-text-sm tw-mt-1">
-                  {errors.plan.message}
-                </p>
-              )}
-            </div>
+            {/* Service Type (Dropdown) */}
+            {plan === "Subscription-Dedicated-Verification-Agents" && (
+              <div className="tw-w-full tw-flex lg:tw-flex-row tw-flex-col tw-gap-x-2 tw-items-center ">
+                <div className="tw-w-full tw-mb-4">
+                  <label
+                    htmlFor="practice"
+                    className="tw-block tw-text-accentOrange-500 tw-font-bold tw-mb-2"
+                  >
+                    Plan
+                  </label>
+                  <select
+                    id="practice"
+                    {...register("plan")}
+                    className="tw-w-full tw-px-3 tw-py-2 tw-border tw-border-gray-300 tw-bg-transparent tw-rounded-lg focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-accentOrange-500"
+                  >
+                    <option value="">Select a Plan</option>
+
+                    <option value="Eligibility-And-Benefits-Check">
+                      Eligibility & Benefits Check
+                    </option>
+                    <option value="Coding-And-Billing">Coding & Billing</option>
+                    <option value="Accounts-Receivable">
+                      Accounts Receivable
+                    </option>
+                    <option value="Payment-Posting">Payment Posting</option>
+                  </select>
+                  {errors.plan && (
+                    <p className="tw-text-red-500 tw-text-sm tw-mt-1">
+                      {errors.plan.message}
+                    </p>
+                  )}
+                </div>
+                {ServicePlan !== "" && (
+                  <div className="tw-w-full tw-mb-4 lg:tw-max-w-[30%]">
+                    <label className="tw-block tw-text-accentOrange-500 tw-font-bold tw-mb-2">
+                      Number of Agents
+                    </label>
+                    <input
+                      type="number"
+                      {...register("numberOfAgent")}
+                      className="tw-w-full tw-px-3 tw-py-2 tw-border tw-rounded-lg"
+                    />
+                    {errors.numberOfAgent && (
+                      <p className="tw-text-red-500 tw-text-sm">
+                        {errors.numberOfAgent.message}
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {responseMessage && (
             <p
-              className={`tw-text-center tw-mt-4 ${responseMessage.includes("✅")
-                ? "tw-text-green-500"
-                : "tw-text-red-500"
-                }`}
+              className={`tw-text-center tw-mt-4 ${
+                responseMessage.includes("✅")
+                  ? "tw-text-green-500"
+                  : "tw-text-red-500"
+              }`}
             >
               {responseMessage}
             </p>

@@ -54,7 +54,7 @@ const RCMPlan = () => {
       >
         <div className="tw-container plan-sections">
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">RCM Plan</h6>
+            <h6 className="title-ext text-secondary">Get Your Billing Done By 3.5% To 4%</h6>
             <h2 className="tw-mb-4 tw-font-display tw-text-3xl tw-font-extrabold tw-tracking-tight sm:tw-text-3xl md:tw-text-4xl">
               Key Medsolutions –
               <span className="tw-bg-gradient-to-r tw-from-purple-600 tw-to-primary tw-bg-clip-text tw-text-transparent">
