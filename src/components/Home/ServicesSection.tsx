@@ -1,11 +1,27 @@
-import React from 'react';
+import React from "react";
 
 const ServicesSection = () => {
   const specialties = [
-    "Anesthesiology", "Cardiology", "Dermatology", "Endocrinology", "ENT",
-    "Family Medicine", "Gastroenterology", "Hospitalists", "Internal Medicine",
-    "Nephrology", "Neurology","Endocrinology", "OB/GYN", "Ophthalmology", "Optometry",
-    "Pain Medicine", "Pediatric Cardiology", "Physiatrist", "Podiatry","Urology"
+    "Anesthesiology",
+    "Cardiology",
+    "Dermatology",
+    "Endocrinology",
+    "ENT",
+    "Family Medicine",
+    "Gastroenterology",
+    "Hospitalists",
+    "Internal Medicine",
+    "Nephrology",
+    "Neurology",
+    "Endocrinology",
+    "OB/GYN",
+    "Ophthalmology",
+    "Optometry",
+    "Pain Medicine",
+    "Pediatric Cardiology",
+    "Physiatrist",
+    "Podiatry",
+    "Urology",
   ];
 
   return (
@@ -14,8 +30,14 @@ const ServicesSection = () => {
         <div className="heading-bx text-center">
           <h6 className="title-ext text-secondary">Our Services</h6>
           <h2 className="title">
-            Key MedSolutions offers medical billing services to the following specialties of physicians
+            Key MedSolutions offers medical billing services to the following
+            specialties of physicians
           </h2>
+          <h5 className="tw-max-w-4xl tw-mx-auto">
+            Every physician’s specialty is unique, and so are their billing
+            needs. At Key MedSolutions, we simplify the process, so you can
+            dedicate your time to your patients.
+          </h5>
         </div>
         <div className="row services">
           {specialties.map((title, index) => (
