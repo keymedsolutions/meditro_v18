@@ -1,6 +1,8 @@
 import AboutSection from "@/components/Home/AboutSection";
 import FAQSection from "@/components/Home/FAQSection";
 import InquirySection from "@/components/Home/InquirySection";
+import MedicalBillingLanding from "@/components/Home/MedicalBillingLanding";
+import OutsourcingAdvantages from "@/components/Home/OutsourcingAdvantages";
 import ServicesSection from "@/components/Home/ServicesSection";
 import TestimonialSection from "@/components/Home/TestimonialSection";
 import WorkSection from "@/components/Home/WorkSection";
@@ -13,7 +15,9 @@ export default function Home() {
   return (
     <>
       <MainBanner />
+      <MedicalBillingLanding/>
       {/* <MainBannerSection1 /> */}
+      <OutsourcingAdvantages/>
       <WorkSection />
       <AboutSection />
       <ServicesSection />

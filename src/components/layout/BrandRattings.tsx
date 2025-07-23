@@ -54,7 +54,7 @@ const achievements = [
 
 const BrandRatings = () => {
   return (
-    <section className="tw-py-12 tw-bg-gray-50">
+    <section className="tw-py-12">
       <div className="tw-text-center tw-mb-10">
         <h2 className="tw-text-2xl tw-font-bold tw-text-gray-800">Our Achievements & Certifications</h2>
       </div>

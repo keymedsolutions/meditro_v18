@@ -1,3 +1,5 @@
+import { easeInOut } from "framer-motion";
+
 export const fadeInLeft = {
   initial: { opacity: 0, x: -100 },
   animate: { opacity: 1, x: 0 },
@@ -51,4 +53,14 @@ export const leftRightAnimation = {
     repeat: Infinity,
     ease: "easeInOut", 
   },
+};
+
+export const fadeSkewReveal = {
+  initial: { opacity: 0, skewY: 10 },
+  whileInView: {
+    opacity: 1,
+    skewY: 0,
+    transition: { duration: 0.8, ease: easeInOut },
+  },
+  viewport: { once: true },
 };
