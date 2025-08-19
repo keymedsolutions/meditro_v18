@@ -49,6 +49,9 @@ const RCMPlansList = () => {
                 Most Popular
               </Badge>
             </div>
+            <div className="tw-bg-emerald-600 tw-text-white tw-ml-1 xl:!tw-mt-1 min-[350px]:tw-mt-[12px] lg:!tw-mt-[10px] sm:!tw-mt-[5px] tw-mt-[32px] tw-inline-block tw-p-[7px] tw-rounded-lg tw-font-semibold">
+              For Dental Only
+            </div>
             <CardHeader className="tw-text-center tw-pb-4">
               <div className="tw-text-4xl tw-font-bold tw-text-emerald-600 tw-mb-2">
                 $8
@@ -143,6 +146,9 @@ const RCMPlansList = () => {
           className="tw-shadow-lg tw-hover:shadow-xl tw-transition-all tw-duration-300 border-2 tw-border-amber-400 tw-flex tw-flex-col tw-justify-between"
         >
           <div>
+            <div className="tw-bg-amber-600 tw-text-white tw-m-1 tw-inline-block tw-p-[7px] tw-rounded-lg tw-font-semibold">
+              For Dental Only
+            </div>
             <CardHeader className="tw-text-center tw-pb-4">
               <div className="tw-text-4xl tw-font-bold tw-text-amber-600 tw-mb-2">
                 $2
@@ -246,7 +252,7 @@ const RCMPlansList = () => {
                 Subscription
               </div>
               <CardTitle className="tw-text-xl tw-mb-2 tw-font-bold tw-bg-gradient-to-r tw-from-purple-600 tw-to-indigo-600 tw-bg-clip-text tw-text-transparent">
-                Dedicated Verification Agents
+                Dedicated RCM Agents
               </CardTitle>
               <CardDescription className="tw-text-purple-900 tw-font-bold !tw-text-[17px]">
                 High-Volume Practice Solution
@@ -255,8 +261,8 @@ const RCMPlansList = () => {
             <CardContent className="tw-space-y-4">
               <p className="tw-text-sm tw-text-gray-600 tw-mb-4">
                 Running a high-volume practice? Don’t have an in-house insurance
-                expert? We’ve got you covered. Hire a dedicated verification
-                specialist who works exclusively for your clinic.
+                expert? We’ve got you covered. Hire a dedicated RCM specialist
+                who works exclusively for your clinic.
               </p>
 
               <div className="tw-space-y-4">
@@ -328,13 +334,6 @@ const RCMPlansList = () => {
                     </div>
                   );
                 })}
-              </div>
-
-              <div className="tw-bg-gradient-to-r tw-from-slate-100 tw-to-purple-100 !tw-border-2 !tw-border-slate-300 tw-rounded-xl tw-p-4 tw-shadow-inner">
-                <p className="tw-text-slate-800 tw-font-bold tw-text-sm">
-                  <strong>Note:</strong> Monthly agent plans are priced for
-                  staffing only and do not include per-ticket verification fees.
-                </p>
               </div>
             </CardContent>
           </div>
