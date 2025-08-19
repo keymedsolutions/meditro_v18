@@ -41,20 +41,19 @@ export default function MainBanner() {
 
             <div className="tw-space-y-4 tw-text-gray-700 tw-text-sm sm:tw-text-base">
               <p>
-                At Key MedSolutions, we make medical billing easy. We are
-                a&nbsp;
-                <span className="tw-font-bold">Medical Billing</span>&nbsp; Firm
-                that helps healthcare providers focus on what matters most,
-                caring for patients. Our mission is to take the stress out of
-                billing and make your revenue cycle work seamlessly.
+                At Key MedSolutions, we make medical billing easy. We are a
+                medical billing service that helps healthcare professionals
+                focus on what is most important: caring for their patients. Our
+                mission is to take the stress out of billing and make your
+                revenue cycle work seamlessly.
               </p>
 
               <p>
                 We provide customized&nbsp;
                 <span className="tw-font-bold">
-                  Medical Billing and Revenue Cycle Management (RCM)
+                  Medical Billing and Revenue Cycle Management (RCM) Services 
                 </span>
-                &nbsp;Services to meet the unique needs of your practice. From
+                &nbsp;to meet the unique needs of your practice. From
                 &nbsp;
                 <span className="tw-font-bold">
                   Medical Billing Management Services

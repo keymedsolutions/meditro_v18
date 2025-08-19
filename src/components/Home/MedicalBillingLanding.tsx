@@ -30,8 +30,8 @@ export default function MedicalBillingLanding() {
             className="tw-text-center tw-max-w-4xl tw-mx-auto"
           >
             <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-text-gray-900 tw-mb-6 tw-leading-tight">
-              We Handle Your <span className="tw-text-blue-600">Billing</span>{" "}
-              So You Can Handle Your{" "}
+              We Handle Your <span className="tw-text-blue-600">Billing</span>&nbsp;
+              So You Can Handle Your&nbsp;
               <span className="tw-text-green-600">Patients</span>
             </h1>
             <p className="tw-text-lg tw-text-gray-600 tw-mb-8 tw-leading-relaxed">

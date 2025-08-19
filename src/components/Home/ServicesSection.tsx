@@ -13,7 +13,6 @@ const ServicesSection = () => {
     "Internal Medicine",
     "Nephrology",
     "Neurology",
-    "Endocrinology",
     "OB/GYN",
     "Ophthalmology",
     "Optometry",

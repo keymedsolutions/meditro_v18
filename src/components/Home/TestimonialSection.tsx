@@ -83,13 +83,15 @@ const TestimonialSection = () => {
                   <div className="testimonial-bx">
                     <div className="testimonial-content">
                       <p>
-                        Key MedSolutions has been a true asset to our revenue
-                        cycle management. Their expertise shines through in
-                        every detail, and their commitment to excellence is
-                        unmatched. They’ve made a noticeable impact on our
-                        financial performance, streamlining processes and
-                        delivering results. I wholeheartedly recommend their
-                        services!
+                        Key MedSolutions has greatly strengthened our&nbsp;
+                        <span className="tw-font-bold">
+                          revenue cycle management.
+                        </span>
+                        &nbsp;Their extensive knowledge is visible in many
+                        areas, and their commitment to quality is unparalleled.
+                        They’ve made a noticeable impact on our financial
+                        performance, streamlining processes and delivering
+                        results. I wholeheartedly recommend their services!
                       </p>
                     </div>
                     <div className="client-info">
@@ -106,14 +108,27 @@ const TestimonialSection = () => {
                     <div className="testimonial-content">
                       <p>
                         Working with Key MedSolutions has transformed our
-                        practice. Their healthcare revenue cycle management
-                        services have completely turned things around for us.
-                        From medical billing and coding to their seamless
-                        electronic billing services, everything just works.
-                        They’re proactive, detail-oriented, and always a step
-                        ahead. It’s clear they know their stuff. If you’re
-                        looking for a reliable RCM billing company, I can’t
-                        recommend them enough
+                        practice. Their&nbsp;
+                        <span className="tw-font-bold">
+                          healthcare revenue cycle management services
+                        </span>
+                        &nbsp; have completely turned things around for us. From
+                        &nbsp;
+                        <span className="tw-font-bold">
+                          medical billing and coding
+                        </span>
+                        &nbsp;to their seamless&nbsp;
+                        <span className="tw-font-bold">
+                          electronic billing services,
+                        </span>
+                        &nbsp;everything just works. They’re proactive,
+                        detail-oriented, and always a step ahead. It’s clear
+                        they know their stuff. If you’re looking for a
+                        reliable&nbsp;
+                        <span className="tw-font-bold">
+                          RCM billing company,
+                        </span>
+                        &nbsp;I can’t recommend them enough!
                       </p>
                     </div>
                     <div className="client-info">
@@ -130,14 +145,24 @@ const TestimonialSection = () => {
                     <div className="testimonial-content">
                       <p>
                         Partnering with Key MedSolutions has been one of the
-                        best decisions for our practice. Their medical billing
-                        and revenue cycle management services have streamlined
-                        our operations and significantly reduced claim denials.
-                        Their medical billing software is intuitive and has made
-                        tracking payments effortless. The team’s dedication and
-                        personalized support have been invaluable. If you’re
-                        looking for a medical billing outsourcing company that
-                        truly delivers, Key MedSolutions is the way to go!
+                        best decisions for our practice. Their&nbsp;
+                        <span className="tw-font-bold">
+                          medical billing and revenue cycle management services
+                        </span>
+                        &nbsp;have streamlined our operations and significantly
+                        reduced claim denials. Their&nbsp;
+                        <span className="tw-font-bold">
+                          medical billing software
+                        </span>
+                        &nbsp;is intuitive and has made tracking payments
+                        effortless. Their consistent dedication and individual
+                        attention have proven extremely valuable. If you’re
+                        looking for a&nbsp;
+                        <span className="tw-font-bold">
+                          medical billing outsourcing company
+                        </span>
+                        &nbsp;that truly delivers, Key MedSolutions is the way
+                        to go!
                       </p>
                     </div>
                     <div className="client-info">
@@ -153,16 +178,28 @@ const TestimonialSection = () => {
                   <div className="testimonial-bx">
                     <div className="testimonial-content">
                       <p>
-                        Running a small practice meant we were always juggling
-                        billing and patient care. Then Key MedSolutions stepped
-                        in. Their outsourced medical billing services completely
-                        took the stress off our shoulders. From ICD-10 coding to
-                        medical claims billing services, they handle it all with
-                        accuracy and professionalism. Their team is responsive,
-                        and their medical billing software keeps everything
-                        organized. Now, we can focus fully on our patients while
-                        they take care of the rest. I can’t recommend them
-                        enough!"
+                        Managing a small practice required continually balancing
+                        patient care and financial concerns. Then Key
+                        MedSolutions stepped in. Their&nbsp;
+                        <span className="tw-font-bold">
+                          outsourced medical billing services
+                        </span>
+                        &nbsp;completely took the stress off our shoulders.
+                        From&nbsp;
+                        <span className="tw-font-bold">ICD-10 coding</span>
+                        &nbsp;to&nbsp;
+                        <span className="tw-font-bold">
+                          medical claims billing services,
+                        </span>
+                        &nbsp;they handle it all with accuracy and
+                        professionalism. Their team is responsive, and their
+                        &nbsp;
+                        <span className="tw-font-bold">
+                          medical billing software
+                        </span>
+                        &nbsp;keeps everything organized. Now, we can focus
+                        fully on our patients while they take care of the rest.
+                        I can’t recommend them enough!
                       </p>
                     </div>
                     <div className="client-info">

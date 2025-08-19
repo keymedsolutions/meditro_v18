@@ -48,18 +48,22 @@ export function EmpoweringSection() {
           className="tw-text-lg tw-text-gray-700 tw-leading-relaxed tw-mb-4"
         >
           Key MedSolutions offers customized medical billing solutions and
-          healthcare IT services that simplify operations, improve accuracy, and
-          boost financial outcomes.
+          healthcare IT services that make things easier, improve accuracy, and
+          help businesses thrive financially. We work with providers to make
+          their jobs easier and optimize their revenue cycles so they can focus
+          on giving great care to their patients.
         </motion.p>
 
         <motion.p
           variants={itemVariants}
           className="tw-text-lg tw-text-gray-700 tw-leading-relaxed"
         >
-          We recognize every healthcare practice is unique. Our solutions are
-          crafted to meet your individual needs—streamlining workflows, improving
-          cash flow, and enabling long-term growth. Partner with Key MedSolutions
-          for a future of reliable, scalable success.
+          We believe that each healthcare practice is different. That's why we
+          make sure our solutions fit your individual needs. We simplify
+          processes, increase cash flow, and create new opportunities for
+          long-term success by integrating cutting-edge technology with our
+          knowledge of the business. When you work with Key MedSolutions, you
+          get a reliable partner who is dedicated to your success and progress.
         </motion.p>
       </div>
     </motion.section>

@@ -23,22 +23,29 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
             <h6 className="title-ext text-secondary">Pricing</h6>
 
             <h2 className="tw-mb-4 tw-font-display tw-text-4xl tw-font-extrabold tw-tracking-tight sm:tw-text-5xl md:tw-text-5xl">
-              Smart Learning Starts with a Smart{" "}
+              Smart Learning Starts with a Smart&nbsp;
               <span className="tw-bg-gradient-to-r tw-from-purple-600 tw-to-pink-600 tw-bg-clip-text tw-text-transparent">
                 Plan
               </span>
             </h2>
             <p>
-              Looking to excel in medical billing and revenue cycle management?
-              We’re here to make it happen with a learning plan tailored to your
-              goals.
+              Looking to excel in&nbsp;
+              <span className="tw-font-bold">
+                medical billing and revenue cycle management?
+              </span>
+              &nbsp;We’re here to make it happen with a learning plan tailored
+              to your goals.
             </p>
 
             <p>
               With expert mentorship, immersive training, and personalized
               support, you’ll develop the skills and confidence to thrive as a
-              healthcare billing professional. It’s straightforward, impactful,
-              and designed for your success!
+              &nbsp;
+              <span className="tw-font-bold">
+                healthcare billing professional.
+              </span>
+              &nbsp;It’s straightforward, impactful, and designed for your
+              success!
             </p>
           </div>
           <div className="row justify-content-center">

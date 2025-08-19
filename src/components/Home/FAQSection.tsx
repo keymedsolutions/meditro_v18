@@ -7,12 +7,12 @@ const FAQSection = () => {
     {
       question: "What services does Key MedSolutions provide?",
       answer:
-        "We offer comprehensive medical billing and revenue cycle management (RCM) services. This includes patient eligibility verification, claims submission, payment posting, denial management, and more.",
+        "We provide fully integrated solutions for medical billing and revenue cycle management. This includes patient eligibility verification, claims submission, payment posting, denial management, and more.",
     },
     {
       question: "Why should I outsource my medical billing?",
       answer:
-        "Outsourcing saves time, reduces errors, and improves cash flow. With experts handling your medical billing and RCM, you can focus on patient care while we ensure your claims are processed efficiently.",
+        "Outsourcing takes the pressure off - freeing your time, cutting down errors, and boosting your cash flow. With experts handling your medical billing and RCM, you can focus on patient care while we ensure your claims are processed efficiently.",
     },
     {
       question: "Is my patient data secure with Key MedSolutions?",
