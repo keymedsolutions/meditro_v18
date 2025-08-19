@@ -57,8 +57,8 @@ const AboutSection = () => {
                   What sets Key MedSolutions apart is our ability to combine
                   cutting-edge technology with a human touch. We understand that
                   every healthcare provider is unique, and so are their
-                  challenges. That is why we do not offer cookie-cutter
-                  solutions. Instead, we take the time to understand your needs
+                  challenges. That’s why we don’t use one-size-fits-all
+                  solutions Instead, we take the time to understand your needs
                   and craft strategies that deliver measurable results.
                 </p>
                 <p>
@@ -71,14 +71,15 @@ const AboutSection = () => {
                     end to end revenue cycle solutions.
                   </span>
                   &nbsp; But it is not just about the services we provide. It is
-                  about how we deliver them. We use advanced Medical Billing
-                  Software and automation tools to streamline processes, reduce
+                  about how we deliver them. We use advanced&nbsp;
+                  <span className="tw-font-bold">Medical Billing Software</span>
+                  &nbsp;and automation tools to streamline processes, reduce
                   errors, and maximize revenue. At the same time, our team of
                   skilled professionals ensures every detail is handled with
                   care and precision.
                 </p>
                 <p>
-                  Collaboration is at the heart of what we do. We work closely
+                  Collaboration is central to everything we do. We work closely
                   with physician groups, clinics, and hospitals to eliminate
                   administrative burdens, improve compliance, and enhance
                   financial performance. Our goal is not just to manage your
@@ -86,9 +87,9 @@ const AboutSection = () => {
                   and profitable process.
                 </p>
                 <p>
-                  At Key MedSolutions, we are not just a service provider. We
-                  are your partner in progress, helping you achieve more with
-                  less stress.
+                  At Key MedSolutions, we are not just a service provider. As
+                  your strategic partner, we enable you to accomplish more
+                  efficiently and with greater ease.
                 </p>
               </div>
               {/* <div className="row">
