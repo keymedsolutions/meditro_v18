@@ -4,13 +4,13 @@ const MenuItems = [
   { label: "About Us", path: "/about-us" },
   {
     label: "Services",
-    path: "/services",
+    path: "/our-services",
     subMenu: [
       {
         label: "Physician Billing Services",
-        path: "/physician-billing-services",
+        path: "/physician-medical-billing-services",
         subMenu: [
-          { label: "Medical Claim Billing", path: "/medical-claim-billing" },
+          { label: "Medical Claim Billing", path: "/medical-claim-billing-company" },
           {
             label: "Internal Medicine & Nephrology Billing Services",
             path: "/internal-medicine-and-nephrology-billing-service",

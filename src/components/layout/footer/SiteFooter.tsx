@@ -43,7 +43,7 @@ const SiteFooter = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services">
+                    <Link href="/our-services">
                       <span>Services</span>
                     </Link>
                   </li>

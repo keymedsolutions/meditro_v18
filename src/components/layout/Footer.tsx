@@ -66,7 +66,7 @@ const Footer = () => {
                                 <h3 className="footer-title">Our Service</h3>
                                 <ul>
                                     <li>
-                                        <Link href="/medical-claim-billing">
+                                        <Link href="/medical-claim-billing-company">
                                             Medical Claim Billing
                                         </Link>
                                     </li>

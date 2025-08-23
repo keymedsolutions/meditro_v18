@@ -66,7 +66,7 @@ export default function MedicalBillingLanding() {
                 {/* Animated background div */}
                 <div className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-2 tw-bg-green-500 tw-transition-all tw-duration-300 tw-z-0 group-hover:tw-w-full" />
                 <CheckCircle
-                  className="tw-text-green-500 tw-mr-3 tw-flex-shrink-0 tw-relative tw-z-10"
+                  className="tw-text-green-500 group-hover:tw-text-white tw-mr-3 tw-flex-shrink-0 tw-relative tw-z-10"
                   size={24}
                 />
                 <span className="tw-text-gray-800 group-hover:tw-text-white tw-transition-colors tw-duration-300 tw-font-medium tw-relative tw-z-10">

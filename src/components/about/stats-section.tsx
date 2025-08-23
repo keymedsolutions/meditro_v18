@@ -101,7 +101,9 @@ export function StatsSection() {
       <div className="tw-max-w-6xl tw-mx-auto">
         <motion.div className="tw-text-center tw-mb-16" variants={itemVariants}>
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">The Key MedSolutions Edge</h6>
+            <h6 className="title-ext text-secondary">
+              The Key MedSolutions Edge
+            </h6>
             <h3 className="tw-max-w-3xl tw-mx-auto">
               Proven results that demonstrate our commitment to excellence in
               healthcare solutions
@@ -147,14 +149,21 @@ export function StatsSection() {
           })}
         </div>
 
-        <motion.div className="tw-mt-16 tw-text-center" variants={itemVariants}>
-          <div className="tw-bg-white tw-bg-opacity-10 tw-backdrop-blur-sm tw-p-8 tw-rounded-2xl tw-border tw-border-white tw-border-opacity-20">
-            <p className="tw-text-lg tw-leading-relaxed">
-              Collaborate with Key MedSolutions today to access seamless
-              operations, precise billing, and sustainable growth for your
-              medical practice!
-            </p>
-          </div>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          whileHover={{
+            scale: 1.02,
+            boxShadow: "0px 8px 20px rgba(0,0,0,0.15)",
+          }}
+          className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md tw-mt-10"
+        >
+          <p className="tw-text-gray-800 tw-text-base tw-m-0 tw-font-bold">
+            Partner with Key MedSolutions to streamline workflows, perfect your
+            billing process, and power the growth of your practice. your
+            practice.
+          </p>
         </motion.div>
       </div>
     </motion.section>

@@ -10,7 +10,6 @@ import WhyUsSection from '@/components/services/physician-billing/WhyUsSection'
 const PhysicianBillingPage = () => {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden bg-slate-50">
-      ccccc
       <Hero />
       <ServiceSection />  
       <BenefitsSection />

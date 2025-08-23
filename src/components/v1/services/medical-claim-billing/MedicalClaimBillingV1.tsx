@@ -7,7 +7,7 @@ const MedicalClaimBillingV1 = () => {
     const title = "Professional Medical Claim Billing Company for Faster Reimbursements";
     return (
         <div className="page-content bg-white aboutus">
-            <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/medical-claim-billing" }]} />
+            <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/medical-claim-billing-company" }]} />
 
             <section>
                 <div className="container">
