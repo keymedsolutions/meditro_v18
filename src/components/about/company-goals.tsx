@@ -25,7 +25,7 @@ export function CompanyGoals() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h2 className="tw-text-2xl tw-font-extrabold tw-text-accentOrange-500 tw-mb-4 tracking-tight">
+            <h2 className="tw-text-2xl tw-font-extrabold tw-text-green-700 tw-mb-4 tracking-tight">
               Our Mission
             </h2>
             <p className="tw-text-gray-700 tw-text-sm tw-leading-relaxed">
@@ -82,7 +82,7 @@ export function CompanyGoals() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h2 className="tw-text-2xl tw-font-extrabold tw-text-accentOrange-500 tw-mb-4 tracking-tight">
+            <h2 className="tw-text-2xl tw-font-extrabold tw-text-accent-500 tw-mb-4 tracking-tight">
               Our Commitment
             </h2>
             <p className="tw-text-gray-700 tw-text-sm tw-leading-relaxed tw-h-full">

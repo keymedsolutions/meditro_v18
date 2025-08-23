@@ -11,13 +11,13 @@ const WhoWeServe = ({data,title,description}:{data:ClientType[],title:string,des
             <section className="tw-px-4 tw-bg-white/50 tw-backdrop-blur-sm">
                 <div className="tw-container tw-mx-auto tw-max-w-6xl">
 
-                    <div className="info-bx tw-mt-16">
+                    <div className="info-bx tw-mt-10">
                         <div className="heading-bx text-left">
-                            <h3 className="tw-text-2xl md:tw-text-2xl tw-text-center">{title}</h3>
+                            <h3 className="tw-text-2xl md:!tw-text-3xl tw-text-center">{title}</h3>
                         </div>
                         {
                             description &&
-                            <div>
+                            <div className='tw-text-center tw-text-xl'>
                                 <p>{description}</p>
                             </div>
                         }

@@ -9,7 +9,7 @@ const Footer = () => {
   const routes = [
     { name: "About Us", path: "/about-us" },
     { name: "Contact", path: "/contact-us" },
-    { name: "Services", path: "/services" },
+    { name: "Services", path: "/our-services" },
     { name: "FAQs", path: "/faq" },
     { name: "Privacy Policy", path: "/" },
   ];

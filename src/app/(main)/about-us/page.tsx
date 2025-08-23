@@ -14,7 +14,7 @@ const Breadcrumb = dynamic(() => import("@/components/ui/breadcrumb"), {
 import React from "react";
 
 const AboutUsPage = () => {
-  const title = "Built on Trust, Powered by Results – About Our Company";
+  const title = "About Us - Key MedSolutions";
   return (
     <div className="tw-overflow-hidden">
       <div className="page-content bg-white aboutus">
@@ -28,9 +28,6 @@ const AboutUsPage = () => {
             <div className="row justify-content-center">
               {/* <div className="col"></div> */}
               <div className="col-md-12">
-                <div className="heading-bx text-center">
-                  <h3 className="title">Welcome to Key MedSolutions !</h3>
-                </div>
                 <p>
                   <span className="tw-font-bold">
                     Revolutionizing Medical Billing and Revenue Cycle Management
@@ -80,8 +77,6 @@ const AboutUsPage = () => {
               </div>
               {/* <div className="col"></div> */}
             </div>
-
-            <BrandRattings />
           </div>
         </section>
       </div>
@@ -90,6 +85,7 @@ const AboutUsPage = () => {
       <CompanyGoals />
       <ValuesSection />
       <StatsSection />
+      <BrandRattings />
     </div>
   );
 };

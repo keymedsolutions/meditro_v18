@@ -78,7 +78,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/physician-billing-services": [
+  "/physician-medical-billing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -117,7 +117,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/physician-billing-services",
+      url: "https://www.keymedsolution.com/physician-medical-billing-services",
       category: "Physician Billing Services",
     },
     {
@@ -176,7 +176,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/medical-claim-billing": [
+  "/medical-claim-billing-company": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -207,7 +207,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/medical-claim-billing",
+      url: "https://www.keymedsolution.com/medical-claim-billing-company",
     },
   ],
   "/internal-medicine-and-nephrology-billing-service": [

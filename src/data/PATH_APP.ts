@@ -2,10 +2,10 @@ export const APP_PATH = {
   home: { path: "/" },
   about: { path: "/about-us" },
   services: {
-    path: "/services",
+    path: "/our-services",
     physicianBilling: {
-      path: "/physician-billing-services",
-      claimBilling: { path: "/medical-claim-billing" },
+      path: "/physician-medical-billing-services",
+      claimBilling: { path: "/medical-claim-billing-company" },
       internalMedicine: {
         path: "/internal-medicine-and-nephrology-billing-service",
       },

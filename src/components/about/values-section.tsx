@@ -119,10 +119,6 @@ export function ValuesSection() {
         <motion.div className="tw-text-center tw-mb-16" variants={itemVariants}>
           <div className="heading-bx text-center">
             <h6 className="title-ext text-secondary">Our Values</h6>
-            <h3 className="tw-max-w-3xl tw-mx-auto">
-              The core principles that guide everything we do at Key
-              MedSolutions
-            </h3>
           </div>
         </motion.div>
 

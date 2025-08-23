@@ -10,6 +10,7 @@ export function middleware(request: NextRequest) {
   headers.set("x-current-path", request.nextUrl.pathname);
   headers.set("x-full-path", request.nextUrl.href);
 
+  console.log(!isRouteEnabled(pathname),"pppppppp")
   if (!isRouteEnabled(pathname)) {
     return NextResponse.redirect(new URL("/maintenance", request.url));
   }

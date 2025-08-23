@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import PhysicianBillingAccordion from '@/components/physician-billing-services/physician-billing-accordian'
+// import PhysicianBillingAccordion from '@/components/physician-medical-billing-services/physician-billing-accordian'
+import PhysicianBillingAccordion from '@/components/physician-billing-services/physician-billing-accordian';
 import Breadcrumb from '@/components/ui/breadcrumb'
 import Link from 'next/link';
 import React from 'react'
@@ -8,7 +9,7 @@ const PhysicianBillingServicesV1 = () => {
 
     return (
         <div className="page-content bg-white aboutus">
-            <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/physician-billing-services" }]} />
+            <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/physician-medical-billing-services" }]} />
 
             <section>
                 <div className="container">

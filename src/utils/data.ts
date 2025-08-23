@@ -218,7 +218,7 @@ export const MetaData = [
       "Key MedSolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
   },
   {
-    PageURL: "/medical-claim-billing",
+    PageURL: "/medical-claim-billing-company",
     MetaTitle:
       "Medical Claim Billing Services and Solutions | Key Medsolutions",
     MetaDescription:
@@ -231,7 +231,7 @@ export const MetaData = [
       "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
   },
   {
-    PageURL: "/physician-billing-services",
+    PageURL: "/physician-medical-billing-services",
     MetaTitle: "Physician Billing Services | Physician Billing Company",
     MetaDescription:
       "Boost revenue and streamline your practice with Key MedSolutions' physician billing services. Tailored solutions and efficient RCM. Request a free demo today!",

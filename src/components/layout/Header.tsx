@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                                     <Link href="#">Services</Link>
                                     <ul className="sub-menu lg-menu">
                                         <li>
-                                            <Link href="/physician-billing-services">Physician Billing Services</Link>
+                                            <Link href="/physician-medical-billing-services">Physician Billing Services</Link>
                                         </li>
                                         <li>
                                             <Link href="/medical-billing-coding-services">

@@ -70,7 +70,7 @@ export default function HeroBanner() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" className="tw-border-indigo-200 tw-text-indigo-700 hover:tw-bg-indigo-50">
-                  <Link href="/services">Our Services</Link>
+                  <Link href="/our-services">Our Services</Link>
                 </Button>
               </div>
             </div>
