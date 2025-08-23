@@ -3,7 +3,9 @@ import { appRoutes } from "@/routes/path";
 export function isRouteEnabled(pathname: string): boolean {
   if (pathname === "/maintenance") return true; // Always allow maintenance page
 
-  const maintenance = process.env.NEXT_MAINTENANCE === "true";
+  // const maintenance = process.env.NEXT_MAINTENANCE === "true";
+  const maintenance =  true;
+
 
   // Try to find exact match first
   let route = appRoutes.find((r) => r.path === pathname);
