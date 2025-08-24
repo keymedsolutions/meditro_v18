@@ -1,36 +1,41 @@
-"use client"
-import React, { useRef } from 'react'
-import Hero from './Hero'
+"use client";
+import React, { useRef } from "react";
+import Hero from "./Hero";
 // import Services from './Services'
 // import RCM from './RCM'
-import Testimonials from './Testimonials'
-import FAQ from './FAQ'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import ReliableSolutions from './ReliableSolutions'
-import RCMSection from './RCMSection'
-import WhyChooseUs from './WhyChooseUs'
-import ComprehensiveServices from './ComprehensiveServices'
-import CTASections from './CTASections'
+import Testimonials from "./Testimonials";
+import FAQ from "./FAQ";
+import { motion, useScroll, useTransform } from "framer-motion";
+import ReliableSolutions from "./ReliableSolutions";
+import RCMSection from "./RCMSection";
+import WhyChooseUs from "./WhyChooseUs";
+import ComprehensiveServices from "./ComprehensiveServices";
+import CTASections from "./CTASections";
+import WhyChooseSection from "./WhyChooseSection";
+import BillingServices from "./BillingServices";
+import WhoShouldOutsourceCardiologyBilling from "./WhoShouldOutsourceCardiologyBilling";
+import { Advantage } from "./Advantage";
+import { ReadyForServices } from "./ReadyForServices";
 
 const CardiologyMedicalBilling = () => {
-
-  const containerRef = useRef(null)
+  const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
-  })
+  });
 
+  // Parallax and animation values
+  const backgroundY1 = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"]);
+  const backgroundRotate = useTransform(scrollYProgress, [0, 1], [0, 45]);
 
-    // Parallax and animation values
-    const backgroundY1 = useTransform(scrollYProgress, [0, 1], ["0%", "30%"])
-    const backgroundY2 = useTransform(scrollYProgress, [0, 1], ["0%", "-20%"])
-    const backgroundRotate = useTransform(scrollYProgress, [0, 1], [0, 45])
-  
-  
   return (
-    <div ref={containerRef} className="tw-relative tw-min-h-screen tw-overflow-hidden tw-bg-gradient-to-br tw-from-slate-50 tw-to-blue-50">
-         {/* Animated background elements */}
-      <div className="tw-fixed tw-inset-0 -z-10 tw-overflow-hidden">
+    <div
+      ref={containerRef}
+      className="tw-relative tw-min-h-screen tw-overflow-hidden "
+    >
+      {/* Animated background elements */}
+      {/* <div className="tw-fixed tw-inset-0 -z-10 tw-overflow-hidden">
         <motion.div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-full tw-opacity-30" style={{ y: backgroundY1 }}>
           <div className="tw-absolute tw-top-10 tw-left-10 tw-w-[40vw] tw-h-[40vw] tw-rounded-full tw-bg-gradient-to-r tw-from-cyan-200 tw-to-blue-200 blur-[100px]" />
           <div className="tw-absolute tw-bottom-20 tw-right-20 tw-w-[30vw] tw-h-[30vw] tw-rounded-full tw-bg-gradient-to-r tw-from-blue-200 tw-to-cyan-200 blur-[80px]" />
@@ -46,7 +51,6 @@ const CardiologyMedicalBilling = () => {
       </div>
 
 
-        {/* Floating shapes */}
         <div className="tw-fixed tw-inset-0 -tw-z-5 tw-overflow-hidden tw-pointer-events-none">
         {[...Array(6)].map((_, i) => (
           <motion.div
@@ -71,21 +75,26 @@ const CardiologyMedicalBilling = () => {
             }}
           />
         ))}
-      </div>
-      <main className="tw-container tw-mx-auto tw-px-4  tw-relative tw-z-10">
+      </div> */}
+      <main className="tw-mx-auto tw-overflow-hidden  tw-relative tw-z-10">
         <Hero />
-        <ReliableSolutions />
+        <WhyChooseSection />
+        <BillingServices />
+        <WhoShouldOutsourceCardiologyBilling />
+        <Advantage />
+        {/* <ReliableSolutions />
         <RCMSection />
         <WhyChooseUs />
-        <ComprehensiveServices />
+        <ComprehensiveServices /> */}
         {/* <Services />
         <RCM /> */}
-        <Testimonials />
-        <FAQ />
-        <CTASections />
+        {/* <Testimonials /> */}
+        {/* <CTASections /> */}
       </main>
+      <ReadyForServices />
+      <FAQ />
     </div>
-  )
-}
+  );
+};
 
-export default CardiologyMedicalBilling
+export default CardiologyMedicalBilling;

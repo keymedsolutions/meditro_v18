@@ -225,7 +225,7 @@ export const MetaData = [
       "We are a medical billing services company offering medical claims billing solutions to healthcare providers in the USA. Book a free consultation today!",
   },
   {
-    PageURL: "/internal-medicine-and-nephrology-billing-service",
+    PageURL: "/internal-medicine-medical-billing",
     MetaTitle: "Internal Medicine and Nephrology Medical Billing Services",
     MetaDescription:
       "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",

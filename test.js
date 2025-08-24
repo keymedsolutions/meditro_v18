@@ -13,7 +13,7 @@ const MenuItems = [
           { label: "Medical Claim Billing", path: "/medical-claim-billing-company" },
           {
             label: "Internal Medicine & Nephrology Billing Services",
-            path: "/internal-medicine-and-nephrology-billing-service",
+            path: "/internal-medicine-medical-billing",
           },
           {
             label: "Radiology Billing Services",

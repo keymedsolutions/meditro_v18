@@ -1,10 +1,10 @@
-import CardiologyMedicalBillingV2 from '@/components/v2/services/cardiology-medical-billing/CardiologyMedicalBillingV2'
+import CardiologyMedicalBilling from '@/components/services/cardiology-medical-billing/cardiology-medical-billing'
 import React from 'react'
 
 const Page = () => {
   return (
     <>
-    <CardiologyMedicalBillingV2/>
+    <CardiologyMedicalBilling/>
     </>
   )
 }

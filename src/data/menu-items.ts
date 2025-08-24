@@ -13,7 +13,11 @@ export const MenuItems: any = [
           { label: "Medical Claim Billing", path: "/medical-claim-billing-company" },
           {
             label: "Internal Medicine & Nephrology Billing Services",
-            path: "/internal-medicine-and-nephrology-billing-service",
+            path: "/internal-medicine-medical-billing",
+          },
+          {
+            label: "Nephrology Billing Services",
+            path: "/nephrology-medical-billing",
           },
           {
             label: "Radiology Billing Services",

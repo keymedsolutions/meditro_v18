@@ -7,7 +7,7 @@ export const APP_PATH = {
       path: "/physician-medical-billing-services",
       claimBilling: { path: "/medical-claim-billing-company" },
       internalMedicine: {
-        path: "/internal-medicine-and-nephrology-billing-service",
+        path: "/internal-medicine-medical-billing",
       },
       radiologyBilling: { path: "/radiology-billing-services" },
       cardiologyBilling: { path: "/cardiology-medical-billing" },

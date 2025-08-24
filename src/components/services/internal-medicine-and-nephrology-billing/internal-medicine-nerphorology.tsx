@@ -10,7 +10,7 @@ import Benefits from './Benefits';
 import Testimonials from './Testimonials';
 import FAQ from './FAQ';
 import StatsSection from './stats-section';
-import Hero from './Hero';
+import Hero from './Hero1';
 import ScheduleSection from './schedule-section';
 
 const InternalMedicineNephrology = () => {
