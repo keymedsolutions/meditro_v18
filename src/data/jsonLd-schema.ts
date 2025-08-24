@@ -210,7 +210,7 @@ export const jsonLdSchema: any = {
       url: "https://www.keymedsolution.com/medical-claim-billing-company",
     },
   ],
-  "/internal-medicine-and-nephrology-billing-service": [
+  "/internal-medicine-medical-billing": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -241,7 +241,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/internal-medicine-and-nephrology-billing-service",
+      url: "https://www.keymedsolution.com/internal-medicine-medical-billing",
     },
   ],
   "/radiology-billing-services": [

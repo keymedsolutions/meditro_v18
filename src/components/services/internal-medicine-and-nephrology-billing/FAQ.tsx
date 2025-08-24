@@ -8,29 +8,43 @@ import { Accordion } from 'react-bootstrap';
 
 const FAQ = () => {
 
-  const faqs = [
-    {
-      question: "How can Key MedSolutions help reduce claim denials for internal medicine and nephrology?",
-      answer: "To reduce denials and increase reimbursements, we guarantee correct coding, appropriate documentation, and adherence to payer policies."
-    },
-    {
-      question: "What are the biggest challenges in nephrology billing?",
-      answer: "Complex dialysis billing, coding mistakes, non-compliance, and high claim denial rates are typical difficulties. These complexities are managed by our professionals to enhance your revenue cycle."
-    },
-    {
-      question: "How soon can I expect to see improvements in collections?",
-      answer: "Within the first few months of working with us, the majority of our clients report a 20–35% increase in collections."
-    },
-    {
-      question: "Does Key MedSolutions handle prior authorizations?",
-      answer: "Yes! Our group effectively handles prior authorizations, guaranteeing quicker approvals and lessening the administrative load."
-    },
-    {
-      question: "Can I track my billing performance in real time?",
-      answer: "Of course! You have total visibility into claims, payments, and financial performance thanks to our real-time reporting and analytics."
-    }
-  ];
-
+  const faqs =  [
+  {
+    question: "What makes your Internal Medicine Billing Services different from others?",
+    answer:
+      "Our services are specifically designed for internal medicine and nephrology practices. With expert billers and coders, we ensure accurate claims, faster reimbursements, and a streamlined revenue cycle tailored to your specialty.",
+  },
+  {
+    question: "How do you stay updated with changing regulations?",
+    answer:
+      "We continuously monitor updates in healthcare regulations, payer policies, and coding standards. Our team undergoes regular training to ensure your practice remains compliant and avoids costly errors.",
+  },
+  {
+    question: "Can I customize the services to fit my practice’s needs?",
+    answer:
+      "Yes! We offer flexible service models that can be tailored to your practice’s size, specialty, and specific requirements, ensuring you get the exact support you need.",
+  },
+  {
+    question: "How does outsourcing billing benefit my practice?",
+    answer:
+      "By outsourcing, you lighten your team's administrative load, enabling them to devote more time to delivering exceptional patient care. It also improves claim accuracy, accelerates cash flow, and ensures compliance with industry standards.",
+  },
+  {
+    question: "What kind of reporting and analytics do you provide?",
+    answer:
+      "We provide real-time reporting and actionable financial insights, giving you a clear view of your practice’s revenue cycle performance. This helps you make informed decisions to optimize your financial health.",
+  },
+  {
+    question: "How do you handle denied or rejected claims?",
+    answer:
+      "Our team manages the entire claims process, including tracking, analyzing, and appealing denied claims. We work diligently to resolve issues and recover revenue efficiently.",
+  },
+  {
+    question: "Can your services help reduce claim denials?",
+    answer:
+      "Yes, our expert team focuses on accurate coding and thorough claims management to minimize errors and reduce the likelihood of denials, ensuring a smoother revenue cycle.",
+  },
+]
   const mid = Math.ceil(faqs.length / 2);
   const firstHalf = faqs.slice(0, mid);
   const secondHalf = faqs.slice(mid);
@@ -51,7 +65,7 @@ const FAQ = () => {
     <section id="faqs" className="inmbp-section tw-bg-white tw-relative tw-overflow-hidden">
       <FloatingElements />
       <div className="tw-container tw-mx-auto tw-relative tw-z-10">
-        <SectionHeading title="Frequently Asked Questions" showUnderline={false} subtitle="FAQs" description=' Get answers to common questions about our nephrology and internal medicine billing services.' />
+        <SectionHeading title="Frequently Asked Questions" showUnderline={false} subtitle="FAQs"  />
         {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -84,7 +98,7 @@ const FAQ = () => {
            {/* Responsive Grid */}
            <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-mt-10">
                     <div>
-                        <Accordion defaultActiveKey="0" className="accordion ttr-accordion1">
+                        <Accordion className="accordion ttr-accordion1">
                             {firstHalf.map((faq, index) => (
                                 <Accordion.Item eventKey={String(index)} key={index}>
                                     <Accordion.Header>{faq.question}</Accordion.Header>
@@ -94,7 +108,7 @@ const FAQ = () => {
                         </Accordion>
                     </div>
                     <div>
-                        <Accordion defaultActiveKey="1" className="accordion1 ttr-accordion1">
+                        <Accordion className="accordion1 ttr-accordion1">
                             {secondHalf.map((faq, index) => (
                                 <Accordion.Item eventKey={String(index)} key={index}>
                                     <Accordion.Header>{faq.question}</Accordion.Header>

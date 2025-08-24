@@ -7,7 +7,8 @@ export const SiteMetaData: ISiteMetaData = {
       "Discover stress-free medical billing with Key MedSolutions. Boost cash flow, reduce errors, and focus on patients with tailored RCM services and expert support.",
   },
   "/medical-claim-billing-company": {
-    title: "Medical Claim Billing Company | Streamline Revenue with Key MedSolutions",
+    title:
+      "Medical Claim Billing Company | Streamline Revenue with Key MedSolutions",
     description:
       "Discover tailored solutions with Key MedSolutions, a trusted Medical Claim Billing Company. Streamline your billing, cut down denials, and increase revenue starting today!",
   },
@@ -21,10 +22,11 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Elevate and transform your medical practice with the expertise of Key MedSolutions. Expert billing, tailored RCM, and advanced solutions ensure precision, efficiency, and growth.",
   },
-  "/internal-medicine-and-nephrology-billing-service": {
-    title: "Internal Medicine and Nephrology Medical Billing Services",
+  "/internal-medicine-medical-billing": {
+    title:
+      "Internal Medicine Billing Services | Boost Revenue with Key MedSolutions",
     description:
-      "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
+      "Streamline operations with tailored Internal Medicine Billing Services. Boost revenue, minimize errors, and stay compliant — all with Key MedSolutions by your side. Get started today!",
   },
   "/physician-medical-billing-services": {
     title: " Physician Medical Billing Services | Maximize Practice Revenue",
@@ -37,14 +39,15 @@ export const SiteMetaData: ISiteMetaData = {
       " Ensure accurate claims and faster reimbursements with expert ICD-10 medical coding services tailored for healthcare providers and facilities.",
   },
   "/radiology-billing-services": {
-    title: "Expert Radiology Billing Services to Maximize Reimbursements",
+    title:
+      "Radiology Billing Services | Maximize Revenue with Key MedSolutions",
     description:
-      " Expert radiology medical billing and coding services tailored for imaging centers. Ensure accuracy, compliance, and faster reimbursements with trusted solutions",
+      "Streamline your practice with Radiology Billing Services from Key MedSolutions. Achieve accuracy, faster claims, and compliance with tailored solutions today!",
   },
   "/cardiology-medical-billing": {
-    title: "Specialized Cardiology Medical Billing and Coding Services",
+    title: "Cardiology Medical Billing Services | Boost Revenue with Precision",
     description:
-      "Get specialized cardiology medical billing and coding services to reduce claim denials, speed up reimbursements, and improve your practice’s revenue cycle.",
+      "Discover expert Cardiology Medical Billing Services with Key MedSolutions. Maximize reimbursements, reduce denials, and streamline processes for better revenue.",
   },
   "/improving-your-financial-health-with-profit-enhancement-services": {
     title: "Profit Enhancement Services for Healthcare Providers",

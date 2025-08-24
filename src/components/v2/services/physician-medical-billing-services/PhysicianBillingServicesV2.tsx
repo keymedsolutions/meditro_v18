@@ -331,6 +331,24 @@ const PhysicianBillingServicesV2 = () => {
           </Accordion>
         </div>
       </div> */}
+
+       <div className="container tw-pb-16"><div className="info-bx tw-mt-16">
+          <div className="heading-bx text-left">
+            <h3 className="tw-text-2xl md:tw-text-2xl">
+              Frequently Asked Questions (FAQs)
+            </h3>
+          </div>
+
+          <Accordion className="accordion ttr-accordion1">
+            {faqs.map((faq, index) => (
+              <Accordion.Item eventKey={String(index)} key={index}>
+                <Accordion.Header>{faq.question}</Accordion.Header>
+                <Accordion.Body>{faq.answer}</Accordion.Body>
+              </Accordion.Item>
+            ))}
+          </Accordion>
+        </div>
+        </div>
     </>
   );
 };

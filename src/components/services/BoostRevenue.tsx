@@ -15,14 +15,7 @@ import {
   Mail,
 } from "lucide-react";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.7, ease: "easeOut" },
-  },
-};
+
 
 const BoostRevenue = () => {
   const revenues = [
@@ -113,24 +106,17 @@ const BoostRevenue = () => {
 
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8 tw-mb-16">
           {revenues.map((revenue, index) => (
-            // <div className="glowing-border-wrapper">
-            //   <div className="glowing-border"></div>
-            //   <motion.div
-            //     className="glowing-card tw-min-h-full"
-            //     variants={fadeUp}
-            //     initial="hidden"
-            //     whileInView="visible"
-            //     viewport={{ once: true, amount: 0.2 }}
-            //   >
-            //     <h2 className="tw-text-2xl tw-font-extrabold tw-text-accentOrange-500 tw-mb-4 tracking-tight">
-            //       {revenue?.title}
-            //     </h2>
-            //     <p className="tw-text-gray-700 tw-text-sm tw-leading-relaxed">
-            //       {revenue?.description}
-            //     </p>
-            //   </motion.div>
-            // </div>
-            <div className="tw-relative tw-w-[min(300px,100%)] tw-mx-auto tw-bg-[#f4f5f2] tw-text-center border-2 tw-border-white tw-rounded-tl-[4rem]">
+               <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 50 }} // start hidden & slightly below
+                          whileInView={{ opacity: 1, y: 0 }} // fade in + slide up
+                          transition={{
+                            duration: 0.6,
+                            ease: "easeOut",
+                            delay: index * 0.2,
+                          }} // stagger
+                          viewport={{ once: true, amount: 0.2 }} // trigger when 20% visible, only once
+                          className="tw-relative tw-w-[min(300px,100%)] tw-mx-auto tw-bg-[#f4f5f2] tw-text-center border-2 tw-border-white tw-rounded-tl-[4rem]">
               <div
                 className="tw-absolute tw-h-[30px] tw-w-[120px] tw-bg-[#393e7f] tw-top-8 tw-right-[-2.5px]"
                 style={{
@@ -160,16 +146,15 @@ const BoostRevenue = () => {
                     style={{ border: "8px solid" }}
                     className="tw-grid tw-place-items-center tw-w-[84px] tw-aspect-square tw-bg-white tw-relative tw--translate-y-1/2 tw-rounded-full  !tw-border-[#393e7f] tw-font-black tw-text-xl"
                   >
-                    0{index + 1}
+                    {(index + 1).toString().padStart(2, "0")}
                     <span className="tw-absolute tw-w-[25px] tw-h-[25px] tw-bottom-1/2 tw-right-[calc(100%+4px)] tw-rounded-br-[20px] tw-shadow-[5px_5px_0_#393e7f]"></span>
                     <span className="tw-absolute tw-w-[25px] tw-h-[25px] tw-bottom-1/2 tw-left-[calc(100%+4px)] tw-rounded-bl-[20px] tw-shadow-[-5px_5px_0_#393e7f]"></span>
                   </label>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      
       </div>
     </section>
   );
