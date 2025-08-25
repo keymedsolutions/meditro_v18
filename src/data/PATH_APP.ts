@@ -14,10 +14,10 @@ export const APP_PATH = {
     },
 
     profitEnhancement: {
-      path: "/improving-your-financial-health-with-profit-enhancement-services",
+      path: "/profit-enhancement-services",
     },
     codingServices: {
-      path: "/medical-billing-coding-services",
+      path: "/medical-coding-services",
       icd10Coding: { path: "/ICD-10-medical-coding" },
     },
     reimbursementRate: {

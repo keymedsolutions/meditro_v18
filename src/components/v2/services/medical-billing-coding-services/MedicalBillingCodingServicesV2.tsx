@@ -23,7 +23,7 @@ const MedicalBillingCodingServicesV2 = () => {
   ]
 
   const title = "Streamline Your Practice with Expert Medical Coding and Billing Solutions";
-  const path = "/medical-billing-coding-services"
+  const path = "/medical-coding-services"
 
   const mid = Math.ceil(services.length / 2);
   const firstHalf = services.slice(0, mid);
