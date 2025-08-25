@@ -130,7 +130,7 @@ export function ValuesSection() {
             return (
               <motion.div
                 key={index}
-                className={`tw-bg-white tw-p-8 tw-rounded-xl tw-shadow-lg tw-border-2 ${colors.border} tw-h-full`}
+                className={`tw-bg-white tw-p-8 tw-rounded-xl tw-shadow-lg border-2 ${colors.border} tw-h-full`}
                 variants={cardVariants}
                 whileHover="hover"
               >

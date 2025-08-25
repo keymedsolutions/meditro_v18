@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const MedicalBillingCodingServicesV1 = () => {
     const title = "Streamline Your Practice with Expert Medical Coding and Billing Solutions";
-    const path = "/medical-billing-coding-services"
+    const path = "/medical-coding-services"
     return (
         <>
 

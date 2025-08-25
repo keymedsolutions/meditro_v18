@@ -12,10 +12,10 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Discover tailored solutions with Key MedSolutions, a trusted Medical Claim Billing Company. Streamline your billing, cut down denials, and increase revenue starting today!",
   },
-  "/medical-billing-coding-services": {
-    title: "Medical Coding Services and Solutions | HIPAA-Compliant",
+  "/medical-coding-services": {
+    title: "Professional Medical Coding Services for Healthcare Providers",
     description:
-      "Accurate, secure medical coding services and solutions for healthcare providers—ensuring HIPAA compliance, faster reimbursements, and revenue cycle improvement.",
+      "Boost accuracy and compliance with certified Medical Coding Services. Optimize your revenue cycle and cut down denials to keep your healthcare practice running smoothly.",
   },
   "/about-us": {
     title: "About Us | Expert Healthcare Technology Company",
@@ -49,10 +49,11 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Discover expert Cardiology Medical Billing Services with Key MedSolutions. Maximize reimbursements, reduce denials, and streamline processes for better revenue.",
   },
-  "/improving-your-financial-health-with-profit-enhancement-services": {
-    title: "Profit Enhancement Services for Healthcare Providers",
+  "/profit-enhancement-services": {
+    title:
+      "Profit Enhancement Services | Maximize Revenue with Key MedSolutions",
     description:
-      "Improve financial performance with tailored profit enhancement services designed to help healthcare providers increase revenue and reduce inefficiencies.",
+      " Maximize your practice’s profitability with tailored Profit Enhancement Services from Key MedSolutions. Boost revenue, reduce costs, and achieve financial success today!",
   },
   "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
     {

@@ -438,7 +438,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/improving-your-financial-health-with-profit-enhancement-services": [
+  "/profit-enhancement-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -477,7 +477,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/improving-your-financial-health-with-profit-enhancement-services",
+      url: "https://www.keymedsolution.com/profit-enhancement-services",
       category: "Profit Enhancement Services",
     },
     {
@@ -535,7 +535,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/medical-billing-coding-services": [
+  "/medical-coding-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -574,7 +574,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/medical-billing-coding-services",
+      url: "https://www.keymedsolution.com/medical-coding-services",
       category: "Medical Coding Services",
     },
     {

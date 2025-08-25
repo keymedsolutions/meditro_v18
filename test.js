@@ -28,11 +28,11 @@ const MenuItems = [
       {
         label:
           "Improving Your Financial Health with Profit Enhancement Services",
-        path: "/improving-your-financial-health-with-profit-enhancement-services",
+        path: "/profit-enhancement-services",
       },
       {
         label: "Medical Billing & Coding Services",
-        path: "/medical-billing-coding-services",
+        path: "/medical-coding-services",
         subMenu: [
           { label: "ICD-10 Medical Coding", path: "/ICD-10-medical-coding" },
         ],

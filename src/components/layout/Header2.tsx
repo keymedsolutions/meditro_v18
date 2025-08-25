@@ -104,7 +104,7 @@ const Header2: React.FC = () => {
                                             <Link href="/physician-medical-billing-services">Physician Billing Services</Link>
                                         </li>
                                         <li>
-                                            <Link href="/medical-billing-coding-services">
+                                            <Link href="/medical-coding-services">
                                                 Medical Billing & Coding Services
                                             </Link>
                                         </li>

@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/ui/breadcrumb";
 const MedicalBillingCodingServicesPage = () => {
     return (
         <div className="page-content bg-white aboutus">
-            <Breadcrumb title="Medical Billing and Coding Services" breadcrumb={[{ label: "Medical Billing and Coding Services", href: "/medical-billing-coding-services" }]} />
+            <Breadcrumb title="Medical Billing and Coding Services" breadcrumb={[{ label: "Medical Billing and Coding Services", href: "/medical-coding-services" }]} />
             <section>
                 <div className="container">
                     <div className="row justify-content-center">
