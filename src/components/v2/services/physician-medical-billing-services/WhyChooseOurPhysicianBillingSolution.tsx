@@ -43,7 +43,7 @@ const WhyChooseOurPhysicianBillingSolution = () => {
   ];
   return (
     <section className="tw-py-20 tw-bg-[radial-gradient(ellipse_at_center,_#e0e1fb_0%,_transparent_70%)]">
-      <div className="tw-container tw-py-10 md:tw-py-20 tw-mx-auto tw-px-4">
+      <div className="tw-container tw-mx-auto tw-px-4">
         <motion.div
           className="tw-text-center tw-mb-16"
           initial={{ opacity: 0, y: 30 }}

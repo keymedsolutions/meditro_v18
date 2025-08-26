@@ -6,7 +6,7 @@ const ICD10MedicalCodingV1 = () => {
     const title = "Accurate ICD-10 Medical Coding Services for Healthcare Providers"
     return (
         <div className="page-content bg-white aboutus">
-            <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/icd-10-medical-coding" }]} />
+            <Breadcrumb title={title} breadcrumb={[{ label: title, href: "/icd-10-medical-coding-services" }]} />
 
             <section>
                 <div className="container">

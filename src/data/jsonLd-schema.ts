@@ -632,7 +632,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/ICD-10-medical-coding": [
+  "/-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -671,7 +671,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/ICD-10-medical-coding",
+      url: "https://www.keymedsolution.com/icd-10-medical-coding-services",
       category: "ICD-10 Medical Coding Services",
     },
     {
@@ -729,7 +729,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
+  "/medical-debt-collection-services":
     [
       {
         "@context": "https://schema.org",
@@ -769,7 +769,7 @@ export const jsonLdSchema: any = {
           "@type": "Country",
           name: "United States",
         },
-        url: "https://www.keymedsolution.com/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+        url: "https://www.keymedsolution.com/medical-debt-collection-services",
         category: "Medical Debt Collection Services",
       },
       {

@@ -45,6 +45,8 @@ import ThePowerOfOutsourcedServices from "./ThePowerOfOutsourcedServices";
 import OurProvenProcess from "./OurProvenProcess";
 import LeadingPhysicianBillingCompany from "./LeadingPhysicianBillingCompany";
 import ContactUsPhysicianBilling from "./ContactUsPhysicianBilling";
+import Hero from "./Hero";
+import HealthcareProviders from "./HealthcareProviders";
 
 const PhysicianBillingServicesV2 = () => {
   const services = [
@@ -167,12 +169,13 @@ const PhysicianBillingServicesV2 = () => {
 
   return (
     <>
-      <div className="page-content bg-white aboutus tw-overflow-hidden">
-        <Breadcrumb title={title} breadcrumb={[{ label: title, href: path }]} />
+      <div className="page-content bg-white  tw-overflow-hidden">
+        {/* <Breadcrumb title={title} breadcrumb={[{ label: title, href: path }]} /> */}
         <div className="tw-min-h-screen tw-bg-background">
           {/* Hero Section */}
-          <ExperienceSeamlessBilling />
-
+          <Hero />
+          {/* <ExperienceSeamlessBilling /> */}
+          <HealthcareProviders />
           {/* Key Benefits */}
           <WhyChooseOurPhysicianBillingSolution />
 
@@ -275,7 +278,7 @@ const PhysicianBillingServicesV2 = () => {
           </div>
         </section> */}
       </div>
-{/* 
+      {/* 
       <SolutionsWeOffer
         firstHalf={firstHalf}
         secondHalf={secondHalf}
@@ -283,7 +286,7 @@ const PhysicianBillingServicesV2 = () => {
       /> */}
 
       {/* <WhoWeServe title="Who We Serve?" data={clientTypes} /> */}
-{/* 
+      {/* 
       <WhyChooseOurMedicalBilling
         title="Why Choose Our Medical Billing and RCM Services?"
         data={WhyChooses}
@@ -332,7 +335,8 @@ const PhysicianBillingServicesV2 = () => {
         </div>
       </div> */}
 
-       <div className="container tw-pb-16"><div className="info-bx tw-mt-16">
+      <div className="container tw-pb-16">
+        <div className="info-bx tw-mt-16">
           <div className="heading-bx text-left">
             <h3 className="tw-text-2xl md:tw-text-2xl">
               Frequently Asked Questions (FAQs)
@@ -348,7 +352,7 @@ const PhysicianBillingServicesV2 = () => {
             ))}
           </Accordion>
         </div>
-        </div>
+      </div>
     </>
   );
 };

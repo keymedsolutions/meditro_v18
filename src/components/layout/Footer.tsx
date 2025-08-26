@@ -40,7 +40,7 @@ const Footer = () => {
                                         <Link href="/contact-us">Contact Us</Link>
                                     </li>
                                     <li>
-                                        <Link href="/ICD-10-medical-coding">
+                                        <Link href="/icd-10-medical-coding-services">
                                             ICD-10 Medical Coding
                                         </Link>
                                     </li>
