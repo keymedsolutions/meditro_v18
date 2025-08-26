@@ -34,13 +34,13 @@ const MenuItems = [
         label: "Medical Billing & Coding Services",
         path: "/medical-coding-services",
         subMenu: [
-          { label: "ICD-10 Medical Coding", path: "/ICD-10-medical-coding" },
+          { label: "ICD-10 Medical Coding", path: "/icd-10-medical-coding-services" },
         ],
       },
       {
         label:
           "Maximize Your Reimbursement Rate with Our Medical Billing and Collection Services",
-        path: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+        path: "/medical-debt-collection-services",
       },
       {
         label: "Streamlining Medical AR Recovery",

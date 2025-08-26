@@ -106,7 +106,7 @@ export function BenefitsSection() {
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="tw-text-4xl lg:tw-text-5xl tw-font-black tw-font-heading tw-text-foreground tw-mb-6">
-            The Benefits of Outsourcing to{" "}
+            The Benefits of Outsourcing to&nbsp;
             <span className="tw-text-primary">Key MedSolutions</span>
           </h2>
           <p className="tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-body">

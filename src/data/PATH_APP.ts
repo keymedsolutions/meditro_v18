@@ -18,10 +18,10 @@ export const APP_PATH = {
     },
     codingServices: {
       path: "/medical-coding-services",
-      icd10Coding: { path: "/ICD-10-medical-coding" },
+      icd10Coding: { path: "/icd-10-medical-coding-services" },
     },
     reimbursementRate: {
-      path: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+      path: "/medical-debt-collection-services",
     },
     arRecovery: { path: "/streamlining-medical-AR-recovery" },
     practiceMgmt: { path: "/practice-management" },

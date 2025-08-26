@@ -7,7 +7,7 @@ import React from 'react'
 const ClaimSubmissionManagement = () => {
   return (
     <div className="page-content bg-white aboutus">
-            <Breadcrumb title="ICD-10 Medical Coding" breadcrumb={[{ label: "ICD-10 Medical Coding", href: "/icd-10-medical-coding" }]} />
+            <Breadcrumb title="ICD-10 Medical Coding" breadcrumb={[{ label: "ICD-10 Medical Coding", href: "/icd-10-medical-coding-services" }]} />
        
             <section>
             <div className="container">

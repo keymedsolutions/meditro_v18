@@ -12,7 +12,7 @@ const MaximizeYourReimbursementRateV1 = () => {
                 title={title}
                 breadcrumb={[{
                     label: title,
-                    href: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services"
+                    href: "/medical-debt-collection-services"
                 }]} />
 
             <section>

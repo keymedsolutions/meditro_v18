@@ -33,10 +33,10 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Discover tailored Physician Medical Billing Services with Key MedSolutions.Increase revenue, minimize denials, and prioritize patient care. Get started today!",
   },
-  "/ICD-10-medical-coding": {
-    title: "ICD-10 Medical Coding Services for Precise Reimbursement ",
+  "/icd-10-medical-coding-services": {
+    title: "ICD-10 Medical Coding Services | Optimize Accuracy with KMS",
     description:
-      " Ensure accurate claims and faster reimbursements with expert ICD-10 medical coding services tailored for healthcare providers and facilities.",
+      "Optimize accuracy and compliance with Key MedSolutions' ICD-10 Medical Coding Services. Tailored solutions ensure precise claims, reduced denials, and boosted revenue.",
   },
   "/radiology-billing-services": {
     title:
@@ -55,12 +55,11 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       " Maximize your practice’s profitability with tailored Profit Enhancement Services from Key MedSolutions. Boost revenue, reduce costs, and achieve financial success today!",
   },
-  "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
-    {
-      title: "Medical Debt Collection Service for Healthcare Practitioners",
-      description:
-        "Professional Medical Debt Collection Services for healthcare providers to recover unpaid claims, reduce bad debt, and improve overall cash flow.",
-    },
+  "/medical-debt-collection-services": {
+    title: "Optimize Cash Flow with Medical Debt Collection Service",
+    description:
+      "Streamline your healthcare revenue with our Medical Debt Collection Service. Recover outstanding payments efficiently while maintaining patient trust and HIPAA compliance.",
+  },
   "/streamlining-medical-AR-recovery": {
     title: "Accounts Receivable Recovery Services | AR Recovery Solution",
     description:
