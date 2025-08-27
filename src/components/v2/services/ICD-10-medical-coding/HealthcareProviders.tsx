@@ -39,7 +39,7 @@ const HealthcareProviders = () => {
         <span className="tw-font-bold">Top ICD-10 Coding Company,</span> we
         deliver scalable and reliable&nbsp;
         <span className="tw-font-bold">ICD-10 Coding Services.</span>&nbsp;Our
-        certified&nsbsp;
+        certified&nbsp;
         <span className="tw-font-bold">ICD-10 Coding Specialists</span>
         &nbsp;execute every task with precision and a full understanding of
         payer rules and clinical documentation requirements. Whether you operate

@@ -44,7 +44,7 @@ export const MenuItems: any = [
       },
       {
         label: "Streamlining Medical AR Recovery",
-        path: "/streamlining-medical-AR-recovery",
+        path: "/accounts-receivable-recovery-solutions",
       },
       { label: "Practice Management", path: "/practice-management" },
       {

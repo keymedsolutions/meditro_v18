@@ -60,10 +60,10 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Streamline your healthcare revenue with our Medical Debt Collection Service. Recover outstanding payments efficiently while maintaining patient trust and HIPAA compliance.",
   },
-  "/streamlining-medical-AR-recovery": {
-    title: "Accounts Receivable Recovery Services | AR Recovery Solution",
+  "/accounts-receivable-recovery-solutions": {
+    title: "Boost Cash Flow with Accounts Receivable Recovery Solutions",
     description:
-      "Maximize collections with accounts receivable recovery solutions. AR recovery services help improve cash flow and reduce outstanding balances effectively.",
+      "Recover overdue payments with our Accounts Receivable Recovery Solutions.Improve cash flow, lower denials, and streamline your revenue cycle for maximum efficiency.",
   },
   "/practice-management": {
     title: "Physician Practice Management Services | Key MedSolutions ",

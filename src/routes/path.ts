@@ -34,7 +34,7 @@ export const appRoutes: AppRoute[] = [
   { path: "/revenue-cycle-management-company", enabled: false },
   { path: "/service-detail-old", enabled: false },
   { path: "/our-services", enabled: false },
-  { path: "/streamlining-medical-AR-recovery", enabled: false },
+  { path: "/accounts-receivable-recovery-solutions", enabled: false },
   { path: "/verification-of-healthcare-insurance-eligibility", enabled: false },
   { path: "/about-us", enabled: false },
   { path: "/blogs", enabled: false },

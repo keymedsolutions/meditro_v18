@@ -8,7 +8,7 @@ const StreamliningMedicalARRecoveryV1 = () => {
         <div className="page-content bg-white aboutus">
             <Breadcrumb headingTag="h2"
                 title={title}
-                breadcrumb={[{ label: title, href: "/streamlining-medical-ar-recovery" }]} />
+                breadcrumb={[{ label: title, href: "/accounts-receivable-recovery-solutions" }]} />
             <section>
                 <div className="container">
                     <div className="row justify-content-center">
