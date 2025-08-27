@@ -2,8 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import React from "react";
-import { Button } from "@/ui/button";
-import { Heart, TrendingUp, Clock, CheckCircle, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";

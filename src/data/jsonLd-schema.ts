@@ -827,7 +827,7 @@ export const jsonLdSchema: any = {
         ],
       },
     ],
-  "/streamlining-medical-AR-recovery": [
+  "/accounts-receivable-recovery-solutions": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -866,7 +866,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/streamlining-medical-AR-recovery",
+      url: "https://www.keymedsolution.com/accounts-receivable-recovery-solutions",
       category: "Accounts Receivable Recovery",
     },
     {

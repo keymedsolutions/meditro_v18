@@ -23,7 +23,7 @@ export const APP_PATH = {
     reimbursementRate: {
       path: "/medical-debt-collection-services",
     },
-    arRecovery: { path: "/streamlining-medical-AR-recovery" },
+    arRecovery: { path: "/accounts-receivable-recovery-solutions" },
     practiceMgmt: { path: "/practice-management" },
     insuranceVerification: {
       path: "/verification-of-healthcare-insurance-eligibility",
