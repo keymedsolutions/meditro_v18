@@ -11,9 +11,9 @@ export function middleware(request: NextRequest) {
   headers.set("x-full-path", request.nextUrl.href);
 
   // console.log(!isRouteEnabled(pathname),"pppppppp")
-  // if (!isRouteEnabled(pathname)) {
-  //   return NextResponse.redirect(new URL("/maintenance", request.url));
-  // }
+  if (!isRouteEnabled(pathname)) {
+    return NextResponse.redirect(new URL("/maintenance", request.url));
+  }
 
   return NextResponse.next({ headers });
 }
