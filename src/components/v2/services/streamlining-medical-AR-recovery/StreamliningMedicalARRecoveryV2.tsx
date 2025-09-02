@@ -17,70 +17,6 @@ import PartnerWithAnAccounts from "./PartnerWithAnAccounts";
 import { ArGetStarted } from "./ArGetStarted";
 
 const StreamliningMedicalARRecoveryV2 = () => {
-  const services = [
-    "Aging AR Follow-up (30, 60, 90, 120+ Days)",
-    "Denial Management & Appeals",
-    "Insurance Claims Reprocessing",
-    "Patient Balance Recovery",
-    "AR Workflow Optimization",
-    "Revenue Cycle Audit & Strategy",
-    "Claims Status Verification",
-    "Insurance Eligibility Review for Denied Claims",
-    "Reporting & Analytics on AR Trends",
-    "HIPAA-Compliant Collections Process",
-  ];
-
-  const title =
-    "Accelerate Collections with Comprehensive Accounts Receivable Recovery Solutions";
-
-  const path = "/revenue-cycle-management-company";
-
-  const mid = Math.ceil(services.length / 2);
-  const firstHalf = services.slice(0, mid);
-  const secondHalf = services.slice(mid);
-
-  // Array of feature objects with Tailwind bg classes
-  const WhyChooses = [
-    {
-      icon: "👨‍⚕️",
-      label: "Independent Physicians & Specialty Clinics",
-      className:
-        "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
-    },
-    {
-      icon: "🏥",
-      label: "Multispecialty Practices & Diagnostic Centers",
-      className:
-        "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
-    },
-    {
-      icon: "🏨",
-      label: "Hospitals & Ambulatory Care Facilities",
-      className:
-        "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
-    },
-    {
-      icon: "💻⚕️",
-      label: "Telehealth Providers & Urgent Care Centers",
-      className:
-        "!tw-border-2 !tw-border-red-300 tw-bg-red-100 after:!tw-bg-red-300",
-    },
-    {
-      icon: "📊",
-      label: "Healthcare Billing Companies & MSOs",
-      className:
-        "!tw-border-2 !tw-border-gray-300 tw-bg-gray-100 after:!tw-bg-gray-300",
-    },
-  ];
-
-  const clientTypes = [
-    { icon: "👨‍⚕️", text: "Independent Physicians & Specialty Clinics" },
-    { icon: "🏥", text: "Multispecialty Practices & Diagnostic Centers" },
-    { icon: "🏨", text: "Hospitals & Ambulatory Care Facilities" },
-    { icon: "📑", text: "Healthcare Billing Companies & MSOs" },
-    { icon: "📲", text: "Telehealth Providers & Urgent Care Centers" },
-  ];
-
   const faqs = [
     {
       question: "What are Accounts Receivable Recovery Solutions?",
@@ -124,43 +60,8 @@ const StreamliningMedicalARRecoveryV2 = () => {
         <PartnerWithAnAccounts />
         <ArGetStarted />
       </div>
-      {/* 
-      <SolutionsWeOffer
-        firstHalf={firstHalf}
-        secondHalf={secondHalf}
-        title="Comprehensive Accounts Receivable Recovery Services We Offer"
-      /> */}
-
-      {/* <WhoWeServe title="Who We Serve" data={clientTypes} /> */}
-
-      {/* <WhyChooseOurMedicalBilling
-        title="Why Choose Our Accounts Receivable Recovery Services?"
-        data={WhyChooses}
-      /> */}
 
       <div className="container tw-pb-16">
-        {/* <div className="info-bx tw-mt-16">
-          <div className="heading-bx text-left">
-            <h3 className="tw-text-2xl md:tw-text-2xl">
-              Let's Maximize Your Revenue from Aging Claims!
-            </h3>
-          </div>
-          <p>
-            Maximize the cash flow potential of your practice with Key
-            MedSolutions! Our Accounts Receivable Recovery Services can recover
-            unpaid revenue, decrease denials and streamline your billing cycles.
-          </p>
-
-          <p>
-            <Link className="tw-font-bold tw-text-black" href={"/contact-us"}>
-              {" "}
-              Contact us
-            </Link>{" "}
-            today for a free consultation to find out how our AR recovery
-            services will help you take better control of your revenue cycle.
-          </p>
-        </div> */}
-
         <div className="info-bx tw-mt-16">
           <div className="heading-bx text-left">
             <h3 className="tw-text-2xl md:tw-text-2xl">

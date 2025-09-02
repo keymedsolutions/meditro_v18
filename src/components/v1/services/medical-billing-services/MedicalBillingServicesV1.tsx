@@ -15,7 +15,7 @@ const MedicalBillingServicesV1 = () => {
     const mdMatches = useMediaQuery("(min-width: 1024px)");
 
     const title = "Reliable, Affordable, and HIPAA-Compliant Medical Billing Services for Healthcare Providers";
-    const path = "/medical-billing-services"
+    const path = "/medical-billing-company"
 
     const billingFeatures = [
         {

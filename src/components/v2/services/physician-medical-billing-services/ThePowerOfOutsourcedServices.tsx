@@ -72,7 +72,7 @@ const ThePowerOfOutsourcedServices = () => {
 
                     {/* 👉 Dynamic Tailwind Color Class */}
                     <div
-                      className={` work-num-bx  !tw-text-[60px] !tw-mb-0 ${item.color} ${item.stroke}`}
+                      className={`work-num-bx  !tw-text-[60px] !tw-mb-0 ${item.color} ${item.stroke}`}
                     >
                       {item.percentage}
                     </div>

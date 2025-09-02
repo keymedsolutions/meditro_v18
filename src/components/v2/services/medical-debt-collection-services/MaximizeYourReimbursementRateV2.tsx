@@ -30,7 +30,7 @@ const MaximizeYourReimbursementRateV2 = () => {
 
   const title =
     "Comprehensive Medical Billing and Collection Services for Efficient Cash Flow";
-  const path = "/revenue-cycle-management-company";
+  const path = "/revenue-cycle-management-services";
 
   const mid = Math.ceil(services.length / 2);
   const firstHalf = services.slice(0, mid);
