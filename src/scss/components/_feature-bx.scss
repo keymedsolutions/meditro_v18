@@ -429,6 +429,12 @@
 		top: 0;
 		left: -11px;
 	}
+	  // 🔽 On small screens, make :after full height
+	@media (max-width: 767px) {
+		&:after {
+		height: 100%;
+		}
+	}
 	
 	&.feature1{
 		border-color: #b2f0fb;

@@ -925,7 +925,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/practice-management": [
+  "/physician-practice-management": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -934,7 +934,7 @@ export const jsonLdSchema: any = {
       description:
         "Optimize your practice with expert physician practice management services. Enhance efficiency, compliance, and revenue with tailored solutions. Book a demo today!",
       category: "Medical Practice Management",
-      url: "https://www.keymedsolution.com/practice-management",
+      url: "https://www.keymedsolution.com/physician-practice-management",
       provider: {
         "@type": "Organization",
         name: "Key MedSolutions",
@@ -966,7 +966,7 @@ export const jsonLdSchema: any = {
       },
     },
   ],
-  "/verification-of-healthcare-insurance-eligibility": [
+  "/medical-insurance-eligibility-verification": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1005,7 +1005,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/verification-of-healthcare-insurance-eligibility",
+      url: "https://www.keymedsolution.com/medical-insurance-eligibility-verification",
       category: "Insurance Eligibility Verification",
     },
     {
@@ -1064,7 +1064,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/revenue-cycle-management-company": [
+  "/revenue-cycle-management-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1103,7 +1103,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/revenue-cycle-management-company",
+      url: "https://www.keymedsolution.com/revenue-cycle-management-services",
       category: "Healthcare Revenue Cycle Management",
     },
     {
@@ -1202,7 +1202,7 @@ export const jsonLdSchema: any = {
       },
     },
   ],
-  "/physician-credentialing": [
+  "/medical-credentialing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1211,7 +1211,7 @@ export const jsonLdSchema: any = {
       description:
         "Optimize your practice with medical and insurance credentialing services. Ensure timely approvals, reduce claim denials, and improve revenue cycle efficiency.",
       category: "Credentialing Services",
-      url: "https://www.keymedsolution.com/physician-credentialing",
+      url: "https://www.keymedsolution.com/medical-credentialing-services",
       provider: {
         "@type": "Organization",
         name: "Key MedSolutions",
@@ -1361,7 +1361,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/medical-billing-services": [
+  "/medical-billing-company": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1400,7 +1400,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/medical-billing-services",
+      url: "https://www.keymedsolution.com/medical-billing-company",
       category: "Medical Billing Services",
     },
     {

@@ -187,7 +187,7 @@ const CardiologyMedicalBillingV2 = () => {
           At Key MedSolutions, we don't just do billing. We deliver intelligent, scalable, compliant, and dedicated cardiology billing solutions that help your practice flourish—not just operate. Fewer billing headaches and more time for patients empowers your cardiology group to bill with confidence.          </p>
 
           <p>
-            <Link className='tw-font-bold tw-text-black' href={"/contact-us"}> Contact us</Link>  today to learn how our customized cardiology             <Link className='tw-font-bold tw-text-black' href={"/medical-billing-services"}> medical billing services</Link> can increase your collections, decrease denials, and improve your financial operations.
+            <Link className='tw-font-bold tw-text-black' href={"/contact-us"}> Contact us</Link>  today to learn how our customized cardiology             <Link className='tw-font-bold tw-text-black' href={"/medical-billing-company"}> medical billing services</Link> can increase your collections, decrease denials, and improve your financial operations.
           </p>
         </div>
 

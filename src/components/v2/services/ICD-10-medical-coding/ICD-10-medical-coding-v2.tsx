@@ -31,7 +31,7 @@ const ICD10MedicalCodingV2 = () => {
 
   const title =
     "Accurate ICD-10 Medical Coding Services for Healthcare Providers";
-  const path = "/revenue-cycle-management-company";
+  const path = "/revenue-cycle-management-services";
 
   const faqs = [
     {

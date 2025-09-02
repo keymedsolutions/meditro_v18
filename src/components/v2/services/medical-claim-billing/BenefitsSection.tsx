@@ -96,7 +96,7 @@ const benefits = [
 
 export function BenefitsSection() {
   return (
-    <section className="tw-py-20 tw-bg-background">
+    <section className="tw-py-20 tw-bg-background work-area">
       <div className="tw-container tw-mx-auto tw-px-4">
         <motion.div
           className="tw-text-center tw-mb-16"

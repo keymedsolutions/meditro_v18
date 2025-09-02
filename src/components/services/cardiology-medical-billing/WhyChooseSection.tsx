@@ -23,7 +23,7 @@ const FeatureCard = ({
       {...props} // spread any additional props
     >
       {/* Background gradient overlay with animation */}
-      <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-blue-100 tw-to-purple-100 tw-opacity-0 group-hover:tw-opacity-100 tw-transition-opacity tw-duration-500"></div>
+      <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-blue-100 tw-to-purple-100 tw-opacity-0 group-hover:tw-opacity-100 tw-rounded-lg tw-transition-opacity tw-duration-500"></div>
 
       <div className="tw-relative tw-z-10">
         <div className="tw-flex tw-items-center tw-justify-center tw-mb-4  tw-absolute tw-top-[-50px] tw-left-1/2 -tw-translate-x-1/2">

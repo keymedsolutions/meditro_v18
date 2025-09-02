@@ -63,7 +63,7 @@ const PhysicianBillingServicesV2 = () => {
 
   const title =
     "Physician Medical Billing Services: Achieve Your Practice’s Full Potential";
-  const path = "/revenue-cycle-management-company";
+  const path = "/revenue-cycle-management-services";
 
   const mid = Math.ceil(services.length / 2);
   const firstHalf = services.slice(0, mid);

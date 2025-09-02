@@ -8,7 +8,7 @@ const MenuItems = [
     subMenu: [
       {
         label: "Physician Billing Services",
-        path: "/physician-medical-billing-services",
+        path: "/physician-medical-billing-company",
         subMenu: [
           { label: "Medical Claim Billing", path: "/medical-claim-billing-company" },
           {
@@ -46,21 +46,21 @@ const MenuItems = [
         label: "Streamlining Medical AR Recovery",
         path: "/accounts-receivable-recovery-solutions",
       },
-      { label: "Practice Management", path: "/practice-management" },
+      { label: "Practice Management", path: "/physician-practice-management" },
       {
         label: "Verification of Healthcare Insurance Eligibility",
-        path: "/verification-of-healthcare-insurance-eligibility",
+        path: "/medical-insurance-eligibility-verification",
       },
       {
         label: "Revenue Cycle Management Company (RCM)",
-        path: "/revenue-cycle-management-company",
+        path: "/revenue-cycle-management-services",
       },
       {
         label: "Denial Management Services",
         path: "/denial-management-service",
       },
-      { label: "Physician Credentialing", path: "/physician-credentialing" },
-      { label: "Medical Billing Services", path: "/medical-billing-services" },
+      { label: "Physician Credentialing", path: "/medical-credentialing-services" },
+      { label: "Medical Billing Services", path: "/medical-billing-company" },
     ],
   },
   { label: "Our Specialties", path: "/our-specialities" },

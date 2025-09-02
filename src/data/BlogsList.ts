@@ -7,6 +7,9 @@ const blogGridPic6 = "/images/blog/grid/pic6.jpg";
 const blogGridPic7 = "/images/blog/grid/pic7.jpg";
 const blogGridPic8 = "/images/blog/grid/pic8.jpg";
 const blogGridPic9 = "/images/blog/grid/pic9.jpg";
+const blogGridPic10 = "/images/blog/default/pic3.png";
+const blogGridPic11 = "/images/blog/default/pic4.png";
+
 
 
 export const BlogsList = [
@@ -61,6 +64,28 @@ export const BlogsList = [
 		date: "21 Dec 2023",
 		url: '/optimize-healthcare-Finances-rcm-mastery-unleashed',
 		imgAlt:"optimize-healthcare-finances-rcm-mastery-unleashed",
+		authImgAlt:"enhancing-documentation-accuracy"
+	},
+	{
+		id: 5,
+		thumb: blogGridPic10,
+		authorPic: testPic3,
+		title: "Top 20 Healthcare Technology Trends in 2025",		
+		author: "Key MedSolutions",
+		date: "03 September 2025",
+		url: '/top-20-healthcare-technology-trends',
+		imgAlt:"top-20-healthcare-technology-trends",
+		authImgAlt:"enhancing-documentation-accuracy"
+	},
+	{
+		id: 5,
+		thumb: blogGridPic11,
+		authorPic: testPic3,
+		title: "Top 20 Healthcare Technology Trends in 2025",		
+		author: "Key MedSolutions",
+		date: "03 September 2025",
+		url: '/what-is-medical-billing-and-coding',
+		imgAlt:"what-is-medical-billing-and-coding",
 		authImgAlt:"enhancing-documentation-accuracy"
 	}
 ]
