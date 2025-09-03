@@ -81,7 +81,7 @@ export const BlogsList = [
 		id: 5,
 		thumb: blogGridPic11,
 		authorPic: testPic3,
-		title: "Top 20 Healthcare Technology Trends in 2025",		
+		title: "What Is Medical Billing and Coding? A Straightforward Guide",		
 		author: "Key MedSolutions",
 		date: "03 September 2025",
 		url: '/what-is-medical-billing-and-coding',

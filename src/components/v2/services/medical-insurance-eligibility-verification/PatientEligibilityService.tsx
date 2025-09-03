@@ -44,14 +44,21 @@ export default function PatientEligibilityService() {
       />
 
       <div className="tw-relative tw-z-10 tw-max-w-7xl tw-mx-auto tw-px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+        <motion.div
+          className="tw-text-center tw-mb-12"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="tw-text-4xl tw-font-bold tw-text-gray-900 tw-text-center"
+          viewport={{ once: true, amount: 0.2 }}
         >
-          Elevate Your Patient Insurance Eligibility Service Experience
-        </motion.h2>
+          <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground ">
+            Elevate Your Patient&nbsp;
+            <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+              Insurance Eligibility Service
+            </span>
+            &nbsp; Experience
+          </h2>
+        </motion.div>
 
         <div className="tw-mt-16 tw-grid tw-gap-8 md:tw-grid-cols-2">
           {features.map((feature, idx) => (

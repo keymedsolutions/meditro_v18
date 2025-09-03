@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
 
   return (
     <div className="tw-flex tw-items-center tw-justify-center tw-py-20 tw-px-4 sm:tw-px-6 lg:tw-px-8">
-      <div className="tw-container tw-mx-auto">
+      <div className="sm:tw-container tw-mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

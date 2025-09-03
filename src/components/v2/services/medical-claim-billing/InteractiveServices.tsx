@@ -85,7 +85,7 @@ export function InteractiveServices() {
           </p>
         </motion.div>
 
-        <div className="tw-container tw-relative">
+        <div className="sm:tw-container tw-relative">
           <div className="tw-grid md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6 md:tw-gap-8">
             {services.map((service, index) => (
               <InterativeServiceCard

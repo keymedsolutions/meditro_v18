@@ -75,7 +75,7 @@ export const MenuItems: any = [
     subMenu: [
       {
         label: "RCM Plan",
-        path: "/rcm-plan",
+        path: "/rcm-plans",
       },
       {
         label:"Training and Placement",
