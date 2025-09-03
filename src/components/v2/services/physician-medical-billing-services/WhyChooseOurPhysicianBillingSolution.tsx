@@ -92,7 +92,7 @@ const WhyChooseOurPhysicianBillingSolution = () => {
                   >
                     {benefit.icon}
                   </div>
-                  <CardTitle className="tw-text-xl tw-font-bold tw-text-foreground font-space-grotesk">
+                  <CardTitle className="tw-text-xl tw-font-bold tw-text-foreground font-space-grotesk tw-text-center">
                     {benefit.title}
                   </CardTitle>
                 </CardHeader>

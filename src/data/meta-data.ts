@@ -192,10 +192,10 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Start your career with affordable online courses in medical billing, coding, and revenue cycle management. Learn anytime with expert support from KeyMed Solution.",
   },
-  "/rcm-plan": {
-    title: "Insurance Verification Pricing | Checks Eligibility & Patient Data",
+  "/rcm-plans": {
+    title: "RCM Plans | Transparent Medical Billing Solutions by Key MedSolutions",
     description:
-      "Key Medsolutions Insurance Verification Pricing – Affordable, fast, and accurate verification. From just $2 per request or $1,000/month for a dedicated billing expert. See our transparent pricing plans now",
+      "Explore Key MedSolutions' scalable RCM plans tailored for every practice size. Transparent pricing, no hidden fees, and HIPAA-compliant services to streamline your billing process. Get started today!",
   },
   "/online-medical-billing-coding-training": {
     title: "Online Medical Billing and Coding Training Program",

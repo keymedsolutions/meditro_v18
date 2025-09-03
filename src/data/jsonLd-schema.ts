@@ -1458,7 +1458,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/rcm-plan": [
+  "/rcm-plans": [
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

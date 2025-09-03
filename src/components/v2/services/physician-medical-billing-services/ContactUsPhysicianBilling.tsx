@@ -77,7 +77,7 @@ const ContactUsPhysicianBilling = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="tw-text-2xl tw-font-bold tw-text-[#565acf] tw-mb-2 font-dm-sans">
+                  <p className="tw-break-all tw-text-2xl tw-font-bold tw-text-[#565acf] tw-mb-2 font-dm-sans">
                     info@keymedsolution.com
                   </p>
                   <p className="tw-text-muted-foreground font-dm-sans">

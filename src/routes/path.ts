@@ -16,7 +16,7 @@ export const appRoutes: AppRoute[] = [
   { path: "/free-ationevalu", enabled: false },
   { path: "/rcm-assessment", enabled: false },
   { path: "/pricing", enabled: false },
-  { path: "/rcm-plan", enabled: false },
+  { path: "/rcm-plans", enabled: false },
   { path: "/cardiology-medical-billing", enabled: false },
   { path: "/denial-management-service", enabled: false },
   { path: "/nephrology-medical-billing", enabled: false },

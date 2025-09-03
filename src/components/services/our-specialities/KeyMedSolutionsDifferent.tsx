@@ -44,7 +44,7 @@ const KeyMedSolutionsDifferent = () => {
 
   return (
     <div className="tw-min-h-screen tw-py-16 tw-px-4 tw-bg-gradient-to-br tw-from-blue-50 tw-via-white tw-to-indigo-50">
-      <div className="tw-container tw-mx-auto">
+      <div className="sm:tw-container tw-mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ const KeyMedSolutionsDifferent = () => {
             What Makes&nbsp;
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Key MedSolutions
-            </span>
+            </span>&nbsp;
             Different?
           </h2>
         </motion.div>
