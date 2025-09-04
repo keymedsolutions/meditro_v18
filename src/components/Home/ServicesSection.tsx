@@ -29,8 +29,8 @@ const ServicesSection = () => {
         <div className="heading-bx text-center">
           <h6 className="title-ext text-secondary">Our Services</h6>
           <h2 className="title">
-            Key MedSolutions offers medical billing services to the following
-            specialties of physicians
+            Key MedSolutions Delivers Billing Solutions Tailored to Following
+            Physician Specialties
           </h2>
           <h5 className="tw-max-w-4xl tw-mx-auto">
             Every physician’s specialty is unique, and so are their billing

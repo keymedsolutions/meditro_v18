@@ -49,7 +49,12 @@ const AboutSection = () => {
             <div className="col-lg-6 mb-30">
               <div className="heading-bx">
                 <h6 className="title-ext text-secondary">Our Identity</h6>
-                <h2 className="title">What Makes Us Different</h2>
+                <h2 className="title !tw-text-[36px]">
+                  What Makes Us Different :&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Your Partner in Progress
+                  </span>
+                </h2>
                 {/* <p>
                                     Key MedSolutions is a committed global <Link className="tw-font-[900] tw-text-inherit" href={"/revenue-cycle-management-company"}>Revenue Cycle Management Company</Link> and Medical Billing Company with expertise in customized medical billing solutions and Healthcare Revenue Cycle Management Solutions and RCM Services. Supported by talented and imaginative experts, we utilize modern, technology-based strategies to computerize charging forms and maximize income for healthcare suppliers universally. Our full-service solutions encompass claims management, <Link className="tw-font-[900] tw-text-inherit" href={"/physician-billing-services"}>Physician Billing Services</Link>, medical coding, and end-to-end revenue cycle services. We closely collaborate with physician groups and healthcare facilities to eliminate administrative hassles, promote compliance, and enhance financial performance. By providing customized solutions supported by industry experience, Key MedSolutions enables providers to concentrate on what is most important—quality patient care—while we address the intricacies of revenue management.
                                 </p> */}
