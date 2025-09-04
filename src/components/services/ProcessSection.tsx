@@ -11,8 +11,7 @@ const ProcessSection = () => {
       delay: 0.1,
       color: "primary",
       stroke: "text-stroke-green",
-      description:
-        "We begin with a deep review of your current systems, examining your revenue cycle, coding, and claims workflows.",
+      description: `We begin with a deep review of your current systems, examining your revenue cycle, coding, and claims workflows. This includes evaluating current denial rates and identifying gaps in your existing&nbsp;<span class="tw-font-bold">Medical Billing Services, Medical Coding Services,</span> and&nbsp;<span class="tw-font-bold">Practice Management Solutions.</span>`,
     },
     {
       number: "02",
@@ -20,8 +19,8 @@ const ProcessSection = () => {
       delay: 0.2,
       color: "secondary",
       stroke: "text-stroke-yellow",
-      description:
-        "Based on your unique needs, we build a solution using the right combination of services with seamless onboarding.",
+      description: `Based on your unique needs, we build a solution using the right combination of&nbsp;<span class="tw-font-bold">Healthcare Revenue Cycle Management Services, Accounts Receivable Recovery Services,</span>&nbsp;and specialty billing expertise, ranging from&nbsp;<span class="tw-font-bold">Physician Billing Solutions</span>&nbsp;to complex cases, like&nbsp;<span class="tw-font-bold">Cardiology Medical Billing Services<span>&nbsp;or&nbsp;<span class="tw-font-bold">Radiology Medical Billing Services.</span>&nbsp;Our onboarding is seamless, minimizing disruption so you can keep focusing on care.
+`,
     },
     {
       number: "03",
@@ -29,8 +28,8 @@ const ProcessSection = () => {
       delay: 0.3,
       stroke: "text-stroke-sky",
       color: "danger",
-      description:
-        "We provide continual monitoring of your claims, receivables, and coding practices with constant refinement.",
+      description: `The healthcare landscape changes constantly. That's why we provide continual monitoring of your claims, receivables, and coding practices. We refine strategies as needed to stay ahead, leveraging&nbsp;<span class="tw-font-bold">Denial Management Services</span>&nbsp;to further reduce rejections, and deploying the latest updates in&nbsp;<span class="tw-font-bold">ICD-10 Coding Services</span>&nbsp;for compliance and accuracy.
+`,
     },
   ];
   return (

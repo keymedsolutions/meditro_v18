@@ -41,43 +41,43 @@ const Features = () => {
             {
               title: "Accurate Claims Submission & ICD-10 Coding",
               description:
-                "Certified coders and billing experts ensure every claim—leveraging accurate ICD-10 Medical Coding Services—is submitted correctly, reducing denials and underpayments.",
+                "Our certified coders and billing experts ensure every claim—leveraging accurate ICD-10 Medical Coding Services—is submitted correctly, dramatically cutting down the risk of denials or underpayments.",
               icon: FileCheck2,
             },
             {
               title: "Complete Revenue Cycle Management",
               description:
-                "End-to-end RCM: from patient registration and eligibility verification to final claims reconciliation—so your practice runs at peak efficiency.",
+                "Key MedSolutions is your partner for end-to-end Revenue Cycle Management Services, handling everything from patient registration and eligibility verification to final claims reconciliation, so your practice operates at peak efficiency.",
               icon: Stethoscope,
             },
             {
               title: "Denial Management & Appeals",
               description:
-                "We investigate every denial, correct errors, and resubmit quickly to recover revenue fast.",
+                "Our team investigates every denial, corrects errors, and resubmits claims quickly, ensuring your revenue is fully recovered.",
               icon: RotateCcw,
             },
             {
               title: "Insurance Eligibility Verification",
               description:
-                "Confirm patient coverage in advance to prevent delays and reduce payment rejections.",
+                "Avoid costly delays by confirming patient coverage in advance, eliminating administrative headaches and reducing payment rejections.",
               icon: ShieldCheck,
             },
             {
               title: "Payment Posting & Transparent Patient Billing",
               description:
-                "Track revenue effortlessly—from insurance reimbursements to patient balances—with precise posting and clear billing communications.",
+                "Track practice revenue effortlessly, from insurance reimbursements to patient balances. Precision is our priority in payment posting and patient billing communications.",
               icon: ReceiptText,
             },
             {
               title: "Fee Schedule Optimization & Credentialing",
               description:
-                "Review fee schedules against insurer benchmarks and support provider credentialing to secure competitive reimbursement and maintain participation.",
+                "We review your fee schedules against insurer benchmarks and assist with provider credentialing, helping you secure competitive reimbursement rates and maintain payer participation.",
               icon: BadgeCheck,
             },
             {
               title: "In-Depth Performance Reporting",
               description:
-                "Real-time analytics and dashboards to drive data-backed decisions that lift profitability.",
+                "Access real-time analytics and performance dashboards, enabling you to make data-driven decisions that improve practice profitability.",
               icon: BarChart3,
             },
           ].map((service, index) => (

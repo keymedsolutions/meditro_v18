@@ -55,7 +55,7 @@ const AccelerateYourRevenue = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              Get Started Today 🚀
+              Get Started Today
             </motion.div>
           </motion.div>
 

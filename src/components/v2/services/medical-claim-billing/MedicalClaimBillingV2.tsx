@@ -153,6 +153,17 @@ const MedicalClaimBillingV2 = () => {
               data={clientTypes}
               description="Key MedSolutions helps healthcare organizations of all sizes and types run their businesses better and make more money. We proudly serve:"
             />
+            <div className="tw-text-center tw-text-xl tw-max-w-3xl tw-mx-auto">
+              <p>
+                Whatever your specialty, we’ve got the right tools and expertise
+                to back you up, so you can move forward with confidence and
+                focus on what you do best. Find out why so many&nbsp;
+                <span className="tw-font-bold">
+                  client outsource medical claim processing services
+                </span>
+                &nbsp;to Key MedSolutions.
+              </p>
+            </div>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}

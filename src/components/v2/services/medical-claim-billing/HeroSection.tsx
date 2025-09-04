@@ -66,7 +66,7 @@ export function HeroSection() {
     },
   };
   return (
-    <section className="benefits-section-home1 tw-min-h-[90vh] tw-pb-20 md:tw-pb-32 tw-bg-hero-gradient tw-overflow-hidden tw-relative" >
+    <section className="benefits-section-home1 tw-min-h-[90vh] tw-pb-20 md:tw-pb-32 tw-bg-hero-gradient tw-overflow-hidden tw-relative">
       {/* Background Blobs */}
       <div className="tw-absolute tw-top-0 tw-right-0 tw-w-96 tw-h-96 tw-bg-keymed-100 tw-rounded-full tw-blur-3xl tw-opacity-50 -tw-translate-y-1/2 tw-translate-x-1/3"></div>
       <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-96 tw-h-96 tw-bg-keymed-100 tw-rounded-full tw-blur-3xl tw-opacity-50 tw-translate-y-1/2 -tw-translate-x-1/3"></div>
@@ -98,12 +98,12 @@ export function HeroSection() {
               className="tw-opacity-0 tw-translate-y-6 tw-scale-95 tw-transition-all tw-duration-700 tw-ease-out tw-font-extrabold tw-tracking-tight tw-text-4xl sm:tw-text-5xl lg:tw-text-6xl tw-mb-6"
             >
               <span className="tw-text-keymed-800 section-title">
-                Streamlining Your
+                Medical Claim Billing Company
               </span>
               &nbsp;
               <br />
               <span className="tw-inline-block tw-relative section-title">
-                Revenue Cycle
+                Streamlining Your Revenue Cycle
                 <svg
                   className="tw-absolute -tw-bottom-2 tw-left-0 tw-w-full tw-h-2 tw-text-keymed-300 tw-opacity-60"
                   viewBox="0 0 100 12"

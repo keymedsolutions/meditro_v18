@@ -9,19 +9,19 @@ export function WhyChooseSection() {
       icon: Users,
       title: "Tailored Medical Claim Billing Services",
       description:
-        "Every practice is unique. We customize our services to support specialties from cardiology to dentistry, whether you need partial support or complete revenue cycle management.",
+        "We understand every practice is unique.That’s why we customize our services to meet the needs of diverse specialties. Our services range from cardiology to dentistry. We customize our services to help you succeed, whether you need support with certain tasks or with managing your whole revenue cycle.",
     },
     {
       icon: CheckCircle,
       title: "Precision and Expertise",
       description:
-        "Our certified specialists master coding, payer rules, and denial management—ensuring your claims are accurate, compliant, and paid faster.",
+        "Our experienced specialists master coding, payer rules, and denial management, ensuring claims are processed right the first time to minimize payment delays.",
     },
     {
       icon: Zap,
       title: "Innovative Technology",
       description:
-        "We combine human expertise with cutting-edge Healthcare Claims Processing technology to maximize efficiency.",
+        `We combine human expertise with cutting-edge Healthcare Claims Processing technology to maximize efficiency.<br/>Our platform offers:`,
       features: [
         "Automated insurance eligibility checks",
         "Built-in coding validation to prevent errors",
@@ -33,13 +33,13 @@ export function WhyChooseSection() {
       icon: DollarSign,
       title: "Cost-Effective Outsourcing",
       description:
-        "Billing tasks eat into your time and budget. Outsourcing reduces costs, improves reimbursements, and frees your staff to focus on patient care.",
+        "Tasks like billing can take up valuable time and strain your practice’s resources. By choosing Outsource Medical Claim Processing Services, you reduce operational costs and free up your team to focus on patient care. Outsourcing also improves cash flow by ensuring consistent and timely reimbursements.",
     },
     {
       icon: Shield,
       title: "HIPAA-Compliant Solutions",
       description:
-        "We prioritize your data security with HIPAA-compliant systems, ensuring patient confidentiality and peace of mind.",
+        "Your data privacy and security are our top priorities. Our Medical Claims Processing Services adhere to HIPAA standards, so your patients' information is always safe with us."
     },
   ];
 
@@ -71,8 +71,10 @@ export function WhyChooseSection() {
           className="tw-text-center tw-mb-20 tw-pt-20"
         >
           <h2 className="tw-text-4xl md:tw-text-5xl tw-font-extrabold tw-text-foreground tw-mb-6 tw-font-sans">
-            Why Choose <span className="tw-text-primary">Key MedSolutions</span>
-            ?
+            Why Choose&nbsp;
+            <span className="tw-text-primary">Key MedSolutions</span>
+            <br />
+            for Your Billing Needs ?
           </h2>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
             Experience the difference of precision, innovation, and trust with
@@ -118,9 +120,10 @@ export function WhyChooseSection() {
                 <h3 className="tw-text-2xl tw-font-bold tw-text-foreground tw-mb-4 tw-font-sans relative z-10">
                   {feature.title}
                 </h3>
-                <p className="tw-text-muted-foreground tw-leading-relaxed tw-mb-4 tw-font-serif relative z-10">
-                  {feature.description}
-                </p>
+                <p
+                  className="tw-text-muted-foreground tw-leading-relaxed tw-mb-4 tw-font-serif relative z-10"
+                  dangerouslySetInnerHTML={{ __html: feature.description }}
+                ></p>
 
                 {feature.features && (
                   <ul className="tw-space-y-3 tw-mb-4 relative z-10">

@@ -58,6 +58,7 @@
 import { motion } from "framer-motion";
 // import ConsultationForm from './ConsultationForm';
 import { upDownAnimation } from "@/utils/animation";
+import { TypewriterEffect } from "../ui/typewriter-effect";
 const doctorImg = "/images/home/doctor-bg.png";
 
 const ReclaimYourTime = () => {
@@ -136,6 +137,44 @@ const ReclaimYourTime = () => {
     },
   };
 
+  const mainTitle = [
+    {
+      text: "End-to-end",
+    },
+    {
+      text: "Medical",
+      className: "!tw-text-accent-500 ",
+    },
+    {
+      text: "Billing",
+      className: "!tw-text-accent-500 ",
+    },
+    {
+      text: "Services",
+      className: "!tw-text-accent-500 ",
+    },
+    {
+      text: "&",
+    },
+    {
+      text: "RCM",
+      className: "!tw-text-accent-500 ",
+    },
+    {
+      text: "Solutions",
+      className: "!tw-text-accent-500 ",
+    },
+    {
+      text: "for",
+    },
+    {
+      text: "Healthcare",
+    },
+    {
+      text: "Providers:",
+    },
+  ];
+
   return (
     <section className="tw-min-h-[80vh] tw-pt-10 tw-pb-16 md:tw-pt-10 md:tw-pb-20 lg:tw-pt-10 lg:tw-pb-24 tw-bg-hero-pattern tw-relative tw-overflow-hidden">
       {/* Decorative elements */}
@@ -160,15 +199,29 @@ const ReclaimYourTime = () => {
           animate="visible"
         >
           <motion.div
-            className="lg:tw-col-span-7 tw-space-y-6 tw-max-w-3xl"
+            className="lg:tw-col-span-7 tw-space-y-3 tw-max-w-3xl"
             variants={itemVariants}
           >
+            <div className="tw-space-y-2">
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-leading-tight"
+              >
+                <TypewriterEffect
+                  words={mainTitle}
+                  className="!tw-text-gray-900"
+                />
+              </motion.h1>
+            </div>
             <div className="tw-space-y-4">
-              <h1 className="tw-font-display tw-leading-tight">
+              <h2 className="tw-font-display tw-leading-tight">
                 Reclaim Your Time, Boost&nbsp;
                 <span className="tw-heading-gradient">Your Revenue</span>&nbsp;
                 and Put Patients at the Heart of Everything You Do
-              </h1>
+              </h2>
             </div>
             <div>
               <p className="tw-text-muted-foreground">
@@ -181,12 +234,14 @@ const ReclaimYourTime = () => {
                 full compliance.
               </p>
               <p className="tw-text-muted-foreground tw-mt-3">
-                When you partner with us, you're not just choosing a service
-                provider: you're gaining a dedicated ally. Whether you're a solo
+                When you partner with us, you’re not just choosing a service
+                provider: you’re gaining a dedicated ally. Whether you’re a solo
                 practitioner, a specialty clinic, or a large group practice, we
                 tailor our expert-driven solutions to meet your unique needs and
-                help you achieve sustainable growth.
+                help you achieve sustainable growth. Leave the complexities to
+                us, so you can concentrate on caring for your patients.
               </p>
+              <p className="tw-text-xl tw-font-semibold">Let’s transform your practice together.</p>
             </div>
 
             <button type="button" className="button-get-started">

@@ -8,7 +8,7 @@ const ExpansiveServices = () => {
     {
       title: "Medical Billing Services",
       description:
-        "We manage all aspects of claims submission and insurance follow-up, ensuring faster and more accurate reimbursements.",
+        "We manage all aspects of claims submission and insurance follow-up, ensuring faster and more accurate reimbursements. Reduce revenue leakage and spend less time tracking down payments.",
     },
     {
       title: "Medical Coding Services & ICD-10 Coding Services",
@@ -18,12 +18,12 @@ const ExpansiveServices = () => {
     {
       title: "Denial Management Services",
       description:
-        "Don't let unpaid claims erode your bottom line. We identify root causes, appeal incorrect denials, and recover lost revenue quickly.",
+        "Don't let unpaid claims erode your bottom line. We identify root causes, appeal incorrect denials, and recover lost revenue quickly and efficiently.",
     },
     {
       title: "Healthcare Revenue Cycle Management Services",
       description:
-        "Achieve total visibility across your financial workflow, from patient intake to payment posting.",
+        "Achieve total visibility across your financial workflow, from patient intake to payment posting. Our RCM experts optimize every touchpoint, reducing AR days and improving your cash flow.",
     },
     {
       title: "Practice Management Solutions",
@@ -33,7 +33,22 @@ const ExpansiveServices = () => {
     {
       title: "Accounts Receivable Recovery Services",
       description:
-        "We specialize in AR cleanup and recovery, using advanced techniques to decrease aging receivables and increase collections.",
+        "We specialize in AR cleanup and recovery, using advanced techniques to decrease aging receivables, increase collections, and improve overall financial performance.",
+    },
+    {
+      title: "Medical Claim Service",
+      description:
+        "Our robust process supports every kind of claim, from initial submission to appeal, ensuring nothing falls through the cracks.",
+    },
+    {
+      title: "Physician Billing Solutions",
+      description:
+        "No two practices are alike. We personalize your billing solutions, adapting to your specialty’s needs, so you can maximize income while minimizing stress.",
+    },
+    {
+      title: "Cardiology Medical Billing Services, Radiology Medical Billing Services, Nephrology Billing Services, and Internal Medicine Services",
+      description:
+        "Dedicated expertise in high-complexity, high-volume specialties, ensuring accurate and compliant billing regardless of the healthcare field you practice in.",
     },
   ];
   return (
@@ -52,7 +67,7 @@ const ExpansiveServices = () => {
         </h2>
         <p className="tw-text-xl !tw-text-gray-800 tw-text-center  tw-max-w-3xl tw-mx-auto tw-font-medium">
           Key Med Solutions offers an integrated set of solutions to address the
-          full spectrum of your financial and operational needs
+          full spectrum of your financial and operational needs:
         </p>
       </motion.div>
       <div className="row">

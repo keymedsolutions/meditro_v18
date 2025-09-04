@@ -18,7 +18,7 @@ export default function ProcessSteps({
   icon,
   color,
   stroke,
-}:ProcessStepsProps) {
+}: ProcessStepsProps) {
   const getColorClasses = (colorName: string) => {
     const colorMap: Record<
       string,
@@ -62,7 +62,7 @@ export default function ProcessSteps({
   const colorClasses = getColorClasses(color);
 
   return (
-    <Card className="border tw-shadow-lg hover:tw-shadow-xl tw-transition-all tw-transform hover:-tw-translate-y-2 tw-overflow-hidden tw-group">
+    <Card className="border tw-h-full tw-shadow-lg hover:tw-shadow-xl tw-transition-all tw-transform hover:-tw-translate-y-2 tw-overflow-hidden tw-group">
       <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-white tw-to-bluelight"></div>
       <div
         className={`tw-absolute tw-inset-0 tw-bg-${color}/0 group-hover:tw-bg-${color}/5 tw-transition-colors tw-duration-300`}
@@ -80,13 +80,14 @@ export default function ProcessSteps({
           </div>
           {/* </div> */}
           <h4
-            className={`tw-font-display tw-text-lg tw-font-semibold tw-mb-2 group-hover:${colorClasses.text} tw-transition-colors`}
+            className={`tw-font-display tw-text-xl tw-font-semibold tw-mb-2 group-hover:${colorClasses.text} tw-transition-colors`}
           >
             {title}
           </h4>
-          <p className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors">
-            {description}
-          </p>
+          <p
+            className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors"
+            dangerouslySetInnerHTML={{ __html: description }}
+          ></p>
         </div>
       </CardContent>
     </Card>

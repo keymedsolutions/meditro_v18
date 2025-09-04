@@ -16,8 +16,7 @@ const benefits = [
     icon: <TrendingUp className="tw-h-8 tw-w-8 tw-text-yellow-300" />,
     title: "Faster Reimbursements",
     description: "Clean submissions mean fewer resubmissions and delays.",
-    stat: "40%",
-    statLabel: "Faster Processing",
+    stat: "01",
     colors: {
       bg: "tw-bg-indigo-900",
       text: "tw-text-yellow-300",
@@ -29,8 +28,7 @@ const benefits = [
     icon: <DollarSign className="tw-h-8 tw-w-8 tw-text-emerald-300" />,
     title: "Improved Cash Flow",
     description: "Consistent income keeps your practice running smoothly.",
-    stat: "25%",
-    statLabel: "Revenue Increase",
+    stat: "02",
     colors: {
       bg: "tw-bg-emerald-900",
       text: "tw-text-emerald-300",
@@ -43,8 +41,7 @@ const benefits = [
     title: "Fewer Denials",
     description:
       "Unnecessary losses are avoided by careful coding and strong denial management.",
-    stat: "95%",
-    statLabel: "Approval Rate",
+    stat: "03",
     colors: {
       bg: "tw-bg-rose-900",
       text: "tw-text-rose-300",
@@ -56,8 +53,7 @@ const benefits = [
     icon: <Clock className="tw-h-8 tw-w-8 tw-text-sky-300" />,
     title: "More Time for Patient Care",
     description: "Free your practice from billing delays and costly errors.",
-    stat: "60%",
-    statLabel: "Time Saved",
+    stat: "04",
     colors: {
       bg: "tw-bg-sky-900",
       text: "tw-text-sky-300",
@@ -70,26 +66,12 @@ const benefits = [
     title: "Scalable Services",
     description:
       "From small clinics to large networks, we have solutions that grow with your needs.",
-    stat: "500+",
-    statLabel: "Practices Served",
+    stat: "05",
     colors: {
       bg: "tw-bg-orange-900",
       text: "tw-text-orange-300",
       border: "tw-border-orange-300",
       stroke: "text-stroke-orange",
-    },
-  },
-  {
-    icon: <BarChart className="tw-h-8 tw-w-8 tw-text-fuchsia-300" />,
-    title: "HIPAA-Compliant Solutions",
-    description: "Your data privacy and security are our top priorities.",
-    stat: "100%",
-    statLabel: "Compliance Rate",
-    colors: {
-      bg: "tw-bg-fuchsia-900",
-      text: "tw-text-fuchsia-300",
-      border: "tw-border-fuchsia-300",
-      stroke: "text-stroke-fuchsia",
     },
   },
 ];
@@ -178,8 +160,6 @@ export function BenefitsSection() {
 
                   <div className="work-content tw-flex tw-items-center">
                     <div>
-                      <h6 className="tw-mb-1 tw-text-white">{benefit.statLabel}</h6>
-
                       <p className="tw-text-white tw-text-sm">
                         {benefit.description}
                       </p>

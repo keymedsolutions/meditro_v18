@@ -1,5 +1,6 @@
 import { BadgeCheck, BarChart3, Headphones, PiggyBank } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ThePowerOfOutsourcedServices = () => {
   const data = [
@@ -47,11 +48,26 @@ const ThePowerOfOutsourcedServices = () => {
   return (
     <section className="tw-py-16 md:tw-py-20 tw-bg-primary/5 section-area section-sp5 work-area">
       <div className="tw-container tw-mx-auto tw-px-6 md:tw-px-8">
-        <div className="tw-text-center tw-max-w-3xl tw-mx-auto tw-mb-12">
-          <h3 className="tw-text-2xl md:tw-text-3xl tw-font-medium tw-mb-4 tw-font-display">
-            The Power of Outsourced Physician Medical Billing Services
-          </h3>
-        </div>
+        
+
+        <motion.div
+          className="tw-text-center tw-mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <h2 className="tw-text-3xl md:tw-text-5xl tw-font-black tw-text-primary tw-mb-8 tw-leading-tight">
+            The Power of Outsourced <br />
+            <span className="tw-text-gradient">
+              Physician Medical Billing Services
+            </span>
+          </h2>
+          <p className="tw-text-lg tw-mb-8 tw-max-w-2xl tw-mx-auto font-dm-sans">
+            Outsourcing your physician billing to our specialized team provides
+            several tangible benefits:
+          </p>
+        </motion.div>
 
         <div className="container">
           <div className="row justify-content-center">
