@@ -30,8 +30,8 @@ export default function MedicalBillingLanding() {
             className="tw-text-center tw-max-w-4xl tw-mx-auto"
           >
             <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-text-gray-900 tw-mb-6 tw-leading-tight">
-              We Handle Your <span className="tw-text-blue-600">Billing</span>&nbsp;
-              So You Can Handle Your&nbsp;
+              We Handle Your <span className="tw-text-blue-600">Billing</span>
+              &nbsp; So You Can Handle Your&nbsp;
               <span className="tw-text-green-600">Patients</span>
             </h1>
             <p className="tw-text-lg tw-text-gray-600 tw-mb-8 tw-leading-relaxed">
@@ -39,8 +39,11 @@ export default function MedicalBillingLanding() {
             </p>
             <p className="tw-text-lg tw-text-gray-700 tw-mb-12  tw-max-w-3xl tw-mx-auto">
               At Key MedSolutions, we are not just a Medical Billing Company. We
-              are your partner in making revenue management effortless. Say
-              goodbye to claim denials, slow reimbursements, and admin overload.
+              are your partner in making revenue management effortless. Leave
+              behind claim denials, payment delays, and paperwork overload — and
+              step into streamlined success. With our expert team and advanced
+              technology, we take care of the numbers while you focus on what
+              matters most, your patients.
             </p>
           </motion.div>
 
@@ -74,6 +77,19 @@ export default function MedicalBillingLanding() {
                 </span>
               </motion.div>
             ))}
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="tw-text-center tw-max-w-4xl tw-mx-auto"
+          >
+            <p className="tw-text-lg tw-text-gray-600 tw-mb-8 tw-leading-relaxed">
+              Let us make your practice more efficient, more profitable, and a
+              lot less stressful.
+            </p>
           </motion.div>
 
           {/* CTA Buttons */}
