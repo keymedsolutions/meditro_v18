@@ -161,8 +161,7 @@ export function StatsSection() {
         >
           <p className="tw-text-gray-800 tw-text-base tw-m-0 tw-font-bold">
             Partner with Key MedSolutions to streamline workflows, perfect your
-            billing process, and power the growth of your practice. your
-            practice.
+            billing process, and power the growth of your practice.
           </p>
         </motion.div>
       </div>

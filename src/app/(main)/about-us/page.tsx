@@ -72,7 +72,7 @@ const AboutUsPage = () => {
                   technology and constantly learning new things to achieve
                   results, Key MedSolutions stays ahead of changes in the
                   industry. We are entirely dedicated to supporting you in
-                  achieving your goals
+                  achieving your goals.
                 </p>
               </div>
               {/* <div className="col"></div> */}
