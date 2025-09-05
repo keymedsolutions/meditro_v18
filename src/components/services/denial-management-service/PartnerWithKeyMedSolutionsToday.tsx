@@ -42,7 +42,7 @@ const PartnerWithKeyMedSolutionsToday = () => {
               Don’t let insurance denials disrupt your practice’s financial
               health. Partner with Key MedSolutions for reliable&nbsp;
               <span className="tw-font-bold">Denial Management Services</span>
-              &nbsp;and comprehensive&nnbsp;
+              &nbsp;and comprehensive&nbsp;
               <span className="tw-font-bold">
                 Revenue Cycle Management Services.
               </span>

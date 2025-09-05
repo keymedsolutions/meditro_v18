@@ -5,7 +5,6 @@ import Breadcrumb from "@/components/ui/breadcrumb";
 import Link from "next/link";
 import { Accordion } from "react-bootstrap";
 import WhyChooseOurMedicalBilling from "@/components/services/common/WhyChooseOurMedicalBilling";
-import WhoWeServe from "@/components/services/common/WhoWeServe";
 import SolutionsWeOffer from "@/components/services/common/SolutionsWeOffer";
 import HeroSection from "./HeroSection";
 import { WhyChoose } from "./WhyChoose";
@@ -13,6 +12,7 @@ import { Services } from "./Services";
 import ContactUsToday from "./ContactUsToday";
 import OptimizeRevenueSection from "./OptimizeRevenueSection";
 import { PartnerWithUsSection } from "./PartnerWithUsSection";
+import WhoWeServe from "./WhoWeServe";
 
 const MaximizeYourReimbursementRateV2 = () => {
   const services = [
@@ -137,6 +137,7 @@ const MaximizeYourReimbursementRateV2 = () => {
         <HeroSection />
         <WhyChoose />
         <Services />
+        <WhoWeServe/>
         <OptimizeRevenueSection />
         <PartnerWithUsSection />
         <ContactUsToday />

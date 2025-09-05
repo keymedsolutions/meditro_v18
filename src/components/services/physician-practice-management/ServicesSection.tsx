@@ -72,7 +72,7 @@ export default function ServicesSection() {
             </span>
           </motion.h2>
           <p className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto">
-            We provide a wide range of<span className="tw-font-bold">practice management services</span>&nbsp;in USA to
+            We provide a wide range of&nbsp;<span className="tw-font-bold">practice management services</span>&nbsp;in USA to
             meet the unique needs of your medical practice. Our solutions are
             designed to enhance efficiency, reduce risks, and drive long-term
             success.

@@ -109,11 +109,27 @@ export default function OutsourceEligibility() {
           viewport={{ once: true, amount: 0.2 }}
         >
           <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground ">
-            Why Choose Key MedSolutions – A Premier&nbsp;
+            Why Outsource&nbsp;
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-              Medical Debt Collection Company USA
+              Medical Insurance
+              <br />
+              Eligibility Verification Services?
             </span>
           </h2>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="tw-my-8 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center tw-mx-auto"
+          >
+            Managing insurance verification in-house can be costly, inefficient,
+            and stressful. Shifting to a proven&nbsp;
+            <span className="tw-font-bold">
+              Outsource Insurance Verification Services
+            </span>
+            &nbsp;provider unlocks:
+          </motion.p>
         </motion.div>
 
         <div className="tw-grid md:tw-grid-cols-2  tw-gap-8 sm:tw-px-0 tw-px-2">

@@ -71,6 +71,9 @@ const EnterpriseTools = () => {
             empower healthcare providers to take control of their denial
             management processes and achieve better financial results
           </p>
+          <p className="tw-max-w-4xl tw-mx-auto tw-text-cente tw-font-bold">
+            Key features of our tools include:
+          </p>
         </motion.div>
         {/* Benefits Timeline Layout */}
         <div className="tw-relative">
