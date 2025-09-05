@@ -73,12 +73,29 @@ export function SmartChoice() {
           className="tw-text-center tw-mb-16"
         >
           <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-6">
-            What sets us apart as your&nbsp;
+            Why Outsourcing&nbsp;
             <br />
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-              Nephrology Medical Billing Company?
+              Medical Coding Services
             </span>
+            &nbsp;is the Smart Choice
           </h2>
+          <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
+            Healthcare providers today face increasing complexities in
+            regulatory compliance and claim reimbursements.&nbsp;
+            <span className="tw-font-bold">
+              Outsourcing Medical Coding Services
+            </span>
+            &nbsp;to a trusted partner like Key MedSolutions allows you to shift
+            focus from administrative tasks to patient care. Our expert team
+            handles everything from initial claims processing to appeals,
+            safeguarding your practice’s revenue and reputation.
+          </p>
+          <p className="tw-font-bold">
+            <span style={{ borderBottom: "2px solid gray" }} className="tw-pb-1">
+              Benefits of Outsourcing:
+            </span>
+          </p>
         </motion.div>
 
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">

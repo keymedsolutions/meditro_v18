@@ -33,7 +33,7 @@ export function HeroSection() {
     },
   ];
   const subTitle =
-    "Maximize your nephrology practice's financial performance with specialized billing experts. Achieve faster reimbursements, reduced denials, and improved revenue cycle management nationwide.";
+    "Maximize your nephrology practice’s financial performance with the trusted Nephrology Medical Billing experts at Key MedSolutions. Whether you run an independent nephrology clinic or a large, multi-specialty practice, our team delivers comprehensive, customized Nephrology Billing Services to help you achieve faster reimbursements, reduced denials, and improved revenue cycle management nationwide.";
   return (
     <section className="tw-relative  tw-min-h-[80vh] tw-flex tw-items-center">
       <div className="tw-absolute tw-inset-0"></div>
@@ -60,7 +60,7 @@ export function HeroSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-left"
           >
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
@@ -69,7 +69,7 @@ export function HeroSection() {
             >
               <Award className="tw-w-5 tw-h-5" />
               Trusted by 500+ Nephrology Practices Nationwide
-            </motion.div>
+            </motion.div> */}
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}

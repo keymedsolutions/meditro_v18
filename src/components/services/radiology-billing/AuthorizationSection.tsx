@@ -59,14 +59,14 @@ function AuthorizationSection() {
               />
               <ProcessCard
                 title="Workflow Automation"
-                description=" Automated insurance verification, real-time eligibility checks, and claim status updates reduce administrative bottlenecks, lower error rates, and accelerate processing times."
+                description="Automated insurance verification, real-time eligibility checks, and claim status updates reduce administrative bottlenecks, lower error rates, and accelerate processing times."
                 step="02"
                 icon={<Clock className="tw-h-10 tw-w-10 tw-text-purple-500" />}
               />
               <ProcessCard
-                title="Enhanced Workflow Management"
+                title="Maximum Data Security"
                 description="Our protocols comply with all HIPAA regulations and are continually updated to guard your practice and patient data against all potential threats."
-                step="01"
+                step="03"
                 icon={<Database className="tw-h-10 tw-w-10 tw-text-blue-500" />}
               />
             </div>

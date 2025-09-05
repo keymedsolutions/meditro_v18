@@ -8,31 +8,31 @@ export function WhyChoose() {
     {
       title: "Expertise in Multiple Specialties",
       description:
-        "Thorough knowledge of specialty-specific coding, including radiology, cardiology, and oncology.",
+        "Our coding team has thorough knowledge of specialty-specific coding, including fields like radiology, cardiology, and oncology.",
       icon: Microscope,
     },
     {
       title: "Accurate and Compliant Coding",
       description:
-        "Strict adherence to ICD-10, CPT, and HCPCS guidelines to accelerate claim processing.",
+        "We strictly follow ICD-10, CPT, and HCPCS guidelines to ensure precise coding that helps accelerate claim processing.",
       icon: BadgeCheck,
     },
     {
       title: "Cost Savings",
       description:
-        "Reduce overhead tied to in-house teams while gaining access to skilled professionals.",
+        "Reduce the overhead expenses associated with in-house coding teams while gaining access to highly skilled professionals.",
       icon: Banknote,
     },
     {
       title: "HIPAA Compliance",
       description:
-        "Data security prioritized with full adherence to HIPAA to protect patient information.",
+        "We prioritize data security, ensuring complete adherence to HIPAA regulations and protecting sensitive patient information.",
       icon: Shield,
     },
     {
       title: "Seamless Integration",
       description:
-        "Smooth integration with leading EHR/EMR systems to simplify workflows and enhance accuracy.",
+        "Our solutions integrate smoothly with leading EHR and EMR systems, simplifying workflows and enhancing data accuracy.",
       icon: Plug,
     },
   ];

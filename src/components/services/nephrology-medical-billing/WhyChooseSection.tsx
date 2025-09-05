@@ -58,7 +58,7 @@ export function WhyChooseSection() {
             Why Choose&nbsp;
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Key MedSolutions
-            </span>
+            </span>&nbsp;for Your Nephrology Medical Billing?
           </h2>
           <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-5xl tw-mx-auto tw-leading-relaxed">
             At Key MedSolutions, we recognize the unique complexities and
