@@ -71,7 +71,7 @@ export function WhyChoose() {
     },
     {
       title: "Transparent Accounts Receivable Recovery Services",
-      description: `Our <span class="tw-font-bold">Accounts Receivable Recovery Services</span> provide real-time reporting and data-driven insights, allowing you to make informed decisions for your financial health.`,
+      description: `Our <span class="tw-font-bold">Accounts Receivable Recovery Services</span> provide you with real-time reporting and data-driven insights, allowing you to make informed decisions for your financial health.`,
       icon: FileSearch,
       color: "yellow",
     },
@@ -117,7 +117,7 @@ export function WhyChoose() {
     >
       <div className="tw-max-w-6xl tw-mx-auto">
         <motion.div
-          className="tw-text-center"
+          className="tw-text-center tw-pb-2"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -129,6 +129,20 @@ export function WhyChoose() {
               Medical Debt Collection Company USA
             </span>
           </h2>
+          <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
+            In today’s rapidly evolving healthcare landscape, managing rising
+            patient responsibilities, complex payer requirements, and increased
+            denials can jeopardize your cash flow. As a trusted&nbsp;
+            <span className="tw-font-bold">
+              medical debt collection company USA,
+            </span>
+            &nbsp;Key MedSolutions combines in-depth industry knowledge with
+            innovative technology to ensure you never miss an opportunity to
+            recover what&apos;s rightfully yours—ethically and efficiently.
+          </p>
+          <p className="tw-font-bold">
+            Key Benefits of Choosing Our Healthcare Debt Recovery Service:
+          </p>
         </motion.div>
 
         <div className="tw-grid md:tw-grid-cols-2 lg:grid-cols-3 tw-gap-8 sm:tw-px-0 tw-px-2">

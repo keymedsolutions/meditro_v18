@@ -134,17 +134,17 @@ export function Services() {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-opacity-70  tw-transition-transform tw-duration-500 group-hover:tw-scale-110"
+                  className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-opacity-20 tw-backdrop-blur-sm  tw-transition-transform tw-duration-500 group-hover:tw-scale-110"
                 />
                 {/* Overlay (optional for readability) */}
-                <div className="tw-absolute tw-inset-0 tw-bg-black/30 tw-transition-all tw-duration-500 group-hover:tw-backdrop-blur-sm"></div>
+                <div className="tw-absolute tw-inset-0 tw-bg-black/30 tw-transition-all tw-duration-500 group-hover:tw-backdrop-blur-md"></div>
 
                 {/* Foreground Content */}
                 <div className="tw-relative tw-z-10 tw-p-8">
-                  <h3 className="tw-text-xl tw-font-bold tw-text-white tw-mb-3">
+                  <h3 className="tw-text-xl tw-font-bold tw-text-black tw-mb-3">
                     {item.title}
                   </h3>
-                  <p className="tw-text-white tw-leading-relaxed">
+                  <p className="tw-text-black/90 tw-leading-relaxed">
                     {item.description}
                   </p>
                 </div>

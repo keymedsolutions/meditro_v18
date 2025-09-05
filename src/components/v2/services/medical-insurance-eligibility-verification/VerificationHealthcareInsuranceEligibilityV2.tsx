@@ -142,7 +142,7 @@ const VerificationHealthcareInsuranceEligibilityV2 = () => {
         <InsuranceSpecialistSection />
         <VerificationServices />
         <InsuranceVerification />
-        <PatientEligibilityService />
+        {/* <PatientEligibilityService /> */}
         <EligibilityServiceExperience />
         <WhyChooseUs />
         <MedicalInsuranceSection />

@@ -50,6 +50,17 @@ export function WhyChooseUs() {
             Key MedSolutions?
           </span>
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="tw-mb-8 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center tw-mx-auto"
+        >
+          Managing a medical practice requires more than just clinical
+          expertise. It demands efficient systems, financial oversight, and
+          strategic planning. Here&apos;s how we can help:
+        </motion.p>
 
         {/* Grid */}
         <div className="tw-grid tw-gap-8 md:tw-grid-cols-3 ">

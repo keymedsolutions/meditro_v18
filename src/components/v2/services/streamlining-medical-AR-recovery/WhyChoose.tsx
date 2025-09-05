@@ -25,8 +25,8 @@ const WhyChoose = () => {
         <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
           Why Choose&nbsp;
           <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-            ICD-10 Coding <br/>ServicesKey MedSolutions’ AR Recovery Services?
-          </span>
+             Key MedSolutions<br/>AR Recovery Services
+          </span>?
         </h2>
       </motion.div>
       <motion.p

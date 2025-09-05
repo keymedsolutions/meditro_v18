@@ -67,9 +67,10 @@ const RevenueCycleManagement = () => {
             </span>
           </h2>
           <p className="tw-text-center tw-max-w-4xl tw-mx-auto">
-            At Key MedSolutions, we pride ourselves on delivering Healthcare
-            Revenue Cycle Management Solutions that are precise, secure, and
-            tailored to your operational goals.
+            At Key MedSolutions, we pride ourselves on delivering&nbsp;
+            <span>Healthcare Revenue Cycle Management Solutions</span>&nbsp;that
+            are precise, secure, and tailored to your operational goals. Our
+            all-encompassing suite of services includes:
           </p>
         </motion.div>
         {/* Services Grid */}

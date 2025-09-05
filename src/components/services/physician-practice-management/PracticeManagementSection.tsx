@@ -47,18 +47,18 @@ export function PracticeManagementSection() {
           viewport={{ once: true }}
           className="tw-text-lg md:tw-text-xl tw-text-gray-700 tw-leading-relaxed tw-max-w-3xl tw-mx-auto"
         >
-          Strong physician practice management is the backbone of a successful
-          medical practice. It keeps operations smooth, finances healthy, and
-          ensures your patients receive the{" "}
-          <span className="tw-font-semibold tw-text-blue-500">
-            highest quality of care
-          </span>
-          . With the right system and expert guidance, you can overcome
-          challenges, seize opportunities, and achieve long-term success.
+          Strong&nbsp;
+          <span className="tw-font-bold">physician practice management</span>
+          &nbsp;is essential for the success of any medical practice. It ensures
+          that your operations run smoothly, your finances are in order, and
+          your patients receive the best care possible. With the right&nbsp;
+          <span className="tw-font-bold">practice management system</span>
+          &nbsp;and expert guidance, you can overcome challenges, seize
+          opportunities, and achieve long-term success.
         </motion.p>
 
         {/* Highlight Box */}
-       
+
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{
@@ -91,33 +91,32 @@ export function PracticeManagementSection() {
                 className="tw-flex tw-flex-col md:tw-gap-y-5 tw-gap-y-2 tw-z-10"
               >
                 <div className="xl:tw-text-4xl tw-text-start lg:tw-text-[2rem] md:tw-text-3xl md:tw-font-extrabold tw-font-bold tw-text-2xl">
-                  Get Started Today🚀
+                  Get Started Today
                 </div>
                 <div className="tw-text-start">
-                  Ready to optimize your practice?{" "}
+                  Ready to optimize your practice? Contact Key MedSolutions
+                  today to discover how our&nbsp;
                   <span className="tw-font-bold">
-                    Key MedSolutions
-                  </span>{" "}
-                  is here to help. Whether you need a{" "}
-                  <span className="tw-font-semibold">
-                    practice management consultant
+                    medical practice management services
                   </span>
-                  , support with{" "}
-                  <span className="tw-font-semibold">
-                    denial management services
+                  &nbsp;can strengthen your operations and drive long-term
+                  success. Whether you need a&nbsp;
+                  <span className="tw-font-bold">
+                    practice management consultant,
                   </span>
-                  , or guidance on{" "}
-                  <span className="tw-font-semibold">
-                    medical practice management consulting
-                  </span>{" "}
-                  — we’ve got you covered. We’ll manage the complexities, so you
-                  can focus on caring for your patients.
+                  &nbsp;help with
+                  <span className="tw-font-bold">
+                    denial management services,
+                  </span>
+                  &nbsp;or support with&nbsp;
+                  <span className="tw-font-bold">Medical Practice Management Consulting,</span>&nbsp;
+                  we&apos;re here to help. We&apos;ll manage the complexities of
+                  your practice, so you can concentrate on caring for your
+                  patients.
                 </div>
 
                 <div className="!tw-text-start">
-                  <p
-                    className="!tw-relative !tw-inline-flex !tw-items-center !tw-px-12 !tw-py-3 !tw-overflow-hidden !tw-text-lg !tw-font-medium !tw-text-white border-2 !tw-border-white !tw-rounded-full hover:!tw-text-accent-500 tw-group hover:tw-bg-accent-500"
-                  >
+                  <p className="!tw-relative !tw-inline-flex !tw-items-center !tw-px-12 !tw-py-3 !tw-overflow-hidden !tw-text-lg !tw-font-medium !tw-text-white border-2 !tw-border-white !tw-rounded-full hover:!tw-text-accent-500 tw-group hover:tw-bg-accent-500">
                     <span className="tw-absolute tw-left-0 tw-block tw-w-full tw-h-0 tw-transition-all tw-bg-white tw-opacity-100 group-hover:tw-h-full tw-top-1/2 group-hover:tw-top-0 tw-duration-400 tw-ease"></span>
                     <span className="tw-absolute tw-right-0 tw-flex tw-items-center tw-justify-start tw-w-10 tw-h-10 tw-duration-300 tw-transform tw-translate-x-full group-hover:tw-translate-x-0 tw-ease">
                       <ArrowRight />
