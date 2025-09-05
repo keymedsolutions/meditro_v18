@@ -7,42 +7,51 @@ import {
   Users,
   AlertTriangle,
   Settings,
+  CheckCircle,
 } from "lucide-react";
 
 const services = [
   {
     icon: FileCheck,
     title: "Efficient and Accurate ICD-10 Coding",
-    description:
-      "Complete diagnosis and procedure coding with ICD-10-CM and ICD-10-PCS expertise.\nIntegration of CPT and HCPCS Codes for complete claim preparation.",
+    points: [
+      "Complete diagnosis and procedure coding with ICD-10-CM and ICD-10-PCS expertise",
+      "Integration of CPT and HCPCS Codes for complete claim preparation",
+    ],
     gradient: "tw-from-blue-500 tw-to-cyan-500",
   },
   {
     icon: Shield,
     title: "Compliance and Quality Control",
-    description:
-      "Documentation audits tailored to payer rules, industry guidelines, and revenue cycle management.\nPre-submission claim reviews for optimal coding compliance and minimal denial risk.",
+    points: [
+      "Documentation audits tailored to payer rules, industry guidelines, and revenue cycle management",
+      "Pre-submission claim reviews for optimal coding compliance and minimal denial risk",
+    ],
     gradient: "tw-from-green-500 tw-to-emerald-500",
   },
   {
     icon: Users,
     title: "Specialist Expertise Across Medical Disciplines",
-    description:
+    points: [
       "Reliable coding for over 20 medical specialties, including orthopaedics, cardiology, radiology, dermatology, and more, provided by experienced ICD-10 Coding Specialists.",
+    ],
     gradient: "tw-from-purple-500 tw-to-violet-500",
   },
   {
     icon: AlertTriangle,
     title: "Denial Management and Coding Corrections",
-    description:
+    points: [
       "Expertise in reducing lost revenue by quickly identifying, correcting, and resubmitting denied claims.",
+    ],
     gradient: "tw-from-orange-500 tw-to-red-500",
   },
   {
     icon: Settings,
     title: "Scalable and Secure Solutions",
-    description:
-      "Flexible, scalable service models for both ongoing and project-based needs.\nFully HIPAA-compliant workflows to protect sensitive data at all stages.",
+    points: [
+      "Flexible, scalable service models for both ongoing and project-based needs.",
+      "Fully HIPAA-compliant workflows to protect sensitive data at all stages",
+    ],
     gradient: "tw-from-indigo-500 tw-to-blue-500",
   },
 ];
@@ -91,9 +100,16 @@ export function ComprehensiveServices() {
                 {service.title}
               </h3>
 
-              <p className="tw-text-gray-600  tw-leading-relaxed tw-whitespace-pre-line">
-                {service.description}
-              </p>
+              <ul className="tw-space-y-2">
+                {service.points.map((point, i) => (
+                  <li key={i} className="tw-flex tw-items-start tw-gap-2">
+                    <CheckCircle className="tw-w-5 tw-h-5 tw-text-green-500 tw-mt-1 flex-shrink-0" />
+                    <span className="tw-text-gray-600 tw-leading-relaxed">
+                      {point}
+                    </span>
+                  </li>
+                ))}
+              </ul>
 
               {/* Hover Effect */}
               <div

@@ -49,7 +49,7 @@ const WhoBenefits = () => {
             className="tw-text-center tw-mb-16"
           >
             <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-6">
-              Why Choose Us as Your&nbsp;
+              Who Benefits from Our&nbsp;
               <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                 ICD-10 Coding Company?
               </span>

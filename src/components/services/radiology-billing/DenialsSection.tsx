@@ -52,7 +52,6 @@ const DenialsSection = () => {
           style={{ border: "1.5px solid gray " }}
           className="tw-p-3 tw-rounded-2xl"
         >
-          {" "}
           <Image className="tw-h-14 tw-w-14 tw-text-blue-300" />
         </div>
       ),
@@ -60,7 +59,7 @@ const DenialsSection = () => {
     {
       title: "Multi-Specialty Clinics",
       description:
-        "Integrated support managing imaging billing across multiple clinical disciplines to eliminate gaps and fragmentation.",
+        "Integrated support that manages imaging billing across multiple clinical disciplines, eliminating gaps and fragmentation.",
       Icon: (
         <div
           style={{ border: "1.5px solid gray " }}
@@ -73,7 +72,7 @@ const DenialsSection = () => {
     {
       title: "Expanding Radiology Groups Nationwide",
       description:
-        "Nationwide scalability supporting mergers, acquisitions, and organic growth so billing keeps pace with your vision.",
+        "Nationwide scalability supports mergers, acquisitions, and organic practice growth, so your billing keeps pace with your vision.",
       Icon: (
         <div
           style={{ border: "1.5px solid gray " }}

@@ -23,8 +23,11 @@ const Hero = () => {
       className: "!tw-text-accent-500 ",
     },
     {
-      text: "Expert.",
+      text: "Expert",
       className: "!tw-text-accent-500 ",
+    },
+    {
+      text: "with",
     },
     {
       text: "Cardiology",

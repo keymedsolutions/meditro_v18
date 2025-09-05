@@ -59,10 +59,12 @@ export function SolutionSection() {
           viewport={{ once: true, amount: 0.2 }}
           className="tw-text-lg tw-text-gray-700 tw-text-center tw-mb-12 tw-max-w-4xl tw-mx-auto tw-leading-relaxed"
         >
-          As an established Internal Medicine Billing Company, we provide
-          specialized outsourcing medical billing services for internal medicine
+          As an established&nbsp;<span className="tw-font-bold">Internal Medicine Billing Company,</span>&nbsp;we provide
+          specialized&nbsp;<span className="tw-font-bold">Outsourcing medical billing services</span>&nbsp;for internal medicine
           and nephrology practices. Our comprehensive approach ensures that your
-          billing process is efficient, compliant, and fully optimized.
+          billing process is efficient, compliant, and fully optimized. Our team
+          is thoroughly familiar with the requirements for internal medicine and
+          nephrology billing, ensuring you receive the highest level of service.
         </motion.p>
 
         {/* Solution Cards */}

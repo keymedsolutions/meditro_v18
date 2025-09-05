@@ -42,7 +42,7 @@ export function WhyPartnerwithOurRadiologyBillingExperts() {
             Why Partner with Our&nbsp;
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Radiology Billing Experts
-            </span>
+            </span>?
           </h2>
           <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
             Choosing the right billing partner is essential for sustainable
