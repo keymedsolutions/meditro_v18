@@ -579,7 +579,7 @@ const HealthcareTechTrends = () => {
                           <span className="tw-font-bold">
                             Medical Billing Company
                           </span>
-                          and&nbsp;
+                          &nbsp;and&nbsp;
                           <span className="tw-font-bold">
                             Medical Coding Services
                           </span>
@@ -609,16 +609,25 @@ const HealthcareTechTrends = () => {
                       </h3>
                       <div className="tw-bg-white tw-rounded-2xl tw-shadow-xl tw-p-8">
                         <p className="tw-text-gray-700 tw-mb-4">
-                          The top 20&nbsp;<span className="tw-font-bold">Healthcare Technology</span>&nbsp;trends of 2025
-                          reflect a rapidly shifting industry. It's an exciting
-                          time, but it can also be confusing if you're not
-                          prepared.
+                          The top 20&nbsp;
+                          <span className="tw-font-bold">
+                            Healthcare Technology
+                          </span>
+                          &nbsp;trends of 2025 reflect a rapidly shifting
+                          industry. It's an exciting time, but it can also be
+                          confusing if you're not prepared.
                         </p>
                         <p className="tw-text-gray-700 tw-mb-4">
                           Key MedSolutions is here to make it easier. Our expert
                           teams help translate innovation into action with
-                          reliable&nbsp;<span className="tw-font-bold">Medical Billing Company</span>services and
-                          compliant, efficient&nbsp;<span className="tw-font-bold">Medical Coding Services.</span>
+                          reliable&nbsp;
+                          <span className="tw-font-bold">
+                            Medical Billing Company
+                          </span>
+                          &nbsp;services and compliant, efficient&nbsp;
+                          <span className="tw-font-bold">
+                            Medical Coding Services.
+                          </span>
                         </p>
                         <p className="tw-text-gray-700">
                           Let's shape the future of healthcare together. Reach

@@ -16,7 +16,7 @@ const BenefitsPartnering = () => {
     {
       icon: <BarChart3 className="tw-w-10 tw-h-10 tw-text-green-500" />,
       label:
-        "Improved operational efficiency with the help of advanced Practice Management software",
+        "Improved operational efficiency with the help of advanced Practice Management software.",
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },

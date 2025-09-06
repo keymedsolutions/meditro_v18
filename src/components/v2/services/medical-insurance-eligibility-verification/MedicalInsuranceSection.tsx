@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Phone, Mail, Calendar, ArrowRight, CheckCircle } from "lucide-react";
+import Link from "next/link";
 
 const MedicalInsuranceSection = () => {
   return (
@@ -132,7 +133,7 @@ const MedicalInsuranceSection = () => {
                 <h3 className="tw-text-xl tw-font-bold tw-text-gray-900 tw-mb-6">
                   Comprehensive Support Services
                 </h3>
-
+                <p>Don’t forget to explore our linked</p>
                 <motion.div
                   className="tw-flex tw-items-start tw-mb-4 tw-p-4 tw-bg-blue-50 tw-rounded-lg tw-transition-all tw-duration-300 hover:tw-bg-blue-100 hover:tw-shadow-sm"
                   whileHover={{ scale: 1.02 }}
@@ -143,10 +144,12 @@ const MedicalInsuranceSection = () => {
                     size={20}
                   />
                   <p className="tw-text-gray-800">
-                    Explore our linked{" "}
-                    <span className="tw-font-semibold tw-text-blue-700">
-                      Medical Claim Billing Services
-                    </span>
+                    Explore our linked&nbsp;
+                    <Link href="/medical-claim-billing-company">
+                      <span className="tw-font-semibold tw-text-blue-700">
+                        Medical Claim Billing Services
+                      </span>
+                    </Link>
                   </p>
                 </motion.div>
 
@@ -160,10 +163,12 @@ const MedicalInsuranceSection = () => {
                     size={20}
                   />
                   <p className="tw-text-gray-800">
-                    Explore our{" "}
-                    <span className="tw-font-semibold tw-text-indigo-700">
-                      Physician Credentialing Services
-                    </span>
+                    Explore our&nbsp;
+                    <Link href="/medical-credentialing-services">
+                      <span className="tw-font-semibold tw-text-indigo-700">
+                        Physician Credentialing Services
+                      </span>
+                    </Link>
                   </p>
                 </motion.div>
 

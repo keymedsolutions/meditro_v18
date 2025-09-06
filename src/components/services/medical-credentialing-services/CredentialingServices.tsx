@@ -55,7 +55,7 @@ const FeatureCard = ({
         <p className="tw-text-gray-600 tw-text-center tw-mb-4">{description}</p>
 
         {information?.length > 0 && (
-          <ul className="tw-space-y-3 tw-mb-4 relative z-10">
+          <ul className="tw-space-y-3 tw-mb-4 relative z-10 ">
             {information.map((item: any, idx: any) => (
               <motion.li
                 key={idx}
@@ -74,7 +74,7 @@ const FeatureCard = ({
           </ul>
         )}
 
-        <p className="tw-text-gray-600 tw-text-center tw-mb-4 border tw-bg-white tw-rounded-lg tw-p-2 tw-border-black !tw-mt-auto">{footer}</p>
+        <p className="tw-text-gray-600 tw-text-center tw-mb-4 border tw-bg-white tw-rounded-lg tw-p-2 tw-border-black !tw-mt-auto tw-shadow-md">{footer}</p>
       </div>
     </motion.div>
   );
@@ -159,10 +159,10 @@ const CredentialingServices = () => {
           titleClassName="!tw-text-amber-600"
         />
         <FeatureCard
-          title={data?.[1]?.title}
-          description={data?.[1]?.description}
-          information={data?.[1]?.information}
-          footer={data?.[1]?.footer}  icon={BarChart3}
+          title={data?.[2]?.title}
+          description={data?.[2]?.description}
+          information={data?.[2]?.information}
+          footer={data?.[2]?.footer}  icon={BarChart3}
           number="03"
           className="border-2 !tw-border-purple-600"
           IconClassName="!tw-bg-purple-600"
