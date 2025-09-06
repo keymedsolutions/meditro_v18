@@ -41,6 +41,7 @@ const HeroContent = () => {
         ensure trust and compliance. It ensures that physicians, nurse
         practitioners, and other medical professionals are verified and approved
         by insurance companies to provide services to patients. Without proper
+        &nbsp;
         <span className="tw-font-bold">
           medical provider credentialing services
         </span>

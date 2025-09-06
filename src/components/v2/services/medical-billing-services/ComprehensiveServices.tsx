@@ -147,7 +147,7 @@ export function ComprehensiveServices() {
           viewport={{ once: true }}
           className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center tw-mx-auto"
         >
-          At Key MedSolutions, our<span className="tw-font-bold">End-to-End Medical Billing Services</span>&nbsp;cover
+          At Key MedSolutions, our&nbsp;<span className="tw-font-bold">End-to-End Medical Billing Services</span>&nbsp;cover
           every part of your revenue cycle, from patient registration and
           insurance verification, to claims submission, denial management, and
           payment reconciliation. We take a hands-on approach at every step,

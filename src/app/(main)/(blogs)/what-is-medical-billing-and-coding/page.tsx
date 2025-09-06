@@ -97,7 +97,11 @@ const MedicalBillingGuide = () => {
                           don't think about what happens after you leave. Behind
                           the scenes, there's a lot more than just diagnosing
                           and treating, especially when it comes to getting paid
-                          for those services.
+                          for those services.&nbsp;
+                          <span className="tw-font-bold">
+                            This is where medical billing and coding
+                          </span>
+                          &nbsp;play a crucial role.
                         </p>
                       </div>
                     </div>
@@ -141,7 +145,10 @@ const MedicalBillingGuide = () => {
                         What Is Medical Billing and Coding?
                       </h3>
                       <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8">
-                        <div style={{borderLeft:"4px solid #3b82f6"}} className="tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6 tw-border-l-4 tw-border-blue-500">
+                        <div
+                          style={{ borderLeft: "4px solid #3b82f6" }}
+                          className="tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6 tw-border-l-4 tw-border-blue-500"
+                        >
                           <div className="tw-flex tw-items-center tw-mb-4">
                             <div className="tw-p-2 tw-bg-blue-100 tw-rounded-lg tw-mr-4">
                               <FileText className="tw-w-6 tw-h-6 tw-text-blue-600" />
@@ -158,7 +165,10 @@ const MedicalBillingGuide = () => {
                             and proper documentation.
                           </p>
                         </div>
-                        <div  style={{borderLeft:"4px solid #3b82f6"}}  className="tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6 tw-border-l-4 tw-border-purple-500">
+                        <div
+                          style={{ borderLeft: "4px solid #3b82f6" }}
+                          className="tw-bg-white tw-rounded-xl tw-shadow-lg tw-p-6 tw-border-l-4 tw-border-purple-500"
+                        >
                           <div className="tw-flex tw-items-center tw-mb-4">
                             <div className="tw-p-2 tw-bg-purple-100 tw-rounded-lg tw-mr-4">
                               <BarChart3 className="tw-w-6 tw-h-6 tw-text-purple-600" />
@@ -413,7 +423,10 @@ const MedicalBillingGuide = () => {
                           cream.
                         </p>
 
-                        <h3  style={{borderLeft:"4px solid #22c55e"}}  className="tw-text-2xl tw-font-semibold tw-text-gray-500  tw-mb-8 tw-border-l-4 tw-border-green-500 tw-pl-4">
+                        <h3
+                          style={{ borderLeft: "4px solid #22c55e" }}
+                          className="tw-text-2xl tw-font-semibold tw-text-gray-500  tw-mb-8 tw-border-l-4 tw-border-green-500 tw-pl-4"
+                        >
                           Here's what happens behind the scenes:
                         </h3>
 

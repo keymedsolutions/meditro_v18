@@ -59,9 +59,9 @@ const WhyChooseKeyMedSolutions = () => {
             As one of the leading&nbsp;
             <span className="tw-font-bold">
               physician credentialing companies,
-            </span>&nbsp;
-            Key MedSolutions stands out for our commitment to excellence and
-            client satisfaction. Here's why healthcare providers trust us:
+            </span>
+            &nbsp; Key MedSolutions stands out for our commitment to excellence
+            and client satisfaction. Here's why healthcare providers trust us:
           </p>
         </motion.div>
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-8 tw-mb-16">
@@ -103,7 +103,8 @@ const WhyChooseKeyMedSolutions = () => {
           className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md tw-mt-10"
         >
           <p className="tw-text-gray-800 tw-text-base tw-m-0">
-            When you partner with Key MedSolutions, you’re not just hiring a
+            When you partner with Key MedSolutions, you’re not just hiring
+            a&nbsp;
             <span className="tw-font-bold">
               physician credentialing company:
             </span>

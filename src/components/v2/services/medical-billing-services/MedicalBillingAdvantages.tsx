@@ -142,7 +142,7 @@ const MedicalBillingAdvantages = () => {
                   Time Savings
                 </h3>
                 <p className="tw-text-gray-600">
-                  Reduced administrative burden for your staff
+                  Simplified processes for effortless service.
                 </p>
               </div>
             </motion.div>
