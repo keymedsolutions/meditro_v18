@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle, Phone } from "lucide-react";
+import Image from "next/image";
 
 export default function MedicalBillingLanding() {
   const fadeInUp = {
@@ -176,19 +177,39 @@ export default function MedicalBillingLanding() {
         </div>
       </section>
 
-      <section className="tw-py-20 tw-px-4 tw-bg-gradient-to-r tw-from-accent-400 tw-to-accentOrange-400 tw-mb-20">
-        <div className="tw-max-w-4xl tw-mx-auto tw-text-center">
-          <motion.div {...fadeInUp} viewport={{ once: true, amount: 0.2 }}>
-            <h2 className="tw-text-4xl tw-font-bold tw-text-white tw-mb-6">
-              Seamless Technology Integration
-            </h2>
-            <p className="tw-text-xl tw-text-blue-100 tw-mb-8">
-              Our medical billing systems effortlessly integrate with your
-              existing in-house software, including medicine billing software
-              and revenue cycle management solutions, ensuring smooth and
-              efficient operations.
-            </p>
+      <section className="tw-py-20 md:!tw-pt-20 tw-pt-0 tw-px-4 tw-bg-accent-500 tw-mb-20 ">
+        <div className="tw-container md:tw-max-w-6xl tw-grid tw-grid-cols-12 tw-relative">
+          {/* Image Section */}
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="tw-col-span-12 md:tw-col-span-3 md:tw-absolute md:tw-left-0 md:tw-top-[-150px] tw-flex tw-justify-center"
+          >
+            <Image
+              src="/images/hero-lady.png"
+              alt="medical billing landing"
+              width={500}
+              height={500}
+              className="tw-object-cover tw-rounded-lg tw-w-3/4  tw-h-auto"
+            />
           </motion.div>
+
+          {/* Text Section */}
+          <div className="tw-col-span-12 lg:tw-col-start-4 md:tw-col-start-5 md:tw-col-span-9 tw-text-center md:tw-text-left tw-mt-12 md:tw-mt-0">
+            <motion.div {...fadeInUp} viewport={{ once: true, amount: 0.2 }}>
+              <h2 className="tw-text-4xl tw-font-bold tw-text-white tw-mb-6">
+                Seamless Technology Integration
+              </h2>
+              <p className="tw-text-xl tw-text-blue-100 tw-mb-8">
+                Our medical billing systems effortlessly integrate with your
+                existing in-house software, including medicine billing software
+                and revenue cycle management solutions, ensuring smooth and
+                efficient operations.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
     </div>

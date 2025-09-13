@@ -5,7 +5,7 @@ const HealthcareProviders = () => {
   return (
     <motion.section
       style={{
-        background: "url('/images/paperBackground.png')",
+        background: "url('/images/home/medicatioIconBg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

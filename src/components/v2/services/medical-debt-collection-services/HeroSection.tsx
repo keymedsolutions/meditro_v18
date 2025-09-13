@@ -34,9 +34,6 @@ function HeroSection() {
     },
   ];
 
-  const subTitle =
-    "Streamline your healthcare revenue with our professional Medical Debt Collection Service. Enhance cash flow, reduce claim denials, and maintain patient trust, all with a partner committed to compliance and results. ";
-
   return (
     <React.Fragment>
       <section
@@ -57,18 +54,19 @@ function HeroSection() {
             >
               <FloatingElements />
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Expert Medical
+                  </span>
+                  &nbsp;Debt Collection Services
+                </h2>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -77,10 +75,10 @@ function HeroSection() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words={subTitle}
-                />
+                Streamline your healthcare revenue with our professional Medical
+                Debt Collection Service. Enhance cash flow, reduce claim
+                denials, and maintain patient trust, all with a partner
+                committed to compliance and results.
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -140,7 +138,7 @@ function HeroSection() {
                 <div className="tw-p-2 sm:tw-py-10 sm:tw-px-16 tw-backdrop-blur-xl tw-rounded-2xl ">
                   {/* Background Image */}
                   <img
-                    src="/images/paperBackground.png"
+                    src="/images/home/medicatioIconBg.png"
                     alt="Background"
                     className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-z-[-10]"
                   />

@@ -6,35 +6,35 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/ui/
 const WhyChooseOurPhysicianBillingSolution = () => {
   const features = [
     {
-      icon: <DollarSign className="tw-w-8 tw-h-8 tw-text-blue-500" />,
+      icon: <DollarSign className="tw-w-12 tw-h-12 tw-text-accent-500 group-hover:tw-text-white tw-mb-4" />,
       title: "Accelerate Your Reimbursements",
       bgColor: "tw-bg-blue-200",
       description:
         "Enjoy faster payments and fewer delays with our streamlined claims processing and proactive payer follow-up.",
     },
     {
-      icon: <FileCheck className="tw-w-8 tw-h-8 tw-text-green-500" />,
+      icon: <FileCheck className="tw-w-12 tw-h-12 tw-text-accent-500 group-hover:tw-text-white tw-mb-4" />,
       title: "Reduce Denials, Maximize Revenue",
       bgColor: "tw-bg-green-200",
       description:
         "Our error-free processes and robust denial management mean more of your claims get paid fully and promptly.",
     },
     {
-      icon: <ShieldCheck className="tw-w-8 tw-h-8 tw-text-purple-500" />,
+      icon: <ShieldCheck className="tw-w-12 tw-h-12 tw-text-accent-500 group-hover:tw-text-white tw-mb-4" />,
       title: "Advanced Compliance",
       bgColor: "tw-bg-purple-50",
       description:
         "We adhere to the strictest HIPAA standards, ensuring patient data privacy and regulatory peace of mind.",
     },
     {
-      icon: <Workflow className="tw-w-8 tw-h-8 tw-text-orange-500" />,
+      icon: <Workflow className="tw-w-12 tw-h-12 tw-text-accent-500 group-hover:tw-text-white tw-mb-4" />,
       title: "Seamless Workflow Integration",
       bgColor: "tw-bg-orange-200",
       description:
         "Our flexible systems are designed to blend into your workflows, whether you're a solo practitioner or part of a large physician group.",
     },
     {
-      icon: <Settings className="tw-w-8 tw-h-8 tw-text-pink-500" />,
+      icon: <Settings className="tw-w-12 tw-h-12 tw-text-accent-500 group-hover:tw-text-white tw-mb-4" />,
       title: "Customizable Billing Solutions",
       bgColor: "tw-bg-pink-200",
       description:
@@ -84,20 +84,19 @@ const WhyChooseOurPhysicianBillingSolution = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true, amount: 0.2 }}
+              className=""
             >
-              <Card className="tw-h-full border hover:tw-shadow-lg tw-transition-all tw-duration-300 tw-group">
+              <Card className="tw-h-full border-2 tw-border-accent-500 hover:tw-border-white hover:tw-shadow-lg tw-transition-all tw-group hover:tw-bg-accent-500 hover:tw-text-white tw-duration-300" >
                 <CardHeader className="tw-flex tw-items-center tw-gap-x-2">
-                  <div
-                    className={`tw-w-12 tw-h-12 tw-rounded-lg tw-flex tw-items-center tw-justify-center tw-mb-4 group-hover:tw-scale-110 tw-transition-transform ${benefit?.bgColor}`}
-                  >
+                 
                     {benefit.icon}
-                  </div>
-                  <CardTitle className="tw-text-xl tw-font-bold tw-text-foreground font-space-grotesk tw-text-center">
+                  
+                  <CardTitle className="tw-text-xl tw-font-bold group-hover:tw-text-white tw-text-foreground font-space-grotesk tw-text-center">
                     {benefit.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="tw-text-muted-foreground tw-text-center font-dm-sans">
+                  <CardDescription className="tw-text-muted-foreground group-hover:tw-text-white tw-text-center font-dm-sans">
                     {benefit.description}
                   </CardDescription>
                 </CardContent>

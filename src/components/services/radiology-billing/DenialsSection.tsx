@@ -23,10 +23,10 @@ const DenialsSection = () => {
         "Handling large-scale imaging operations and complex workloads with enterprise-level processes and support.",
       Icon: (
         <div
-          style={{ border: "1.5px solid gray " }}
+          style={{ border: "1.5px solid #565acf " }}
           className="tw-p-3 tw-rounded-2xl"
         >
-          <Building2 className="tw-h-14 tw-w-14 tw-text-blue-300" />
+          <Building2 className="tw-h-14 tw-w-14 tw-text-accent-500" />
         </div>
       ),
     },
@@ -36,10 +36,10 @@ const DenialsSection = () => {
         "Flexible, expert-driven billing for solo providers and group practices seeking growth.",
       Icon: (
         <div
-          style={{ border: "1.5px solid gray " }}
+          style={{ border: "1.5px solid #565acf " }}
           className="tw-p-3 tw-rounded-2xl"
         >
-          <UserCog className="tw-h-14 tw-w-14 tw-text-blue-300" />
+          <UserCog className="tw-h-14 tw-w-14 tw-text-accent-500" />
         </div>
       ),
     },
@@ -49,10 +49,10 @@ const DenialsSection = () => {
         "Efficient billing for routine, urgent, and specialty imaging services, ensuring consistent, strong cash flow.",
       Icon: (
         <div
-          style={{ border: "1.5px solid gray " }}
+          style={{ border: "1.5px solid #565acf " }}
           className="tw-p-3 tw-rounded-2xl"
         >
-          <Image className="tw-h-14 tw-w-14 tw-text-blue-300" />
+          <Image className="tw-h-14 tw-w-14 tw-text-accent-500" />
         </div>
       ),
     },
@@ -62,10 +62,10 @@ const DenialsSection = () => {
         "Integrated support that manages imaging billing across multiple clinical disciplines, eliminating gaps and fragmentation.",
       Icon: (
         <div
-          style={{ border: "1.5px solid gray " }}
+          style={{ border: "1.5px solid #565acf " }}
           className="tw-p-3 tw-rounded-2xl"
         >
-          <Workflow className="tw-h-14 tw-w-14 tw-text-blue-300" />
+          <Workflow className="tw-h-14 tw-w-14 tw-text-accent-500" />
         </div>
       ),
     },
@@ -75,10 +75,10 @@ const DenialsSection = () => {
         "Nationwide scalability supports mergers, acquisitions, and organic practice growth, so your billing keeps pace with your vision.",
       Icon: (
         <div
-          style={{ border: "1.5px solid gray " }}
+          style={{ border: "1.5px solid #565acf " }}
           className="tw-p-3 tw-rounded-2xl"
         >
-          <Globe className="tw-h-14 tw-w-14 tw-text-blue-300" />
+          <Globe className="tw-h-14 tw-w-14 tw-text-accent-500" />
         </div>
       ),
     },

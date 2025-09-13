@@ -168,7 +168,7 @@ const AccelerateYourRevenue = () => {
           </motion.div>
         </motion.div>
       </section>
-      <section className="tw-container tw-flex tw-items-center tw-justify-center  tw-bg-gradient-to-r tw-from-indigo-600 tw-to-purple-600 tw-text-white tw-p-10 tw-rounded-2xl tw-shadow-xl">
+      <section className="container tw-relative tw-flex tw-items-center tw-justify-center tw-bg-indigo-600 tw-text-white tw-p-10 tw-rounded-2xl tw-shadow-xl custom-background">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

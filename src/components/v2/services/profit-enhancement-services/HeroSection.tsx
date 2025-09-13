@@ -53,18 +53,20 @@ const HeroSection = () => {
         <div className="tw-container tw-mx-auto tw-px-4">
           <div className="tw-min-h-[80vh]  tw-container tw-mx-auto tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-px-6">
             <div className="tw-mb-8 md:tw-mb-0 md:tw-pr-8">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  Elevate Your Financial Performance with Expert&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Profit Enhancement Services
+                  </span>
+                  &nbsp;
+                </h2>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -73,10 +75,10 @@ const HeroSection = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words="Partner with Key MedSolutions, your trusted specialists in healthcare profit enhancement. We deliver strategy-driven solutions to recover lost revenue, reduce operational costs, and propel your practice toward lasting financial success."
-                />
+                Partner with Key MedSolutions, your trusted specialists in
+                healthcare profit enhancement. We deliver strategy-driven
+                solutions to recover lost revenue, reduce operational costs, and
+                propel your practice toward lasting financial success.
               </motion.div>
             </div>
             <div className="tw-flex tw-justify-center">
@@ -101,7 +103,6 @@ const HeroSection = () => {
 
       <section className="py-20 bg-[#f8f9fb] text-gray-900">
         <div className="container tw-flex tw-flex-col tw-items-center mx-auto text-center max-w-3xl px-6">
-      
           <motion.div
             className="tw-text-center"
             initial={{ opacity: 0, y: 50 }}

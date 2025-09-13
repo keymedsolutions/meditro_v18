@@ -50,15 +50,24 @@ const MedicalBillingSolutions = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <h1 className="tw-text-4xl tw-font-bold tw-text-gray-800 tw-mb-4 tw-max-w-4xl tw-mx-auto">
-            <TypewriterEffect words={mainTitle} className="!tw-text-center" />
-          </h1>
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-max-w-3xl tw-mx-auto  tw-font-bold tw-font-serif tw-text-foreground">
+              Transparent & Scalable&nbsp;
+              <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                RCM Plans
+              </span>
+              &nbsp;for Every Practice Size
+            </h2>
+          </motion.div>
+
           <div className="tw-text-xl tw-text-gray-600 tw-max-w-3xl tw-mx-auto">
-            <TextGenerateEffect
-              className="tw-text-xl tw-!tw-font-bold tw-text-[#1f2278] tw-!tw-leading-tight"
-              words=" Choose the plan that fits your medical billing needs, from startups
-            to large healthcare groups."
-            />
+            Choose the plan that fits your medical billing needs, from startups
+            to large healthcare groups.
           </div>
         </motion.div>
 

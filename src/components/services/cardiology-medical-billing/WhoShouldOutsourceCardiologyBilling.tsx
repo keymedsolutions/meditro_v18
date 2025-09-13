@@ -35,7 +35,7 @@ const WhoShouldOutsourceCardiologyBilling = () => {
     },
   ];
   return (
-    <section className="container tw-mb-14 tw-to-card">
+    <section className="tw-mb-14 tw-p-10 tw-to-card tw-bg-accent-500">
       <div className="tw-max-w-7xl tw-mx-auto">
         <motion.div
           className="tw-text-center tw-mb-20"
@@ -44,9 +44,9 @@ const WhoShouldOutsourceCardiologyBilling = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
+          <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-white tw-mb-10">
             Who Should &nbsp;
-            <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+            <span className="tw-bg-gradient-to-r tw-from-accentOrange-400 tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Outsource Cardiology Billing?
             </span>
           </h2>
@@ -73,10 +73,10 @@ const WhoShouldOutsourceCardiologyBilling = () => {
               viewport={{ once: true }}
               className="tw-flex border tw-flex-col hover:tw-shadow-xl  tw-bg-white !tw-rounded-xl md:!tw-px-8 tw-px-4 tw-relative tw-pt-20 tw-group"
             >
-              <div className="tw-bg-accentOrange-600 group-hover:tw-bg-accentOrange-800 tw-text-white tw-rounded-xl tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center tw-mb-4 tw-absolute tw-top-[-30px]">
+              <div className="tw-bg-accentOrange-600 group-hover:tw-bg-accentOrange-500 tw-text-white tw-rounded-xl tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center tw-mb-4 tw-absolute tw-top-[-30px]">
                 <item.icon size={24} />
               </div>
-              <h3 className="tw-text-lg tw-font-semibold tw-text-green-800 tw-mb-3">
+              <h3 className="tw-text-lg tw-font-semibold tw-text-accent-500 tw-mb-3">
                 {item.title}
               </h3>
               <p className="tw-text-gray-700 tw-leading-relaxed tw-text-sm">

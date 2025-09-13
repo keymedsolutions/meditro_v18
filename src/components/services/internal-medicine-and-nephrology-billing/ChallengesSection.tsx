@@ -99,17 +99,17 @@ export function ChallengesSection() {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="tw-bg-white tw-p-8 tw-rounded-2xl tw-shadow-sm border tw-border-gray-100 tw-transition-transform hover:tw--translate-y-1 hover:tw-shadow-lg"
+                className="tw-bg-white tw-p-8 tw-rounded-2xl tw-shadow-sm border-2  tw-border-accent-500 hover:tw-border-white  tw-transition-all tw-group hover:tw-bg-accent-500 hover:tw-text-white tw-duration-300  hover:tw--translate-y-1 hover:tw-shadow-lg"
               >
                 <div
                   className={`tw-w-12 tw-h-12 tw-rounded-xl tw-flex tw-items-center tw-justify-center ${challenge.color} tw-mb-5`}
                 >
                   <Icon className="tw-w-6 tw-h-6" />
                 </div>
-                <h3 className="tw-text-xl tw-font-semibold tw-text-gray-900 tw-mb-3">
+                <h3 className="tw-text-xl tw-font-semibold group-hover:tw-text-white tw-text-gray-900 tw-mb-3">
                   {challenge.title}
                 </h3>
-                <p className="tw-text-gray-600 tw-leading-relaxed">
+                <p className="tw-text-gray-600 group-hover:tw-text-white tw-leading-relaxed">
                   {challenge.description}
                 </p>
               </motion.div>

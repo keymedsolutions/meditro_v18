@@ -202,20 +202,20 @@ const ReclaimYourTime = () => {
             className="lg:tw-col-span-7 tw-space-y-3 tw-max-w-3xl"
             variants={itemVariants}
           >
-            <div className="tw-space-y-2">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-leading-tight"
-              >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                End-to-end&nbsp;
+                <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                  Medical Billing Services and RCM Solutions
+                </span>
+                &nbsp;for Healthcare Providers
+              </h2>
+            </motion.div>
             <div className="tw-space-y-4">
               <h2 className="tw-font-display tw-leading-tight">
                 Reclaim Your Time, Boost&nbsp;
@@ -241,7 +241,9 @@ const ReclaimYourTime = () => {
                 help you achieve sustainable growth. Leave the complexities to
                 us, so you can concentrate on caring for your patients.
               </p>
-              <p className="tw-text-xl tw-font-semibold">Let’s transform your practice together.</p>
+              <p className="tw-text-xl tw-font-semibold">
+                Let’s transform your practice together.
+              </p>
             </div>
 
             <button type="button" className="button-get-started">

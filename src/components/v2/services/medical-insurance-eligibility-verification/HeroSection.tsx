@@ -18,52 +18,6 @@ import React from "react";
 import { AnimatedCircle } from "../streamlining-medical-AR-recovery/AnimatedCircle";
 
 export function HeroSection() {
-  const mainTitle = [
-    {
-      text: "Boost",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Your",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Revenue",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Cycle",
-    },
-    {
-      text: "Performance",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Expert",
-    },
-    {
-      text: "Medical",
-    },
-    {
-      text: "Insurance",
-    },
-
-    {
-      text: "Eligibility",
-    },
-    {
-      text: "Verification",
-    },
-    {
-      text: "Services",
-    },
-  ];
-
-  const subTitle =
-    "Ensure fast, accurate insurance verification to reduce claim denials, improve cash flow, and enhance patient satisfaction. Trust our service to streamline your revenue cycle and boost efficiency.";
-
   return (
     <React.Fragment>
       <section className="tw-w-full tw-relative tw-min-h-[90vh] tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
@@ -113,18 +67,21 @@ export function HeroSection() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="tw-relative"
             >
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  Boost Your&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Revenue Cycle Performance
+                  </span>
+                  &nbsp;with Expert Medical Insurance Eligibility Verification
+                  Services
+                </h2>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -133,10 +90,10 @@ export function HeroSection() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words={subTitle}
-                />
+                Ensure fast, accurate insurance verification to reduce claim
+                denials, improve cash flow, and enhance patient satisfaction.
+                Trust our service to streamline your revenue cycle and boost
+                efficiency.
               </motion.div>
               <p>
                 In an era of evolving healthcare regulations and increasing

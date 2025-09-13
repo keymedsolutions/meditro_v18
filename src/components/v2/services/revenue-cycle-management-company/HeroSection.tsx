@@ -17,35 +17,6 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import React from "react";
 
 const HeroSection = () => {
-  const mainTitle = [
-    {
-      text: "Expert",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Revenue",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Cycle",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Management",
-    },
-    {
-      text: "Services",
-    },
-    {
-      text: "for",
-    },
-    {
-      text: "Healthcare",
-    },
-    {
-      text: "Excellence",
-    },
-  ];
   return (
     <React.Fragment>
       <div className="tw-relative tw-min-h-[90vh] tw-flex tw-items-center tw-justify-center tw-py-12 sm:tw-py-0 tw-px-4 sm:tw-px-6 lg:tw-px-8 tw-overflow-hidden">
@@ -95,24 +66,26 @@ const HeroSection = () => {
           <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-items-center">
             {/* Left Content */}
             <motion.div
-            className="lg:tw-pt-0 tw-pt-10"
+              className="lg:tw-pt-0 tw-pt-10"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <motion.h2
-                className="tw-text-3xl md:tw-text-4xl lg:tw-text-5xl tw-font-bold tw-text-gray-900 tw-mb-6"
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h2>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  Expert&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Revenue Cycle Management Services
+                  </span>
+                  &nbsp;for Healthcare Excellence
+                </h2>
+              </motion.div>
               <motion.p
                 className="tw-text-lg tw-text-gray-700 tw-mb-8"
                 initial={{ opacity: 0, y: 20 }}

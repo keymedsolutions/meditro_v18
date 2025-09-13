@@ -88,7 +88,7 @@ const Features = () => {
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <Card className="tw-h-full border hover:tw-shadow-lg tw-transition-all tw-duration-300">
+              <Card style={{boxShadow:"rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px"}} className="tw-shadow-2xl tw-bg-gray-200 tw-h-full border hover:tw-shadow-lg tw-transition-all tw-duration-300">
                 <CardHeader>
                   <div className="tw-flex tw-items-center tw-space-x-4">
                     <div className="tw-w-12 tw-h-12 tw-bg-[#565acf]/10 tw-rounded-lg tw-flex tw-items-center tw-justify-center">

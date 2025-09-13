@@ -11,25 +11,7 @@ const OptimizeRevenueSection = () => {
         backgroundRepeat: "no-repeat",
         filter: "brightness(1.15)",
       }}
-      animate={{
-        x: 0, // move to normal position
-        opacity: 1,
-        borderRadius: [
-          "89% 11% 99% 1% / 10% 89% 11% 90%",
-          "10% 90% 12% 88% / 82% 9% 91% 18%",
-          "89% 11% 99% 1% / 10% 89% 11% 90%",
-        ],
-      }}
-      transition={{
-        x: { duration: 1, ease: "easeOut" }, // entrance motion
-        opacity: { duration: 1, ease: "easeOut" },
-        borderRadius: {
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        },
-      }}
-      className="tw-container   tw-px-4 border tw-border-gray-500 tw-shadow-2xl tw-rounded-2xl tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center"
+      className=" tw-px-4 tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center"
     >
       <motion.div
         className="tw-text-center"

@@ -41,9 +41,6 @@ const Hero = () => {
     },
   ];
 
-  const subTitle =
-    "Running a successful medical practice requires more than exceptional patient care; it also demands a streamlined, effective approach to your revenue cycle. At Key MedSolutions, we offer industry-leading  Physician Medical Billing Services that empower physicians and healthcare groups to maximize revenue, reduce administrative burdens, and focus more on patient outcomes. As a premier Physician Billing Company in the USA, our suite of solutions combines advanced technology, skilled professionals, and a deep understanding of healthcare reimbursement to deliver measurable results, no matter the size of your practice.";
-
   return (
     <section
       className="tw-w-full tw-bg-white "
@@ -54,42 +51,50 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="tw-relative"
+          className="tw-relative tw-flex tw-flex-col tw-gap-y-4"
         >
           <FloatingElements />
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-leading-tight"
-          >
-            <TypewriterEffect words={mainTitle} className="!tw-text-gray-900" />
-          </motion.h1>
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="tw-text-xl tw-text-gray-500 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
           >
-            <TextGenerateEffect
-              className="md:tw-text-2xl tw-text-xl tw-text-black  !tw-font-semibold  tw-!tw-leading-tight"
-              words="Experience seamless billing, greater revenue, and more time for patient care with Key MedSolutions."
-            />
+            <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+              Physician&nbsp;
+              <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                Medical Billing Services:
+              </span>
+              &nbsp;Achieve Your Practice’s Full Potential
+            </h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
             viewport={{ once: true, amount: 0.2 }}
-            className="tw-text-xl tw-text-gray-500 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+            className="tw-text-xl tw-font-bold tw-text-gray-500 tw-leading-relaxed tw-max-w-2xl"
           >
-            <TextGenerateEffect
-              className="tw-text-xl  tw-!tw-leading-tight"
-              words={subTitle}
-            />
+           Experience seamless billing, greater revenue, and more time for patient care with Key MedSolutions.
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className=" tw-text-gray-500 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+          >
+            Running a successful medical practice requires more than exceptional
+            patient care; it also demands a streamlined, effective approach to
+            your revenue cycle. At Key MedSolutions, we offer industry-leading
+            Physician Medical Billing Services that empower physicians and
+            healthcare groups to maximize revenue, reduce administrative
+            burdens, and focus more on patient outcomes. As a premier Physician
+            Billing Company in the USA, our suite of solutions combines advanced
+            technology, skilled professionals, and a deep understanding of
+            healthcare reimbursement to deliver measurable results, no matter
+            the size of your practice.
           </motion.div>
           <div className="tw-flex tw-flex-col tw-gap-y-2">
             <button className="star-button">

@@ -8,41 +8,6 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
 
 const HeroSection = () => {
-  const mainTitle = [
-    {
-      text: "Physician",
-    },
-    {
-      text: "Practice",
-    },
-    {
-      text: "Management:",
-    },
-    {
-      text: "Streamline",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Your",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Practice,",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Maximize",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Your",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Potential",
-      className: "!tw-text-accent-500 ",
-    },
-  ];
   return (
     <section
       className="tw-overflow-hidden tw-min-h-[80vh] tw-py-12 md:tw-py-20"
@@ -57,18 +22,19 @@ const HeroSection = () => {
       <div className="tw-container tw-mx-auto sm:tw-px-4 tw-px-0">
         <div className="  tw-container tw-mx-auto tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-px-6 tw-place-items-center">
           <div className="tw-mb-8 md:tw-mb-0 md:tw-pr-8">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
             >
-              <TypewriterEffect
-                words={mainTitle}
-                className="!tw-text-gray-900"
-              />
-            </motion.h1>
+              <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                Physician Practice Management:&nbsp;
+                <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                  Streamline Your Practice, Maximize Your Potential.
+                </span>
+              </h2>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -77,10 +43,7 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
-              <TextGenerateEffect
-                className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                words="Partner with Key MedSolutions to optimize operations, enhance patient care, and drive your practice's success."
-              />
+              Partner with Key MedSolutions to optimize operations, enhance patient care, and drive your practice's success.
             </motion.div>
 
             <motion.div

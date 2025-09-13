@@ -5,14 +5,12 @@ const WhyChoose = () => {
   return (
     <motion.section
       style={{
-        background: "url('/images/paperBackground.png')",
+        background: "url('/images/home/medicatioIconBg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         filter: "brightness(1.15)",
-        clipPath:
-          "polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)",
-      }}
+         }}
       className="tw-container !tw-px-6 sm:tw-px-4 tw-rounded-2xl tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center tw-my-20"
     >
       <motion.div
@@ -25,8 +23,11 @@ const WhyChoose = () => {
         <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
           Why Choose&nbsp;
           <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-             Key MedSolutions<br/>AR Recovery Services
-          </span>?
+            Key MedSolutions
+            <br />
+            AR Recovery Services
+          </span>
+          ?
         </h2>
       </motion.div>
       <motion.p

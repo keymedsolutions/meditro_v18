@@ -88,10 +88,10 @@ function ServicesSection() {
 
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
           {services.map((service, index) => (
-            <div className="card-01">
+            <div className="card-01 tw-group">
               <div className="content-01">
-                <p className="heading-01 !tw-text-black">{service?.title}</p>
-                <p className="para-01">{service?.description}</p>
+                <p className="heading-01 !tw-text-black group-hover:!tw-text-white">{service?.title}</p>
+                <p className="para-01 tw-text-gray-900">{service?.description}</p>
               </div>
             </div>
           ))}

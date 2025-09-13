@@ -50,14 +50,9 @@ const KeyAspects = () => {
   ];
 
   return (
-    <section className="tw-py-20 tw-relative tw-overflow-hidden">
-      {/* Background decoration */}
-      {/* <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-gray-50 tw-to-white tw-pointer-events-none"></div> */}
-
-      {/* Background pattern */}
-      <div className="tw-absolute tw-inset-0 tw-bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2MWgtMXYtMXptMiAyaDF2NGgtMXYtNHptLTIgMmgxdjJoLTF2LTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] tw-opacity-50"></div>
-
-      <div className="tw-container tw-mx-auto tw-px-4">
+    <section className="tw-py-20 tw-relative tw-overflow-hidden tw-bg-gray-100">
+    
+      <div className="container tw-mx-auto tw-px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -97,20 +92,20 @@ const KeyAspects = () => {
               key={index}
               className={`tw-flex tw-flex-col ${
                 index % 2 === 0 ? "lg:tw-flex-row" : "lg:tw-flex-row-reverse"
-              } tw-items-center tw-gap-8 lg:tw-gap-16`}
+              } lg:tw-gap-y-0 tw-gap-y-4 `}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
               {/* Image side */}
-              <div className="lg:tw-w-2/5">
+              <div className="lg:tw-w-1/2">
                 <div className="tw-relative">
                   {/* Decorative elements */}
-                  <div
+                  {/* <div
                     className={`tw-absolute tw-w-full tw-h-full tw-rounded-2xl tw-bg-gradient-to-r tw-from-primary-200 tw-to-secondary-200 tw-transform ${
                       index % 2 === 0
                         ? "tw-translate-x-4 tw-translate-y-4"
                         : "-tw-translate-x-4 tw-translate-y-4"
                     } -tw-z-10`}
-                  ></div>
+                  ></div> */}
 
                   <div className="tw-relative tw-rounded-2xl tw-overflow-hidden tw-shadow-xl">
                     <img
@@ -119,19 +114,19 @@ const KeyAspects = () => {
                       className="tw-w-full tw-h-auto tw-object-cover tw-transform hover:tw-scale-105 tw-transition-transform tw-duration-700"
                       style={{ minHeight: "300px" }}
                     />
-                    <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-gray-900/70 tw-to-transparent"></div>
+                    {/* <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-gray-900/70 tw-to-transparent"></div>
                     <div className="tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-p-6">
                       <div className="tw-inline-flex tw-items-center tw-justify-center tw-p-3 tw-bg-white/90 tw-backdrop-blur-sm tw-rounded-full">
                         {aspect.icon}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
 
               {/* Content side */}
-              <div className="lg:tw-w-3/5">
-                <Card className="tw-shadow-lg tw-rounded-xl tw-overflow-hidden hover:tw-shadow-xl tw-transition-all tw-duration-300 tw-bg-white/80 tw-backdrop-blur-sm">
+              <div className="lg:tw-w-1/2">
+                <Card className="tw-rounded-xl tw-bg-transparent tw-overflow-hidden  tw-transition-all tw-duration-300 ">
                   <CardContent className="tw-p-8">
                     <h3 className="tw-text-2xl tw-font-bold tw-mb-4 tw-flex tw-items-center">
                       <span className="tw-mr-3">{aspect.icon}</span>

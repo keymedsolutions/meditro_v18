@@ -36,9 +36,6 @@ export function ArRecoveryHero() {
     },
   ];
 
-  const subTitle =
-    "Recover Unpaid Revenue, Improve Cash Flow & Optimise Your Practice’s Revenue Cycle";
-
   return (
     <React.Fragment>
       <section className="tw-w-full tw-relative tw-min-h-[90vh] tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
@@ -150,18 +147,19 @@ export function ArRecoveryHero() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               className="tw-relative"
             >
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Accounts Receivable
+                  </span>
+                  &nbsp;Recovery Solutions
+                </h2>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -170,10 +168,8 @@ export function ArRecoveryHero() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words={subTitle}
-                />
+                Recover Unpaid Revenue, Improve Cash Flow & Optimise Your
+                Practice’s Revenue Cycle
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -182,10 +178,7 @@ export function ArRecoveryHero() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words="Reduce outstanding accounts receivable backlogs, increase claims recovery rates, and streamline your billing operations with our tailored AR Recovery Services. Start managing your practice’s financial health with confidence today!"
-                />
+               Reduce outstanding accounts receivable backlogs, increase claims recovery rates, and streamline your billing operations with our tailored AR Recovery Services. Start managing your practice’s financial health with confidence today!
               </motion.div>
 
               <button type="button" className="button-get-started">
@@ -221,10 +214,18 @@ export function ArRecoveryHero() {
         className="tw-text-xl tw-text-gray-500 tw-mb-10 tw-leading-relaxed tw-max-w-6xl tw-mx-auto tw-text-center tw-font-medium"
       >
         Accelerate your healthcare organization’s financial potential with
-        &nbsp;<span className="tw-font-bold">Accounts Receivable Recovery Solutions</span>&nbsp;from Key MedSolutions, your
-        trusted partner for maximizing collections, accelerating cash flow, and
-        focusing on what matters most: patient care. As an&nbsp;<span className="tw-font-bold">Accounts Receivable
-        Recovery Expert</span>&nbsp;in the USA, we provide tailored&nbsp;<span className="tw-font-bold">AR Recovery Solution</span>&nbsp;
+        &nbsp;
+        <span className="tw-font-bold">
+          Accounts Receivable Recovery Solutions
+        </span>
+        &nbsp;from Key MedSolutions, your trusted partner for maximizing
+        collections, accelerating cash flow, and focusing on what matters most:
+        patient care. As an&nbsp;
+        <span className="tw-font-bold">
+          Accounts Receivable Recovery Expert
+        </span>
+        &nbsp;in the USA, we provide tailored&nbsp;
+        <span className="tw-font-bold">AR Recovery Solution</span>&nbsp;
         packages designed to address the complex challenges of modern healthcare
         billing. Whether you operate a medical practice, hospital, or
         multi-specialty clinic, our Outstanding AR Recovery Services ensure your
