@@ -1584,10 +1584,10 @@ body {
   /* width: 320px;
   padding: 36px; */
   padding: 15px;
-  border-radius: 24px;
+  border-radius: 10px;
   overflow: hidden;
   line-height: 1.6;
-  border: 1px solid #999999;
+  border: 2px solid #3a3e85;
   transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -1691,3 +1691,16 @@ body {
 }
 
 
+
+
+.custom-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/images/background/M-U-B-I-scaled.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* You can control this opacity */
+  border-radius: inherit;
+  z-index: 0;
+}

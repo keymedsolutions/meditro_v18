@@ -80,11 +80,11 @@ const OutsourceBenefits = () => {
         </motion.div>
 
         {/* Benefits grid */}
-        <div className="tw-relative tw-z-10 tw-grid tw-gap-8 md:tw-grid-cols-2 lg:tw-grid-cols-3">
+        <div className="tw-relative tw-z-10 tw-grid tw-gap-4 md:tw-grid-cols-2 lg:tw-grid-cols-3">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
-              className="tw-bg-white/70 tw-backdrop-blur-lg tw-p-6 tw-rounded-2xl tw-shadow-lg border tw-border-gray-100 hover:tw-shadow-2xl tw-transition tw-duration-300 tw-flex tw-flex-col tw-items-center tw-text-center tw-group"
+              className="tw-bg-white/70 tw-group tw-backdrop-blur-lg hover:tw-bg-accent-500 tw-p-6 tw-rounded-2xl tw-shadow-lg border-2 tw-border-accent-500 hover:tw-shadow-2xl tw-transition tw-duration-300 tw-flex tw-flex-col tw-items-center tw-text-center tw-group"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -93,10 +93,10 @@ const OutsourceBenefits = () => {
               <div className="tw-bg-gradient-to-br tw-from-blue-100 tw-to-white tw-p-4 tw-rounded-full tw-mb-4 tw-shadow-md tw-group-hover:tw-scale-110 tw-transition-transform tw-duration-300">
                 {benefit.icon}
               </div>
-              <h3 className="tw-text-xl tw-font-semibold tw-text-gray-900 tw-mb-2">
+              <h3 className="tw-text-xl tw-font-semibold tw-text-gray-900 group-hover:tw-text-white tw-mb-2">
                 {benefit.title}
               </h3>
-              <p className="tw-text-gray-600">{benefit.description}</p>
+              <p className="tw-text-gray-600 group-hover:tw-text-white">{benefit.description}</p>
             </motion.div>
           ))}
         </div>

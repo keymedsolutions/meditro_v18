@@ -9,36 +9,6 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const Hero = () => {
-  const mainTitle = [
-    {
-      text: "Streamline",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Your",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Revenue",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Expert",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Cardiology",
-    },
-    {
-      text: "Billing",
-    },
-    {
-      text: "Services",
-    },
-  ];
   return (
     <React.Fragment>
       <section
@@ -61,12 +31,25 @@ const Hero = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
+                {/* <TypewriterEffect
                   words={mainTitle}
                   className="!tw-text-gray-900"
-                />
+                /> */}
               </motion.h1>
 
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <h2 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-font-serif tw-text-foreground">
+                  Streamline Your Revenue with Expert&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Cardiology Billing Services
+                  </span>
+                </h2>
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -74,10 +57,7 @@ const Hero = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words="Make billing effortless with our expert Cardiology Medical Billing Services. Save time, boost revenue, and ensure compliance when you outsource to the most trusted cardiology billing company in the USA. Focus on patient care while we manage your financial health with precision."
-                />
+                Make billing effortless with our expert Cardiology Medical Billing Services. Save time, boost revenue, and ensure compliance when you outsource to the most trusted cardiology billing company in the USA. Focus on patient care while we manage your financial health with precision.
               </motion.div>
 
               <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">

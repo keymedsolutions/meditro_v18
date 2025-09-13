@@ -48,7 +48,7 @@ export function BenefitsSection() {
   ];
 
   return (
-    <section className="tw-py-16 tw-px-4 tw-bg-green-50">
+    <section className="tw-py-16 tw-px-4 tw-bg-accent-500 custom-background">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export function BenefitsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
-          className="tw-text-3xl tw-font-bold tw-text-center tw-text-gray-900 tw-mb-4"
+          className="tw-text-3xl tw-font-bold tw-text-center tw-text-white tw-mb-4"
         >
           Benefits You Gain
         </motion.h2>
@@ -70,7 +70,7 @@ export function BenefitsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
           viewport={{ once: true, amount: 0.2 }}
-          className="tw-text-lg tw-text-gray-600 tw-text-center tw-mb-12"
+          className="tw-text-lg tw-text-gray-100 tw-text-center tw-mb-12"
         >
           By trusting us with your billing, you benefit from our extensive
           Medical RCM Solutions, which provide:
@@ -96,9 +96,14 @@ export function BenefitsSection() {
               viewport={{ once: true }}
               className="tw-flex border tw-flex-col hover:tw-shadow-xl  tw-bg-white !tw-rounded-xl md:!tw-px-8 tw-px-4 tw-relative tw-pt-20 tw-group"
             >
-              <div className="tw-bg-accentOrange-600 group-hover:tw-bg-accentOrange-800 tw-text-white tw-rounded-xl tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center tw-mb-4 tw-absolute tw-top-[-30px]">
-                <benefit.icon size={24} className="" />
-              </div>
+              <motion.div
+                initial={{ x: 0 }}
+                whileHover={{ x: 10 }} // Move 10px to the right on hover
+                transition={{ type: "tween", duration: 0.2 }} // Smooth and fast transition
+                className="tw-bg-accentOrange-600 group-hover:tw-bg-accentOrange-400 tw-text-white tw-rounded-xl tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center tw-mb-4 tw-absolute tw-top-[-30px]"
+              >
+                <benefit.icon size={24} />
+              </motion.div>
               <h3 className="tw-text-lg tw-font-semibold tw-text-green-800 tw-mb-3">
                 {benefit.title}
               </h3>

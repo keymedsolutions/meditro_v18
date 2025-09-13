@@ -11,24 +11,6 @@ const EmpoweringYourPractice = () => {
         backgroundRepeat: "no-repeat",
         filter: "brightness(1.15)",
       }}
-      animate={{
-        x: 0, // move to normal position
-        opacity: 1,
-        borderRadius: [
-          "89% 11% 99% 1% / 10% 89% 11% 90%",
-          "10% 90% 12% 88% / 82% 9% 91% 18%",
-          "89% 11% 99% 1% / 10% 89% 11% 90%",
-        ],
-      }}
-      transition={{
-        x: { duration: 1, ease: "easeOut" }, // entrance motion
-        opacity: { duration: 1, ease: "easeOut" },
-        borderRadius: {
-          duration: 8,
-          repeat: Infinity,
-          ease: "easeInOut",
-        },
-      }}
       className="tw-container tw-py-10  tw-px-4 border tw-border-gray-500 tw-shadow-2xl tw-rounded-2xl tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center"
     >
       <motion.div
@@ -68,8 +50,11 @@ const EmpoweringYourPractice = () => {
       >
         From front-office staff to billing specialists, our solutions ensure
         that everyone in your practice is equipped to handle insurance denials
-        effectively. By partnering with a trusted&nbsp;<span className="tw-font-bold">Denial Management Company in
-        the USA</span>&nbsp;like Key MedSolutions, you can reduce administrative burdens,
+        effectively. By partnering with a trusted&nbsp;
+        <span className="tw-font-bold">
+          Denial Management Company in the USA
+        </span>
+        &nbsp;like Key MedSolutions, you can reduce administrative burdens,
         improve operational efficiency, and achieve better financial outcomes.
       </motion.p>
     </motion.section>

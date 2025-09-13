@@ -189,7 +189,7 @@ const PhysicianBillingServicesV2 = () => {
           <LeadingPhysicianBillingCompany />
 
           {/* CTA Section */}
-          <section className="tw-py-20 tw-bg-gradient-to-r tw-from-accent-400 tw-to-accentOrange-400 ">
+          <section className="container tw-rounded-2xl tw-py-20 tw-bg-accent-500 custom-background">
             <div className="tw-container tw-mx-auto tw-px-4 tw-text-center">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}

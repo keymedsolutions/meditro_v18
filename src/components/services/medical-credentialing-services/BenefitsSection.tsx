@@ -10,7 +10,7 @@ import {
 
 const BenefitsSection = () => {
   return (
-    <div className="tw-min-h-screen tw-bg-gradient-to-br tw-from-blue-50 tw-to-indigo-100 tw-py-16 tw-px-4">
+    <div className="tw-min-h-screen tw-bg-accent-500 tw-py-16 tw-px-4">
       <div className="tw-container tw-mx-auto">
         {/* Header Section */}
 
@@ -28,9 +28,9 @@ const BenefitsSection = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
+            <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-white tw-mb-10">
               The Benefits of&nbsp;
-              <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+              <span className="tw-bg-accentOrange-500 tw-bg-clip-text tw-text-transparent">
                 Professional
                 <br />
                 Credentialing
@@ -38,7 +38,7 @@ const BenefitsSection = () => {
               &nbsp; Services
             </h2>
           </motion.div>
-          <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
+          <p className="tw-text-lg tw-text-gray-200 tw-max-w-3xl tw-mx-auto tw-font-serif">
             Outsourcing your credentialing needs to a professional&nbsp;
             <span className="tw-font-bold">
               physician credentialing company

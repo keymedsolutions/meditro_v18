@@ -10,8 +10,17 @@ import {
 
 const OurProvenProcess = () => {
   return (
-    <section id="process" className="tw-py-20 tw-bg-white">
-      <div className="tw-container tw-mx-auto tw-px-4">
+    <section id="process" className="tw-relative tw-py-20 tw-bg-white">
+      {/* Background image as absolute positioned element */}
+      <div
+        className="tw-absolute tw-inset-0 tw-bg-cover tw-bg-center tw-opacity-100"
+        style={{
+          backgroundImage: "url('/images/background/SP-S8-P1-scaled.png')",
+        }}
+      ></div>
+        {/* Dark semi-transparent overlay */}
+  <div className="tw-absolute tw-inset-0 tw-bg-black tw-bg-opacity-60"></div>
+      <div className="tw-container tw-mx-auto tw-relative tw-px-4">
         <motion.div
           className="tw-text-center tw-mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -19,12 +28,11 @@ const OurProvenProcess = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <h2 className="tw-text-3xl md:tw-text-5xl tw-font-black tw-text-primary tw-mb-8 tw-leading-tight">
+          <h2 className="tw-text-3xl md:tw-text-5xl tw-font-black tw-text-white tw-mb-8 tw-leading-tight">
             Our Proven Process for <br />
             <span className="tw-text-gradient">Practice Success</span>
           </h2>
         </motion.div>
-
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
           {[
             {

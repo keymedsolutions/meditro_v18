@@ -57,9 +57,6 @@ function HeroSection() {
     },
   ];
 
-  const subTitle =
-    "Empower your healthcare organization with expert ICD-10 Medical Coding Services for accuracy, compliance, and increased revenue.";
-
   return (
     <React.Fragment>
       <section
@@ -80,18 +77,20 @@ function HeroSection() {
             >
               <FloatingElements />
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    ICD-10 Medical Coding Services:
+                  </span>
+                  &nbsp;Streamline Medical Coding & Maximize Your Practice
+                  Performance
+                </h2>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -100,10 +99,8 @@ function HeroSection() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words={subTitle}
-                />
+                Empower your healthcare organization with expert ICD-10 Medical
+                Coding Services for accuracy, compliance, and increased revenue.
               </motion.div>
 
               <button type="button" className="button-get-started">

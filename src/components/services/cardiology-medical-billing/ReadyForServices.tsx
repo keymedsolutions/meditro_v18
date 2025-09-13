@@ -5,10 +5,8 @@ import Link from "next/link";
 
 export function ReadyForServices() {
   return (
-    <section className="tw-py-24 tw-px-4 tw-relative tw-overflow-hidden">
-      <div className="tw-absolute tw-inset-0 gradient-primary"></div>
-      <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-[rgba(86,90,207,0.75)] tw-via-[rgba(241,119,50,0.7)] tw-to-[rgba(255,255,255,1)]"></div>
-
+    <section className="tw-py-24 tw-px-4 tw-relative tw-overflow-hidden tw-bg-accent-500">
+    
       {/* Floating decorative elements */}
       <div className="tw-absolute tw-top-10 tw-left-10 tw-w-24 tw-h-24 tw-bg-white/10 tw-rounded-full floating-animation"></div>
       <div
@@ -36,7 +34,7 @@ export function ReadyForServices() {
             className="tw-text-4xl md:tw-text-5xl lg:tw-text-6xl tw-font-bold tw-font-serif tw-text-white tw-mb-6 tw-leading-tight"
           >
             Ready for the Best&nbsp;
-            <span className="tw-bg-gradient-to-r tw-from-cyan-300 tw-to-blue-200 tw-bg-clip-text tw-text-transparent">
+            <span className="tw-bg-gradient-to-r tw-from-accentOrange-400 tw-to-accentOrange-500 tw-bg-clip-text tw-text-transparent">
               Cardiology Medical Billing Services
             </span>
           </motion.h2>

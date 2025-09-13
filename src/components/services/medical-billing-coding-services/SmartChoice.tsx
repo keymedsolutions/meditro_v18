@@ -109,16 +109,17 @@ export function SmartChoice() {
                 ease: "easeOut",
                 delay: index * 0.1,
               }}
+              style={{borderLeft:"4px solid #565acf",borderBottom:"0.1px solid #c0c0c0", borderRight:"0.1px solid #c0c0c0",borderTop:"0.1px solid #c0c0c0"}}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-group tw-bg-white sm:tw-p-8 tw-p-4 tw-rounded-2xl tw-shadow-lg tw-hover:tw-shadow-2xl tw-transition-all tw-duration-300 border tw-border-border tw-hover:tw-border-primary/20 tw-transform tw-hover:tw-scale-105"
+              className="tw-group tw-bg-white sm:tw-p-8 tw-p-4 tw-rounded-2xl tw-shadow-lg tw-hover:tw-shadow-2xl tw-transition-all tw-duration-300 tw-transform tw-hover:tw-scale-105 hover:tw-bg-accent-500"
             >
               <div className="tw-flex tw-items-center tw-justify-center tw-w-16 tw-h-16 gradient-accent tw-rounded-2xl tw-mb-6 tw-group-hover:tw-scale-110 tw-transition-transform tw-duration-300">
                 <feature.icon className="tw-w-8 tw-h-8 tw-text-white" />
               </div>
-              <h3 className="tw-text-xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-4">
+              <h3 className="tw-text-xl group-hover:tw-text-white tw-font-bold tw-font-serif tw-text-foreground tw-mb-4">
                 {feature.title}
               </h3>
-              <p className="tw-text-muted-foreground tw-leading-relaxed">
+              <p className="tw-text-muted-foreground group-hover:tw-text-white tw-leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

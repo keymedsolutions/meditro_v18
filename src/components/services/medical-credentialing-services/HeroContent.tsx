@@ -5,12 +5,12 @@ const HeroContent = () => {
   return (
     <motion.section
       style={{
-        background: "url('/images/paperBackground.png')",
+        background: "url('/images/home/medicatioIconBg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         filter: "brightness(1.15)",
-        borderRadius: "8.5rem", // 3xl = 1.5rem
+        borderRadius: "1.5  rem", // 3xl = 1.5rem
       }}
       className="tw-container !tw-px-6 sm:tw-px-4 tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center tw-py-10 tw-my-10"
     >

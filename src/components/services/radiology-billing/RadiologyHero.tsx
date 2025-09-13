@@ -46,9 +46,6 @@ function RadiologyHero() {
     },
   ];
 
-  const subTitle =
-    "Simplify your billing, cut down denials, and boost reimbursements with our expert-driven solutions. Outsource your radiology billing to trusted experts who ensure compliance, accuracy, and faster claims processing.";
-
   return (
     <React.Fragment>
       <section
@@ -74,18 +71,19 @@ function RadiologyHero() {
                 Trusted by leading radiology practices
               </div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
               >
-                <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                />
-              </motion.h1>
+                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                  Optimise Revenue with Expert&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Radiology Billing Services
+                  </span>
+                </h2>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -94,10 +92,10 @@ function RadiologyHero() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-text-xl tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words={subTitle}
-                />
+                Simplify your billing, cut down denials, and boost
+                reimbursements with our expert-driven solutions. Outsource your
+                radiology billing to trusted experts who ensure compliance,
+                accuracy, and faster claims processing.
               </motion.div>
 
               <motion.div
@@ -107,16 +105,13 @@ function RadiologyHero() {
                 viewport={{ once: true, amount: 0.2 }}
                 className=" tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <TextGenerateEffect
-                  className="tw-!tw-font-bold  tw-!tw-leading-tight"
-                  words="Accelerate your radiology practice with industry-leading Radiology
-      Billing Services specifically designed to maximize revenue,
-      streamline operations, and uphold uncompromising compliance. As a
-      top-tier Radiology Medical Billing Company USA, we deliver precise
-      and reliable solutions for hospital radiology departments,
-      independent practices, diagnostic labs, imaging centers, and
-      multi-specialty clinics across the United States."
-                />
+                Accelerate your radiology practice with industry-leading
+                Radiology Billing Services specifically designed to maximize
+                revenue, streamline operations, and uphold uncompromising
+                compliance. As a top-tier Radiology Medical Billing Company USA,
+                we deliver precise and reliable solutions for hospital radiology
+                departments, independent practices, diagnostic labs, imaging
+                centers, and multi-specialty clinics across the United States.
               </motion.div>
 
               <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-6">

@@ -14,43 +14,6 @@ import {
 import Image from "next/image";
 
 const HeroContent = () => {
-  const mainTitle = [
-    {
-      text: "Boost",
-    },
-    {
-      text: "Revenue",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Efficiency",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "a",
-    },
-    {
-      text: "Reliable",
-    },
-    {
-      text: "Medical",
-    },
-    {
-      text: "Billing",
-    },
-    {
-      text: "Company",
-    },
-  ];
-  const subTitle =
-    "Revolutionize your practice’s efficiency with expert billing solutions. Our Medical Billing Company offers seamless, HIPAA-compliant services to maximise revenue and reduce administrative burdens, so you can focus on delivering exceptional patient care.";
-
-  const subTitle1 =
-    "Experience higher reimbursements and faster claim approval today!";
-
   return (
     <div className="tw-min-h-[90vh] tw-bg-gradient-to-br tw-from-blue-50 tw-via-white tw-to-indigo-50 tw-py-12 tw-px-4">
       <div className="tw-container tw-mx-auto">
@@ -64,18 +27,19 @@ const HeroContent = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-left"
           >
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
             >
-              <TypewriterEffect
-                words={mainTitle}
-                className="!tw-text-gray-900"
-              />
-            </motion.h1>
+              <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                Boost Revenue Efficiency with a Reliable&nbsp;
+                <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                  Medical Billing Company
+                </span>
+              </h2>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -84,10 +48,11 @@ const HeroContent = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
-              <TextGenerateEffect
-                className="tw-text-xl tw-!tw-font-bold tw-text-[#1f2278] tw-!tw-leading-tight"
-                words={subTitle}
-              />
+              Revolutionize your practice’s efficiency with expert billing
+              solutions. Our Medical Billing Company offers seamless,
+              HIPAA-compliant services to maximise revenue and reduce
+              administrative burdens, so you can focus on delivering exceptional
+              patient care.
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -96,10 +61,7 @@ const HeroContent = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
-              <TextGenerateEffect
-                className="tw-text-xl tw-!tw-font-bold tw-text-[#1f2278] tw-!tw-leading-tight"
-                words={subTitle1}
-              />
+              Experience higher reimbursements and faster claim approval today!
             </motion.div>
             <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">
               <motion.div

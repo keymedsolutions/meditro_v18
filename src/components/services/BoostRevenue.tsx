@@ -15,7 +15,11 @@ import {
   Mail,
 } from "lucide-react";
 
-
+const fadeInUp = {
+  initial: { opacity: 0, y: 60 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.6 },
+};
 
 const BoostRevenue = () => {
   const revenues = [
@@ -106,51 +110,28 @@ const BoostRevenue = () => {
 
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8 tw-mb-16">
           {revenues.map((revenue, index) => (
-               <motion.div
-                          key={index}
-                          initial={{ opacity: 0, y: 50 }} // start hidden & slightly below
-                          whileInView={{ opacity: 1, y: 0 }} // fade in + slide up
-                          transition={{
-                            duration: 0.6,
-                            ease: "easeOut",
-                            delay: index * 0.2,
-                          }} // stagger
-                          viewport={{ once: true, amount: 0.2 }} // trigger when 20% visible, only once
-                          className="tw-relative tw-w-[min(300px,100%)] tw-mx-auto tw-bg-[#f4f5f2] tw-text-center border-2 tw-border-white tw-rounded-tl-[4rem]">
-              <div
-                className="tw-absolute tw-h-[30px] tw-w-[120px] tw-bg-[#393e7f] tw-top-8 tw-right-[-2.5px]"
-                style={{
-                  clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0 100%)",
-                }}
-              ></div>
+            <motion.div
+              key={index}
+              variants={fadeInUp}
+              viewport={{ once: true, amount: 0.2 }}
+              className="tw-relative tw-group tw-flex tw-items-center tw-gap-4 tw-overflow-hidden tw-rounded-2xl tw-border tw-border-white tw-bg-white tw-p-6 tw-shadow-lg tw-cursor-pointer tw-transition-all tw-duration-300 hover:tw-border-green-700"
+            >
+              {/* Animated background bar */}
+              <div className="tw-absolute tw-left-0 tw-top-0 tw-h-full tw-w-1.5 tw-bg-accent-500 tw-transition-all tw-duration-300 tw-z-0 group-hover:tw-w-full" />
 
-              <div className="tw-px-6 tw-py-8 tw-max-w-[25ch] tw-mx-auto tw-pb-20">
-                <div className="tw-flex tw-justify-center tw-text-[#121513]">
-                  {revenue?.icon}
-                </div>
-
-                <p className="tw-font-extrabold tw-text-[#121513] tw-text-xl tw-mt-6 tw-mb-3">
-                  {revenue?.title}
-                </p>
-                <p className="tw-text-[#303830] tw-text-sm">
-                  {revenue?.description}
-                </p>
+              {/* Icon */}
+              <div className="tw-text-accent-500 group-hover:tw-text-white tw-flex-shrink-0 tw-relative tw-z-10">
+                {revenue.icon}
               </div>
 
-              <div className="tw-absolute tw-w-full tw-bottom-0 tw-mt-6">
-                <div className="tw-relative  tw-grid tw-place-items-center tw-mt-6 tw-h-[52px] tw-bg-[#393e7f]  tw-w-[110%] tw-left-[-5%] tw-bottom-0 tw-rounded-b-[2rem]">
-                  <div className="tw-absolute tw-w-5 tw-aspect-square tw-bottom-full tw-bg-[#191c39] tw-left-0 tw-origin-left-bottom tw-rotate-45"></div>
-                  <div className="tw-absolute tw-w-5 tw-aspect-square tw-bottom-full tw-bg-[#191c39] tw-right-0 tw-origin-right-bottom tw-rotate-45"></div>
-
-                  <label
-                    style={{ border: "8px solid" }}
-                    className="tw-grid tw-place-items-center tw-w-[84px] tw-aspect-square tw-bg-white tw-relative tw--translate-y-1/2 tw-rounded-full  !tw-border-[#393e7f] tw-font-black tw-text-xl"
-                  >
-                    {(index + 1).toString().padStart(2, "0")}
-                    <span className="tw-absolute tw-w-[25px] tw-h-[25px] tw-bottom-1/2 tw-right-[calc(100%+4px)] tw-rounded-br-[20px] tw-shadow-[5px_5px_0_#393e7f]"></span>
-                    <span className="tw-absolute tw-w-[25px] tw-h-[25px] tw-bottom-1/2 tw-left-[calc(100%+4px)] tw-rounded-bl-[20px] tw-shadow-[-5px_5px_0_#393e7f]"></span>
-                  </label>
-                </div>
+              {/* Text Content */}
+              <div className="tw-flex tw-flex-col tw-gap-y-2 tw-relative tw-z-10">
+                <span className="tw-font-semibold tw-text-lg tw-text-gray-800 group-hover:tw-text-white">
+                  {revenue.title}
+                </span>
+                <span className="tw-text-gray-600 group-hover:tw-text-white tw-text-sm">
+                  {revenue.description}
+                </span>
               </div>
             </motion.div>
           ))}
