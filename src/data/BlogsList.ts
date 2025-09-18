@@ -67,23 +67,23 @@ export const BlogsList = [
 		authImgAlt:"enhancing-documentation-accuracy"
 	},
 	{
-		id: 5,
+		id: 6,
 		thumb: blogGridPic10,
 		authorPic: testPic3,
 		title: "Top 20 Healthcare Technology Trends in 2025",		
 		author: "Key MedSolutions",
-		date: "03 September 2025",
+		date: "03 Sep 2025",
 		url: '/top-20-healthcare-technology-trends',
 		imgAlt:"top-20-healthcare-technology-trends",
 		authImgAlt:"enhancing-documentation-accuracy"
 	},
 	{
-		id: 5,
+		id: 7,
 		thumb: blogGridPic11,
 		authorPic: testPic3,
 		title: "What Is Medical Billing and Coding? A Straightforward Guide",		
 		author: "Key MedSolutions",
-		date: "03 September 2025",
+		date: "03 Sep 2025",
 		url: '/what-is-medical-billing-and-coding',
 		imgAlt:"what-is-medical-billing-and-coding",
 		authImgAlt:"enhancing-documentation-accuracy"

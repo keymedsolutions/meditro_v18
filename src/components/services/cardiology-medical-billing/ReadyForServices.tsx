@@ -61,7 +61,7 @@ export function ReadyForServices() {
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
             <span className="tw-font-bold">Contact us today</span>&nbsp;for a free consultation. Let Key MedSolutions show
-            you how the right&nbsp;<span className="tw-font-bold">Cardiology Medical Billing Solutions</span>&nbsp;and&nbsp;<Link href="/revenue-cycle-management-services"><span className="tw-font-bold">Revenue
+            you how the right&nbsp;<span className="tw-font-bold">Cardiology Medical Billing Solutions</span>&nbsp;and&nbsp;<Link href="/revenue-cycle-management-services"><span className="tw-font-bold !tw-text-white">Revenue
             Cycle Management Services</span></Link>&nbsp;can transform your practice and power
             lasting financial health. Optimize, grow, and thrive with the
             leaders in cardiology billing by your side.

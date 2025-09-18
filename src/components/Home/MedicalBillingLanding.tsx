@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle, Phone } from "lucide-react";
+import { CheckCircle, Cpu, Database, Phone, Shield, Zap } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 export default function MedicalBillingLanding() {
   const fadeInUp = {
@@ -17,6 +18,65 @@ export default function MedicalBillingLanding() {
       },
     },
   };
+
+  const [isHovered, setIsHovered] = useState(false);
+  const containerRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        observer.unobserve(containerRef.current);
+      }
+    };
+  }, []);
+
+
+  const floatingAnimation = {
+    animate: {
+      y: [0, -15, 0],
+      transition: {
+        duration: 6,
+        repeat: Infinity,
+        ease: "easeInOut",
+      },
+    },
+  };
+
+  const pulseGlow = {
+    animate: {
+      scale: [1, 1.05, 1],
+      boxShadow: [
+        "0 0 0 rgba(59, 130, 246, 0)",
+        "0 0 20px rgba(59, 130, 246, 0.5)",
+        "0 0 0 rgba(59, 130, 246, 0)",
+      ],
+      transition: {
+        duration: 3,
+        repeat: Infinity,
+      },
+    },
+  };
+
+  const features = [
+    { icon: <Database size={24} />, text: "EHR Integration" },
+    { icon: <Shield size={24} />, text: "HIPAA Compliant" },
+    { icon: <Cpu size={24} />, text: "AI-Powered Coding" },
+    { icon: <Zap size={24} />, text: "Real-time Analytics" },
+  ];
   return (
     <div className="tw-min-h-screen ">
       {/* Hero Section */}
@@ -177,27 +237,25 @@ export default function MedicalBillingLanding() {
         </div>
       </section>
 
-      <section className="tw-py-20 md:!tw-pt-20 tw-pt-0 tw-px-4 tw-bg-accent-500 tw-mb-20 ">
-        <div className="tw-container md:tw-max-w-6xl tw-grid tw-grid-cols-12 tw-relative">
-          {/* Image Section */}
+      {/* <section className="md:tw-py-20 tw-py-10 tw-px-4 tw-bg-accent-500 tw-mb-20 ">
+        <div className="tw-container tw-grid sm:tw-grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="tw-col-span-12 md:tw-col-span-3 md:tw-absolute md:tw-left-0 md:tw-top-[-150px] tw-flex tw-justify-center"
+            className="tw-flex tw-justify-center "
           >
             <Image
               src="/images/hero-lady.png"
               alt="medical billing landing"
               width={500}
               height={500}
-              className="tw-object-cover tw-rounded-lg tw-w-3/4  tw-h-auto"
+              className="tw-object-cover tw-rounded-lg tw-w-1/2  tw-h-auto"
             />
           </motion.div>
 
-          {/* Text Section */}
-          <div className="tw-col-span-12 lg:tw-col-start-4 md:tw-col-start-5 md:tw-col-span-9 tw-text-center md:tw-text-left tw-mt-12 md:tw-mt-0">
+          <div className="tw-text-center md:tw-text-left tw-mt-12 md:tw-mt-0">
             <motion.div {...fadeInUp} viewport={{ once: true, amount: 0.2 }}>
               <h2 className="tw-text-4xl tw-font-bold tw-text-white tw-mb-6">
                 Seamless Technology Integration
@@ -210,6 +268,138 @@ export default function MedicalBillingLanding() {
               </p>
             </motion.div>
           </div>
+        </div>
+      </section> */}
+      <section
+        className="relative md:tw-py-20 tw-py-16 tw-px-4 tw-bg-gradient-to-br tw-from-blue-900 tw-to-blue-700 tw-mb-20 tw-overflow-hidden"
+        ref={containerRef}
+      >
+        {/* Animated background elements */}
+        <div className="tw-absolute tw-inset-0 tw-z-0">
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="tw-absolute tw-rounded-full tw-bg-white/5"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                width: `${Math.random() * 100 + 50}px`,
+                height: `${Math.random() * 100 + 50}px`,
+              }}
+              animate={{
+                scale: [1, 1.5, 1],
+                opacity: [0.1, 0.2, 0.1],
+              }}
+              transition={{
+                duration: Math.random() * 10 + 10,
+                repeat: Infinity,
+                delay: Math.random() * 5,
+              }}
+            />
+          ))}
+        </div>
+
+        <div className="tw-container tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-relative tw-z-10">
+          {/* Image Section with enhanced animations */}
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="tw-flex tw-justify-center tw-items-center tw-relative"
+            onHoverStart={() => setIsHovered(true)}
+            onHoverEnd={() => setIsHovered(false)}
+          >
+            <motion.div
+              className="tw-relative"
+              animate={isHovered ? { scale: 1.05 } : { scale: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Image
+                src="/images/hero-lady.png"
+                alt="medical billing landing"
+                width={400}
+                height={400}
+                className="tw-object-cover tw-rounded-xl tw-relative tw-z-10 tw-shadow-2xl"
+              />
+
+              {/* Floating elements around the image */}
+              <motion.div
+                className="tw-absolute -tw-top-6 -tw-left-6 tw-bg-white tw-p-3 tw-rounded-full tw-shadow-lg tw-z-10"
+                variants={floatingAnimation}
+                animate="animate"
+              >
+                <CheckCircle className="tw-text-green-500" size={32} />
+              </motion.div>
+
+              <motion.div
+                className="tw-absolute -tw-bottom-4 -tw-right-4 tw-bg-white tw-p-3 tw-rounded-full tw-shadow-lg tw-z-10"
+                variants={floatingAnimation}
+                animate="animate"
+                transition={{ delay: 1 }}
+              >
+                <Zap className="tw-text-yellow-500" size={32} />
+              </motion.div>
+
+              {/* Glow effect behind image */}
+              <motion.div
+                className="tw-absolute tw-inset-0 tw-bg-blue-400/30 tw-rounded-xl tw-blur-xl"
+                variants={pulseGlow}
+                animate="animate"
+              />
+            </motion.div>
+          </motion.div>
+
+          {/* Text Section with enhanced content */}
+          <div className="tw-flex tw-flex-col tw-justify-center tw-text-center md:tw-text-left">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="tw-mb-6"
+            >
+              <span className="tw-inline-block tw-px-3 tw-py-1 tw-bg-blue-400/20 tw-text-blue-200 tw-rounded-full tw-text-sm tw-mb-4">
+                Next Generation Technology
+              </span>
+              <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-6">
+                Seamless Technology{" "}
+                <span className="tw-text-blue-300">Integration</span>
+              </h2>
+              <p className="tw-text-lg tw-text-blue-100 tw-mb-8">
+                Our advanced medical billing systems effortlessly integrate with
+                your existing in-house software, including medicine billing
+                software and revenue cycle management solutions, ensuring smooth
+                and efficient operations.
+              </p>
+            </motion.div>
+
+          
+          </div>
+        </div>
+
+        {/* Animated floating particles */}
+        <div className="tw-absolute tw-inset-0 tw-pointer-events-none tw-overflow-hidden">
+          {[...Array(20)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="tw-absolute tw-rounded-full tw-bg-white"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                width: `${Math.random() * 4 + 2}px`,
+                height: `${Math.random() * 4 + 2}px`,
+              }}
+              animate={{
+                y: [0, -20, 0],
+                x: [0, Math.random() * 20 - 10, 0],
+                opacity: [0, 0.8, 0],
+              }}
+              transition={{
+                duration: Math.random() * 10 + 5,
+                repeat: Infinity,
+                delay: Math.random() * 5,
+              }}
+            />
+          ))}
         </div>
       </section>
     </div>

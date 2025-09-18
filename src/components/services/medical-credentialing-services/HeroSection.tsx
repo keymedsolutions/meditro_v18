@@ -36,7 +36,7 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-text-gray-800"
             >
-              Medical Credentialing Services:{" "}
+              Medical Credentialing Services:&nbsp;
               <span className="tw-text-transparent tw-bg-clip-text tw-bg-gradient-to-r tw-from-blue-600 tw-to-indigo-600">
                 Simplify Credentialing. Maximize Revenue.
               </span>

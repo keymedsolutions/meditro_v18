@@ -610,7 +610,7 @@
 			.mega-menu,
 			.sub-menu {
 				&.lg-menu{
-					width: 500px;
+					width: 650px;
 					li>.sub-menu.md-menu {
 						left: -350px;
 						@include transitionMedium;
@@ -621,7 +621,7 @@
 				}
 				background-color: #ffffff;
 				display: block;
-				left: 0;
+				left: -320px;
 				list-style: none;
 				opacity: 0;
 				padding: 5px 0;
@@ -651,7 +651,7 @@
 						color: #666;
 						display: block;
 						font-size: 14px;
-						padding:10px 25px;
+						padding:10px 12px;
 						text-transform: capitalize;
 						position:relative;
 						transition: all 0.15s linear;

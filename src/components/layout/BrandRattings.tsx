@@ -33,7 +33,7 @@ const achievements = [
     name: "TrueFirms",
     logo: "/images/logo/4.png",
     rating: null,
-    description: "Top mobile developers",
+    description: "Top Medical Biling Company",
     link: "https://www.truefirms.co/company/Key-MedSolutions/3265",
   },
   {

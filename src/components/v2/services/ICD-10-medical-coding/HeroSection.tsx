@@ -135,6 +135,16 @@ function HeroSection() {
                   Start Optimizing Your Revenue Cycle Today!
                 </span>
               </button>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="tw-text-xl tw-text-gray-500 tw-mt-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+              >
+                Complete ICD-10 Medical Coding Solutions for Healthcare
+                Providers
+              </motion.div>
             </motion.div>
 
             <motion.div
