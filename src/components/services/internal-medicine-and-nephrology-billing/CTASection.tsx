@@ -40,9 +40,10 @@ export function CTASection() {
             className="tw-text-lg tw-text-gray-700 tw-mb-10 tw-leading-relaxed"
           >
             Choose our Internal Medicine Billing Services to secure reliable,
-            compliant, and efficient billing processes. We streamline workflows,
-            optimize collections, and provide ongoing support every step of the
-            way.
+            compliant, and efficient billing processes. As a preferred Internal
+            Medicine Billing Company, we are committed to streamlining your
+            workflow, optimizing collections, and providing ongoing support
+            every step of the way.
           </motion.p>
 
           <motion.div
@@ -124,7 +125,16 @@ export function CTASection() {
               </span>
             </button>
           </motion.div>
-
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto tw-leading-relaxed"
+          >
+            to find out how our expert team and comprehensive Medical RCM
+            Solutions can empower your internal medicine practice to thrive.
+          </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

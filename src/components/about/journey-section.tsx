@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function JourneySection() {
   const containerVariants = {
@@ -34,10 +35,12 @@ export function JourneySection() {
       <div className="tw-max-w-6xl tw-mx-auto">
         <motion.div className="tw-text-center tw-mb-16" variants={itemVariants}>
           <div className="heading-bx text-center">
+              <Link href="/contact-us">
             <h6 className="title-ext text-secondary">
-              Join Us Today! / Connect with Us / Chat with Us / Send an Email /
-              Call Today / Schedule a Meeting
+                Join Us Today! / Connect with Us / Chat with Us / Send an Email
+                / Call Today / Schedule a Meeting
             </h6>
+              </Link>
             <h3>Our Journey: Innovating Healthcare Solutions Since 2023</h3>
           </div>
         </motion.div>

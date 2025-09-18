@@ -20,7 +20,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
       >
         <div className="container plan-sections">
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">Pricing</h6>
+            <h6 className="title-ext text-secondary">Training and Placement</h6>
 
             <h2 className="tw-mb-4 tw-font-display tw-text-4xl tw-font-extrabold tw-tracking-tight sm:tw-text-5xl md:tw-text-5xl">
               Smart Learning Starts with a Smart&nbsp;

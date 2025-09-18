@@ -51,7 +51,7 @@ const WhoBenefits = () => {
             <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-6">
               Who Benefits from Our&nbsp;
               <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-                ICD-10 Coding Company?
+                ICD-10 Coding Services?
               </span>
             </h2>
             <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">

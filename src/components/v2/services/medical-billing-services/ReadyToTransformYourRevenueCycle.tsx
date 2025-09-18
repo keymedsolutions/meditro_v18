@@ -54,6 +54,7 @@ export function ReadyToTransformYourRevenueCycle() {
                 </div>
                 <div className="tw-text-start">
                   Maximize your medical practice’s success by partnering with a
+                  &nbsp;
                   <span className="tw-font-bold">
                     top-tier medical billing agency in the US.
                   </span>

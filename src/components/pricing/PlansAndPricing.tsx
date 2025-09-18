@@ -4,7 +4,7 @@ import RCMPlansList from "./rcm-plan";
 import PricingPlans from "./PricingPlans";
 
 const PlansAndPricing = () => {
-  const [activeTab, setActiveTab] = useState("price");
+  const [activeTab, setActiveTab] = useState("Training and Placement");
 
   return (
     <div className="tw-w-full tw-my-8">
@@ -13,7 +13,7 @@ const PlansAndPricing = () => {
           className="tw-flex tw-gap-x-1 tw-px-1.5 tw-py-1.5 tw-list-none tw-rounded-full tw-bg-purple-200/70"
           role="list"
         >
-          {["price", "RCM Plan"].map((tab) => (
+          {["Training and Placement", "RCM Plan"].map((tab) => (
             <li key={tab} className="tw-w-max">
               <button
                 className={`tw-flex tw-font-semibold tw-text-md tw-items-center tw-justify-center tw-px-4 tw-py-2 tw-text-sm tw-transition-all tw-ease-in-out tw-border-0 tw-rounded-full tw-cursor-pointer tw-bg-inherit ${
@@ -58,8 +58,8 @@ const PlansAndPricing = () => {
             </div>
           </div>
         )}
-        {activeTab === "price" && (
-          <div id="price" className="tw-px-2" role="tabpanel">
+        {activeTab === "Training and Placement" && (
+          <div id="Training and Placement" className="tw-px-2" role="tabpanel">
             <PricingPlans isHomePage={true} />
           </div>
         )}

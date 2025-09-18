@@ -54,7 +54,7 @@ const ContactUs = () => {
               Let us handle the complexities of&nbsp;
               <span className="tw-font-bold">
                 medical credentialing services
-              </span>
+              </span>&nbsp;
               so you can focus on what matters most: providing exceptional care
               to your patients.
             </div>
