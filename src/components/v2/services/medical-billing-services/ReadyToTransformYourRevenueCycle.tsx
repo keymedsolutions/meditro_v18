@@ -54,23 +54,16 @@ export function ReadyToTransformYourRevenueCycle() {
                 </div>
                 <div className="tw-text-start">
                   Maximize your medical practice’s success by partnering with a
-                  &nbsp;
-                  <span className="tw-font-bold">
-                    top-tier medical billing agency in the US.
-                  </span>
-                  &nbsp;Contact Key MedSolutions today to discover how our&nbsp;
-                  <span className="tw-font-bol">
-                    Electronic Medical Billing Services,
-                  </span>
-                  &nbsp;consulting expertise, and specialty billing solutions
-                  can dramatically improve your collections and efficiency. We
-                  take care of your billing, so you can dedicate more time to
-                  your patients.
+                  top-tier medical billing agency in the US. Contact Key
+                  MedSolutions today to discover how our Electronic Medical
+                  Billing Services, consulting expertise, and specialty billing
+                  solutions can dramatically improve your collections and
+                  efficiency. We take care of your billing, so you can dedicate
+                  more time to your patients.
                 </div>
                 <div className="tw-text-start">
-                  <span className="tw-font-bold">Get in touch now</span>
-                  &nbsp;and see why Key MedSolutions is your best choice for
-                  end-to-end medical billing success.
+                  Get in touch now and see why Key MedSolutions is your best
+                  choice for end-to-end medical billing success.
                 </div>
               </motion.div>
 

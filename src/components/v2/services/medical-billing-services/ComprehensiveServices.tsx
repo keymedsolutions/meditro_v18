@@ -50,37 +50,37 @@ export function ComprehensiveServices() {
   const values = [
     {
       title: "Claims Submission and Processing",
-      description: `We handle all insurance claims using advanced <span class='tw-font-bold'>claim-scrubbing tools</span> to reduce errors before submission, increasing first-pass acceptance rates.`,
+      description: `We handle all insurance claims using advanced claim-scrubbing tools to reduce errors before submission, increasing first-pass acceptance rates.`,
       icon: FileSpreadsheet,
       color: "blue",
     },
     {
       title: "Payment Posting & Reconciliation",
-      description: `Accurate and prompt <span class="tw-font-bold">payment posting</span> provides real-time clarity on finances, so you’re always ready for your next business decision.`,
+      description: `Accurate and prompt payment posting provides real-time clarity on finances, so you’re always ready for your next business decision.`,
       icon: CreditCard,
       color: "green",
     },
     {
       title: "Denial Management & Appeals",
-      description: `Our billing experts quickly identify the <span class="tw-font-bold">root cause of denials</span>, file necessary appeals, and monitor results until full resolution, ensuring you collect maximum reimbursements.`,
+      description: `Our billing experts quickly identify the root cause of denials, file necessary appeals, and monitor results until full resolution, ensuring you collect maximum reimbursements.`,
       icon: ShieldAlert,
       color: "red",
     },
     {
       title: "Credentialing & Provider Enrollment",
-      description: `We facilitate <span class="tw-font-bold">onboarding with insurance payers</span>, helping you navigate credentialing requirements smoothly.`,
+      description: `We facilitate onboarding with insurance payers, helping you navigate credentialing requirements smoothly.`,
       icon: UserCheck,
       color: "purple",
     },
     {
       title: "Customized Reporting & Real-Time Analytics",
-      description: `Gain full revenue cycle visibility with <span class="tw-font-bold">detailed, customizable reports</span> and dashboards tailored to your operational and financial needs.`,
+      description: `Gain full revenue cycle visibility with detailed, customizable reports and dashboards tailored to your operational and financial needs.`,
       icon: BarChart3,
       color: "yellow",
     },
     {
       title: "Contract Review & Fee Schedule Analysis",
-      description: `We <span class="tw-font-bold">negotiate on your behalf</span> with payers to ensure optimal contract terms and maximize your reimbursement rates.`,
+      description: `We negotiate on your behalf with payers to ensure optimal contract terms and maximize your reimbursement rates.`,
       icon: FileSearch,
       color: "blue",
     },
@@ -147,7 +147,7 @@ export function ComprehensiveServices() {
           viewport={{ once: true }}
           className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center tw-mx-auto"
         >
-          At Key MedSolutions, our&nbsp;<span className="tw-font-bold">End-to-End Medical Billing Services</span>&nbsp;cover
+          At Key MedSolutions, our End-to-End Medical Billing Services cover
           every part of your revenue cycle, from patient registration and
           insurance verification, to claims submission, denial management, and
           payment reconciliation. We take a hands-on approach at every step,

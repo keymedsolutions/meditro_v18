@@ -41,20 +41,13 @@ const ContactUs = () => {
             </div>
             <div className="tw-text-start">
               Ready to simplify your credentialing and billing processes?
-              Contact&nbsp;
-              <span className="tw-font-bold">Key MedSolutions</span>&nbsp;today
-              to learn more about our&nbsp;
-              <span className="tw-font-bold">
-                insurance credentialing services, medical billing services,
-              </span>
-              &nbsp;and how we can support your practice’s growth.
+              Contact Key MedSolutions today to learn more about our insurance
+              credentialing services, medical billing services, and how we can
+              support your practice’s growth.
             </div>
 
             <div className="tw-text-start">
-              Let us handle the complexities of&nbsp;
-              <span className="tw-font-bold">
-                medical credentialing services
-              </span>&nbsp;
+              Let us handle the complexities of medical credentialing services
               so you can focus on what matters most: providing exceptional care
               to your patients.
             </div>

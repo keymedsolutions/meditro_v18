@@ -69,7 +69,7 @@ const BenefitsPartnering = () => {
             <p className="tw-max-w-4xl">
               When you choose Key MedSolutions, you gain access to a team of
               experts dedicated to your success. Here are the key benefits of
-              our&nbsp;<span className="tw-font-bold">Medical Practice Consulting Services</span>
+              our Medical Practice Consulting Services
             </p>
           </motion.div>
         </motion.div>

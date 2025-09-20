@@ -97,11 +97,8 @@ const MedicalBillingGuide = () => {
                           don't think about what happens after you leave. Behind
                           the scenes, there's a lot more than just diagnosing
                           and treating, especially when it comes to getting paid
-                          for those services.&nbsp;
-                          <span className="tw-font-bold">
-                            This is where medical billing and coding
-                          </span>
-                          &nbsp;play a crucial role.
+                          for those services. This is where medical billing and
+                          coding play a crucial role.
                         </p>
                       </div>
                     </div>

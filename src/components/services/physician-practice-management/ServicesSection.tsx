@@ -66,13 +66,14 @@ export default function ServicesSection() {
             viewport={{ once: true }}
             className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10"
           >
-            Our Comprehensive&nbsp;<br/>
+            Our Comprehensive&nbsp;
+            <br />
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Services
             </span>
           </motion.h2>
           <p className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto">
-            We provide a wide range of&nbsp;<span className="tw-font-bold">practice management services</span>&nbsp;in USA to
+            We provide a wide range of practice management services in USA to
             meet the unique needs of your medical practice. Our solutions are
             designed to enhance efficiency, reduce risks, and drive long-term
             success.

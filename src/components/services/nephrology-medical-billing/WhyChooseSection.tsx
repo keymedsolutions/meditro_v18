@@ -75,13 +75,10 @@ export function WhyChooseSection() {
               challenges involved in nephrology medical billing. Our certified
               professionals and dedicated Nephrology Billing Experts ensure each
               claim is coded and processed with industry-leading accuracy and
-              compliance. By partnering with a&nbsp;
-              <span className="tw-font-bold">
-                Top Nephrology Medical Billing Company USA
-              </span>
-              &nbsp;healthcare providers trust, you gain a service built for the
-              complexities of renal care, including dialysis, chronic kidney
-              disease management, and renal transplants.
+              compliance. By partnering with a Top Nephrology Medical Billing
+              Company USA healthcare providers trust, you gain a service built
+              for the complexities of renal care, including dialysis, chronic
+              kidney disease management, and renal transplants.
             </p>
           </div>
         </motion.div>
@@ -115,7 +112,12 @@ export function WhyChooseSection() {
               }}
               viewport={{ once: true, amount: 0.2 }}
               className="tw-group  tw-bg-white sm:tw-p-8 tw-p-4 tw-rounded-2xl tw-shadow-lg tw-hover:tw-shadow-2xl tw-transition-all tw-duration-300  hover:tw-bg-accent-500 tw-transform tw-hover:tw-scale-105"
-              style={{borderLeft:"5px solid #565acf",borderRight:"0.5px solid #cacaca", borderTop:"0.5px solid #cacaca", borderBottom:"0.5px solid #cacaca"}}
+              style={{
+                borderLeft: "5px solid #565acf",
+                borderRight: "0.5px solid #cacaca",
+                borderTop: "0.5px solid #cacaca",
+                borderBottom: "0.5px solid #cacaca",
+              }}
             >
               <div className="tw-flex tw-items-center tw-justify-center tw-w-16 tw-h-16 gradient-accent  tw-rounded-2xl tw-mb-6 tw-group-hover:tw-scale-110 tw-transition-transform tw-duration-300">
                 <feature.icon className="tw-w-8 tw-h-8 tw-text-white" />

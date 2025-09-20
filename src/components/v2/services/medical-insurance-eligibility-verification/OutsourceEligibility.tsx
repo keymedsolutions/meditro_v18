@@ -124,11 +124,8 @@ export default function OutsourceEligibility() {
             className="tw-my-8 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center tw-mx-auto"
           >
             Managing insurance verification in-house can be costly, inefficient,
-            and stressful. Shifting to a proven&nbsp;
-            <span className="tw-font-bold">
-              Outsource Insurance Verification Services
-            </span>
-            &nbsp;provider unlocks:
+            and stressful. Shifting to a proven Outsource Insurance Verification
+            Services provider unlocks:
           </motion.p>
         </motion.div>
 

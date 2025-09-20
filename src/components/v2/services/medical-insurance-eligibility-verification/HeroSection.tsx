@@ -97,14 +97,9 @@ export function HeroSection() {
               </motion.div>
               <p>
                 In an era of evolving healthcare regulations and increasing
-                patient expectations, choosing the right&nbsp;
-                <span className="tw-font-bold">
-                  Medical Insurance Eligibility Verification Services
-                </span>
-                &nbsp;partner can set your organization apart. As a top&nbsp;
-                <span className="tw-font-bold">
-                  Insurance Verification Company USA,
-                </span>
+                patient expectations, choosing the right Medical Insurance
+                Eligibility Verification Services partner can set your
+                organization apart. As a top Insurance Verification Company USA,
                 we deliver streamlined, scalable, and secure solutions for
                 providers of all sizes. Combining expert talent with
                 cutting-edge technology, we help you capture every dollar owed

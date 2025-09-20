@@ -157,11 +157,8 @@ const MedicalClaimBillingV2 = () => {
               <p>
                 Whatever your specialty, we’ve got the right tools and expertise
                 to back you up, so you can move forward with confidence and
-                focus on what you do best. Find out why so many&nbsp;
-                <span className="tw-font-bold">
-                  client outsource medical claim processing services
-                </span>
-                &nbsp;to Key MedSolutions.
+                focus on what you do best. Find out why so many client outsource
+                medical claim processing services to Key MedSolutions.
               </p>
             </div>
             <motion.div

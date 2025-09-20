@@ -39,11 +39,8 @@ const BenefitsSection = () => {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-gray-200 tw-max-w-3xl tw-mx-auto tw-font-serif">
-            Outsourcing your credentialing needs to a professional&nbsp;
-            <span className="tw-font-bold">
-              physician credentialing company
-            </span>
-            &nbsp;like KMS offers numerous benefits
+            Outsourcing your credentialing needs to a professional physician
+            credentialing company like KMS offers numerous benefits
           </p>
         </motion.div>
         {/* Benefits Grid */}

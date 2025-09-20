@@ -64,21 +64,18 @@ export function WhyChoose() {
               Why Choose&nbsp;
               <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                 Key MedSolutions as
-              </span>&nbsp;
-              Your Medical Coding Outsourcing Company?
+              </span>
+              &nbsp; Your Medical Coding Outsourcing Company?
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
             Outsourcing medical coding is an intelligent way to reduce
             administrative burden while enhancing operational efficiency. By
-            partnering with a reputable&nbsp;
-            <span className="tw-font-bold">
-              Medical Coding Outsourcing Company
-            </span>
-            &nbsp;like Key MedSolutions, you unlock the following benefits:
+            partnering with a reputable Medical Coding Outsourcing Company like
+            Key MedSolutions, you unlock the following benefits:
           </p>
         </motion.div>
-       
+
         {/* Cards */}
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-8">
           {data.map((item, index) => {

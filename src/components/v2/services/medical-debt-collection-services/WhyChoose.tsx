@@ -47,13 +47,13 @@ export function WhyChoose() {
   const values = [
     {
       title: "Patient-Friendly, Compassionate Collections",
-      description: `Our philosophy focuses on <span class="tw-font-bold">empathy-driven approaches</span>, ensuring that every patient interaction protects your reputation and strengthens patient relationships.`,
+      description: `Our philosophy focuses on empathy-driven approaches, ensuring that every patient interaction protects your reputation and strengthens patient relationships.`,
       icon: HeartHandshake,
       color: "blue",
     },
     {
       title: "Integrated Medical Billing Collections Solution",
-      description: `Our <span class="tw-font-bold">cutting-edge medical billing collections solution</span> integrates seamlessly with your existing practice management or EHR systems. We minimize workflow disruptions and make the transition to professional debt recovery effortless.`,
+      description: `Our cutting-edge medical billing collections solution integrates seamlessly with your existing practice management or EHR systems. We minimize workflow disruptions and make the transition to professional debt recovery effortless.`,
       icon: ServerCog,
       color: "red",
     },
@@ -65,13 +65,13 @@ export function WhyChoose() {
     },
     {
       title: "Greater Financial Performance with Profit Enhancement Services",
-      description: `By adopting our <span class="tw-font-bold">Profit Enhancement Services</span> and revenue strategies, your practice will benefit from higher collection rates, improved cash flow, and sustainable growth.`,
+      description: `By adopting our Profit Enhancement Services and revenue strategies, your practice will benefit from higher collection rates, improved cash flow, and sustainable growth.`,
       icon: TrendingUp,
       color: "purple",
     },
     {
       title: "Transparent Accounts Receivable Recovery Services",
-      description: `Our <span class="tw-font-bold">Accounts Receivable Recovery Services</span> provide you with real-time reporting and data-driven insights, allowing you to make informed decisions for your financial health.`,
+      description: `Our Accounts Receivable Recovery Services provide you with real-time reporting and data-driven insights, allowing you to make informed decisions for your financial health.`,
       icon: FileSearch,
       color: "yellow",
     },
@@ -132,13 +132,11 @@ export function WhyChoose() {
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
             In today’s rapidly evolving healthcare landscape, managing rising
             patient responsibilities, complex payer requirements, and increased
-            denials can jeopardize your cash flow. As a trusted&nbsp;
-            <span className="tw-font-bold">
-              medical debt collection company USA,
-            </span>
-            &nbsp;Key MedSolutions combines in-depth industry knowledge with
-            innovative technology to ensure you never miss an opportunity to
-            recover what&apos;s rightfully yours—ethically and efficiently.
+            denials can jeopardize your cash flow. As a trusted medical debt
+            collection company USA, Key MedSolutions combines in-depth industry
+            knowledge with innovative technology to ensure you never miss an
+            opportunity to recover what&apos;s rightfully yours—ethically and
+            efficiently.
           </p>
           <p className="tw-font-bold">
             Key Benefits of Choosing Our Healthcare Debt Recovery Service:

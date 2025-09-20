@@ -81,11 +81,8 @@ export function EligibilityServices() {
             Verification Services Apart?
           </h2>
           <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
-            Our all-encompassing&nbsp;
-            <span className="tw-font-bold">
-              Health Insurance Eligibility Verification Services
-            </span>
-            &nbsp;go beyond the basics. We provide:
+            Our all-encompassing Health Insurance Eligibility Verification
+            Services go beyond the basics. We provide:
           </p>
         </motion.div>
 

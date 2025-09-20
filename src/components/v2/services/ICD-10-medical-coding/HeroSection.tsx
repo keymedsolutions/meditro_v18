@@ -182,42 +182,28 @@ function HeroSection() {
 
                   <div className="tw-flex tw-flex-col tw-z-50">
                     <p>
-                      Accurate and compliant&nbsp;
-                      <span className="tw-font-bold">
-                        ICD-10 medical coding services
-                      </span>
-                      &nbsp;are essential for healthcare providers aiming for
-                      consistent, streamlined billing and maximized
-                      reimbursements. The modern healthcare environment requires
-                      detailed documentation, effective communication with
-                      payers, and attentiveness to industry standards. With over
-                      68,000 diagnosis codes and 87,000 procedure codes,
-                      adopting a specialized&nbsp;
-                      <span className="tw-font-bold">
-                        ICD-10 Medical Coding Solution
-                      </span>
-                      &nbsp;can prevent claim rejections and optimize
-                      operational efficiency. By leveraging our expertise as a
-                      leading ICD-10 Coding Company, your organization can take
-                      control of every facet of billing without losing sight of
-                      quality patient care.
+                      Accurate and compliant ICD-10 medical coding services are
+                      essential for healthcare providers aiming for consistent,
+                      streamlined billing and maximized reimbursements. The
+                      modern healthcare environment requires detailed
+                      documentation, effective communication with payers, and
+                      attentiveness to industry standards. With over 68,000
+                      diagnosis codes and 87,000 procedure codes, adopting a
+                      specialized ICD-10 Medical Coding Solution can prevent
+                      claim rejections and optimize operational efficiency. By
+                      leveraging our expertise as a leading ICD-10 Coding
+                      Company, your organization can take control of every facet
+                      of billing without losing sight of quality patient care.
                     </p>
                     <p>
-                      A trusted&nbsp;
-                      <span className="tw-font-bold">
-                        ICD-10 Medical Coding Company
-                      </span>
-                      &nbsp;is your partner in achieving compliance, accuracy,
-                      and revenue integrity. With the complexity of the ICD-10
-                      system, working with certified&nbsp;
-                      <span className="tw-font-bold">
-                        ICD-10 Coding Specialists
-                      </span>
-                      &nbsp;reduces manual errors, ensures adherence to the
-                      latest guidelines, and mitigates financial risk. Our
-                      experience spans small clinics to large hospitals, with
-                      flexible approaches tailored for every practice’s size and
-                      specialty.
+                      A trusted ICD-10 Medical Coding Company is your partner in
+                      achieving compliance, accuracy, and revenue integrity.
+                      With the complexity of the ICD-10 system, working with
+                      certified ICD-10 Coding Specialists reduces manual errors,
+                      ensures adherence to the latest guidelines, and mitigates
+                      financial risk. Our experience spans small clinics to
+                      large hospitals, with flexible approaches tailored for
+                      every practice’s size and specialty.
                     </p>
                   </div>
                 </GlassCard>

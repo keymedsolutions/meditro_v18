@@ -145,23 +145,15 @@ function HeroSection() {
 
                   <div className="tw-flex tw-flex-col tw-z-50">
                     <p>
-                      If you are seeking to&nbsp;
-                      <span className="tw-font-bold">
-                        outsource healthcare debt collection services
-                      </span>
-                      &nbsp;and secure your organization’s financial stability,
-                      Key MedSolutions stands out as a top-tier partner. We are
-                      a top&nbsp;
-                      <span className="tw-font-bold">
-                        medical debt collection agency
-                      </span>
-                      &nbsp;committed to helping healthcare providers throughout
-                      the United States. Our comprehensive suite of&nbsp;
-                      <span className="tw-font-bold">
-                        healthcare debt collection services
-                      </span>
-                      &nbsp;empowers your organization to maximize revenue,
-                      reduce bad debt, and maintain trust with your patients.
+                      If you are seeking to outsource healthcare debt collection
+                      services and secure your organization’s financial
+                      stability, Key MedSolutions stands out as a top-tier
+                      partner. We are a top medical debt collection agency
+                      committed to helping healthcare providers throughout the
+                      United States. Our comprehensive suite of healthcare debt
+                      collection services empowers your organization to maximize
+                      revenue, reduce bad debt, and maintain trust with your
+                      patients.
                     </p>
                   </div>
                 </div>

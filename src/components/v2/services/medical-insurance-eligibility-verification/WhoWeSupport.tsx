@@ -66,11 +66,8 @@ const WhoWeSupport = () => {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            Our comprehensive&nbsp;
-            <span className="tw-font-bold">
-              Patient Insurance Eligibility Service
-            </span>&nbsp;
-            is the foundation for diverse healthcare providers nationwide:
+            Our comprehensive Patient Insurance Eligibility Service is the
+            foundation for diverse healthcare providers nationwide:
           </p>
         </motion.div>
 
@@ -109,11 +106,8 @@ const WhoWeSupport = () => {
           className="tw-text-center tw-mb-20 tw-pt-20"
         >
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            As a trusted&nbsp;
-            <span className="tw-font-bold">
-              Insurance Verification Company USA,
-            </span>{" "}
-            our reach, experience, and technology make us the go-to solution for
+            As a trusted Insurance Verification Company USA, our reach,
+            experience, and technology make us the go-to solution for
             organizations needing reliability, scalability, and superior
             outcomes.
           </p>

@@ -22,7 +22,6 @@ export function VerificationServices() {
     },
   };
 
-  
   const features = [
     {
       title: "Operational Savings:",
@@ -53,14 +52,15 @@ export function VerificationServices() {
           className="tw-text-center  tw-pt-4"
         >
           <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
-            Why Smart Practices Outsource<br/>
+            Why Smart Practices Outsource
+            <br />
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Insurance Verification Services
             </span>
           </h2>
           <p>
-            Engaging a reputable provider of&nbsp;<span className="tw-font-bold">Outsource Insurance Verification
-            Services</span>&nbsp;delivers
+            Engaging a reputable provider of Outsource Insurance Verification
+            Services delivers
           </p>
         </motion.div>
 
@@ -154,9 +154,7 @@ export function VerificationServices() {
                               <p className="tw-font-semibold tw-text-gray-900">
                                 {item.title}
                               </p>
-                              <p className="tw-text-gray-700">
-                                {item.text}
-                              </p>
+                              <p className="tw-text-gray-700">{item.text}</p>
                             </div>
                           </motion.div>
                         ))}

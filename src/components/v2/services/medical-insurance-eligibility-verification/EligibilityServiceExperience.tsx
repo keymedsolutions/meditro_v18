@@ -11,22 +11,30 @@ const fadeInUp = {
 const EligibilityServiceExperience = () => {
   const data = [
     {
-      icon: <ShieldCheck className="tw-w-8 tw-h-8 tw-text-blue-600 group-hover:tw-text-white" />,
+      icon: (
+        <ShieldCheck className="tw-w-8 tw-h-8 tw-text-blue-600 group-hover:tw-text-white" />
+      ),
       title: "Verification at Appointment Scheduling or Check-In",
       desc: "Each patient's insurance status is checked in real time, covering policy activity and a clear summary of benefits owed.",
     },
     {
-      icon: <MessageSquare className="tw-w-8 tw-h-8 tw-text-purple-600 group-hover:tw-text-white" />,
+      icon: (
+        <MessageSquare className="tw-w-8 tw-h-8 tw-text-purple-600 group-hover:tw-text-white" />
+      ),
       title: "Transparent Communication with Patients",
       desc: "Provide clear, precise co-pay and deductible information prior to service, ensuring no financial surprises.",
     },
     {
-      icon: <RefreshCw className="tw-w-8 tw-h-8 tw-text-pink-600 group-hover:tw-text-white" />,
+      icon: (
+        <RefreshCw className="tw-w-8 tw-h-8 tw-text-pink-600 group-hover:tw-text-white" />
+      ),
       title: "Proactive Compliance & Authorization Checks",
       desc: "Every procedure’s referral and pre-authorization needs are identified and handled before claims submission.",
     },
     {
-      icon: <Bell className="tw-w-8 tw-h-8 tw-text-indigo-600 group-hover:tw-text-white" />,
+      icon: (
+        <Bell className="tw-w-8 tw-h-8 tw-text-indigo-600 group-hover:tw-text-white" />
+      ),
       title: "Ongoing Updates & Alerts",
       desc: "Our system tracks changes and updates, so your staff is always working with the latest coverage details.",
     },
@@ -50,11 +58,8 @@ const EligibilityServiceExperience = () => {
             &nbsp; Experience
           </h2>
           <p>
-            Here’s how our&nbsp;
-            <span className="tw-font-bold">
-              Patient Insurance Eligibility Service
-            </span>
-            &nbsp;delivers results:
+            Here’s how our Patient Insurance Eligibility Service delivers
+            results:
           </p>
         </motion.div>
 

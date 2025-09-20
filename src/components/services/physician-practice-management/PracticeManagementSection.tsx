@@ -47,14 +47,12 @@ export function PracticeManagementSection() {
           viewport={{ once: true }}
           className="tw-text-lg md:tw-text-xl tw-text-gray-700 tw-leading-relaxed tw-max-w-3xl tw-mx-auto"
         >
-          Strong&nbsp;
-          <span className="tw-font-bold">physician practice management</span>
-          &nbsp;is essential for the success of any medical practice. It ensures
-          that your operations run smoothly, your finances are in order, and
-          your patients receive the best care possible. With the right&nbsp;
-          <span className="tw-font-bold">practice management system</span>
-          &nbsp;and expert guidance, you can overcome challenges, seize
-          opportunities, and achieve long-term success.
+          Strong physician practice management is essential for the success of
+          any medical practice. It ensures that your operations run smoothly,
+          your finances are in order, and your patients receive the best care
+          possible. With the right practice management system and expert
+          guidance, you can overcome challenges, seize opportunities, and
+          achieve long-term success.
         </motion.p>
 
         {/* Highlight Box */}
@@ -95,24 +93,13 @@ export function PracticeManagementSection() {
                 </div>
                 <div className="tw-text-start">
                   Ready to optimize your practice? Contact Key MedSolutions
-                  today to discover how our&nbsp;
-                  <span className="tw-font-bold">
-                    medical practice management services
-                  </span>
-                  &nbsp;can strengthen your operations and drive long-term
-                  success. Whether you need a&nbsp;
-                  <span className="tw-font-bold">
-                    practice management consultant,
-                  </span>
-                  &nbsp;help with
-                  <span className="tw-font-bold">
-                    denial management services,
-                  </span>
-                  &nbsp;or support with&nbsp;
-                  <span className="tw-font-bold">Medical Practice Management Consulting,</span>&nbsp;
-                  we&apos;re here to help. We&apos;ll manage the complexities of
-                  your practice, so you can concentrate on caring for your
-                  patients.
+                  today to discover how our medical practice management services
+                  can strengthen your operations and drive long-term success.
+                  Whether you need a practice management consultant, help with
+                  denial management services, or support with Medical Practice
+                  Management Consulting, we&apos;re here to help. We&apos;ll
+                  manage the complexities of your practice, so you can
+                  concentrate on caring for your patients.
                 </div>
 
                 <div className="!tw-text-start">

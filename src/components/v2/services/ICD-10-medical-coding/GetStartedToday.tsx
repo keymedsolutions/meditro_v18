@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 export function GetStartedToday() {
   return (
     <section className="tw-py-36 tw-px-4 tw-relative tw-overflow-hidden tw-bg-accent-500">
-   
       {/* Floating decorative elements */}
       <div className="tw-absolute tw-top-10 tw-left-10 tw-w-24 tw-h-24 tw-bg-white/10 tw-rounded-full floating-animation"></div>
       <div
@@ -45,21 +44,13 @@ export function GetStartedToday() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            Accurate&nbsp;
-            <span className="tw-font-bold">ICD-10 medical coding services</span>
-            &nbsp;form the core of robust revenue cycle performance and
-            regulatory compliance. As a leading &nbsp;
-            <span className="tw-font-bold">ICD-10 Coding Company,</span>
-            &nbsp;our team delivers custom solutions that drive value, boost
-            collections, and streamline your&nbsp;
-            <span className="tw-font-bold">revenue cycle management.</span>
-            &nbsp;Discover how outsourcing your medical coding needs to a
-            reputable&nbsp;
-            <span className="tw-font-bold">
-              ICD-10 coding company in the USA
-            </span>
-            &nbsp;can transform your billing and allow your team to focus on
-            delivering care.
+            Accurate ICD-10 medical coding services form the core of robust
+            revenue cycle performance and regulatory compliance. As a leading
+            ICD-10 Coding Company, our team delivers custom solutions that drive
+            value, boost collections, and streamline your revenue cycle
+            management. Discover how outsourcing your medical coding needs to a
+            reputable ICD-10 coding company in the USA can transform your
+            billing and allow your team to focus on delivering care.
           </motion.p>
 
           <motion.p
@@ -69,13 +60,10 @@ export function GetStartedToday() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            Contact us today to learn how our&nbsp;
-            <span className="tw-font-bold">ICD-10 medical coding services</span>
-            &nbsp;and professional expertise can power your success. Let
-            our&nbsp;
-            <span className="tw-font-bold">ICD-10 Coding Specialists</span>
-            &nbsp;optimize your documentation, mitigate risk, and help your
-            organization grow.
+            Contact us today to learn how our ICD-10 medical coding services and
+            professional expertise can power your success. Let our ICD-10 Coding
+            Specialists optimize your documentation, mitigate risk, and help
+            your organization grow.
           </motion.p>
         </motion.div>
       </div>

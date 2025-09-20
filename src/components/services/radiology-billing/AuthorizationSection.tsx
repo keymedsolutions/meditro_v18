@@ -35,11 +35,7 @@ function AuthorizationSection() {
           </h2>
           <p className="tw-text-xl tw-text-slate-600 tw-mb-8 tw-max-w-5xl mx-auto">
             Modern radiology billing demands flexibility, connectivity, and
-            security. Our&nbsp;
-            <span className="tw-font-bold">
-              Radiology Medical Billing Tools
-            </span>
-            &nbsp;and systems ensure:
+            security. Our Radiology Medical Billing Tools and systems ensure:
           </p>
         </motion.div>
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-16 tw-items-center">
@@ -107,7 +103,7 @@ function AuthorizationSection() {
             {/* Decorative elements */}
             <motion.div
               animate={{
-                y: smMatches ? [-150, 150] : [-50,50],
+                y: smMatches ? [-150, 150] : [-50, 50],
               }}
               transition={{
                 duration: 3, // smoothness (slower = smoother)

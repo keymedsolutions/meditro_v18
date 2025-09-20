@@ -50,11 +50,8 @@ const EmpoweringYourPractice = () => {
       >
         From front-office staff to billing specialists, our solutions ensure
         that everyone in your practice is equipped to handle insurance denials
-        effectively. By partnering with a trusted&nbsp;
-        <span className="tw-font-bold">
-          Denial Management Company in the USA
-        </span>
-        &nbsp;like Key MedSolutions, you can reduce administrative burdens,
+        effectively. By partnering with a trusted Denial Management Company in
+        the USA like Key MedSolutions, you can reduce administrative burdens,
         improve operational efficiency, and achieve better financial outcomes.
       </motion.p>
     </motion.section>

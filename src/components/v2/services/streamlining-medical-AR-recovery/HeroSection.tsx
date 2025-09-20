@@ -178,7 +178,10 @@ export function ArRecoveryHero() {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-               Reduce outstanding accounts receivable backlogs, increase claims recovery rates, and streamline your billing operations with our tailored AR Recovery Services. Start managing your practice’s financial health with confidence today!
+                Reduce outstanding accounts receivable backlogs, increase claims
+                recovery rates, and streamline your billing operations with our
+                tailored AR Recovery Services. Start managing your practice’s
+                financial health with confidence today!
               </motion.div>
 
               <button type="button" className="button-get-started">
@@ -214,18 +217,10 @@ export function ArRecoveryHero() {
         className="tw-text-xl tw-text-gray-500 tw-mb-10 tw-leading-relaxed tw-max-w-6xl tw-mx-auto tw-text-center tw-font-medium"
       >
         Accelerate your healthcare organization’s financial potential with
-        &nbsp;
-        <span className="tw-font-bold">
-          Accounts Receivable Recovery Solutions
-        </span>
-        &nbsp;from Key MedSolutions, your trusted partner for maximizing
-        collections, accelerating cash flow, and focusing on what matters most:
-        patient care. As an&nbsp;
-        <span className="tw-font-bold">
-          Accounts Receivable Recovery Expert
-        </span>
-        &nbsp;in the USA, we provide tailored&nbsp;
-        <span className="tw-font-bold">AR Recovery Solution</span>&nbsp;
+        Accounts Receivable Recovery Solutions from Key MedSolutions, your
+        trusted partner for maximizing collections, accelerating cash flow, and
+        focusing on what matters most: patient care. As an Accounts Receivable
+        Recovery Expert in the USA, we provide tailored AR Recovery Solution
         packages designed to address the complex challenges of modern healthcare
         billing. Whether you operate a medical practice, hospital, or
         multi-specialty clinic, our Outstanding AR Recovery Services ensure your

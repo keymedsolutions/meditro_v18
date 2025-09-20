@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export function PartnerWithUsSection() {
   return (
     <section className="tw-py-24 tw-px-4 tw-relative tw-overflow-hidden tw-mb-10 tw-bg-accent-500">
-     {/* Floating decorative elements */}
+      {/* Floating decorative elements */}
       <div className="tw-absolute tw-top-10 tw-left-10 tw-w-24 tw-h-24 tw-bg-white/10 tw-rounded-full floating-animation"></div>
       <div
         className="tw-absolute tw-bottom-10 tw-right-10 tw-w-32 tw-h-32 tw-bg-white/5 tw-rounded-full floating-animation"
@@ -44,18 +44,13 @@ export function PartnerWithUsSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            When you&nbsp;
-            <span className="tw-font-bold">
-              outsource healthcare debt collection services
-            </span>
-            &nbsp;to Key MedSolutions, you are partnering with a reputable&nbsp;
-            <span className="tw-font-bold">
-              medical debt collection company USA
-            </span>
-            &nbsp;that is committed to professionalism and measurable results.
-            Our proven solutions, from comprehensive collections to advanced
-            analytics, are designed to resolve your accounts faster, with
-            integrity and compliance always at the forefront.
+            When you outsource healthcare debt collection services to Key
+            MedSolutions, you are partnering with a reputable medical debt
+            collection company USA that is committed to professionalism and
+            measurable results. Our proven solutions, from comprehensive
+            collections to advanced analytics, are designed to resolve your
+            accounts faster, with integrity and compliance always at the
+            forefront.
           </motion.p>
 
           <motion.p
@@ -66,11 +61,8 @@ export function PartnerWithUsSection() {
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
             If you are ready for a more efficient, transparent, and
-            patient-friendly approach to&nbsp;
-            <span className="tw-font-bold">
-              healthcare debt collection services,
-            </span>
-            &nbsp;let’s connect
+            patient-friendly approach to healthcare debt collection services,
+            let’s connect
           </motion.p>
         </motion.div>
       </div>

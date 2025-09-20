@@ -119,13 +119,11 @@ export function HeroSection() {
 
             <div className="tw-mt-10 tw-z-10">
               <p className=" tw-text-justify tw-text-foreground/80">
-                Welcome to&nbsp;
-                <span className="tw-font-bold">Key MedSolutions,</span> your
-                reliable medical billing partner. We assist healthcare providers
-                in submitting claims more easily, receiving more approvals, and
-                receiving payment sooner. Our advanced software and expert
-                services make billing simple and quick, which benefits the
-                expansion of your company.
+                Welcome to Key MedSolutions, your reliable medical billing
+                partner. We assist healthcare providers in submitting claims
+                more easily, receiving more approvals, and receiving payment
+                sooner. Our advanced software and expert services make billing
+                simple and quick, which benefits the expansion of your company.
               </p>
             </div>
 

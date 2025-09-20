@@ -612,7 +612,8 @@
 				&.lg-menu{
 					width: 650px;
 					li>.sub-menu.md-menu {
-						left: -350px;
+						left: 150px;
+						// top:5px !important;
 						@include transitionMedium;
 					}
 				}

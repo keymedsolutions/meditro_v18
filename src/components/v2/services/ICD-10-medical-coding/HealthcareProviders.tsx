@@ -35,16 +35,12 @@ const HealthcareProviders = () => {
         viewport={{ once: true }}
         className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center"
       >
-        As a reputable&nbsp;
-        <span className="tw-font-bold">Top ICD-10 Coding Company,</span> we
-        deliver scalable and reliable&nbsp;
-        <span className="tw-font-bold">ICD-10 Coding Services.</span>&nbsp;Our
-        certified&nbsp;
-        <span className="tw-font-bold">ICD-10 Coding Specialists</span>
-        &nbsp;execute every task with precision and a full understanding of
-        payer rules and clinical documentation requirements. Whether you operate
-        a single-provider office or a complex multispecialty clinic, our
-        services support your needs and help you maintain a smooth workflow.
+        As a reputable Top ICD-10 Coding Company, we deliver scalable and
+        reliable ICD-10 Coding Services. Our certified ICD-10 Coding Specialists
+        execute every task with precision and a full understanding of payer
+        rules and clinical documentation requirements. Whether you operate a
+        single-provider office or a complex multispecialty clinic, our services
+        support your needs and help you maintain a smooth workflow.
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 30 }}
@@ -55,9 +51,8 @@ const HealthcareProviders = () => {
       >
         We provide ongoing communication, clear documentation, and proactive
         support designed to minimize denials and remove administrative
-        bottlenecks. Our expertise in&nbsp;
-        <span className="tw-font-bold">ICD-10 Coding Services</span>&nbsp;is
-        backed by years of client-proven results.
+        bottlenecks. Our expertise in ICD-10 Coding Services is backed by years
+        of client-proven results.
       </motion.p>
     </motion.section>
   );

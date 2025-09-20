@@ -33,14 +33,9 @@ export function CompanyGoals() {
               for providers. We strive to make billing, compliance, and other
               administrative tasks simpler and more manageable for you We help
               providers focus on providing high-quality care by offering
-              practice&nbsp;
-              <span className="tw-font-bold">
-                management services, healthcare technology solutions,
-              </span>
-              &nbsp;and&nbsp;
-              <span className="tw-font-bold">Revenue Cycle Management.</span>
-              &nbsp;Our method is based on new ideas, accuracy, and a thorough
-              knowledge of the healthcare field.
+              practice management services, healthcare technology solutions,
+              andRevenue Cycle Management.Our method is based on new ideas,
+              accuracy, and a thorough knowledge of the healthcare field.
             </p>
           </motion.div>
         </div>
@@ -64,10 +59,8 @@ export function CompanyGoals() {
               financially and operationally. We aim to be the go-to partner for
               healthcare businesses by using cutting-edge technology and
               tried-and-true methods. Our goals are to help businesses expand,
-              improve patient outcomes, and set new standards in&nbsp;
-              <span className="tw-font-bold">Revenue Cycle Management</span>
-              &nbsp;and&nbsp;
-              <span className="tw-font-bold">patient engagement services.</span>
+              improve patient outcomes, and set new standards inRevenue Cycle
+              Managementan patient engagement services.
             </p>
           </motion.div>
         </div>

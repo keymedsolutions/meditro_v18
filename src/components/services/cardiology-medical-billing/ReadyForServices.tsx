@@ -46,10 +46,10 @@ export function ReadyForServices() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            When you&nbsp;<span className="tw-font-bold">Outsource Cardiology Billing</span>&nbsp;to Key MedSolutions, you
+            When you Outsource Cardiology Billing to Key MedSolutions, you
             unlock more than just administrative relief; you gain a trusted
             partner dedicated to your success. Our team is committed to
-            delivering the&nbsp;<span className="tw-font-bold">best cardiology medical billing services</span>&nbsp;designed for
+            delivering the best cardiology medical billing services designed for
             results, growth, and peace of mind.
           </motion.p>
 
@@ -60,8 +60,8 @@ export function ReadyForServices() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            <span className="tw-font-bold">Contact us today</span>&nbsp;for a free consultation. Let Key MedSolutions show
-            you how the right&nbsp;<span className="tw-font-bold">Cardiology Medical Billing Solutions</span>&nbsp;and&nbsp;<Link href="/revenue-cycle-management-services"><span className="tw-font-bold !tw-text-white">Revenue
+           Contact us today for a free consultation. Let Key MedSolutions show
+            you how the right Cardiology Medical Billing Solutions and&nbsp;<Link href="/revenue-cycle-management-services"><span className="!tw-text-white">Revenue
             Cycle Management Services</span></Link>&nbsp;can transform your practice and power
             lasting financial health. Optimize, grow, and thrive with the
             leaders in cardiology billing by your side.

@@ -42,13 +42,10 @@ export function CTASection() {
           </h2>
 
           <p className="tw-text-xl tw-text-white/90 tw-max-w-3xl tw-mx-auto tw-font-body tw-leading-relaxed">
-            Key MedSolutions is more than a&nbsp;
-            <span className="tw-font-bold">
-              Medical Claims Processing Company USA,
-            </span>{" "}
-            we're your partner in success. With our expertise and technology, we
-            ensure your claims are managed swiftly, giving you more time to
-            focus on care.
+            Key MedSolutions is more than a Medical Claims Processing Company
+            USA, we're your partner in success. With our expertise and
+            technology, we ensure your claims are managed swiftly, giving you
+            more time to focus on care.
           </p>
 
           <p className="tw-text-xl tw-text-white/90 tw-max-w-3xl tw-mx-auto tw-font-body tw-leading-relaxed">

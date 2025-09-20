@@ -41,23 +41,24 @@ const ReadyToTransformYourPractice = () => {
             </div>
             <div>
               See how Key MedSolutions: the advanced medical billing company for
-              diverse&nbsp;
-              <span className="tw-font-bold">
-                medical billing specialties in the US,
-              </span>
-              &nbsp;can take your practice to the next level with innovative
-              medical billing solutions. Let’s work together to make your
-              practice more profitable, compliant, and efficient.
+              diverse medical billing specialties in the US, can take your
+              practice to the next level with innovative medical billing
+              solutions. Let’s work together to make your practice more
+              profitable, compliant, and efficient.
             </div>
 
             {/* Contact Info Section */}
             <div className="tw-mt-4 tw-space-y-2 ">
               <p className="tw-text-white">
-                <span className="tw-font-bold tw-text-gray-400">Call Us&nbsp;:</span> +1 (336)
-                499-92994
+                <span className="tw-font-bold tw-text-gray-400">
+                  Call Us&nbsp;:
+                </span>{" "}
+                +1 (336) 499-92994
               </p>
               <p className="tw-text-white">
-                <span className="tw-font-bold  tw-text-gray-400">Email&nbsp;:</span>{" "}
+                <span className="tw-font-bold  tw-text-gray-400">
+                  Email&nbsp;:
+                </span>{" "}
                 info@keymedsolution.com
               </p>
             </div>
@@ -68,7 +69,9 @@ const ReadyToTransformYourPractice = () => {
                 <span className="tw-absolute tw-right-0 tw-flex tw-items-center tw-justify-start tw-w-10 tw-h-10 tw-duration-300 tw-transform tw-translate-x-full group-hover:tw-translate-x-0 tw-ease">
                   <ArrowRight />
                 </span>
-                <span className="tw-relative">Book a Free Consultation : Get Started Today</span>
+                <span className="tw-relative">
+                  Book a Free Consultation : Get Started Today
+                </span>
               </p>
             </div>
           </motion.div>

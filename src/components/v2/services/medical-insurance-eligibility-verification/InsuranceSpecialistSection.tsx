@@ -62,12 +62,9 @@ export function InsuranceSpecialistSection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-max-w-3xl tw-mx-auto sm:tw-text-xl"
           >
-            An expert&nbsp;
-            <span className="tw-font-bold">
-              Insurance Verification Specialist
-            </span>
-            &nbsp;understands the nuances of insurance guidelines across payers
-            and plans. Our specialists excel in:
+            An expert Insurance Verification Specialist understands the nuances
+            of insurance guidelines across payers and plans. Our specialists
+            excel in:
           </motion.p>
         </motion.div>
 
@@ -147,7 +144,7 @@ export function InsuranceSpecialistSection() {
           viewport={{ once: true, amount: 0.2 }}
           className="tw-max-w-3xl tw-mx-auto sm:tw-text-xl"
         >
-          With our&nbsp;<span className="tw-font-bold">Insurance Verification Specialist</span>&nbsp;team in your corner, you
+          With our Insurance Verification Specialist team in your corner, you
           gain precision, speed, and peace of mind.
         </motion.p>
       </motion.div>

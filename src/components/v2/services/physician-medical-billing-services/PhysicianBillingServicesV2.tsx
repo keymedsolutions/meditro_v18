@@ -201,15 +201,10 @@ const PhysicianBillingServicesV2 = () => {
                   Take the First Step Toward Revenue Excellence
                 </h2>
                 <p className="tw-text-lg tw-text-white/90 tw-mb-8 tw-max-w-2xl tw-mx-auto font-dm-sans">
-                  Let&nbsp;
-                  <span className="tw-font-bold">Key MedSolutions</span>
-                  &nbsp;handle your billing, so you can focus on patient care.
-                  Discover why we’re the preferred&nbsp;
-                  <span className="tw-font-bold">
-                    Physician Billing Company in the USA
-                  </span>
-                  &nbsp;for practices seeking reliable results and service
-                  excellence.
+                  Let Key MedSolutions handle your billing, so you can focus on
+                  patient care. Discover why we’re the preferred Physician
+                  Billing Company in the USA for practices seeking reliable
+                  results and service excellence.
                 </p>
               </motion.div>
             </div>
