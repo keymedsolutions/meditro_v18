@@ -11,7 +11,6 @@ const HealthcareProviders = () => {
         backgroundRepeat: "no-repeat",
         filter: "brightness(1.15)",
       }}
-      
       className="tw-container   tw-px-4 border tw-border-gray-500 tw-shadow-2xl tw-rounded-2xl tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center"
     >
       <motion.div
@@ -36,16 +35,11 @@ const HealthcareProviders = () => {
         viewport={{ once: true }}
         className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center"
       >
-        We provide&nbsp;
-        <span className="tw-font-bold">
-          Healthcare Profit Enhancement Services
-        </span>
-        &nbsp;designed specifically for medical practices, hospitals, and
-        healthcare networks. Our solutions are not one-size-fits-all; instead,
-        we assess your unique operational challenges and billing workflow to
-        deliver customized&nbsp;
-        <span className="tw-font-bold">Profit Enhancement Solutions</span>
-        &nbsp;built to meet your goals.
+        We provide Healthcare Profit Enhancement Services designed specifically
+        for medical practices, hospitals, and healthcare networks. Our solutions
+        are not one-size-fits-all; instead, we assess your unique operational
+        challenges and billing workflow to deliver customized Profit Enhancement
+        Solutions built to meet your goals.
       </motion.p>
     </motion.section>
   );

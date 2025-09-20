@@ -107,66 +107,40 @@ const HealthcareTechTrends = () => {
                             decades. In 2025, that momentum is not just
                             continuing, it's gaining speed. From smarter billing
                             systems to virtual care and AI-powered diagnostics,
-                            &nbsp;
-                            <span className="tw-font-bold">
-                              Healthcare Technology
-                            </span>
-                            &nbsp;is evolving at lightning speed. These tools
-                            aren't just about gadgets; they're transforming how
-                            providers deliver care, how patients receive it, and
-                            how revenue is managed behind the scenes.
+                            Healthcare Technology is evolving at lightning
+                            speed. These tools aren't just about gadgets;
+                            they're transforming how providers deliver care, how
+                            patients receive it, and how revenue is managed
+                            behind the scenes.
                           </p>
                           <p className="tw-text-gray-700">
-                            According to a report by&nbsp;
-                            <span className="tw-font-bold tw-text-blue-500">
-                              Markets and Markets,
-                            </span>
-                            &nbsp;the global healthcare IT market was valued
-                            at&nbsp;
-                            <span className="tw-font-bold">
-                              $368.15 billion in 2023
-                            </span>
-                            &nbsp;and increased to&nbsp;
-                            <span className="tw-font-bold">
-                              $420.23 billion in 2024.
-                            </span>
-                            &nbsp;Looking ahead, it's expected to grow strongly
-                            at an average annual rate of&nbsp;
-                            <span className="tw-font-bold">14.7%,</span>&nbsp;
-                            reaching an estimated&nbsp;
-                            <span className="tw-font-bold">
-                              $834.35 billion by 2029.
-                            </span>
-                            &nbsp;This reflects the rising adoption of digital
-                            technologies in healthcare worldwide.
+                            According to a report by Markets and Markets, the
+                            global healthcare IT market was valued at $368.15
+                            billion in 2023 and increased to $420.23 billion in
+                            2024. Looking ahead, it's expected to grow strongly
+                            at an average annual rate of 14.7%, reaching an
+                            estimated $834.35 billion by 2029. This reflects the
+                            rising adoption of digital technologies in
+                            healthcare worldwide.
                           </p>
                         </div>
                         <div>
                           <p className="tw-text-gray-700 tw-mb-4">
                             At Key MedSolutions, we know that innovation can
                             feel overwhelming. But it doesn't have to be. As
-                            your go-to partner for&nbsp;
-                            <span className="tw-font-bold">
-                              Medical Billing Company
-                            </span>
-                            &nbsp;Solutions and&nbsp;
-                            <span className="tw-font-bold">
-                              Medical Coding Services,
-                            </span>
-                            &nbsp;we're here to help you make sense of the
-                            change, and more importantly, make the most of it.
+                            your go-to partner for Medical Billing Company
+                            Solutions and Medical Coding Services, we're here to
+                            help you make sense of the change, and more
+                            importantly, make the most of it.
                           </p>
                           <p className="tw-text-gray-700">
                             Whether you're a busy private practice or a
                             multi-specialty group, understanding the key trends
-                            shaping the&nbsp;
-                            <span className="tw-font-bold">
-                              future of Healthcare Technology
-                            </span>
-                            &nbsp;can help you stay competitive, compliant, and
-                            financially strong. In this blog, we're breaking
-                            down 20 healthcare tech trends that matter most to
-                            your bottom line in 2025.
+                            shaping the future of Healthcare Technology can help
+                            you stay competitive, compliant, and financially
+                            strong. In this blog, we're breaking down 20
+                            healthcare tech trends that matter most to your
+                            bottom line in 2025.
                           </p>
                         </div>
                       </div>
@@ -566,27 +540,19 @@ const HealthcareTechTrends = () => {
                       </h3>
                       <div className="tw-bg-gradient-to-r tw-from-blue-600 tw-to-purple-600 tw-rounded-2xl tw-shadow-xl tw-p-8 !tw-text-white">
                         <p className="tw-mb-4 tw-text-white">
-                          If 2025 is any indication, the&nbsp;
-                          <span className="tw-font-bold">
-                            future of Healthcare Technology
-                          </span>
-                          &nbsp;is all about personalization, automation, and
-                          integration. As new tools emerge, the practices that
-                          succeed will be those that adapt early and smartly.
+                          If 2025 is any indication, the future of Healthcare
+                          Technology is all about personalization, automation,
+                          and integration. As new tools emerge, the practices
+                          that succeed will be those that adapt early and
+                          smartly.
                         </p>
                         <p className="tw-mb-4 tw-text-white">
-                          At Key MedSolutions, our&nbsp;
-                          <span className="tw-font-bold">
-                            Medical Billing Company
-                          </span>
-                          &nbsp;and&nbsp;
-                          <span className="tw-font-bold">
-                            Medical Coding Services
-                          </span>
-                          &nbsp;teams stay ahead of these trends so our clients
-                          don't have to worry about them. We manage the complex
-                          back-end tasks, giving you the freedom to focus fully
-                          on delivering exceptional patient care.
+                          At Key MedSolutions, our Medical Billing Company and
+                          Medical Coding Services teams stay ahead of these
+                          trends so our clients don't have to worry about them.
+                          We manage the complex back-end tasks, giving you the
+                          freedom to focus fully on delivering exceptional
+                          patient care.
                         </p>
                         <p className="tw-text-white">
                           Whether you're looking to modernize your systems,
@@ -609,25 +575,16 @@ const HealthcareTechTrends = () => {
                       </h3>
                       <div className="tw-bg-white tw-rounded-2xl tw-shadow-xl tw-p-8">
                         <p className="tw-text-gray-700 tw-mb-4">
-                          The top 20&nbsp;
-                          <span className="tw-font-bold">
-                            Healthcare Technology
-                          </span>
-                          &nbsp;trends of 2025 reflect a rapidly shifting
-                          industry. It's an exciting time, but it can also be
-                          confusing if you're not prepared.
+                          The top 20 Healthcare Technology trends of 2025
+                          reflect a rapidly shifting industry. It's an exciting
+                          time, but it can also be confusing if you're not
+                          prepared.
                         </p>
                         <p className="tw-text-gray-700 tw-mb-4">
                           Key MedSolutions is here to make it easier. Our expert
                           teams help translate innovation into action with
-                          reliable&nbsp;
-                          <span className="tw-font-bold">
-                            Medical Billing Company
-                          </span>
-                          &nbsp;services and compliant, efficient&nbsp;
-                          <span className="tw-font-bold">
-                            Medical Coding Services.
-                          </span>
+                          reliable Medical Billing Company services and
+                          compliant, efficient Medical Coding Services.
                         </p>
                         <p className="tw-text-gray-700">
                           Let's shape the future of healthcare together. Reach

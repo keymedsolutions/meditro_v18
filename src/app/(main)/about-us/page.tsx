@@ -29,12 +29,10 @@ const AboutUsPage = () => {
               {/* <div className="col"></div> */}
               <div className="col-md-12">
                 <p>
-                  <span className="tw-font-bold">
-                    Revolutionizing Medical Billing and Revenue Cycle Management
-                  </span>
-                  &nbsp;Your Dedicated RCM Partner for Hospitals, Clinics and
-                  Private Practices. We take care of the complexities, allowing
-                  you to focus fully on delivering exceptional patient care.
+                  Revolutionizing Medical Billing and Revenue Cycle Management
+                  Your Dedicated RCM Partner for Hospitals, Clinics and Private
+                  Practices. We take care of the complexities, allowing you to
+                  focus fully on delivering exceptional patient care.
                 </p>
                 <p className="tw-font-bold">
                   Contact us today for a Free Consultation!
@@ -48,30 +46,21 @@ const AboutUsPage = () => {
                   compliant with their specific demands.
                 </p>
                 <p>
-                  We are a leading&nbsp;
-                  <span className="tw-font-bold">medical billing company</span>
-                  &nbsp;that prioritizes reducing denials and enhancing revenue
-                  cycles. Our certified professionals have extensive experience
-                  and collaborate closely with clients to ensure accurate and
-                  seamless billing.
+                  We are a leading medical billing company that prioritizes
+                  reducing denials and enhancing revenue cycles. Our certified
+                  professionals have extensive experience and collaborate
+                  closely with clients to ensure accurate and seamless billing.
                 </p>
                 <p>
-                  In addition to&nbsp;
-                  <span className="tw-font-bold">
-                    revenue cycle management,
-                  </span>
-                  &nbsp;we also offer&nbsp;
-                  <span className="tw-font-bold">
-                    patient engagement services
-                  </span>
-                  &nbsp;to help providers communicate more effectively and
-                  foster stronger relationships with their patients. We equip
-                  healthcare providers with the resources to deliver exceptional
-                  care and maximize earnings by combining financial and
-                  patient-centered solutions. By employing state-of-the-art
-                  technology and constantly learning new things to achieve
-                  results, Key MedSolutions stays ahead of changes in the
-                  industry. We are entirely dedicated to supporting you in
+                  In addition to revenue cycle management, we also offer patient
+                  engagement services to help providers communicate more
+                  effectively and foster stronger relationships with their
+                  patients. We equip healthcare providers with the resources to
+                  deliver exceptional care and maximize earnings by combining
+                  financial and patient-centered solutions. By employing
+                  state-of-the-art technology and constantly learning new things
+                  to achieve results, Key MedSolutions stays ahead of changes in
+                  the industry. We are entirely dedicated to supporting you in
                   achieving your goals.
                 </p>
               </div>

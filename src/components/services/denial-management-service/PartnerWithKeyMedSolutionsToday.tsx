@@ -40,13 +40,9 @@ const PartnerWithKeyMedSolutionsToday = () => {
             </div>
             <div>
               Don’t let insurance denials disrupt your practice’s financial
-              health. Partner with Key MedSolutions for reliable&nbsp;
-              <span className="tw-font-bold">Denial Management Services</span>
-              &nbsp;and comprehensive&nbsp;
-              <span className="tw-font-bold">
-                Revenue Cycle Management Services.
-              </span>
-              &nbsp;Contact us today to learn how we can help your practice
+              health. Partner with Key MedSolutions for reliable Denial
+              Management Services and comprehensive Revenue Cycle Management
+              Services. Contact us today to learn how we can help your practice
               streamline denial management and achieve better financial
               outcomes.
             </div>

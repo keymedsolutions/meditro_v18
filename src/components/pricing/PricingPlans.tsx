@@ -29,23 +29,16 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
               </span>
             </h2>
             <p>
-              Looking to excel in&nbsp;
-              <span className="tw-font-bold">
-                medical billing and revenue cycle management?
-              </span>
-              &nbsp;We’re here to make it happen with a learning plan tailored
-              to your goals.
+              Looking to excel in medical billing and revenue cycle management?
+              We’re here to make it happen with a learning plan tailored to your
+              goals.
             </p>
 
             <p>
               With expert mentorship, immersive training, and personalized
               support, you’ll develop the skills and confidence to thrive as a
-              &nbsp;
-              <span className="tw-font-bold">
-                healthcare billing professional.
-              </span>
-              &nbsp;It’s straightforward, impactful, and designed for your
-              success!
+              healthcare billing professional. It’s straightforward, impactful,
+              and designed for your success!
             </p>
           </div>
           <div className="row justify-content-center">

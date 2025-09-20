@@ -58,7 +58,6 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
       const fullPath = parentPath ? `${parentPath}-${item.path}` : item.path;
       const isSubMenuOpen = openSubMenus[fullPath] || false;
 
-      console.log(level,"level")
       return (
         <li
           key={fullPath}
@@ -97,8 +96,8 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
             <ul
               className={cn(
                 level === 0
-                  ? "sub-menu  !tw-grid !tw-grid-cols-3 lg-menu tw-absolute tw-right-0 tw-top-full tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20"
-                  : "tw-absolute !tw-left-[10px] !tw-top-[90px] sub-menu md-menu  tw-right-full ",
+                  ? "sub-menu  !tw-grid !tw-grid-cols-3 lg-menu tw-absolute tw-right-0 tw-top-[85%] tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20"
+                  : "tw-absolute  sub-menu md-menu  tw-right-full ",
                 isSubMenuOpen
                   ? "tw-opacity-100  tw-visible open"
                   : "tw-opacity-0 tw-invisible tw-pointer-events-none",

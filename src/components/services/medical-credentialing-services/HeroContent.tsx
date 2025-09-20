@@ -41,12 +41,9 @@ const HeroContent = () => {
         ensure trust and compliance. It ensures that physicians, nurse
         practitioners, and other medical professionals are verified and approved
         by insurance companies to provide services to patients. Without proper
-        &nbsp;
-        <span className="tw-font-bold">
-          medical provider credentialing services
-        </span>
-        &nbsp;in the USA, practices risk delays in payments, reduced revenue,
-        and even the inability to bill for services rendered.
+        medical provider credentialing services in the USA, practices risk
+        delays in payments, reduced revenue, and even the inability to bill for
+        services rendered.
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 30 }}
@@ -57,12 +54,8 @@ const HeroContent = () => {
       >
         At Key MedSolutions, we understand the challenges healthcare providers
         face when navigating the credentialing process. That’s why we offer
-        comprehensive&nbsp;
-        <span className="tw-font-bold">
-          physician credentialing services in the USA
-        </span>
-        &nbsp;designed to save you time, reduce stress, and maximize your
-        revenue.
+        comprehensive physician credentialing services in the USA designed to
+        save you time, reduce stress, and maximize your revenue.
       </motion.p>
     </motion.section>
   );

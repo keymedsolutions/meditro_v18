@@ -19,21 +19,14 @@ const ExperienceSeamlessBilling = () => {
           <p className="tw-text-muted-foreground tw-mb-8  tw-mx-auto font-dm-sans">
             Running a successful medical practice requires more than exceptional
             patient care; it also demands a streamlined, effective approach to
-            your revenue cycle. At&nbsp;
-            <span className="tw-font-bold">Key MedSolutions</span>, we offer
-            industry-leading &nbsp;
-            <span className="tw-font-bold">
-              Physician Medical Billing Services
-            </span>
-            &nbsp;that empower physicians and healthcare groups to maximize
-            revenue, reduce administrative burdens, and focus more on patient
-            outcomes. As a premier&nbsp;
-            <span className="tw-font-bold">
-              Physician Billing Company in the USA
-            </span>
-            , our suite of solutions combines advanced technology, skilled
-            professionals, and a deep understanding of healthcare reimbursement
-            to deliver measurable results, no matter the size of your practice.
+            your revenue cycle. At Key MedSolutions, we offer industry-leading
+            Physician Medical Billing Services that empower physicians and
+            healthcare groups to maximize revenue, reduce administrative
+            burdens, and focus more on patient outcomes. As a premier Physician
+            Billing Company in the USA , our suite of solutions combines
+            advanced technology, skilled professionals, and a deep understanding
+            of healthcare reimbursement to deliver measurable results, no matter
+            the size of your practice.
           </p>
           <motion.div
             className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-justify-center"

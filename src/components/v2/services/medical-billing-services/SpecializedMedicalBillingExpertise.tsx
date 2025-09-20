@@ -8,7 +8,7 @@ export function SpecializedMedicalBillingExpertise() {
     {
       title: "Cardiology Medical Billing Services",
       description:
-        `The world of cardiology demands expert handling of intricate coding, multi-step procedures, and ever-changing payer policies. Our <span class="tw-font-bold">Cardiology Medical Billing Services</span> are designed to boost approval rates, minimize denials, enhance compliance, and ensure your practice receives every dollar it’s owed.`,
+        `The world of cardiology demands expert handling of intricate coding, multi-step procedures, and ever-changing payer policies. Our Cardiology Medical Billing Services are designed to boost approval rates, minimize denials, enhance compliance, and ensure your practice receives every dollar it’s owed.`,
     },
     {
       title: "Radiology Medical Billing Services",

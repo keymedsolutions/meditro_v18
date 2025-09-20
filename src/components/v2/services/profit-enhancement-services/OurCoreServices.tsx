@@ -48,13 +48,13 @@ export function OurCoreServices() {
   const values = [
     {
       title: "Comprehensive Revenue Cycle Management Services",
-      description: `Efficient <span class='tw-font-bold'>Revenue Cycle Management Services</span> are the backbone of any high-performing healthcare practice. Our experts streamline your billing and collections process to ensure timely reimbursements and reduce claim denials. <span class="tw-font-bold tw-text-blue-500">Learn more about our Revenue Cycle Management Services.</span>`,
+      description: `Efficient Revenue Cycle Management Services are the backbone of any high-performing healthcare practice. Our experts streamline your billing and collections process to ensure timely reimbursements and reduce claim denials. Learn more about our Revenue Cycle Management Services.`,
       icon: FileSpreadsheet,
       color: "blue",
     },
     {
       title: "Medical Debt Collection Services",
-      description: `We help recover lost revenue with professional <span class="tw-font-bold">Medical Debt Collection Services</span> tailored for healthcare providers. Our approach minimizes patient dissatisfaction while improving cash flow. <span class="tw-text-blue-500 tw-font-bold">Find out how our Medical Debt Collection Services can benefit your practice.</span>`,
+      description: `We help recover lost revenue with professional Medical Debt Collection Services tailored for healthcare providers. Our approach minimizes patient dissatisfaction while improving cash flow. Find out how our Medical Debt Collection Services can benefit your practice.`,
       icon: CreditCard,
       color: "red",
     },
@@ -67,7 +67,7 @@ export function OurCoreServices() {
     },
     {
       title: "Business Cost Reduction Services",
-      description: `Many healthcare practices struggle with rising operational costs. Our <span class="tw-font-bold">Business Cost Reduction Services</span> aim to cut unnecessary expenses without sacrificing service quality, helping you achieve a sustainable financial future.`,
+      description: `Many healthcare practices struggle with rising operational costs. Our Business Cost Reduction Services aim to cut unnecessary expenses without sacrificing service quality, helping you achieve a sustainable financial future.`,
       icon: Scissors,
       color: "green",
     },
@@ -80,7 +80,7 @@ export function OurCoreServices() {
     },
     {
       title: "Claims Denial Management",
-      description: `Denials drain both your revenue and your team's valuable time. Our proactive approach to <span class="tw-font-bold">Claims Denial Management</span> prevents future issues while resolving current ones efficiently.`,
+      description: `Denials drain both your revenue and your team's valuable time. Our proactive approach to Claims Denial Management prevents future issues while resolving current ones efficiently.`,
       icon: ShieldAlert,
       color: "blue",
     },

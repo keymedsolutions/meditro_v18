@@ -91,7 +91,7 @@ const RecoverySolutions = () => {
           })}
         </div>
         <p className="tw-text-lg tw-text-muted-foreground tw-text-center tw-max-w-3xl tw-mx-auto tw-font-serif">
-          Our&nbsp;<span className="tw-font-bold">Healthcare AR Recovery Services USA</span>&nbsp;are scalable and flexible to
+          Our Healthcare AR Recovery Services USA are scalable and flexible to
           fit organizations of every size and specialty, with a track record of
           success from North Carolina and across the country.
         </p>

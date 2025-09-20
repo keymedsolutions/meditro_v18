@@ -47,14 +47,10 @@ export function WhyChooseUs() {
             </span>
           </h2>
           <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
-            Partnering with our&nbsp;
-            <span className="tw-font-bold">ICD-10 Medical Coding Company</span>
-            &nbsp;gives you access to dedicated professionals who know the ins
-            and outs of the ICD-10 landscape. As a&nbsp;
-            <span className="tw-font-bold">Top ICD-10 Coding Company</span>
-            &nbsp;and a recognized&nbsp;
-            <span className="tw-font-bold">ICD-10 coding company in USA,</span>
-            &nbsp;our core strengths include:
+            Partnering with our ICD-10 Medical Coding Company gives you access
+            to dedicated professionals who know the ins and outs of the ICD-10
+            landscape. As a Top ICD-10 Coding Company and a recognized ICD-10
+            coding company in USA, our core strengths include:
           </p>
         </motion.div>
 

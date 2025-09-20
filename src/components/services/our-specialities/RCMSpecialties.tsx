@@ -158,13 +158,9 @@ export default function RCMSpecialties() {
             </span>
           </motion.h2>
           <p className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto">
-            Discover the diversity of&nbsp;
-            <span className="tw-font-bold">
-              medical billing specialties in US
-            </span>
-            &nbsp;healthcare that we support, each with tailored&nbsp;
-            <span className="tw-font-bold">medical billing solutions</span>
-            &nbsp;to suit your needs:
+            Discover the diversity of medical billing specialties in US
+            healthcare that we support, each with tailored medical billing
+            solutions to suit your needs:
           </p>
         </motion.div>
 

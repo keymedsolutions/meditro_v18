@@ -49,36 +49,22 @@ export default function MainBanner() {
               </p>
 
               <p>
-                We provide customized&nbsp;
-                <span className="tw-font-bold">
-                  Medical Billing and Revenue Cycle Management (RCM) Services 
-                </span>
-                &nbsp;to meet the unique needs of your practice. From
-                &nbsp;
-                <span className="tw-font-bold">
-                  Medical Billing Management Services
-                </span>
-                &nbsp;to&nbsp;
-                <span className="tw-font-bold">Medical Coding Services</span>
-                ,&nbsp; we handle the details so you can focus on your patients.
+                We provide customized Medical Billing and Revenue Cycle
+                Management (RCM) Services to meet the unique needs of your
+                practice. From Medical Billing Management Services to Medical
+                Coding Services, we handle the details so you can focus on your
+                patients.
               </p>
 
               <p>
-                Our team specializes in&nbsp;
-                <span className="tw-font-bold">
-                  Medical Claims Billing Services
-                </span>
-                &nbsp;and&nbsp;
-                <span className="tw-font-bold">RCM Solutions</span>&nbsp;that
-                improve cash flow and reduce claim denials. With skilled&nbsp;
-                <span className="tw-font-bold">medical coders and billers</span>
-                &nbsp;and advanced technology, we ensure accuracy and efficiency
-                every step of the way.
+                Our team specializes in Medical Claims Billing Services and RCM
+                Solutions that improve cash flow and reduce claim denials. With
+                skilled medical coders and billers and advanced technology, we
+                ensure accuracy and efficiency every step of the way.
               </p>
               <p>
-                At Key MedSolutions, we are more than just a&nbsp;
-                <span className="tw-font-bold">Medical Billing Agency.</span>
-                &nbsp;We are your partner in success, committed to making your
+                At Key MedSolutions, we are more than just a Medical Billing
+                Agency. We are your partner in success, committed to making your
                 practice more efficient, more profitable, and less stressful.
               </p>
             </div>

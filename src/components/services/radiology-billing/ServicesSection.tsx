@@ -79,10 +79,8 @@ function ServicesSection() {
             <GradientText>Our Specialized Offerings</GradientText>
           </h2>
           <p className="tw-text-xl tw-text-slate-600 tw-max-w-2xl tw-mx-auto">
-            We deliver full-spectrum&nbsp;
-            <span className="tw-font-bold">Radiology Billing Services</span>
-            &nbsp;tailored to the operational and financial realities of modern
-            imaging providers:
+            We deliver full-spectrum Radiology Billing Services tailored to the
+            operational and financial realities of modern imaging providers:
           </p>
         </motion.div>
 
@@ -90,8 +88,12 @@ function ServicesSection() {
           {services.map((service, index) => (
             <div className="card-01 tw-group">
               <div className="content-01">
-                <p className="heading-01 !tw-text-black group-hover:!tw-text-white">{service?.title}</p>
-                <p className="para-01 tw-text-gray-900">{service?.description}</p>
+                <p className="heading-01 !tw-text-black group-hover:!tw-text-white">
+                  {service?.title}
+                </p>
+                <p className="para-01 tw-text-gray-900">
+                  {service?.description}
+                </p>
               </div>
             </div>
           ))}

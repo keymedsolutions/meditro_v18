@@ -1,7 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TrendingUp, ArrowUpRight, Users, ShieldCheck, Layers, Lock } from "lucide-react";
+import {
+  TrendingUp,
+  ArrowUpRight,
+  Users,
+  ShieldCheck,
+  Layers,
+  Lock,
+} from "lucide-react";
 
 export function Benefits() {
   const benefits = [
@@ -85,8 +92,7 @@ export function Benefits() {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            When you choose Key MedSolutions for your&nbsp;
-            <span className="tw-font-bold">AR Recovery Services,</span> you
+            When you choose Key MedSolutions for your AR Recovery Services, you
             gain:
           </p>
         </motion.div>

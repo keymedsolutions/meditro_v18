@@ -55,7 +55,7 @@ const WhoBenefits = () => {
               </span>
             </h2>
             <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
-              Our&nbsp;<span className="tw-font-bold">ICD-10 medical coding services</span>&nbsp;empower a wide range of
+              Our ICD-10 medical coding services empower a wide range of
               healthcare professionals and organizations, such as:
             </p>
           </motion.div>

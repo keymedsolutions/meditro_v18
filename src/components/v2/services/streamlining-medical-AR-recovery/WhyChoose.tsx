@@ -10,7 +10,7 @@ const WhyChoose = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         filter: "brightness(1.15)",
-         }}
+      }}
       className="tw-container !tw-px-6 sm:tw-px-4 tw-rounded-2xl tw-flex tw-flex-col tw-gap-y-3 tw-justify-center tw-items-center tw-my-20"
     >
       <motion.div
@@ -40,12 +40,9 @@ const WhyChoose = () => {
         Managing overdue accounts is one of the biggest financial burdens facing
         healthcare providers. Evolving regulations, complex payer requirements,
         high-deductible health plans, and increasing patient responsibility make
-        account recovery more demanding than ever. Our&nbsp;
-        <span className="tw-font-bold">
-          Healthcare AR Recovery Services USA
-        </span>
-        &nbsp;are engineered to navigate these complications so you don’t have
-        to.
+        account recovery more demanding than ever. Our Healthcare AR Recovery
+        Services USA are engineered to navigate these complications so you don’t
+        have to.
       </motion.p>
     </motion.section>
   );

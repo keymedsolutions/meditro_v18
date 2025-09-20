@@ -48,10 +48,9 @@ const StartBoosting = () => {
           >
             Are administrative burdens, rising costs, or claim denials holding
             your practice back? It’s time to make a change. Key MedSolutions
-            provides comprehensive&nbsp;
-            <span className="tw-font-bold">Profit Enhancement Services</span>
-            &nbsp;to optimize your practice operations and ensure you capture
-            every opportunity to maximize revenue.
+            provides comprehensive Profit Enhancement Services to optimize your
+            practice operations and ensure you capture every opportunity to
+            maximize revenue.
           </motion.p>
 
           <motion.p
@@ -61,8 +60,8 @@ const StartBoosting = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 selection:tw-text-black tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            Contact us today to discover how our&nbsp;<span className="tw-font-bold">Healthcare Profit Enhancement
-            Services</span>&nbsp;and tailored&nbsp;<span className="tw-font-bold">Profit Enhancement Solutions</span>&nbsp;can transform
+            Contact us today to discover how our Healthcare Profit Enhancement
+            Services and tailored Profit Enhancement Solutions can transform
             your practice. Schedule your free consultation with our experts now!
           </motion.p>
         </motion.div>

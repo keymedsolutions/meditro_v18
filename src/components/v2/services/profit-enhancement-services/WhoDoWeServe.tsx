@@ -71,11 +71,8 @@ export function WhoDoWeServe() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-max-w-3xl tw-mx-auto sm:tw-text-xl"
           >
-            Our&nbsp;
-            <span className="tw-font-bold">
-              Healthcare Profit Enhancement Services
-            </span>
-            &nbsp;are designed for a diverse range of providers, including:
+            Our Healthcare Profit Enhancement Services are designed for a
+            diverse range of providers, including:
           </motion.p>
         </motion.div>
 

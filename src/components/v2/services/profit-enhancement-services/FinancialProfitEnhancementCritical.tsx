@@ -48,16 +48,13 @@ const FinancialProfitEnhancementCritical = () => {
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
             Healthcare providers often face the dual challenges of
-            administrative burdens and revenue leakage. Without robust&nbsp;
-            <span className="tw-font-bold">Profit Enhancement Solutions,</span>
-            &nbsp;practices can find themselves overwhelmed by unpaid claims,
-            long accounts receivable cycles, and increasing operational costs.
-            By partnering with a reliable&nbsp;
-            <span className="tw-font-bold">
-              Financial Profit Enhancement Company USA
-            </span>
-            &nbsp;like Key MedSolutions, you’ll address these obstacles with
-            proven strategies that ensure long-term financial viability.
+            administrative burdens and revenue leakage. Without robust Profit
+            Enhancement Solutions, practices can find themselves overwhelmed by
+            unpaid claims, long accounts receivable cycles, and increasing
+            operational costs. By partnering with a reliable Financial Profit
+            Enhancement Company USA like Key MedSolutions, you’ll address these
+            obstacles with proven strategies that ensure long-term financial
+            viability.
           </p>
           <div className="tw-font-bold">Real Results, Real Impact</div>
         </motion.div>

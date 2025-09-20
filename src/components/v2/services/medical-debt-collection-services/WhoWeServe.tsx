@@ -55,11 +55,7 @@ const WhoWeServe = () => {
               </span>
             </h2>
             <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
-              Key MedSolutions provides &nbsp;
-              <span className="tw-font-bold">
-                medical debt collection services
-              </span>
-              &nbsp;for:
+              Key MedSolutions provides medical debt collection services for:
             </p>
           </motion.div>
           <div className="row">

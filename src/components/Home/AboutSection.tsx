@@ -67,18 +67,11 @@ const AboutSection = () => {
                   and craft strategies that deliver measurable results.
                 </p>
                 <p>
-                  Our expertise spans across&nbsp;
-                  <span className="tw-font-bold">
-                    Medical Billing Services, RCM Consultancy, Medical Coding,
-                  </span>
-                  &nbsp;and&nbsp;
-                  <span className="tw-font-bold">
-                    end to end revenue cycle solutions.
-                  </span>
-                  &nbsp; But it is not just about the services we provide. It is
-                  about how we deliver them. We use advanced&nbsp;
-                  <span className="tw-font-bold">Medical Billing Software</span>
-                  &nbsp;and automation tools to streamline processes, reduce
+                  Our expertise spans across Medical Billing Services, RCM
+                  Consultancy, Medical Coding, and end to end revenue cycle
+                  solutions.But it is not just about the services we provide. It
+                  is about how we deliver them. We use advanced Medical Billing
+                  Software and automation tools to streamline processes, reduce
                   errors, and maximize revenue. At the same time, our team of
                   skilled professionals ensures every detail is handled with
                   care and precision.

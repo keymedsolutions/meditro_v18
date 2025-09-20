@@ -78,16 +78,10 @@ export function WhatSetsUsApart() {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            At Key MedSolutions, we’re not just another&nbsp;
-            <span className="tw-font-bold">
-              Financial Profit Enhancement Company USA;
-            </span>
-            &nbsp;we’re your trusted partner in achieving financial stability
-            and growth. Here’s why healthcare providers nationwide choose
-            our&nbsp;
-            <span className="tw-font-bold">
-              Healthcare Profit Enhancement Services
-            </span>
+            At Key MedSolutions, we’re not just another Financial Profit
+            Enhancement Company USA; we’re your trusted partner in achieving
+            financial stability and growth. Here’s why healthcare providers
+            nationwide choose our Healthcare Profit Enhancement Services
           </p>
         </motion.div>
 

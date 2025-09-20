@@ -82,17 +82,17 @@ export function SmartChoice() {
           </h2>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
             Healthcare providers today face increasing complexities in
-            regulatory compliance and claim reimbursements.&nbsp;
-            <span className="tw-font-bold">
-              Outsourcing Medical Coding Services
-            </span>
-            &nbsp;to a trusted partner like Key MedSolutions allows you to shift
-            focus from administrative tasks to patient care. Our expert team
-            handles everything from initial claims processing to appeals,
-            safeguarding your practice’s revenue and reputation.
+            regulatory compliance and claim reimbursements. Outsourcing Medical
+            Coding Services to a trusted partner like Key MedSolutions allows
+            you to shift focus from administrative tasks to patient care. Our
+            expert team handles everything from initial claims processing to
+            appeals, safeguarding your practice’s revenue and reputation.
           </p>
           <p className="tw-font-bold">
-            <span style={{ borderBottom: "2px solid gray" }} className="tw-pb-1">
+            <span
+              style={{ borderBottom: "2px solid gray" }}
+              className="tw-pb-1"
+            >
               Benefits of Outsourcing:
             </span>
           </p>
@@ -109,7 +109,12 @@ export function SmartChoice() {
                 ease: "easeOut",
                 delay: index * 0.1,
               }}
-              style={{borderLeft:"4px solid #565acf",borderBottom:"0.1px solid #c0c0c0", borderRight:"0.1px solid #c0c0c0",borderTop:"0.1px solid #c0c0c0"}}
+              style={{
+                borderLeft: "4px solid #565acf",
+                borderBottom: "0.1px solid #c0c0c0",
+                borderRight: "0.1px solid #c0c0c0",
+                borderTop: "0.1px solid #c0c0c0",
+              }}
               viewport={{ once: true, amount: 0.2 }}
               className="tw-group tw-bg-white sm:tw-p-8 tw-p-4 tw-rounded-2xl tw-shadow-lg tw-hover:tw-shadow-2xl tw-transition-all tw-duration-300 tw-transform tw-hover:tw-scale-105 hover:tw-bg-accent-500"
             >

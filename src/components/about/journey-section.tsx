@@ -35,12 +35,12 @@ export function JourneySection() {
       <div className="tw-max-w-6xl tw-mx-auto">
         <motion.div className="tw-text-center tw-mb-16" variants={itemVariants}>
           <div className="heading-bx text-center">
-              <Link href="/contact-us">
-            <h6 className="title-ext text-secondary">
+            <Link href="/contact-us">
+              <h6 className="title-ext text-secondary">
                 Join Us Today! / Connect with Us / Chat with Us / Send an Email
                 / Call Today / Schedule a Meeting
-            </h6>
-              </Link>
+              </h6>
+            </Link>
             <h3>Our Journey: Innovating Healthcare Solutions Since 2023</h3>
           </div>
         </motion.div>
@@ -48,16 +48,11 @@ export function JourneySection() {
         <div className="tw-flex tw-flex-col tw-gap-y-2">
           <div>
             In 2023, Key MedSolutions was founded with the intention of
-            simplifying healthcare operations. We provide&nbsp;
-            <span className="tw-font-bold">practice management services</span>
-            &nbsp;that increase workflow effectiveness and boost your
-            company&apos;s overall productivity. Our extensive knowledge
-            of&nbsp;
-            <span className="tw-font-bold">
-              healthcare technology solutions
-            </span>
-            &nbsp;enables providers to adopt novel concepts and maintain their
-            lead in a rapidly evolving industry.
+            simplifying healthcare operations. We provide practice management
+            services that increase workflow effectiveness and boost your
+            company&apos;s overall productivity. Our extensive knowledge of
+            healthcare technology solutions enables providers to adopt novel
+            concepts and maintain their lead in a rapidly evolving industry.
           </div>
           <div>
             We help healthcare organizations develop sustainably with

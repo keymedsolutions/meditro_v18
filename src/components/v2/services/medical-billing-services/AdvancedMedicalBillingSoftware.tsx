@@ -64,19 +64,11 @@ const AdvancedMedicalBillingSoftware = () => {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            Our success as a&nbsp;
-            <span className="tw-font-bold">Medical Billing Company USA</span>
-            &nbsp;is built on leveraging the power of&nbsp;
-            <span className="tw-font-bold">
-              Advanced Medical Billing Software.
-            </span>
-            &nbsp;The right technology ensures your revenue operations are not
-            only efficient but also secure and compliant. With our
-            state-of-the-art&nbsp;
-            <span className="tw-font-bold">
-              Electronic Medical Billing Services,
-            </span>
-            &nbsp;you benefit from:
+            Our success as a Medical Billing Company USA is built on leveraging
+            the power of Advanced Medical Billing Software. The right technology
+            ensures your revenue operations are not only efficient but also
+            secure and compliant. With our state-of-the-art Electronic Medical
+            Billing Services, you benefit from:
           </p>
         </motion.div>
 

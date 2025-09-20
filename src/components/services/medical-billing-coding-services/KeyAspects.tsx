@@ -44,14 +44,12 @@ const KeyAspects = () => {
       title: "Medical Billing and Coding Services",
       description:
         "Experience the synergy of outsourced coding and billing solutions with our integrated Medical Billing and Coding Services. By optimizing both processes, we enhance the ROI of your revenue cycle management.",
-      image:
-        "/images/doctor-with-laptop.png",
+      image: "/images/doctor-with-laptop.png",
     },
   ];
 
   return (
     <section className="tw-py-20 tw-relative tw-overflow-hidden tw-bg-gray-100">
-    
       <div className="container tw-mx-auto tw-px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -77,12 +75,9 @@ const KeyAspects = () => {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            At Key MedSolutions, we deliver flexible and scalable&nbsp;
-            <span className="tw-font-bold">
-              Medical Coding Outsourcing Services
-            </span>
-            &nbsp;designed to meet the evolving needs of healthcare providers.
-            Here are the key services we proudly offer
+            At Key MedSolutions, we deliver flexible and scalable\ Medical
+            Coding Outsourcing Services designed to meet the evolving needs of
+            healthcare providers. Here are the key services we proudly offer
           </p>
         </motion.div>
 

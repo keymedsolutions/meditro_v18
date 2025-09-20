@@ -27,11 +27,8 @@ export function HowItWorks() {
             &nbsp; Company in the USA
           </h2>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            Key MedSolutions has gained recognition as a leading&nbsp;
-            <span className="tw-font-bold">
-              Medical Coding Services Company in the USA
-            </span>
-            &nbsp;for several reasons
+            Key MedSolutions has gained recognition as a leading Medical Coding
+            Services Company in the USA for several reasons
           </p>
         </motion.div>
 

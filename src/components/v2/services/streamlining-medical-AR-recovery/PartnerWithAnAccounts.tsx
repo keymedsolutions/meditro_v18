@@ -76,11 +76,8 @@ const PartnerWithAnAccounts = () => {
                 <p>
                   At Key MedSolutions, we don’t just recover your unpaid
                   revenue; we strengthen your overall billing process for
-                  lasting results. As a recognized leader in&nbsp;
-                  <span className="tw-font-bold">
-                    Medical AR Billing Services USA,
-                  </span>
-                  &nbsp; our team is committed to delivering results with
+                  lasting results. As a recognized leader in Medical AR Billing
+                  Services USA, our team is committed to delivering results with
                   honesty, transparency, and innovation.
                 </p>
               </motion.div>

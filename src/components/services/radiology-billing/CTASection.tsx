@@ -48,15 +48,10 @@ export function CTASection() {
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
             Position your practice for sustainable financial success with a
-            recognized, local&nbsp;
-            <span className="tw-font-bold">
-              Radiology Medical Billing Company USA.
-            </span>
-            &nbsp;Our robust &nbsp;
-            <span className="tw-font-bold">Radiology Billing Services</span>
-            &nbsp;are built on a foundation of advanced technology, proven
-            compliance, and a team of certified professionals dedicated to
-            helping you achieve your revenue goals.
+            recognized, local Radiology Medical Billing Company USA. Our robust
+            Radiology Billing Services are built on a foundation of advanced
+            technology, proven compliance, and a team of certified professionals
+            dedicated to helping you achieve your revenue goals.
           </motion.p>
 
           <motion.p
@@ -66,21 +61,11 @@ export function CTASection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            <span className="tw-font-bold">Contact us today</span>&nbsp;to learn
-            more about our tailored&nbsp;
-            <span className="tw-font-bold">
-              Medical Billing Services for Radiology,
-            </span>
-            &nbsp;advanced&nbsp;
-            <span className="tw-font-bold">
-              Radiology Medical Billing Tools,
-            </span>
-            industry-leading&nbsp;
-            <span className="tw-font-bold">
-              Accounts Receivable Recovery Services,
-            </span>
-            &nbsp;and the expert support you need to focus fully on patient care
-            while we drive your bottom line.
+            Contact us today to learn more about our tailored Medical Billing
+            Services for Radiology, advanced Radiology Medical Billing Tools,
+            industry-leading Accounts Receivable Recovery Services, and the
+            expert support you need to focus fully on patient care while we
+            drive your bottom line.
           </motion.p>
         </motion.div>
       </div>

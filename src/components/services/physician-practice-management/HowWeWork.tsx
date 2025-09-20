@@ -64,8 +64,8 @@ export default function HowWeWork() {
           <p className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto">
             At Key MedSolutions, we believe in a personalized approach.Each
             practice is unique, and our solutions are tailored to fit your
-            specific needs&nbsp;<span className="tw-font-bold">Partnering with us comes with clear advantages
-            tailored to your practice</span>
+            specific needs Partnering with us comes with clear advantages
+            tailored to your practice.
           </p>
         </motion.div>
 
