@@ -175,7 +175,7 @@ const PhysicianBillingServicesV2 = () => {
           {/* Hero Section */}
           <Hero />
           {/* <ExperienceSeamlessBilling /> */}
-          <HealthcareProviders />
+          {/* <HealthcareProviders /> */}
           {/* Key Benefits */}
           <WhyChooseOurPhysicianBillingSolution />
 

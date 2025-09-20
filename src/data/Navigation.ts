@@ -21,7 +21,7 @@ export const MenuItems: any = [
           },
           {
             label: "Cardiology Medical Billing",
-            path: "/cardiology-medical-billing",
+            path: "/cardiology-billing-services",
           },
         ],
       },
@@ -59,7 +59,7 @@ export const MenuItems: any = [
         label: "Denial Management Services",
         path: "/denial-management-service",
       },
-      { label: "Physician Credentialing", path: "/medical-credentialing-services" },
+      { label: "Physician Credentialing", path: "/Physician-credentialing-services" },
       { label: "Medical Billing Services", path: "/medical-billing-company" },
     ],
   },

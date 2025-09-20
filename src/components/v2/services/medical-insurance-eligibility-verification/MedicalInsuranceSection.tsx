@@ -164,7 +164,7 @@ const MedicalInsuranceSection = () => {
                   />
                   <p className="tw-text-gray-800">
                     Explore our&nbsp;
-                    <Link href="/medical-credentialing-services">
+                    <Link href="/Physician-credentialing-services">
                       <span className="tw-font-semibold tw-text-indigo-700">
                         Physician Credentialing Services
                       </span>

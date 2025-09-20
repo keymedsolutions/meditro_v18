@@ -12,40 +12,6 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 function RadiologyHero() {
   const containerRef = useRef(null);
 
-  const mainTitle = [
-    {
-      text: "Radiology",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Medical",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Billing",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Services.",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Maximize",
-    },
-    {
-      text: "Your",
-    },
-    {
-      text: "Revenue",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Accuracy",
-    },
-  ];
-
   return (
     <React.Fragment>
       <section
@@ -77,12 +43,12 @@ function RadiologyHero() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                   Optimise Revenue with Expert&nbsp;
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Radiology Billing Services
                   </span>
-                </h2>
+                </h1>
               </motion.div>
 
               <motion.div

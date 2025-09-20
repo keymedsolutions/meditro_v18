@@ -45,9 +45,9 @@ const AccelerateYourRevenue = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h1 className="tw-text-3xl md:tw-text-5xl lg:tw-text-6xl tw-font-black tw-text-gradient tw-mb-6 tw-leading-tight">
+            <div className="tw-text-3xl md:tw-text-5xl lg:tw-text-6xl tw-font-black tw-text-gradient tw-mb-6 tw-leading-tight">
               Accelerate Your Revenue
-            </h1>
+            </div>
             <motion.div
               className="tw-text-2xl sm:tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-primary tw-mb-8"
               initial={{ opacity: 0, scale: 0.8 }}

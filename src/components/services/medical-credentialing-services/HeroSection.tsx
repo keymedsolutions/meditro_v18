@@ -29,7 +29,7 @@ const HeroSection = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-space-y-8"
           >
-            <motion.h2
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
@@ -40,7 +40,7 @@ const HeroSection = () => {
               <span className="tw-text-transparent tw-bg-clip-text tw-bg-gradient-to-r tw-from-blue-600 tw-to-indigo-600">
                 Simplify Credentialing. Maximize Revenue.
               </span>
-            </motion.h2>
+            </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}

@@ -65,12 +65,12 @@ export function HeroSection() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+              <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                 <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                  Nephrology Medical Billing Solutions
                 </span>
                 &nbsp;by Key MedSolutions
-              </h2>
+              </h1>
             </motion.div>
 
             <motion.div
@@ -78,7 +78,7 @@ export function HeroSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+              className="tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
               Maximize your nephrology practice’s financial performance with the
               trusted Nephrology Medical Billing experts at Key MedSolutions.
@@ -104,7 +104,7 @@ export function HeroSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-text-xl tw-text-gray-500 tw-mb-10 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+              className=" tw-text-gray-500 tw-mb-10 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
               Contact Key MedSolutions today for a free, personalized
               consultation and learn how our team can streamline your workflow

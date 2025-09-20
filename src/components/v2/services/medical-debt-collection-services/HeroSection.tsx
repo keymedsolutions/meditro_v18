@@ -12,28 +12,6 @@ import { GlassCard } from "@/components/services/radiology-billing/glass-card";
 function HeroSection() {
   const containerRef = useRef(null);
 
-  const mainTitle = [
-    {
-      text: "Expert",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Medical",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Debt",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Collection",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Services",
-    },
-  ];
-
   return (
     <React.Fragment>
       <section
@@ -60,12 +38,12 @@ function HeroSection() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Expert Medical
                   </span>
                   &nbsp;Debt Collection Services
-                </h2>
+                </h1>
               </motion.div>
 
               <motion.div

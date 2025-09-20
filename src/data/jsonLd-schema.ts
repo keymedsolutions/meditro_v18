@@ -341,7 +341,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/cardiology-medical-billing": [
+  "/cardiology-billing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -380,7 +380,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/cardiology-medical-billing",
+      url: "https://www.keymedsolution.com/cardiology-billing-services",
       category: "Cardiology Medical Billing Services",
     },
     {
@@ -1202,7 +1202,7 @@ export const jsonLdSchema: any = {
       },
     },
   ],
-  "/medical-credentialing-services": [
+  "/Physician-credentialing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1211,7 +1211,7 @@ export const jsonLdSchema: any = {
       description:
         "Optimize your practice with medical and insurance credentialing services. Ensure timely approvals, reduce claim denials, and improve revenue cycle efficiency.",
       category: "Credentialing Services",
-      url: "https://www.keymedsolution.com/medical-credentialing-services",
+      url: "https://www.keymedsolution.com/Physician-credentialing-services",
       provider: {
         "@type": "Organization",
         name: "Key MedSolutions",

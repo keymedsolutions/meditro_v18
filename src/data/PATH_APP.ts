@@ -10,7 +10,7 @@ export const APP_PATH = {
         path: "/internal-medicine-medical-billing",
       },
       radiologyBilling: { path: "/radiology-billing-services" },
-      cardiologyBilling: { path: "/cardiology-medical-billing" },
+      cardiologyBilling: { path: "/cardiology-billing-services" },
     },
 
     profitEnhancement: {
@@ -30,7 +30,7 @@ export const APP_PATH = {
     },
     rcmCompany: { path: "/revenue-cycle-management-services" },
     denialMgmt: { path: "/denial-management-service" },
-    credentialing: { path: "/medical-credentialing-services" },
+    credentialing: { path: "/Physician-credentialing-services" },
     billingServices: { path: "/medical-billing-company" },
   },
   specialties: { path: "/our-specialities" },

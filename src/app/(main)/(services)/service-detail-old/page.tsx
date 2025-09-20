@@ -74,7 +74,7 @@ const ServiceDetails = () => {
                                         <h4 className="title mb-10">Popular Questions</h4>
                                         <p className="mb-0">Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
                                     </div>
-                                    <Accordion defaultActiveKey="0" className="accordion ttr-accordion1">
+                                    <Accordion className="accordion ttr-accordion1">
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header>How Doctor Can Ease Your Pain?</Accordion.Header>
                                             <Accordion.Body>

@@ -7,37 +7,7 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const HeroSection = () => {
-  const mainTitle = [
-    {
-      text: "Elevate",
-    },
-    {
-      text: "Your",
-    },
-    {
-      text: "Financial",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Performance",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Expert",
-    },
-    {
-      text: "Profit",
-    },
-    {
-      text: "Enhancement",
-    },
-    {
-      text: "Services",
-    },
-  ];
+ 
   return (
     <React.Fragment>
       <section
@@ -59,13 +29,13 @@ const HeroSection = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                   Elevate Your Financial Performance with Expert&nbsp;
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Profit Enhancement Services
                   </span>
                   &nbsp;
-                </h2>
+                </h1>
               </motion.div>
 
               <motion.div
