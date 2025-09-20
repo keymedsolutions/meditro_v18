@@ -52,7 +52,7 @@ export const MenuItems: any = [
           },
           {
             label: "Cardiology Billing",
-            path: "/cardiology-medical-billing",
+            path: "/cardiology-billing-services",
             icon: Heart,
           },
         ],
@@ -108,7 +108,7 @@ export const MenuItems: any = [
       },
       {
         label: "Physician Credentialing",
-        path: "/medical-credentialing-services",
+        path: "/Physician-credentialing-services",
         icon: BadgeCheck,
       },
       {

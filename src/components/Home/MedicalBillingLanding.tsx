@@ -90,11 +90,11 @@ export default function MedicalBillingLanding() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-center tw-max-w-4xl tw-mx-auto"
           >
-            <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-text-gray-900 tw-mb-6 tw-leading-tight">
+            <div className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-text-gray-900 tw-mb-6 tw-leading-tight">
               We Handle Your <span className="tw-text-blue-600">Billing</span>
-              &nbsp; So You Can Handle Your&nbsp;
+              &nbsp;So You Can Handle Your&nbsp;
               <span className="tw-text-green-600">Patients</span>
-            </h1>
+            </div>
             <p className="tw-text-lg tw-text-gray-600 tw-mb-8 tw-leading-relaxed">
               Smart, Simple, and Stress Free Medical Billing Services
             </p>

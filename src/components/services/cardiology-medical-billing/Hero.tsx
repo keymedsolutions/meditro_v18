@@ -24,31 +24,18 @@ const Hero = () => {
         <div className="tw-container tw-mx-auto tw-px-4">
           <div className="tw-min-h-[70vh]  tw-container tw-mx-auto tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-px-6">
             <div className="tw-mb-8 md:tw-mb-0 md:tw-pr-8">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-5xl md:tw-text-6xl lg:tw-text-7xl tw-font-bold tw-font-serif  tw-mb-8 tw-leading-tight"
-              >
-                {/* <TypewriterEffect
-                  words={mainTitle}
-                  className="!tw-text-gray-900"
-                /> */}
-              </motion.h1>
-
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-font-serif tw-text-foreground">
                   Streamline Your Revenue with Expert&nbsp;
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Cardiology Billing Services
                   </span>
-                </h2>
+                </h1>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -57,7 +44,11 @@ const Hero = () => {
                 viewport={{ once: true, amount: 0.2 }}
                 className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                Make billing effortless with our expert Cardiology Medical Billing Services. Save time, boost revenue, and ensure compliance when you outsource to the most trusted cardiology billing company in the USA. Focus on patient care while we manage your financial health with precision.
+                Make billing effortless with our expert Cardiology Medical
+                Billing Services. Save time, boost revenue, and ensure
+                compliance when you outsource to the most trusted cardiology
+                billing company in the USA. Focus on patient care while we
+                manage your financial health with precision.
               </motion.div>
 
               <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">

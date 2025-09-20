@@ -392,7 +392,7 @@ const Footer = () => {
                   label: "Radiology Billing Services",
                 },
                 {
-                  href: "/cardiology-medical-billing",
+                  href: "/cardiology-billing-services",
                   label: "Cardiology Medical Billing",
                 },
               ].map((link, index) => (

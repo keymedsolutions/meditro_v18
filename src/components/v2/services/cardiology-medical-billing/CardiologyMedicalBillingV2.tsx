@@ -23,7 +23,7 @@ const CardiologyMedicalBillingV2 = () => {
     "HIPAA-Compliant Billing Practices",
   ]
   const title = "Accurate and Efficient Cardiology Medical Billing Services for Healthcare Professionals";
-  const path = "/cardiology-medical-billings"
+  const path = "/cardiology-billing-services"
 
   const mid = Math.ceil(services.length / 2);
   const firstHalf = services.slice(0, mid);

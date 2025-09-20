@@ -31,7 +31,7 @@ const accordionItems = [
   ];
 const PhysicianBillingAccordion = () => {
     return (
-        <Accordion defaultActiveKey="" className="accordion ttr-accordion1">
+        <Accordion className="accordion ttr-accordion1">
       {accordionItems.map((item, index) => (
         <Accordion.Item eventKey={index.toString()} key={index}>
           <Accordion.Header>{item.title}</Accordion.Header>

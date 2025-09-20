@@ -18,24 +18,6 @@ import Image from "next/image";
 import React from "react";
 
 export function ArRecoveryHero() {
-  const mainTitle = [
-    {
-      text: "Accounts",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Receivable",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Recovery",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Solutions",
-    },
-  ];
-
   return (
     <React.Fragment>
       <section className="tw-w-full tw-relative tw-min-h-[90vh] tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
@@ -153,12 +135,12 @@ export function ArRecoveryHero() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Accounts Receivable
                   </span>
                   &nbsp;Recovery Solutions
-                </h2>
+                </h1>
               </motion.div>
 
               <motion.div

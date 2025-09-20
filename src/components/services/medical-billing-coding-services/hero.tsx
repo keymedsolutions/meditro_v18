@@ -16,41 +16,6 @@ import {
 import Image from "next/image";
 
 export function Hero() {
-  const mainTitle = [
-    {
-      text: "Streamline",
-    },
-    {
-      text: "Your",
-    },
-    {
-      text: "Revenue",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "Cycle",
-      className: "!tw-text-accent-500 ",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Your",
-    },
-    {
-      text: "Expert",
-    },
-    {
-      text: "Medical",
-    },
-    {
-      text: "Coding",
-    },
-    {
-      text: "Services",
-    },
-  ];
-
   return (
     <section className="tw-relative tw-overflow-hidden tw-min-h-[80vh]  sm:tw-px-8 tw-px-4 tw-flex tw-items-center">
       <div className="tw-absolute tw-inset-0"></div>
@@ -83,13 +48,13 @@ export function Hero() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+              <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                 Streamline Your Revenue Cycle with Expert&nbsp;
                 <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                   Medical Coding Services
                 </span>
                 &nbsp;
-              </h2>
+              </h1>
             </motion.div>
 
             <motion.div

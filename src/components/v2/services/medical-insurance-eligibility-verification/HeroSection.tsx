@@ -73,14 +73,14 @@ export function HeroSection() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                   Boost Your&nbsp;
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Revenue Cycle Performance
                   </span>
                   &nbsp;with Expert Medical Insurance Eligibility Verification
                   Services
-                </h2>
+                </h1>
               </motion.div>
 
               <motion.div

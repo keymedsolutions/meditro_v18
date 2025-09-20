@@ -59,7 +59,7 @@ const AdvancedMedicalBillingSoftware = () => {
             <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
               Advanced Medical Billing&nbsp;
               <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-                Software & Electronic Services
+                Software&nbsp;<span className="tw-font-sans">&</span>&nbsp;Electronic Services
               </span>
             </h2>
           </motion.div>

@@ -123,7 +123,6 @@ const Faqs = () => {
           <div className="row">
             <div className="col-lg-12">
               <Accordion
-                defaultActiveKey=""
                 className="accordion ttr-accordion1"
               >
                 {faqs.map((faq, index) => (

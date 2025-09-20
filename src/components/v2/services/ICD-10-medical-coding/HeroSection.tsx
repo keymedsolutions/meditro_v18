@@ -83,13 +83,13 @@ function HeroSection() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     ICD-10 Medical Coding Services:
                   </span>
-                  &nbsp;Streamline Medical Coding & Maximize Your Practice
+                  &nbsp;Streamline Medical Coding&nbsp;<span className="!tw-font-sans">&</span>&nbsp;Maximize Your Practice
                   Performance
-                </h2>
+                </h1>
               </motion.div>
 
               <motion.div
@@ -97,7 +97,7 @@ function HeroSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+                className=" tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
                 Empower your healthcare organization with expert ICD-10 Medical
                 Coding Services for accuracy, compliance, and increased revenue.
@@ -140,7 +140,7 @@ function HeroSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
                 viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-xl tw-text-gray-500 tw-mt-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+                className=" tw-text-gray-500 tw-mt-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
                 Complete ICD-10 Medical Coding Solutions for Healthcare
                 Providers
@@ -176,42 +176,46 @@ function HeroSection() {
                     alt="Background"
                     className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-z-[-10]"
                   />
+                  <Image
+                    src={"/images/icd-10-medical-coding-services.png"}
+                    alt="ICD-10 Medical Coding"
+                    width={500}
+                    height={500}
+                    className="tw-relative tw-w-full tw-h-auto tw-rounded-2xl tw-shadow-2xl"
+                    priority
+                  />
                   <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-1 tw-bg-gradient-to-r tw-from-blue-600 tw-via-purple-600 tw-to-pink-500 tw-rounded-t-2xl"></div>
                   <div className="tw-absolute -tw-bottom-6 -tw-right-6 tw-w-32 tw-h-32 tw-bg-gradient-to-br tw-from-blue-600 tw-to-purple-600 tw-rounded-full tw-blur-xl tw-opacity-30"></div>
                   <div className="tw-absolute -tw-top-6 -tw-left-6 tw-w-32 tw-h-32 tw-bg-gradient-to-br tw-from-pink-400 tw-to-purple-600 tw-rounded-full tw-blur-xl tw-opacity-30"></div>
-
-                  <div className="tw-flex tw-flex-col tw-z-50">
-                    <p>
-                      Accurate and compliant ICD-10 medical coding services are
-                      essential for healthcare providers aiming for consistent,
-                      streamlined billing and maximized reimbursements. The
-                      modern healthcare environment requires detailed
-                      documentation, effective communication with payers, and
-                      attentiveness to industry standards. With over 68,000
-                      diagnosis codes and 87,000 procedure codes, adopting a
-                      specialized ICD-10 Medical Coding Solution can prevent
-                      claim rejections and optimize operational efficiency. By
-                      leveraging our expertise as a leading ICD-10 Coding
-                      Company, your organization can take control of every facet
-                      of billing without losing sight of quality patient care.
-                    </p>
-                    <p>
-                      A trusted ICD-10 Medical Coding Company is your partner in
-                      achieving compliance, accuracy, and revenue integrity.
-                      With the complexity of the ICD-10 system, working with
-                      certified ICD-10 Coding Specialists reduces manual errors,
-                      ensures adherence to the latest guidelines, and mitigates
-                      financial risk. Our experience spans small clinics to
-                      large hospitals, with flexible approaches tailored for
-                      every practice’s size and specialty.
-                    </p>
-                  </div>
                 </GlassCard>
               </motion.div>
             </motion.div>
           </div>
         </div>
       </section>
+      <div className="container tw-mx-autotw-flex tw-flex-col tw-z-50">
+        <p>
+          Accurate and compliant ICD-10 medical coding services are essential
+          for healthcare providers aiming for consistent, streamlined billing
+          and maximized reimbursements. The modern healthcare environment
+          requires detailed documentation, effective communication with payers,
+          and attentiveness to industry standards. With over 68,000 diagnosis
+          codes and 87,000 procedure codes, adopting a specialized ICD-10
+          Medical Coding Solution can prevent claim rejections and optimize
+          operational efficiency. By leveraging our expertise as a leading
+          ICD-10 Coding Company, your organization can take control of every
+          facet of billing without losing sight of quality patient care.
+        </p>
+        <p>
+          A trusted ICD-10 Medical Coding Company is your partner in achieving
+          compliance, accuracy, and revenue integrity. With the complexity of
+          the ICD-10 system, working with certified ICD-10 Coding Specialists
+          reduces manual errors, ensures adherence to the latest guidelines, and
+          mitigates financial risk. Our experience spans small clinics to large
+          hospitals, with flexible approaches tailored for every practice’s size
+          and specialty.
+        </p>
+      </div>
     </React.Fragment>
   );
 }

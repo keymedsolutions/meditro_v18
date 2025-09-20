@@ -80,7 +80,7 @@ export default function ProcessSteps({
           </div>
           {/* </div> */}
           <h4
-            className={`tw-font-display tw-text-xl tw-font-semibold tw-mb-2 group-hover:${colorClasses.text} tw-transition-colors`}
+            className={` tw-text-xl tw-font-semibold tw-mb-2 group-hover:${colorClasses.text} tw-transition-colors`}
           >
             {title}
           </h4>

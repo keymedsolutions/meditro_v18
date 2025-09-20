@@ -81,7 +81,6 @@ const FAQs = () => {
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-mt-10">
           <div>
             <Accordion
-              defaultActiveKey="0"
               className="accordion ttr-accordion1"
             >
               {firstHalf.map((faq, index) => (
@@ -94,7 +93,6 @@ const FAQs = () => {
           </div>
           <div>
             <Accordion
-              defaultActiveKey="1"
               className="accordion1 ttr-accordion1"
             >
               {secondHalf.map((faq, index) => (

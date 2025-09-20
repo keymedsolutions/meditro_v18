@@ -249,7 +249,7 @@ export const MetaData = [
       "Increase revenue with specialized radiology billing services, expert coding, accurate claim submissions, and enhanced collection processes. Book a demo today!",
   },
   {
-    PageURL: "/cardiology-medical-billing",
+    PageURL: "/cardiology-billing-services",
     MetaTitle: "Expert Cardiology Medical Billing Services by KeyMed",
     MetaDescription:
       "Our cardiology medical billing services streamline revenue cycle management, boosting collections and financial outcomes for your practice. Book a demo today!",
@@ -299,7 +299,7 @@ export const MetaData = [
       "Streamline operations with Key MedSolutions' Denial Management Services. Recover lost revenue, reduce claim denials, and enhance your cash flow. Contact Now!",
   },
   {
-    PageURL: "/medical-credentialing-services",
+    PageURL: "/Physician-credentialing-services",
     MetaTitle: "Medical Credentialing Services | Simplify Your Practice with KMS",
     MetaDescription:
       "Optimize your workflow with Key MedSolutions’ trusted medical credentialing services. Stay compliant, grow revenue, and prioritize care. Get started today!",
