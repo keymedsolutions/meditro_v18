@@ -28,6 +28,7 @@ export const APP_PATH = {
     insuranceVerification: {
       path: "/medical-insurance-eligibility-verification",
     },
+    nephrology:{path:"nephrology-medical-billing"},
     rcmCompany: { path: "/revenue-cycle-management-services" },
     denialMgmt: { path: "/denial-management-service" },
     credentialing: { path: "/Physician-credentialing-services" },
@@ -39,4 +40,5 @@ export const APP_PATH = {
     path: "https://calendly.com/key_medsolutions_inc/30min",
     external: true,
   },
+  contactus: { path: "/contact-us" },
 };

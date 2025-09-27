@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { Phone } from "lucide-react";
+import Link from "next/link";
 
 export function CTASection() {
   return (
@@ -53,38 +55,6 @@ export function CTASection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-5 tw-justify-center tw-mb-8"
           >
-            <button type="button" className="button-get-started">
-              <span className="fold"></span>
-
-              <div className="points_wrapper">
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-              </div>
-
-              <span className="inner">
-                <svg
-                  className="icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2.5"
-                >
-                  <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
-                </svg>
-                Contact Us Today
-              </span>
-            </button>
             <button className="tw-relative tw-inline-flex tw-items-center tw-justify-center tw-px-8 tw-py-2.5 tw-overflow-hidden tw-tracking-tighter tw-text-white tw-bg-gray-800 tw-rounded-md tw-group">
               <span className="tw-absolute tw-w-0 tw-h-0 tw-transition-all tw-duration-500 tw-ease-out tw-bg-orange-600 tw-rounded-full group-hover:tw-w-60 group-hover:tw-h-56"></span>
 
@@ -124,6 +94,40 @@ export function CTASection() {
                 Learn More
               </span>
             </button>
+            <Link href={APP_PATH.contactus.path}>
+              <button type="button" className="button-get-started">
+                <span className="fold"></span>
+
+                <div className="points_wrapper">
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                </div>
+
+                <span className="inner">
+                  <svg
+                    className="icon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                  >
+                    <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                  </svg>
+                  Contact Us Today
+                </span>
+              </button>
+            </Link>
           </motion.div>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -132,7 +136,7 @@ export function CTASection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto tw-leading-relaxed"
           >
-            to find out how our expert team and comprehensive Medical RCM
+            to find out how our expert team and comprehensive Medical&nbsp;<Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-inherit">RCM</Link>&nbsp;
             Solutions can empower your internal medicine practice to thrive.
           </motion.p>
           <motion.p

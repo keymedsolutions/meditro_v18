@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const DoctorAndCareGiverImage = "/images/home/doctorandcaregiver.jpg";
 
 export function PracticeManagementSection() {
@@ -96,10 +98,17 @@ export function PracticeManagementSection() {
                   today to discover how our medical practice management services
                   can strengthen your operations and drive long-term success.
                   Whether you need a practice management consultant, help with
-                  denial management services, or support with Medical Practice
-                  Management Consulting, we&apos;re here to help. We&apos;ll
-                  manage the complexities of your practice, so you can
-                  concentrate on caring for your patients.
+                  &nbsp;
+                  <Link
+                    href={APP_PATH.services.denialMgmt.path}
+                    className="tw-font-semibold tw-text-inherit hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit"
+                  >
+                    denial management services
+                  </Link>
+                  , or support with Medical Practice Management Consulting,
+                  we&apos;re here to help. We&apos;ll manage the complexities of
+                  your practice, so you can concentrate on caring for your
+                  patients.
                 </div>
 
                 <div className="!tw-text-start">

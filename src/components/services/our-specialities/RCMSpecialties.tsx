@@ -1,8 +1,10 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -20,8 +22,18 @@ const services = [
       },
       {
         title: "Primary Care",
-        description:
-          "Scalable RCM support for busy clinics and solo providers.",
+        description: (
+          <>
+            Scalable&nbsp;
+            <Link
+              href={APP_PATH.services.rcmCompany.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              RCM
+            </Link>
+            &nbsp;support for busy clinics and solo providers.
+          </>
+        ),
       },
     ],
     img: "/images/our-specialities/FamilyAndPrimaryCare.png",
@@ -159,8 +171,14 @@ export default function RCMSpecialties() {
           </motion.h2>
           <p className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto">
             Discover the diversity of medical billing specialties in US
-            healthcare that we support, each with tailored medical billing
-            solutions to suit your needs:
+            healthcare that we support, each with tailored&nbsp;
+            <Link
+              href={APP_PATH.services.billingServices.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              medical billing solutions
+            </Link>
+            &nbsp;to suit your needs:
           </p>
         </motion.div>
 

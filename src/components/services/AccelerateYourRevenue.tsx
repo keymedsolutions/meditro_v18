@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Phone } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const AccelerateYourRevenue = () => {
   return (
@@ -70,13 +72,23 @@ const AccelerateYourRevenue = () => {
               Looking to cut down denials, boost collections, and l give your
               team more time to focus on patient care? Whether you want support
               for everyday billing or need advanced specialty help with&nbsp;
-              <span className="tw-text-accent-600 tw-font-bold">
-                Nephrology Billing Services, ICD-10 Coding Services,
-              </span>
-              &nbsp;or&nbsp;
-              <span className="tw-text-accent-600 tw-font-bold">
+              <Link
+                href={APP_PATH.services.nephrology.path}
+                className="tw-font-semibold tw-text-inherit"
+              >
+                Nephrology Billing Services
+              </Link>
+              ,&nbsp;
+              <Link
+                href={APP_PATH.services.codingServices.icd10Coding.path}
+                className="tw-font-semibold tw-text-inherit"
+              >
+                ICD-10 Coding Services
+              </Link>
+              , &nbsp;or&nbsp;
+              <Link href={APP_PATH.services.physicianBilling.path} className="tw-font-semibold tw-text-inherit">
                 Physician Billing Solutions,
-              </span>
+              </Link>
               &nbsp;Key Med Solutions is your trusted resource.
             </p>
           </motion.div>

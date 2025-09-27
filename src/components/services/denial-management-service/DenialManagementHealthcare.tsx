@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   AlertTriangle,
@@ -9,6 +10,7 @@ import {
   BarChart3,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const DenialManagementHealthcare = () => {
   return (
@@ -34,10 +36,16 @@ const DenialManagementHealthcare = () => {
           </h2>
           <p className="tw-max-w-4xl tw-mx-auto tw-text-center">
             Insurance denials pose a major challenge for healthcare providers,
-            resulting in revenue loss and reduced operational efficiency. At Key
-            MedSolutions, we understand the complexities of denial management in
-            healthcare and offer solutions that address these challenges
-            head-on.
+            resulting in revenue loss and reduced operational efficiency.
+            At&nbsp;
+            <Link
+              href={APP_PATH.home.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              Key MedSolutions
+            </Link>
+            , we understand the complexities of denial management in healthcare
+            and offer solutions that address these challenges head-on.
           </p>
         </motion.div>
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-mb-16">

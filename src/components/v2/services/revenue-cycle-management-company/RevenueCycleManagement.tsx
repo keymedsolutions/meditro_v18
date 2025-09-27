@@ -1,3 +1,4 @@
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   CheckCircle,
@@ -8,44 +9,74 @@ import {
   BarChart3,
   Stethoscope,
 } from "lucide-react";
+import Link from "next/link";
 
 const RevenueCycleManagement = () => {
   const services = [
     {
       icon: <Shield className="tw-w-8 tw-h-8 tw-text-blue-600" />,
       title: "Insurance Eligibility and Benefits Verification",
-      description:
-        "Ensure that patient coverage is validated before services are rendered, minimizing denial risks from the outset.",
+      description: (
+        <>
+          Ensure that patient coverage is validated before services are
+          rendered, minimizing denial risks from the outset.
+        </>
+      ),
     },
     {
       icon: <FileText className="tw-w-8 tw-h-8 tw-text-purple-600" />,
       title: "Medical Billing Services",
-      description:
-        "Our Medical Billing Services integrate seamlessly into your practice, offering efficient claims processing, payment posting, and patient statement management.",
+      description: (
+        <>
+          Our&nbsp;
+          <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+            Medical Billing
+          </Link>
+          &nbsp;Services integrate seamlessly into your practice, offering
+          efficient claims processing, payment posting, and patient statement
+          management.
+        </>
+      ),
     },
     {
       icon: <CheckCircle className="tw-w-8 tw-h-8 tw-text-green-600" />,
       title: "Claims Management & Denial Resolution",
-      description:
-        "From initial submission to follow-up, we ensure accurate claims processing while rectifying denied claims in a timely manner.",
+      description: (
+        <>
+          From initial submission to follow-up, we ensure accurate claims
+          processing while rectifying denied claims in a timely manner.
+        </>
+      ),
     },
     {
       icon: <DollarSign className="tw-w-8 tw-h-8 tw-text-amber-600" />,
       title: "Accounts Receivable Management",
-      description:
-        "Recover outstanding payments effectively and improve your cash flow with our robust A/R solutions.",
+      description: (
+        <>
+          Recover outstanding payments effectively and improve your cash flow
+          with our robust A/R solutions.
+        </>
+      ),
     },
     {
       icon: <Stethoscope className="tw-w-8 tw-h-8 tw-text-red-600" />,
       title: "Specialty Billing Services",
-      description:
-        "We specialize in billing for niche practices, including radiology, cardiology, behavioral health, and more.",
+      description: (
+        <>
+          We specialize in billing for niche practices, including radiology,
+          cardiology, behavioral health, and more.
+        </>
+      ),
     },
     {
       icon: <BarChart3 className="tw-w-8 tw-h-8 tw-text-cyan-600" />,
       title: "Revenue Cycle Optimization",
-      description:
-        "By tracking performance against key metrics, our expert team optimizes workflows and identifies opportunities for improved efficiency.",
+      description: (
+        <>
+          By tracking performance against key metrics, our expert team optimizes
+          workflows and identifies opportunities for improved efficiency.
+        </>
+      ),
     },
   ];
 
@@ -67,7 +98,14 @@ const RevenueCycleManagement = () => {
             </span>
           </h2>
           <p className="tw-text-center tw-max-w-4xl tw-mx-auto">
-            At Key MedSolutions, we pride ourselves on delivering&nbsp;
+            At&nbsp;
+            <Link
+              href={APP_PATH.home.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              Key MedSolutions
+            </Link>
+            , we pride ourselves on delivering&nbsp;
             <span>Healthcare Revenue Cycle Management Solutions</span>&nbsp;that
             are precise, secure, and tailored to your operational goals. Our
             all-encompassing suite of services includes:

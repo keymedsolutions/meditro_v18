@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   FileCode,
@@ -7,6 +8,7 @@ import {
   AlertTriangle,
   RefreshCw,
 } from "lucide-react";
+import Link from "next/link";
 
 export function Services() {
   const data = [
@@ -100,7 +102,9 @@ export function Services() {
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
             We tailor every service to address the unique challenges faced by
             healthcare providers, delivering results across all levels of your
-            revenue cycle. Our core services include:
+            &nbsp;
+            <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-inherit tw-font-semibold">revenue cycle.</Link>
+            &nbsp;Our core services include:
           </p>
         </motion.div>
 

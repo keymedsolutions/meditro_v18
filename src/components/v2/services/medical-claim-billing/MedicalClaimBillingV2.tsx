@@ -14,6 +14,7 @@ import { CTASection } from "./CTASection";
 import { HeroSection } from "./HeroSection";
 import { WhyChooseSection } from "./WhyChooseSection";
 import { motion } from "framer-motion";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const MedicalClaimBillingV2 = () => {
   const services = [
@@ -139,11 +140,8 @@ const MedicalClaimBillingV2 = () => {
               className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md"
             >
               <p className="tw-text-gray-800 tw-text-base tw-m-0">
-                Looking for more?&nbsp;
-                <span className="tw-font-semibold tw-text-blue-700">
-                  Discover our extensive Medical Billing Services,
-                </span>
-                &nbsp; See the difference Key MedSolutions can make in
+                Looking for more? Discover our extensive&nbsp;<Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">Medical Billing
+                Services</Link>, See the difference Key MedSolutions can make in
                 transforming your practice.
               </p>
             </motion.div>
@@ -172,10 +170,10 @@ const MedicalClaimBillingV2 = () => {
               className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md"
             >
               <p className="tw-text-gray-800 tw-text-base tw-m-0">
-                Learn about our{" "}
-                <span className="tw-font-semibold tw-text-blue-700">
+                Learn about our&nbsp;
+                <Link href={APP_PATH.services.insuranceVerification.path} className="tw-font-semibold tw-text-inherit">
                   Healthcare Insurance Verification Services
-                </span>{" "}
+                </Link>&nbsp;
                 to optimise your claims process from step one.
               </p>
             </motion.div>

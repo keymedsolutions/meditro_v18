@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Phone, Mail, Calendar, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const MedicalInsuranceSection = () => {
   return (
@@ -53,8 +54,14 @@ const MedicalInsuranceSection = () => {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                Contact us now for a custom consultation and discover how our
-                experts can transform your insurance verification process.
+                <Link
+                  href={APP_PATH.contactus.path}
+                  className="tw-font-semibold tw-text-inherit"
+                >
+                  Contact us
+                </Link>
+                &nbsp;now for a custom consultation and discover how our experts
+                can transform your insurance verification process.
               </motion.p>
 
               <motion.div
@@ -146,7 +153,7 @@ const MedicalInsuranceSection = () => {
                   <p className="tw-text-gray-800">
                     Explore our linked&nbsp;
                     <Link href="/medical-claim-billing-company">
-                      <span className="tw-font-semibold tw-text-blue-700">
+                      <span className="tw-font-semibold tw-text-inherit">
                         Medical Claim Billing Services
                       </span>
                     </Link>
@@ -165,7 +172,7 @@ const MedicalInsuranceSection = () => {
                   <p className="tw-text-gray-800">
                     Explore our&nbsp;
                     <Link href="/Physician-credentialing-services">
-                      <span className="tw-font-semibold tw-text-indigo-700">
+                      <span className="tw-font-semibold tw-text-inherit">
                         Physician Credentialing Services
                       </span>
                     </Link>
@@ -179,8 +186,11 @@ const MedicalInsuranceSection = () => {
                   transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
                   viewport={{ once: true, amount: 0.2 }}
                 >
-                  To create the most efficient healthcare revenue cycle
-                  possible.
+                  To create the most efficient healthcare&nbsp;
+                  <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-inherit">
+                    revenue cycle
+                  </Link>
+                  &nbsp;possible.
                 </motion.p>
 
                 <motion.div

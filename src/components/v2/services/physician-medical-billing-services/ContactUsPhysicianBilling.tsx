@@ -8,6 +8,8 @@ import {
   CardTitle,
 } from "@/ui/card";
 import { Mail, Phone } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const ContactUsPhysicianBilling = () => {
   return (
@@ -49,7 +51,10 @@ const ContactUsPhysicianBilling = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <a href="tel:+1336499-9299" className="tw-text-2xl tw-font-bold tw-text-[#f17732] tw-mb-2 font-dm-sans">
+                  <a
+                    href="tel:+1336499-9299"
+                    className="tw-text-2xl tw-font-bold tw-text-[#f17732] tw-mb-2 font-dm-sans"
+                  >
                     +1 (336) 499-9299
                   </a>
                   <p className="tw-text-muted-foreground font-dm-sans">
@@ -77,7 +82,10 @@ const ContactUsPhysicianBilling = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <a href="mailto:info@keymedsolution.com" className="tw-break-all tw-text-2xl tw-font-bold tw-text-[#565acf] tw-mb-2 font-dm-sans">
+                  <a
+                    href="mailto:info@keymedsolution.com"
+                    className="tw-break-all tw-text-2xl tw-font-bold tw-text-[#565acf] tw-mb-2 font-dm-sans"
+                  >
                     info@keymedsolution.com
                   </a>
                   <p className="tw-text-muted-foreground font-dm-sans">
@@ -104,8 +112,12 @@ const ContactUsPhysicianBilling = () => {
             </h2>
             <p className="tw-text-xl tw-text-muted-foreground tw-max-w-2xl tw-mx-auto font-dm-sans">
               See how our integrated Physician Medical Billing Services and
-              Revenue Cycle Management Services can transform your practice’s
-              financial health; book your demo today!
+              &nbsp;
+              <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-inherit tw-font-semibold">
+                Revenue Cycle Management Services
+              </Link>
+              &nbsp;can transform your practice’s financial health; book your
+              demo today!
             </p>
           </motion.div>
         </div>

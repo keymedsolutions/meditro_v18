@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const EmpoweringYourPractice = () => {
   return (
@@ -48,11 +50,15 @@ const EmpoweringYourPractice = () => {
         viewport={{ once: true }}
         className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center"
       >
-        From front-office staff to billing specialists, our solutions ensure
-        that everyone in your practice is equipped to handle insurance denials
-        effectively. By partnering with a trusted Denial Management Company in
-        the USA like Key MedSolutions, you can reduce administrative burdens,
-        improve operational efficiency, and achieve better financial outcomes.
+        From front-office staff to&nbsp;
+        <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+          billing specialists
+        </Link>
+        , our solutions ensure that everyone in your practice is equipped to
+        handle insurance denials effectively. By partnering with a trusted
+        Denial Management Company in the USA like Key MedSolutions, you can
+        reduce administrative burdens, improve operational efficiency, and
+        achieve better financial outcomes.
       </motion.p>
     </motion.section>
   );

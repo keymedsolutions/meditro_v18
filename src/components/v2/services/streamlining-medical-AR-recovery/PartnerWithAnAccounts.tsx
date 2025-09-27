@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { Award } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const PartnerWithAnAccounts = () => {
   const mainTitle = [
@@ -74,11 +76,18 @@ const PartnerWithAnAccounts = () => {
                   </span>
                 </h2>
                 <p>
-                  At Key MedSolutions, we don’t just recover your unpaid
-                  revenue; we strengthen your overall billing process for
-                  lasting results. As a recognized leader in Medical AR Billing
-                  Services USA, our team is committed to delivering results with
-                  honesty, transparency, and innovation.
+                  At&nbsp;
+                  <Link
+                    href={APP_PATH.home.path}
+                    className="tw-font-semibold tw-text-inherit"
+                  >
+                    Key MedSolutions
+                  </Link>
+                  , we don’t just recover your unpaid revenue; we strengthen
+                  your overall billing process for lasting results. As a
+                  recognized leader in Medical AR Billing Services USA, our team
+                  is committed to delivering results with honesty, transparency,
+                  and innovation.
                 </p>
               </motion.div>
               <motion.div

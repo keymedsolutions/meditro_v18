@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   FileSpreadsheet,
@@ -9,6 +10,7 @@ import {
   FileSearch,
   ShieldAlert,
 } from "lucide-react";
+import Link from "next/link";
 
 export function OurCoreServices() {
   const containerVariants = {
@@ -48,39 +50,94 @@ export function OurCoreServices() {
   const values = [
     {
       title: "Comprehensive Revenue Cycle Management Services",
-      description: `Efficient Revenue Cycle Management Services are the backbone of any high-performing healthcare practice. Our experts streamline your billing and collections process to ensure timely reimbursements and reduce claim denials. Learn more about our Revenue Cycle Management Services.`,
+      description: (
+        <>
+          Efficient&nbsp;
+          <Link
+            href={APP_PATH.services.rcmCompany.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Revenue Cycle Management Services
+          </Link>
+          &nbsp;are the backbone of any high-performing healthcare practice. Our
+          experts streamline your billing and collections process to ensure
+          timely reimbursements and reduce claim denials. Learn more about our
+          Revenue Cycle Management Services.
+        </>
+      ),
       icon: FileSpreadsheet,
       color: "blue",
     },
     {
       title: "Medical Debt Collection Services",
-      description: `We help recover lost revenue with professional Medical Debt Collection Services tailored for healthcare providers. Our approach minimizes patient dissatisfaction while improving cash flow. Find out how our Medical Debt Collection Services can benefit your practice.`,
+      description: (
+        <>
+          We help recover lost revenue with professional&nbsp;
+          <Link
+            href={APP_PATH.services.reimbursementRate.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Medical Debt Collection Services
+          </Link>
+          &nbsp;tailored for healthcare providers. Our approach minimizes
+          patient dissatisfaction while improving cash flow. Find out how our
+          Medical Debt Collection Services can benefit your practice.
+        </>
+      ),
       icon: CreditCard,
       color: "red",
     },
     {
       title: "Profit Enhancement Consulting",
-      description:
-        "Our skilled consultants find and remove operational inefficiencies using data-driven insights. From charge capture to claim follow-up, we create actionable strategies to overcome bottlenecks and optimise profitability.",
+      description: (
+        <>
+          Our skilled consultants find and remove operational inefficiencies
+          using data-driven insights. From charge capture to claim follow-up, we
+          create actionable strategies to overcome bottlenecks and optimise
+          profitability.
+        </>
+      ),
       icon: TrendingUp,
       color: "purple",
     },
     {
       title: "Business Cost Reduction Services",
-      description: `Many healthcare practices struggle with rising operational costs. Our Business Cost Reduction Services aim to cut unnecessary expenses without sacrificing service quality, helping you achieve a sustainable financial future.`,
+      description: (
+        <>
+          Many healthcare practices struggle with rising operational costs. Our
+          Business Cost Reduction Services aim to cut unnecessary expenses
+          without sacrificing service quality, helping you achieve a sustainable
+          financial future.
+        </>
+      ),
       icon: Scissors,
       color: "green",
     },
     {
       title: "CPT Fee Schedule Audits",
-      description:
-        "Ensure accurate reimbursements from payers with our CPT fee schedule analysis. We benchmark your fee schedules against industry best practices to eliminate underpayments.",
+      description: (
+        <>
+          Ensure accurate reimbursements from payers with our CPT fee schedule
+          analysis. We benchmark your fee schedules against industry best
+          practices to eliminate underpayments.
+        </>
+      ),
       icon: FileSearch,
       color: "yellow",
     },
     {
       title: "Claims Denial Management",
-      description: `Denials drain both your revenue and your team's valuable time. Our proactive approach to Claims Denial Management prevents future issues while resolving current ones efficiently.`,
+      description: (
+        <>
+          Denials drain both your revenue and your team's valuable time. Our
+          proactive approach to Claims&nbsp;
+          <Link
+            href={APP_PATH.services.denialMgmt.path}
+            className="tw-font-semibold tw-text-inherit"
+          >Denial Management</Link>&nbsp;prevents future issues
+          while resolving current ones efficiently.
+        </>
+      ),
       icon: ShieldAlert,
       color: "blue",
     },
@@ -161,10 +218,9 @@ export function OurCoreServices() {
                 <h3 className="tw-text-xl tw-font-semibold tw-text-gray-900 tw-mb-4">
                   {value.title}
                 </h3>
-                <p
-                  className="tw-text-gray-600 tw-leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: value.description }}
-                />
+                <p className="tw-text-gray-600 tw-leading-relaxed">
+                  {value.description}
+                </p>
               </motion.div>
             );
           })}

@@ -1,3 +1,4 @@
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   BarChart3,
@@ -9,38 +10,65 @@ import {
   FileText,
   Clock,
 } from "lucide-react";
+import Link from "next/link";
 
 const EnterpriseTools = () => {
   const features = [
     {
       icon: <Eye className="tw-w-6 tw-h-6" />,
       title: "Real-Time Claim Tracking",
-      description:
-        "Monitor the status of your claims at every stage, ensuring complete transparency and faster resolutions.",
+      description: (
+        <>
+          Monitor the status of your claims at every stage, ensuring complete
+          transparency and faster resolutions.
+        </>
+      ),
     },
     {
       icon: <Workflow className="tw-w-6 tw-h-6" />,
       title: "Automated Workflows",
-      description:
-        "Reduce manual errors and save time with intelligent automation that streamlines the denial resolution process.",
+      description: (
+        <>
+          Reduce manual errors and save time with intelligent automation that
+          streamlines the denial resolution process.
+        </>
+      ),
     },
     {
       icon: <FileText className="tw-w-6 tw-h-6" />,
       title: "Customizable Appeal Letters",
-      description:
-        "Expedite resolutions with pre-designed templates tailored to your practice's specific needs.",
+      description: (
+        <>
+          Expedite resolutions with pre-designed templates tailored to your
+          practice's specific needs.
+        </>
+      ),
     },
     {
       icon: <Clock className="tw-w-6 tw-h-6" />,
       title: "Proactive AR Follow-Up",
-      description:
-        "Ensure no claim is left unresolved with our dedicated accounts receivable follow-up services.",
+      description: (
+        <>
+          Ensure no claim is left unresolved with our dedicated&nbsp;
+          <Link
+            href={APP_PATH.services.arRecovery.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            accounts receivable
+          </Link>
+          &nbsp;follow-up services.
+        </>
+      ),
     },
     {
       icon: <BarChart3 className="tw-w-6 tw-h-6" />,
       title: "Personalized Dashboards",
-      description:
-        "Gain complete visibility into denial trends, claim statuses, and financial performance with user-friendly dashboards.",
+      description: (
+        <>
+          Gain complete visibility into denial trends, claim statuses, and
+          financial performance with user-friendly dashboards.
+        </>
+      ),
     },
   ];
 

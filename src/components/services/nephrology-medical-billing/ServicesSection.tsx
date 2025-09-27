@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   CheckCircle,
@@ -10,6 +11,7 @@ import {
   Shield,
   Clock,
 } from "lucide-react";
+import Link from "next/link";
 
 export function ServicesSection() {
   const services = [
@@ -69,7 +71,7 @@ export function ServicesSection() {
             </span>
           </h2>
           <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
-            Partnering with Key MedSolutions ensures your nephrology practice is
+            Partnering with&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">Key MedSolutions</Link>&nbsp;ensures your nephrology practice is
             supported at every point in the revenue cycle. Our comprehensive
             offering includes:
           </p>
@@ -124,13 +126,13 @@ export function ServicesSection() {
           <p className="tw-text-gray-800 tw-text-base tw-m-0">
             To further enhance your compliance and collections, explore our
             robust&nbsp;
-            <span className="tw-font-semibold tw-text-blue-700">
+            <Link href={APP_PATH.services.codingServices.path} className="tw-font-semibold tw-text-inherit">
               Medical Coding Services
-            </span>
+            </Link>
             &nbsp;and browse our range of&nbsp;
-            <span className="tw-font-semibold tw-text-blue-700">
+            <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
               Medical Billing Companies
-            </span>
+            </Link>
             &nbsp;offerings.
           </p>
         </motion.div>

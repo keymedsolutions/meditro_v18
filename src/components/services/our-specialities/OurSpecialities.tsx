@@ -8,6 +8,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import ReadyToTransformYourPractice from "./ReadyToTransformYourPractice";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const OurSpecialities = () => {
   return (
@@ -30,10 +31,11 @@ const OurSpecialities = () => {
         <p className="tw-text-gray-800 tw-text-base tw-m-0">
           Unleash a better future for you and your patients with Key
           MedSolutions - your partner for RCM and&nbsp;
-          <Link href="/medical-billing-company">
-            <span className="tw-font-semibold tw-text-blue-700">
-              medical billing solutions.
-            </span>
+          <Link
+            href={APP_PATH.services.billingServices.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            medical billing solutions.
           </Link>
         </p>
       </motion.div>

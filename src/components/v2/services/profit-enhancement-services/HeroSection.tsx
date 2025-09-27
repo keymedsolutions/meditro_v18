@@ -5,9 +5,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const HeroSection = () => {
- 
   return (
     <React.Fragment>
       <section
@@ -126,15 +127,15 @@ const HeroSection = () => {
             Effective financial management can be challenging in the healthcare
             industry. With evolving regulations, payer models, and rising
             operational costs, healthcare providers must adapt to remain viable.
-            At&nbsp;<span className="tw-font-semibold">Key MedSolutions</span>
+            At&nbsp;
+            <Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">
+              Key MedSolutions
+            </Link>
             &nbsp;, a leading Financial Profit Enhancement Company in the USA,
-            we offer comprehensive&nbsp;
-            <span className="tw-font-semibold">
-              Profit Enhancement Services
-            </span>
-            &nbsp;to help healthcare organizations boost their financial
-            performance, reduce costs, and improve operational efficiency, all
-            while delivering exceptional patient care.
+            we offer comprehensive Profit Enhancement Services to help
+            healthcare organizations boost their financial performance, reduce
+            costs, and improve operational efficiency, all while delivering
+            exceptional patient care.
           </motion.p>
         </div>
       </section>

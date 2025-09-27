@@ -4,46 +4,89 @@ import { Card, CardContent } from "@/ui/card";
 import { Code, Clock, AlertTriangle, BarChart3 } from "lucide-react";
 import SectionHeading from "@/components/ui/section-heading";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const KeyAspects = () => {
   const aspects = [
     {
       icon: <Code size={40} className="tw-text-primary-600" />,
       title: "Medical Coding Services",
-      description:
-        "Our certified coders efficiently handle diagnostic and procedural coding tasks, ensuring your practice’s claims submission process is accurate and timely. With a focus on precision, we eliminate coding discrepancies that could lead to denied claims.",
+      description: (
+        <>
+          Our certified coders efficiently handle diagnostic and procedural
+          coding tasks, ensuring your practice’s claims submission process is
+          accurate and timely. With a focus on precision, we eliminate coding
+          discrepancies that could lead to denied claims.
+        </>
+      ),
       image:
         "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <Clock size={40} className="tw-text-secondary-600" />,
       title: "Medical Auditing Solutions",
-      description:
-        "Our rigorous Medical Auditing Solutions identify potential coding and billing errors that could impact your practice’s revenue. Through detailed audits, we help you stay compliant with industry regulations and payer guidelines.",
+      description: (
+        <>
+          Our rigorous Medical Auditing Solutions identify potential coding and
+          billing errors that could impact your practice’s revenue. Through
+          detailed audits, we help you stay compliant with industry regulations
+          and payer guidelines.
+        </>
+      ),
       image:
         "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <AlertTriangle size={40} className="tw-text-primary-600" />,
       title: "Healthcare Coding and Consulting Services",
-      description:
-        "From documentation improvement to coding guideline updates, our Healthcare Coding and Consulting Services are designed to enhance the operational and financial health of your practice.",
+      description: (
+        <>
+          From documentation improvement to coding guideline updates, our
+          Healthcare Coding and Consulting Services are designed to enhance the
+          operational and financial health of your practice.
+        </>
+      ),
       image:
         "https://images.unsplash.com/photo-1563213126-a4273aed2016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <BarChart3 size={40} className="tw-text-secondary-600" />,
       title: "Denial Management Services",
-      description:
-        "Our dedicated team specializes in tracking, analyzing, and resolving denied claims. Partnering with us for Denial Management Services ensures your practice recovers lost revenue efficiently, reducing time delays and additional administrative workload.",
+      description: (
+        <>
+          Our dedicated team specializes in tracking, analyzing, and resolving
+          denied claims. Partnering with us for&nbsp;
+          <Link
+            href={APP_PATH.services.denialMgmt.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Denial Management Services
+          </Link>
+          &nbsp;ensures your practice recovers lost revenue efficiently,
+          reducing time delays and additional administrative workload.
+        </>
+      ),
       image:
         "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <Code size={40} className="tw-text-primary-600" />,
       title: "Medical Billing and Coding Services",
-      description:
-        "Experience the synergy of outsourced coding and billing solutions with our integrated Medical Billing and Coding Services. By optimizing both processes, we enhance the ROI of your revenue cycle management.",
+      description: (
+        <>
+          Experience the synergy of outsourced coding and billing solutions with
+          our integrated&nbsp;
+          <Link
+            href={APP_PATH.services.billingServices.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Medical Billing
+          </Link>
+          &nbsp;and Coding Services. By optimizing both processes, we enhance
+          the ROI of your revenue cycle management.
+        </>
+      ),
       image: "/images/doctor-with-laptop.png",
     },
   ];
@@ -75,9 +118,16 @@ const KeyAspects = () => {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            At Key MedSolutions, we deliver flexible and scalable\ Medical
-            Coding Outsourcing Services designed to meet the evolving needs of
-            healthcare providers. Here are the key services we proudly offer
+            At&nbsp;
+            <Link
+              href={APP_PATH.home.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              Key MedSolutions,
+            </Link>
+            &nbsp;we deliver flexible and scalable\ Medical Coding Outsourcing
+            Services designed to meet the evolving needs of healthcare
+            providers. Here are the key services we proudly offer
           </p>
         </motion.div>
 

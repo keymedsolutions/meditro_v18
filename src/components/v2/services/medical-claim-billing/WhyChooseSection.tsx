@@ -1,27 +1,60 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { CheckCircle, Shield, Zap, DollarSign, Users } from "lucide-react";
+import Link from "next/link";
 
 export function WhyChooseSection() {
   const features = [
     {
       icon: Users,
       title: "Tailored Medical Claim Billing Services",
-      description:
-        "We understand every practice is unique.That’s why we customize our services to meet the needs of diverse specialties. Our services range from cardiology to dentistry. We customize our services to help you succeed, whether you need support with certain tasks or with managing your whole revenue cycle.",
+      description: (
+        <>
+          We understand every practice is unique.That’s why we customize our
+          services to meet the needs of diverse specialties. Our services range
+          from&nbsp;
+          <Link
+            href={APP_PATH.services.physicianBilling.cardiologyBilling.path}
+            className="!tw-font-bold tw-text-inherit"
+          >
+            cardiology
+          </Link>
+          &nbsp;to dentistry. We customize our services to help you succeed,
+          whether you need support with certain tasks or with managing your
+          whole revenue cycle.
+        </>
+      ),
     },
     {
       icon: CheckCircle,
       title: "Precision and Expertise",
-      description:
-        "Our experienced specialists master coding, payer rules, and denial management, ensuring claims are processed right the first time to minimize payment delays.",
+      description: (
+        <>
+          Our experienced specialists master coding, payer rules, and&nbsp;
+          <Link
+            href={APP_PATH.services.denialMgmt.path}
+            className="!tw-font-bold tw-text-inherit"
+          >
+            denial management
+          </Link>
+          , ensuring claims are processed right the first time to minimize
+          payment delays.
+        </>
+      ),
     },
     {
       icon: Zap,
       title: "Innovative Technology",
-      description:
-        `We combine human expertise with cutting-edge Healthcare Claims Processing technology to maximize efficiency.<br/>Our platform offers:`,
+      description: (
+        <>
+          We combine human expertise with cutting-edge Healthcare Claims
+          Processing technology to maximize efficiency.
+          <br />
+          Our platform offers:
+        </>
+      ),
       features: [
         "Automated insurance eligibility checks",
         "Built-in coding validation to prevent errors",
@@ -32,14 +65,26 @@ export function WhyChooseSection() {
     {
       icon: DollarSign,
       title: "Cost-Effective Outsourcing",
-      description:
-        "Tasks like billing can take up valuable time and strain your practice’s resources. By choosing Outsource Medical Claim Processing Services, you reduce operational costs and free up your team to focus on patient care. Outsourcing also improves cash flow by ensuring consistent and timely reimbursements.",
+      description: (
+        <>
+          Tasks like billing can take up valuable time and strain your
+          practice’s resources. By choosing Outsource Medical Claim Processing
+          Services, you reduce operational costs and free up your team to focus
+          on patient care. Outsourcing also improves cash flow by ensuring
+          consistent and timely reimbursements.
+        </>
+      ),
     },
     {
       icon: Shield,
       title: "HIPAA-Compliant Solutions",
-      description:
-        "Your data privacy and security are our top priorities. Our Medical Claims Processing Services adhere to HIPAA standards, so your patients' information is always safe with us."
+      description: (
+        <>
+          Your data privacy and security are our top priorities. Our Medical
+          Claims Processing Services adhere to HIPAA standards, so your
+          patients' information is always safe with us.
+        </>
+      ),
     },
   ];
 
@@ -117,13 +162,12 @@ export function WhyChooseSection() {
                 {/* Subtle Glow Border */}
                 <div className="tw-absolute -tw-inset-px tw-rounded-3xl tw-bg-gradient-to-r tw-from-primary/30 tw-to-accent/30 tw-opacity-0 group-hover:tw-opacity-100 tw-blur-xl tw-transition"></div>
 
-                <h3 className="tw-text-2xl tw-font-bold tw-text-foreground tw-mb-4 tw-font-sans relative z-10">
+                <h3 className="tw-text-2xl tw-font-bold tw-text-foreground tw-mb-4 tw-font-sans tw-relative tw-z-10">
                   {feature.title}
                 </h3>
-                <p
-                  className="tw-text-muted-foreground tw-leading-relaxed tw-mb-4 tw-font-serif relative z-10"
-                  dangerouslySetInnerHTML={{ __html: feature.description }}
-                ></p>
+                <p className="tw-text-muted-foreground tw-leading-relaxed tw-mb-4 tw-font-serif tw-relative tw-z-10">
+                  {feature.description}
+                </p>
 
                 {feature.features && (
                   <ul className="tw-space-y-3 tw-mb-4 relative z-10">

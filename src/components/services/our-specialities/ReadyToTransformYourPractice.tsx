@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const DoctorAndCareGiverImage = "/images/home/doctorandcaregiver.jpg";
 
 const ReadyToTransformYourPractice = () => {
@@ -40,11 +42,18 @@ const ReadyToTransformYourPractice = () => {
               Ready to Transform Your Practice?
             </div>
             <div>
-              See how Key MedSolutions: the advanced medical billing company for
-              diverse medical billing specialties in the US, can take your
-              practice to the next level with innovative medical billing
-              solutions. Let’s work together to make your practice more
-              profitable, compliant, and efficient.
+              See how&nbsp;
+              <Link
+                href={APP_PATH.home.path}
+                className="tw-font-semibold tw-text-inherit hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit"
+              >
+                Key MedSolutions:
+              </Link>
+              &nbsp;the advanced medical billing company for diverse medical
+              billing specialties in the US, can take your practice to the next
+              level with innovative medical billing solutions. Let’s work
+              together to make your practice more profitable, compliant, and
+              efficient.
             </div>
 
             {/* Contact Info Section */}

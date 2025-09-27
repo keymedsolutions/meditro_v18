@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   Clock,
@@ -12,62 +13,115 @@ import {
   BarChart3,
   Shield,
 } from "lucide-react";
+import Link from "next/link";
 
 export function ArComprehensiveServices() {
   const services = [
     {
       icon: Clock,
       title: "Aging AR Follow-Up",
-      description:
-        "Our team specializes in resolving accounts that are 30, 60, 90, or even 180+ days overdue, ensuring minimal revenue leakage.",
+      description: (
+        <>
+          Our team specializes in resolving accounts that are 30, 60, 90, or
+          even 180+ days overdue, ensuring minimal revenue leakage.
+        </>
+      ),
     },
     {
       icon: AlertTriangle,
       title: "Denial Management & Appeals",
-      description:
-        "Our Accounts Receivable Recovery Solutions include aggressive follow-ups, appealing denied claims, and pinpointing recurring issues to reduce future denials.",
+      description: (
+        <>
+          Our Accounts Receivable Recovery Solutions include aggressive
+          follow-ups, appealing denied claims, and pinpointing recurring issues
+          to reduce future denials.
+        </>
+      ),
     },
     {
       icon: RefreshCw,
       title: "Insurance Claims Reprocessing",
-      description:
-        "We investigate delayed or denied claims, resubmit with the necessary corrections, and follow through until the payment is received.",
+      description: (
+        <>
+          We investigate delayed or denied claims, resubmit with the necessary
+          corrections, and follow through until the payment is received.
+        </>
+      ),
     },
     {
       icon: Heart,
       title: "Patient Balance Recovery",
-      description:
-        "Recover outstanding patient balances compassionately, preserving valuable patient-provider relationships.",
+      description: (
+        <>
+          Recover outstanding patient balances compassionately, preserving
+          valuable patient-provider relationships.
+        </>
+      ),
     },
     {
       icon: Search,
       title: "Revenue Cycle Audit & Strategy",
-      description:
-        "Identify inefficiencies with a comprehensive audit and get a data-driven action plan for continuous improvement. For more, view our Revenue Cycle Management Services.",
+      description: (
+        <>
+          Identify inefficiencies with a comprehensive audit and get a
+          data-driven action plan for continuous improvement. For more, view our
+          &nbsp;
+          <Link
+            href={APP_PATH.services.rcmCompany.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Revenue Cycle
+          </Link>
+          &nbsp;Management Services.
+        </>
+      ),
     },
     {
       icon: CheckSquare,
       title: "Claims Status Verification",
-      description:
-        "Stay ahead of problems with real-time tracking and follow-up on every unresolved claim.",
+      description: (
+        <>
+          Stay ahead of problems with real-time tracking and follow-up on every
+          unresolved claim.
+        </>
+      ),
     },
     {
       icon: FileText,
       title: "Insurance Eligibility Review",
-      description:
-        "Prevent denials before they happen with thorough insurance eligibility checks—explore our Healthcare Insurance Verification Services for more information.",
+      description: (
+        <>
+          Prevent denials before they happen with thorough&nbsp;
+          <Link
+            href={APP_PATH.services.insuranceVerification.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            insurance eligibility
+          </Link>
+          &nbsp;checks—explore our Healthcare Insurance Verification Services
+          for more information.
+        </>
+      ),
     },
     {
       icon: BarChart3,
       title: "Reporting & Analytics",
-      description:
-        "Get in-depth, user-friendly dashboards that highlight opportunities, trends, and wins in your AR pipeline.",
+      description: (
+        <>
+          Get in-depth, user-friendly dashboards that highlight opportunities,
+          trends, and wins in your AR pipeline.
+        </>
+      ),
     },
     {
       icon: Shield,
       title: "HIPAA-Compliant Collections",
-      description:
-        "Trust our secure and ethical approach to every account, protecting patient data throughout the collection process.",
+      description: (
+        <>
+          Trust our secure and ethical approach to every account, protecting
+          patient data throughout the collection process.
+        </>
+      ),
     },
   ];
 
