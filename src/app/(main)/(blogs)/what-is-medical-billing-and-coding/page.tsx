@@ -1,6 +1,7 @@
 "use client";
 
 import Breadcrumb from "@/components/ui/breadcrumb";
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   ChevronRight,
@@ -17,6 +18,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Accordion } from "react-bootstrap";
 const blogDefaultPic1 = "/images/blog/default/pic4.png";
 
@@ -320,9 +322,14 @@ const MedicalBillingGuide = () => {
                         </div>
 
                         <p className="tw-text-gray-600 tw-mt-6">
-                          That's why practices often turn to a reliable Medical
-                          Billing Company like Key MedSolutions to handle it
-                          all.
+                          That's why practices often turn to a reliable&nbsp;
+                          <Link
+                            href={APP_PATH.services.billingServices.path}
+                            className="tw-font-semibold tw-text-inherit"
+                          >
+                            Medical Billing Company
+                          </Link>
+                          &nbsp;like Key MedSolutions to handle it all.
                         </p>
                       </div>
                     </motion.section>
@@ -395,8 +402,15 @@ const MedicalBillingGuide = () => {
                           <p className="tw-text-white">
                             And if you're worried about giving up control, don't
                             be. With the right partner, you still have full
-                            visibility into your revenue cycle and peace of mind
-                            that someone's keeping an eye on every dollar.
+                            visibility into your&nbsp;
+                            <Link
+                              href={APP_PATH.services.rcmCompany.path}
+                              className="tw-font-semibold tw-text-inherit"
+                            >
+                              revenue cycle
+                            </Link>
+                            &nbsp;and peace of mind that someone's keeping an
+                            eye on every dollar.
                           </p>
                         </div>
                       </div>
@@ -430,7 +444,23 @@ const MedicalBillingGuide = () => {
                         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-6 tw-mb-10">
                           {[
                             {
-                              text: "The coder reviews the doctor's notes and assigns an ICD-10 code for the diagnosis and a CPT code for the office visit.",
+                              text: (
+                                <>
+                                  The coder reviews the doctor's notes and
+                                  assigns an&nbsp;
+                                  <Link
+                                    href={
+                                      APP_PATH.services.codingServices
+                                        .icd10Coding.path
+                                    }
+                                    className="tw-font-semibold tw-text-inherit"
+                                  >
+                                    ICD-10
+                                  </Link>
+                                  &nbsp;code for the diagnosis and a CPT code
+                                  for the office visit.
+                                </>
+                              ),
                               icon: (
                                 <Search className="tw-w-6 tw-h-6 tw-text-white" />
                               ),
@@ -582,11 +612,17 @@ const MedicalBillingGuide = () => {
 
                       <div className="tw-bg-white tw-rounded-xl tw-mb-8">
                         <p className="tw-text-gray-600 tw-mb-6">
-                          At Key MedSolutions, we offer more than just billing
-                          and coding, we deliver complete revenue cycle
-                          solutions. We act as an extension of your team,
-                          helping you grow your practice with less stress and
-                          more clarity.
+                          At&nbsp;
+                          <Link
+                            href={APP_PATH.home.path}
+                            className="tw-font-semibold tw-text-inherit"
+                          >
+                            Key MedSolutions
+                          </Link>
+                          , we offer more than just billing and coding, we
+                          deliver complete revenue cycle solutions. We act as an
+                          extension of your team, helping you grow your practice
+                          with less stress and more clarity.
                         </p>
 
                         <h3 className="tw-text-xl tw-font-semibold tw-text-gray-800 tw-mb-4">

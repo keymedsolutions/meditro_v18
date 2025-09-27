@@ -1,19 +1,23 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Zap, Target, DollarSign, TrendingUp } from "lucide-react"
+import { APP_PATH } from "@/data/PATH_APP";
+import { motion } from "framer-motion";
+import { Zap, Target, DollarSign, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 const benefits = [
   {
     icon: Zap,
     title: "Immediate Expertise",
-    description: "Instant access to a highly trained team with the most up-to-date knowledge.",
+    description:
+      "Instant access to a highly trained team with the most up-to-date knowledge.",
     gradient: "tw-from-yellow-400 tw-to-orange-500",
   },
   {
     icon: Target,
     title: "Operational Focus",
-    description: "Allow your team to prioritize patient care while we handle your coding needs.",
+    description:
+      "Allow your team to prioritize patient care while we handle your coding needs.",
     gradient: "tw-from-green-400 tw-to-blue-500",
   },
   {
@@ -28,7 +32,7 @@ const benefits = [
     description: "Easily scale your service to fit your changing workload.",
     gradient: "tw-from-blue-400 tw-to-indigo-500",
   },
-]
+];
 
 export function KeyBenefits() {
   return (
@@ -75,9 +79,13 @@ export function KeyBenefits() {
             Key Benefits of Outsourcing ICD-10 Coding Services
           </h2>
           <p className="tw-text-xl tw-text-gray-300 tw-max-w-4xl tw-mx-auto tw-leading-relaxed">
-            To fully optimize your billing processes, consider the integration of professional coding with outsourcing
-            medical billing. Partnering with an experienced ICD-10 Coding Company in USA unlocks advantages for your
-            entire operation:
+            To fully optimize your billing processes, consider the integration
+            of professional coding with&nbsp;
+            <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+              outsourcing medical billing.
+            </Link>
+            &nbsp;Partnering with an experienced ICD-10 Coding Company in USA
+            unlocks advantages for your entire operation:
           </p>
         </motion.div>
 
@@ -87,7 +95,11 @@ export function KeyBenefits() {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.1 }}
+              transition={{
+                duration: 0.6,
+                ease: "easeOut",
+                delay: index * 0.1,
+              }}
               viewport={{ once: true, amount: 0.2 }}
               className="group tw-relative tw-bg-white/5 tw-backdrop-blur-sm tw-rounded-2xl tw-p-8 tw-border tw-border-white/10 tw-transition-all tw-duration-300 hover:tw-bg-white/10 hover:tw-scale-105"
             >
@@ -97,9 +109,13 @@ export function KeyBenefits() {
                 <benefit.icon className="tw-w-8 tw-h-8 tw-text-white" />
               </div>
 
-              <h3 className="tw-text-xl tw-font-bold tw-text-white tw-mb-4">{benefit.title}</h3>
+              <h3 className="tw-text-xl tw-font-bold tw-text-white tw-mb-4">
+                {benefit.title}
+              </h3>
 
-              <p className="tw-text-gray-300 tw-leading-relaxed">{benefit.description}</p>
+              <p className="tw-text-gray-300 tw-leading-relaxed">
+                {benefit.description}
+              </p>
 
               {/* Glow Effect */}
               <div
@@ -110,5 +126,5 @@ export function KeyBenefits() {
         </div>
       </div>
     </section>
-  )
+  );
 }

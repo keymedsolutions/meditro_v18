@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { CheckCircle, Zap, DollarSign, Shield } from "lucide-react";
+import Link from "next/link";
 
 const TrustReasons = () => {
   const reasons = [
@@ -57,9 +59,15 @@ const TrustReasons = () => {
             </h2>
           </motion.div>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            We're not just an RCM provider, we're your trusted partner in making
-            your billing process simpler and more efficient. Here's why
-            healthcare providers choose us:
+            We're not just an&nbsp;
+            <Link
+              href={APP_PATH.services.rcmCompany.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              RCM provider
+            </Link>
+            , we're your trusted partner in making your billing process simpler
+            and more efficient. Here's why healthcare providers choose us:
           </p>
         </motion.div>
 
@@ -92,7 +100,6 @@ const TrustReasons = () => {
             </motion.div>
           ))}
         </div>
-
       </div>
     </div>
   );

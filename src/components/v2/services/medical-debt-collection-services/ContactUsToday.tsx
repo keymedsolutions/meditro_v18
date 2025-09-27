@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const DoctorAndCareGiverImage = "/images/home/doctorandcaregiver.jpg";
 
 const ContactUsToday = () => {
@@ -39,12 +41,17 @@ const ContactUsToday = () => {
               Contact Us Today
             </div>
             <div>
-              Choose Key MedSolutions for your comprehensive Accounts Receivable
-              Recovery Services, Profit Enhancement Services, and Medical Claim
-              Billing needs. Experience how our unmatched expertise as a medical
-              debt collection agency can transform your revenue cycle, protect
-              your patient relationships, and drive your practice’s long-term
-              financial success.
+              Choose&nbsp;
+              <Link href={APP_PATH.home.path} className="tw-text-white tw-font-semibold hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">Key MedSolutions</Link>&nbsp;for
+              your comprehensive&nbsp;
+              <Link href={APP_PATH.services.arRecovery.path} className="tw-text-white tw-font-semibold hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">
+                Accounts Receivable
+              </Link>
+              &nbsp;Recovery Services, Profit Enhancement Services, and Medical
+              Claim Billing needs. Experience how our unmatched expertise as a
+              medical debt collection agency can transform your revenue cycle,
+              protect your patient relationships, and drive your practice’s
+              long-term financial success.
             </div>
           </motion.div>
 

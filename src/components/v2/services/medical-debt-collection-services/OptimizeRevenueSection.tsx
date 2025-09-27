@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const OptimizeRevenueSection = () => {
   return (
@@ -38,9 +40,15 @@ const OptimizeRevenueSection = () => {
       >
         Your practice deserves a partner who can adapt to your demands and
         accelerate your financial return. As part of our full-service approach,
-        we offer Medical Claim Billing, helping you shorten the payment cycle
-        and reduce administrative overhead while ensuring accuracy and
-        compliance at every step.
+        we offer&nbsp;
+        <Link
+          href={APP_PATH.services.physicianBilling.claimBilling.path}
+          className="tw-font-semibold tw-text-inherit"
+        >
+          Medical Claim Billing,
+        </Link>
+        &nbsp;helping you shorten the payment cycle and reduce administrative
+        overhead while ensuring accuracy and compliance at every step.
       </motion.p>
       <motion.p
         initial={{ opacity: 0, y: 30 }}
@@ -49,9 +57,12 @@ const OptimizeRevenueSection = () => {
         viewport={{ once: true }}
         className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center"
       >
-        For organizations looking to maximize profitability, our Profit
-        Enhancement Services discover untapped revenues and improve yield,
-        giving your practice a distinct edge in today’s competitive landscape.
+        For organizations looking to maximize profitability, our&nbsp;
+        <Link href={APP_PATH.services.profitEnhancement.path} className="tw-font-semibold tw-text-inherit">
+          Profit Enhancement Services
+        </Link>
+        &nbsp;discover untapped revenues and improve yield, giving your practice
+        a distinct edge in today’s competitive landscape.
       </motion.p>
     </motion.section>
   );

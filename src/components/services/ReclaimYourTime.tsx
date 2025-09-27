@@ -59,6 +59,8 @@ import { motion } from "framer-motion";
 // import ConsultationForm from './ConsultationForm';
 import { upDownAnimation } from "@/utils/animation";
 import { TypewriterEffect } from "../ui/typewriter-effect";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const doctorImg = "/images/home/doctor-bg.png";
 
 const ReclaimYourTime = () => {
@@ -228,7 +230,7 @@ const ReclaimYourTime = () => {
                 At Key Med Solutions, we believe healthcare providers should
                 spend more time caring for patients and less time navigating
                 administrative hurdles. That's why we offer a comprehensive
-                suite of services, including Medical Billing, Medical Coding,
+                suite of services, including&nbsp;<Link href={APP_PATH.services.billingServices.path} className="tw-text-muted-foreground tw-font-semibold">Medical Billing</Link>, Medical Coding,
                 and Healthcare Revenue Cycle Management, all designed to
                 streamline your operations, boost your cash flow, and ensure
                 full compliance.

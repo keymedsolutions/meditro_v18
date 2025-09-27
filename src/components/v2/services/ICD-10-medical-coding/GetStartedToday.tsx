@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function GetStartedToday() {
   return (
@@ -47,8 +49,11 @@ export function GetStartedToday() {
             Accurate ICD-10 medical coding services form the core of robust
             revenue cycle performance and regulatory compliance. As a leading
             ICD-10 Coding Company, our team delivers custom solutions that drive
-            value, boost collections, and streamline your revenue cycle
-            management. Discover how outsourcing your medical coding needs to a
+            value, boost collections, and streamline your&nbsp;
+            <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-inherit tw-font-semibold hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">
+              revenue cycle management.
+            </Link>
+            &nbsp;Discover how outsourcing your medical coding needs to a
             reputable ICD-10 coding company in the USA can transform your
             billing and allow your team to focus on delivering care.
           </motion.p>

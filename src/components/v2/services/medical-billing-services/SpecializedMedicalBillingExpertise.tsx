@@ -1,24 +1,64 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { Microscope, BadgeCheck, Banknote, Shield, Plug } from "lucide-react";
+import Link from "next/link";
 
 export function SpecializedMedicalBillingExpertise() {
   const data = [
     {
       title: "Cardiology Medical Billing Services",
-      description:
-        `The world of cardiology demands expert handling of intricate coding, multi-step procedures, and ever-changing payer policies. Our Cardiology Medical Billing Services are designed to boost approval rates, minimize denials, enhance compliance, and ensure your practice receives every dollar it’s owed.`,
+      description: (
+        <>
+          The world of cardiology demands expert handling of intricate coding,
+          multi-step procedures, and ever-changing payer policies. Our&nbsp;
+          <Link
+            href={APP_PATH.services.physicianBilling.cardiologyBilling.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Cardiology Medical Billing Services
+          </Link>
+          &nbsp;are designed to boost approval rates, minimize denials, enhance
+          compliance, and ensure your practice receives every dollar it’s owed.
+        </>
+      ),
     },
     {
       title: "Radiology Medical Billing Services",
-      description:
-        "Radiology billing involves managing both technical and professional components, frequent regulatory updates, and constantly shifting payer requirements. Our Radiology Medical Billing Services provide accurate coding, streamlined workflow, and dedicated denial management to protect your revenue.",
+      description: (
+        <>
+          <Link
+            href={APP_PATH.services.physicianBilling.radiologyBilling.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Radiology billing
+          </Link>
+          &nbsp;involves managing both technical and professional components,
+          frequent regulatory updates, and constantly shifting payer
+          requirements. Our Radiology Medical Billing Services provide accurate
+          coding, streamlined workflow, and dedicated denial management to
+          protect your revenue.
+        </>
+      ),
     },
     {
       title: "Nephrology Billing Services",
-      description:
-        "Nephrology practices face complex rules, procedure modifiers, and frequent audits. Our Nephrology Billing Services are led by industry experts who keep up with coding and compliance changes, enabling fast reimbursement for dialysis, consultations, and more.",
+      description: (
+        <>
+          Nephrology practices face complex rules, procedure modifiers, and
+          frequent audits. Our&nbsp;
+          <Link
+            href={APP_PATH.services.nephrology.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            Nephrology Billing Services
+          </Link>
+          &nbsp;are led by industry experts who keep up with coding and
+          compliance changes, enabling fast reimbursement for dialysis,
+          consultations, and more.
+        </>
+      ),
     },
   ];
 
@@ -93,10 +133,9 @@ export function SpecializedMedicalBillingExpertise() {
                     </p>
                   </div>
                   {/* Description */}
-                  <div
-                    className="tw-space-y-6 tw-pt-6 tw-text-lg tw-leading-8 tw-text-gray-700 tw-transition-all tw-duration-500 group-hover:!tw-text-accentOrange-200"
-                    dangerouslySetInnerHTML={{ __html: item.description }}
-                  />
+                  <div className="tw-space-y-6 tw-pt-6 tw-text-lg tw-leading-8 tw-text-gray-700 tw-transition-all tw-duration-500 group-hover:!tw-text-accentOrange-200">
+                    {item.description}
+                  </div>
                 </div>
               </motion.div>
             );

@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/ui/card";
 
 interface ProcessStepsProps {
   title: string;
-  description: string;
+  description: ReactNode | string;
   icon?: any;
   color: string;
   number?: string;
@@ -84,10 +84,9 @@ export default function ProcessSteps({
           >
             {title}
           </h4>
-          <p
-            className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors"
-            dangerouslySetInnerHTML={{ __html: description }}
-          ></p>
+          <p className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors">
+            {description}
+          </p>
         </div>
       </CardContent>
     </Card>

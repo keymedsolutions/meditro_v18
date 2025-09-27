@@ -13,6 +13,8 @@ import {
 import Breadcrumb from "@/components/ui/breadcrumb";
 import BlogShareButton from "@/components/blog/blog-share-button";
 import { Accordion } from "react-bootstrap";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const blogDefaultPic1 = "/images/blog/default/pic3.png";
 
 const HealthcareTechTrends = () => {
@@ -114,24 +116,42 @@ const HealthcareTechTrends = () => {
                             behind the scenes.
                           </p>
                           <p className="tw-text-gray-700">
-                            According to a report by Markets and Markets, the
-                            global healthcare IT market was valued at $368.15
-                            billion in 2023 and increased to $420.23 billion in
-                            2024. Looking ahead, it's expected to grow strongly
-                            at an average annual rate of 14.7%, reaching an
-                            estimated $834.35 billion by 2029. This reflects the
-                            rising adoption of digital technologies in
-                            healthcare worldwide.
+                            According to a report by&nbsp;
+                            <Link
+                              href="https://www.marketsandmarkets.com/Market-Reports/healthcare-it-252.html#:~:text=The%20global%20healthcare%20IT%20market,the%20end%20of%20the%20period."
+                              className="tw-font-semibold tw-text-inherit"
+                            >
+                              Markets and Markets
+                            </Link>
+                            , the global healthcare IT market was valued at
+                            $368.15 billion in 2023 and increased to $420.23
+                            billion in 2024. Looking ahead, it's expected to
+                            grow strongly at an average annual rate of 14.7%,
+                            reaching an estimated $834.35 billion by 2029. This
+                            reflects the rising adoption of digital technologies
+                            in healthcare worldwide.
                           </p>
                         </div>
                         <div>
                           <p className="tw-text-gray-700 tw-mb-4">
                             At Key MedSolutions, we know that innovation can
                             feel overwhelming. But it doesn't have to be. As
-                            your go-to partner for Medical Billing Company
-                            Solutions and Medical Coding Services, we're here to
-                            help you make sense of the change, and more
-                            importantly, make the most of it.
+                            your go-to partner for&nbsp;
+                            <Link
+                              href={APP_PATH.services.billingServices.path}
+                              className="tw-font-semibold tw-text-inherit"
+                            >
+                              Medical Billing Company
+                            </Link>
+                            &nbsp;Solutions and&nbsp;
+                            <Link
+                              href={APP_PATH.services.codingServices.path}
+                              className="tw-font-semibold tw-text-inherit"
+                            >
+                              Medical Coding Services
+                            </Link>
+                            , we're here to help you make sense of the change,
+                            and more importantly, make the most of it.
                           </p>
                           <p className="tw-text-gray-700">
                             Whether you're a busy private practice or a
@@ -547,12 +567,18 @@ const HealthcareTechTrends = () => {
                           smartly.
                         </p>
                         <p className="tw-mb-4 tw-text-white">
-                          At Key MedSolutions, our Medical Billing Company and
-                          Medical Coding Services teams stay ahead of these
-                          trends so our clients don't have to worry about them.
-                          We manage the complex back-end tasks, giving you the
-                          freedom to focus fully on delivering exceptional
-                          patient care.
+                          At&nbsp;
+                          <Link
+                            href={APP_PATH.home.path}
+                            className="tw-font-semibold tw-text-inherit"
+                          >
+                            Key MedSolutions
+                          </Link>
+                          , our Medical Billing Company and Medical Coding
+                          Services teams stay ahead of these trends so our
+                          clients don't have to worry about them. We manage the
+                          complex back-end tasks, giving you the freedom to
+                          focus fully on delivering exceptional patient care.
                         </p>
                         <p className="tw-text-white">
                           Whether you're looking to modernize your systems,

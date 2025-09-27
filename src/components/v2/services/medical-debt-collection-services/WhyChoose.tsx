@@ -1,5 +1,6 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   HeartHandshake,
@@ -8,6 +9,7 @@ import {
   TrendingUp,
   FileSearch,
 } from "lucide-react";
+import Link from "next/link";
 
 export function WhyChoose() {
   const containerVariants = {
@@ -47,35 +49,73 @@ export function WhyChoose() {
   const values = [
     {
       title: "Patient-Friendly, Compassionate Collections",
-      description: `Our philosophy focuses on empathy-driven approaches, ensuring that every patient interaction protects your reputation and strengthens patient relationships.`,
+      description: (
+        <>
+          Our philosophy focuses on empathy-driven approaches, ensuring that
+          every patient interaction protects your reputation and strengthens
+          patient relationships.
+        </>
+      ),
       icon: HeartHandshake,
       color: "blue",
     },
     {
       title: "Integrated Medical Billing Collections Solution",
-      description: `Our cutting-edge medical billing collections solution integrates seamlessly with your existing practice management or EHR systems. We minimize workflow disruptions and make the transition to professional debt recovery effortless.`,
+      description: (
+        <>
+          Our cutting-edge&nbsp;
+          <Link
+            href={APP_PATH.services.billingServices.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            medical billing
+          </Link>
+          &nbsp; collections solution integrates seamlessly with your existing
+          practice management or EHR systems. We minimize workflow disruptions
+          and make the transition to professional debt recovery effortless.
+        </>
+      ),
       icon: ServerCog,
       color: "red",
     },
     {
       title: "Fully HIPAA-Compliant Operations",
-      description: `Security and compliance are the backbone of our operations. Our practices exceed standards for confidentiality of patient data and conformity with collection laws.`,
+      description: (
+        <>
+          Security and compliance are the backbone of our operations. Our
+          practices exceed standards for confidentiality of patient data and
+          conformity with collection laws.
+        </>
+      ),
       icon: ShieldCheck,
       color: "green",
     },
     {
       title: "Greater Financial Performance with Profit Enhancement Services",
-      description: `By adopting our Profit Enhancement Services and revenue strategies, your practice will benefit from higher collection rates, improved cash flow, and sustainable growth.`,
+      description: (
+        <>
+          By adopting our Profit Enhancement Services and revenue strategies,
+          your practice will benefit from higher collection rates, improved cash
+          flow, and sustainable growth.
+        </>
+      ),
       icon: TrendingUp,
       color: "purple",
     },
     {
       title: "Transparent Accounts Receivable Recovery Services",
-      description: `Our Accounts Receivable Recovery Services provide you with real-time reporting and data-driven insights, allowing you to make informed decisions for your financial health.`,
+      description: (
+        <>
+          Our Accounts Receivable Recovery Services provide you with real-time
+          reporting and data-driven insights, allowing you to make informed
+          decisions for your financial health.
+        </>
+      ),
       icon: FileSearch,
       color: "yellow",
     },
   ];
+
   const getColorClasses = (color: string) => {
     const colorMap = {
       blue: {
@@ -163,10 +203,9 @@ export function WhyChoose() {
                 <h3 className="tw-text-xl tw-font-semibold tw-text-gray-900 tw-mb-4">
                   {value.title}
                 </h3>
-                <p
-                  className="tw-text-gray-600 tw-leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: value.description }}
-                />
+                <p className="tw-text-gray-600 tw-leading-relaxed">
+                  {value.description}
+                </p>
               </motion.div>
             );
           })}

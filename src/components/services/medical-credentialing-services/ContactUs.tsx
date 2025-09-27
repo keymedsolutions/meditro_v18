@@ -1,6 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import App from "next/app";
+import { APP_PATH } from "@/data/PATH_APP";
 const DoctorAndCareGiverImage = "/images/home/doctorandcaregiver.jpg";
 
 const ContactUs = () => {
@@ -42,8 +45,14 @@ const ContactUs = () => {
             <div className="tw-text-start">
               Ready to simplify your credentialing and billing processes?
               Contact Key MedSolutions today to learn more about our insurance
-              credentialing services, medical billing services, and how we can
-              support your practice’s growth.
+              credentialing services,&nbsp;
+              <Link
+                href={APP_PATH.services.billingServices.path}
+                className="tw-font-semibold tw-text-inherit"
+              >
+                medical billing services
+              </Link>
+              , and how we can support your practice’s growth.
             </div>
 
             <div className="tw-text-start">

@@ -10,7 +10,7 @@ import { useOnClickOutside } from "@/hooks/use-click-outside";
 import { usePathname } from "next/navigation";
 
 interface MenuItem {
-  icon?:any
+  icon?: any;
   label: string;
   path: string;
   external?: boolean;
@@ -96,7 +96,11 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
             <ul
               className={cn(
                 level === 0
-                  ? "sub-menu  !tw-grid !tw-grid-cols-3 lg-menu tw-absolute tw-right-0 tw-top-[85%] tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20"
+                  ? `sub-menu  !tw-grid ${
+                      (item.subMenu?.length ?? 0) > 2
+                        ? "!tw-grid-cols-3"
+                        : "!tw-grid-cols-2"
+                    }  lg-menu tw-absolute tw-right-0 tw-top-[85%] tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20`
                   : "tw-absolute  sub-menu md-menu  tw-right-full ",
                 isSubMenuOpen
                   ? "tw-opacity-100  tw-visible open"

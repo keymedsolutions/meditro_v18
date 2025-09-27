@@ -2,44 +2,97 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
 import { Accordion } from "react-bootstrap";
 import SectionHeading from "@/components/ui/section-heading";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const FAQ = () => {
   const faqs = [
     {
       question: "What are medical coding services?",
-      answer:
-        "Medical coding services involve the process of translating a patient’s diagnoses, treatments, and procedures into standardized codes like ICD-10, CPT, and HCPCS. These codes are essential for accurate billing, insurance claims, and maintaining compliance.",
+      answer: (
+        <>
+          Medical coding services involve the process of translating a patient’s
+          diagnoses, treatments, and procedures into standardized codes like
+          &nbsp;
+          <Link
+            href={APP_PATH.services.codingServices.icd10Coding.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            ICD-10
+          </Link>
+          , CPT, and HCPCS. These codes are essential for accurate billing,
+          insurance claims, and maintaining compliance.
+        </>
+      ),
     },
     {
       question: "Why should I outsource medical coding services?",
-      answer:
-        "Outsourcing medical coding services helps healthcare providers save time, reduce administrative burdens, and improve claim accuracy. It also ensures access to certified experts who follow compliance standards, helping to reduce claim denials and optimize the revenue cycle.",
+      answer: (
+        <>
+          Outsourcing medical coding services helps healthcare providers save
+          time, reduce administrative burdens, and improve claim accuracy. It
+          also ensures access to certified experts who follow compliance
+          standards, helping to reduce claim denials and optimize the revenue
+          cycle.
+        </>
+      ),
     },
     {
       question: "Is Key MedSolutions compliant with industry regulations?",
-      answer:
-        "Absolutely. At Key MedSolutions, we adhere to stringent industry guidelines, including HIPAA, ICD-10, and payer-specific rules, to deliver fully compliant medical coding services and protect sensitive patient data.",
+      answer: (
+        <>
+          Absolutely. At Key MedSolutions, we adhere to stringent industry
+          guidelines, including HIPAA, ICD-10, and payer-specific rules, to
+          deliver fully compliant medical coding services and protect sensitive
+          patient data.
+        </>
+      ),
     },
     {
       question:
         "How does outsourcing medical coding services benefit my practice?",
-      answer:
-        "By outsourcing, you can focus more on patient care while reducing overhead costs associated with in-house teams. Additionally, outsourcing to specialists like Key MedSolutions ensures timely, accurate coding, which results in faster reimbursements and fewer denied claims.",
+      answer: (
+        <>
+          By outsourcing, you can focus more on patient care while reducing
+          overhead costs associated with in-house teams. Additionally,
+          outsourcing to specialists like Key MedSolutions ensures timely,
+          accurate coding, which results in faster reimbursements and fewer
+          denied claims.
+        </>
+      ),
     },
     {
       question:
         "Can medical coding services be customised for different specialties?",
-      answer:
-        "Yes, medical coding services can be tailored to fit the specific needs of different medical specialties, such as radiology, cardiology, and oncology. Our team at Key MedSolutions has the expertise to provide specialty-specific coding for precise and efficient billing.",
+      answer: (
+        <>
+          Yes, medical coding services can be tailored to fit the specific needs
+          of different medical specialties, such as radiology,&nbsp;
+          <Link
+            href={APP_PATH.services.physicianBilling.cardiologyBilling.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            cardiology
+          </Link>
+          , and oncology. Our team at Key MedSolutions has the expertise to
+          provide specialty-specific coding for precise and efficient billing.
+        </>
+      ),
     },
     {
       question:
         "How do medical coding services improve revenue cycle management?",
-      answer:
-        "Precise coding reduces mistakes and denials, helping ensure quicker claim approvals and a more consistent cash flow. By partnering with a professional service provider like Key MedSolutions, you gain access to data-driven processes that enhance overall revenue cycle management.",
+      answer: (
+        <>
+          Precise coding reduces mistakes and denials, helping ensure quicker
+          claim approvals and a more consistent cash flow. By partnering with a
+          professional service provider like Key MedSolutions, you gain access
+          to data-driven processes that enhance overall revenue cycle
+          management.
+        </>
+      ),
     },
   ];
 
@@ -70,9 +123,7 @@ const FAQ = () => {
         {/* Responsive Grid */}
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-mt-10">
           <div>
-            <Accordion
-              className="accordion ttr-accordion1"
-            >
+            <Accordion className="accordion ttr-accordion1">
               {firstHalf.map((faq, index) => (
                 <Accordion.Item eventKey={String(index)} key={index}>
                   <Accordion.Header>{faq.question}</Accordion.Header>
@@ -82,9 +133,7 @@ const FAQ = () => {
             </Accordion>
           </div>
           <div>
-            <Accordion
-              className="accordion1 ttr-accordion1"
-            >
+            <Accordion className="accordion1 ttr-accordion1">
               {secondHalf.map((faq, index) => (
                 <Accordion.Item eventKey={String(index)} key={index}>
                   <Accordion.Header>{faq.question}</Accordion.Header>

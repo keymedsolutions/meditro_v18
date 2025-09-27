@@ -19,6 +19,8 @@ import {
   Layers,
   Lock,
 } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
@@ -130,9 +132,9 @@ const BillingServices = () => {
       >
         <p className="tw-text-gray-800 tw-text-base tw-m-0">
           Explore our&nbsp;
-          <span className="tw-font-semibold tw-text-blue-700">
+          <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
             Medical Billing Services
-          </span>
+          </Link>
           &nbsp;for more details on everything we offer.
         </p>
       </motion.div>

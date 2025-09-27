@@ -197,6 +197,7 @@ import { ContactInfo, SocialAccountLinks } from "@/constant/constatnt";
 import { sanitizePhoneNumber } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -352,10 +353,6 @@ const Footer = () => {
               {[
                 { href: "/about-us", label: "About Us" },
                 { href: "/contact-us", label: "Contact Us" },
-                {
-                  href: "/icd-10-medical-coding-services",
-                  label: "ICD-10 Medical Coding",
-                },
                 { href: "/pricing", label: "Pricing and Plans" },
                 { href: "/privacy-policy", label: "Privacy Policy" },
               ].map((link, index) => (
@@ -384,16 +381,30 @@ const Footer = () => {
             <ul className="tw-space-y-3">
               {[
                 {
-                  href: "/medical-claim-billing-company",
+                  href: APP_PATH.services.physicianBilling.claimBilling.path,
                   label: "Medical Claim Billing",
                 },
                 {
-                  href: "/radiology-billing-services",
+                  href: APP_PATH.services.physicianBilling.radiologyBilling
+                    .path,
                   label: "Radiology Billing Services",
                 },
                 {
-                  href: "/cardiology-billing-services",
+                  href: APP_PATH.services.physicianBilling.cardiologyBilling
+                    .path,
                   label: "Cardiology Medical Billing",
+                },
+                {
+                  href: APP_PATH.services.nephrology.path,
+                  label: "Nephrology Billing",
+                },
+                {
+                  href: APP_PATH.services.codingServices.path,
+                  label: "Medical Coding",
+                },
+                {
+                  href: APP_PATH.services.codingServices.icd10Coding.path,
+                  label: "ICD-10 Medical Coding",
                 },
               ].map((link, index) => (
                 <motion.li
@@ -455,7 +466,7 @@ const Footer = () => {
                   </span>
                   <a
                     href={`mailto:${ContactInfo.email}`}
-                    className="tw-break-all tw-text-white tw-font-medium hover:tw-text-blue-300 tw-transition-colors"
+                    className=" tw-text-white tw-font-medium hover:tw-text-blue-300 tw-transition-colors"
                   >
                     {ContactInfo.email}
                   </a>

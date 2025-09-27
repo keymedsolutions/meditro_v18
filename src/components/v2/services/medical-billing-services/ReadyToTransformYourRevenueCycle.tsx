@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const DoctorAndCareGiverImage = "/images/home/doctorandcaregiver.jpg";
 
 export function ReadyToTransformYourRevenueCycle() {
@@ -62,8 +64,15 @@ export function ReadyToTransformYourRevenueCycle() {
                   more time to your patients.
                 </div>
                 <div className="tw-text-start">
-                  Get in touch now and see why Key MedSolutions is your best
-                  choice for end-to-end medical billing success.
+                  Get in touch now and see why&nbsp;
+                  <Link
+                    href={APP_PATH.home.path}
+                    className="tw-font-semibold tw-text-inherit"
+                  >
+                    Key MedSolutions
+                  </Link>
+                  &nbsp;is your best choice for end-to-end medical billing
+                  success.
                 </div>
               </motion.div>
 

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FileText, Users, Star, Clock } from "lucide-react";
+import Link from "next/link";
 
 export function StatsSection() {
   const containerVariants = {
@@ -160,7 +161,7 @@ export function StatsSection() {
           className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md tw-mt-10"
         >
           <p className="tw-text-gray-800 tw-text-base tw-m-0 tw-font-bold">
-            Partner with Key MedSolutions to streamline workflows, perfect your
+            Partner with&nbsp;<Link href="/" className="tw-text-gray-800">Key MedSolutions</Link>&nbsp;to streamline workflows, perfect your
             billing process, and power the growth of your practice.
           </p>
         </motion.div>

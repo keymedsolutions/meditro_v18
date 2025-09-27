@@ -7,6 +7,8 @@ import { Heart, TrendingUp, Clock, CheckCircle, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const Hero = () => {
   return (
@@ -149,8 +151,8 @@ const Hero = () => {
           As the demands of cardiovascular care increase, so do the complexities
           of billing. Our team of AAPC-certified coders and billing experts
           specializes in cardiology-specific procedures, codes, and payer
-          protocols, ensuring every claim is precise and timely. With Key
-          MedSolutions, you not only Outsource Cardiology Billing to a reliable
+          protocols, ensuring every claim is precise and timely. With&nbsp;<Link href={APP_PATH.home.path} className="tw-text-inherit tw-font-semibold">Key
+          MedSolutions</Link>, you not only Outsource Cardiology Billing to a reliable
           partner but also unlock the power of tailored solutions designed to
           elevate practice performance and enhance patient experience.
         </motion.div>

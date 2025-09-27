@@ -1,5 +1,6 @@
 // app/components/CredentialingServices.tsx
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   Heart,
@@ -9,6 +10,7 @@ import {
   CheckCheck,
   CheckCircle,
 } from "lucide-react"; // Using relevant Lucide icons
+import Link from "next/link";
 
 // Sub-component for individual feature cards
 // Sub-component for individual feature cards
@@ -44,7 +46,7 @@ const FeatureCard = ({
             viewport={{ once: true, amount: 0.2 }}
             className={`${props.IconClassName} tw-text-white tw-p-3 tw-rounded-full tw-shadow-md`}
           >
-          {number}
+            {number}
           </motion.div>
         </div>
         <h3
@@ -74,7 +76,9 @@ const FeatureCard = ({
           </ul>
         )}
 
-        <p className="tw-text-gray-600 tw-text-center tw-mb-4 border tw-bg-white tw-rounded-lg tw-p-2 tw-border-black !tw-mt-auto tw-shadow-md">{footer}</p>
+        <p className="tw-text-gray-600 tw-text-center tw-mb-4 border tw-bg-white tw-rounded-lg tw-p-2 tw-border-black !tw-mt-auto tw-shadow-md">
+          {footer}
+        </p>
       </div>
     </motion.div>
   );
@@ -92,8 +96,13 @@ const CredentialingServices = () => {
         "Streamline and speeding up credentialing with Medicare, Medicaid, and other government programs.",
         "Ensuring timely and accurate compensation for the services you provide.",
       ],
-      footer:
-        "By partnering with KMS, you can rest assured that your practice will be properly credentialed and ready to serve patients without interruptions.",
+      footer: (
+        <>
+          By partnering with KMS, you can rest assured that your practice will
+          be properly credentialed and ready to serve patients without
+          interruptions.
+        </>
+      ),
     },
     {
       title: "Payer Contracting, Evaluation, and Renegotiation",
@@ -104,8 +113,13 @@ const CredentialingServices = () => {
         "Annual Evaluations: Our team conducts yearly assessments of your payer contracts to identify areas for improvement.",
         "Renegotiation Services: We renegotiate contracts to secure better terms and rates, directly impacting your practice’s financial performance.",
       ],
-      footer:
-        "With our expertise in insurance credentialing services, we help you maximize your revenue potential and stay ahead in a competitive healthcare landscape.",
+      footer: (
+        <>
+          With our expertise in&nbsp;<Link href={APP_PATH.services.insuranceVerification.path} className="tw-text-inherit tw-font-semibold">insurance</Link>&nbsp;credentialing services, we help you
+          maximize your revenue potential and stay ahead in a competitive
+          healthcare landscape.
+        </>
+      ),
     },
     {
       title: "Annual Credentialing Maintenance",
@@ -116,8 +130,13 @@ const CredentialingServices = () => {
         "Handling the intricate process of Medicare enrollment and periodic revalidation.",
         "Ensuring that every member of your team is credentialed, so you can bill for their services without delays.",
       ],
-      footer:
-        "By leveraging our physician credentialing services, you can save valuable time and resources while ensuring your practice operates smoothly.",
+      footer: (
+        <>
+          By leveraging our physician credentialing services, you can save
+          valuable time and resources while ensuring your practice operates
+          smoothly.
+        </>
+      ),
     },
   ];
 
@@ -149,10 +168,11 @@ const CredentialingServices = () => {
           titleClassName="!tw-text-emerald-600"
         />
         <FeatureCard
-         title={data?.[1]?.title}
+          title={data?.[1]?.title}
           description={data?.[1]?.description}
           information={data?.[1]?.information}
-          footer={data?.[1]?.footer}  icon={BarChart3}
+          footer={data?.[1]?.footer}
+          icon={BarChart3}
           number="02"
           className="border-2 !tw-border-amber-600"
           IconClassName="!tw-bg-amber-600"
@@ -162,7 +182,8 @@ const CredentialingServices = () => {
           title={data?.[2]?.title}
           description={data?.[2]?.description}
           information={data?.[2]?.information}
-          footer={data?.[2]?.footer}  icon={BarChart3}
+          footer={data?.[2]?.footer}
+          icon={BarChart3}
           number="03"
           className="border-2 !tw-border-purple-600"
           IconClassName="!tw-bg-purple-600"

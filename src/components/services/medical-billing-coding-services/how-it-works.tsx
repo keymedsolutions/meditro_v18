@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import Infographic from "./Infographic";
 import SectionHeading from "@/components/ui/section-heading";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 export function HowItWorks() {
   return (
@@ -27,8 +29,14 @@ export function HowItWorks() {
             &nbsp; Company in the USA
           </h2>
           <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
-            Key MedSolutions has gained recognition as a leading Medical Coding
-            Services Company in the USA for several reasons
+            Key MedSolutions has gained recognition as a leading&nbsp;
+            <Link
+              href={APP_PATH.services.codingServices.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              Medical Coding Services
+            </Link>
+            &nbsp;Company in the USA for several reasons
           </p>
         </motion.div>
 

@@ -15,6 +15,8 @@ import {
   Stethoscope,
   TrendingUp,
   XCircle,
+  GraduationCap,
+  BarChart3,
 } from "lucide-react";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -58,8 +60,7 @@ export const MenuItems: any = [
         ],
       },
       {
-        label:
-          "Profit Enhancement",
+        label: "Profit Enhancement",
         path: "/profit-enhancement-services",
         icon: TrendingUp,
       },
@@ -76,8 +77,7 @@ export const MenuItems: any = [
         ],
       },
       {
-        label:
-          "Medical Debt Collection",
+        label: "Medical Debt Collection",
         path: "/medical-debt-collection-services",
         icon: DollarSign,
       },
@@ -127,10 +127,12 @@ export const MenuItems: any = [
       {
         label: "RCM Plan",
         path: "/rcm-plans",
+        icon: BarChart3,
       },
       {
         label: "Training and Placement",
         path: "/pricing",
+        icon: GraduationCap,
       },
     ],
   },

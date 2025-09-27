@@ -1,3 +1,4 @@
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   TrendingUp,
@@ -9,38 +10,65 @@ import {
   Zap,
   ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
 
 const BenefitsSection = () => {
   const benefits = [
     {
       icon: <CircleDollarSign className="tw-w-6 tw-h-6" />,
       title: "Improved Cash Flow",
-      description:
-        "Faster and more accurate claims submissions ensure your financials remain strong and consistent.",
+      description: (
+        <>
+          Faster and more accurate claims submissions ensure your financials
+          remain strong and consistent.
+        </>
+      ),
     },
     {
       icon: <TrendingUp className="tw-w-6 tw-h-6" />,
       title: "Reduced Denials",
-      description:
-        "Advanced denial management strategies help increase your first-pass resolution rates.",
+      description: (
+        <>
+          Advanced&nbsp;
+          <Link
+            href={APP_PATH.services.denialMgmt.path}
+            className="tw-font-semibold tw-text-inherit"
+          >
+            denial management
+          </Link>
+          &nbsp;strategies help increase your first-pass resolution rates.
+        </>
+      ),
     },
     {
       icon: <ShieldCheck className="tw-w-6 tw-h-6" />,
       title: "Enhanced Compliance",
-      description:
-        "Our HIPAA-compliant systems guarantee the safety and confidentiality of patient data.",
+      description: (
+        <>
+          Our HIPAA-compliant systems guarantee the safety and confidentiality
+          of patient data.
+        </>
+      ),
     },
     {
       icon: <Settings2 className="tw-w-6 tw-h-6" />,
       title: "Customized Solutions",
-      description:
-        "We recognize that every practice has its own specific needs. Our customizable plans cater to practices of all sizes and specialties.",
+      description: (
+        <>
+          We recognize that every practice has its own specific needs. Our
+          customizable plans cater to practices of all sizes and specialties.
+        </>
+      ),
     },
     {
       icon: <BarChart3 className="tw-w-6 tw-h-6" />,
       title: "Data-Driven Insights",
-      description:
-        "Gain unparalleled visibility into your financial performance with in-depth reporting tools.",
+      description: (
+        <>
+          Gain unparalleled visibility into your financial performance with
+          in-depth reporting tools.
+        </>
+      ),
     },
   ];
 

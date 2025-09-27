@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const PartnerWithImage = "/images/handshake.png";
 
 const PartnerWithKeyMedSolutionsToday = () => {
@@ -41,8 +43,14 @@ const PartnerWithKeyMedSolutionsToday = () => {
             <div>
               Don’t let insurance denials disrupt your practice’s financial
               health. Partner with Key MedSolutions for reliable Denial
-              Management Services and comprehensive Revenue Cycle Management
-              Services. Contact us today to learn how we can help your practice
+              Management Services and comprehensive&nbsp;
+              <Link
+                href={APP_PATH.services.rcmCompany.path}
+                className="tw-font-semibold tw-text-inherit hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit"
+              >
+                Revenue Cycle Management Services
+              </Link>
+              . Contact us today to learn how we can help your practice
               streamline denial management and achieve better financial
               outcomes.
             </div>

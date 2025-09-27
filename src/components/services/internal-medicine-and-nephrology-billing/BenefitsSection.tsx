@@ -11,6 +11,7 @@ import {
   GraduationCap,
 } from "lucide-react";
 import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 export function BenefitsSection() {
   const mdMatches = useMediaQuery("(min-width: 1024px)");
@@ -125,7 +126,7 @@ export function BenefitsSection() {
       >
         <p className="tw-text-white tw-text-base tw-m-0">
           Looking for a more integrated approach? Check out our complete&nbsp;
-          <Link href="/internal-medicine-medical-billing" className="tw-font-semibold tw-text-black hover:tw-text-white">RCM Service</Link>
+          <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-inherit hover:tw-text-white">RCM Service</Link>
           &nbsp; for solutions that support your entire revenue cycle.
         </p>
       </motion.div>

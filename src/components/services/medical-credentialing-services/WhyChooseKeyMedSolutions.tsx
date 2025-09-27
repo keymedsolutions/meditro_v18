@@ -1,6 +1,8 @@
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { CheckCircle, Users, TrendingUp, Package } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const WhyChooseKeyMedSolutions = () => {
   const features = [
@@ -100,9 +102,10 @@ const WhyChooseKeyMedSolutions = () => {
           className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md tw-mt-10"
         >
           <p className="tw-text-gray-800 tw-text-base tw-m-0">
-            When you partner with Key MedSolutions, you’re not just hiring a
-            physician credentialing company: you’re gaining a trusted ally
-            dedicated to your success.
+            When you partner with&nbsp;
+            <Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">Key MedSolutions</Link>, you’re not
+            just hiring a physician credentialing company: you’re gaining a
+            trusted ally dedicated to your success.
           </p>
         </motion.div>
       </div>
