@@ -21,7 +21,7 @@ const ProcessSection = () => {
           Billing Services,&nbsp;
           <Link
             href={APP_PATH.services.billingServices.path}
-            className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors tw-font-semibold"
+            className="tw-font-semibold"
           >
             Medical Coding Services
           </Link>
@@ -43,7 +43,7 @@ const ProcessSection = () => {
           from&nbsp;
           <Link
             href={APP_PATH.services.physicianBilling.path}
-            className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors tw-font-semibold"
+            className="tw-font-semibold"
           >
             Physician Billing Solutions
           </Link>
@@ -67,7 +67,7 @@ const ProcessSection = () => {
           &nbsp;
           <Link
             href={APP_PATH.services.denialMgmt.path}
-            className="tw-text-gray group-hover:tw-text-body-color tw-transition-colors tw-font-semibold"
+            className="tw-font-semibold"
           >
             Denial Management Services
           </Link>
