@@ -103,7 +103,7 @@ export function Services() {
             We tailor every service to address the unique challenges faced by
             healthcare providers, delivering results across all levels of your
             &nbsp;
-            <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-inherit tw-font-semibold">revenue cycle.</Link>
+            <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold">revenue cycle.</Link>
             &nbsp;Our core services include:
           </p>
         </motion.div>

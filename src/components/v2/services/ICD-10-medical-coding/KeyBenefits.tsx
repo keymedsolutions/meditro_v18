@@ -81,7 +81,7 @@ export function KeyBenefits() {
           <p className="tw-text-xl tw-text-gray-300 tw-max-w-4xl tw-mx-auto tw-leading-relaxed">
             To fully optimize your billing processes, consider the integration
             of professional coding with&nbsp;
-            <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+            <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold">
               outsourcing medical billing.
             </Link>
             &nbsp;Partnering with an experienced ICD-10 Coding Company in USA

@@ -325,7 +325,7 @@ const MedicalBillingGuide = () => {
                           That's why practices often turn to a reliable&nbsp;
                           <Link
                             href={APP_PATH.services.billingServices.path}
-                            className="tw-font-semibold tw-text-inherit"
+                            className="tw-font-semibold"
                           >
                             Medical Billing Company
                           </Link>
@@ -405,7 +405,7 @@ const MedicalBillingGuide = () => {
                             visibility into your&nbsp;
                             <Link
                               href={APP_PATH.services.rcmCompany.path}
-                              className="tw-font-semibold tw-text-inherit"
+                              className="tw-font-semibold"
                             >
                               revenue cycle
                             </Link>
@@ -453,7 +453,7 @@ const MedicalBillingGuide = () => {
                                       APP_PATH.services.codingServices
                                         .icd10Coding.path
                                     }
-                                    className="tw-font-semibold tw-text-inherit"
+                                    className="tw-font-semibold"
                                   >
                                     ICD-10
                                   </Link>
@@ -615,7 +615,7 @@ const MedicalBillingGuide = () => {
                           At&nbsp;
                           <Link
                             href={APP_PATH.home.path}
-                            className="tw-font-semibold tw-text-inherit"
+                            className="tw-font-semibold"
                           >
                             Key MedSolutions
                           </Link>

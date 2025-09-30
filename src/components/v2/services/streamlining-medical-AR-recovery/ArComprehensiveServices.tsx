@@ -68,7 +68,7 @@ export function ArComprehensiveServices() {
           &nbsp;
           <Link
             href={APP_PATH.services.rcmCompany.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Revenue Cycle
           </Link>
@@ -94,7 +94,7 @@ export function ArComprehensiveServices() {
           Prevent denials before they happen with thorough&nbsp;
           <Link
             href={APP_PATH.services.insuranceVerification.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             insurance eligibility
           </Link>

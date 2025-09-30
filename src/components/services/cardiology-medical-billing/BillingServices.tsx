@@ -132,7 +132,7 @@ const BillingServices = () => {
       >
         <p className="tw-text-gray-800 tw-text-base tw-m-0">
           Explore our&nbsp;
-          <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+          <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold">
             Medical Billing Services
           </Link>
           &nbsp;for more details on everything we offer.

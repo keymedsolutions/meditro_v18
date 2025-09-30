@@ -128,7 +128,7 @@ const HeroSection = () => {
             industry. With evolving regulations, payer models, and rising
             operational costs, healthcare providers must adapt to remain viable.
             At&nbsp;
-            <Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">
+            <Link href={APP_PATH.home.path} className="tw-font-semibold">
               Key MedSolutions
             </Link>
             &nbsp;, a leading Financial Profit Enhancement Company in the USA,

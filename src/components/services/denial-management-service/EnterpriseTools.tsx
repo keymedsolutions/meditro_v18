@@ -52,7 +52,7 @@ const EnterpriseTools = () => {
           Ensure no claim is left unresolved with our dedicated&nbsp;
           <Link
             href={APP_PATH.services.arRecovery.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold "
           >
             accounts receivable
           </Link>

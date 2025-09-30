@@ -80,7 +80,7 @@ export function ComprehensiveServices() {
           Our billing experts quickly identify the root cause of&nbsp;
           <Link
             href={APP_PATH.services.denialMgmt.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             denials
           </Link>
@@ -191,7 +191,7 @@ export function ComprehensiveServices() {
           every part of your&nbsp;
           <Link
             href={APP_PATH.services.rcmCompany.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             revenue cycle
           </Link>

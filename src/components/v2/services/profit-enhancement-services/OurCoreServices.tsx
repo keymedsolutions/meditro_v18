@@ -55,7 +55,7 @@ export function OurCoreServices() {
           Efficient&nbsp;
           <Link
             href={APP_PATH.services.rcmCompany.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Revenue Cycle Management Services
           </Link>
@@ -75,7 +75,7 @@ export function OurCoreServices() {
           We help recover lost revenue with professional&nbsp;
           <Link
             href={APP_PATH.services.reimbursementRate.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Medical Debt Collection Services
           </Link>
@@ -133,7 +133,7 @@ export function OurCoreServices() {
           proactive approach to Claims&nbsp;
           <Link
             href={APP_PATH.services.denialMgmt.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >Denial Management</Link>&nbsp;prevents future issues
           while resolving current ones efficiently.
         </>

@@ -113,7 +113,7 @@ const ContactUsPhysicianBilling = () => {
             <p className="tw-text-xl tw-text-muted-foreground tw-max-w-2xl tw-mx-auto font-dm-sans">
               See how our integrated Physician Medical Billing Services and
               &nbsp;
-              <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-inherit tw-font-semibold">
+              <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold">
                 Revenue Cycle Management Services
               </Link>
               &nbsp;can transform your practice’s financial health; book your

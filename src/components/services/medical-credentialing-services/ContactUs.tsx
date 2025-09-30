@@ -48,7 +48,7 @@ const ContactUs = () => {
               credentialing services,&nbsp;
               <Link
                 href={APP_PATH.services.billingServices.path}
-                className="tw-font-semibold tw-text-inherit"
+                className="tw-font-semibold"
               >
                 medical billing services
               </Link>

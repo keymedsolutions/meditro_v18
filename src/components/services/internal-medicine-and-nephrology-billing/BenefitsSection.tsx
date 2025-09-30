@@ -126,8 +126,8 @@ export function BenefitsSection() {
       >
         <p className="tw-text-white tw-text-base tw-m-0">
           Looking for a more integrated approach? Check out our complete&nbsp;
-          <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-inherit hover:tw-text-white">RCM Service</Link>
-          &nbsp; for solutions that support your entire revenue cycle.
+          <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-accentOrange-500 hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500">RCM Service</Link>
+          &nbsp;for solutions that support your entire revenue cycle.
         </p>
       </motion.div>
     </>

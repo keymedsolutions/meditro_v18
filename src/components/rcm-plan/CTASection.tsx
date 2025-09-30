@@ -30,7 +30,7 @@ export default function CTASection() {
                 Ready to streamline your billing and strengthen your&nbsp;
                 <Link
                   href={APP_PATH.services.rcmCompany.path}
-                  className="tw-font-semibold tw-text-inherit"
+                  className="tw-font-semibold tw-text-accentOrange-500 hover:tw-text-accentOrange-500 active:tw-text-accentOrange-500 focus:tw-text-accentOrange-500"
                 >
                   revenue cycle management?
                 </Link>

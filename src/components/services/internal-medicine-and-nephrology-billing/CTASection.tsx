@@ -136,7 +136,7 @@ export function CTASection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto tw-leading-relaxed"
           >
-            to find out how our expert team and comprehensive Medical&nbsp;<Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-inherit">RCM</Link>&nbsp;
+            to find out how our expert team and comprehensive Medical&nbsp;<Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold">RCM</Link>&nbsp;
             Solutions can empower your internal medicine practice to thrive.
           </motion.p>
           <motion.p

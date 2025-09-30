@@ -59,7 +59,7 @@ const KeyAspects = () => {
           denied claims. Partnering with us for&nbsp;
           <Link
             href={APP_PATH.services.denialMgmt.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Denial Management Services
           </Link>
@@ -79,7 +79,7 @@ const KeyAspects = () => {
           our integrated&nbsp;
           <Link
             href={APP_PATH.services.billingServices.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Medical Billing
           </Link>
@@ -121,7 +121,7 @@ const KeyAspects = () => {
             At&nbsp;
             <Link
               href={APP_PATH.home.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold"
             >
               Key MedSolutions,
             </Link>

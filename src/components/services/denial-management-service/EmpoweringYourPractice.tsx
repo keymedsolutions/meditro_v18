@@ -51,7 +51,7 @@ const EmpoweringYourPractice = () => {
         className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center"
       >
         From front-office staff to&nbsp;
-        <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+        <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold">
           billing specialists
         </Link>
         , our solutions ensure that everyone in your practice is equipped to

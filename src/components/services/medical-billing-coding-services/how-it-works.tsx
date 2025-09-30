@@ -32,7 +32,7 @@ export function HowItWorks() {
             Key MedSolutions has gained recognition as a leading&nbsp;
             <Link
               href={APP_PATH.services.codingServices.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold "
             >
               Medical Coding Services
             </Link>

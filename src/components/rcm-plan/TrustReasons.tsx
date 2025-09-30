@@ -62,7 +62,7 @@ const TrustReasons = () => {
             We're not just an&nbsp;
             <Link
               href={APP_PATH.services.rcmCompany.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold"
             >
               RCM provider
             </Link>

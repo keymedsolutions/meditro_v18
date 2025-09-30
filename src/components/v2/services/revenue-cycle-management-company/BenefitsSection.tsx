@@ -32,7 +32,7 @@ const BenefitsSection = () => {
           Advanced&nbsp;
           <Link
             href={APP_PATH.services.denialMgmt.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             denial management
           </Link>
