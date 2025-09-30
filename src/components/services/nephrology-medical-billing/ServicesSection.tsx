@@ -71,7 +71,7 @@ export function ServicesSection() {
             </span>
           </h2>
           <p className="sm:tw-text-xl tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-leading-relaxed">
-            Partnering with&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">Key MedSolutions</Link>&nbsp;ensures your nephrology practice is
+            Partnering with&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold">Key MedSolutions</Link>&nbsp;ensures your nephrology practice is
             supported at every point in the revenue cycle. Our comprehensive
             offering includes:
           </p>
@@ -126,11 +126,11 @@ export function ServicesSection() {
           <p className="tw-text-gray-800 tw-text-base tw-m-0">
             To further enhance your compliance and collections, explore our
             robust&nbsp;
-            <Link href={APP_PATH.services.codingServices.path} className="tw-font-semibold tw-text-inherit">
+            <Link href={APP_PATH.services.codingServices.path} className="tw-font-semibold ">
               Medical Coding Services
             </Link>
             &nbsp;and browse our range of&nbsp;
-            <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+            <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold ">
               Medical Billing Companies
             </Link>
             &nbsp;offerings.

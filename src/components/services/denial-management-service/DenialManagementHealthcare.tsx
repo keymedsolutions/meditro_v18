@@ -40,7 +40,7 @@ const DenialManagementHealthcare = () => {
             At&nbsp;
             <Link
               href={APP_PATH.home.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold"
             >
               Key MedSolutions
             </Link>

@@ -63,9 +63,9 @@ export function CTASection() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-text-white/90 tw-mb-12 tw-leading-relaxed tw-max-w-4xl tw-mx-auto"
           >
-            Contact us today to learn more about our tailored&nbsp;<Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">Medical Billing
+            Contact us today to learn more about our tailored&nbsp;<Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-accentOrange-500 hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500 visited:tw-text-accentOrange-500">Medical Billing
             Services</Link>&nbsp;for Radiology, advanced Radiology Medical Billing Tools,
-            industry-leading&nbsp;<Link href={APP_PATH.services.reimbursementRate.path} className="tw-font-semibold tw-text-inherit hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">Accounts Receivable Recovery Services</Link>, and the
+            industry-leading&nbsp;<Link href={APP_PATH.services.reimbursementRate.path} className="tw-font-semibold tw-text-accentOrange-500 hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500 visited:tw-text-accentOrange-500">Accounts Receivable Recovery Services</Link>, and the
             expert support you need to focus fully on patient care while we
             drive your bottom line.
           </motion.p>

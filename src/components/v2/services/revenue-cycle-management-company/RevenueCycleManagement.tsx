@@ -29,7 +29,7 @@ const RevenueCycleManagement = () => {
       description: (
         <>
           Our&nbsp;
-          <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold tw-text-inherit">
+          <Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold">
             Medical Billing
           </Link>
           &nbsp;Services integrate seamlessly into your practice, offering
@@ -101,7 +101,7 @@ const RevenueCycleManagement = () => {
             At&nbsp;
             <Link
               href={APP_PATH.home.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold"
             >
               Key MedSolutions
             </Link>

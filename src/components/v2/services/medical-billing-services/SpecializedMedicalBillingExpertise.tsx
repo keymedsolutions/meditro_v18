@@ -15,7 +15,7 @@ export function SpecializedMedicalBillingExpertise() {
           multi-step procedures, and ever-changing payer policies. Our&nbsp;
           <Link
             href={APP_PATH.services.physicianBilling.cardiologyBilling.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Cardiology Medical Billing Services
           </Link>
@@ -30,7 +30,7 @@ export function SpecializedMedicalBillingExpertise() {
         <>
           <Link
             href={APP_PATH.services.physicianBilling.radiologyBilling.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Radiology billing
           </Link>
@@ -50,7 +50,7 @@ export function SpecializedMedicalBillingExpertise() {
           frequent audits. Our&nbsp;
           <Link
             href={APP_PATH.services.nephrology.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             Nephrology Billing Services
           </Link>

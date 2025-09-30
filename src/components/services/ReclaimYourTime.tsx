@@ -230,7 +230,7 @@ const ReclaimYourTime = () => {
                 At Key Med Solutions, we believe healthcare providers should
                 spend more time caring for patients and less time navigating
                 administrative hurdles. That's why we offer a comprehensive
-                suite of services, including&nbsp;<Link href={APP_PATH.services.billingServices.path} className="tw-text-muted-foreground tw-font-semibold">Medical Billing</Link>, Medical Coding,
+                suite of services, including&nbsp;<Link href={APP_PATH.services.billingServices.path} className="tw-font-semibold">Medical Billing</Link>, Medical Coding,
                 and Healthcare Revenue Cycle Management, all designed to
                 streamline your operations, boost your cash flow, and ensure
                 full compliance.

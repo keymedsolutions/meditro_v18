@@ -151,7 +151,7 @@ const Hero = () => {
           As the demands of cardiovascular care increase, so do the complexities
           of billing. Our team of AAPC-certified coders and billing experts
           specializes in cardiology-specific procedures, codes, and payer
-          protocols, ensuring every claim is precise and timely. With&nbsp;<Link href={APP_PATH.home.path} className="tw-text-inherit tw-font-semibold">Key
+          protocols, ensuring every claim is precise and timely. With&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold">Key
           MedSolutions</Link>, you not only Outsource Cardiology Billing to a reliable
           partner but also unlock the power of tailored solutions designed to
           elevate practice performance and enhance patient experience.

@@ -144,7 +144,7 @@ export function SmartChoice() {
         className="container tw-bg-gradient-to-r tw-from-blue-50 tw-to-blue-100 tw-border-l-4 tw-border-blue-500 tw-rounded-xl tw-p-5 tw-shadow-md tw-mt-10"
       >
         <p className="tw-text-gray-800 tw-text-base tw-m-0">
-          Explore our&nbsp;<Link href={APP_PATH.services.path} className="tw-font-semibold tw-text-inherit">full offerings</Link>&nbsp;to see how we can support every facet of
+          Explore our&nbsp;<Link href={APP_PATH.services.path} className="tw-font-semibold">full offerings</Link>&nbsp;to see how we can support every facet of
           your practice
         </p>
       </motion.div>

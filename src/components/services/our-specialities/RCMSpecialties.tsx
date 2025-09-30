@@ -27,7 +27,7 @@ const services = [
             Scalable&nbsp;
             <Link
               href={APP_PATH.services.rcmCompany.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold"
             >
               RCM
             </Link>
@@ -174,7 +174,7 @@ export default function RCMSpecialties() {
             healthcare that we support, each with tailored&nbsp;
             <Link
               href={APP_PATH.services.billingServices.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold"
             >
               medical billing solutions
             </Link>

@@ -43,7 +43,7 @@ const OptimizeRevenueSection = () => {
         we offer&nbsp;
         <Link
           href={APP_PATH.services.physicianBilling.claimBilling.path}
-          className="tw-font-semibold tw-text-inherit"
+          className="tw-font-semibold"
         >
           Medical Claim Billing,
         </Link>
@@ -58,7 +58,7 @@ const OptimizeRevenueSection = () => {
         className="tw-mt-6 tw-text-lg tw-leading-relaxed tw-max-w-4xl tw-text-center"
       >
         For organizations looking to maximize profitability, our&nbsp;
-        <Link href={APP_PATH.services.profitEnhancement.path} className="tw-font-semibold tw-text-inherit">
+        <Link href={APP_PATH.services.profitEnhancement.path} className="tw-font-semibold">
           Profit Enhancement Services
         </Link>
         &nbsp;discover untapped revenues and improve yield, giving your practice

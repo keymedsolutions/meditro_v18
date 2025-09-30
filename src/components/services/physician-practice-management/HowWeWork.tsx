@@ -64,7 +64,7 @@ export default function HowWeWork() {
             </span>
           </motion.h2>
           <p className="tw-text-gray-600 tw-max-w-2xl tw-mx-auto">
-            At&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">Key MedSolutions</Link>, we
+            At&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold">Key MedSolutions</Link>, we
             believe in a personalized approach.Each practice is unique, and our
             solutions are tailored to fit your specific needs Partnering with us
             comes with clear advantages tailored to your practice.

@@ -42,9 +42,9 @@ const ContactUsToday = () => {
             </div>
             <div>
               Choose&nbsp;
-              <Link href={APP_PATH.home.path} className="tw-text-white tw-font-semibold hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">Key MedSolutions</Link>&nbsp;for
+              <Link href={APP_PATH.home.path} className="tw-text-accentOrange-500 tw-font-semibold hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500 visited:tw-text-accentOrange-500">Key MedSolutions</Link>&nbsp;for
               your comprehensive&nbsp;
-              <Link href={APP_PATH.services.arRecovery.path} className="tw-text-white tw-font-semibold hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">
+              <Link href={APP_PATH.services.arRecovery.path} className="tw-text-accentOrange-500 tw-font-semibold hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500 visited:tw-text-accentOrange-500">
                 Accounts Receivable
               </Link>
               &nbsp;Recovery Services, Profit Enhancement Services, and Medical

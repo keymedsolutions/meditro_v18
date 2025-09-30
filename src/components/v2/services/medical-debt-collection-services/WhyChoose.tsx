@@ -66,11 +66,11 @@ export function WhyChoose() {
           Our cutting-edge&nbsp;
           <Link
             href={APP_PATH.services.billingServices.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             medical billing
           </Link>
-          &nbsp; collections solution integrates seamlessly with your existing
+          &nbsp;collections solution integrates seamlessly with your existing
           practice management or EHR systems. We minimize workflow disruptions
           and make the transition to professional debt recovery effortless.
         </>

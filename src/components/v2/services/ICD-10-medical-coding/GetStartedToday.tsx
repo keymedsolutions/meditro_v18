@@ -50,7 +50,7 @@ export function GetStartedToday() {
             revenue cycle performance and regulatory compliance. As a leading
             ICD-10 Coding Company, our team delivers custom solutions that drive
             value, boost collections, and streamline your&nbsp;
-            <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-inherit tw-font-semibold hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit">
+            <Link href={APP_PATH.services.rcmCompany.path} className="tw-text-accentOrange-500 tw-font-semibold hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500 visited:tw-text-accentOrange-500">
               revenue cycle management.
             </Link>
             &nbsp;Discover how outsourcing your medical coding needs to a

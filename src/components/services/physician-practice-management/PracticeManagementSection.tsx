@@ -101,7 +101,7 @@ export function PracticeManagementSection() {
                   &nbsp;
                   <Link
                     href={APP_PATH.services.denialMgmt.path}
-                    className="tw-font-semibold tw-text-inherit hover:tw-text-inherit focus:tw-text-inherit active:tw-text-inherit visited:tw-text-inherit"
+                    className="tw-font-semibold tw-text-accentOrange-500 hover:tw-text-accentOrange-500 focus:tw-text-accentOrange-500 active:tw-text-accentOrange-500 visited:tw-text-accentOrange-500"
                   >
                     denial management services
                   </Link>

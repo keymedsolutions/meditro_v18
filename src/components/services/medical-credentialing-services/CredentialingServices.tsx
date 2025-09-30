@@ -115,7 +115,7 @@ const CredentialingServices = () => {
       ],
       footer: (
         <>
-          With our expertise in&nbsp;<Link href={APP_PATH.services.insuranceVerification.path} className="tw-text-inherit tw-font-semibold">insurance</Link>&nbsp;credentialing services, we help you
+          With our expertise in&nbsp;<Link href={APP_PATH.services.insuranceVerification.path} className="tw-font-semibold">insurance</Link>&nbsp;credentialing services, we help you
           maximize your revenue potential and stay ahead in a competitive
           healthcare landscape.
         </>

@@ -103,7 +103,7 @@ const WhyChooseKeyMedSolutions = () => {
         >
           <p className="tw-text-gray-800 tw-text-base tw-m-0">
             When you partner with&nbsp;
-            <Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">Key MedSolutions</Link>, you’re not
+            <Link href={APP_PATH.home.path} className="tw-font-semibold">Key MedSolutions</Link>, you’re not
             just hiring a physician credentialing company: you’re gaining a
             trusted ally dedicated to your success.
           </p>

@@ -74,19 +74,19 @@ const AccelerateYourRevenue = () => {
               for everyday billing or need advanced specialty help with&nbsp;
               <Link
                 href={APP_PATH.services.nephrology.path}
-                className="tw-font-semibold tw-text-inherit"
+                className="tw-font-semibold"
               >
                 Nephrology Billing Services
               </Link>
               ,&nbsp;
               <Link
                 href={APP_PATH.services.codingServices.icd10Coding.path}
-                className="tw-font-semibold tw-text-inherit"
+                className="tw-font-semibold "
               >
                 ICD-10 Coding Services
               </Link>
               , &nbsp;or&nbsp;
-              <Link href={APP_PATH.services.physicianBilling.path} className="tw-font-semibold tw-text-inherit">
+              <Link href={APP_PATH.services.physicianBilling.path} className="tw-font-semibold ">
                 Physician Billing Solutions,
               </Link>
               &nbsp;Key Med Solutions is your trusted resource.

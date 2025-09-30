@@ -57,7 +57,7 @@ const WhyChooseOurPhysicianBillingSolution = () => {
             Why Choose Our Physician Billing Solution?
           </h2>
           <p className="tw-text-xl tw-text-muted-foreground tw-max-w-2xl tw-mx-auto font-dm-sans">
-            Partnering with&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold tw-text-inherit">Key MedSolutions</Link>&nbsp;means gaining a reliable ally
+            Partnering with&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold">Key MedSolutions</Link>&nbsp;means gaining a reliable ally
             committed to your financial success. Our team of certified physician
             billing specialists leverages the latest in billing technology to
             ensure accuracy, efficiency, and total transparency throughout the

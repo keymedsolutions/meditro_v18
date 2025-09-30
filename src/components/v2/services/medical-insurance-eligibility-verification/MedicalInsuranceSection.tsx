@@ -56,7 +56,7 @@ const MedicalInsuranceSection = () => {
               >
                 <Link
                   href={APP_PATH.contactus.path}
-                  className="tw-font-semibold tw-text-inherit"
+                  className="tw-font-semibold"
                 >
                   Contact us
                 </Link>
@@ -187,7 +187,7 @@ const MedicalInsuranceSection = () => {
                   viewport={{ once: true, amount: 0.2 }}
                 >
                   To create the most efficient healthcare&nbsp;
-                  <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold tw-text-inherit">
+                  <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold">
                     revenue cycle
                   </Link>
                   &nbsp;possible.

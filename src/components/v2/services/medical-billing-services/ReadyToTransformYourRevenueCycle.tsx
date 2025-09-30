@@ -67,7 +67,7 @@ export function ReadyToTransformYourRevenueCycle() {
                   Get in touch now and see why&nbsp;
                   <Link
                     href={APP_PATH.home.path}
-                    className="tw-font-semibold tw-text-inherit"
+                    className="tw-font-semibold "
                   >
                     Key MedSolutions
                   </Link>

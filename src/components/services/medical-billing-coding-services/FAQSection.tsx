@@ -18,7 +18,7 @@ const FAQ = () => {
           &nbsp;
           <Link
             href={APP_PATH.services.codingServices.icd10Coding.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             ICD-10
           </Link>
@@ -72,7 +72,7 @@ const FAQ = () => {
           of different medical specialties, such as radiology,&nbsp;
           <Link
             href={APP_PATH.services.physicianBilling.cardiologyBilling.path}
-            className="tw-font-semibold tw-text-inherit"
+            className="tw-font-semibold"
           >
             cardiology
           </Link>
