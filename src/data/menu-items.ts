@@ -1,66 +1,121 @@
+import {
+  Activity,
+  BadgeCheck,
+  Briefcase,
+  CheckCircle,
+  Code,
+  CreditCard,
+  DollarSign,
+  Droplet,
+  FileCode,
+  FileText,
+  Heart,
+  Monitor,
+  RefreshCw,
+  Stethoscope,
+  TrendingUp,
+  XCircle,
+  GraduationCap,
+  BarChart3,
+} from "lucide-react";
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const MenuItems: any = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about-us" },
   {
-    label: "Services",
-    path: "/services",
+    label: "Our Services",
+    path: "/our-services",
     subMenu: [
       {
-        label: "Physician Billing Services",
-        path: "/physician-billing-services",
+        label: " Physician Medical Billing",
+        path: "/physician-medical-billing-services",
+        icon: Activity,
         subMenu: [
-          { label: "Medical Claim Billing", path: "/medical-claim-billing" },
           {
-            label: "Internal Medicine & Nephrology Billing Services",
-            path: "/internal-medicine-and-nephrology-billing-service",
+            label: "Medical Claim Billing",
+            path: "/medical-claim-billing-company",
+            icon: FileText,
           },
           {
-            label: "Radiology Billing Services",
+            label: "Internal Medicine Billing",
+            path: "/internal-medicine-medical-billing",
+            icon: Stethoscope,
+          },
+          {
+            label: "Nephrology Billing",
+            path: "/nephrology-medical-billing",
+            icon: Droplet,
+          },
+          {
+            label: "Radiology Billing",
             path: "/radiology-billing-services",
+            icon: Monitor,
           },
           {
-            label: "Cardiology Medical Billing",
-            path: "/cardiology-medical-billing",
+            label: "Cardiology Billing",
+            path: "/cardiology-billing-services",
+            icon: Heart,
           },
         ],
       },
       {
-        label:
-          "Improving Your Financial Health with Profit Enhancement Services",
-        path: "/improving-your-financial-health-with-profit-enhancement-services",
+        label: "Profit Enhancement",
+        path: "/profit-enhancement-services",
+        icon: TrendingUp,
       },
       {
-        label: "Medical Billing & Coding Services",
-        path: "/medical-billing-coding-services",
+        label: "Medical Coding",
+        path: "/medical-coding-services",
+        icon: Code,
         subMenu: [
-          { label: "ICD-10 Medical Coding", path: "/ICD-10-medical-coding" },
+          {
+            label: "ICD-10 Medical Coding",
+            path: "/icd-10-medical-coding-services",
+            icon: FileCode,
+          },
         ],
       },
       {
-        label:
-          "Maximize Your Reimbursement Rate with Our Medical Billing and Collection Services",
-        path: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+        label: "Medical Debt Collection",
+        path: "/medical-debt-collection-services",
+        icon: DollarSign,
       },
       {
-        label: "Streamlining Medical AR Recovery",
-        path: "/streamlining-medical-AR-recovery",
-      },
-      { label: "Practice Management", path: "/practice-management" },
-      {
-        label: "Verification of Healthcare Insurance Eligibility",
-        path: "/verification-of-healthcare-insurance-eligibility",
+        label: "Accounts Receivable ",
+        path: "/accounts-receivable-recovery-solutions",
+        icon: RefreshCw,
       },
       {
-        label: "Revenue Cycle Management Company (RCM)",
-        path: "/revenue-cycle-management-company",
+        label: "Physician Practice Management",
+        path: "/physician-practice-management",
+        icon: Briefcase,
       },
       {
-        label: "Denial Management Services",
+        label: "Insurance Eligibility Verification",
+        path: "/medical-insurance-eligibility-verification",
+        icon: CheckCircle,
+      },
+      {
+        label: "Revenue Cycle Management",
+        path: "/revenue-cycle-management-services",
+        icon: XCircle,
+      },
+      {
+        label: "Denial Management",
         path: "/denial-management-service",
+        icon: XCircle,
       },
-      { label: "Physician Credentialing", path: "/physician-credentialing" },
-      { label: "Medical Billing Services", path: "/medical-billing-services" },
+      {
+        label: "Physician Credentialing",
+        path: "/Physician-credentialing-services",
+        icon: BadgeCheck,
+      },
+      {
+        label: "Medical Billing Services",
+        path: "/medical-billing-company",
+        icon: CreditCard,
+      },
     ],
   },
   { label: "Our Specialties", path: "/our-specialities" },
@@ -71,12 +126,14 @@ export const MenuItems: any = [
     subMenu: [
       {
         label: "RCM Plan",
-        path: "/rcm-plan",
+        path: "/rcm-plans",
+        icon: BarChart3,
       },
       {
-        label:"Training and Placement",
-        path:"/pricing"
-      }
+        label: "Training and Placement",
+        path: "/pricing",
+        icon: GraduationCap,
+      },
     ],
   },
   // {

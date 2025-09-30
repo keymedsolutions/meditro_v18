@@ -8,12 +8,12 @@ export const MenuItems: any = [
     subMenu: [
       {
         label: "Physician Billing Services",
-        path: "/physician-billing-services",
+        path: "/physician-medical-billing-services",
         subMenu: [
-          { label: "Medical Claim Billing", path: "/medical-claim-billing" },
+          { label: "Medical Claim Billing", path: "/medical-claim-billing-company" },
           {
             label: "Internal Medicine & Nephrology Billing Services",
-            path: "/internal-medicine-and-nephrology-billing-service",
+            path: "/internal-medicine-medical-billing",
           },
           {
             label: "Radiology Billing Services",
@@ -21,46 +21,46 @@ export const MenuItems: any = [
           },
           {
             label: "Cardiology Medical Billing",
-            path: "/cardiology-medical-billing",
+            path: "/cardiology-billing-services",
           },
         ],
       },
       {
         label:
           "Improving Your Financial Health with Profit Enhancement Services",
-        path: "/improving-your-financial-health-with-profit-enhancement-services",
+        path: "/profit-enhancement-services",
       },
       {
         label: "Medical Billing & Coding Services",
-        path: "/medical-billing-coding-services",
+        path: "/medical-coding-services",
         subMenu: [
-          { label: "ICD-10 Medical Coding", path: "/ICD-10-medical-coding" },
+          { label: "ICD-10 Medical Coding", path: "/icd-10-medical-coding-services" },
         ],
       },
       {
         label:
           "Maximize Your Reimbursement Rate with Our Medical Billing and Collection Services",
-        path: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+        path: "/medical-debt-collection-services",
       },
       {
         label: "Streamlining Medical AR Recovery",
-        path: "/streamlining-medical-AR-recovery",
+        path: "/accounts-receivable-recovery-solutions",
       },
-      { label: "Practice Management", path: "/practice-management" },
+      { label: "Practice Management", path: "/physician-practice-management" },
       {
         label: "Verification of Healthcare Insurance Eligibility",
-        path: "/verification-of-healthcare-insurance-eligibility",
+        path: "/medical-insurance-eligibility-verification",
       },
       {
         label: "Revenue Cycle Management Company (RCM)",
-        path: "/revenue-cycle-management-company",
+        path: "/revenue-cycle-management-services",
       },
       {
         label: "Denial Management Services",
         path: "/denial-management-service",
       },
-      { label: "Physician Credentialing", path: "/physician-credentialing" },
-      { label: "Medical Billing Services", path: "/medical-billing-services" },
+      { label: "Physician Credentialing", path: "/Physician-credentialing-services" },
+      { label: "Medical Billing Services", path: "/medical-billing-company" },
     ],
   },
   { label: "Our Specialties", path: "/our-specialities" },

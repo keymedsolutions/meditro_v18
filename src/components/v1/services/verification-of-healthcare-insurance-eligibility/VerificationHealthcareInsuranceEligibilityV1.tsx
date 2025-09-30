@@ -8,7 +8,7 @@ const VerificationHealthcareInsuranceEligibilityV1 = () => {
 
         <div className="page-content bg-white aboutus">
             <Breadcrumb title={title}
-                breadcrumb={[{ label: title, href: "/verification-of-healthcare-insurance-eligibility" }]} />
+                breadcrumb={[{ label: title, href: "/medical-insurance-eligibility-verification" }]} />
 
             <section>
                 <div className="container">

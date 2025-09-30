@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/ui/breadcrumb";
 
 const Page = () => {
   const title = "Medical Billing & Coding Services";
-  const path = "/medical-billing-coding-services"
+  const path = "/medical-coding-services"
   return (
     <>
 

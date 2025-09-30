@@ -1,82 +1,177 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import { Card, CardContent } from '@/ui/card';
-import { Code, Clock, AlertTriangle, BarChart3 } from 'lucide-react';
-import SectionHeading from '@/components/ui/section-heading';
+import React from "react";
+import { Card, CardContent } from "@/ui/card";
+import { Code, Clock, AlertTriangle, BarChart3 } from "lucide-react";
+import SectionHeading from "@/components/ui/section-heading";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const KeyAspects = () => {
   const aspects = [
     {
       icon: <Code size={40} className="tw-text-primary-600" />,
-      title: "Accurate Medical Coding",
-      description: "The cornerstone of accurate billing is medical coding. In order to minimize errors and lower the number of claims denied, our certified coders make sure that every diagnosis, procedure, and treatment is given the appropriate ICD-10, CPT, and HCPCS codes. Maximizing reimbursements and guaranteeing adherence to payer regulations depend on accurate coding.",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+      title: "Medical Coding Services",
+      description: (
+        <>
+          Our certified coders efficiently handle diagnostic and procedural
+          coding tasks, ensuring your practice’s claims submission process is
+          accurate and timely. With a focus on precision, we eliminate coding
+          discrepancies that could lead to denied claims.
+        </>
+      ),
+      image:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <Clock size={40} className="tw-text-secondary-600" />,
-      title: "Timely Claims Submission",
-      description: "In order to prevent reimbursement delays, we make sure that claims are filed accurately and on time. We assist your practice in maintaining a consistent cash flow and preventing expensive payment delays by optimizing the claims process, which keeps your revenue cycle operating efficiently.",
-      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+      title: "Medical Auditing Solutions",
+      description: (
+        <>
+          Our rigorous Medical Auditing Solutions identify potential coding and
+          billing errors that could impact your practice’s revenue. Through
+          detailed audits, we help you stay compliant with industry regulations
+          and payer guidelines.
+        </>
+      ),
+      image:
+        "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <AlertTriangle size={40} className="tw-text-primary-600" />,
-      title: "Denial Management & Appeals",
-      description: "Medical billing frequently involves claim denials, but our staff is prepared to deal with them skillfully. In order to make sure you are compensated for the services you render, we determine the reason behind denials, contest the denied claims, and collaborate closely with insurance companies to recoup lost income.",
-      image: "https://images.unsplash.com/photo-1563213126-a4273aed2016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+      title: "Healthcare Coding and Consulting Services",
+      description: (
+        <>
+          From documentation improvement to coding guideline updates, our
+          Healthcare Coding and Consulting Services are designed to enhance the
+          operational and financial health of your practice.
+        </>
+      ),
+      image:
+        "https://images.unsplash.com/photo-1563213126-a4273aed2016?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
     },
     {
       icon: <BarChart3 size={40} className="tw-text-secondary-600" />,
-      title: "Comprehensive Reporting & Transparency",
-      description: "Real-time reporting and transparency are features of our billing services that give you important information about your financial performance. You can make educated decisions and maximize your revenue cycle by using customized reports to monitor unresolved claims, payment status, and trends.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
-    }
+      title: "Denial Management Services",
+      description: (
+        <>
+          Our dedicated team specializes in tracking, analyzing, and resolving
+          denied claims. Partnering with us for&nbsp;
+          <Link
+            href={APP_PATH.services.denialMgmt.path}
+            className="tw-font-semibold"
+          >
+            Denial Management Services
+          </Link>
+          &nbsp;ensures your practice recovers lost revenue efficiently,
+          reducing time delays and additional administrative workload.
+        </>
+      ),
+      image:
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80",
+    },
+    {
+      icon: <Code size={40} className="tw-text-primary-600" />,
+      title: "Medical Billing and Coding Services",
+      description: (
+        <>
+          Experience the synergy of outsourced coding and billing solutions with
+          our integrated&nbsp;
+          <Link
+            href={APP_PATH.services.billingServices.path}
+            className="tw-font-semibold"
+          >
+            Medical Billing
+          </Link>
+          &nbsp;and Coding Services. By optimizing both processes, we enhance
+          the ROI of your revenue cycle management.
+        </>
+      ),
+      image: "/images/doctor-with-laptop.png",
+    },
   ];
 
   return (
-    <section className="tw-py-20 tw-relative tw-overflow-hidden">
-      {/* Background decoration */}
-      <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-gray-50 tw-to-white tw-pointer-events-none"></div>
-      
-      {/* Background pattern */}
-      <div className="tw-absolute tw-inset-0 tw-bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtb3BhY2l0eT0iMC4wMiI+PHBhdGggZD0iTTM2IDM0aDR2MWgtNHYtMXptMC0yaDF2NGgtMXYtNHptMi0yaDF2MWgtMXYtMXptMiAyaDF2NGgtMXYtNHptLTIgMmgxdjJoLTF2LTJ6Ii8+PC9nPjwvZz48L3N2Zz4=')] tw-opacity-50"></div>
-      
-      <div className="tw-container tw-mx-auto tw-px-4">
-        <SectionHeading title="Key Aspects of Medical Billing & Coding with Key MedSolutions" subtitle="Expert" />
-    
-        
-        <div className="tw-space-y-16">
+    <section className="tw-py-20 tw-relative tw-overflow-hidden tw-bg-gray-100">
+      <div className="container tw-mx-auto tw-px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="tw-text-center  tw-pt-4"
+        >
+          <motion.div
+            className="tw-text-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
+              Our Comprehensive&nbsp;
+              <br />
+              <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                MedicalCoding Outsourcing
+              </span>
+              &nbsp;Services
+            </h2>
+          </motion.div>
+          <p className="tw-text-lg tw-text-muted-foreground tw-max-w-3xl tw-mx-auto tw-font-serif">
+            At&nbsp;
+            <Link
+              href={APP_PATH.home.path}
+              className="tw-font-semibold"
+            >
+              Key MedSolutions,
+            </Link>
+            &nbsp;we deliver flexible and scalable\ Medical Coding Outsourcing
+            Services designed to meet the evolving needs of healthcare
+            providers. Here are the key services we proudly offer
+          </p>
+        </motion.div>
+
+        <div className="tw-space-y-16 tw-mt-10">
           {aspects.map((aspect, index) => (
-            <div 
-              key={index} 
-              className={`tw-flex tw-flex-col ${index % 2 === 0 ? 'lg:tw-flex-row' : 'lg:tw-flex-row-reverse'} tw-items-center tw-gap-8 lg:tw-gap-16`}
+            <div
+              key={index}
+              className={`tw-flex tw-flex-col ${
+                index % 2 === 0 ? "lg:tw-flex-row" : "lg:tw-flex-row-reverse"
+              } lg:tw-gap-y-0 tw-gap-y-4 `}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
               {/* Image side */}
-              <div className="lg:tw-w-2/5">
+              <div className="lg:tw-w-1/2">
                 <div className="tw-relative">
                   {/* Decorative elements */}
-                  <div className={`tw-absolute tw-w-full tw-h-full tw-rounded-2xl tw-bg-gradient-to-r tw-from-primary-200 tw-to-secondary-200 tw-transform ${index % 2 === 0 ? 'tw-translate-x-4 tw-translate-y-4' : '-tw-translate-x-4 tw-translate-y-4'} -tw-z-10`}></div>
-                  
+                  {/* <div
+                    className={`tw-absolute tw-w-full tw-h-full tw-rounded-2xl tw-bg-gradient-to-r tw-from-primary-200 tw-to-secondary-200 tw-transform ${
+                      index % 2 === 0
+                        ? "tw-translate-x-4 tw-translate-y-4"
+                        : "-tw-translate-x-4 tw-translate-y-4"
+                    } -tw-z-10`}
+                  ></div> */}
+
                   <div className="tw-relative tw-rounded-2xl tw-overflow-hidden tw-shadow-xl">
-                    <img 
-                      src={aspect.image} 
-                      alt={aspect.title} 
+                    <img
+                      src={aspect.image}
+                      alt={aspect.title}
                       className="tw-w-full tw-h-auto tw-object-cover tw-transform hover:tw-scale-105 tw-transition-transform tw-duration-700"
                       style={{ minHeight: "300px" }}
                     />
-                    <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-gray-900/70 tw-to-transparent"></div>
+                    {/* <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-gray-900/70 tw-to-transparent"></div>
                     <div className="tw-absolute tw-bottom-0 tw-left-0 tw-right-0 tw-p-6">
                       <div className="tw-inline-flex tw-items-center tw-justify-center tw-p-3 tw-bg-white/90 tw-backdrop-blur-sm tw-rounded-full">
                         {aspect.icon}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
-              
+
               {/* Content side */}
-              <div className="lg:tw-w-3/5">
-                <Card className="tw-border-0 tw-shadow-lg tw-rounded-xl tw-overflow-hidden hover:tw-shadow-xl tw-transition-all tw-duration-300 tw-bg-white/80 tw-backdrop-blur-sm">
+              <div className="lg:tw-w-1/2">
+                <Card className="tw-rounded-xl tw-bg-transparent tw-overflow-hidden  tw-transition-all tw-duration-300 ">
                   <CardContent className="tw-p-8">
                     <h3 className="tw-text-2xl tw-font-bold tw-mb-4 tw-flex tw-items-center">
                       <span className="tw-mr-3">{aspect.icon}</span>
@@ -85,7 +180,7 @@ const KeyAspects = () => {
                     <p className="tw-text-lg tw-text-gray-700">
                       {aspect.description}
                     </p>
-                    
+
                     {/* Decorative element */}
                     <div className="tw-mt-6 tw-h-1 tw-w-16 tw-bg-gradient-to-r tw-from-primary-500 tw-to-secondary-500 tw-rounded-full"></div>
                   </CardContent>

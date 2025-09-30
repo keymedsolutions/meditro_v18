@@ -2,36 +2,37 @@ export const APP_PATH = {
   home: { path: "/" },
   about: { path: "/about-us" },
   services: {
-    path: "/services",
+    path: "/our-services",
     physicianBilling: {
-      path: "/physician-billing-services",
-      claimBilling: { path: "/medical-claim-billing" },
+      path: "/physician-medical-billing-services",
+      claimBilling: { path: "/medical-claim-billing-company" },
       internalMedicine: {
-        path: "/internal-medicine-and-nephrology-billing-service",
+        path: "/internal-medicine-medical-billing",
       },
       radiologyBilling: { path: "/radiology-billing-services" },
-      cardiologyBilling: { path: "/cardiology-medical-billing" },
+      cardiologyBilling: { path: "/cardiology-billing-services" },
     },
 
     profitEnhancement: {
-      path: "/improving-your-financial-health-with-profit-enhancement-services",
+      path: "/profit-enhancement-services",
     },
     codingServices: {
-      path: "/medical-billing-coding-services",
-      icd10Coding: { path: "/ICD-10-medical-coding" },
+      path: "/medical-coding-services",
+      icd10Coding: { path: "/icd-10-medical-coding-services" },
     },
     reimbursementRate: {
-      path: "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+      path: "/medical-debt-collection-services",
     },
-    arRecovery: { path: "/streamlining-medical-AR-recovery" },
-    practiceMgmt: { path: "/practice-management" },
+    arRecovery: { path: "/accounts-receivable-recovery-solutions" },
+    practiceMgmt: { path: "/physician-practice-management" },
     insuranceVerification: {
-      path: "/verification-of-healthcare-insurance-eligibility",
+      path: "/medical-insurance-eligibility-verification",
     },
-    rcmCompany: { path: "/revenue-cycle-management-company" },
+    nephrology:{path:"nephrology-medical-billing"},
+    rcmCompany: { path: "/revenue-cycle-management-services" },
     denialMgmt: { path: "/denial-management-service" },
-    credentialing: { path: "/physician-credentialing" },
-    billingServices: { path: "/medical-billing-services" },
+    credentialing: { path: "/Physician-credentialing-services" },
+    billingServices: { path: "/medical-billing-company" },
   },
   specialties: { path: "/our-specialities" },
   blogs: { path: "/blogs" },
@@ -39,4 +40,5 @@ export const APP_PATH = {
     path: "https://calendly.com/key_medsolutions_inc/30min",
     external: true,
   },
+  contactus: { path: "/contact-us" },
 };

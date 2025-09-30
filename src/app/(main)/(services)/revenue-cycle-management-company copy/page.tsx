@@ -4,7 +4,7 @@ const RevenueCycleManagementCompanyPage = () => {
     return (
 
         <div className="page-content bg-white aboutus">
-            <Breadcrumb title="Revenue Cycle Management Company (RCM)" breadcrumb={[{ label: "Revenue Cycle Management Company (RCM)", href: "/revenue-cycle-management-company" }]} />
+            <Breadcrumb title="Revenue Cycle Management Company (RCM)" breadcrumb={[{ label: "Revenue Cycle Management Company (RCM)", href: "/revenue-cycle-management-services" }]} />
 
             <section>
                 <div className="container">

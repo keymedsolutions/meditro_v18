@@ -31,7 +31,7 @@ const RCMPlanBanner = () => {
           }}
           className="!tw-m-0 tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-justify-center tw-gap-3 md:tw-gap-6"
         >
-          <Link href="/rcm-plan">
+          <Link href="/rcm-plans">
             <motion.li
               variants={{
                 hidden: { opacity: 0, y: 20 },

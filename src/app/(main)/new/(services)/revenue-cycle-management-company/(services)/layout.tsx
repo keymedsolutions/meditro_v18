@@ -36,7 +36,7 @@ const RCMPageLayout = ({
                 <Breadcrumb headingTag="h1"
                     title={service?.title as string}
                     breadcrumb={[
-                        { label: "Revenue Cycle Management Company", href: "/revenue-cycle-management-company" },
+                        { label: "Revenue Cycle Management Company", href: "/revenue-cycle-management-services" },
                         { label: service?.title as string, href: service?.link as string }
                     ]} />
             

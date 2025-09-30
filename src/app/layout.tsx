@@ -51,7 +51,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
-
+        <meta name="msvalidate.01" content="8CE5D8A890E57610EC932A10D4132E53" />
         <GoogleTagManager gtmId="GTM-M6VK58DK" />
 
 

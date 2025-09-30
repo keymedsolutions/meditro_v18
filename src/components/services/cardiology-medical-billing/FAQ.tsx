@@ -1,72 +1,80 @@
-
-"use client"
-import React from 'react';
-import { Accordion } from 'react-bootstrap';
-
+"use client";
+import React from "react";
+import { Accordion } from "react-bootstrap";
 
 const FAQ = () => {
   const faqs = [
     {
-      question: "How quickly can I see improvements in my collections?",
-      answer: "Within the first few months of working with us, the majority of our cardiology clients see a 20–35% increase in collections."
+      question:
+        "What are the benefits of outsourcing cardiology billing to a specialised company?",
+      answer:
+        "Outsourcing cardiology billing allows practices to focus on patient care while reducing administrative tasks. Specialised companies like Key MedSolutions ensure accurate coding, faster claim processing, and higher reimbursement rates.",
     },
     {
-      question: "Do you handle denied claims?",
-      answer: "Yes! With our team's expertise in appeals and denial management, you can be sure that lost revenue will be successfully recovered."
+      question:
+        "How does a cardiology medical billing company in the USA ensure compliance?",
+      answer:
+        "Professional companies strictly follow HIPAA regulations, Medicare guidelines, and payer-specific rules. They also provide ongoing training to stay updated with the latest changes in medical billing standards.",
     },
     {
-      question: "Can I track my billing performance in real time?",
-      answer: "Of course! Complete insight into claims, payments, and financial trends is possible with our sophisticated reporting tools."
+      question:
+        "Can your billing services integrate with our existing EMR or EHR systems?",
+      answer:
+        "Yes, we seamlessly integrate with your current EMR/EHR systems to streamline data transfer, eliminate redundancy, and reduce manual errors.",
     },
     {
-      question: "Is my cardiology practice too small to benefit from your services?",
-      answer: "Absolutely not! From solo practitioners to sizable cardiology groups, we assist practices of all sizes."
+      question:
+        "How does outsourcing cardiology billing improve overall revenue cycle management?",
+      answer:
+        "Partnering with Key MedSolutions simplifies your entire revenue cycle. Our expert team manages everything from coding and claims submission to denial management, ensuring faster reimbursements, reduced revenue leakage, and a more predictable financial performance for your practice.",
     },
     {
-      question: "Do you offer support for multiple specialties?",
-      answer: "Yes! Our specialty is cardiology billing, but we also offer professional billing services for primary care, orthopedics, dermatology, mental health, and other specialties, making sure that each specialty's coding and compliance are correct."
-    }
+      question:
+        "What specific cardiology procedures do your billing services cover?",
+      answer:
+        "Our billing services cover a wide range of cardiology procedures, including echocardiograms, stress tests, catheterisations, interventional procedures, and advanced cardiac imaging.",
+    },
   ];
-
 
   const mid = Math.ceil(faqs.length / 2);
   const firstHalf = faqs.slice(0, mid);
   const secondHalf = faqs.slice(mid);
   return (
-    <section className="tw-py-24">
+    <section className="container tw-py-24">
       <div className="tw-container tw-mx-auto tw-px-4">
         <div className="tw-text-center tw-mb-12">
-          <h4 className="tw-gradient-text mb-4">Frequently Asked Questions (FAQs)</h4>
-          <p className="tw-text-gray-600 max-w-2xl mx-auto">
-            Find answers to common questions about our cardiology billing services.
-          </p>
+          <h4 className="tw-gradient-text mb-4">
+            Frequently Asked Questions (FAQs)
+          </h4>
         </div>
 
-          {/* Responsive Grid */}
-          <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-mt-10">
-                    <div>
-                        <Accordion defaultActiveKey="0" className="accordion ttr-accordion1">
-                            {firstHalf.map((faq, index) => (
-                                <Accordion.Item eventKey={String(index)} key={index}>
-                                    <Accordion.Header>{faq.question}</Accordion.Header>
-                                    <Accordion.Body>{faq.answer}</Accordion.Body>
-                                </Accordion.Item>
-                            ))}
-                        </Accordion>
-                    </div>
-                    <div>
-                        <Accordion defaultActiveKey="1" className="accordion1 ttr-accordion1">
-                            {secondHalf.map((faq, index) => (
-                                <Accordion.Item eventKey={String(index)} key={index}>
-                                    <Accordion.Header>{faq.question}</Accordion.Header>
-                                    <Accordion.Body>{faq.answer}</Accordion.Body>
-                                </Accordion.Item>
-                            ))}
-                        </Accordion>
-                    </div>
-                </div>
-
-   
+        {/* Responsive Grid */}
+        <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-6 tw-mt-10">
+          <div>
+            <Accordion
+              className="accordion ttr-accordion1"
+            >
+              {firstHalf.map((faq, index) => (
+                <Accordion.Item eventKey={String(index)} key={index}>
+                  <Accordion.Header>{faq.question}</Accordion.Header>
+                  <Accordion.Body>{faq.answer}</Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </div>
+          <div>
+            <Accordion
+              className="accordion1 ttr-accordion1"
+            >
+              {secondHalf.map((faq, index) => (
+                <Accordion.Item eventKey={String(index)} key={index}>
+                  <Accordion.Header>{faq.question}</Accordion.Header>
+                  <Accordion.Body>{faq.answer}</Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </div>
+        </div>
       </div>
     </section>
   );

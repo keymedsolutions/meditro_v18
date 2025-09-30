@@ -1,20 +1,20 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 // import Link from "next/link"
 // import { Button } from "@/ui/button"
 // import { ArrowRight } from "lucide-react"
 
 export default function MainBanner() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true)
-  }, [])
+    setIsVisible(true);
+  }, []);
 
   return (
-    <div className="tw-relative tw-overflow-hidden tw-bg-gradient-to-br tw-mb-32 tw-from-blue-50 tw-via-white tw-to-blue-50">
+    <div className="tw-relative tw-overflow-hidden tw-bg-gradient-to-br tw-from-blue-50 tw-via-white tw-to-blue-50">
       {/* Background elements */}
       <div className="tw-absolute tw-inset-0 tw-z-0">
         <div className="tw-absolute tw-top-20 tw-left-10 tw-w-64 tw-h-64 tw-rounded-full tw-bg-blue-100/40 tw-blur-3xl"></div>
@@ -30,37 +30,42 @@ export default function MainBanner() {
             animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5 }}
           >
-
-<h6 className="title-ext text-primary">Who we are</h6>
+            <h6 className="title-ext text-primary">Who we are</h6>
             {/* <h6 className="tw-text-sm tw-font-medium tw-text-blue-600 tw-uppercase tw-tracking-wider">Who we are</h6> */}
 
             <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-3xl tw-font-bold ">
-
-            Trusted Medical Billing Services Company &<br /> Revenue Cycle Management Solutions for Healthcare
+              Your Trusted Medical Billing Firm
               {/* Trusted Medical Billing Services &<br />
               Revenue Cycle Management Company for Healthcare */}
             </h1>
 
             <div className="tw-space-y-4 tw-text-gray-700 tw-text-sm sm:tw-text-base">
               <p>
-                We are a medical billing and revenue cycle management company that offers healthcare providers worldwide
-                an enhanced method for revenue collection and reducing administrative duties. As a reputable Healthcare
-                Medical Billing Services and RCM Company, we provide tailored solutions that help physicians, clinics,
-                and hospitals improve operational efficiency and financial performance.
+                At Key MedSolutions, we make medical billing easy. We are a
+                medical billing service that helps healthcare professionals
+                focus on what is most important: caring for their patients. Our
+                mission is to take the stress out of billing and make your
+                revenue cycle work seamlessly.
               </p>
 
               <p>
-                Our comprehensive services encompass RCM Billing Solutions, claims processing, denial resolution, and
-                insurance confirmation. We specialize in delivering comprehensive Healthcare Revenue Cycle Management
-                (RCM) Services designed to enhance cash flow and minimize claim denials. If you need expert help with
-                billing or strategic guidance, we are here to help you.
+                We provide customized Medical Billing and Revenue Cycle
+                Management (RCM) Services to meet the unique needs of your
+                practice. From Medical Billing Management Services to Medical
+                Coding Services, we handle the details so you can focus on your
+                patients.
               </p>
 
               <p>
-                Key MedSolutions is your reliable ally in efficient and precise Medical Billing Services, utilizing deep
-                industry knowledge combined with advanced technology to enhance reimbursement. As a leading Medical
-                Billing Company, we provide advanced Revenue Cycle Management Solutions and customized Medical Billing
-                Solutions to suit practices of all sizes.
+                Our team specializes in Medical Claims Billing Services and RCM
+                Solutions that improve cash flow and reduce claim denials. With
+                skilled medical coders and billers and advanced technology, we
+                ensure accuracy and efficiency every step of the way.
+              </p>
+              <p>
+                At Key MedSolutions, we are more than just a Medical Billing
+                Agency. We are your partner in success, committed to making your
+                practice more efficient, more profitable, and less stressful.
               </p>
             </div>
           </motion.div>
@@ -69,7 +74,9 @@ export default function MainBanner() {
           <motion.div
             className="lg:tw-col-span-5 tw-relative"
             initial={{ opacity: 0, scale: 0.95 }}
-            animate={isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+            animate={
+              isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }
+            }
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="tw-relative">
@@ -123,5 +130,5 @@ export default function MainBanner() {
         </div>
       </div>
     </div>
-  )
+  );
 }

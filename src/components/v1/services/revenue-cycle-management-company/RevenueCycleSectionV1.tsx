@@ -6,7 +6,7 @@ const RevenueCycleSectionV1 = () => {
 
 
   const title = "Trusted Revenue Cycle Management Company for Improved Financial Performance";
-  const path = "/revenue-cycle-management-company"
+  const path = "/revenue-cycle-management-services"
   return (
     <>
 

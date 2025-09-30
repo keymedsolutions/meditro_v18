@@ -2,92 +2,99 @@ import { ISiteMetaData } from "@/types/app.types";
 
 export const SiteMetaData: ISiteMetaData = {
   "/": {
-    title: "Healthcare Medical Billing Services Company & RCM Solutions",
-    description:" Reliable healthcare medical billing and coding services and RCM solutions to maximize revenue, reduce denials, and streamline your practice's financial performance.",
-  },
-  "/medical-claim-billing": {
-    title: "Medical Claims Processing Service and Management Solutions",
+    title: "Seamless Medical Billing Services | Key MedSolutions",
     description:
-      "Medical claims processing service with expert management solutions to reduce denials, boost reimbursements, and improve cash flow for your healthcare practice.",
+      "Discover stress-free medical billing with Key MedSolutions. Boost cash flow, reduce errors, and focus on patients with tailored RCM services and expert support.",
   },
-  "/medical-billing-coding-services": {
-    title: "Medical Coding Services and Solutions | HIPAA-Compliant",
+  "/medical-claim-billing-company": {
+    title: "Medical Claim Billing Company in USA | Key MedSolutions",
     description:
-      "Accurate, secure medical coding services and solutions for healthcare providers—ensuring HIPAA compliance, faster reimbursements, and revenue cycle improvement.",
+      "Discover Key MedSolutions, a USA Medical Claim Billing Company. Streamline claims processing, reduce denials, and boost practice efficiency.",
+  },
+  "/medical-coding-services": {
+    title: "Professional Medical Coding Services | Key MedSolutions",
+    description:
+      "Boost your revenue cycle with professional Medical Coding Services. Reduce errors, accelerate reimbursements, and free up staff time.",
   },
   "/about-us": {
-    title: "About Key MedSolutions | Medical Billing Experts",
+    title: "About Us | Medical Billing Experts – Key MedSolutions",
     description:
-      "Discover how Key MedSolutions delivers expert medical billing and coding services to help healthcare providers boost revenue and streamline operations.",
+      "Elevate your practice with Key MedSolutions expert billing, tailored RCM, and advanced solutions that drive precision, efficiency, and growth.",
   },
-  "/internal-medicine-and-nephrology-billing-service": {
-    title: "Internal Medicine and Nephrology Medical Billing Services",
+  "/internal-medicine-medical-billing": {
+    title: "Internal Medicine Billing Company in USA | Key MedSolutions",
     description:
-      "KeyMed’s nephrology medical billing services are customized to meet your practice's needs, ensuring accurate billing and boosting revenue cycle efficiency.",
+      "Key MedSolutions provides Internal Medicine Billing Services. Streamline claims, reduce denials, and boost revenue for your internal medicine practice.",
   },
-  "/physician-billing-services": {
-    title: "Physician Billing Solutions for Physician Practices & Groups",
-    description:"End-to-end physician billing solutions for practices and groups. Improve cash flow, reduce denials, and streamline RCM with, accurate medical billing services."
-  },
-  "/ICD-10-medical-coding": {
-    title: "ICD-10 Medical Coding Services for Precise Reimbursement ",
+  "/physician-medical-billing-services": {
+    title: "Physician Medical Billing Company in USA | Key MedSolutions",
     description:
-      " Ensure accurate claims and faster reimbursements with expert ICD-10 medical coding services tailored for healthcare providers and facilities.",
+      "Key MedSolutions offers Physician Medical Billing Services to boost revenue, reduce denials, and streamline workflows for practices across the USA.",
+  },
+  "/nephrology-medical-billing": {
+    title: "Nephrology Medical Billing Company in USA | Key MedSolutions",
+    description:
+      "Specialized Nephrology Medical Billing Services. Streamline claims, reduce denials, and boost revenue for nephrology practices nationwide.",
+  },
+  "/icd-10-medical-coding-services": {
+    title: "ICD-10 Medical Coding Services | Key MedSolutions",
+    description:
+      "Optimize your practice with Key MedSolutions, a leading ICD-10 Coding Company in USA, ensuring accurate claims and faster reimbursements.",
   },
   "/radiology-billing-services": {
-    title: "Expert Radiology Billing Services to Maximize Reimbursements",
+    title: "Radiology Medical Billing Company in USA | Key MedSolutions",
     description:
-      " Expert radiology medical billing and coding services tailored for imaging centers. Ensure accuracy, compliance, and faster reimbursements with trusted solutions",
+      "Streamline your practice with Radiology Billing Services. Ensure accurate coding, faster claims processing, and better revenue cycle management.",
   },
-  "/cardiology-medical-billing": {
-    title: "Specialized Cardiology Medical Billing and Coding Services",
+  "/cardiology-billing-services": {
+    title: "Cardiology Medical Billing Company in USA | Key MedSolutions",
     description:
-      "Get specialized cardiology medical billing and coding services to reduce claim denials, speed up reimbursements, and improve your practice’s revenue cycle.",
+      "Discover expert Cardiology Medical Billing Services with Key MedSolutions. Maximize reimbursements, reduce denials, and streamline processes for better revenue.",
   },
-  "/improving-your-financial-health-with-profit-enhancement-services": {
-    title: "Profit Enhancement Services for Healthcare Providers",
+  "/profit-enhancement-services": {
+    title: "Profit Enhancement Company in USA | Key MedSolutions",
     description:
-      "Improve financial performance with tailored profit enhancement services designed to help healthcare providers increase revenue and reduce inefficiencies.",
+      "Transform healthcare finances with expert Profit Enhancement Services. Recover lost revenue, lower costs, and boost operational efficiency.",
   },
-  "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
-    {
-      title: "Medical Debt Collection Service for Healthcare Practitioners",
-      description:"Professional Medical Debt Collection Services for healthcare providers to recover unpaid claims, reduce bad debt, and improve overall cash flow.",
-    },
-  "/streamlining-medical-AR-recovery": {
-    title: "Accounts Receivable Recovery Services | AR Recovery Solution",
+  "/medical-debt-collection-services": {
+    title: "Medical Debt Collection Agency in USA | Key MedSolutions",
     description:
-      "Maximize collections with accounts receivable recovery solutions. AR recovery services help improve cash flow and reduce outstanding balances effectively.",
+      "Expert Medical Debt Collection Services from Key MedSolutions improve cash flow, minimize write-offs, and deliver reliable, compliant debt recovery.",
   },
-  "/practice-management": {
-    title: "Physician Practice Management Services | Key MedSolutions ",
+  "/accounts-receivable-recovery-solutions": {
+    title: "AR Recovery Services in USA | Key MedSolutions",
     description:
-      "Optimize your practice with expert physician practice management services. Enhance efficiency, compliance, and revenue with tailored solutions. Book a demo today!",
+      "Recover overdue payments with our Accounts Receivable Recovery Solutions and streamline your revenue cycle for maximum efficiency.",
   },
-  "/verification-of-healthcare-insurance-eligibility": {
-    title: "Insurance Verification Services | Verify Eligibility & Benefits",
+  "/physician-practice-management": {
+    title: "Physician Practice Management Company | Key MedSolutions",
     description:
-      "Streamline patient intake with expert insurance verification services. Verify eligibility and benefits accurately to reduce denials and improve cash flow.",
+      "Partner with a reliable Physician Practice Management company in USA to reduce administrative tasks, optimize revenue, and improve operational efficiency.",
   },
-  "/revenue-cycle-management-company": {
-    title: "Healthcare Revenue Cycle Management Solutions | RCM Software",
+  "/medical-insurance-eligibility-verification": {
+    title: "Medical Insurance Eligibility Verification Services",
     description:
-      "End-to-end healthcare revenue cycle management solutions and RCM software. Boost cash flow, reduce denials, and streamline billing for providers and medical practices.",
+      "Streamline your billing process with Top Insurance Verification Company in USA. Ensure accurate coverage, reduce claim denials, and boost cash flow efficiently.",
+  },
+  "/revenue-cycle-management-services": {
+    title: "Revenue Cycle Management Services | Key MedSolutions",
+    description:
+      "Streamline your revenue cycle with expert Revenue Cycle Management Solutions. Maximize reimbursements, ensure compliance, and boost financial performance.",
   },
   "/denial-management-service": {
-    title: "Denial Management Services and Solutions for Healthcare",
+    title: "Denial Management Services | Key MedSolutions",
     description:
-      " Reduce claim denials and recover lost revenue with expert denial management services and solutions for healthcare providers. Fast resolution. Proven RCM strategies.",
+      "Streamline operations with Key MedSolutions Denial Management Company. Recover lost revenue, reduce claim denials, and enhance your cash flow. Contact Now!",
   },
-  "/physician-credentialing": {
-    title: "Physician Medical and Insurance Credentialing Services",
+  "/Physician-credentialing-services": {
+    title: "Medical Credentialing Services | Key MedSolutions",
     description:
-      "Collaborate with our physician credentialing company for smooth credentialing services. Guarantee compliance and productivity in your medical practice.",
+      "Optimize medical credentialing with Key MedSolutions. Trusted physician credentialing services in USA for efficiency and practice growth. Get started today!",
   },
   "/our-specialities": {
-    title: "Specialties in Medical Billing Services and RCM Solutions",
+    title: "Advanced Medical Billing Company | Key MedSolutions",
     description:
-      "Explore specialties in medical billing services and RCM solutions. Boost revenue, ensure compliance, and streamline your healthcare practice operations.",
+      "Boost your practice revenue with Key MedSolutions, an advanced medical billing company offering expert Medical Billing Specialties in US. Contact us today!",
   },
   "/blogs": {
     title: "KeyMed Solutions Blog: Healthcare Insights & Revenue Tips",
@@ -128,6 +135,16 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Enhance your healthcare finances with expert RCM solutions to optimize billing, reduce denials, and boost revenue performance.",
   },
+  "/top-20-healthcare-technology-trends": {
+    title: "Top 20 Healthcare Technology Trends in 2025 | Key MedSolutions",
+    description:
+      "Explore the top 20 healthcare technology trends in 2025. Stay ahead with insights from Key MedSolutions on Medical Billing, Coding, and future-ready healthcare.",
+  },
+  "/what-is-medical-billing-and-coding": {
+    title: "What Is Medical Billing and Coding | Key MedSolutions",
+    description:
+      "Learn medical billing and coding basics with Key MedSolutions to improve accuracy, speed payments, and reduce stress for healthcare providers.",
+  },
   "/free-ationevalu": {
     title: "Medical Billing for New Clinics | Expert RCM Services",
     description:
@@ -149,10 +166,10 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       " Meet the team driving our medical billing and RCM success—experienced professionals committed to accuracy and healthcare excellence.",
   },
-  "/services": {
-    title: "Comprehensive Medical Billing Services and RCM Solutions",
+  "/our-services": {
+    title: "Medical Billing Services & RCM Solutions | Key MedSolutions",
     description:
-      "End-to-end healthcare Medical billing services and RCM Solutions—from credentialing to denial management. Improve cash flow, reduce errors, & grow your practice.",
+      "Key MedSolutions offers end-to-end medical billing, coding and RCM services to boost revenue, reduce denials and streamline workflows for healthcare providers.",
   },
   "/booking": {
     title: "Schedule a Call | Medical Billing & RCM Consultation",
@@ -164,21 +181,25 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Key MedSolution is a trusted Billing Services and RCM Company in the US. Improve claim accuracy, accelerate reimbursements, and boost your revenue cycle.",
   },
-  "/medical-billing-services":{
-    title:"Medical Billing Services | Trusted Medical Billing Company",
-    description:"Reliable, HIPAA-compliant medical billing services from a top-rated medical billing company. Boost revenue, reduce denials, and streamline your practice today."
+  "/medical-billing-company": {
+    title: "Medical Billing Services | Key MedSolutions",
+    description:
+      "Boost your financial performance with Key MedSolutions, a professional Medical Billing Company. Improve cash flow and streamline billing today!",
   },
-  "/pricing":{
-    title:"Affordable Online Medical Billing, Coding and RCM Courses",
-    description:"Start your career with affordable online courses in medical billing, coding, and revenue cycle management. Learn anytime with expert support from KeyMed Solution."
+  "/pricing": {
+    title: "Affordable Online Medical Billing, Coding and RCM Courses",
+    description:
+      "Start your career with affordable online courses in medical billing, coding, and revenue cycle management. Learn anytime with expert support from KeyMed Solution.",
   },
-  "/rcm-plan":{
-    title:"Insurance Verification Pricing | Checks Eligibility & Patient Data",
-    description:"Key Medsolutions Insurance Verification Pricing – Affordable, fast, and accurate verification. From just $2 per request or $1,000/month for a dedicated billing expert. See our transparent pricing plans now"
+  "/rcm-plans": {
+    title:
+      "RCM Plans and Medical Billing Solutions | Key MedSolutions",
+    description:
+      "Explore Key MedSolutions' scalable RCM plans for all practice sizes. Transparent pricing, HIPAA-compliant, and designed to streamline your billing. Get started today!",
   },
   "/online-medical-billing-coding-training": {
     title: "Online Medical Billing and Coding Training Program",
     description:
       "Enroll in an online medical billing and coding training program. Gain in-demand skills, get certified, and start your career in healthcare administration.",
-  }
+  },
 };

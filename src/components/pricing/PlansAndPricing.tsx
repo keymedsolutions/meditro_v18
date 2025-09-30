@@ -4,7 +4,7 @@ import RCMPlansList from "./rcm-plan";
 import PricingPlans from "./PricingPlans";
 
 const PlansAndPricing = () => {
-  const [activeTab, setActiveTab] = useState("price");
+  const [activeTab, setActiveTab] = useState("Training and Placement");
 
   return (
     <div className="tw-w-full tw-my-8">
@@ -13,7 +13,7 @@ const PlansAndPricing = () => {
           className="tw-flex tw-gap-x-1 tw-px-1.5 tw-py-1.5 tw-list-none tw-rounded-full tw-bg-purple-200/70"
           role="list"
         >
-          {["price","RCM Plan"].map((tab) => (
+          {["Training and Placement", "RCM Plan"].map((tab) => (
             <li key={tab} className="tw-w-max">
               <button
                 className={`tw-flex tw-font-semibold tw-text-md tw-items-center tw-justify-center tw-px-4 tw-py-2 tw-text-sm tw-transition-all tw-ease-in-out tw-border-0 tw-rounded-full tw-cursor-pointer tw-bg-inherit ${
@@ -46,11 +46,11 @@ const PlansAndPricing = () => {
                   </span>
                 </h2>
                 <p>
-                  We keep things simple: each verification request counts as one
-                  ticket. A ticket equals one patient verification. Whether you
-                  need a full breakdown or just eligibility data, our pricing
-                  adjusts based on the depth of information and urgency of your
-                  request.
+                  We believe in simplicity and transparency. Each verification
+                  request is counted as one ticket—one ticket equals one patient
+                  verification. Whether you need a comprehensive breakdown or
+                  just basic eligibility details, our pricing flexes to match
+                  the depth and urgency of your request.
                 </p>
               </div>
 
@@ -58,8 +58,8 @@ const PlansAndPricing = () => {
             </div>
           </div>
         )}
-        {activeTab === "price" && (
-          <div id="price" className='tw-px-2' role="tabpanel">
+        {activeTab === "Training and Placement" && (
+          <div id="Training and Placement" className="tw-px-2" role="tabpanel">
             <PricingPlans isHomePage={true} />
           </div>
         )}

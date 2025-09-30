@@ -78,7 +78,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/physician-billing-services": [
+  "/physician-medical-billing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -117,7 +117,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/physician-billing-services",
+      url: "https://www.keymedsolution.com/physician-medical-billing-services",
       category: "Physician Billing Services",
     },
     {
@@ -176,7 +176,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/medical-claim-billing": [
+  "/medical-claim-billing-company": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -207,10 +207,10 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/medical-claim-billing",
+      url: "https://www.keymedsolution.com/medical-claim-billing-company",
     },
   ],
-  "/internal-medicine-and-nephrology-billing-service": [
+  "/internal-medicine-medical-billing": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -241,7 +241,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/internal-medicine-and-nephrology-billing-service",
+      url: "https://www.keymedsolution.com/internal-medicine-medical-billing",
     },
   ],
   "/radiology-billing-services": [
@@ -341,7 +341,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/cardiology-medical-billing": [
+  "/cardiology-billing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -380,7 +380,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/cardiology-medical-billing",
+      url: "https://www.keymedsolution.com/cardiology-billing-services",
       category: "Cardiology Medical Billing Services",
     },
     {
@@ -438,7 +438,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/improving-your-financial-health-with-profit-enhancement-services": [
+  "/profit-enhancement-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -477,7 +477,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/improving-your-financial-health-with-profit-enhancement-services",
+      url: "https://www.keymedsolution.com/profit-enhancement-services",
       category: "Profit Enhancement Services",
     },
     {
@@ -535,7 +535,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/medical-billing-coding-services": [
+  "/medical-coding-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -574,7 +574,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/medical-billing-coding-services",
+      url: "https://www.keymedsolution.com/medical-coding-services",
       category: "Medical Coding Services",
     },
     {
@@ -632,7 +632,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/ICD-10-medical-coding": [
+  "/-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -671,7 +671,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/ICD-10-medical-coding",
+      url: "https://www.keymedsolution.com/icd-10-medical-coding-services",
       category: "ICD-10 Medical Coding Services",
     },
     {
@@ -729,7 +729,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services":
+  "/medical-debt-collection-services":
     [
       {
         "@context": "https://schema.org",
@@ -769,7 +769,7 @@ export const jsonLdSchema: any = {
           "@type": "Country",
           name: "United States",
         },
-        url: "https://www.keymedsolution.com/maximize-your-reimbursement-rate-with-our-medical-billing-and-collection-services",
+        url: "https://www.keymedsolution.com/medical-debt-collection-services",
         category: "Medical Debt Collection Services",
       },
       {
@@ -827,7 +827,7 @@ export const jsonLdSchema: any = {
         ],
       },
     ],
-  "/streamlining-medical-AR-recovery": [
+  "/accounts-receivable-recovery-solutions": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -866,7 +866,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/streamlining-medical-AR-recovery",
+      url: "https://www.keymedsolution.com/accounts-receivable-recovery-solutions",
       category: "Accounts Receivable Recovery",
     },
     {
@@ -925,7 +925,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/practice-management": [
+  "/physician-practice-management": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -934,7 +934,7 @@ export const jsonLdSchema: any = {
       description:
         "Optimize your practice with expert physician practice management services. Enhance efficiency, compliance, and revenue with tailored solutions. Book a demo today!",
       category: "Medical Practice Management",
-      url: "https://www.keymedsolution.com/practice-management",
+      url: "https://www.keymedsolution.com/physician-practice-management",
       provider: {
         "@type": "Organization",
         name: "Key MedSolutions",
@@ -966,7 +966,7 @@ export const jsonLdSchema: any = {
       },
     },
   ],
-  "/verification-of-healthcare-insurance-eligibility": [
+  "/medical-insurance-eligibility-verification": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1005,7 +1005,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/verification-of-healthcare-insurance-eligibility",
+      url: "https://www.keymedsolution.com/medical-insurance-eligibility-verification",
       category: "Insurance Eligibility Verification",
     },
     {
@@ -1064,7 +1064,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/revenue-cycle-management-company": [
+  "/revenue-cycle-management-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1103,7 +1103,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/revenue-cycle-management-company",
+      url: "https://www.keymedsolution.com/revenue-cycle-management-services",
       category: "Healthcare Revenue Cycle Management",
     },
     {
@@ -1202,7 +1202,7 @@ export const jsonLdSchema: any = {
       },
     },
   ],
-  "/physician-credentialing": [
+  "/Physician-credentialing-services": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1211,7 +1211,7 @@ export const jsonLdSchema: any = {
       description:
         "Optimize your practice with medical and insurance credentialing services. Ensure timely approvals, reduce claim denials, and improve revenue cycle efficiency.",
       category: "Credentialing Services",
-      url: "https://www.keymedsolution.com/physician-credentialing",
+      url: "https://www.keymedsolution.com/Physician-credentialing-services",
       provider: {
         "@type": "Organization",
         name: "Key MedSolutions",
@@ -1361,7 +1361,7 @@ export const jsonLdSchema: any = {
     },
   ],
 
-  "/medical-billing-services": [
+  "/medical-billing-company": [
     {
       "@context": "https://schema.org",
       "@type": "Service",
@@ -1400,7 +1400,7 @@ export const jsonLdSchema: any = {
         "@type": "Country",
         name: "United States",
       },
-      url: "https://www.keymedsolution.com/medical-billing-services",
+      url: "https://www.keymedsolution.com/medical-billing-company",
       category: "Medical Billing Services",
     },
     {
@@ -1458,7 +1458,7 @@ export const jsonLdSchema: any = {
       ],
     },
   ],
-  "/rcm-plan": [
+  "/rcm-plans": [
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",

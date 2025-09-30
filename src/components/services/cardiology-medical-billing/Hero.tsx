@@ -1,81 +1,163 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
-import React from 'react';
-import { Button } from '@/ui/button';
-import { Heart, TrendingUp, Clock, CheckCircle, Phone } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Button } from "@/ui/button";
+import { Heart, TrendingUp, Clock, CheckCircle, Phone } from "lucide-react";
+import { motion } from "framer-motion";
+import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const Hero = () => {
   return (
-    <section className="tw-py-12 md:tw-py-20 tw-overflow-hidden">
-      <div className="tw-container tw-mx-auto tw-px-4">
-        <div className="tw-flex tw-flex-col md:tw-flex-row tw-items-center">
-          <div className="md:tw-w-1/2 tw-mb-8 md:tw-mb-0 md:tw-pr-8">
-            <h1 className="tw-mb-6 tw-leading-tight">
-              <span className="gradient-text">Enhance Your Practice's Financial Stability</span>{' '}
-              with Expert Cardiology Billing Services
-            </h1>
-            <p className="tw-text-lg tw-text-gray-700 tw-mb-8">
-              At Key MedSolutions, we understand the complexities of cardiology medical billing and the challenges practices face with coding, compliance, and reimbursement. As a leading cardiology medical billing services company in the USA, our specialized billing solutions ensure accurate claim submission, reduced denials, and improved revenue cycle efficiency.
-            </p>
-            <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">
+    <React.Fragment>
+      <section
+        className="tw-py-12 md:tw-py-20 tw-overflow-hidden"
+        style={{
+          background: "url('/images/background/bg.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+        }}
+      >
+        <div className="tw-container tw-mx-auto tw-px-4">
+          <div className="tw-min-h-[70vh]  tw-container tw-mx-auto tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-px-6">
+            <div className="tw-mb-8 md:tw-mb-0 md:tw-pr-8">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true, amount: 0.2 }}
+              >
+                <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-font-serif tw-text-foreground">
+                  Streamline Your Revenue with Expert&nbsp;
+                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                    Cardiology Billing Services
+                  </span>
+                </h1>
+              </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-                className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4"
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+                viewport={{ once: true, amount: 0.2 }}
+                className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
               >
-                <Button
-                  size="lg"
-                  className="tw-bg-gradient-to-r tw-from-blue-600 tw-to-cyan-500 hover:tw-from-blue-700 hover:tw-to-cyan-600 tw-text-white tw-rounded-full tw-px-8 tw-py-6 tw-text-base tw-shadow-lg hover:tw-shadow-xl tw-transition-all group"
-                >
-                  <span className="tw-mr-2">Schedule a Free Consultation</span>
-                  <span className="group-hover:tw-translate-x-1 tw-transition-transform">
-                    <Phone className="tw-h-5 tw-w-5" />
-                  </span>
-                </Button>
-
-           
+                Make billing effortless with our expert Cardiology Medical
+                Billing Services. Save time, boost revenue, and ensure
+                compliance when you outsource to the most trusted cardiology
+                billing company in the USA. Focus on patient care while we
+                manage your financial health with precision.
               </motion.div>
-            </div>
-          </div>
-          <div className="md:tw-w-1/2 tw-relative">
-            <div className="tw-bg-gradient-to-br tw-from-cardio-100 tw-to-mint-100 tw-rounded-2xl tw-p-4 tw-shadow-lg tw-relative tw-z-10 tw-animate-float">
-              <img
-                src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1050&q=80"
-                alt="Cardiology Billing Services"
-                className="tw-rounded-xl tw-shadow-sm tw-w-full tw-h-auto tw-object-cover tw-mb-4"
-                style={{ maxHeight: "250px" }}
-              />
-              <div className="tw-bg-white tw-rounded-xl tw-p-6 tw-shadow-sm">
-                <div className="tw-grid md:tw-grid-cols-2 tw-gap-4">
-                  {[
-                    { icon: <Heart className="tw-text-cardio-600" size={24} />, text: "Specialized Cardiology Expertise" },
-                    { icon: <TrendingUp className="tw-text-mint-600" size={24} />, text: "Enhanced Revenue Growth" },
-                    { icon: <CheckCircle className="tw-text-cardio-600" size={24} />, text: "Regulatory Compliance" },
-                    { icon: <Clock className="tw-text-mint-600" size={24} />, text: "Streamlined Billing" },
-                  ].map((item, index) => (
-                    <div key={index} className="tw-flex tw-items-start tw-p-3 tw-bg-gray-50 tw-rounded-lg rcm-card-hover">
-                      <div className="tw-mr-3">{item.icon}</div>
-                      <p className="tw-text-sm tw-font-medium">{item.text}</p>
+
+              <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                  className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4"
+                >
+                  <button type="button" className="button-get-started">
+                    <span className="fold"></span>
+
+                    <div className="points_wrapper">
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
                     </div>
-                  ))}
-                </div>
-                <div className="tw-mt-4 tw-pt-4 tw-border-t">
-                  <p className="tw-text-center tw-text-sm tw-text-gray-500">
-                    <span className="tw-font-bold tw-text-cardio-700">20-35% Increase</span> in collections within first few months
-                  </p>
-                </div>
+
+                    <span className="inner">
+                      <svg
+                        className="icon"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                      >
+                        <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                      </svg>
+                      Get Started Today
+                    </span>
+                  </button>
+                </motion.div>
               </div>
             </div>
-            {/* Decorative elements */}
-            <div className="tw-absolute tw--top-4 tw--right-4 tw-w-20 tw-h-20 tw-bg-mint-200 tw-rounded-full tw-opacity-50 tw-animate-pulse-gentle"></div>
-            <div className="tw-absolute tw--bottom-6 tw--left-6 tw-w-16 tw-h-16 tw-bg-cardio-200 tw-rounded-full tw-opacity-50 tw-animate-pulse-gentle" style={{ animationDelay: '1s' }}></div>
+            <div className="tw-flex tw-justify-center">
+              <motion.img
+                src="/images/cardiology-medical-billing.jpg"
+                alt="Medical Team"
+                style={{ border: "2px solid #565acf" }}
+                className="tw-shadow-lg tw-object-cover sm:!tw-w-2/3 md:!tw-w-full tw-w-full "
+                initial={{ x: 150, opacity: 0 }} // start off-screen left
+                animate={{
+                  x: 0, // move to normal position
+                  opacity: 1,
+                  borderRadius: [
+                    "66% 34% 70% 30% / 39% 72% 28% 61% ",
+                    "17% 83% 21% 79% / 72% 27% 73% 28% ",
+                    "66% 34% 70% 30% / 39% 72% 28% 61% ",
+                  ],
+                }}
+                transition={{
+                  x: { duration: 1, ease: "easeOut" }, // entrance motion
+                  opacity: { duration: 1, ease: "easeOut" },
+                  borderRadius: {
+                    duration: 8,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  },
+                }}
+              />
+            </div>
           </div>
         </div>
+      </section>
+
+      <div className="tw-container">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className=" tw-text-gray-500 tw-mb-4 tw-leading-relaxed  tw-font-medium"
+        >
+          Are you searching for Cardiology Medical Billing Services that deliver
+          unmatched accuracy, compliance, and maximum revenue for your practice?
+          Key MedSolutions stands out as a leading Cardiology Medical Billing
+          Company USA, helping cardiology providers nationwide streamline
+          operations, reduce administrative burdens, and see faster payments for
+          every service performed.
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className=" tw-text-gray-500 tw-mb-4 tw-leading-relaxed  tw-font-medium"
+        >
+          As the demands of cardiovascular care increase, so do the complexities
+          of billing. Our team of AAPC-certified coders and billing experts
+          specializes in cardiology-specific procedures, codes, and payer
+          protocols, ensuring every claim is precise and timely. With&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold">Key
+          MedSolutions</Link>, you not only Outsource Cardiology Billing to a reliable
+          partner but also unlock the power of tailored solutions designed to
+          elevate practice performance and enhance patient experience.
+        </motion.div>
       </div>
-    </section>
+    </React.Fragment>
   );
 };
 

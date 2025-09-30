@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const CardiologyMedicalBillingV1 = () => {
   const title = "Accurate and Efficient Cardiology Medical Billing Services for Healthcare Professionals";
-  const path = "/cardiology-medical-billings"
+  const path = "/cardiology-billing-services"
   return (
     <>
 

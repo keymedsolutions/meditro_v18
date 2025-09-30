@@ -1,59 +1,66 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useInView, motion } from "framer-motion"
-import { FileText, DollarSign, LineChart, ArrowRight } from "lucide-react"
-import { useRef } from "react"
-import { GradientText } from "./gradient-text"
-import ServiceCard from "./ServiceCard"
-import { ThreeDBackground } from "./three-d-background"
+import { useInView, motion } from "framer-motion";
+import {
+  FileText,
+  Workflow,
+  AlertCircle,
+  DollarSign,
+  BarChart3,
+  ArrowRight,
+} from "lucide-react";
+import { useRef } from "react";
+import { GradientText } from "./gradient-text";
+import ServiceCard from "./ServiceCard";
+import { ThreeDBackground } from "./three-d-background";
 
 function ServicesSection() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const services = [
     {
-      title: "End-to-End Physician Billing",
-      description: "Skilled billing management for imaging specialists and radiologists in various specialties.",
+      title: "Accurate Coding & Auditing",
+      description:
+        "From routine X-rays and ultrasounds to sophisticated MRI, CT, nuclear medicine, and interventional radiology procedures, our team applies precise codes and verifies both procedure and diagnosis coding before claims go out the door.",
       icon: <FileText />,
       gradient: "bg-gradient-to-r from-blue-600 to-blue-800",
     },
     {
-      title: "Institutional Billing Solutions",
+      title: "End-to-End Claims Management",
       description:
-        "Customized services that guarantee compliance with current industry standards for hospitals and imaging centers.",
-      icon: <DollarSign />,
+        "We manage the entire process—intake, demographics, insurance eligibility verification, charge capture, claim scrubbing, and submission—ensuring that claims move smoothly and without errors.",
+      icon: <Workflow />,
       gradient: "bg-gradient-to-r from-purple-600 to-purple-800",
     },
     {
-      title: "Comprehensive Component Billing",
+      title: "Denial and Appeals Resolution",
       description:
-        "Seamless processing of technical (TC), professional (PC), and global billing for radiology-based services.",
-      icon: <LineChart />,
+        "Our team tracks denied or rejected claims, identifies root causes, drafts compelling appeals, and resubmits them rapidly for optimal recovery.",
+      icon: <AlertCircle />,
       gradient: "tw-bg-gradient-to-r from-pink-600 to-pink-800",
     },
     {
-      title: "Advanced Imaging Billing",
-      description: "Effective claim handling for nuclear medicine procedures, MRIs, CT scans, ultrasounds, and X-rays.",
-      icon: <FileText />,
+      title: "Accounts Receivable Recovery Services",
+      description:
+        "We aggressively pursue unpaid claims using proven follow-up strategies, reducing accounts receivable days and increasing collections to strengthen your financial position. Learn more about our Accounts Receivable Recovery Services.",
+      icon: <DollarSign />,
       gradient: "bg-gradient-to-r from-blue-600 to-purple-600",
     },
     {
-      title: "Clear & Transparent Charge Summaries",
-      description: "Comprehensive reporting of billing charges, deductibles, co-pays, and allowable amounts.",
-      icon: <DollarSign />,
+      title: "Advanced Analytics & Reporting",
+      description:
+        "Our platform delivers real-time dashboards and actionable financial reports, equipping your leadership with key insights to support strategic decisions and growth.",
+      icon: <BarChart3 />,
       gradient: "bg-gradient-to-r from-purple-600 to-pink-600",
     },
-    {
-      title: "Claims Dispute & Denial Management",
-      description:
-        "Proactive EOB monitoring to identify unpaid claims and resolve disagreements for optimal reimbursement.",
-      icon: <LineChart />,
-      gradient: "bg-gradient-to-r from-pink-600 to-blue-600",
-    },
-  ]
+  ];
 
   return (
-    <section id="services" ref={ref} className="tw-py-24 tw-relative tw-overflow-hidden">
+    <section
+      id="services"
+      ref={ref}
+      className="tw-py-24 tw-relative tw-overflow-hidden"
+    >
       <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-slate-50 tw-to-white"></div>
       <div className="tw-absolute tw-inset-0">
         <ThreeDBackground />
@@ -66,49 +73,34 @@ function ServicesSection() {
           transition={{ duration: 0.5 }}
           className="tw-text-center tw-mb-16"
         >
-          <div className="tw-inline-block tw-mb-4">
-            <div className="tw-relative">
-              <div className="tw-absolute tw-inset-0 tw-bg-purple-100 tw-rounded-lg tw-transform tw-rotate-3"></div>
-              <div className="tw-relative tw-bg-purple-50 tw-rounded-lg tw-px-4 tw-py-1 tw-transform -tw-rotate-3">
-                <span className="tw-text-purple-600 tw-font-semibold">Our Services</span>
-              </div>
-            </div>
-          </div>
-
-          <h2 className="tw-text-4xl md:tw-text-4xl tw-font-bold tw-text-slate-900 tw-mb-6">
-            Radiology Billing Services for <GradientText>Maximized Reimbursements</GradientText>
+          <h2 className="tw-text-3xl md:tw-text-4xl tw-font-bold tw-text-slate-900 tw-mb-6">
+            Medical Billing Services for Radiology&nbsp;:
+            <br />
+            <GradientText>Our Specialized Offerings</GradientText>
           </h2>
           <p className="tw-text-xl tw-text-slate-600 tw-max-w-2xl tw-mx-auto">
-            Key MedSolutions offers effective radiology billing solutions that minimize claim denials, speed up
-            reimbursements, and ensure compliance with healthcare laws.
+            We deliver full-spectrum Radiology Billing Services tailored to the
+            operational and financial realities of modern imaging providers:
           </p>
         </motion.div>
 
         <div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-8">
           {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-              delay={index}
-              gradient={service.gradient}
-            />
+            <div className="card-01 tw-group">
+              <div className="content-01">
+                <p className="heading-01 !tw-text-black group-hover:!tw-text-white">
+                  {service?.title}
+                </p>
+                <p className="para-01 tw-text-gray-900">
+                  {service?.description}
+                </p>
+              </div>
+            </div>
           ))}
-        </div>
-
-        <div className="tw-mt-16 tw-text-center tw-w-full tw-flex tw-justify-center">
-
-          <button className='btn btn-primary  tw-bg-gradient-to-r tw-from-blue-600 tw-via-purple-600 tw-to-pink-500 tw-text-white tw-font-semibold tw-rounded-full tw-transition-all tw-duration-300 hover:tw-scale-105 hover:tw-shadow-xl focus:tw-ring-4 focus:tw-ring-orange-300 group'>
-            Get Started Today
-            {/* <i className="btn-icon-bx fas fa-phone-alt"></i> */}
-            <ArrowRight className=" btn-icon-bx  tw-ml-2 tw-h-3 tw-w-3 " />
-          </button>
-
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default ServicesSection
+export default ServicesSection;
