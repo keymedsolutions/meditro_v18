@@ -299,7 +299,7 @@ const Footer = () => {
               >
                 <Link href="/">
                   <Image
-                    src="/images/logo.png"
+                    src="/images/logo/footerlogo.png"
                     alt="Logo"
                     width={180}
                     height={60}
@@ -488,7 +488,7 @@ const Footer = () => {
             Copyright © {currentYear} Key MedSolutions
           </p>
           <p className="tw-text-blue-200">
-            Key MedSolutions operates under the domain{" "}
+            Key MedSolutions operates under the domain&nbsp;
             <Link
               href="/"
               className="tw-text-white hover:tw-text-blue-300 tw-transition-colors tw-font-medium"

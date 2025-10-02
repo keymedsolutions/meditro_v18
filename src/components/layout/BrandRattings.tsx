@@ -38,14 +38,15 @@ const achievements = [
   },
   {
     name: "BusinessFirms",
-    logo: "/images/logo/5.png",
+    logo: "/images/logo/6.png",
+    
     rating: null,
     description: "Top Medical Biling Company ",
     link: "https://businessfirms.co/company/key-medsolutions",
   },
   {
     name: "Trustpilot",
-    logo: "/images/logo/6.png",
+    logo: "/images/logo/5.png",
     rating: null,
     description: "Top Medical Biling Company",
     link: "https://www.trustpilot.com/review/keymedsolution.com",

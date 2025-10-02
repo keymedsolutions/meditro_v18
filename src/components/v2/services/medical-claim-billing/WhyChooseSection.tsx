@@ -17,7 +17,7 @@ export function WhyChooseSection() {
           from&nbsp;
           <Link
             href={APP_PATH.services.physicianBilling.cardiologyBilling.path}
-            className="!tw-font-bold tw-text-inherit"
+            className="!tw-font-extrabold"
           >
             cardiology
           </Link>
@@ -35,7 +35,7 @@ export function WhyChooseSection() {
           Our experienced specialists master coding, payer rules, and&nbsp;
           <Link
             href={APP_PATH.services.denialMgmt.path}
-            className="!tw-font-bold tw-text-inherit"
+            className="!tw-font-extrabold"
           >
             denial management
           </Link>

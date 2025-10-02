@@ -232,7 +232,7 @@ export function SolutionSection() {
                   Visit our&nbsp;
                   <Link
                     href="/medical-billing-company"
-                    className="tw-font-bold tw-text-inherit"
+                    className="tw-font-bold"
                   >
                     Medical Billing Services
                   </Link>
