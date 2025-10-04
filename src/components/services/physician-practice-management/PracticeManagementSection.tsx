@@ -111,15 +111,17 @@ export function PracticeManagementSection() {
                   patients.
                 </div>
 
-                <div className="!tw-text-start">
-                  <p className="!tw-relative !tw-inline-flex !tw-items-center !tw-px-12 !tw-py-3 !tw-overflow-hidden !tw-text-lg !tw-font-medium !tw-text-white border-2 !tw-border-white !tw-rounded-full hover:!tw-text-accent-500 tw-group hover:tw-bg-accent-500">
-                    <span className="tw-absolute tw-left-0 tw-block tw-w-full tw-h-0 tw-transition-all tw-bg-white tw-opacity-100 group-hover:tw-h-full tw-top-1/2 group-hover:tw-top-0 tw-duration-400 tw-ease"></span>
-                    <span className="tw-absolute tw-right-0 tw-flex tw-items-center tw-justify-start tw-w-10 tw-h-10 tw-duration-300 tw-transform tw-translate-x-full group-hover:tw-translate-x-0 tw-ease">
-                      <ArrowRight />
-                    </span>
-                    <span className="tw-relative">Contact Us Today</span>
-                  </p>
-                </div>
+                <Link href={APP_PATH.contactus.path}>
+                  <div className="!tw-text-start">
+                    <p className="!tw-relative !tw-inline-flex !tw-items-center !tw-px-12 !tw-py-3 !tw-overflow-hidden !tw-text-lg !tw-font-medium !tw-text-white border-2 !tw-border-white !tw-rounded-full hover:!tw-text-accent-500 tw-group hover:tw-bg-accent-500">
+                      <span className="tw-absolute tw-left-0 tw-block tw-w-full tw-h-0 tw-transition-all tw-bg-white tw-opacity-100 group-hover:tw-h-full tw-top-1/2 group-hover:tw-top-0 tw-duration-400 tw-ease"></span>
+                      <span className="tw-absolute tw-right-0 tw-flex tw-items-center tw-justify-start tw-w-10 tw-h-10 tw-duration-300 tw-transform tw-translate-x-full group-hover:tw-translate-x-0 tw-ease">
+                        <ArrowRight />
+                      </span>
+                      <span className="tw-relative">Contact Us Today</span>
+                    </p>
+                  </div>
+                </Link>
               </motion.div>
 
               <div className="md:tw-hidden tw-block tw-absolute tw-inset-0">

@@ -36,6 +36,7 @@ import ProcessSection from "./ProcessSection";
 import BoostRevenue from "./BoostRevenue";
 import AccelerateYourRevenue from "./AccelerateYourRevenue";
 import { Accordion } from "react-bootstrap";
+import Link from "next/link";
 
 const Services = () => {
   const title =
@@ -68,8 +69,15 @@ const Services = () => {
     },
     {
       question: "How can I get started with Key Med Solutions?",
-      answer:
-        "Getting started is simple! Schedule a free consultation with our team to discuss your practice’s needs. We’ll conduct a comprehensive assessment and create a customized plan to optimize your revenue cycle. Call us at (123) 456-7890 or email info@keymedsolutions.com to begin.",
+      answer: (
+        <>
+          Getting started is simple! Schedule a free consultation with our team
+          to discuss your practice’s needs. We’ll conduct a comprehensive
+          assessment and create a customized plan to optimize your revenue
+          cycle. Call us at (123) 456-7890 or email&nbsp;<a href="mailto:info@keymedsolutions.com" className="tw-font-semibold">info@keymedsolutions.com</a>&nbsp;to
+          begin.
+        </>
+      ),
     },
   ];
 
