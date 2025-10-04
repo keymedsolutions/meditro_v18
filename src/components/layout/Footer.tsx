@@ -283,7 +283,7 @@ const Footer = () => {
 
       <div className="tw-container tw-mx-auto tw-px-4 tw-relative tw-z-10">
         <motion.div
-          className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-grid-cols-4 tw-gap-8 tw-mb-12"
+          className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 xl:tw-grid-cols-4 tw-gap-8 tw-mb-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -466,7 +466,7 @@ const Footer = () => {
                   </span>
                   <a
                     href={`mailto:${ContactInfo.email}`}
-                    className=" tw-text-white tw-font-medium hover:tw-text-blue-300 tw-transition-colors"
+                    className=" tw-text-white tw-font-medium hover:tw-text-blue-300 tw-transition-colors sm:tw-break-normal tw-break-all"
                   >
                     {ContactInfo.email}
                   </a>
