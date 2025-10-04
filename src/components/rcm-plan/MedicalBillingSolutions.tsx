@@ -144,7 +144,7 @@ const MedicalBillingSolutions = () => {
             >
               <p className="tw-text-gray-700 tw-mb-6">
                 With our per-ticket pricing model, you only pay for what you
-                need — no hidden fees, no surprises. Every verification request
+                need no hidden fees, no surprises. Every verification request
                 is handled by real humans, not bots, ensuring accuracy and
                 compliance. Plus, our HIPAA-compliant processes give you peace
                 of mind, knowing your patient data is secure. We simplify the
