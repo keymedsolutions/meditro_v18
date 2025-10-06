@@ -15,6 +15,8 @@ import {
 } from "lucide-react";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import React from "react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const HeroSection = () => {
   return (
@@ -98,40 +100,42 @@ const HeroSection = () => {
                 Management Services. See a drop in denials, quicker payments,
                 and gain more time to focus on quality patient care.
               </motion.p>
-              <motion.button
-                type="button"
-                className="button-get-started"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-                viewport={{ once: true, amount: 0.2 }}
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span className="fold"></span>
+              <Link href={APP_PATH.contactus.path}>
+                <motion.button
+                  type="button"
+                  className="button-get-started"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <span className="fold"></span>
 
-                <div className="points_wrapper">
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                </div>
+                  <div className="points_wrapper">
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                  </div>
 
-                <span className="inner">
-                  <Zap className="tw-mr-2" size={20} />
-                  Request Your Free Consultation
-                  <ArrowRight
-                    className="tw-ml-2 group-hover:tw-translate-x-1 tw-transition-transform tw-duration-300"
-                    size={16}
-                  />
-                </span>
-              </motion.button>
+                  <span className="inner">
+                    <Zap className="tw-mr-2" size={20} />
+                    Request Your Free Consultation
+                    <ArrowRight
+                      className="tw-ml-2 group-hover:tw-translate-x-1 tw-transition-transform tw-duration-300"
+                      size={16}
+                    />
+                  </span>
+                </motion.button>
+              </Link>
             </motion.div>
 
             {/* Right Image */}

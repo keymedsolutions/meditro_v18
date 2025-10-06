@@ -102,26 +102,28 @@ const MedicalInsuranceSection = () => {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <button type="button" className="button-get-started">
-                  <span className="fold"></span>
+                <Link href={APP_PATH.contactus.path}>
+                  <button type="button" className="button-get-started">
+                    <span className="fold"></span>
 
-                  <div className="points_wrapper">
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                  </div>
+                    <div className="points_wrapper">
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                    </div>
 
-                  <span className="inner">
-                    Book a Free Consultation : Get Started Now
-                  </span>
-                </button>
+                    <span className="inner">
+                      Book a Free Consultation : Get Started Now
+                    </span>
+                  </button>
+                </Link>
               </motion.div>
             </div>
 
@@ -187,7 +189,10 @@ const MedicalInsuranceSection = () => {
                   viewport={{ once: true, amount: 0.2 }}
                 >
                   To create the most efficient healthcare&nbsp;
-                  <Link href={APP_PATH.services.rcmCompany.path} className="tw-font-semibold">
+                  <Link
+                    href={APP_PATH.services.rcmCompany.path}
+                    className="tw-font-semibold"
+                  >
                     revenue cycle
                   </Link>
                   &nbsp;possible.

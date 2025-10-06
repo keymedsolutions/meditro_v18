@@ -1,3 +1,4 @@
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   DollarSign,
@@ -8,6 +9,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -63,38 +65,39 @@ const HeroSection = () => {
               </div>
             </div>
 
-            <motion.button
-              type="button"
-              className="button-get-started"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-              viewport={{ once: true, amount: 0.2 }}
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <span className="fold"></span>
+            <Link href={APP_PATH.contactus.path} >
+              <motion.button
+                type="button"
+                className="button-get-started tw-mt-4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+                viewport={{ once: true, amount: 0.2 }}
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <span className="fold"></span>
 
-              <div className="points_wrapper">
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-              </div>
+                <div className="points_wrapper">
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                </div>
 
-              <span className="inner">
-                <Zap className="tw-mr-2" size={20} />
-                Resolve Your Denials Today!
-                <ArrowRight className="tw-w-5 tw-h-5 group-hover:tw-translate-x-1 tw-transition-transform" />
-               
-              </span>
-            </motion.button>
+                <span className="inner">
+                  <Zap className="tw-mr-2" size={20} />
+                  Resolve Your Denials Today!
+                  <ArrowRight className="tw-w-5 tw-h-5 group-hover:tw-translate-x-1 tw-transition-transform" />
+                </span>
+              </motion.button>
+            </Link>
           </motion.div>
 
           {/* Right Image with Animation */}

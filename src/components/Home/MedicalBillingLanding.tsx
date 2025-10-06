@@ -1,8 +1,10 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { CheckCircle, Cpu, Database, Phone, Shield, Zap } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function MedicalBillingLanding() {
@@ -43,7 +45,6 @@ export default function MedicalBillingLanding() {
       }
     };
   }, []);
-
 
   const floatingAnimation = {
     animate: {
@@ -161,78 +162,82 @@ export default function MedicalBillingLanding() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-justify-center"
           >
-            <button type="button" className="button-get-started">
-              <span className="fold"></span>
+            <Link href={APP_PATH.contactus.path}>
+              <button type="button" className="button-get-started">
+                <span className="fold"></span>
 
-              <div className="points_wrapper">
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-              </div>
+                <div className="points_wrapper">
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                </div>
 
-              <span className="inner">
-                <svg
-                  className="icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2.5"
-                >
-                  <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
-                </svg>
-                Get Started Today
-              </span>
-            </button>
-            <button className="tw-relative tw-inline-flex tw-items-center tw-justify-center tw-px-8 tw-py-2.5 tw-overflow-hidden tw-tracking-tighter tw-text-white tw-bg-gray-800 tw-rounded-md tw-group">
-              <span className="tw-absolute tw-w-0 tw-h-0 tw-transition-all tw-duration-500 tw-ease-out tw-bg-orange-600 tw-rounded-full group-hover:tw-w-60 group-hover:tw-h-56"></span>
+                <span className="inner">
+                  <svg
+                    className="icon"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2.5"
+                  >
+                    <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                  </svg>
+                  Get Started Today
+                </span>
+              </button>
+            </Link>
+            <Link href={APP_PATH.contactus.path}>
+              <button className="tw-relative tw-inline-flex tw-items-center tw-justify-center tw-px-8 tw-py-2.5 tw-overflow-hidden tw-tracking-tighter tw-text-white tw-bg-gray-800 tw-rounded-md tw-group">
+                <span className="tw-absolute tw-w-0 tw-h-0 tw-transition-all tw-duration-500 tw-ease-out tw-bg-orange-600 tw-rounded-full group-hover:tw-w-60 group-hover:tw-h-56"></span>
 
-              <span className="tw-absolute tw-bottom-0 tw-left-0 tw-h-full tw--ml-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="tw-w-auto tw-h-full tw-opacity-100 tw-object-stretch"
-                  viewBox="0 0 487 487"
-                >
-                  <path
-                    fillOpacity=".1"
-                    fillRule="nonzero"
-                    fill="#FFF"
-                    d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
-                  ></path>
-                </svg>
-              </span>
+                <span className="tw-absolute tw-bottom-0 tw-left-0 tw-h-full tw--ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="tw-w-auto tw-h-full tw-opacity-100 tw-object-stretch"
+                    viewBox="0 0 487 487"
+                  >
+                    <path
+                      fillOpacity=".1"
+                      fillRule="nonzero"
+                      fill="#FFF"
+                      d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
+                    ></path>
+                  </svg>
+                </span>
 
-              <span className="tw-absolute tw-top-0 tw-right-0 tw-w-12 tw-h-full tw--mr-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="tw-object-cover tw-w-full tw-h-full"
-                  viewBox="0 0 487 487"
-                >
-                  <path
-                    fillOpacity=".1"
-                    fillRule="nonzero"
-                    fill="#FFF"
-                    d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
-                  ></path>
-                </svg>
-              </span>
+                <span className="tw-absolute tw-top-0 tw-right-0 tw-w-12 tw-h-full tw--mr-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="tw-object-cover tw-w-full tw-h-full"
+                    viewBox="0 0 487 487"
+                  >
+                    <path
+                      fillOpacity=".1"
+                      fillRule="nonzero"
+                      fill="#FFF"
+                      d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
+                    ></path>
+                  </svg>
+                </span>
 
-              <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw--mt-1 tw-rounded-lg tw-opacity-30 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent tw-to-gray-200"></span>
+                <span className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw--mt-1 tw-rounded-lg tw-opacity-30 tw-bg-gradient-to-b tw-from-transparent tw-via-transparent tw-to-gray-200"></span>
 
-              <span className="tw-relative tw-text-base tw-font-semibold">
-                <Phone className="tw-mr-2" size={20} />
-                Book a Free Call
-              </span>
-            </button>
+                <span className="tw-relative tw-text-base tw-font-semibold">
+                  <Phone className="tw-mr-2" size={20} />
+                  Book a Free Call
+                </span>
+              </button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -371,8 +376,6 @@ export default function MedicalBillingLanding() {
                 and efficient operations.
               </p>
             </motion.div>
-
-          
           </div>
         </div>
 

@@ -95,26 +95,28 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.6 }}
             className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-mb-4"
           >
-            <button type="button" className="button-get-started">
-              <span className="fold"></span>
+            <Link href={APP_PATH.contactus.path}>
+              <button type="button" className="button-get-started">
+                <span className="fold"></span>
 
-              <div className="points_wrapper">
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-              </div>
+                <div className="points_wrapper">
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                </div>
 
-              <span className="inner">
-                Book Your Complimentary Financial Assessment Today
-              </span>
-            </button>
+                <span className="inner">
+                  Book Your Complimentary Financial Assessment Today
+                </span>
+              </button>
+            </Link>
           </motion.div>
           {/* Paragraph */}
           <motion.p

@@ -8,6 +8,8 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { ThreeDBackground } from "@/components/services/radiology-billing/three-d-background";
 import { FloatingElements } from "@/components/services/radiology-billing/floating-elements";
 import { GlassCard } from "@/components/services/radiology-billing/glass-card";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 function HeroSection() {
   const containerRef = useRef(null);
@@ -87,8 +89,9 @@ function HeroSection() {
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     ICD-10 Medical Coding Services:
                   </span>
-                  &nbsp;Streamline Medical Coding&nbsp;<span className="!tw-font-sans">&</span>&nbsp;Maximize Your Practice
-                  Performance
+                  &nbsp;Streamline Medical Coding&nbsp;
+                  <span className="!tw-font-sans">&</span>&nbsp;Maximize Your
+                  Practice Performance
                 </h1>
               </motion.div>
 
@@ -103,38 +106,40 @@ function HeroSection() {
                 Coding Services for accuracy, compliance, and increased revenue.
               </motion.div>
 
-              <button type="button" className="button-get-started">
-                <span className="fold"></span>
+              <Link href={APP_PATH.contactus.path}>
+                <button type="button" className="button-get-started">
+                  <span className="fold"></span>
 
-                <div className="points_wrapper">
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                </div>
+                  <div className="points_wrapper">
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                  </div>
 
-                <span className="inner">
-                  <svg
-                    className="icon"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2.5"
-                  >
-                    <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
-                  </svg>
-                  Start Optimizing Your Revenue Cycle Today!
-                </span>
-              </button>
+                  <span className="inner">
+                    <svg
+                      className="icon"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2.5"
+                    >
+                      <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                    </svg>
+                    Start Optimizing Your Revenue Cycle Today!
+                  </span>
+                </button>
+              </Link>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

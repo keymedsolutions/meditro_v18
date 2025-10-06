@@ -60,38 +60,40 @@ const Hero = () => {
                   transition={{ duration: 0.5, delay: 0.6 }}
                   className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4"
                 >
-                  <button type="button" className="button-get-started">
-                    <span className="fold"></span>
+                  <Link href={APP_PATH.contactus.path}>
+                    <button type="button" className="button-get-started">
+                      <span className="fold"></span>
 
-                    <div className="points_wrapper">
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                      <i className="point"></i>
-                    </div>
+                      <div className="points_wrapper">
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                        <i className="point"></i>
+                      </div>
 
-                    <span className="inner">
-                      <svg
-                        className="icon"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2.5"
-                      >
-                        <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
-                      </svg>
-                      Get Started Today
-                    </span>
-                  </button>
+                      <span className="inner">
+                        <svg
+                          className="icon"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2.5"
+                        >
+                          <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                        </svg>
+                        Get Started Today
+                      </span>
+                    </button>
+                  </Link>
                 </motion.div>
               </div>
             </div>
@@ -151,10 +153,13 @@ const Hero = () => {
           As the demands of cardiovascular care increase, so do the complexities
           of billing. Our team of AAPC-certified coders and billing experts
           specializes in cardiology-specific procedures, codes, and payer
-          protocols, ensuring every claim is precise and timely. With&nbsp;<Link href={APP_PATH.home.path} className="tw-font-semibold">Key
-          MedSolutions</Link>, you not only Outsource Cardiology Billing to a reliable
-          partner but also unlock the power of tailored solutions designed to
-          elevate practice performance and enhance patient experience.
+          protocols, ensuring every claim is precise and timely. With&nbsp;
+          <Link href={APP_PATH.home.path} className="tw-font-semibold">
+            Key MedSolutions
+          </Link>
+          , you not only Outsource Cardiology Billing to a reliable partner but
+          also unlock the power of tailored solutions designed to elevate
+          practice performance and enhance patient experience.
         </motion.div>
       </div>
     </React.Fragment>
