@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const HeroSection = () => {
   return (
@@ -43,7 +45,8 @@ const HeroSection = () => {
               viewport={{ once: true, amount: 0.2 }}
               className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
-              Partner with Key MedSolutions to optimize operations, enhance patient care, and drive your practice's success.
+              Partner with Key MedSolutions to optimize operations, enhance
+              patient care, and drive your practice's success.
             </motion.div>
 
             <motion.div
@@ -63,24 +66,26 @@ const HeroSection = () => {
               to excellent patient care while we manage the challenging aspects
               of your practice.
             </motion.div>
-            <button type="button" className="button-get-started">
-              <span className="fold"></span>
+            <Link href={APP_PATH.contactus.path}>
+              <button type="button" className="button-get-started">
+                <span className="fold"></span>
 
-              <div className="points_wrapper">
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-              </div>
+                <div className="points_wrapper">
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                </div>
 
-              <span className="inner">Optimize Your Practice Today!</span>
-            </button>
+                <span className="inner">Optimize Your Practice Today!</span>
+              </button>
+            </Link>
           </div>
           <motion.div
             className="tw-grid tw-grid-cols-2 tw-gap-6 tw-max-w-6xl tw-mx-auto"

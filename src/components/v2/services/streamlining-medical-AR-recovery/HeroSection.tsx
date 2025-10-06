@@ -16,6 +16,8 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 export function ArRecoveryHero() {
   return (
@@ -166,26 +168,28 @@ export function ArRecoveryHero() {
                 financial health with confidence today!
               </motion.div>
 
-              <button type="button" className="button-get-started">
-                <span className="fold"></span>
+              <Link href={APP_PATH.contactus.path}>
+                <button type="button" className="button-get-started">
+                  <span className="fold"></span>
 
-                <div className="points_wrapper">
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                </div>
+                  <div className="points_wrapper">
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                  </div>
 
-                <span className="inner">
-                  Get Started Now – Request Your Free Consultation!
-                </span>
-              </button>
+                  <span className="inner">
+                    Get Started Now – Request Your Free Consultation!
+                  </span>
+                </button>
+              </Link>
             </motion.div>
           </div>
         </div>

@@ -16,8 +16,13 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
 import React from "react";
 import { AnimatedCircle } from "../streamlining-medical-AR-recovery/AnimatedCircle";
+import { useIsClient } from "usehooks-ts";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 export function HeroSection() {
+  const isClient = useIsClient();
+
   return (
     <React.Fragment>
       <section className="tw-w-full tw-relative tw-min-h-[90vh] tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
@@ -32,33 +37,37 @@ export function HeroSection() {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.2 }}
               className="tw-relative"
-              style={{ clipPath: "inset(0% 10% 10% 10% round 58%);" }}
             >
-              <motion.div
-                className="tw-relative tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl tw-transform"
-                animate={{ y: [0, -10, 0] }} // left-right
-                transition={{
-                  duration: 6, // smooth & slow
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                }}
-              >
-                {/* Gradient overlay */}
-                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-white/10 tw-to-transparent tw-z-10"></div>
+              {isClient && (
+                <motion.div
+                  className="tw-relative tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl tw-transform"
+                  initial={{
+                    y: 0,
+                    clipPath: "inset(0% 10% 10% 10% round 58%)",
+                  }}
+                  animate={{ y: [0, -10, 0] }} // left-right
+                  transition={{
+                    duration: 6, // smooth & slow
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                  }}
+                >
+                  {/* Gradient overlay */}
+                  <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-white/10 tw-to-transparent tw-z-10"></div>
 
-                <Image
-                  src="/images/medical-insurance-eligibility-verification.png"
-                  alt="Advanced nephrology medical billing dashboard"
-                  width={400}
-                  height={300}
-                  style={{ clipPath: "inset(0% 10% 10% 10% round 58%);" }}
-                  className="tw-w-full tw-h-auto tw-object-cover"
-                  priority
-                />
+                  <Image
+                    src="/images/medical-insurance-eligibility-verification.png"
+                    alt="Advanced nephrology medical billing dashboard"
+                    width={300}
+                    height={250}
+                    className="tw-w-full tw-h-auto tw-object-cover"
+                    priority
+                  />
 
-                {/* Top gradient overlay */}
-                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-primary/20 tw-to-transparent tw-z-10"></div>
-              </motion.div>
+                  {/* Top gradient overlay */}
+                  <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-primary/20 tw-to-transparent tw-z-10"></div>
+                </motion.div>
+              )}
             </motion.div>
 
             <motion.div
@@ -106,24 +115,26 @@ export function HeroSection() {
                 while making billing easier for your patients.
               </p>
 
-              <button type="button" className="button-get-started">
-                <span className="fold"></span>
+              <Link href={APP_PATH.contactus.path}>
+                <button type="button" className="button-get-started">
+                  <span className="fold"></span>
 
-                <div className="points_wrapper">
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                </div>
+                  <div className="points_wrapper">
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                  </div>
 
-                <span className="inner">Get Started Now</span>
-              </button>
+                  <span className="inner">Get Started Now</span>
+                </button>
+              </Link>
             </motion.div>
           </div>
         </div>

@@ -5,6 +5,8 @@ import { AuroraText } from "@/components/ui/AuroraText";
 import { FloatingElements } from "@/components/services/radiology-billing/floating-elements";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const Hero = () => {
   const mainTitle = [
@@ -76,7 +78,8 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-xl tw-font-bold tw-text-gray-500 tw-leading-relaxed tw-max-w-2xl"
           >
-           Experience seamless billing, greater revenue, and more time for patient care with Key MedSolutions.
+            Experience seamless billing, greater revenue, and more time for
+            patient care with Key MedSolutions.
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,63 +100,67 @@ const Hero = () => {
             the size of your practice.
           </motion.div>
           <div className="tw-flex tw-flex-col tw-gap-y-2">
-            <button className="star-button">
-              Get Started: Maximize Your Practice Today!
-              <div className="star-1">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-2">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-3">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-4">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-5">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-6">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-            </button>
-            <button type="button" className="button-get-started">
-              <span className="fold"></span>
+            <Link href={APP_PATH.contactus.path} className="tw-w-full">
+              <button className="star-button !tw-w-full">
+                Get Started: Maximize Your Practice Today!
+                <div className="star-1">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-2">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-3">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-4">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-5">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-6">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+              </button>
+            </Link>
+            <Link href={APP_PATH.contactus.path}>
+              <button type="button" className="button-get-started tw-w-full">
+                <span className="fold"></span>
 
-              <div className="points_wrapper">
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-                <i className="point"></i>
-              </div>
+                <div className="points_wrapper">
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                  <i className="point"></i>
+                </div>
 
-              <span className="inner">Request Free Demo</span>
-            </button>
+                <span className="inner">Request Free Demo</span>
+              </button>
+            </Link>
           </div>
         </motion.div>
 

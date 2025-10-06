@@ -1,11 +1,13 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { AspectRatio } from "@/ui/aspect-ratio";
 import { Badge } from "@/ui/badge";
 import { Button } from "@/ui/button";
 import { motion } from "framer-motion";
 
 import { ArrowRight, TrendingUp } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 
 export function HeroSection() {
@@ -126,46 +128,47 @@ export function HeroSection() {
                 simple and quick, which benefits the expansion of your company.
               </p>
             </div>
-
-            <button className="star-button !tw-bg-keymed-800 !tw-text-white hover:!tw-text-[#fec195]">
-              Hassle-free billing starts here - reach out now!
-              <div className="star-1">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-2">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-3">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-4">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-5">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-              <div className="star-6">
-                <img
-                  src="/images/icon/geomatricShape.png"
-                  className="tw-h-4 tw-w-4"
-                />
-              </div>
-            </button>
+            <Link href={APP_PATH.contactus.path}>
+              <button className="star-button !tw-bg-keymed-800 !tw-text-white hover:!tw-text-[#fec195]">
+                Hassle-free billing starts here - reach out now!
+                <div className="star-1">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-2">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-3">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-4">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-5">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+                <div className="star-6">
+                  <img
+                    src="/images/icon/geomatricShape.png"
+                    className="tw-h-4 tw-w-4"
+                  />
+                </div>
+              </button>
+            </Link>
           </motion.div>
 
           <motion.div className="lg:tw-col-span-6" variants={itemVariants}>

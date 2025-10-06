@@ -1,5 +1,6 @@
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -12,6 +13,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -70,38 +72,40 @@ const HeroContent = () => {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4"
               >
-                <button type="button" className="button-get-started">
-                  <span className="fold"></span>
+                <Link href={APP_PATH.contactus.path}>
+                  <button type="button" className="button-get-started">
+                    <span className="fold"></span>
 
-                  <div className="points_wrapper">
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                    <i className="point"></i>
-                  </div>
+                    <div className="points_wrapper">
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                    </div>
 
-                  <span className="inner">
-                    <svg
-                      className="icon"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2.5"
-                    >
-                      <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
-                    </svg>
-                    Get a Free Consultation Now
-                  </span>
-                </button>
+                    <span className="inner">
+                      <svg
+                        className="icon"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                      >
+                        <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                      </svg>
+                      Get a Free Consultation Now
+                    </span>
+                  </button>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

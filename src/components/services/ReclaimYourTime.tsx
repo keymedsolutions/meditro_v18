@@ -247,6 +247,7 @@ const ReclaimYourTime = () => {
                 Let’s transform your practice together.
               </p>
             </div>
+            <Link href={APP_PATH.contactus.path}>
 
             <button type="button" className="button-get-started">
               <span className="fold"></span>
@@ -280,6 +281,7 @@ const ReclaimYourTime = () => {
                 Get Started Today
               </span>
             </button>
+            </Link>
           </motion.div>
 
           <motion.div className="lg:tw-col-span-5" variants={itemVariants}>

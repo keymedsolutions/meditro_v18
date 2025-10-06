@@ -159,6 +159,7 @@
 
 // export default StreamlineSection;
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import {
   HeartHandshake,
@@ -169,6 +170,7 @@ import {
   Users,
   Phone,
 } from "lucide-react";
+import Link from "next/link";
 
 const StreamlineSection = () => {
   return (
@@ -307,41 +309,43 @@ const StreamlineSection = () => {
                   </p>
 
                   <div className="tw-flex tw-flex-col tw-gap-3">
-                    <motion.button
-                      type="button"
-                      className="button-get-started"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{
-                        duration: 0.6,
-                        ease: "easeOut",
-                        delay: 0.4,
-                      }}
-                      viewport={{ once: true, amount: 0.2 }}
-                      whileHover={{ scale: 1.03 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <span className="fold"></span>
+                    <Link href={APP_PATH.contactus.path}>
+                      <motion.button
+                        type="button"
+                        className="button-get-started"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                          duration: 0.6,
+                          ease: "easeOut",
+                          delay: 0.4,
+                        }}
+                        viewport={{ once: true, amount: 0.2 }}
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        <span className="fold"></span>
 
-                      <div className="points_wrapper">
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                      </div>
+                        <div className="points_wrapper">
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                          <i className="point"></i>
+                        </div>
 
-                      <span className="inner">
-                        <Phone className="tw-w-4 tw-h-4" />
-                        Schedule Free Consultation
-                        <ArrowRight className="tw-w-4 tw-h-4 group-hover:tw-translate-x-1 tw-transition-transform" />
-                      </span>
-                    </motion.button>
+                        <span className="inner">
+                          <Phone className="tw-w-4 tw-h-4" />
+                          Schedule Free Consultation
+                          <ArrowRight className="tw-w-4 tw-h-4 group-hover:tw-translate-x-1 tw-transition-transform" />
+                        </span>
+                      </motion.button>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -8,6 +8,8 @@ import { TypewriterEffect } from "@/components/ui/typewriter-effect";
 import { ThreeDBackground } from "@/components/services/radiology-billing/three-d-background";
 import { FloatingElements } from "@/components/services/radiology-billing/floating-elements";
 import { GlassCard } from "@/components/services/radiology-billing/glass-card";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 function HeroSection() {
   const containerRef = useRef(null);
@@ -71,24 +73,26 @@ function HeroSection() {
                 />
               </motion.div>
 
-              <button type="button" className="button-get-started">
-                <span className="fold"></span>
+              <Link href={APP_PATH.contactus.path}>
+                <button type="button" className="button-get-started">
+                  <span className="fold"></span>
 
-                <div className="points_wrapper">
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                  <i className="point"></i>
-                </div>
+                  <div className="points_wrapper">
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                    <i className="point"></i>
+                  </div>
 
-                <span className="inner">Get Started Now</span>
-              </button>
+                  <span className="inner">Get Started Now</span>
+                </button>
+              </Link>
             </motion.div>
 
             <motion.div

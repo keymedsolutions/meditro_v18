@@ -8,6 +8,8 @@ import { GlassCard } from "./glass-card";
 import Image from "next/image";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { TypewriterEffect } from "@/components/ui/typewriter-effect";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 function RadiologyHero() {
   const containerRef = useRef(null);
@@ -81,11 +83,13 @@ function RadiologyHero() {
               </motion.div>
 
               <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-6">
-                <button className="btn btn-primary  tw-bg-gradient-to-r tw-from-blue-600 tw-via-purple-600 tw-to-pink-500 tw-text-white tw-font-semibold tw-rounded-full tw-transition-all tw-duration-300 hover:tw-scale-105 hover:tw-shadow-xl focus:tw-ring-4 focus:tw-ring-orange-300 group">
-                  Get Started Today
-                  {/* <i className="btn-icon-bx fas fa-phone-alt"></i> */}
-                  <ArrowRight className=" btn-icon-bx  tw-ml-2 tw-h-4 tw-w-4 " />
-                </button>
+                <Link href={APP_PATH.contactus.path}>
+                  <button className="btn btn-primary  tw-bg-gradient-to-r tw-from-blue-600 tw-via-purple-600 tw-to-pink-500 tw-text-white tw-font-semibold tw-rounded-full tw-transition-all tw-duration-300 hover:tw-scale-105 hover:tw-shadow-xl focus:tw-ring-4 focus:tw-ring-orange-300 group">
+                    Get Started Today
+                    {/* <i className="btn-icon-bx fas fa-phone-alt"></i> */}
+                    <ArrowRight className=" btn-icon-bx  tw-ml-2 tw-h-4 tw-w-4 " />
+                  </button>
+                </Link>
               </div>
             </motion.div>
 
