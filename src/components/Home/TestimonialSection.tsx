@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import Slider from "react-slick";
+import Image from "next/image";
+import LazySlider from "@/components/ui/LazySlider";
 
 const React = "react";
 // const Images
@@ -52,24 +52,31 @@ const TestimonialSection = () => {
       <section className="section-area section-sp3 testimonial-wraper">
         <div className="container">
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">Testimonial</h6>
+            <p className="title-ext !tw-text-xl text-secondary">Testimonial</p>
             <h2 className="title m-b0">What Our Clients Are Saying</h2>
-            <h5 className="tw-max-w-xl tw-mx-auto">
+            <p className="tw-max-w-xl !tw-text-xl  tw-mx-auto">
               Explore how we’ve made a difference for businesses like yours.
               Real stories, real results—straight from the people who know us
               best.
-            </h5>
+            </p>
           </div>
           <div className="row align-items-center">
             <div className="col-lg-6 text-center">
               <div className="thumb-wraper">
-                <img className="bg-img" src={testShape} alt="" />
+                <Image className="bg-img" src={testShape} alt="" width={400} height={300} loading="lazy" aria-hidden="true" role="presentation" />
                 <ul>
                   {images.map((item, index) => {
                     return (
                       <li data-member={index + 1} key={index}>
                         <Link href="#">
-                          <img src={item.path} alt={item.alt} />
+                          <Image 
+                            src={item.path} 
+                            alt={`Client testimonial ${index + 1}`} 
+                            width={80} 
+                            height={80} 
+                            loading="lazy"
+                            sizes="(max-width: 768px) 80px, 80px"
+                          />
                         </Link>
                       </li>
                     );
@@ -78,11 +85,11 @@ const TestimonialSection = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <Slider {...settings} className="testimonial-slide">
+              <LazySlider settings={settings} className="testimonial-slide">
                 <div className="slider-item">
                   <div className="testimonial-bx">
                     <div className="testimonial-content">
-                      <p>
+                      <p className="!tw-text-gray-900">
                         Key MedSolutions has greatly strengthened our revenue
                         cycle management. Their extensive knowledge is visible
                         in many areas, and their commitment to quality is
@@ -93,8 +100,8 @@ const TestimonialSection = () => {
                       </p>
                     </div>
                     <div className="client-info">
-                      <h5 className="name">Dr. Akshay Yadav</h5>
-                      <p>Physician</p>
+                      <h3 className="name !tw-text-black ">Dr. Akshay Yadav</h3>
+                        <p className="!tw-text-black ">Physician</p>
                     </div>
                     <div className="quote-icon">
                       <i className="fas fa-quote-left"></i>
@@ -104,7 +111,7 @@ const TestimonialSection = () => {
                 <div className="slider-item">
                   <div className="testimonial-bx">
                     <div className="testimonial-content">
-                      <p>
+                      <p className="!tw-text-gray-900">
                         Working with Key MedSolutions has transformed our
                         practice. Their healthcare revenue cycle management
                         services have completely turned things around for us.
@@ -117,8 +124,8 @@ const TestimonialSection = () => {
                       </p>
                     </div>
                     <div className="client-info">
-                      <h5 className="name">Dr. Rajiv Patel</h5>
-                      <p>Physician</p>
+                      <h3 className="name !tw-text-black ">Dr. Rajiv Patel</h3>
+                       <p className="!tw-text-black ">Physician</p>
                     </div>
                     <div className="quote-icon">
                       <i className="fas fa-quote-left"></i>
@@ -128,7 +135,7 @@ const TestimonialSection = () => {
                 <div className="slider-item">
                   <div className="testimonial-bx">
                     <div className="testimonial-content">
-                      <p>
+                      <p className="!tw-text-gray-900">
                         Partnering with Key MedSolutions has been one of the
                         best decisions for our practice. Their medical billing
                         and revenue cycle management services have streamlined
@@ -142,8 +149,8 @@ const TestimonialSection = () => {
                       </p>
                     </div>
                     <div className="client-info">
-                      <h5 className="name">Dr. Abhinav Chattopadhyay</h5>
-                      <p>Physician</p>
+                      <h3 className="name !tw-text-black ">Dr. Abhinav Chattopadhyay</h3>
+                       <p className="!tw-text-black ">Physician</p>
                     </div>
                     <div className="quote-icon">
                       <i className="fas fa-quote-left"></i>
@@ -153,7 +160,7 @@ const TestimonialSection = () => {
                 <div className="slider-item">
                   <div className="testimonial-bx">
                     <div className="testimonial-content">
-                      <p>
+                      <p className="!tw-text-gray-900">
                         Managing a small practice required continually balancing
                         patient care and financial concerns. Then Key
                         MedSolutions stepped in. Their outsourced medical
@@ -167,22 +174,22 @@ const TestimonialSection = () => {
                       </p>
                     </div>
                     <div className="client-info">
-                      <h5 className="name">Dr. Amisha Pradhan</h5>
-                      <p>General Practitioner</p>
+                      <h3 className="name !tw-text-black ">Dr. Amisha Pradhan</h3>
+                       <p className="!tw-text-black ">General Practitioner</p>
                     </div>
                     <div className="quote-icon">
                       <i className="fas fa-quote-left"></i>
                     </div>
                   </div>
                 </div>
-              </Slider>
+              </LazySlider>
             </div>
           </div>
         </div>
-        <img className="pt-img1 animate1" src={plusOrange} alt="" />
-        <img className="pt-img2 animate2" src={squareBlue} alt="" />
-        <img className="pt-img3 animate3" src={circleDots} alt="" />
-        <img className="pt-img4 animate4" src={circleOrange2} alt="" />
+        <Image className="pt-img1 animate1" src={plusOrange} alt="plus orange shape" width={40} height={40} loading="lazy" aria-hidden="true" role="presentation" />
+        <Image className="pt-img2 animate2" src={squareBlue} alt="square blue shape" width={50} height={50} loading="lazy" aria-hidden="true" role="presentation" />
+        <Image className="pt-img3 animate3" src={circleDots} alt="circle dots shape" width={60} height={60} loading="lazy" aria-hidden="true" role="presentation" />
+        <Image className="pt-img4 animate4" src={circleOrange2} alt="circle orange shape" width={45} height={45} loading="lazy" aria-hidden="true" role="presentation" />
       </section>
     </>
   );

@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 
 const aboutThumb1 = "/images/about/pic-1.jpg";
 const aboutThumb2 = "/images/about/pic-2.jpg";
@@ -18,24 +18,36 @@ const AboutSection = () => {
               <div className="about-thumb-area">
                 <ul>
                   <li>
-                    <img
+                    <Image
                       className="about-thumb1"
                       src={aboutThumb1}
-                      alt="key-medsolutions-doctor-image-one"
+                      alt="Medical professional working on billing system"
+                      width={300}
+                      height={400}
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       className="about-thumb2"
                       src={aboutThumb2}
-                      alt="key-medsolutions-doctor-image-two"
+                      alt="Healthcare team collaborating on medical billing"
+                      width={300}
+                      height={400}
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </li>
                   <li>
-                    <img
+                    <Image
                       className="about-thumb3"
                       src={aboutThumb3}
-                      alt="key-medsolutions-doctor-image-three"
+                      alt="Medical billing specialist reviewing patient records"
+                      width={300}
+                      height={400}
+                      loading="lazy"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </li>
                   <li>
@@ -48,7 +60,9 @@ const AboutSection = () => {
             </div>
             <div className="col-lg-6 mb-30">
               <div className="heading-bx">
-                <h6 className="title-ext text-secondary">Our Identity</h6>
+                <p className="title-ext !tw-text-xl text-secondary">
+                  Our Identity
+                </p>
                 <h2 className="title !tw-text-[36px]">
                   What Makes Us Different :&nbsp;
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
@@ -93,11 +107,57 @@ const AboutSection = () => {
             </div>
           </div>
         </div>
-        <img className="pt-img1 animate-wave" src={ptImg1} alt="" />
-        <img className="pt-img2 animate2" src={ptImg2} alt="" />
-        <img className="pt-img3 animate-rotate" src={ptImg5} alt="" />
-        <img className="pt-img4 animate-wave" src={ptImg4} alt="" />
-        <img className="pt-img5 animate2" src={ptImg5} alt="" />
+        <div className="tw-relative tw-w-[100px] tw-h-[auto] tw-aspect-[150/67]">
+          <Image
+            className="pt-img1 animate-wave"
+            src={ptImg1}
+            alt="wave orange shape"
+            fill
+            loading="lazy"
+            aria-hidden="true"
+            role="presentation"
+          />
+        </div>
+        <Image
+          className="pt-img2 animate2"
+          src={ptImg2}
+          alt="circle small blue shape"
+          width={50}
+          height={50}
+          loading="lazy"
+          aria-hidden="true"
+          role="presentation"
+        />
+        <Image
+          className="pt-img3 animate-rotate"
+          src={ptImg5}
+          alt="square blue shape"
+          width={60}
+          height={60}
+          loading="lazy"
+          aria-hidden="true"
+          role="presentation"
+        />
+        <Image
+          className="pt-img4 animate-wave"
+          src={ptImg4}
+          alt="square dots orange shape"
+          width={80}
+          height={80}
+          loading="lazy"
+          aria-hidden="true"
+          role="presentation"
+        />
+        <Image
+          className="pt-img5 animate2"
+          src={ptImg5}
+          alt="square blue shape"
+          width={60}
+          height={60}
+          loading="lazy"
+          aria-hidden="true"
+          role="presentation"
+        />
       </section>
     </>
   );

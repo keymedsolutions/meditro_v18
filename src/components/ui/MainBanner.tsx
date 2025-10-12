@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import Link from "next/link"
 // import { Button } from "@/ui/button"
 // import { ArrowRight } from "lucide-react"
@@ -81,49 +82,82 @@ export default function MainBanner() {
           >
             <div className="tw-relative">
               <div className="tw-relative tw-z-10 ">
-                <img
+                {/* <Image
                   src="/images/main-banner/doctor.png"
-                  alt="Healthcare professional"
+                  alt="Healthcare professional with laptop working on medical billing"
+                  width={500}
+                  height={600}
+                  priority
                   className="tw-w-full tw-h-auto tw-object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                /> */}
+                <Image
+                  src="/images/main-banner/doctor.webp"
+                  alt="Healthcare professional"
+                  width={475} // full desktop display width
+                  height={563} // full desktop display height
+                  priority
+                  className="tw-w-full tw-h-auto tw-object-contain"
+                  placeholder="blur"
+                  blurDataURL="/images/main-banner/doctor-blur.png"
+                  sizes="(max-width: 640px) 90vw,   /* mobile: 90% of viewport */
+         (max-width: 1024px) 50vw,  /* tablet: 50% of viewport */
+         475px" /* desktop */
+                  style={{ maxWidth: "100%", height: "auto" }}
                 />
               </div>
 
               {/* Decorative elements */}
-              <img
+              <Image
                 className="tw-absolute tw-top-[-10%] tw-right-[-5%] tw-w-16 tw-h-16 tw-animate-pulse tw-z-0"
                 src="/images/shap/trangle-orange.png"
                 alt=""
+                width={64}
+                height={64}
                 aria-hidden="true"
                 role="presentation"
+                loading="lazy"
               />
-              <img
+              <Image
                 className="tw-absolute tw-bottom-[10%] tw-left-[-10%] tw-w-16 tw-h-16 tw-animate-bounce tw-z-0"
                 src="/images/shap/square-blue.png"
                 alt=""
+                width={64}
+                height={64}
                 aria-hidden="true"
                 role="presentation"
+                loading="lazy"
               />
-              <img
+              <Image
                 className="tw-absolute tw-top-[20%] tw-left-[-15%] tw-w-20 tw-h-20 tw-animate-pulse tw-z-0"
                 src="/images/shap/chicle-blue-2.png"
                 alt=""
+                width={80}
+                height={80}
                 aria-hidden="true"
                 role="presentation"
+                loading="lazy"
               />
-              <img
+              <Image
                 className="tw-absolute tw-bottom-[-5%] tw-right-[10%] tw-w-12 tw-h-12 tw-animate-spin-slow tw-z-0"
                 src="/images/shap/plus-orange.png"
                 alt=""
+                width={48}
+                height={48}
                 style={{ animationDuration: "15s" }}
                 aria-hidden="true"
                 role="presentation"
+                loading="lazy"
               />
-              <img
+              <Image
                 className="tw-absolute tw-bottom-[-10%] tw-left-[10%] tw-w-32 tw-animate-float tw-z-0"
                 src="/images/shap/wave-orange.png"
                 alt=""
+                width={128}
+                height={64}
                 aria-hidden="true"
                 role="presentation"
+                loading="lazy"
               />
             </div>
           </motion.div>

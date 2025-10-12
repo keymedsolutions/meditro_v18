@@ -100,6 +100,7 @@ const ConatctDetsilsForm1 = () => {
           <select
             {...register('iAmA')}
             className="form-select form-control"
+            aria-label="I am a"
           >
             <option value="">I am a</option>
             <option value="Practicing Doctor"> Practicing Doctor</option>
@@ -163,6 +164,7 @@ const ConatctDetsilsForm1 = () => {
             <select
               {...register("Specialty")}
               className="form-select form-control"
+              aria-label="Specialty"
             >
               <option value="">Specialty</option>
 
@@ -189,6 +191,7 @@ const ConatctDetsilsForm1 = () => {
               <select
                 {...register("field_of_study")}
                 className="form-select form-control"
+                aria-label="Field of Study"
               >
                 <option value="">Field of Study </option>
 
@@ -286,6 +289,7 @@ const ConatctDetsilsForm1 = () => {
             <select
               {...register("estimated_monthly_claims")}
               className="form-select form-control"
+              aria-label="Estimated Monthly Claims"         
             >
               <option value="">Estimated Monthly Claims</option>
 
@@ -303,6 +307,7 @@ const ConatctDetsilsForm1 = () => {
           <select
             {...register("preferred_contact_method")}
             className="form-select form-control"
+            aria-label="Preferred Contact Method"
           >
             <option value="">Preferred Contact Method</option>
 
@@ -328,7 +333,7 @@ const ConatctDetsilsForm1 = () => {
         <div className="col-lg-12">
           <button
             type="submit"
-            className="btn w-100 btn-secondary btn-lg"
+            className="btn w-100 btn-secondary btn-lg !tw-text-black"
             disabled={isSubmitting}
           >
             {isSubmitting ? 'Submitting...' : 'Get Started Now'}

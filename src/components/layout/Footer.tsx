@@ -325,6 +325,7 @@ const Footer = () => {
                     href={link}
                     rel="noreferrer"
                     target="_blank"
+                    aria-label={`${link===SocialAccountLinks.FACEBOOK?"Facebook":link===SocialAccountLinks.LINKEDIN?"LinkedIn":"Instagram"}`}
                     className="tw-w-10 tw-h-10 tw-rounded-full tw-bg-blue-700 tw-flex tw-items-center tw-justify-center"
                     whileHover={socialIconHover}
                     whileTap={{ scale: 0.95 }}
