@@ -14,116 +14,108 @@ const Hero = () => {
   return (
     <React.Fragment>
       <section
-        className="tw-py-12 md:tw-py-20 tw-overflow-hidden"
-        style={{
-          background: "url('/images/background/bg.webp')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-        }}
+        className="tw-w-full tw-bg-white tw-overflow-hidden tw-py-6 md:tw-py-0"
+        style={{ background: "url('/images/background/bg.webp')" }}
       >
-        <div className="tw-container tw-mx-auto tw-px-4">
-          <div className="tw-min-h-[70vh]  tw-container tw-mx-auto tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-px-6">
-            <div className="tw-mb-8 md:tw-mb-0 md:tw-pr-8">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true, amount: 0.2 }}
-              >
-                <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-font-serif tw-text-foreground">
-                  Streamline Your Revenue with Expert&nbsp;
-                  <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
-                    Cardiology Billing Services
-                  </span>
-                </h1>
-              </motion.div>
+        <div className="tw-min-h-[90vh]  tw-container tw-mx-auto tw-grid lg:tw-grid-cols-2 tw-gap-12 tw-items-center tw-px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            className="tw-relative tw-flex tw-flex-col tw-gap-y-4"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <h1 className="md:tw-text-6xl sm:tw-text-3xl tw-text-2xl tw-font-bold tw-font-serif tw-text-foreground">
+                Streamline Your Revenue with Expert&nbsp;
+                <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+                  Cardiology Billing Services
+                </span>
+              </h1>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+              viewport={{ once: true, amount: 0.2 }}
+              className=" tw-text-xl tw-text-gray-500 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+            >
+              Make billing effortless with our expert Cardiology Medical Billing
+              Services. Save time, boost revenue, and ensure compliance when you
+              outsource to the most trusted cardiology billing company in the
+              USA. Focus on patient care while we manage your financial health
+              with precision.
+            </motion.div>
+            <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-                viewport={{ once: true, amount: 0.2 }}
-                className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+                className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4"
               >
-                Make billing effortless with our expert Cardiology Medical
-                Billing Services. Save time, boost revenue, and ensure
-                compliance when you outsource to the most trusted cardiology
-                billing company in the USA. Focus on patient care while we
-                manage your financial health with precision.
+                <Link href={APP_PATH.contactus.path}>
+                  <button type="button" className="button-get-started">
+                    <span className="fold"></span>
+
+                    <div className="points_wrapper">
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                      <i className="point"></i>
+                    </div>
+
+                    <span className="inner">
+                      <svg
+                        className="icon"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2.5"
+                      >
+                        <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
+                      </svg>
+                      Get Started Today
+                    </span>
+                  </button>
+                </Link>
               </motion.div>
-
-              <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                  className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4"
-                >
-                  <Link href={APP_PATH.contactus.path}>
-                    <button type="button" className="button-get-started">
-                      <span className="fold"></span>
-
-                      <div className="points_wrapper">
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                        <i className="point"></i>
-                      </div>
-
-                      <span className="inner">
-                        <svg
-                          className="icon"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2.5"
-                        >
-                          <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37"></polyline>
-                        </svg>
-                        Get Started Today
-                      </span>
-                    </button>
-                  </Link>
-                </motion.div>
-              </div>
             </div>
-            <div className="tw-flex tw-justify-center">
-              <motion.img
-                src="/images/cardiology-medical-billing.jpg"
-                alt="Medical Team"
-                style={{ border: "2px solid #565acf" }}
-                className="tw-shadow-lg tw-object-cover sm:!tw-w-2/3 md:!tw-w-full tw-w-full "
-                initial={{ x: 150, opacity: 0 }} // start off-screen left
-                animate={{
-                  x: 0, // move to normal position
-                  opacity: 1,
-                  borderRadius: [
-                    "66% 34% 70% 30% / 39% 72% 28% 61% ",
-                    "17% 83% 21% 79% / 72% 27% 73% 28% ",
-                    "66% 34% 70% 30% / 39% 72% 28% 61% ",
-                  ],
-                }}
-                transition={{
-                  x: { duration: 1, ease: "easeOut" }, // entrance motion
-                  opacity: { duration: 1, ease: "easeOut" },
-                  borderRadius: {
-                    duration: 8,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  },
-                }}
-              />
-            </div>
+          </motion.div>
+
+          {/* Right Image */}
+          <div className="tw-flex tw-justify-center ">
+            <motion.img
+              src="/images/cardiology-medical-billing.jpg"
+              alt="Medical Team"
+              className="tw-shadow-lg  tw-object-cover"
+              style={{ border: "2px solid #565acf" }}
+              animate={{
+                borderRadius: [
+                  "63% 37% 70% 30% / 30% 59% 41% 70%",
+                  "23% 77% 30% 70% / 58% 22% 78% 42%",
+                  "63% 37% 70% 30% / 30% 59% 41% 70%",
+                ],
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
           </div>
         </div>
       </section>

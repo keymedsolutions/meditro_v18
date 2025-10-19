@@ -56,13 +56,13 @@ const MedicalBillingSolutions = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h2 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-max-w-3xl tw-mx-auto  tw-font-bold tw-font-serif tw-text-foreground">
-              Transparent & Scalable&nbsp;
+            <h1 className="md:tw-text-5xl sm:tw-text-3xl tw-text-2xl tw-max-w-3xl tw-mx-auto  tw-font-bold tw-font-serif tw-text-foreground">
+              Transparent and Scalable&nbsp;
               <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                 RCM Plans
               </span>
               &nbsp;for Every Practice Size
-            </h2>
+            </h1>
           </motion.div>
 
           <div className="tw-text-xl tw-text-gray-600 tw-max-w-3xl tw-mx-auto">
