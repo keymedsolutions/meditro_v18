@@ -7,8 +7,8 @@ const blogGridPic6 = "/images/blog/grid/pic6.jpg";
 const blogGridPic7 = "/images/blog/grid/pic7.jpg";
 const blogGridPic8 = "/images/blog/grid/pic8.jpg";
 const blogGridPic9 = "/images/blog/grid/pic9.jpg";
-const blogGridPic10 = "/images/blog/default/pic3.png";
-const blogGridPic11 = "/images/blog/default/pic4.png";
+const blogGridPic10 = "/images/blog/default/pic3.webp";
+const blogGridPic11 = "/images/blog/default/pic4.webp";
 
 
 

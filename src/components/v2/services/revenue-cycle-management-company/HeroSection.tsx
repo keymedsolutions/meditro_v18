@@ -162,7 +162,7 @@ const HeroSection = () => {
                     whileHover={{ scale: 1.02 }}
                   >
                     <Image
-                      src="/images/revenue-cycle-management-services.png"
+                      src="/images/revenue-cycle-management-services.webp"
                       alt="Revenue Cycle Management Services"
                       width={600}
                       height={500}

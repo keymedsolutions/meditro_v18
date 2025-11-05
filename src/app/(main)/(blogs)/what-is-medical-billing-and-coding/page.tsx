@@ -20,7 +20,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { Accordion } from "react-bootstrap";
-const blogDefaultPic1 = "/images/blog/default/pic4.png";
+const blogDefaultPic1 = "/images/blog/default/pic4.webp";
 
 const MedicalBillingGuide = () => {
   const title = "What Is Medical Billing and Coding? A Straightforward Guide";

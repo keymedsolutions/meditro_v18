@@ -18,7 +18,7 @@ import Link from "next/link";
 const HeroContent = () => {
   return (
     <div className="tw-min-h-[90vh] tw-bg-gradient-to-br tw-from-blue-50 tw-via-white tw-to-indigo-50 tw-py-12 tw-px-4">
-      <div className="tw-container tw-mx-auto">
+      <div className="sm:tw-container tw-mx-auto">
         {/* Main content section */}
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-2 tw-gap-12 tw-items-center">
           {/* Left content */}
@@ -48,7 +48,7 @@ const HeroContent = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+              className="sm:tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
               Revolutionize your practice’s efficiency with expert billing
               solutions. Our Medical Billing Company offers seamless,
@@ -61,7 +61,7 @@ const HeroContent = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: true, amount: 0.2 }}
-              className="tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
+              className="sm:tw-text-xl tw-text-gray-500 tw-mb-4 tw-leading-relaxed tw-max-w-2xl tw-font-medium"
             >
               Experience higher reimbursements and faster claim approval today!
             </motion.div>
@@ -156,7 +156,7 @@ const HeroContent = () => {
                 </div>
 
                 {/* Animated checkmarks */}
-                <div className="tw-flex tw-gap-3 tw-mt-4">
+                <div className="tw-flex tw-flex-wrap tw-gap-3 tw-mt-4">
                   {["Trusted", "Professional", "Nationwide"].map(
                     (item, index) => (
                       <motion.div
@@ -265,7 +265,7 @@ const HeroContent = () => {
                 </div>
 
                 {/* Animated checkmarks */}
-                <div className="tw-flex tw-gap-3 tw-mt-4">
+                <div className="tw-flex tw-flex-wrap tw-gap-3 tw-mt-4">
                   {["Tailored", "Scalable", "Nationwide"].map((item, index) => (
                     <motion.div
                       key={index}

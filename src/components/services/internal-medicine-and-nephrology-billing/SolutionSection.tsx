@@ -315,7 +315,7 @@ export function SolutionSection() {
             >
               <div className="tw-relative tw-w-full tw-h-96 md:tw-h-[500px] tw-rounded-2xl tw-overflow-hidden tw-shadow-2xl">
                 <Image
-                  src="/images/denial-management-service-why-choose-us.png"
+                  src="/images/denial-management-service-why-choose-us.webp"
                   alt="Medical coding professionals at work"
                   fill
                   className="tw-object-cover"

@@ -138,7 +138,7 @@ export function Hero() {
               <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-white/10 tw-to-transparent tw-z-10"></div>
 
               <Image
-                src="/images/medical-coding-services.png"
+                src="/images/medical-coding-services.webp"
                 alt="Advanced nephrology medical billing dashboard"
                 width={800}
                 height={600}

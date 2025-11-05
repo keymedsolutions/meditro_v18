@@ -99,7 +99,7 @@ const Hero = () => {
           {/* Right Image */}
           <div className="tw-flex tw-justify-center ">
             <motion.img
-              src="/images/cardiology-medical-billing.jpg"
+              src="/images/cardiology-medical-billing.webp"
               alt="Medical Team"
               className="tw-shadow-lg  tw-object-cover"
               style={{ border: "2px solid #565acf" }}

@@ -12,7 +12,7 @@ const services = [
       "Cash management strategies to ensure financial stability.",
       "Integration of Practice Management software for seamless financial tracking.",
     ],
-    img: "/images/physician-practice-management/Service1.png",
+    img: "/images/physician-practice-management/Service1.webp",
   },
   {
     title: "Consulting & Process Evaluation",
@@ -21,7 +21,7 @@ const services = [
       "Identification of key areas for improvement through Medical Practice Management Consulting.",
       "Expert guidance from a skilled practice management consultant to implement best practices.",
     ],
-    img: "/images/physician-practice-management/Service2.png",
+    img: "/images/physician-practice-management/Service2.webp",
   },
   {
     title: "Auditing & Risk Management",
@@ -30,7 +30,7 @@ const services = [
       "Practical suggestions to enhance efficiency and compliance.",
       "Specialized denial management services to minimize revenue loss and improve claim approvals.",
     ],
-    img: "/images/physician-practice-management/Service3.png",
+    img: "/images/physician-practice-management/Service3.webp",
   },
   {
     title: "Tailored Practice Management Solutions",
@@ -39,7 +39,7 @@ const services = [
       "Flexible medical practice management services that adapt to your evolving needs.",
       "Assistance with implementing and optimizing Practice Management software to enhance operational efficiency.",
     ],
-    img: "/images/physician-practice-management/Service4.png",
+    img: "/images/physician-practice-management/Service4.webp",
   },
 ];
 

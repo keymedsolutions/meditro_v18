@@ -53,7 +53,7 @@ const ContactUsPhysicianBilling = () => {
                 <CardContent>
                   <a
                     href="tel:+1336499-9299"
-                    className="tw-text-2xl tw-font-bold tw-text-[#f17732] tw-mb-2 font-dm-sans"
+                    className="md:tw-text-2xl sm:tw-text-xl tw-text-md md:tw-font-bold tw-font-semibold tw-text-[#f17732] tw-mb-2 font-dm-sans"
                   >
                     +1 (336) 499-9299
                   </a>
@@ -84,7 +84,7 @@ const ContactUsPhysicianBilling = () => {
                 <CardContent>
                   <a
                     href="mailto:info@keymedsolution.com"
-                    className="tw-break-all tw-text-2xl tw-font-bold tw-text-[#565acf] tw-mb-2 font-dm-sans"
+                    className="tw-break-all md:tw-text-2xl sm:tw-text-xl tw-text-md md:tw-font-bold tw-font-semibold tw-text-[#565acf] tw-mb-2 font-dm-sans"
                   >
                     info@keymedsolution.com
                   </a>

@@ -56,7 +56,7 @@ export function HeroSection() {
                   <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-white/10 tw-to-transparent tw-z-10"></div>
 
                   <Image
-                    src="/images/medical-insurance-eligibility-verification.png"
+                    src="/images/medical-insurance-eligibility-verification.webp"
                     alt="Advanced nephrology medical billing dashboard"
                     width={300}
                     height={250}

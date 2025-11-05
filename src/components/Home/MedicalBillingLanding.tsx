@@ -320,7 +320,7 @@ export default function MedicalBillingLanding() {
               transition={{ duration: 0.5 }}
             >
               <Image
-                src="/images/hero-lady.png"
+                src="/images/hero-lady.webp"
                 alt="medical billing landing"
                 width={400}
                 height={400}

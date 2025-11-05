@@ -26,7 +26,7 @@ const MedicalInsuranceSection = () => {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <h2 className="tw-mx-auto sm:tw-break-normal tw-break-all tw-text-start tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
+                <h2 className="tw-mx-auto tw-text-start tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
                   Start Today with the Leaders in&nbsp;
                   <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
                     Medical Insurance Eligibility Verification Services

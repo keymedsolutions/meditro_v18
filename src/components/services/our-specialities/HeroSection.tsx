@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="tw-text-black tw-relative tw-min-h-screen tw-flex tw-items-center tw-justify-center tw-overflow-hidden tw-py-16 tw-px-4">
+    <div className="tw-text-black tw-relative tw-min-h-screen tw-flex tw-items-center tw-justify-center tw-overflow-hidden tw-py-16">
       {/* Animated background elements */}
       <motion.div
         className="tw-absolute tw-top-1/4 tw-left-1/4 tw-w-64 tw-h-64 tw-bg-blue-700 tw-rounded-full tw-opacity-20"
@@ -55,7 +55,7 @@ const HeroSection = () => {
         }}
       />
 
-      <div className="tw-container tw-mx-auto tw-max-w-5xl tw-relative tw-z-10">
+      <div className="tw-container tw-mx-auto sm:tw-max-w-5xl tw-relative tw-z-10 ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -70,10 +70,10 @@ const HeroSection = () => {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            Discover Our Specialties —&nbsp;
-            <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
+            Discover Our Specialties&nbsp;
+            <div className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">
               Key MedSolutions
-            </span>
+            </div>
           </motion.h1>
 
           <motion.p

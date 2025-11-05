@@ -104,7 +104,7 @@ const WhyKeyMedSolutions = () => {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                src="/images/denial-management-service-why-choose-us.png"
+                src="/images/denial-management-service-why-choose-us.webp"
                 alt="Denial Management Service"
                 className="tw-absolute tw-inset-0 tw-m-auto tw-max-w-[65%] tw-max-h-[65%]  tw-object-contain tw-shadow-lg tw-rounded-2xl"
               />

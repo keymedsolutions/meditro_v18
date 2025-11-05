@@ -182,7 +182,7 @@ function HeroSection() {
                     className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-z-[-10]"
                   />
                   <Image
-                    src={"/images/icd-10-medical-coding-services.png"}
+                    src={"/images/icd-10-medical-coding-services.webp"}
                     alt="ICD-10 Medical Coding"
                     width={500}
                     height={500}

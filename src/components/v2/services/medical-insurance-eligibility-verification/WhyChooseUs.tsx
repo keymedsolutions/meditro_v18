@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.2 }}
         >
-          <h2 className="tw-mx-auto tw-break-all tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
+          <h2 className="tw-mx-auto tw-text-center tw-text-3xl md:tw-text-5xl tw-font-bold tw-font-serif tw-text-foreground tw-mb-10">
             Why Choose Us as Your
             <br />
             <span className="tw-bg-gradient-to-r tw-from-primary tw-to-secondary tw-bg-clip-text tw-text-transparent">

@@ -110,7 +110,7 @@ const HeroSection = () => {
               }}
             >
               <Image
-                src="/images/physician-practice-management/hero3.png"
+                src="/images/physician-practice-management/hero3.webp"
                 alt="Medical Team"
                 width={600}
                 height={800}
@@ -129,7 +129,7 @@ const HeroSection = () => {
               }}
             >
               <Image
-                src="/images/physician-practice-management/hero2.png"
+                src="/images/physician-practice-management/hero2.webp"
                 alt="Second"
                 width={600}
                 height={400}
@@ -148,7 +148,7 @@ const HeroSection = () => {
               }}
             >
               <Image
-                src="/images/physician-practice-management/hero1.png"
+                src="/images/physician-practice-management/hero1.webp"
                 alt="Third"
                 width={600}
                 height={400}

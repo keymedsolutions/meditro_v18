@@ -119,7 +119,7 @@ const HeroSection = () => {
           >
             <div className="tw-relative tw-w-full tw-h-96 lg:tw-h-[500px] tw-rounded-2xl tw-overflow-hidden tw-shadow-2xl">
               <Image
-                src="/images/medical-credentialing-services.png" // Replace with your actual image path
+                src="/images/medical-credentialing-services.webp" // Replace with your actual image path
                 alt="Medical Credentialing Services"
                 fill
                 className="tw-object-cover"

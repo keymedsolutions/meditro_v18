@@ -109,7 +109,7 @@ const PartnerWithAnAccounts = () => {
             </div>
             <div className="tw-flex tw-justify-center">
               <motion.img
-                src="/images/accounts-receivable-recovery-solutions-2.png"
+                src="/images/accounts-receivable-recovery-solutions-2.webp"
                 alt="Partner"
                 style={{
                   border: "6px solid",

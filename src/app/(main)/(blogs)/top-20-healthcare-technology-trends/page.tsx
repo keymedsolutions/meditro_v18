@@ -15,7 +15,7 @@ import BlogShareButton from "@/components/blog/blog-share-button";
 import { Accordion } from "react-bootstrap";
 import Link from "next/link";
 import { APP_PATH } from "@/data/PATH_APP";
-const blogDefaultPic1 = "/images/blog/default/pic3.png";
+const blogDefaultPic1 = "/images/blog/default/pic3.webp";
 
 const HealthcareTechTrends = () => {
   // Icons for different sections

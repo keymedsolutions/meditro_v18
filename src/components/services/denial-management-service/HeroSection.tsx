@@ -120,7 +120,7 @@ const HeroSection = () => {
                 {/* Image */}
                 <div className="tw-w-full tw-h-full tw-relative">
                   <Image
-                    src="/images/denial-management-service.png"
+                    src="/images/denial-management-service.webp"
                     alt="Denial Management Services by Key MedSolutions"
                     fill
                     className="tw-object-cover"

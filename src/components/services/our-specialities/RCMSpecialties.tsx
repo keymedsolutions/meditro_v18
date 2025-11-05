@@ -36,7 +36,7 @@ const services = [
         ),
       },
     ],
-    img: "/images/our-specialities/FamilyAndPrimaryCare.png",
+    img: "/images/our-specialities/FamilyAndPrimaryCare.webp",
   },
   {
     title: "Diagnostic & Advanced Treatment",
@@ -62,7 +62,7 @@ const services = [
           "Efficient claim management for sleep studies and ongoing treatment.",
       },
     ],
-    img: "/images/our-specialities/DiagnosticAndAdvancedTreatment.png",
+    img: "/images/our-specialities/DiagnosticAndAdvancedTreatment.webp",
   },
   {
     title: "Surgical & Interventional Care",
@@ -83,7 +83,7 @@ const services = [
           "Comprehensive anesthesia billing from pre-op assessments to post-op care.",
       },
     ],
-    img: "/images/our-specialities/SurgicalAndInterventionalCare.png",
+    img: "/images/our-specialities/SurgicalAndInterventionalCare.webp",
   },
   {
     title: "Specialized Medical Fields",
@@ -109,7 +109,7 @@ const services = [
           "Ensure accurate reimbursement for pediatric care, immunizations, and preventive health.",
       },
     ],
-    img: "/images/our-specialities/SpecializedMedicalFields.png",
+    img: "/images/our-specialities/SpecializedMedicalFields.webp",
   },
 
   {
@@ -136,7 +136,7 @@ const services = [
           "Reliable processing for allergy testing, immunotherapy, and chronic care.",
       },
     ],
-    img: "/images/our-specialities/RehabilitationAndTherapyAndAdditionalServices.png",
+    img: "/images/our-specialities/RehabilitationAndTherapyAndAdditionalServices.webp",
   },
 ];
 

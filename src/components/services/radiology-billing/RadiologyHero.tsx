@@ -119,7 +119,7 @@ function RadiologyHero() {
                   <div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-1 tw-bg-gradient-to-r tw-from-blue-600 tw-via-purple-600 tw-to-pink-500 tw-rounded-t-2xl"></div>
 
                   <Image
-                    src="/images/gallery/Radiology.jpg"
+                    src="/images/gallery/Radiology.webp"
                     alt="Radiology Billing Dashboard"
                     width={800}
                     height={600}

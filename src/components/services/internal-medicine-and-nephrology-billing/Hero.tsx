@@ -62,7 +62,7 @@ const Hero = () => {
         {/* Right Image */}
         <div className="tw-flex tw-justify-center ">
           <motion.img
-            src="/images/medical-team.png"
+            src="/images/medical-team.webp"
             alt="Medical Team"
             className="tw-shadow-lg tw-w-2/3 tw-object-cover"
             animate={{
