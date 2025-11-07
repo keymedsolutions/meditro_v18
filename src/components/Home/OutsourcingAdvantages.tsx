@@ -64,9 +64,9 @@ const OutsourcingAdvantages = () => {
       <div className="tw-max-w-7xl tw-mx-auto">
         <motion.div {...fadeInUp} className="tw-text-center tw-mb-16">
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">
+            <p className="title-ext !tw-text-xl text-secondary">
               Outsourcing Medical Billing: The Advantage
-            </h6>
+            </p>
             <h2 className="title">
               Transform your practice with measurable results
             </h2>
