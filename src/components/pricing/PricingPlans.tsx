@@ -20,7 +20,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
       >
         <div className="container plan-sections">
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">Training and Placement</h6>
+            <p className="title-ext !tw-text-xl text-secondary">Training and Placement</p>
 
             <h2 className="tw-mb-4 tw-font-display tw-text-4xl tw-font-extrabold tw-tracking-tight sm:tw-text-5xl md:tw-text-5xl">
               Smart Learning Starts with a Smart&nbsp;
@@ -68,7 +68,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                 </div>
 
                 <div className="ribbon tw-z-10">
-                  <a
+                  <button
                     onClick={(e) => {
                       e.preventDefault();
                       setOpen(true);
@@ -78,7 +78,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                   >
                     Subscribe Now
                     <i className="btn-icon-bx fas fa-chevron-right"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -107,7 +107,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                   </div>
                 </div>
                 <div className="ribbon tw-z-10">
-                  <a
+                  <button
                     onClick={(e) => {
                       e.preventDefault();
                       setOpen(true);
@@ -117,7 +117,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                   >
                     Subscribe Now
                     <i className="btn-icon-bx fas fa-chevron-right"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                 </div>
 
                 <div className="ribbon tw-z-10">
-                  <a
+                  <button
                     onClick={(e) => {
                       e.preventDefault();
                       setOpen(true);
@@ -156,7 +156,7 @@ const PricingPlans = ({ isHomePage = false }: { isHomePage?: boolean }) => {
                   >
                     Subscribe Now
                     <i className="btn-icon-bx fas fa-chevron-right"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

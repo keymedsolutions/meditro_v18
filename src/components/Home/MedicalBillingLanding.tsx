@@ -184,10 +184,11 @@ export default function MedicalBillingLanding() {
               <Image
                 src="/images/hero-lady.webp"
                 alt="medical billing landing"
-                width={400}
-                height={400}
+                width={500} // match your display size
+                height={500}
                 className="tw-object-cover tw-rounded-xl tw-relative tw-z-10 tw-shadow-2xl"
                 priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 500px"
               />
 
               {/* Floating icons */}

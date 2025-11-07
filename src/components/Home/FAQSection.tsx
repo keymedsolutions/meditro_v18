@@ -56,7 +56,7 @@ const FAQSection = () => {
       <section className="section-sp1 service-wraper2">
         <div className="container">
           <div className="heading-bx text-center">
-            <h6 className="title-ext text-secondary">FAQs</h6>
+            <p className="title-ext !tw-text-xl text-secondary">FAQs</p>
             <h2 className="title">Frequently Asked Questions (FAQs)</h2>
           </div>
 
