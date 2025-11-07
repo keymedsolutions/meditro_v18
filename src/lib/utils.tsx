@@ -76,12 +76,6 @@ export const GeratePageMetaData = (pathName: string, url: string = ""): Metadata
       follow: true,
       index: true,
     },
-    viewport: {
-      width: "device-width",
-      initialScale: 1,
-      maximumScale: 1,
-    },
-    themeColor: "#000000",
     verification: {
       google: AppConstant.GOOGLE_VARIFICATION
     },

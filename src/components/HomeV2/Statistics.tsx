@@ -17,7 +17,7 @@ const Statistics = () => {
 				</defs>
 				<circle cx="50" cy="50" r="45" fill="url(#grad1)" />
 				<path d="M50 20L70 30V50C70 65 60 75 50 80C40 75 30 65 30 50V30L50 20Z" fill="#fff" opacity="0.2" />
-				<path d="M40 52L48 60L64 44" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M40 52L48 60L64 44" stroke="#fff" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
 			</svg>,
 			percentage: "98%",
 			pre_lable: "Almost",
@@ -68,7 +68,7 @@ const Statistics = () => {
 			<rect x="35" y="50" width="10" height="30" fill="url(#greenGrad)" rx="2" />
 			<rect x="50" y="35" width="10" height="45" fill="url(#greenGrad)" rx="2" />
 			<rect x="65" y="20" width="10" height="60" fill="url(#greenGrad)" rx="2" />
-			<polyline points="20,70 35,60 50,50 65,35 80,20" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+			<polyline points="20,70 35,60 50,50 65,35 80,20" fill="none" stroke="#10B981" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"/>
 			<circle cx="80" cy="20" r="5" fill="#10B981"/>
 		  </svg>
 		  ,

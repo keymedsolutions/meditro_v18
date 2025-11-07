@@ -1,12 +1,10 @@
-"use client";
+"use client"
 
 import React from "react";
 import HeroSection from "./HeroSection";
-import CredentialingEssentials from "./CredentialingEssentials";
 import HeroContent from "./HeroContent";
 import CredentialingServices from "./CredentialingServices";
 import WhyChooseKeyMedSolutions from "./WhyChooseKeyMedSolutions";
-import { motion } from "framer-motion";
 import BenefitsSection from "./BenefitsSection";
 import ContactUs from "./ContactUs";
 import { Accordion } from "react-bootstrap";
