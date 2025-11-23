@@ -6,6 +6,7 @@ export const jsonLdSchema: any = {
       "@type": "Organization",
       name: "Key MedSolutions",
       url: "https://www.keymedsolution.com/",
+      image: "https://www.keymedsolution.com/images/logo/logo.png",
       logo: "https://www.keymedsolution.com/images/logo/logo.png",
       description:
         "Key MedSolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
