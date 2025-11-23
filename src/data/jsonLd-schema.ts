@@ -6,7 +6,7 @@ export const jsonLdSchema: any = {
       "@type": "Organization",
       name: "Key MedSolutions",
       url: "https://www.keymedsolution.com/",
-      logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+      logo: "https://www.keymedsolution.com/images/logo/logo.png",
       description:
         "Key MedSolutions is a company offering medical billing, coding, and revenue cycle management services to healthcare providers. Maximize reimbursements today.",
       email: "info@keymedsolution.com",
@@ -195,7 +195,7 @@ export const jsonLdSchema: any = {
         "@type": "Organization",
         name: "Key MedSolutions",
         url: "https://www.keymedsolution.com/",
-        logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+        logo: "https://www.keymedsolution.com/images/logo/logo.png",
         email: "info@keymedsolution.com",
         telephone: "+1-336-499-9299",
         address: {
@@ -229,7 +229,7 @@ export const jsonLdSchema: any = {
         "@type": "Organization",
         name: "Key MedSolutions",
         url: "https://www.keymedsolution.com/",
-        logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+        logo: "https://www.keymedsolution.com/images/logo/logo.png",
         email: "info@keymedsolution.com",
         telephone: "+1-336-499-9299",
         address: {
@@ -941,7 +941,7 @@ export const jsonLdSchema: any = {
         "@type": "Organization",
         name: "Key MedSolutions",
         url: "https://www.keymedsolution.com/",
-        logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+        logo: "https://www.keymedsolution.com/images/logo/logo.png",
         sameAs: [
           "https://www.facebook.com/people/Key-Medsolution/100093008652071/",
           "https://www.linkedin.com/company/key-medsolutions/",
@@ -1177,7 +1177,7 @@ export const jsonLdSchema: any = {
         "@type": "Organization",
         name: "Key MedSolutions",
         url: "https://www.keymedsolution.com/",
-        logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+        logo: "https://www.keymedsolution.com/images/logo/logo.png",
         sameAs: [
           "https://www.facebook.com/people/Key-Medsolution/100093008652071/",
           "https://www.linkedin.com/company/key-medsolutions/",
@@ -1218,7 +1218,7 @@ export const jsonLdSchema: any = {
         "@type": "Organization",
         name: "Key MedSolutions",
         url: "https://www.keymedsolution.com/",
-        logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+        logo: "https://www.keymedsolution.com/images/logo/logo.png",
         sameAs: [
           "https://www.facebook.com/people/Key-Medsolution/100093008652071/",
           "https://www.linkedin.com/company/key-medsolutions/",
@@ -1251,8 +1251,8 @@ export const jsonLdSchema: any = {
       "@type": "Organization",
       name: "About Key MedSolutions | Medical Billing Experts",
       url: "https://www.keymedsolution.com/about-us",
-      logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
-      image: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+      logo: "https://www.keymedsolution.com/images/logo/logo.png",
+      image: "https://www.keymedsolution.com/images/logo/logo.png",
       description:
         "Discover how Key MedSolutions delivers expert medical billing and coding services to help healthcare providers boost revenue and streamline operations.",
       email: "info@keymedsolution.com",
@@ -1280,8 +1280,8 @@ export const jsonLdSchema: any = {
       "@type": "Organization",
       name: "Contact KeyMed for Expert Healthcare Revenue Solutions",
       url: "https://www.keymedsolution.com/contact-us",
-      logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
-      image: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+      logo: "https://www.keymedsolution.com/images/logo/logo.png",
+      image: "https://www.keymedsolution.com/images/logo/logo.png",
       description:
         "Reach out to KeyMed for expert revenue cycle management and healthcare support. Our team is ready to help optimize your processes and reduce claim denials.",
       address: {
@@ -1312,8 +1312,8 @@ export const jsonLdSchema: any = {
       "@type": "Organization",
       name: "KeyMed Solutions Blog: Healthcare Insights & Revenue Tips",
       url: "https://www.keymedsolution.com/blogs",
-      logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
-      image: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+      logo: "https://www.keymedsolution.com/images/logo/logo.png",
+      image: "https://www.keymedsolution.com/images/logo/logo.png",
       description:
         "Explore KeyMed's blog for expert insights on healthcare trends, revenue cycle management, and solutions to optimize your practice's financial performance.",
       address: {
@@ -1340,8 +1340,8 @@ export const jsonLdSchema: any = {
       "@type": "Organization",
       name: "KeyMed Revenue Support for Healthcare & Multiple Specialties",
       url: "https://www.keymedsolution.com/our-specialities",
-      logo: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
-      image: "https://www.keymedsolution.com/key-medsolutions-main-logo.png",
+      logo: "https://www.keymedsolution.com/images/logo/logo.png",
+      image: "https://www.keymedsolution.com/images/logo/logo.png",
       description:
         "KeyMed offers expert revenue support for healthcare providers across specialties, optimizing revenue cycles and reducing claim denials with tailored solutions.",
       address: {
