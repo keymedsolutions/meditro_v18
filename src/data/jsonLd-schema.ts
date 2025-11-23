@@ -13,9 +13,11 @@ export const jsonLdSchema: any = {
       telephone: "+1-336-499-9299",
       address: {
         "@type": "PostalAddress",
+        streetAddress: "717 Green Valley Rd Suite 200",
         addressLocality: "Greensboro",
         addressRegion: "NC",
-        addressCountry: "US",
+        postalCode: "27408",
+        addressCountry: "US"
       },
       sameAs: [
         "https://www.facebook.com/people/Key-Medsolution/100093008652071/",
