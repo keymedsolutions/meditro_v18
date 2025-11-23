@@ -1,7 +1,7 @@
+"use client"
 import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { CheckCircle, Users, TrendingUp, Package } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 const WhyChooseKeyMedSolutions = () => {

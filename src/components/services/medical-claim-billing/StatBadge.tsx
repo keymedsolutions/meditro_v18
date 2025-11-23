@@ -48,7 +48,7 @@ const StatBadge = ({ children, delay = 0, icon: Icon = CheckCircle }: StatBadgeP
         tw-flex tw-items-center tw-gap-4 tw-p-5 tw-rounded-xl 
         tw-bg-white tw-border tw-border-keymed-300 tw-shadow-sm 
         tw-opacity-0 tw-translate-y-4 tw-scale-95
-        tw-transition-all tw-duration-500 tw-ease-[cubic-bezier(0.4,0,0.2,1)]
+        tw-transition-all tw-duration-500 tw-ease-out
         hover:tw-scale-[1.03] hover:tw-border-keymed-500 hover:tw-shadow-md
       `}
       style={{
