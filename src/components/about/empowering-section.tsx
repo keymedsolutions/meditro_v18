@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import type { Easing } from "framer-motion";
 
 export function EmpoweringSection() {
   const containerVariants = {
@@ -19,7 +20,7 @@ export function EmpoweringSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as Easing },
     },
   };
 

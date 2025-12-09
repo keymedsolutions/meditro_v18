@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { Target, Lightbulb, Shield, RefreshCw, Heart } from "lucide-react";
+import type { Easing } from "framer-motion";
+
 
 export function ValuesSection() {
   const containerVariants = {
@@ -20,7 +22,7 @@ export function ValuesSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" as Easing },
     },
   };
 
@@ -29,7 +31,7 @@ export function ValuesSection() {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as Easing },
     },
     hover: {
       scale: 1.05,

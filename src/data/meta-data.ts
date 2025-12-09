@@ -2,9 +2,9 @@ import { ISiteMetaData } from "@/types/app.types";
 
 export const SiteMetaData: ISiteMetaData = {
   "/": {
-    title: "Seamless Medical Billing Services | Key MedSolutions",
+    title: "Build High-Performing Global Teams | Key Medsolutions UK",
     description:
-      "Discover stress-free medical billing with Key MedSolutions. Boost cash flow, reduce errors, and focus on patients with tailored RCM services and expert support.",
+      "Key Medsolutions is a trusted global recruitment agency with 10+ years’ experience, delivering fast, compliant, and scalable hiring solutions worldwide.",
   },
   "/medical-claim-billing-company": {
     title: "Medical Claim Billing Company in USA | Key MedSolutions",
@@ -17,9 +17,9 @@ export const SiteMetaData: ISiteMetaData = {
       "Boost your revenue cycle with professional Medical Coding Services. Reduce errors, accelerate reimbursements, and free up staff time.",
   },
   "/about-us": {
-    title: "About Us | Medical Billing Experts – Key MedSolutions",
+    title: "Trusted Recruitment Outsourcing Partner | Key Medsolutions UK",
     description:
-      "Elevate your practice with Key MedSolutions expert billing, tailored RCM, and advanced solutions that drive precision, efficiency, and growth.",
+      "Key Medsolutions UK delivers full-cycle RPO, expert hiring support, and flexible recruitment solutions to help Global businesses scale faster with quality talent.",
   },
   "/internal-medicine-medical-billing": {
     title: "Internal Medicine Billing Company in USA | Key MedSolutions",
@@ -35,6 +35,16 @@ export const SiteMetaData: ISiteMetaData = {
     title: "Nephrology Medical Billing Company in USA | Key MedSolutions",
     description:
       "Specialized Nephrology Medical Billing Services. Streamline claims, reduce denials, and boost revenue for nephrology practices nationwide.",
+  },
+  "/recruitment-process-outsourcing-services": {
+    title: "Recruitment Process Outsourcing Services | Key MedSolutions",
+    description:
+      "End-to-end RPO services are delivered by Key MedSolutions UK as a global RPO agency to help organisations scale faster and improve overall talent quality.",
+  },
+  "/candidate-sourcing-and-screening-services": {
+    title: "Candidate Sourcing and Screening Services | Key MedSolutions",
+    description:
+      "Need top talent fast? Key MedSolutions, a leader in candidate sourcing companies and a Global Candidate Sourcing Screening Agency, accelerates your hiring.",
   },
   "/icd-10-medical-coding-services": {
     title: "ICD-10 Medical Coding Services | Key MedSolutions",
@@ -167,9 +177,9 @@ export const SiteMetaData: ISiteMetaData = {
       " Meet the team driving our medical billing and RCM success—experienced professionals committed to accuracy and healthcare excellence.",
   },
   "/our-services": {
-    title: "Medical Billing Services & RCM Solutions | Key MedSolutions",
+    title: "Global Recruitment & Outsourcing Company | Key Medsolutions UK",
     description:
-      "Key MedSolutions offers end-to-end medical billing, coding and RCM services to boost revenue, reduce denials and streamline workflows for healthcare providers.",
+      "Explore Key Medsolutions UK’s recruitment, payroll, admin and outsourcing services. Hire smarter, cut costs and build stronger teams with global solutions.",
   },
   "/booking": {
     title: "Schedule a Call | Medical Billing & RCM Consultation",
@@ -192,8 +202,7 @@ export const SiteMetaData: ISiteMetaData = {
       "Start your career with affordable online courses in medical billing, coding, and revenue cycle management. Learn anytime with expert support from KeyMed Solution.",
   },
   "/rcm-plans": {
-    title:
-      "RCM Plans and Medical Billing Solutions | Key MedSolutions",
+    title: "RCM Plans and Medical Billing Solutions | Key MedSolutions",
     description:
       "Explore Key MedSolutions' scalable RCM plans for all practice sizes. Transparent pricing, HIPAA-compliant, and designed to streamline your billing. Get started today!",
   },

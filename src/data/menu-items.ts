@@ -59,6 +59,21 @@ export const MenuItems: any = [
           },
         ],
       },
+        {
+        label: "Recruitment Process Outsourcing",
+        path: "/recruitment-process-outsourcing-services",
+        icon: TrendingUp,
+      },
+      {
+        label: "Candidate Sourcing & Screening",
+        path: "/candidate-sourcing-and-screening-services",
+        icon: TrendingUp,
+      },
+      {
+        label: "Back Office & Administrative",
+        path: "/back-office-and-administrative-services",
+        icon: TrendingUp,
+      },
       {
         label: "Profit Enhancement",
         path: "/profit-enhancement-services",

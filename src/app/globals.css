@@ -15,6 +15,20 @@
   --color8: #ffffff;
   --color9: #edf2f2;
   --color10: #4d5972;
+
+  /* accent scale from tailwind.config */
+
+  --accent-50: #f0f8ff;
+  --accent-100: #e1effd;
+  --accent-200: #bcdffb;
+  --accent-300: #80c7f9;
+  --accent-400: #3daaf3;
+  --accent-500: #239bec;
+  --accent-600: #0771c2;
+  --accent-700: #075a9d;
+  --accent-800: #0a4d82;
+  --accent-900: #0f406b;
+  --accent-950: #0a2947;
 }
 
 body {
@@ -1670,7 +1684,6 @@ body {
   scale: 1.05;
 }
 
-
 /* medical-insurance-eligibility-verification */
 @keyframes pulse-slow {
   0%,
@@ -1690,14 +1703,11 @@ body {
   animation-delay: 1s;
 }
 
-
-
-
 .custom-background::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('/images/background/M-U-B-I-scaled.png');
+  background-image: url("/images/background/M-U-B-I-scaled.png");
   background-size: cover;
   background-position: center;
   opacity: 0.5; /* You can control this opacity */

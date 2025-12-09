@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import MainHeader from "./header/main-header";
 import { headers } from "next/headers";
 import SiteFooter from "./footer/SiteFooter";
-import SplashCursor from "../ui/RippleEffectsCursor";
+// import SplashCursor from "../ui/RippleEffectsCursor";
 
 const MainLayout = async ({ children }: { children: React.ReactNode }) => {
   const headerList = headers();
@@ -21,7 +21,7 @@ const MainLayout = async ({ children }: { children: React.ReactNode }) => {
       ) : (
         <Footer />
       )}
-      <SplashCursor />
+      {/* <SplashCursor /> */}
     </div>
   );
 };

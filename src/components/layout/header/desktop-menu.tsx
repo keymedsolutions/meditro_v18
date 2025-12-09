@@ -8,6 +8,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useOnClickOutside } from "@/hooks/use-click-outside";
 import { usePathname } from "next/navigation";
+import { menuItemConditionPath } from "@/data/menuItemConditionPath";
 
 interface MenuItem {
   icon?: any;
@@ -20,43 +21,67 @@ interface MenuItem {
 
 interface DesktopMenuProps {
   items: MenuItem[];
+  scrolled?: boolean; // accept scrolled prop
 }
 
-export const DesktopMenu = ({ items }: DesktopMenuProps) => {
+export const DesktopMenu = ({ items, scrolled = false }: DesktopMenuProps) => {
   const [openSubMenus, setOpenSubMenus] = useState<Record<string, boolean>>({});
   const navRef = useRef<HTMLDivElement>(null);
-
   const pathName = usePathname();
 
   useEffect(() => {
-    // Close all submenus when pathname changes
     setOpenSubMenus({});
   }, [pathName]);
-  //@ts-ignore
-  useOnClickOutside(navRef, () => {
-    setOpenSubMenus({});
-  });
 
-  const handleMouseEnter = (path: string) => {
-    setOpenSubMenus((prev) => ({
-      ...prev,
-      [path]: true,
-    }));
+  // @ts-ignore
+  useOnClickOutside(navRef, () => setOpenSubMenus({}));
+
+  const handleMouseEnter = (path: string) =>
+    setOpenSubMenus((p) => ({ ...p, [path]: true }));
+  const handleMouseLeave = (path: string) =>
+    setOpenSubMenus((p) => ({ ...p, [path]: false }));
+
+  /**
+   * labelClass now:
+   * - active items use accent
+   * - submenu items (level > 0) ALWAYS use black
+   * - top-level non-active follow scrolled (white when transparent, black when scrolled)
+   */
+  // const labelClass = (active = false, level = 0) =>
+  //   cn(
+  //     "tw-transition-colors tw-duration-200",
+  //     active
+  //       ? "tw-text-accent-500"
+  //       : level > 0
+  //       ? "tw-text-black" // <--- submenu items always black
+  //       : scrolled
+  //       ? "tw-text-black"
+  //       : "tw-text-red-500"
+  //   );
+
+  const labelClass = (active = false, level = 0) => {
+    const forceBlack = menuItemConditionPath.includes(pathName);
+
+    return cn(
+      "tw-transition-colors tw-duration-200",
+      active
+        ? "tw-text-accent-500"
+        : level > 0
+        ? "tw-text-black"
+        : scrolled
+        ? "tw-text-black"
+        : forceBlack
+        ? "tw-text-black"
+        : "tw-text-white"
+    );
   };
 
-  const handleMouseLeave = (path: string) => {
-    setOpenSubMenus((prev) => ({
-      ...prev,
-      [path]: false,
-    }));
-  };
-
-  // Recursive function to render menu items at any level
   const renderMenuItem = useCallback(
     (item: MenuItem, level = 0, parentPath = "") => {
       const hasSubMenu = item.subMenu && item.subMenu.length > 0;
       const fullPath = parentPath ? `${parentPath}-${item.path}` : item.path;
       const isSubMenuOpen = openSubMenus[fullPath] || false;
+      const isActive = item.path === pathName;
 
       return (
         <li
@@ -71,7 +96,12 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
         >
           {item.external ? (
             <a href={item.path} target="_blank" rel="noopener noreferrer">
-              <span className="tw-flex tw-items-center tw-gap-4">
+              <span
+                className={cn(
+                  "tw-flex tw-items-center tw-gap-4",
+                  labelClass(isActive, level)
+                )}
+              >
                 {item.icon && <item.icon height={30} width={30} />}
                 {item.label}
               </span>
@@ -81,13 +111,20 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
               href={item.path}
               className={`${item.path === pathName ? "active" : ""}`}
             >
-              <div className=" tw-flex tw-items-center tw-gap-4">
+              <div className="tw-flex tw-items-center tw-gap-4">
                 {item.icon && (
-                  <div className="tw-inline-block tw-bg-accent-400 tw-rounded-full tw-text-white tw-p-2">
-                    <item.icon height={30} width={30} />
+                  <div
+                    className={cn(
+                      "tw-inline-block tw-rounded-full tw-p-2 tw-transition-colors tw-duration-200",
+                      scrolled ? "tw-bg-accent-400" : "tw-bg-accent-400/90"
+                    )}
+                  >
+                    <item.icon height={24} width={24} />
                   </div>
                 )}
-                {item.label}
+                <span className={labelClass(isActive, level)}>
+                  {item.label}
+                </span>
               </div>
             </Link>
           )}
@@ -96,7 +133,7 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
             <ul
               className={cn(
                 level === 0
-                  ? `sub-menu  !tw-grid ${
+                  ? `sub-menu !tw-grid ${
                       (item.subMenu?.length ?? 0) > 2
                         ? "!tw-grid-cols-3"
                         : "!tw-grid-cols-2"
@@ -105,7 +142,7 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
                 isSubMenuOpen
                   ? "tw-opacity-100  tw-visible open"
                   : "tw-opacity-0 tw-invisible tw-pointer-events-none",
-                "tw-transition-all tw-duration-200 border-2 tw-border-accent-500 !tw-rounded-md"
+                "tw-transition-all tw-duration-200 border tw-border-accent-500 !tw-rounded-md"
               )}
             >
               {item?.subMenu?.map((subItem) =>
@@ -116,13 +153,17 @@ export const DesktopMenu = ({ items }: DesktopMenuProps) => {
         </li>
       );
     },
-    [openSubMenus, pathName]
+    [openSubMenus, pathName, scrolled]
   );
 
   return (
     <div className="menu-links site-menubar desktop-menu " ref={navRef}>
-      {/* // <nav className="tw-hidden lg:tw-flex tw-items-center" ref={navRef}> */}
-      <ul className="tw-flex tw-m-0 tw-flex-wrap nav navbar-nav ">
+      <ul
+        className={cn(
+          "tw-flex tw-m-0 tw-flex-wrap nav navbar-nav",
+          scrolled ? "tw-text-black" : "tw-text-white"
+        )}
+      >
         {items.map((item) => renderMenuItem(item))}
       </ul>
     </div>

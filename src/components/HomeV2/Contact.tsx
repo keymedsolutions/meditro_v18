@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import ContactForm from '@/ui/ContactForm';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
+import type { Easing } from "framer-motion";
 
 const Contact = () => {
   const sectionRef = useRef(null);
@@ -53,7 +54,7 @@ const Contact = () => {
       y: 0,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
+        ease: "easeOut" as Easing 
       }
     }
   };

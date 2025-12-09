@@ -12,7 +12,15 @@ export const APP_PATH = {
       radiologyBilling: { path: "/radiology-billing-services" },
       cardiologyBilling: { path: "/cardiology-billing-services" },
     },
-
+    recruitmentProcessOutsourcingServices: {
+      path: "/recruitment-process-outsourcing-services",
+    },
+    candidateSourcingAndScreeningServices: {
+      path: "/candidate-sourcing-and-screening-services",
+    },
+    backOfficeAndAdministrativeServices: {
+      path: "/back-office-and-administrative-services",
+    },
     profitEnhancement: {
       path: "/profit-enhancement-services",
     },
@@ -28,7 +36,7 @@ export const APP_PATH = {
     insuranceVerification: {
       path: "/medical-insurance-eligibility-verification",
     },
-    nephrology:{path:"nephrology-medical-billing"},
+    nephrology: { path: "nephrology-medical-billing" },
     rcmCompany: { path: "/revenue-cycle-management-services" },
     denialMgmt: { path: "/denial-management-service" },
     credentialing: { path: "/Physician-credentialing-services" },

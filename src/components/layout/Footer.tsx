@@ -195,12 +195,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { ContactInfo, SocialAccountLinks } from "@/constant/constatnt";
 import { sanitizePhoneNumber } from "@/lib/utils";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, type Variants } from "framer-motion";
+import { useState } from "react";
 import { APP_PATH } from "@/data/PATH_APP";
+import type { Easing } from "framer-motion";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const easeInOutCurve: Easing = [0.4, 0, 0.2, 1]; // similar to easeInOut
+  const linearEasing: Easing = (t) => t; // true linear easing
 
   // Floating animation for decorative elements
   const floatingAnimation = {
@@ -209,7 +212,7 @@ const Footer = () => {
       y: {
         repeat: Infinity,
         duration: 4,
-        ease: "easeInOut",
+        ease: easeInOutCurve,
       },
     },
   };
@@ -221,7 +224,7 @@ const Footer = () => {
       rotate: {
         repeat: Infinity,
         duration: 20,
-        ease: "linear",
+        ease: linearEasing,
       },
     },
   };
@@ -237,7 +240,7 @@ const Footer = () => {
   };
 
   // Staggered animation for list items
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -248,25 +251,23 @@ const Footer = () => {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: 20, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100,
       },
     },
   };
-
   // Hover animation for social icons
   const socialIconHover = {
     scale: 1.2,
     rotate: 5,
-    transition: { type: "spring", stiffness: 300 },
+    transition: { type: "spring" as const, stiffness: 300 },
   };
-
   return (
     <footer className="tw-relative tw-overflow-hidden tw-bg-gradient-to-br tw-from-blue-900 tw-via-blue-800 tw-to-indigo-900 tw-text-white tw-pt-16 tw-pb-8">
       {/* Animated background elements */}
@@ -325,7 +326,13 @@ const Footer = () => {
                     href={link}
                     rel="noreferrer"
                     target="_blank"
-                    aria-label={`${link===SocialAccountLinks.FACEBOOK?"Facebook":link===SocialAccountLinks.LINKEDIN?"LinkedIn":"Instagram"}`}
+                    aria-label={`${
+                      link === SocialAccountLinks.FACEBOOK
+                        ? "Facebook"
+                        : link === SocialAccountLinks.LINKEDIN
+                        ? "LinkedIn"
+                        : "Instagram"
+                    }`}
                     className="tw-w-10 tw-h-10 tw-rounded-full tw-bg-blue-700 tw-flex tw-items-center tw-justify-center"
                     whileHover={socialIconHover}
                     whileTap={{ scale: 0.95 }}
@@ -537,11 +544,14 @@ const Footer = () => {
           height={60}
         />
       </motion.div>
-
       <motion.div
         className="tw-absolute tw-top-1/3 tw-left-1/4 tw-opacity-50"
         animate={floatingAnimation}
-        transition={{ duration: 12, reverse: true }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          repeatType: "reverse" as const,
+        }}
       >
         <Image
           src="/images/shap/wave-orange.png"

@@ -3,9 +3,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-// import Link from "next/link"
-// import { Button } from "@/ui/button"
-// import { ArrowRight } from "lucide-react"
 
 export default function MainBanner() {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,154 +12,115 @@ export default function MainBanner() {
   }, []);
 
   return (
-    <div className="tw-relative tw-overflow-hidden tw-bg-gradient-to-br tw-from-blue-50 tw-via-white tw-to-blue-50">
-      {/* Background elements */}
+    <div className="tw-relative tw-w-full max-w-[640px]:tw-min-h-screen sm:tw-h-screen tw-overflow-hidden">
+      {/* Background Image */}
       <div className="tw-absolute tw-inset-0 tw-z-0">
-        <div className="tw-absolute tw-top-20 tw-left-10 tw-w-64 tw-h-64 tw-rounded-full tw-bg-blue-100/40 tw-blur-3xl"></div>
-        <div className="tw-absolute tw-bottom-20 tw-right-10 tw-w-72 tw-h-72 tw-rounded-full tw-bg-teal-100/30 tw-blur-3xl"></div>
+        <Image
+          src="/assets/images/main-banner/bg-image.png" // You'll need to add your background image
+          alt="Background"
+          fill
+          priority
+          className="tw-object-cover"
+          quality={100}
+        />
+
+        {/* Gradient Overlay from left to center */}
+        <div
+          className="tw-absolute tw-inset-0"
+          style={{
+            backgroundColor: "transparent",
+            backgroundImage:
+              "linear-gradient(263deg, #00000000 0%, #031335 100%)",
+          }}
+        />
       </div>
 
-      <div className="tw-container tw-mx-auto tw-px-4 tw-py-12 md:tw-py-16 lg:tw-py-20 tw-relative tw-z-10">
-        <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-8 tw-items-center">
-          {/* Content section */}
+      <div className="tw-container tw-mx-auto tw-px-4 tw-h-full tw-relative tw-z-10 sm:tw-py-0 tw-py-28">
+        <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-8 tw-items-center tw-h-full">
+          {/* Content section - Left side with gradient */}
           <motion.div
-            className="lg:tw-col-span-7 tw-space-y-5"
-            initial={{ opacity: 0, y: 20 }}
-            animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-            transition={{ duration: 0.5 }}
+            className="lg:tw-col-span-7 tw-space-y-6 tw-text-white"
+            initial={{ opacity: 0, x: -20 }}
+            animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
+            transition={{ duration: 0.6 }}
           >
-            <h6 className="title-ext text-primary">Who we are</h6>
-            {/* <h6 className="tw-text-sm tw-font-medium tw-text-blue-600 tw-uppercase tw-tracking-wider">Who we are</h6> */}
-
-            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-3xl tw-font-bold ">
-              Your Trusted Medical Billing Firm
-              {/* Trusted Medical Billing Services &<br />
-              Revenue Cycle Management Company for Healthcare */}
+            <h1 className="tw-text-white tw-text-3xl sm:tw-text-4xl lg:tw-text-5xl tw-font-bold tw-leading-tight">
+              Reinventing Talent Acquisition for the <span className="tw-text-accent-500">Modern Workforce</span>
             </h1>
 
-            <div className="tw-space-y-4 tw-text-gray-700 tw-text-sm sm:tw-text-base">
-              <p>
-                At Key MedSolutions, we make medical billing easy. We are a
-                medical billing service that helps healthcare professionals
-                focus on what is most important: caring for their patients. Our
-                mission is to take the stress out of billing and make your
-                revenue cycle work seamlessly.
+            <div className="tw-space-y-4 tw-text-lg tw-text-white tw-max-w-3xl">
+              <p className="tw-text-white">
+                Looking for a better way to build a top-performing team?
+                You&apos;ve come to the right place. At Key Medsolutions UK, we
+                make hiring world-class talent easier, faster, and more
+                cost-effective, right here in the UK and beyond.
               </p>
-
-              <p>
-                We provide customized Medical Billing and Revenue Cycle
-                Management (RCM) Services to meet the unique needs of your
-                practice. From Medical Billing Management Services to Medical
-                Coding Services, we handle the details so you can focus on your
-                patients.
-              </p>
-
-              <p>
-                Our team specializes in Medical Claims Billing Services and RCM
-                Solutions that improve cash flow and reduce claim denials. With
-                skilled medical coders and billers and advanced technology, we
-                ensure accuracy and efficiency every step of the way.
-              </p>
-              <p>
-                At Key MedSolutions, we are more than just a Medical Billing
-                Agency. We are your partner in success, committed to making your
-                practice more efficient, more profitable, and less stressful.
+              <p className="tw-text-white">
+                With our recruitment, offshore support services, and remote
+                staffing solutions, you get more speed, lower costs, and
+                standout candidates every single time.
               </p>
             </div>
+
+            {/* Buttons */}
+            <motion.div
+              className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
+              <button className="tw-border-none tw-text-white tw-bg-accent-500 tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-text-lg hover:tw-bg-accent-600 tw-transition-colors tw-duration-300 tw-shadow-lg">
+                Build Your Team
+              </button>
+              <button className="tw-border-none tw-text-white tw-bg-accent-500 tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-text-lg hover:tw-bg-accent-600 tw-transition-colors tw-duration-300 tw-shadow-lg">
+                Speak to an Expert
+              </button>
+            </motion.div>
           </motion.div>
 
-          {/* Image section */}
+          {/* Right side - Optional image or decorative elements */}
           <motion.div
-            className="lg:tw-col-span-5 tw-relative"
+            className="lg:tw-col-span-5 tw-relative tw-hidden lg:tw-block"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={
               isVisible ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }
             }
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="tw-relative">
-              <div className="tw-relative tw-z-10 ">
-                {/* <Image
-                  src="/images/main-banner/doctor.png"
-                  alt="Healthcare professional with laptop working on medical billing"
-                  width={500}
-                  height={600}
-                  priority
-                  className="tw-w-full tw-h-auto tw-object-contain"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                /> */}
-                <Image
-                  src="/images/main-banner/doctor.webp"
-                  alt="Healthcare professional"
-                  width={475} // full desktop display width
-                  height={563} // full desktop display height
-                  priority
-                  className="tw-w-full tw-h-auto tw-object-contain"
-                  placeholder="blur"
-                  blurDataURL="/images/main-banner/doctor-blur.png"
-                  sizes="(max-width: 640px) 90vw,   /* mobile: 90% of viewport */
-         (max-width: 1024px) 50vw,  /* tablet: 50% of viewport */
-         475px" /* desktop */
-                  style={{ maxWidth: "100%", height: "auto" }}
-                />
-              </div>
+            {/* Optional decorative elements or image on the right side */}
+            <div className="tw-relative tw-h-96 tw-flex tw-items-center tw-justify-center">
+              {/* You can add an image here if needed */}
+              {/* <Image
+                src="/images/hero/illustration.svg"
+                alt="Team Illustration"
+                width={400}
+                height={400}
+                className="tw-w-full tw-h-auto"
+              /> */}
 
               {/* Decorative elements */}
-              <Image
-                className="tw-absolute tw-top-[-10%] tw-right-[-5%] tw-w-16 tw-h-16 tw-animate-pulse tw-z-0"
-                src="/images/shap/trangle-orange.png"
-                alt=""
-                width={64}
-                height={64}
-                aria-hidden="true"
-                role="presentation"
-                loading="lazy"
-              />
-              <Image
-                className="tw-absolute tw-bottom-[10%] tw-left-[-10%] tw-w-16 tw-h-16 tw-animate-bounce tw-z-0"
-                src="/images/shap/square-blue.png"
-                alt=""
-                width={64}
-                height={64}
-                aria-hidden="true"
-                role="presentation"
-                loading="lazy"
-              />
-              <Image
-                className="tw-absolute tw-top-[20%] tw-left-[-15%] tw-w-20 tw-h-20 tw-animate-pulse tw-z-0"
-                src="/images/shap/chicle-blue-2.png"
-                alt=""
-                width={80}
-                height={80}
-                aria-hidden="true"
-                role="presentation"
-                loading="lazy"
-              />
-              <Image
-                className="tw-absolute tw-bottom-[-5%] tw-right-[10%] tw-w-12 tw-h-12 tw-animate-spin-slow tw-z-0"
-                src="/images/shap/plus-orange.png"
-                alt=""
-                width={48}
-                height={48}
-                style={{ animationDuration: "15s" }}
-                aria-hidden="true"
-                role="presentation"
-                loading="lazy"
-              />
-              <Image
-                className="tw-absolute tw-bottom-[-10%] tw-left-[10%] tw-w-32 tw-animate-float tw-z-0"
-                src="/images/shap/wave-orange.png"
-                alt=""
-                width={128}
-                height={64}
-                aria-hidden="true"
-                role="presentation"
-                loading="lazy"
-              />
+              <div className="tw-absolute tw-top-0 tw-right-0 tw-w-64 tw-h-64 tw-rounded-full tw-bg-white/10 tw-blur-3xl"></div>
+              <div className="tw-absolute tw-bottom-0 tw-left-0 tw-w-48 tw-h-48 tw-rounded-full tw-bg-blue-300/20 tw-blur-3xl"></div>
             </div>
           </motion.div>
         </div>
       </div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        className="tw-absolute tw-bottom-8 tw-left-1/2 tw-transform -tw-translate-x-1/2"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
+      >
+        <div className="tw-w-6 tw-h-10 tw-border-2 tw-border-white tw-rounded-full tw-flex tw-justify-center tw-p-1">
+          <motion.div
+            className="tw-w-1 tw-h-2 tw-bg-white tw-rounded-full"
+            animate={{ y: [0, 12, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
+          />
+        </div>
+      </motion.div>
     </div>
   );
 }

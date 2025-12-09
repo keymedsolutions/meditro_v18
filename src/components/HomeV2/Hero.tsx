@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import ConsultationForm from './ConsultationForm';
 import { upDownAnimation } from '@/utils/animation';
 const doctorImg = "/images/home/doctor-bg.png";
+import type { Easing } from "framer-motion";
 
 const Hero = () => {
 
@@ -26,7 +27,7 @@ const Hero = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
+        ease: "easeOut" as Easing 
       }
     }
   };

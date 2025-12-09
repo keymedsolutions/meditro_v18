@@ -1,9 +1,9 @@
 "use client";
 
-import Services from "@/components/services/Services";
+import ServicePage from "@/components/UK/our-services/ServicePage";
 
-const ServicePage = () => {
-  return <Services />;
+const page = () => {
+  return <ServicePage />;
 };
 
-export default ServicePage;
+export default page;

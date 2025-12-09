@@ -1,4 +1,5 @@
 import { easeInOut } from "framer-motion";
+import type { Easing } from "framer-motion";
 
 export const fadeInLeft = {
   initial: { opacity: 0, x: -100 },
@@ -40,7 +41,7 @@ export const upDownAnimation = {
   transition: {
     duration: 3, 
     repeat: Infinity,
-    ease: "easeInOut", 
+    ease: "easeInOut" as Easing , 
   },
 };
 
@@ -60,6 +61,17 @@ export const fadeSkewReveal = {
   whileInView: {
     opacity: 1,
     skewY: 0,
+    transition: { duration: 0.8, ease: easeInOut },
+  },
+  viewport: { once: true },
+};
+
+export const scaleRotate = {
+  initial: { opacity: 0, scale: 0.8, rotate: -15 },
+  whileInView: {
+    opacity: 1,
+    scale: 1,
+    rotate: 0,
     transition: { duration: 0.8, ease: easeInOut },
   },
   viewport: { once: true },

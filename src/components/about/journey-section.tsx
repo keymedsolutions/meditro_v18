@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import type { Easing } from "framer-motion";
 
 export function JourneySection() {
   const containerVariants = {
@@ -20,7 +21,7 @@ export function JourneySection() {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" as Easing  },
     },
   };
 

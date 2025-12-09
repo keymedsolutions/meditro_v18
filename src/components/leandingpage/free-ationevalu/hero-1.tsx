@@ -149,12 +149,12 @@ export default function Hero({ handleShow }:any) {
               </motion.h1>
 
               <motion.h2
-                className="tw-text-xl lg:tw-text-2xl tw-text-[#1f2278] tw-mt-6 tw-text-start"
+                className="tw-text-xl lg:tw-text-2xl tw-text-[#239bec] tw-mt-6 tw-text-start"
                 {...fadeInUp}
                 transition={{ delay: 0.2 }}
               >
                 <TextGenerateEffect
-                  className="tw-text-xl lg:tw-text-2xl tw-!tw-font-bold tw-text-[#1f2278] tw-!tw-leading-tight"
+                  className="tw-text-xl lg:tw-text-2xl tw-!tw-font-bold tw-text-[#239bec] tw-!tw-leading-tight"
                   words={subTitle}
                 />
               </motion.h2>

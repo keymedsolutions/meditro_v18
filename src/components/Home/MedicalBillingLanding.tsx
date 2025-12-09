@@ -6,6 +6,7 @@ import { CheckCircle, Cpu, Database, Phone, Shield, Zap } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import type { Easing } from "framer-motion";
 
 export default function MedicalBillingLanding() {
   const fadeInUp = {
@@ -52,7 +53,7 @@ export default function MedicalBillingLanding() {
       transition: {
         duration: 6,
         repeat: Infinity,
-        ease: "easeInOut",
+        ease: "easeInOut" as Easing ,
       },
     },
   };
@@ -72,12 +73,7 @@ export default function MedicalBillingLanding() {
     },
   };
 
-  const features = [
-    { icon: <Database size={24} />, text: "EHR Integration" },
-    { icon: <Shield size={24} />, text: "HIPAA Compliant" },
-    { icon: <Cpu size={24} />, text: "AI-Powered Coding" },
-    { icon: <Zap size={24} />, text: "Real-time Analytics" },
-  ];
+
   return (
     <div className="tw-min-h-screen ">
       {/* Hero Section */}

@@ -12,9 +12,13 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { MenuItems } from "@/data/menu-items";
 import Image from "next/image";
 
+const SCROLL_THRESHOLD = 30;
+
 const MainHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const isMobile = useIsMobile();
+  const pathName = usePathname();
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -31,11 +35,16 @@ const MainHeader = () => {
     };
   }, []);
 
-  const pathName = usePathname();
-
   useEffect(() => {
     setIsOpen(false);
   }, [pathName]);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > SCROLL_THRESHOLD);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
@@ -74,7 +83,7 @@ const MainHeader = () => {
 
               {/* <div className='menu-links'> */}
 
-              {!isMobile && <DesktopMenu items={MenuItems} />}
+              {!isMobile && <DesktopMenu items={MenuItems} scrolled={scrolled}/>}
 
               {/* </div> */}
 

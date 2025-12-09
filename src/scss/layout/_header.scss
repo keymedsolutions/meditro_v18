@@ -42,7 +42,8 @@
 
 // Header
 .header {
-	position:relative;
+	position:absolute;
+	width: 100%;
 	z-index:9999;
 	.menu-bar {
 		background: #fff;
@@ -84,7 +85,7 @@
 				a{
 					font-weight: 700;
 					font-size: 20px;
-					color: #1f2278;
+					color: #239bec;
 					display: flex;
 					align-items: center;
 					i{
@@ -246,7 +247,7 @@
 			color: $secondary;
 		}
 		&>a {
-			color: #1f2278;
+			color: #239bec;
 			font-size: 16px;
 			padding: 45px 0 !important;
 			cursor: pointer;
@@ -569,7 +570,7 @@
 				color: $secondary;
 			}
 			&>a {
-				color: #1f2278;
+				color: #239bec;
 				font-size: 16px;
 				padding: 45px 20px;
 				cursor: pointer;
@@ -965,7 +966,7 @@
 			.nav{
 				&>li {
 					&>a {
-						color:#1f2278;	
+						color:#239bec;	
 						&:hover{
 							color:$secondary;
 							i{

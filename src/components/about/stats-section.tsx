@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { FileText, Users, Star, Clock } from "lucide-react";
 import Link from "next/link";
+import type { Easing } from "framer-motion";
+
 
 export function StatsSection() {
   const containerVariants = {
@@ -21,7 +23,7 @@ export function StatsSection() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" },
+      transition: { duration: 0.8, ease: "easeOut" as Easing  },
     },
   };
 
@@ -30,7 +32,7 @@ export function StatsSection() {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as Easing  },
     },
     hover: {
       scale: 1.1,

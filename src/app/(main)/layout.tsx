@@ -1,6 +1,4 @@
 import MainLayout from "@/components/layout/MainLayout";
-import { CustomCursor } from "@/components/ui/CustomCursor";
-import SplashCursor from "@/components/ui/RippleEffectsCursor";
 import React from "react";
 
 const MainSiteLayout = ({
