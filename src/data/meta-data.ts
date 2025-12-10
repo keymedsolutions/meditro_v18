@@ -46,6 +46,16 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Need top talent fast? Key MedSolutions, a leader in candidate sourcing companies and a Global Candidate Sourcing Screening Agency, accelerates your hiring.",
   },
+  "/back-office-and-administrative-services": {
+    title: "Top Back Office Administrative Services | Key MedSolutions UK",
+    description:
+      "Key Medsolutions UK delivers the Best Back Office Administrative Services to help you streamline Back Office Outsourcing Solutions.",
+  },
+  "/payroll-and-finance-outsourcing-services": {
+    title: "Payroll and Finance Outsourcing Services | Key Medsolutions",
+    description:
+      "Key Medsolutions UK delivers Global-compliant payroll & finance outsourcing; accurate, cost-effective, and scalable for SMEs, enterprises, and startups.",
+  },
   "/icd-10-medical-coding-services": {
     title: "ICD-10 Medical Coding Services | Key MedSolutions",
     description:

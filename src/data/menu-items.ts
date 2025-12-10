@@ -74,6 +74,11 @@ export const MenuItems: any = [
         path: "/back-office-and-administrative-services",
         icon: TrendingUp,
       },
+       {
+        label: "Payroll & Finance Outsourcing",
+        path: "/payroll-and-finance-outsourcing-services",
+        icon: TrendingUp,
+      },
       {
         label: "Profit Enhancement",
         path: "/profit-enhancement-services",
