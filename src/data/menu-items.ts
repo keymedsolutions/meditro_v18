@@ -59,7 +59,7 @@ export const MenuItems: any = [
           },
         ],
       },
-        {
+      {
         label: "Recruitment Process Outsourcing",
         path: "/recruitment-process-outsourcing-services",
         icon: TrendingUp,
@@ -74,9 +74,14 @@ export const MenuItems: any = [
         path: "/back-office-and-administrative-services",
         icon: TrendingUp,
       },
-       {
+      {
         label: "Payroll & Finance Outsourcing",
         path: "/payroll-and-finance-outsourcing-services",
+        icon: TrendingUp,
+      },
+      {
+        label: "Market Mapping",
+        path: "/market-mapping-recruitment-services",
         icon: TrendingUp,
       },
       {

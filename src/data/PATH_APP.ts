@@ -21,6 +21,9 @@ export const APP_PATH = {
     backOfficeAndAdministrativeServices: {
       path: "/back-office-and-administrative-services",
     },
+    marketMappingRecruitmentServices:{
+      path:"/market-mapping-recruitment-services"
+    },
     payrollAndFinanceOutsourcingServices: {
       path: "/payroll-and-finance-outsourcing-services",
     },

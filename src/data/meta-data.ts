@@ -56,6 +56,11 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Key Medsolutions UK delivers Global-compliant payroll & finance outsourcing; accurate, cost-effective, and scalable for SMEs, enterprises, and startups.",
   },
+  "/market-mapping-recruitment-services": {
+    title: "Best Market Mapping Recruitment Services | Key Medsolutions UK",
+    description:
+      "Key MedSolutions UK, a Global Market Mapping Company, offers data-driven talent insights, competitor analysis, and Market Mapping Services for smarter hiring.",
+  },
   "/icd-10-medical-coding-services": {
     title: "ICD-10 Medical Coding Services | Key MedSolutions",
     description:
