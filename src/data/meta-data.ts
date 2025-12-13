@@ -61,6 +61,26 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Key MedSolutions UK, a Global Market Mapping Company, offers data-driven talent insights, competitor analysis, and Market Mapping Services for smarter hiring.",
   },
+  "/executive-search-and-headhunting-services": {
+    title: "Best Executive Search Headhunting Company | Key MedSolutions UK",
+    description:
+      "Hire C-Suite, senior managers and niche experts with Key Medsolutions UK. A Trusted executive search and headhunting firm for precise, confidential hires.",
+  },
+  "/remote-staffing-agency": {
+    title: "Trusted Remote Staffing Agency | Key MedSolutions UK",
+    description:
+      "Build high-performance teams with Key MedSolutions UK, a trusted Global remote staffing agency offering cost-effective remote staffing solutions.",
+  },
+  "/technology-and-digital-recruitment-services": {
+    title: "Global Technology Recruitment Agency | Key MedSolutions UK",
+    description:
+      "Hire top tech talent across the UK & globally with Key Medsolutions UK. Specialist technology & digital recruitment for startups, scaleups, and enterprises.",
+  },
+  "/industries": {
+    title: "Industries We Serve",
+    description:
+      "Hire top talent across Healthcare, IT, Logistics, Finance & more. Key Medsolutions UK delivers fast, reliable, and compliant recruitment solutions.",
+  },
   "/icd-10-medical-coding-services": {
     title: "ICD-10 Medical Coding Services | Key MedSolutions",
     description:
