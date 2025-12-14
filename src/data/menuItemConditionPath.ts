@@ -9,5 +9,7 @@ export const menuItemConditionPath: string[] = [
   APP_PATH.services.executiveSearchAndHeadhuntingServices.path,
   APP_PATH.services.technologyAndDigitalRecruitmentServices.path,
   APP_PATH.services.industries.path,
-
+  APP_PATH.services.deliveryModels.path,
+  APP_PATH.services.WhyChooseUs.path,
+  APP_PATH.services.faqs.path,
 ];

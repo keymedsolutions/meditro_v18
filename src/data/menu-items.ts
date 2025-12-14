@@ -149,22 +149,23 @@ export const MenuItems: any = [
     ],
   },
   { label: "Industries We Serve", path: "/industries" },
-  { label: "Blogs", path: "/blogs" },
+  { label: "Delivery Models", path: "/delivery-models" },
+  { label: "Why Choose Us", path: "/why-choose-us" },
   {
-    label: "Pricing",
-    path: "",
-    subMenu: [
-      {
-        label: "RCM Plan",
-        path: "/rcm-plans",
-        icon: BarChart3,
-      },
-      {
-        label: "Training and Placement",
-        path: "/pricing",
-        icon: GraduationCap,
-      },
-    ],
+    label: "FAQs",
+    path: "/faqs",
+    // subMenu: [
+    //   {
+    //     label: "RCM Plan",
+    //     path: "/rcm-plans",
+    //     icon: BarChart3,
+    //   },
+    //   {
+    //     label: "Training and Placement",
+    //     path: "/pricing",
+    //     icon: GraduationCap,
+    //   },
+    // ],
   },
   // {
   //   label: "Book an Appointment",

@@ -4,103 +4,147 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-const TechnologyDigitalRecruitmentServices: React.FC = () => {
+const Services: React.FC = () => {
   const servicesSections = [
     {
       id: 1,
-      title: "Full Technology Recruitment Services",
+      title: "Global Reach: Connecting Talent Without Borders",
       descriptions: [
-        "We recruit for permanent, contract, and interim positions across all levels.",
-        "Specialisations include:",
+        "One of our biggest advantages is reach. Your talent search isn’t limited to one location,  you get access to global sourcing power, giving you better skills, more diversity, and faster hiring.",
+        "We support companies with:",
       ],
       insideDescription: [
-        "Software engineers & developers",
-        "CTOs, CIOs & tech leaders",
-        "Cybersecurity specialists",
-        "Cloud & infrastructure engineers",
-        "AI specialists, data engineers & data scientists",
-        "Product managers",
-        "UX/UI designers",
+        "Multi-country talent access",
+        "Niche and hard-to-find skill sets",
+        "Dedicated offshore/nearshore recruitment teams",
+        "Remote staffing for specialist and high-volume roles",
       ],
       footerDescription:
-        "These roles require deep technical understanding, and our team knows exactly how to evaluate the right fit.",
-      mainImage: "/assets/images/our-services/rpo-main.jpg",
+        "And because we source across time zones, your hiring continues even when your office is closed. That means faster shortlists, quicker placements, and less downtime.",
+      mainImage: "/assets/images/why-choose-us/GlobalReach.jpg",
       smallImage: "/assets/images/our-services/rpo-secondary.jpg",
     },
 
     {
       id: 2,
-      title: "Digital Recruitment Agency Services",
+      title: "Expertise: Recruitment Powered by Industry Specialists",
       descriptions: [
-        "As a dedicated Digital recruitment agency, we help businesses build strong digital teams that drive customer acquisition and brand growth.",
-        "Common roles include:",
+        "Every role is different, and so is every industry. That’s why we match you with recruiters who specialise in your sector, ensuring you get people who truly understand job requirements, candidate behaviour, compliance rules, and salary benchmarks.",
+        "Our expertise covers:",
       ],
       insideDescription: [
-        "Digital marketers",
-        "SEO specialists",
-        "E-commerce professionals",
-        "Creative designers",
-        "Digital strategists & content leads",
+        "Technology & Digital (Developers, Cybersecurity, DevOps)",
+        "Healthcare (Nurses, Support Workers, Allied Health)",
+        "Engineering & Technical (Mechanical, Electrical, Civil)",
+        "Finance & Accounting (Payroll, Bookkeeping, Analysts)",
+        "Logistics & Supply Chain (Warehouse, Procurement, Ops)",
+        "Customer Support & Sales",
       ],
+      footerDescription:
+        "Our team brings over 10+ years of combined experience, meaning you’re never guessing, you’re guided by specialists.",
       mainImage:
-        "/assets/images/technology-and-digital-recruitment-services/SEO.jpg",
+        "/assets/images/our-services/rpo-main.jpg",
       smallImage: "/assets/images/our-services/ScreeningServices.jpg",
     },
 
     {
       id: 3,
-      title: "Technology Sales Recruitment",
+      title: "Cost Efficiency: Reduce Hiring Costs, Improve Output",
       descriptions: [
-        "If you sell a technology product, you already know how crucial great salespeople are. We help you hire sales talent who understand SaaS, cloud, software, and technical solutions.",
-        "Roles include:",
+        "Recruitment can be expensive,  but it doesn’t have to be. With Key Medsolutions UK, businesses save 60–75% compared to traditional hiring, thanks to scalable offshore teams and lean, tech-enabled processes.",
+        "You save on:",
       ],
       insideDescription: [
-        "SaaS sales executives",
-        "Account managers",
-        "Pre-sales engineers",
-        "Channel partners",
-        "Business development managers",
+        "Agency fees",
+        "Office overheads",
+        "HR and admin workload",
+        "Screening, sourcing, and payroll time",
+        "Recruitment infrastructure",
       ],
       footerDescription:
-        "If you’ve been searching for technology sales recruitment agencies, you’re in the right place.",
+        "The result? Faster hiring. Lower spend. Higher quality. And a recruitment engine that grows with you.",
       mainImage:
-        "/assets/images/recruitment-process-outsourcing-services/Executive-LevelRPOSupport.jpg",
+        "/assets/images/why-choose-us/CostEfficiency.jpg",
       smallImage: "/assets/images/our-services/AdministrativeServices.jpg",
     },
     {
       id: 4,
-      title: "Global Tech Hiring",
+      title: "Technology Integration: Smart, Data-Driven Recruitment",
       descriptions: [
-        "Hiring internationally or building a remote tech team? We support:",
+        "We’re big believers in using technology to make hiring smoother,  not more complicated. Our systems help you make better decisions, speed up screening, and keep your pipeline organised.",
+        "We combine:",
       ],
       insideDescription: [
-        "Cross-border hiring",
-        "Remote-first recruitment",
-        "Offshore and nearshore teams",
-        "International talent mapping",
+        "AI-powered sourcing tools",
+        "ATS and CRM optimisation",
+        "Automated screening and skill assessments",
+        "Digital onboarding",
+        "Market intelligence & talent mapping",
+        "Transparent dashboards and weekly analytics",
       ],
       footerDescription:
-        "As one of the leading Technology Recruitment Agencies for Global Hiring, we streamline the entire global hiring process.",
+        "This tech + human blend gives you accuracy, clarity, and a much better candidate experience.",
       mainImage:
-        "/assets/images/technology-and-digital-recruitment-services/GlobalTechHiring.jpg",
+        "/assets/images/why-choose-us/TechnologyIntegration.jpg",
       smallImage: "/assets/images/our-services/FinanceOutsourcingService.jpg",
     },
     {
       id: 5,
-      title: "Niche & Sector-Specific Hiring",
-      descriptions: ["We support highly specialised tech sectors, including:"],
+      title: "Transparency: Clear Communication, Zero Hidden Costs",
+      descriptions: [
+        "No vague reports. No unclear pricing. No hard-to-reach recruiters.With us, everything is transparent:",
+      ],
       insideDescription: [
-        "BioTech",
-        "FinTech",
-        "HealthTech",
-        "EdTech",
-        "AI and emerging technologies",
+        "Dedicated account manager",
+        "Daily/weekly reports",
+        "Full visibility into candidate pipelines",
+        "Clear SLAs and performance metrics",
+        "Honest pricing with no hidden charges",
       ],
       footerDescription:
-        "Our recruiters understand these industries deeply, making hiring more accurate and efficient.",
+        "We operate with strict UK GDPR compliance, ethical recruitment practices, and clear documentation, so you always know exactly what you’re getting.",
+      smallImage: "/assets/images/our-services/",
+      mainImage:
+        "/assets/images/why-choose-us/Transparency.jpg",
+    },
+    {
+      id: 6,
+      title: "Scalability: Recruitment That Grows With You",
+      descriptions: [
+        "Whether you’re hiring for 5 roles or 500, we scale your recruitment engine exactly when you need it. Peak season? New branch opening? Sudden hiring surge? We ramp up instantly, and scale down just as smoothly.",
+        "Choose from:",
+      ],
+      insideDescription: [
+        "Partial RPO",
+        "Full RPO",
+        "Dedicated offshore teams",
+        "On-demand recruitment",
+        "Project-based hiring support",
+        "Hybrid recruitment models",
+      ],
+      footerDescription:
+        "You get total flexibility, faster time-to-hire, and zero capacity issues.",
       smallImage: "/assets/images/our-services/",
       mainImage:
         "/assets/images/technology-and-digital-recruitment-services/NicheAndSectorSpecificHiring.jpg",
+    },
+
+    {
+      id: 7,
+      title: "Social Proof: Results That Speak for Themselves",
+      descriptions: ["Across industries, our clients consistently see:"],
+      insideDescription: [
+        "60–75% reduction in recruitment costs",
+        "50% faster time-to-fill",
+        "Better long-term retention",
+        "Improved candidate quality",
+        "Higher operational efficiency",
+      ],
+      footerDescription:
+        "We’ve supported recruitment agencies, SMEs, and enterprise clients, helping them grow, scale, and operate more efficiently through world-class recruitment delivery.",
+      smallImage: "/assets/images/our-services/",
+      mainImage:
+        "/assets/images/why-choose-us/SocialProof.jpg",
     },
   ];
 
@@ -176,7 +220,7 @@ const TechnologyDigitalRecruitmentServices: React.FC = () => {
       className="tw-text-left"
     >
       <h2 className="tw-text-xl sm:tw-text-2xl lg:tw-text-3xl tw-font-semibold tw-mb-5">
-        {item.id}. {item.title}
+        {item.title}
       </h2>
 
       <div className="tw-space-y-4 tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-100/90">
@@ -209,22 +253,6 @@ const TechnologyDigitalRecruitmentServices: React.FC = () => {
     <section className="tw-relative tw-w-full tw-overflow-hidden tw-py-16 md:tw-py-20">
       <div className="tw-absolute tw-inset-0 tw-pointer-events-none" />
 
-      <motion.div
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }}
-        className="tw-text-center tw-max-w-3xl tw-mx-auto tw-mb-24 lg:tw-px-0 tw-px-4    "
-      >
-        <h2 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-mb-4">
-          Technology & Digital Recruitment Services
-        </h2>
-        <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
-          Our Technology and Digital Recruitment Services are built to support
-          long-term growth and immediate hiring needs across technical, digital,
-          and commercial roles.
-        </p>
-      </motion.div>
       <div className="tw-container tw-relative tw-z-10 tw-mx-auto tw-px-4 md:tw-px-8 tw-space-y-40">
         {servicesSections.map((item, index) => {
           const reverse = index % 2 !== 0;
@@ -259,4 +287,4 @@ const TechnologyDigitalRecruitmentServices: React.FC = () => {
   );
 };
 
-export default TechnologyDigitalRecruitmentServices;
+export default Services;

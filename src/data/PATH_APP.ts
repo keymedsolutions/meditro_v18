@@ -39,6 +39,15 @@ export const APP_PATH = {
     industries: {
       path: "/industries",
     },
+    deliveryModels: {
+      path: "/delivery-models",
+    },
+    WhyChooseUs: {
+      path: "/why-choose-us",
+    },
+    faqs: {
+      path: "/faqs",
+    },
     profitEnhancement: {
       path: "/profit-enhancement-services",
     },

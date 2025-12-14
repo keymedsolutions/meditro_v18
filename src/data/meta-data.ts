@@ -81,6 +81,21 @@ export const SiteMetaData: ISiteMetaData = {
     description:
       "Hire top talent across Healthcare, IT, Logistics, Finance & more. Key Medsolutions UK delivers fast, reliable, and compliant recruitment solutions.",
   },
+  "/delivery-models": {
+    title: "Flexible Recruitment Delivery Models | Key Medsolutions UK",
+    description:
+      "Explore Key Medsolutions UK’s flexible recruitment delivery models. Full RPO, on-demand support, and offshore teams to hire faster, smarter, and cost-effectively.",
+  },
+  "/why-choose-us": {
+    title: "Trusted RPO Company | Expert Recruitment Partner",
+    description:
+      "Discover why Key MedSolutions UK is a trusted recruitment partner and global RPO company, offering UK expertise, flexible models, and cost-efficient hiring.",
+  },
+  "/faqs": {
+    title: "Frequently Asked Questions – Key MedSolutions UK",
+    description:
+      "Frequently asked questions about Recruitment Process Outsourcing and our service such as - What is Recruitment Process Outsourcing?",
+  },
   "/icd-10-medical-coding-services": {
     title: "ICD-10 Medical Coding Services | Key MedSolutions",
     description:
