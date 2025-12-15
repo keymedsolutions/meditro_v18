@@ -14,23 +14,35 @@ const faqs = [
       },
       {
         q: "What are the key benefits of adopting an RPO model?",
-        a: "RPO saves time and money by streamlining hiring, gives access to recruitment experts, improves quality of hire using data-driven strategies, and scales with your business. It’s designed to make recruitment faster, smarter, and more predictable.",
+        a: "RPO offers a ton of benefits! First, it saves you time and money by streamlining the hiring process. You also gain access to recruitment experts who know how to find top talent quickly. Plus, RPO is scalable, meaning it can grow with your business. It also improves the quality of hires by leveraging advanced tools and data-driven strategies. In short, it’s a smart way to make your recruitment process more efficient and effective.",
       },
       {
         q: "How does the recruitment process outsourcing work?",
-        a: "The RPO provider starts by understanding your business, culture, and hiring needs, then manages sourcing, screening, interviews, and onboarding as an extension of your HR team using advanced technology and proven processes.",
+        a: "It’s simpler than you might think. The RPO provider starts by understanding your business, your culture, and your hiring needs. From there, they handle the entire recruitment process—or just the parts you need help with. This includes sourcing candidates, screening resumes, conducting interviews, and even onboarding new hires. They act as an extension of your HR team, using their expertise and technology to deliver great results.",
       },
       {
         q: "What types of RPO models exist and how do they differ?",
-        a: "Common models include End-to-End RPO, Project RPO, and On-Demand RPO. Each is designed for different hiring challenges, from full lifecycle recruitment to short-term or flexible support.",
+        a: "There are a few different RPO models to choose from, depending on your needs:",
+        item: [
+          "End-to-End RPO: This is the full package, where the provider manages the entire recruitment lifecycle.",
+          "Project RPO: Perfect for short-term or specific hiring needs, like launching a new department or filling seasonal roles.",
+          "On-Demand RPO: This is a flexible option where you get recruitment support only when you need it.",
+          "Each model is designed to address different challenges, so you can pick the one that fits your business best.",
+        ],
       },
       {
         q: "How do I choose the right RPO partner for my business?",
-        a: "Look for industry expertise, transparent pricing, scalable solutions, strong technology, cultural alignment, and proven results backed by client references.",
+        a: "Choosing the right RPO partner is all about finding someone who understands your industry and aligns with your company culture. Look for a provider with a strong track record, scalable solutions, and advanced technology. Transparency is also key, make sure they’re clear about their processes and pricing. And don’t forget to ask for client references to see how they’ve helped other businesses like yours.",
       },
       {
         q: "How much does RPO cost and what pricing models are used?",
-        a: "Pricing depends on hiring volume, role complexity, and scope. Common models include per-hire fees, monthly management fees, or hybrid structures tailored to your needs.",
+        a: "The cost of RPO depends on factors like the scope of services, the volume of hires, and the complexity of the roles. Common pricing models include:",
+        item: [
+          "Per-Hire Fees: You pay a set fee for each successful hire.",
+          "Management Fees: A monthly fee for ongoing recruitment support.",
+          "Hybrid Models: A mix of both.",
+          "It’s best to discuss your specific needs with potential providers to get a tailored quote.",
+        ],
       },
     ],
   },
@@ -395,8 +407,14 @@ const FaqsHero: React.FC = () => {
                                 transition={{ duration: 0.35, ease: "easeOut" }}
                                 className="tw-overflow-hidden"
                               >
-                                <div className="tw-px-6 tw-pb-6 tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
-                                  {item.a}
+                                <div className="tw-px-6 tw-pb-6 tw-space-y-4 tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
+                                  {/* Main answer */}
+                                  <p>{item.a}</p>
+
+                                  {Array.isArray(item.item) &&
+                                    item.item.map((it, index) => (
+                                      <p key={index}>{it}</p>
+                                    ))}
                                 </div>
                               </motion.div>
                             )}

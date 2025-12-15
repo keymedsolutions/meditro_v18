@@ -25,14 +25,8 @@ export default function MainBanner() {
         />
 
         {/* Gradient Overlay from left to center */}
-        <div
-          className="tw-absolute tw-inset-0"
-          style={{
-            backgroundColor: "transparent",
-            backgroundImage:
-              "linear-gradient(263deg, #00000000 0%, #031335 100%)",
-          }}
-        />
+                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-accent-100/70 tw-via-white/60 tw-to-accent-200/60" />
+
       </div>
 
       <div className="tw-container tw-mx-auto tw-px-4 tw-h-full tw-relative tw-z-10 sm:tw-py-0 tw-py-28">
@@ -44,19 +38,19 @@ export default function MainBanner() {
             animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="tw-text-white tw-text-3xl sm:tw-text-4xl lg:tw-text-5xl tw-font-bold tw-leading-tight">
+            <h1 className="tw-text-black tw-text-3xl sm:tw-text-4xl lg:tw-text-5xl tw-font-bold tw-leading-tight">
               Reinventing Talent Acquisition for the{" "}
               <span className="tw-text-accent-500">Modern Workforce</span>
             </h1>
 
-            <div className="tw-space-y-4 tw-text-lg tw-text-white tw-max-w-3xl">
-              <p className="tw-text-white">
+            <div className="tw-space-y-4 tw-text-lg tw-text-black tw-max-w-3xl">
+              <p className="tw-text-slate-700">
                 Looking for a better way to build a top-performing team?
                 You&apos;ve come to the right place. At Key Medsolutions UK, we
                 make hiring world-class talent easier, faster, and more
                 cost-effective, right here in the UK and beyond.
               </p>
-              <p className="tw-text-white">
+              <p className="tw-text-slate-700">
                 With our recruitment, offshore support services, and remote
                 staffing solutions, you get more speed, lower costs, and
                 standout candidates every single time.
