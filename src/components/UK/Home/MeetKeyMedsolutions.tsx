@@ -41,7 +41,7 @@ const MeetKeyMedsolutions = () => {
             </div>
             <p className="tw-text-sm md:tw-text-base tw-text-black tw-leading-relaxed">
               For us, talent knows no boundaries, and neither should your
-              business. That’s why we set up Key Medsolutions: to connect global
+              business. That’s why we set up Key Medsolutions: to connect Global
               companies with the world’s best people, no matter where they’re
               based.
             </p>
@@ -94,7 +94,7 @@ const MeetKeyMedsolutions = () => {
               tools, and align with your company culture. Whether you’re after
               high-volume hiring or hunting for niche talent in tech and
               digital, we know your world and get you the results you need. With
-              us, you’re gaining a partner, not just another supplier.
+              us, you’re gaining a partner; not just another supplier.
             </p>
           </div>
         </div>

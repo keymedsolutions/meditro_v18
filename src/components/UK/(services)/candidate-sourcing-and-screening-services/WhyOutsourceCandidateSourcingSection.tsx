@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 const WhyOutsourceCandidateSourcingSection: React.FC = () => {
@@ -26,7 +28,9 @@ const WhyOutsourceCandidateSourcingSection: React.FC = () => {
                 Why Do Businesses Outsource Candidate Sourcing &amp; Screening?
               </h2>
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
-                Let’s be honest: recruitment can be a headache: Here’s why outsourcing is chosen by many businesses in the UK and around the world.
+                Let’s be honest: recruitment can be a headache: Here’s why
+                outsourcing is chosen by many businesses in the UK and around
+                the world.
               </p>
             </div>
 
@@ -81,13 +85,34 @@ const WhyOutsourceCandidateSourcingSection: React.FC = () => {
               }}
             >
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
-                Our RPO-based model (Recruitment Process Outsourcing) is designed to solve these challenges. We combine advanced tools, proven strategies, and a deep understanding of the UK and global market expertise to deliver meaningful results.
+                Our RPO-based model (
+                <Link
+                  href={
+                    APP_PATH.services.recruitmentProcessOutsourcingServices.path
+                  }
+                  className="tw-font-semibold tw-text-inherit"
+                >
+                  Recruitment Process Outsourcing
+                </Link>
+                ) is designed to solve these challenges. We combine advanced
+                tools, proven strategies, and a deep understanding of the UK and
+                global market expertise to deliver meaningful results.
               </p>
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
-                If you're looking to speed up and strengthen your hiring process, our team offers outsourced candidate sourcing and screening services designed to help you find the right talent quickly and efficiently. As one of the top candidate sourcing companies in the UK and a trusted global partner, we combine market insight with advanced sourcing tools to deliver high-quality, pre-screened candidates tailored to your needs.
+                If you're looking to speed up and strengthen your hiring
+                process, our team offers outsourced candidate sourcing and
+                screening services designed to help you find the right talent
+                quickly and efficiently. As one of the top candidate sourcing
+                companies in the UK and a trusted global partner, we combine
+                market insight with advanced sourcing tools to deliver
+                high-quality, pre-screened candidates tailored to your needs.
               </p>
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
-                Our experienced candidate sourcing specialists focus on understanding your hiring needs, engaging suitably qualified candidates, and ensuring a seamless handover to your in-house recruitment team. This approach not only saves you time but also improves the overall quality of your talent pipeline.
+                Our experienced candidate sourcing specialists focus on
+                understanding your hiring needs, engaging suitably qualified
+                candidates, and ensuring a seamless handover to your in-house
+                recruitment team. This approach not only saves you time but also
+                improves the overall quality of your talent pipeline.
               </p>
             </div>
           </motion.div>

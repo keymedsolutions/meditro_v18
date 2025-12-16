@@ -10,19 +10,19 @@ const OurServices = () => {
       title: "Recruitment Process Outsourcing (RPO)",
       description: (
         <>
-          Get the full package with our Full Cycle RPO. We act as your in-house
-          recruitment team—handling everything from job listings to offer
-          negotiations.
+          Get the full package with our Full Cycle Recruitment Process
+          Outsourcing. We’ll step in as your in-house recruitment team, handling
+          everything from job listings to offer negotiations.
           <br />
           <br />
-          <strong>Candidate Sourcing & Screening:</strong> Advanced AI + expert
-          human recruiters to find the perfect match.
+          <strong>Candidate Sourcing & Screening:</strong> We mix advanced AI
+          and real-world know-how to handpick top candidates just for you.
           <br />
-          <strong>Employer Branding:</strong> We enhance your brand at every
+          <strong>Employer Branding:</strong> We make your brand shine at every
           candidate touchpoint.
           <br />
-          <strong>Talent Analytics:</strong> Data-driven insights to improve
-          your hiring decisions over time.
+          <strong>Talent Analytics:</strong> We mine the data to boost your
+          hiring process over time.
         </>
       ),
     },
@@ -31,14 +31,15 @@ const OurServices = () => {
       title: "Remote & Offshore Staffing",
       description: (
         <>
-          Build a flexible remote team effortlessly—we streamline the entire
-          process.
+          Need a flexible remote team? Our Remote Staffing model streamlines the
+          process. You set the direction, we keep everything running smoothly.
           <br />
           <br />
-          • Reduce staffing costs by up to 70%
+          • Cut your staffing costs by up to 70%
           <br />
-          • Zero compliance stress—we handle everything globally
-          <br />• Transparent updates on performance and deliverables
+          • No compliance stress, wherever your people are, we’ve got it covered
+          <br />• Clear, honest updates on who’s working and what they’re
+          delivering
         </>
       ),
     },
@@ -47,15 +48,15 @@ const OurServices = () => {
       title: "Executive Search & Headhunting",
       description: (
         <>
-          When you need C-level or niche talent, we execute a high-precision
-          search.
+          When you’re after C-level or specialist talent, we go above and
+          beyond.
           <br />
           <br />
-          <strong>Market Mapping:</strong> Deep research to uncover hidden
-          industry stars.
+          <strong>Market Mapping:</strong> We dig deep to find the industry’s
+          hidden stars.
           <br />
-          <strong>Specialised Networks:</strong> Our expert headhunters know
-          where top talent lives—and how to win them over.
+          <strong>Specialised Networks:</strong> Our headhunters know where to
+          look and how to win over top talent.
         </>
       ),
     },
@@ -64,15 +65,15 @@ const OurServices = () => {
       title: "Accounting & Back-Office Support",
       description: (
         <>
-          Keep operations smooth with our complete back-office & administrative
-          support.
+          Keep your operations running seamlessly with our comprehensive
+          Back-Office & Administrative support services.
           <br />
           <br />
           <strong>Payroll & Finance Outsourcing:</strong> Global, accurate, and
-          timely every month.
+          timely payments, every month.
           <br />
-          <strong>Financial Planning:</strong> Bookkeeping, AR/AP, and
-          management accounts handled by experts.
+          <strong>Financial Planning:</strong> Expert help for bookkeeping,
+          AR/AP, and management accounts.
         </>
       ),
     },
@@ -81,13 +82,14 @@ const OurServices = () => {
       title: "HR & Admin Outsourcing",
       description: (
         <>
-          We simplify HR for growing and remote teams—no complexity, no stress.
+          Managing a remote or growing team can get complicated—we make sure it
+          never is.
           <br />
           <br />
-          • Scale HR operations as your team grows
+          • Scale your in-house HR as needed
           <br />
-          • Full compliance—from legal docs to onboarding
-          <br />• Secure and organized employee data management
+          • All compliance handled, from legal docs to onboarding
+          <br />• Secure, organised employee data
         </>
       ),
     },
@@ -96,7 +98,7 @@ const OurServices = () => {
   return (
     <div className="tw-min-h-screen tw-py-16 tw-px-4 tw-relative tw-overflow-hidden">
       {/* Background decorative elements */}
-      
+
       <div className="sm:tw-container tw-mx-auto tw-relative tw-z-10">
         <div className="tw-text-center tw-space-y-3 tw-mb-16 tw-relative tw-z-10">
           <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">

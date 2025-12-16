@@ -8,6 +8,8 @@ import {
   ClipboardList,
   BadgeCheck,
 } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const CandidateScreeningTechnologySection: React.FC = () => {
   const steps = [
@@ -57,9 +59,18 @@ const CandidateScreeningTechnologySection: React.FC = () => {
 
           <p className="tw-text-sm sm:tw-text-base tw-text-slate-700 tw-leading-relaxed">
             We don’t just believe in working hard, we believe in working smart.
-            Our Candidate Screening Solution uses the latest tech, including an
-            advanced Applicant Tracking System (ATS) and AI tools, to quickly
-            pinpoint who’s right for each role.
+            Our&nbsp;
+            <Link
+              href={
+                APP_PATH.services.candidateSourcingAndScreeningServices.path
+              }
+              className="tw-font-semibold tw-text-inherit"
+            >
+              Candidate Screening Solution
+            </Link>
+            &nbsp;uses the latest tech, including an advanced Applicant Tracking
+            System (ATS) and AI tools, to quickly pinpoint who’s right for each
+            role.
           </p>
         </motion.div>
 

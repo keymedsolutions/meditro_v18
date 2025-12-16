@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ExecutiveLevelRPOSection: React.FC = () => {
@@ -15,7 +17,6 @@ const ExecutiveLevelRPOSection: React.FC = () => {
 
       <div className="tw-container tw-relative tw-z-10 tw-mx-auto tw-max-w-6xl tw-px-4 md:tw-px-8">
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] tw-gap-10 tw-items-center">
-          
           {/* LEFT – TEXT BLOCK */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -48,10 +49,18 @@ const ExecutiveLevelRPOSection: React.FC = () => {
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
                 Need to hire top leaders or executives? We get how important the
                 right fit is at this level. Not only do we offer tailored RPO
-                for senior positions, but we also blend in headhunting techniques
-                you’d expect from a Best executive search and headhunting
-                company. It's a balanced and effective approach to leadership
-                hiring.
+                for senior positions, but we also blend in headhunting
+                techniques you’d expect from a Best&nbsp;
+                <Link
+                  href={
+                    APP_PATH.services.executiveSearchAndHeadhuntingServices.path
+                  }
+                  className="tw-font-semibold tw-text-inherit"
+                >
+                  executive search and headhunting
+                </Link>
+                &nbsp;company. It's a balanced and effective approach to
+                leadership hiring.
               </p>
             </div>
           </motion.div>
@@ -65,7 +74,6 @@ const ExecutiveLevelRPOSection: React.FC = () => {
             className="tw-flex tw-justify-center"
           >
             <div className="tw-relative tw-w-full tw-max-w-md">
-
               {/* Angle shadow base */}
               <div className="tw-absolute tw-inset-x-6 tw-bottom-[-18px] tw-h-10 tw-rounded-[26px] tw-bg-slate-900/10 tw-blur-md" />
 
@@ -146,7 +154,8 @@ const ExecutiveLevelRPOSection: React.FC = () => {
         }
 
         @keyframes execRotate {
-          0%, 100% {
+          0%,
+          100% {
             transform: rotate(-2.5deg);
           }
           50% {
@@ -155,7 +164,8 @@ const ExecutiveLevelRPOSection: React.FC = () => {
         }
 
         @keyframes execFloat1 {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateY(0);
           }
           50% {
@@ -164,7 +174,8 @@ const ExecutiveLevelRPOSection: React.FC = () => {
         }
 
         @keyframes execFloat2 {
-          0%, 100% {
+          0%,
+          100% {
             transform: translateX(0);
           }
           50% {

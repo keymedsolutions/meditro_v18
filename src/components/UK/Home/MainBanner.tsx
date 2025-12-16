@@ -25,8 +25,7 @@ export default function MainBanner() {
         />
 
         {/* Gradient Overlay from left to center */}
-                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-accent-100/70 tw-via-white/60 tw-to-accent-200/60" />
-
+        <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-accent-100/70 tw-via-white/60 tw-to-accent-200/60" />
       </div>
 
       <div className="tw-container tw-mx-auto tw-px-4 tw-h-full tw-relative tw-z-10 sm:tw-py-0 tw-py-28">
@@ -45,10 +44,10 @@ export default function MainBanner() {
 
             <div className="tw-space-y-4 tw-text-lg tw-text-black tw-max-w-3xl">
               <p className="tw-text-slate-700">
-                Looking for a better way to build a top-performing team?
-                You&apos;ve come to the right place. At Key Medsolutions UK, we
-                make hiring world-class talent easier, faster, and more
-                cost-effective, right here in the UK and beyond.
+                Looking for a better way to build a top-performing team? You’ve
+                come to the right place. At Key Medsolutions UK, we make hiring
+                world-class talent easier, faster, and more cost-effective,
+                right here in the UK and beyond.
               </p>
               <p className="tw-text-slate-700">
                 With our recruitment, offshore support services, and remote

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { NumberTicker } from "../ui/NumberTicker";
 
 const WhyChooseUs = () => {
   return (
@@ -33,40 +34,70 @@ const WhyChooseUs = () => {
             They’re slow, pricey, and rarely flexible. That’s why Key
             Medsolutions has flipped the script. As your go-to Global Offshore
             Recruitment Service Provider, we blend everything you love about
-            British business (high standards and honest communication) with the
-            global reach and value of international talent.
+            British business (think high standards and clear, honest
+            communication) with the game-changing reach and value of global
+            talent.
           </p>
 
           <p className="!tw-text-white">
             We don’t just fill roles, we build teams that help your business
-            thrive. Whether you want smart offshore hiring to reduce costs or a
-            trusted partner to manage recruitment end-to-end, we’re here to make
-            a real impact on your success.
+            thrive. Maybe you want smart Offshore Recruitment Solutions to keep
+            costs down. Maybe you’re looking for a trusted offshore recruitment
+            partner to take charge of your hiring end-to-end. Either way, we’re
+            here to make a real impact on your success.
           </p>
         </div>
 
         {/* Stats */}
         <div className="tw-flex tw-flex-col tw-gap-y-4 tw-mt-2">
-          <p className="tw-font-medium tw-text-white">A quick look at our numbers:</p>
+          <p className="tw-font-medium tw-text-white">
+            A quick look at our numbers:
+          </p>
 
           <div className="tw-grid tw-grid-cols-2 tw-gap-6">
             <div className="tw-flex tw-flex-col tw-gap-y-1">
-              <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">10+</span>
+              <div className="tw-flex tw-items-center">
+                <NumberTicker
+                  value={10}
+                  className="tw-text-2xl md:tw-text-5xl tw-font-bold"
+                />
+                <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">
+                  +
+                </span>
+              </div>
               <span>Years’ Experience</span>
             </div>
 
             <div className="tw-flex tw-flex-col tw-gap-y-1">
-              <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">2,000+</span>
+              <div className="tw-flex tw-items-center">
+                <NumberTicker
+                  value={2000}
+                  className="tw-text-2xl md:tw-text-5xl tw-font-bold"
+                />
+                <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">
+                  +
+                </span>
+              </div>
               <span>Global Hires</span>
             </div>
 
             <div className="tw-flex tw-flex-col tw-gap-y-1">
-              <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">92%</span>
+              <div className="tw-flex tw-items-center">
+                <NumberTicker
+                  value={92}
+                  className="tw-text-2xl md:tw-text-5xl tw-font-bold"
+                />
+                <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">
+                  %
+                </span>
+              </div>
               <span>Client Retention</span>
             </div>
 
             <div className="tw-flex tw-flex-col tw-gap-y-1">
-              <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">UK & Global</span>
+              <span className="tw-text-2xl md:tw-text-5xl tw-font-bold">
+                UK & Global
+              </span>
               <span>Delivery Capability</span>
             </div>
           </div>

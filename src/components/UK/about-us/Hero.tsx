@@ -16,7 +16,7 @@ const Hero = () => {
       {/* ================= BACKGROUND IMAGE ================= */}
       <div className="tw-absolute tw-inset-0 tw-z-0">
         <Image
-          src="/assets/images/about-us/Hero.png"
+          src="/assets/images/about-us/Hero.jpeg"
           alt="Key Medsolutions UK"
           fill
           priority
@@ -63,9 +63,7 @@ const Hero = () => {
             <div className="tw-absolute tw-inset-0 tw-bg-accent-500/20 tw-blur-3xl tw-rounded-full" />
             <h1 className="tw-relative tw-text-3xl sm:tw-text-4xl lg:tw-text-6xl tw-font-bold tw-leading-tight tw-text-white">
               About{" "}
-              <span className="tw-text-accent-500">
-                Key Medsolutions UK
-              </span>
+              <span className="tw-text-accent-500">Key Medsolutions UK</span>
             </h1>
           </div>
 
@@ -73,14 +71,14 @@ const Hero = () => {
           <p className="tw-text-base sm:tw-text-lg lg:tw-text-xl tw-leading-relaxed tw-text-slate-200">
             Looking for a recruitment partner who truly understands what you
             need? That’s exactly what we’re here for. Key Medsolutions UK is
-            your go-to Global Recruitment Process Outsourcing Company. We’re
-            not just another recruitment service; we’re people who care,
-            helping businesses all over the UK and Global find and build
-            stronger, more successful teams. You can relax knowing your
-            recruitment is in expert hands, while you stay focused on those
-            broader strategic goals. With Key Medsolutions UK, you’ll get
-            real support, proven strategies, and a team that’s as invested in
-            your success as you are.
+            your go-to Global Recruitment Process Outsourcing Company. We’re not
+            just another recruitment service; we’re people who care, helping
+            businesses all over the UK and Global find and build stronger, more
+            successful teams. You can relax knowing your recruitment is in
+            expert hands, while you stay focused on those broader strategic
+            goals. With Key Medsolutions UK, you’ll get real support, proven
+            strategies, and a team that’s as invested in your success as you
+            are.
           </p>
         </motion.div>
       </div>

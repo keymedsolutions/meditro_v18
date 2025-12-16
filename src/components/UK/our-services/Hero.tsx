@@ -29,10 +29,12 @@ const ServicesHero: React.FC = () => {
           <div>
             <div
               className="tw-rounded-3xl tw-p-6 sm:tw-p-8"
-              style={{
-                // boxShadow:
-                //   "0 24px 70px rgba(15, 23, 42, 0.18), 0 0 0 1px rgba(255,255,255,0.8)",
-              }}
+              style={
+                {
+                  // boxShadow:
+                  //   "0 24px 70px rgba(15, 23, 42, 0.18), 0 0 0 1px rgba(255,255,255,0.8)",
+                }
+              }
             >
               <div className="tw-mb-4 tw-text-xs sm:tw-text-sm tw-font-semibold tw-tracking-[0.22em] tw-uppercase tw-text-white/90">
                 Our service

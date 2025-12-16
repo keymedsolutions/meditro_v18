@@ -63,7 +63,7 @@ const HiringProcess = () => {
     {
       title: "Global Talent Access",
       description:
-        "Don't let location limit you. We'll connect you with talent across every industry and continent.",
+        "Don’t let location limit you. We’ll connect you with talent across every industry and continent.",
       icon: <Globe className="tw-w-8 tw-h-8" />,
       color: "tw-bg-gradient-to-br tw-from-violet-500 tw-to-purple-400",
       accentColor: "tw-bg-gradient-to-r tw-from-violet-600 tw-to-purple-500",

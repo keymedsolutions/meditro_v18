@@ -29,7 +29,7 @@ const RecruitmentServices = () => {
       icon: <Target className="tw-w-6 tw-h-6" />,
       title: "End-to-End RPO",
       description:
-        "We’ll run your whole recruitment process, start to finish, so you don’t have to worry. from start to finish",
+        "We’ll run your whole recruitment process, start to finish, so you don’t have to worry.",
       color: "tw-bg-blue-50 tw-border-blue-200",
       iconColor: "tw-text-blue-600",
       tag: "Most Popular",
@@ -53,8 +53,6 @@ const RecruitmentServices = () => {
       iconColor: "tw-text-green-600",
     },
   ];
-
-
 
   const aboutUsFeatures = [
     {
@@ -228,7 +226,7 @@ const RecruitmentServices = () => {
           >
             <p className="tw-text-lg tw-text-blue-200">
               But most of all, we build genuine partnerships. You’re never just
-              a “client”; we’re here to help you reach new heights. h
+              a “client”; we’re here to help you reach new heights.
             </p>
           </motion.div>
         </motion.div>

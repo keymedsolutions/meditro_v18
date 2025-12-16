@@ -16,7 +16,7 @@ export function WhatOurClientsSay() {
   const testimonials = [
     {
       content:
-        "Key Medsolutions UK's team is outstanding in every sense. We needed high-quality candidates fast, and they delivered exactly that. From the very start, their responsiveness impressed us. Communication was clear, expectations were set, and within days, we had top-tier candidates ready to interview. You feel like you're working with true partners, not just another agency.",
+        "Key Medsolutions UK’s team is outstanding in every sense. We needed high-quality candidates fast, and they delivered exactly that. From the very start, their responsiveness impressed us. Communication was clear, expectations were set, and within days, we had top-tier candidates ready to interview. You feel like you’re working with true partners, not just another agency.",
       author: "Jacqueline",
       role: "VP Operations",
       company: "",
@@ -30,7 +30,7 @@ export function WhatOurClientsSay() {
     },
     {
       content:
-        "We'd been searching for specialist engineers for months with little success. Key Medsolutions came on board and, within a week, presented us with three exceptional candidates. Their market mapping, and their team kept the process transparent and stress-free. For niche roles, they've become our go-to recruitment partner.",
+        "We’d been searching for specialist engineers for months with little success. Key Medsolutions  came on board and, within a week, presented us with three exceptional candidates. Their market mapping, and their team kept the process transparent and stress-free. For niche roles, they’ve become our go-to recruitment partner.",
       author: "Director of Engineering",
       role: "",
       company: "Renewable Energy Firm",

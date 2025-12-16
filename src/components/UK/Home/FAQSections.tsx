@@ -11,13 +11,13 @@ const FAQSections = () => {
       question:
         "How is Key Medsolutions UK different from traditional agencies?",
       answer:
-        "We're focused on real partnerships, not just quick placements. Get fully managed RPO or remote teams, with lower costs and better results.",
+        "We’re focused on real partnerships, not just quick placements. Get fully managed RPO or remote teams, with lower costs and better results.",
     },
     {
       question:
         "Why do clients call you the Best Offshore Recruitment Company in the Global?",
       answer:
-        "It's our hybrid model, UK quality and Global compliance, overseas reach, and proper personal service. The best of both worlds.",
+        "It’s our hybrid model, UK quality and Global compliance, overseas reach, and proper personal service. The best of both worlds.",
     },
     {
       question: "Can you handle tough tech and digital hires?",
@@ -37,17 +37,17 @@ const FAQSections = () => {
     {
       question: "Who handles compliance and payroll?",
       answer:
-        "That's on us. We become the Employer of Record, so you don't worry about tax obligations, labor laws, or monthly payments.",
+        "That’s on us. We become the Employer of Record, so you don’t worry about tax obligations, labor laws, or monthly payments.",
     },
     {
       question: "What is Market Mapping?",
       answer:
-        "It's our way of scouting where your ideal hires are working, even if they're not actively job hunting. Great for exec and specialist searches.",
+        "It’s our way of scouting where your ideal hires are working, even if they’re not actively job hunting. Great for exec and specialist searches.",
     },
     {
       question: "How quickly can you build a team for me?",
       answer:
-        "We move fast—expect shortlists within 48–72 hours for most roles. Full teams are often in place within a few weeks.",
+        "We move fast, expect shortlists within 48-72 hours for most roles. Full teams are often in place within a few weeks.",
     },
     {
       question: "Will you manage the entire recruitment cycle?",
@@ -57,7 +57,7 @@ const FAQSections = () => {
     {
       question: "Will my offshore hires speak fluent English?",
       answer:
-        "Definitely. We rigorously test for written and spoken English, so you're always collaborating with clear, confident communicators.",
+        "Definitely. We rigorously test for written and spoken English, so you’re always collaborating with clear, confident communicators.",
     },
   ];
 

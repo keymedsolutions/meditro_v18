@@ -21,25 +21,25 @@ const WhyPickKeyMedsolutions = () => {
       icon: <MessageSquare className="tw-w-6 tw-h-6" />,
       title: "Communication You Can Rely On",
       description:
-        "We stay in touch with real updates—not noise—and give you dashboards that keep you informed and in control.",
+        "We’re always in touch with updates you actually want and real-time dashboards you’ll love, so you’re always in control.",
     },
     {
       icon: <Globe2 className="tw-w-6 tw-h-6" />,
       title: "UK Quality, Worldwide",
       description:
-        "No matter where your next hire is based, we vet every candidate for global compliance and cultural fit—zero surprises.",
+        "It doesn’t matter where your next hire is based. We vet every candidate for Global compliance and cultural fit, so there are no surprises.",
     },
     {
       icon: <Zap className="tw-w-6 tw-h-6" />,
       title: "Flexible and Fast",
       description:
-        "Need someone tomorrow or building a full team next month? Contract, project, or permanent—you set the terms, we deliver.",
+        "Need someone tomorrow? Need to build a team over a month? Whether it’s contract, project, or permanent, you set the terms.",
     },
     {
       icon: <ShieldCheck className="tw-w-6 tw-h-6" />,
       title: "Zero Compliance Headaches",
       description:
-        "HR, payroll, onboarding, legal paperwork—everything handled. You focus on growth while we handle the heavy lifting.",
+        "HR, payroll, onboarding, legal paperwork? We’ve got it covered so you can focus on moving your business forward.",
     },
   ];
   return (

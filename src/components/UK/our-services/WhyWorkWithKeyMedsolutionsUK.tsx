@@ -95,11 +95,11 @@ const WhyWorkWithKeyMedsolutions: React.FC = () => {
             >
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-800">
                 We always use up-to-date technology. Our processes line up with
-                Global hiring and compliance standards, reducing your risk. Plus
-                we love data. We measure our work and keep you updated, so you
-                can see real results, not just assurances. The goal is simple.
-                We want to help you grow, fill role requirements, and make every
-                step of hiring easy.
+                Global hiring and compliance standards, reducing your risk.
+                Plus, we love data. We measure our work and keep you updated, so
+                you can see real results, not just assurances. The goal is
+                simple. We want to help you grow, fill role requirements, and
+                make every step of hiring easy.
               </p>
             </div>
           </motion.div>

@@ -115,7 +115,7 @@ export const DesktopMenu = ({ items, scrolled = false }: DesktopMenuProps) => {
                 {item.icon && (
                   <div
                     className={cn(
-                      "tw-inline-block tw-rounded-full tw-p-2 tw-transition-colors tw-duration-200",
+                      "tw-inline-block tw-rounded-full tw-p-2 tw-transition-colors tw-duration-200 tw-text-white",
                       scrolled ? "tw-bg-accent-400" : "tw-bg-accent-400/90"
                     )}
                   >

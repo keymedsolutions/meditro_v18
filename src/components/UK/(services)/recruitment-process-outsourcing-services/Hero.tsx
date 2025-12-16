@@ -105,7 +105,7 @@ const Hero: React.FC = () => {
                   {/* Image area */}
                   <div className="tw-relative tw-rounded-2xl tw-overflow-hidden tw-aspect-[4/3] tw-bg-slate-100">
                     <Image
-                      src="/assets/images/recruitment-process-outsourcing-services/Hero.png" // replace with your actual image
+                      src="/assets/images/recruitment-process-outsourcing-services/Hero.jpeg" // replace with your actual image
                       alt=""
                       fill
                       className="tw-object-cover"

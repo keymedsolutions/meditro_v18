@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const containerVariants = {
@@ -267,7 +269,16 @@ const BackOfficeFullServices: React.FC = () => {
                 <div className="tw-relative tw-z-[3] tw-space-y-2.5">
                   <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
                     Our experts can manage your financial tasks, acting as your
-                    dedicated Finance Accounting Outsourcing Company.
+                    dedicated&nbsp;
+                    <Link
+                      href={
+                        APP_PATH.services.payrollAndFinanceOutsourcingServices
+                          .path
+                      }
+                      className="tw-font-semibold tw-text-inherit"
+                    >
+                      Finance Accounting Outsourcing Company.
+                    </Link>
                   </p>
                   <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
                     Bookkeeping &amp; Payroll: Ensuring accurate records and

@@ -23,7 +23,7 @@ const data = [
   {
     title: "Our Team and Expertise",
     description:
-      "Who’s behind the scenes? A friendly group of experienced recruitment professionals who know the UK and Global market inside-out. We’re experienced in everything from employer branding to the latest digital hiring tools. Our mix of hard-earned knowledge and modern tech means we spot great candidates quickly, and help you hire with confidence.",
+      "Who’s behind the scenes? A friendly group of experienced recruitment professionals who know the UK and Global market inside-out. We’re experienced in everything from employer branding to the latest digital hiring tools. Our mix of hard-earned knowledge and modern tech means we spot great candidates quickly, and help you hire with confidence",
     img: "/assets/images/about-us/Our_Team_And_Expertise.jpg",
   },
   {
@@ -50,7 +50,7 @@ export default function Features() {
               className={`tw-flex tw-flex-col md:tw-flex-row tw-items-center tw-pb-10 tw-gap-10 ${
                 index % 2 === 0 ? "" : "md:tw-flex-row-reverse"
               }`}
-              style={{borderBottom:"2px solid gray"}}
+              style={{ borderBottom: "2px solid gray" }}
             >
               {/* Gradient Block */}
               <div className="tw-flex-1 tw-relative sm:tw-p-8 tw-p-4 tw-rounded-3xl tw-bg-gradient-to-tr tw-from-indigo-100 tw-via-white tw-to-purple-100 tw-shadow-lg border tw-border-gray-100">
