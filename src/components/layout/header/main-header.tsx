@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Sticky from "react-stickynode";
 const logo = "/images/logo.webp";
+const whitelogo = "/images/WhiteLogo.png";
 import Link from "next/link";
 import { DesktopMenu } from "./desktop-menu";
 import { MobileMenu } from "./mobile-menu";
@@ -11,6 +12,7 @@ import { Menu } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { MenuItems } from "@/data/menu-items";
 import Image from "next/image";
+import { logoColorCondition } from "@/data/menuItemConditionPath";
 
 const SCROLL_THRESHOLD = 30;
 
@@ -39,12 +41,17 @@ const MainHeader = () => {
     setIsOpen(false);
   }, [pathName]);
 
+  const isWhiteLogoPage = logoColorCondition.includes(pathName);
+
+  const logoSrc = isWhiteLogoPage ? whitelogo : logo;
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > SCROLL_THRESHOLD);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
 
   return (
     <>
@@ -55,17 +62,31 @@ const MainHeader = () => {
               {/* Logo */}
               <div className="menu-logo logo-dark">
                 <Link href="/">
-                  <Image
-                    src={logo}
-                    alt="Key Med Solutions Logo"
-                    width={188} // Display size
-                    height={77} // Display size
-                    priority // Improves LCP for above-the-fold images
-                    sizes="(max-width: 768px) 140px, 
+                  {scrolled ? (
+                    <Image
+                      src={logo}
+                      alt="Key Med Solutions Logo"
+                      width={188} // Display size
+                      height={77} // Display size
+                      priority // Improves LCP for above-the-fold images
+                      sizes="(max-width: 768px) 140px, 
                 (max-width: 1200px) 160px, 
                 188px" // Responsive sizes
-                    style={{ height: "auto", width: "auto" }} // Keeps correct aspect ratio
-                  />
+                      style={{ height: "auto", width: "auto" }} // Keeps correct aspect ratio
+                    />
+                  ) : (
+                    <Image
+                      src={logoSrc}
+                      alt="Key Med Solutions Logo"
+                      width={188} // Display size
+                      height={77} // Display size
+                      priority // Improves LCP for above-the-fold images
+                      sizes="(max-width: 768px) 140px, 
+                (max-width: 1200px) 160px, 
+                188px" // Responsive sizes
+                      style={{ height: "auto", width: "auto" }} // Keeps correct aspect ratio
+                    />
+                  )}
                 </Link>
               </div>
 

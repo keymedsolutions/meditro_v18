@@ -1,7 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
-import { Plus, User } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const container = {
@@ -59,53 +60,52 @@ export default function MarketMappingCTA(): JSX.Element {
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 160, damping: 16 }}
             >
-            
-
               <p className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0">
                 IT Consultant Agency
               </p>
             </motion.a>
 
             {/* Card 2 */}
-            <motion.a
-              href="#"
+            <motion.div
               className="tw-relative tw-rounded-2xl tw-p-4 tw-bg-white tw-shadow-[0_12px_40px_rgba(15,23,42,0.06)] tw-flex tw-items-start tw-gap-4 tw-overflow-hidden"
               style={{ border: "1px solid rgba(148,163,184,0.5)" }}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 160, damping: 16 }}
             >
-             
-
-              <p className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0">
+              <Link
+                href={
+                  APP_PATH.services.recruitmentProcessOutsourcingServices.path
+                }
+                className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0"
+              >
                 Recruitment Process Outsourcing Services
-              </p>
-            </motion.a>
+              </Link>
+            </motion.div>
 
             {/* Card 3 - Full Width */}
-            <motion.a
-              href="#"
+            <motion.div
               className="tw-relative tw-rounded-2xl tw-p-4 tw-bg-white tw-shadow-[0_12px_40px_rgba(15,23,42,0.06)] tw-flex tw-items-start tw-gap-4 tw-overflow-hidden sm:tw-col-span-2"
               style={{ border: "1px solid rgba(148,163,184,0.5)" }}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 160, damping: 16 }}
             >
-             
-
-              <p className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0">
+              <Link
+                href={
+                  APP_PATH.services.candidateSourcingAndScreeningServices.path
+                }
+                className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0"
+              >
                 Candidate Sourcing &amp; Screening Services
-              </p>
-            </motion.a>
+              </Link>
+            </motion.div>
 
             {/* Card 4 - Full Width */}
-            <motion.a
-              href="#"
+            <motion.div
               className="tw-relative tw-rounded-2xl tw-p-4 tw-bg-white tw-shadow-[0_16px_50px_rgba(15,23,42,0.07)] tw-flex tw-items-start tw-gap-4 tw-overflow-hidden sm:tw-col-span-2"
               style={{ border: "1px solid rgba(148,163,184,0.5)" }}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 150, damping: 18 }}
             >
-           
-
               <div className="tw-space-y-1">
                 <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 tw-m-0">
                   Get a Custom Market Mapping Report Today
@@ -121,7 +121,7 @@ export default function MarketMappingCTA(): JSX.Element {
                   Ready to get started?
                 </span>
               </div>
-            </motion.a>
+            </motion.div>
           </div>
 
           {/* Right: Action card */}
@@ -154,37 +154,47 @@ export default function MarketMappingCTA(): JSX.Element {
                   <span style={{ color: "var(--accent-600)", fontWeight: 700 }}>
                     ›
                   </span>
-                  <span className="tw-text-sm tw-text-slate-700">
+                  <Link
+                    href={
+                      APP_PATH.services.recruitmentProcessOutsourcingServices
+                        .path
+                    }
+                    className="tw-text-sm tw-text-slate-700"
+                  >
                     Recruitment Process Outsourcing Services
-                  </span>
+                  </Link>
                 </li>
                 <li className="tw-flex tw-items-center tw-gap-3">
                   <span style={{ color: "var(--accent-600)", fontWeight: 700 }}>
                     ›
                   </span>
-                  <span className="tw-text-sm tw-text-slate-700">
+                  <Link
+                    href={
+                      APP_PATH.services.candidateSourcingAndScreeningServices
+                        .path
+                    }
+                    className="tw-text-sm tw-text-slate-700"
+                  >
                     Candidate Sourcing &amp; Screening Services
-                  </span>
+                  </Link>
                 </li>
               </ul>
             </div>
 
             <div className="tw-flex tw-flex-col tw-gap-3">
-              <a
-                href="#"
+              <div
                 className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-full tw-px-4 tw-py-3 tw-text-sm tw-font-medium tw-bg-accent-600 tw-text-white"
                 style={{ border: "1px solid rgba(0,0,0,0.06)" }}
               >
                 Request Market Map
-              </a>
+              </div>
 
-              <a
-                href="#"
+              <div
                 className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-full tw-px-4 tw-py-3 tw-text-sm tw-font-medium tw-bg-white tw-text-slate-900"
                 style={{ border: "1px solid rgba(148,163,184,0.5)" }}
               >
                 Speak to an Expert
-              </a>
+              </div>
             </div>
           </motion.aside>
         </motion.div>

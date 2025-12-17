@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 import FAQSection from "../../common/FAQsSection";
 
 const FAQ = () => {

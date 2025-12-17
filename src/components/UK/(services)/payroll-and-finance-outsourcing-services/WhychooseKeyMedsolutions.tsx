@@ -1,5 +1,7 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
+import Link from "next/link";
 import React from "react";
 
 const WhychooseKeyMedsolutions = () => {
@@ -47,14 +49,22 @@ const WhychooseKeyMedsolutions = () => {
       <div className="tw-max-w-5xl tw-mx-auto sm:tw-px-6 tw-flex tw-flex-col tw-gap-y-16">
         <div className="tw-text-center tw-space-y-3">
           <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
-            Why choose Key Medsolutions UK <br/>for payroll and finance outsourcing?
+            Why choose Key Medsolutions UK <br />
+            for payroll and finance outsourcing?
           </p>
           <p className="tw-text-slate-600 tw-max-w-2xl tw-mx-auto tw-text-sm md:tw-text-base">
             If you want to partner with a leading finance payroll outsourcing
-            provider, Key Medsolutions UK is your choice. We’re a trusted RPO
-            company, and well known among the best payroll and finance
-            outsourcing companies in the Global. Here’s why clients love working
-            with us:
+            provider, Key Medsolutions UK is your choice. We’re a&nbsp;
+            <Link
+              href={
+                APP_PATH.services.recruitmentProcessOutsourcingServices.path
+              }
+              className="tw-font-semibold tw-text-inherit"
+            >
+              trusted RPO company,
+            </Link>
+            &nbsp;and well known among the best payroll and finance outsourcing
+            companies in the Global. Here’s why clients love working with us:
           </p>
         </div>
 

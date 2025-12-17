@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 const WhyChooseKeyMedRemoteStaffingSection: React.FC = () => {
@@ -84,14 +86,31 @@ const WhyChooseKeyMedRemoteStaffingSection: React.FC = () => {
           className="tw-max-w-4xl tw-mt-16 tw-space-y-4 tw-mx-auto"
         >
           <p className="tw-text-sm sm:tw-text-base tw-text-slate-700">
-            Looking for leadership-level hires? Check out our executive search
-            and headhunting company.
+            Looking for leadership-level hires? Check out our&nbsp;
+            <Link
+              href={
+                APP_PATH.services.executiveSearchAndHeadhuntingServices.path
+              }
+              className="tw-font-semibold tw-text-inherit"
+            >
+              executive search and headhunting
+            </Link>
+            &nbsp;company.
           </p>
 
           <p className="tw-text-sm sm:tw-text-base tw-text-slate-700">
             Hiring in the Southwest? Partner with Key MedSolutions, one of the
-            best recruitment agencies in Bristol, offering expert hiring
-            solutions across the UK and Worldwide.
+            &nbsp;
+            <Link
+              href={
+                APP_PATH.services.recruitmentProcessOutsourcingServices.path
+              }
+              className="tw-font-semibold tw-text-inherit"
+            >
+              best recruitment agencies
+            </Link>
+            &nbsp;in Bristol, offering expert hiring solutions across the UK and
+            Worldwide.
           </p>
         </motion.div>
       </div>

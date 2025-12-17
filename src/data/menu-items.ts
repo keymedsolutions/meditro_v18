@@ -1,22 +1,12 @@
 import {
   Activity,
-  BadgeCheck,
-  Briefcase,
-  CheckCircle,
-  Code,
-  CreditCard,
   DollarSign,
   Droplet,
-  FileCode,
   FileText,
   Heart,
   Monitor,
-  RefreshCw,
   Stethoscope,
   TrendingUp,
-  XCircle,
-  GraduationCap,
-  BarChart3,
 } from "lucide-react";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */

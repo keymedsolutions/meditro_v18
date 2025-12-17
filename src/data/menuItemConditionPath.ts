@@ -14,3 +14,9 @@ export const menuItemConditionPath: string[] = [
   APP_PATH.services.WhyChooseUs.path,
   APP_PATH.services.faqs.path,
 ];
+
+export const logoColorCondition: string[] = [
+  APP_PATH.services.remoteStaffingAgency.path,
+  APP_PATH.about.path,
+  APP_PATH.services.path,
+];

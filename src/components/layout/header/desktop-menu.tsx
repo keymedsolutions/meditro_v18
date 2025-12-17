@@ -133,17 +133,16 @@ export const DesktopMenu = ({ items, scrolled = false }: DesktopMenuProps) => {
             <ul
               className={cn(
                 level === 0
-                  ? `sub-menu !tw-grid ${
-                      (item.subMenu?.length ?? 0) > 2
-                        ? "!tw-grid-cols-3"
-                        : "!tw-grid-cols-2"
-                    }  lg-menu tw-absolute tw-right-0 tw-top-[85%] tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20`
+                  ? `sub-menu !tw-flex !tw-flex-col desktop-inside-menu !tw-gap-y-3  lg-menu tw-absolute tw-right-0 tw-top-[85%] tw-bg-white tw-shadow-lg tw-rounded-md tw-z-20`
                   : "tw-absolute  sub-menu md-menu  tw-right-full ",
                 isSubMenuOpen
-                  ? "tw-opacity-100  tw-visible open"
+                  ? "tw-opacity-100  !tw-overflow-y-auto  tw-visible open"
                   : "tw-opacity-0 tw-invisible tw-pointer-events-none",
                 "tw-transition-all tw-duration-200 border tw-border-accent-500 !tw-rounded-md"
               )}
+              style={{
+                rowGap:level === 0 ? "12px !important" :""
+              }}
             >
               {item?.subMenu?.map((subItem) =>
                 renderMenuItem(subItem, level + 1, fullPath)

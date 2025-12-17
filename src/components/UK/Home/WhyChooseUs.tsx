@@ -7,21 +7,16 @@ const WhyChooseUs = () => {
   return (
     <section className="tw-w-full tw-flex md:tw-flex-row tw-flex-col tw-items-stretch tw-gap-0 tw-p-0 tw-h-full tw-bg-accent-500">
       {/* LEFT SIDE IMAGE */}
-      <div className="tw-h-full tw-flex tw-align-start  tw-m-0 tw-p-0 md:tw-w-[40%] tw-w-full">
-        {/* <div className="tw-relative tw-w-full tw-h-full tw-min-h-[350px] md:tw-min-h-[420px] md:tw-min-h-[480px]"> */}
+      <div className="md:tw-w-[40%] tw-w-full tw-relative tw-min-h-[500px] sm:tw-min-h-[420px] md:tw-min-h-full">
         <Image
           src="/assets/images/main-banner/why-choose.png"
           alt="Why Choose Us"
-          // fill
-          width={100}
-          height={100}
-          className="!tw-h-full !tw-w-full tw-rounded-none"
+          fill
           priority
-          quality={100}
+          className="tw-object-cover"
+          sizes="(max-width: 768px) 100vw, 40vw"
         />
-        {/* </div> */}
       </div>
-
       {/* RIGHT SIDE CONTENT - aligned to top (no top padding) */}
       <div className="md:tw-w-[60%] tw-w-full tw-px-6 tw-py-6 tw-flex tw-flex-col tw-gap-y-6 tw-justify-start tw-text-white">
         <h2 className="tw-font-bold tw-text-3xl md:tw-text-4xl tw-leading-snug tw-text-white">

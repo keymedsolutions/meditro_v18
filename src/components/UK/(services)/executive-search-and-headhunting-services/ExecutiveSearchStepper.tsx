@@ -1,29 +1,32 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
-/**
- * ExecutiveSearchStepper
- *
- * - Preserves your content exactly as provided (no words removed or altered).
- * - Tailwind class names are prefixed with `tw-` as you requested.
- * - Borders use style={{ border: "" }} where applicable.
- * - Framer Motion attributes follow your required pattern:
- *   initial, whileInView, transition, viewport={{ once: true, amount: 0.2 }}
- *
- * Drop this component into a Next.js (TypeScript) page. It is a responsive,
- * animated stepper / timeline that highlights each step in your Executive Search Process.
- */
 
 const steps = [
   {
     title: "Role Analysis;",
-    text: "Deep dive into responsibilities, culture, goals, and success metrics.",
+    text: (
+      <>Deep dive into responsibilities, culture, goals, and success metrics.</>
+    ),
   },
   {
     title: "Market Mapping:",
-    text: "Using advanced research tools Market Mapping Firms to identify where top talent sits.",
+    text: (
+      <>
+        Using advanced research tools&nbsp;
+        <Link
+          href={APP_PATH.services.marketMappingRecruitmentServices.path}
+          className="tw-font-semibold tw-text-inherit"
+        >
+          Market Mapping Firms
+        </Link>
+        &nbsp;to identify where top talent sits.
+      </>
+    ),
   },
   {
     title: "Executive Talent Blueprint:",

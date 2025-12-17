@@ -57,11 +57,11 @@ export default function MarketMappingWhyUnique() {
         >
           {/* LEFT: Intro + Benefits chips */}
           <motion.div className="tw-flex-1" variants={fadeIn}>
-            <h2 className="tw-text-2xl md:tw-text-3xl tw-font-semibold tw-text-slate-900 tw-mb-4">
+            <h2 className="tw-text-2xl md:tw-text-3xl tw-text-center tw-font-semibold tw-text-slate-900 tw-mb-4">
               Why Market Mapping Matters
             </h2>
 
-            <p className="tw-text-sm md:tw-text-base tw-text-slate-600 tw-leading-relaxed tw-mb-6">
+            <p className="tw-text-sm md:tw-text-base tw-text-slate-600 tw-text-center tw-leading-relaxed tw-mb-6">
               Hiring isn’t just about filling roles—it’s about finding the right
               people at the right time. Here’s how market mapping can transform
               your recruitment strategy:

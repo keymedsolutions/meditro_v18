@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Globe2, CheckSquare, Users } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 /**
  * GlobalExecutiveCapabilitiesSection
@@ -129,9 +131,15 @@ const GlobalExecutiveCapabilitiesSection: React.FC = () => {
               </p>
 
               <p className="tw-text-sm md:tw-text-base tw-text-slate-700 tw-leading-relaxed tw-mb-4">
-                Through our “Remote staffing agency near you”, we also support
-                businesses hiring senior leaders remotely across the UK and
-                overseas.
+                Through our&nbsp;
+                <Link
+                  href={APP_PATH.services.remoteStaffingAgency.path}
+                  className="tw-text-inherit tw-font-semibold"
+                >
+                  “Remote staffing agency
+                </Link>
+                &nbsp;near you”, we also support businesses hiring senior
+                leaders remotely across the UK and overseas.
               </p>
 
               <p className="tw-text-sm md:tw-text-base tw-text-slate-700 tw-leading-relaxed tw-mb-6">
@@ -275,9 +283,17 @@ const GlobalExecutiveCapabilitiesSection: React.FC = () => {
 
               {/* final exact sentence preserved */}
               <p className="tw-text-sm md:tw-text-base tw-text-slate-700 tw-leading-relaxed">
-                This is powered by our Candidate Sourcing and Screening company
-                ensuring you meet not just qualified leaders, but the right
-                leaders.
+                This is powered by our&nbsp;
+                <Link
+                  href={
+                    APP_PATH.services.candidateSourcingAndScreeningServices.path
+                  }
+                  className="tw-font-semibold tw-text-inherit"
+                >
+                  Candidate Sourcing and Screening company
+                </Link>
+                &nbsp;ensuring you meet not just qualified leaders, but the
+                right leaders.
               </p>
             </div>
           </motion.div>

@@ -59,7 +59,7 @@ export default function MarketMappingServices(): JSX.Element {
                 src="/assets/images/market-mapping-recruitment-services/service1.jpg"
                 alt="decorative"
                 fill
-                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-100"
+                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-60"
                 style={{
                   filter: "grayscale(40%) contrast(90%)",
                   objectPosition: "center",
@@ -110,7 +110,7 @@ export default function MarketMappingServices(): JSX.Element {
                 src="/assets/images/market-mapping-recruitment-services/service2.jpg"
                 alt="decorative"
                 fill
-                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-100"
+                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-60"
                 style={{
                   filter: "grayscale(40%) contrast(90%)",
                   objectPosition: "center",
@@ -167,7 +167,7 @@ export default function MarketMappingServices(): JSX.Element {
                 src="/assets/images/market-mapping-recruitment-services/service3.jpg"
                 alt="decorative"
                 fill
-                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-100"
+                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-60"
                 style={{
                   filter: "grayscale(40%) contrast(90%)",
                   objectPosition: "center",
@@ -213,7 +213,7 @@ export default function MarketMappingServices(): JSX.Element {
                 src="/assets/images/market-mapping-recruitment-services/service4.jpg"
                 alt="decorative"
                 fill
-                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-100"
+                className="tw-object-cover tw-block tw-w-full tw-h-full tw-transform tw-scale-105 group-hover:tw-scale-100 tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-60"
                 style={{
                   filter: "grayscale(40%) contrast(90%)",
                   objectPosition: "center",
@@ -251,7 +251,7 @@ export default function MarketMappingServices(): JSX.Element {
                 className={
                   "tw-object-cover tw-block tw-w-full tw-h-full " +
                   "tw-transform tw-scale-105 group-hover:tw-scale-100 " +
-                  "tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-100 " +
+                  "tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-60 " +
                   // move filter to classes so group-hover can override
                   "tw-filter tw-grayscale tw-contrast-90 group-hover:tw-grayscale-0 group-hover:tw-contrast-100"
                 }
@@ -289,7 +289,7 @@ export default function MarketMappingServices(): JSX.Element {
                 className={
                   "tw-object-cover tw-block tw-w-full tw-h-full " +
                   "tw-transform tw-scale-105 group-hover:tw-scale-100 " +
-                  "tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-100 " +
+                  "tw-transition tw-duration-400 tw-ease-out tw-opacity-0 group-hover:tw-opacity-60 " +
                   // move filter to classes so group-hover can override
                   "tw-filter tw-grayscale tw-contrast-90 group-hover:tw-grayscale-0 group-hover:tw-contrast-100"
                 }
