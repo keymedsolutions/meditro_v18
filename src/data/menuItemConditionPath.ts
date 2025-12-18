@@ -13,6 +13,8 @@ export const menuItemConditionPath: string[] = [
   APP_PATH.services.deliveryModels.path,
   APP_PATH.services.WhyChooseUs.path,
   APP_PATH.services.faqs.path,
+  APP_PATH.blogs.path,
+  APP_PATH.howToChooseTheBestUkRecruitmentAgency.path,
 ];
 
 export const logoColorCondition: string[] = [

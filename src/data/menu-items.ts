@@ -62,6 +62,7 @@ export const MenuItems: any = [
   { label: "Industries We Serve", path: "/industries" },
   { label: "Delivery Models", path: "/delivery-models" },
   { label: "Why Choose Us", path: "/why-choose-us" },
+  { label: "Blogs", path: "/blogs" },
   {
     label: "FAQs",
     path: "/faqs",
