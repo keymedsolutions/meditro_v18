@@ -1,11 +1,11 @@
 // Blog Content
 const testPic1 = "/images/testimonials/pic1.jpg";
-// const testPic2 = "/images/testimonials/pic2.jpg";
+const testPic2 = "/images/testimonials/pic2.jpg";
 // const testPic3 = "/images/testimonials/pic3.jpg";
 // const blogGridPic5 = "/images/blog/grid/pic5.jpg";
 // const blogGridPic6 = "/images/blog/grid/pic6.jpg";
 // const blogGridPic7 = "/images/blog/grid/pic7.jpg";
-// const blogGridPic8 = "/images/blog/grid/pic8.jpg";
+const blogGridPic8 = "/assets/images/blogs/SecondBlog.png";
 const blogGridPic9 = "/assets/images/about-us/Our_Approach_And_Philosophy.jpg";
 // const blogGridPic10 = "/images/blog/default/pic3.png";
 // const blogGridPic11 = "/images/blog/default/pic4.png";
@@ -24,17 +24,18 @@ export const BlogsList = [
 		imgAlt:"how-to-choose-the-best-uk-recruitment-agency",
 		authImgAlt:"enhancing-documentation-accuracy"
 	}, 
-	// 	{
-	// 	id: 2,
-	// 	thumb: blogGridPic8,
-	// 	authorPic: testPic2,
-	// 	title: "Improving Medical Coding Accuracy and Efficiency with AI Technology",		
-	// 	author: "Key MedSolutions",
-	// 	date: "19 Aug 2023",
-	// 	url: '/how-AI-is-improving-medical-coding-processes-accuracy-and-efficiency',
-	// 	imgAlt:"how-ai-is-improving-medical-coding-processes-accuracy-and-efficiency",
-	// 	authImgAlt:"enhancing-documentation-accuracy"
-	// },	{
+		{
+		id: 2,
+		thumb: blogGridPic8,
+		authorPic: testPic2,
+		title: "RPO Trends 2026: The Future of Recruitment Process Outsourcing",		
+		author: "Key MedSolutions",
+		date: "19 Aug 2023",
+		url: '/rpo-trends-2026-future-of-recruitment-outsourcing',
+		imgAlt:"rpo-trends-2026-future-of-recruitment-outsourcing",
+		authImgAlt:"enhancing-documentation-accuracy"
+	},
+		// {
 	// 	id: 3,
 	// 	thumb: blogGridPic7,
 	// 	authorPic: testPic3,

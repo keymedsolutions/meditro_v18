@@ -15,6 +15,7 @@ export const menuItemConditionPath: string[] = [
   APP_PATH.services.faqs.path,
   APP_PATH.blogs.path,
   APP_PATH.howToChooseTheBestUkRecruitmentAgency.path,
+  APP_PATH.rpoTrends2026FutureOfRecruitmentOutsourcing.path,
 ];
 
 export const logoColorCondition: string[] = [

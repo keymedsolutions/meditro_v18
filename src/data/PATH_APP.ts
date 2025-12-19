@@ -72,6 +72,7 @@ export const APP_PATH = {
   specialties: { path: "/our-specialities" },
   blogs: { path: "/blogs" },
   howToChooseTheBestUkRecruitmentAgency:{path:"/how-to-choose-the-best-uk-recruitment-agency"},
+  rpoTrends2026FutureOfRecruitmentOutsourcing:{path:"/rpo-trends-2026-future-of-recruitment-outsourcing"},
   appointment: {
     path: "https://calendly.com/key_medsolutions_inc/30min",
     external: true,
