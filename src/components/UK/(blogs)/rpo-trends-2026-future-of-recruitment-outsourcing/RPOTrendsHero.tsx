@@ -12,28 +12,28 @@ const RPOTrendsHero = () => {
 
       <div className="tw-container tw-relative tw-z-10 tw-mx-auto tw-max-w-5xl tw-px-4 md:tw-px-8">
         <motion.div
-                  initial={{ opacity: 0, scale: 0.96 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.7, ease: "easeOut" }}
-                  className="tw-mb-14"
-                >
-                  <div
-                    className="tw-overflow-hidden tw-rounded-2xl"
-                    style={{
-                      boxShadow:
-                        "0 24px 60px rgba(15,23,42,0.15), 0 0 0 1px rgba(255,255,255,0.9)",
-                    }}
-                  >
-                    <Image
-                      src="/assets/images/blogs/SecondBlog.png"
-                      alt="How to Choose the Best UK Recruitment Agency"
-                      width={800}
-                      height={400}
-                      priority
-                      className="lg:tw-h-[500px] tw-h-auto tw-w-full lg:tw-object-cover tw-object-contain"
-                    />
-                  </div>
-                </motion.div>
+          initial={{ opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="tw-mb-14"
+        >
+          <div
+            className="tw-overflow-hidden tw-rounded-2xl"
+            style={{
+              boxShadow:
+                "0 24px 60px rgba(15,23,42,0.15), 0 0 0 1px rgba(255,255,255,0.9)",
+            }}
+          >
+            <Image
+              src="/assets/images/blogs/SecondBlog.png"
+              alt="How to Choose the Best UK Recruitment Agency"
+              width={800}
+              height={400}
+              priority
+              className="lg:tw-h-[500px] tw-h-auto tw-w-full lg:tw-object-cover tw-object-contain"
+            />
+          </div>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -159,6 +159,10 @@ const Footer = () => {
                   href: APP_PATH.services.WhyChooseUs.path,
                   label: "Why Choose Us",
                 },
+                {
+                 href: APP_PATH.blogs.path,
+                 label: "Blogs",
+               },
                 { href: APP_PATH.services.faqs.path, label: "faqS" },
               ].map((link, i) => (
                 <li key={i}>
