@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 const RecruitmentDeliveryModelsIntroSection: React.FC = () => {
@@ -35,12 +37,19 @@ const RecruitmentDeliveryModelsIntroSection: React.FC = () => {
             </h2>
 
             <p className="tw-text-sm sm:tw-text-base tw-text-slate-700 tw-leading-relaxed tw-max-w-xl">
-              At Key Medsolutions UK, we understand that one-size-fits-all hiring
-              doesn’t work. That’s why our Recruitment Delivery Models are
-              flexible, cost-effective, and tailored to your business. From IT
-              and healthcare to logistics, engineering, and finance, we combine
-              local UK expertise with offshore efficiency to deliver talent
-              quickly, accurately, and compliantly worldwide.
+              At&nbsp;
+              <Link
+                href={APP_PATH.home.path}
+                className="tw-font-semibold tw-text-inherit"
+              >
+                Key Medsolutions UK
+              </Link>
+              , we understand that one-size-fits-all hiring doesn’t work. That’s
+              why our Recruitment Delivery Models are flexible, cost-effective,
+              and tailored to your business. From IT and healthcare to
+              logistics, engineering, and finance, we combine local UK expertise
+              with offshore efficiency to deliver talent quickly, accurately,
+              and compliantly worldwide.
             </p>
           </motion.div>
 
@@ -73,7 +82,7 @@ const RecruitmentDeliveryModelsIntroSection: React.FC = () => {
                   "UK Compliance",
                   "Global Talent Access",
                   "Offshore Efficiency",
-                ].map((item, index) => (
+                ].map((item) => (
                   <div
                     key={item}
                     className="tw-rounded-2xl tw-bg-[#f5f8ff] tw-px-4 tw-py-3 tw-text-sm tw-font-medium tw-text-slate-800"

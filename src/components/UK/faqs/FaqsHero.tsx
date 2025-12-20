@@ -3,6 +3,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useState } from "react";
 import { Plus, Minus, HelpCircle } from "lucide-react";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 
 const faqs = [
   {
@@ -10,7 +12,25 @@ const faqs = [
     data: [
       {
         q: "What is Recruitment Process Outsourcing?",
-        a: "Recruitment Process Outsourcing, or RPO, is when a company partners with an external provider to manage part or all of its hiring process. Think of it as having a dedicated recruitment team that works alongside your business. The RPO provider takes care of everything from sourcing candidates to onboarding, using their expertise and tools to find the best talent for your needs.",
+        a: (
+          <>
+            Recruitment Process Outsourcing, or RPO, is when a company partners
+            with an external provider to manage part or all of its hiring
+            process. Think of it as having a dedicated recruitment team that
+            works alongside your business. The&nbsp;
+            <Link
+              href={
+                APP_PATH.services.recruitmentProcessOutsourcingServices.path
+              }
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              RPO provider
+            </Link>
+            &nbsp;takes care of everything from sourcing candidates to
+            onboarding, using their expertise and tools to find the best talent
+            for your needs.
+          </>
+        ),
       },
       {
         q: "What are the key benefits of adopting an RPO model?",
@@ -51,7 +71,23 @@ const faqs = [
     data: [
       {
         q: "What is CV sourcing, and why is it crucial to recruitment agencies?",
-        a: "CV sourcing is the process of finding and collecting resumes of potential candidates. It’s a critical step for recruitment agencies because it ensures they have a steady pipeline of qualified talent. Without effective CV sourcing, it’s much harder to fill roles quickly and efficiently.",
+        a: (
+          <>
+            CV sourcing is the process of finding and collecting resumes of
+            potential candidates. It’s a critical step for recruitment agencies
+            because it ensures they have a steady pipeline of qualified talent.
+            Without effective&nbsp;
+            <Link
+              href={
+                APP_PATH.services.candidateSourcingAndScreeningServices.path
+              }
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              CV sourcing
+            </Link>
+            , it’s much harder to fill roles quickly and efficiently.
+          </>
+        ),
       },
       {
         q: "What is the cost of your CV sourcing service?",
@@ -117,7 +153,21 @@ const faqs = [
     data: [
       {
         q: "What is payroll and finance outsourcing?",
-        a: "Payroll and finance outsourcing is when a company partners with an external provider to manage tasks like payroll processing, tax compliance, accounts payable/receivable, bookkeeping, and financial reporting. It’s like having an expert finance team working behind the scenes to ensure accuracy, compliance, and smooth operations.",
+        a: (
+          <>
+            <Link
+              href={APP_PATH.services.payrollAndFinanceOutsourcingServices.path}
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              Payroll and finance outsourcing
+            </Link>
+            &nbsp;is when a company partners with an external provider to manage
+            tasks like payroll processing, tax compliance, accounts
+            payable/receivable, bookkeeping, and financial reporting. It’s like
+            having an expert finance team working behind the scenes to ensure
+            accuracy, compliance, and smooth operations.
+          </>
+        ),
       },
       {
         q: "Why do companies outsource payroll and finance functions?",
@@ -146,7 +196,20 @@ const faqs = [
     data: [
       {
         q: "What are the benefits of market mapping?",
-        a: "Market mapping gives you a clear picture of talent availability, competitor hiring trends, salary ranges, and organizational structures. It helps you make informed hiring decisions, plan workforce strategy, and stay ahead in competitive markets.",
+        a: (
+          <>
+            <Link
+              href={APP_PATH.services.marketMappingRecruitmentServices.path}
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              Market mapping
+            </Link>
+            &nbsp;gives you a clear picture of talent availability, competitor
+            hiring trends, salary ranges, and organizational structures. It
+            helps you make informed hiring decisions, plan workforce strategy,
+            and stay ahead in competitive markets.
+          </>
+        ),
       },
       {
         q: "What is the future of market mapping?",
@@ -179,7 +242,22 @@ const faqs = [
     data: [
       {
         q: "What is headhunting, and how does it work?",
-        a: "Headhunting is a specialized recruitment approach focused on attracting high-level or niche professionals. Executive search firms identify, assess, and approach top candidates—often passive ones—to fill senior or critical leadership roles.",
+        a: (
+          <>
+            Headhunting is a specialized recruitment approach focused on
+            attracting high-level or niche professionals.&nbsp;
+            <Link
+              href={
+                APP_PATH.services.executiveSearchAndHeadhuntingServices.path
+              }
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              Executive search firms
+            </Link>
+            &nbsp;identify, assess, and approach top candidates—often passive
+            ones—to fill senior or critical leadership roles.
+          </>
+        ),
       },
       {
         q: "When should a company use an executive search firm?",
@@ -208,7 +286,20 @@ const faqs = [
     data: [
       {
         q: "How do I get started with a Virtual Assistant?",
-        a: "It’s simple, share your requirements, choose the skillset you need, and get matched with a qualified Virtual Assistant. Once onboarded, they begin handling your day-to-day tasks remotely.",
+        a: (
+          <>
+            It’s simple, share your requirements, choose the skillset you need,
+            and get matched with a qualified&nbsp;
+            <Link
+              href={APP_PATH.services.remoteStaffingAgency.path}
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              Virtual Assistant
+            </Link>
+            . Once onboarded, they begin handling your day-to-day tasks
+            remotely.
+          </>
+        ),
       },
       {
         q: "Do I need to sign up to take the online interview?",
@@ -241,7 +332,22 @@ const faqs = [
     data: [
       {
         q: "What is technology and digital recruitment?",
-        a: "Technology and digital recruitment focuses on hiring professionals in IT, software, cybersecurity, data science, digital marketing, and emerging tech fields. It ensures companies find the right technical talent to stay competitive.",
+        a: (
+          <>
+            <Link
+              href={
+                APP_PATH.services.technologyAndDigitalRecruitmentServices.path
+              }
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              Technology and digital recruitment
+            </Link>
+            &nbsp;focuses on hiring professionals in IT, software,
+            cybersecurity, data science, digital marketing, and emerging tech
+            fields. It ensures companies find the right technical talent to stay
+            competitive.
+          </>
+        ),
       },
       {
         q: "What are common challenges in technology and digital recruitment?",

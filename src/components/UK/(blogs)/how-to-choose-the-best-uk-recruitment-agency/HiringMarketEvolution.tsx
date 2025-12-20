@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HiringMarketEvolution = () => {
   return (
@@ -39,9 +41,12 @@ const HiringMarketEvolution = () => {
           className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed tw-max-w-3xl tw-mx-auto tw-mb-12 tw-text-center"
         >
           We’re also seeing major developments in{" "}
-          <span className="tw-font-medium tw-text-slate-900">
+          <Link
+            href={APP_PATH.rpoTrends2026FutureOfRecruitmentOutsourcing.path}
+            className=" tw-text-slate-900 tw-font-semibold focus:tw-text-slate-900"
+          >
             Recruitment Process Outsourcing Trends
-          </span>{" "}
+          </Link>{" "}
           such as:
         </motion.p>
 
@@ -64,12 +69,10 @@ const HiringMarketEvolution = () => {
               className="tw-rounded-2xl tw-bg-accent-50 tw-p-6"
               style={{
                 border: "1px solid rgba(203,213,225,0.8)",
-                boxShadow:
-                  "0 8px 24px rgba(15,23,42,0.06)",
+                boxShadow: "0 8px 24px rgba(15,23,42,0.06)",
               }}
             >
               <div className="tw-flex tw-items-start tw-gap-3">
-
                 <p className="tw-text-slate-800 tw-text-sm sm:tw-text-base tw-leading-relaxed">
                   {trend}
                 </p>

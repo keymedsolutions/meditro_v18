@@ -1,32 +1,63 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const pillars = [
   {
     title: "Global Reach and the Demand for Global RPO Solutions",
-    text:
-      "Businesses are no longer hiring talent only in the UK. Skills shortages, remote work acceptance and international expansion mean that many companies now need Global RPO Solutions that can support recruitment across borders. This includes compliance, global sourcing strategies, multilingual engagement and cross country onboarding. Key Medsolutions UK provides exactly this type of global support. Whether a business needs talent in London, Lisbon or Bangalore, our team is equipped to navigate the complexities of international hiring with ease and accuracy.",
+    text: (
+      <>
+        Businesses are no longer hiring talent only in the UK. Skills shortages,
+        remote work acceptance and international expansion mean that many
+        companies now need&nbsp;
+        <Link
+          href={APP_PATH.services.recruitmentProcessOutsourcingServices.path}
+          className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+        >
+          Global RPO Solutions
+        </Link>
+        &nbsp;that can support recruitment across borders. This includes
+        compliance, global sourcing strategies, multilingual engagement and
+        cross country onboarding. Key Medsolutions UK provides exactly this type
+        of global support. Whether a business needs talent in London, Lisbon or
+        Bangalore, our team is equipped to navigate the complexities of
+        international hiring with ease and accuracy.
+      </>
+    ),
   },
   {
     title: "Skills Based and Agile Hiring Approaches",
-    text:
-      "More companies now value practical skills, certifications and hands on experience over traditional degree based requirements. This change is especially important in fast moving sectors like technology, digital marketing, cybersecurity and data analytics. RPO providers like Key Medsolutions UK help employers pivot to skills first recruitment. This means new assessment methods, targeted sourcing strategies, and selecting candidates who can generate impact from day one. It is also a great way to open doors to more diverse talent.",
+    text: "More companies now value practical skills, certifications and hands on experience over traditional degree based requirements. This change is especially important in fast moving sectors like technology, digital marketing, cybersecurity and data analytics. RPO providers like Key Medsolutions UK help employers pivot to skills first recruitment. This means new assessment methods, targeted sourcing strategies, and selecting candidates who can generate impact from day one. It is also a great way to open doors to more diverse talent.",
   },
   {
     title: "DE&I Driven Recruitment Strategies",
-    text:
-      "Diversity, Equity and Inclusion continue to be top priorities for HR teams. Businesses want to build balanced teams, improve employer branding and support ethical hiring practices. RPO partners now have a responsibility to deliver measurable DE&I outcomes, not just promises. At Key Medsolutions UK, DE&I is part of every stage of our recruitment approach. This includes inclusive sourcing channels, unbiased screening tools, structured interviews and meaningful data reporting.",
+    text: "Diversity, Equity and Inclusion continue to be top priorities for HR teams. Businesses want to build balanced teams, improve employer branding and support ethical hiring practices. RPO partners now have a responsibility to deliver measurable DE&I outcomes, not just promises. At Key Medsolutions UK, DE&I is part of every stage of our recruitment approach. This includes inclusive sourcing channels, unbiased screening tools, structured interviews and meaningful data reporting.",
   },
   {
     title: "Data Transparency and Real Time Hiring Insights",
-    text:
-      "Gone are the days of waiting for monthly reports. Organisations now want real time visibility of hiring metrics. This includes time to hire, source of hire, retention, quality of hire and candidate satisfaction. Key Medsolutions UK gives clients access to clear dashboards and reports so they can make confident decisions and evaluate what is working. This helps businesses plan workforce needs more effectively and adapt their hiring strategy quickly.",
+    text: "Gone are the days of waiting for monthly reports. Organisations now want real time visibility of hiring metrics. This includes time to hire, source of hire, retention, quality of hire and candidate satisfaction. Key Medsolutions UK gives clients access to clear dashboards and reports so they can make confident decisions and evaluate what is working. This helps businesses plan workforce needs more effectively and adapt their hiring strategy quickly.",
   },
   {
     title: "Hybrid and Remote First Recruitment Models",
-    text:
-      "Remote and hybrid work have changed how recruitment works. Virtual interviews, remote assessments, digital onboarding and distributed teams are now standard processes. Key Medsolutions UK supports remote first hiring by offering digital tools, global talent sourcing and fully virtual recruitment operations. For many clients, this means they can hire the best person for the role, no matter where that person lives.",
+    text: (
+      <>
+        Remote and hybrid work have changed how recruitment works. Virtual
+        interviews, remote assessments, digital onboarding and distributed teams
+        are now standard processes. Key Medsolutions UK supports remote first
+        hiring by offering digital tools, global talent sourcing and fully
+        &nbsp;
+        <Link
+          href={APP_PATH.services.remoteStaffingAgency.path}
+          className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+        >
+          virtual recruitment
+        </Link>
+        &nbsp;operations. For many clients, this means they can hire the best
+        person for the role, no matter where that person lives.
+      </>
+    ),
   },
 ];
 

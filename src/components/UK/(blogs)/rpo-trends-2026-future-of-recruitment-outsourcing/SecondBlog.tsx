@@ -6,6 +6,9 @@ import { AIEnhancedRecruitmentSection } from "./AIEnhancedRecruitmentSection";
 import { RPOFuturePillarsSection } from "./RPOFuturePillarsSection";
 import { WhyKeyMedFutureReadySection } from "./WhyKeyMedFutureReadySection";
 import FAQ from "./FAQ";
+import { SectorSpecialistRPOSection } from "./SectorSpecialistRPOSection";
+import { GlobalRPOFutureSection } from "./GlobalRPOFutureSection";
+import { RPOIndustryFutureSection } from "./RPOIndustryFutureSection";
 
 const SecondBlog = () => {
   return (
@@ -15,6 +18,9 @@ const SecondBlog = () => {
       <KeyRPOTrendsSection />
       <AIEnhancedRecruitmentSection />
       <RPOFuturePillarsSection/>
+      <SectorSpecialistRPOSection/>
+      <GlobalRPOFutureSection/>
+      <RPOIndustryFutureSection/>
       <WhyKeyMedFutureReadySection/> 
       <FAQ/>
     </main>

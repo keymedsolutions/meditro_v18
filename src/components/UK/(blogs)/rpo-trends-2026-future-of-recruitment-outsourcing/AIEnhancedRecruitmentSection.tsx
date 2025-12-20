@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export const AIEnhancedRecruitmentSection = () => {
   return (
@@ -18,12 +20,21 @@ export const AIEnhancedRecruitmentSection = () => {
 
           <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
             AI powered tools are becoming essential in recruitment. From
-            automating CV screening to predicting candidate suitability, AI
-            makes hiring faster and more accurate. It also helps reduce bias
-            when used responsibly. At Key Medsolutions UK, we combine advanced
-            automation technology with human decision making. The goal is to
-            improve efficiency without losing the personal touch that both
-            clients and candidates value.
+            automating&nbsp;
+            <Link
+              href={
+                APP_PATH.services.candidateSourcingAndScreeningServices.path
+              }
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              CV screening
+            </Link>
+            &nbsp;to predicting candidate suitability, AI makes hiring faster
+            and more accurate. It also helps reduce bias when used responsibly.
+            At Key Medsolutions UK, we combine advanced automation technology
+            with human decision making. The goal is to improve efficiency
+            without losing the personal touch that both clients and candidates
+            value.
           </p>
         </motion.div>
       </div>

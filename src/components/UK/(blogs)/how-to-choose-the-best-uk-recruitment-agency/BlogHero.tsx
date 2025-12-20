@@ -54,9 +54,7 @@ const BlogHero = () => {
           {/* Title */}
           <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-5xl tw-font-semibold tw-leading-snug tw-text-slate-900 tw-mb-6">
             How To Choose the Best{" "}
-            <span className="tw-text-accent-600">
-              UK Recruitment Agency?
-            </span>
+            <span className="tw-text-accent-600">UK Recruitment Agency?</span>
           </h1>
 
           {/* Subtitle */}
@@ -73,16 +71,46 @@ const BlogHero = () => {
           <div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-3 tw-gap-6 tw-max-w-4xl tw-mx-auto">
             {[
               {
-                stat: "74%",
-                text: "UK employers struggle to attract qualified candidates",
+                text: (
+                  <>
+                    <a
+                      href="https://www.circlerecruitment.com/news/news-details/3-4-of-employers-struggle-to-find-quality-candidates/"
+                      className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+                      target="_blank"
+                    >
+                      74% of UK employers
+                    </a>
+                    &nbsp;say they struggle to attract qualified candidates
+                  </>
+                ),
               },
               {
-                stat: "65%+",
-                text: "report rising recruitment costs year-on-year",
+                text: (
+                  <>
+                    <a
+                      href="https://www.cipd.org/globalassets/media/knowledge/knowledge-hub/reports/2024-pdfs/8662-resource-and-talent-planning-2024-report-web.pdf"
+                      className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+                      target="_blank"
+                    >
+                      Over 65% report higher
+                    </a>
+                    &nbsp;recruitment costs year-on-year
+                  </>
+                ),
               },
               {
-                stat: "40%",
-                text: "longer time to hire for specialist roles",
+                text: (
+                  <>
+                    Hiring for specialist roles takes up to&nbsp;
+                    <a
+                      href="https://forsale.godaddy.com/forsale/ipd.org?utm_source=TDFS_BINNS2&utm_medium=parkedpages&utm_campaign=x_corp_tdfs-binns2_base&traffic_type=TDFS_BINNS2&traffic_id=binns2&"
+                      className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+                      target="_blank"
+                    >
+                      40% longer than before the pandemic
+                    </a>
+                  </>
+                ),
               },
             ].map((item, index) => (
               <motion.div
@@ -97,9 +125,7 @@ const BlogHero = () => {
                     "0 12px 30px rgba(15,23,42,0.08), 0 0 0 1px rgba(255,255,255,0.9)",
                 }}
               >
-                <div className="tw-text-2xl sm:tw-text-3xl tw-font-bold tw-text-accent-600 tw-mb-2">
-                  {item.stat}
-                </div>
+              
                 <p className="tw-text-sm tw-text-slate-600 tw-leading-relaxed">
                   {item.text}
                 </p>
@@ -111,9 +137,9 @@ const BlogHero = () => {
           <div className="tw-max-w-3xl tw-mx-auto tw-mt-16">
             <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
               Finding the right recruitment partner in the UK can feel a bit
-              like dating, plenty of options, but only a few are truly the
-              right match. In today’s competitive hiring landscape, choosing
-              well matters more than ever.
+              like dating, plenty of options, but only a few are truly the right
+              match. In today’s competitive hiring landscape, choosing well
+              matters more than ever.
               <br />
               <br />
               This guide breaks it all down clearly, so you can confidently

@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const WhyIndustryExpertiseMattersSection = () => {
   return (
@@ -21,10 +23,7 @@ const WhyIndustryExpertiseMattersSection = () => {
             <span className="tw-inline-block tw-h-1 tw-w-16 tw-rounded-full tw-bg-accent-500 tw-mb-6" />
 
             <h2 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-leading-snug tw-mb-6">
-              Why{" "}
-              <span className="tw-text-accent-600">
-                Industry Expertise
-              </span>{" "}
+              Why <span className="tw-text-accent-600">Industry Expertise</span>{" "}
               Matters More Than Ever
             </h2>
 
@@ -41,8 +40,14 @@ const WhyIndustryExpertiseMattersSection = () => {
             </p>
 
             <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
-              At Key Medsolutions UK, our team is structured around specialised
-              sectors including:
+              At&nbsp;
+              <Link
+                href={APP_PATH.home.path}
+                className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+              >
+                Key Medsolutions UK
+              </Link>
+              , our team is structured around specialised sectors including:
             </p>
           </motion.div>
 
@@ -85,9 +90,15 @@ const WhyIndustryExpertiseMattersSection = () => {
               <div className="tw-mt-10 tw-pt-6 tw-border-t tw-border-slate-200">
                 <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
                   If your organisation needs leadership or C-suite talent, an{" "}
-                  <span className="tw-font-semibold tw-text-accent-700">
+                  <Link
+                    href={
+                      APP_PATH.services.executiveSearchAndHeadhuntingServices
+                        .path
+                    }
+                    className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+                  >
                     Executive Search Agency
-                  </span>{" "}
+                  </Link>{" "}
                   becomes important, and Key Medsolutions UK offers integrated
                   support in this area as well.
                 </p>

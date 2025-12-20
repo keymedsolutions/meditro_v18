@@ -62,9 +62,13 @@ const RPOTrendsHero = () => {
             experienced HR leaders. In fact, recent market research shows that
             the global value of the recruitment process outsourcing industry
             reached approximately{" "}
-            <span className="tw-font-semibold tw-text-slate-900">
+            <a
+              href="https://www.futuremarketreport.com/public/industry-report/recruitment-process-outsourcing-rpo-market"
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+              target="_blank"
+            >
               USD 12.5 billion in 2024
-            </span>
+            </a>
             , and it is expected to almost double by 2032.
           </p>
 

@@ -13,9 +13,16 @@ export const ExecutiveSearchVsRPOSection = () => {
           </h2>
           <div className="tw-text-slate-700 tw-text-sm sm:tw-text-base tw-leading-relaxed">
             Many organisations want to understand the difference between
-            executive search and RPO because the services can appear similar on
-            the surface. The truth is that the two serve different hiring
-            challenges. Here is a clear comparison.
+            executive search and&nbsp;
+            <Link
+              href={APP_PATH.howToChooseTheBestUkRecruitmentAgency.path}
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              RPO
+            </Link>
+            &nbsp;because the services can appear similar on the surface. The
+            truth is that the two serve different hiring challenges. Here is a
+            clear comparison.
           </div>
           <div className="tw-text-slate-700 tw-text-sm sm:tw-text-base tw-font-semibold">
             Executive Search vs RPO Comparison Table
@@ -87,7 +94,7 @@ export const ExecutiveSearchVsRPOSection = () => {
               href={
                 APP_PATH.services.recruitmentProcessOutsourcingServices.path
               }
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
             >
               recruitment process outsourcing companies.
             </Link>

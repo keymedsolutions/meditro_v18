@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 const PartnerWithRPOSection: React.FC = () => {
@@ -43,9 +45,17 @@ const PartnerWithRPOSection: React.FC = () => {
               If you want a recruitment partner that truly understands your
               business, supports your growth, and delivers consistent results,
               you’re in the right place. Key Medsolutions UK brings together
-              global talent, specialist recruiters, advanced technology, and
-              flexible pricing to help you build teams that move your business
-              forward.
+              &nbsp;
+              <Link
+                href={
+                  APP_PATH.services.candidateSourcingAndScreeningServices.path
+                }
+                className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+              >
+                global talent
+              </Link>
+              , specialist recruiters, advanced technology, and flexible pricing
+              to help you build teams that move your business forward.
             </p>
 
             {/* CTAs */}

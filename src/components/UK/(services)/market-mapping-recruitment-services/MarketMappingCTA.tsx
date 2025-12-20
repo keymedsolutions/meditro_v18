@@ -53,17 +53,21 @@ export default function MarketMappingCTA(): JSX.Element {
           {/* Left: Card cluster */}
           <div className="tw-flex tw-flex-col tw-gap-4 sm:tw-grid sm:tw-grid-cols-2 sm:tw-gap-4">
             {/* Card 1 */}
-            <motion.a
-              href="#"
+            <motion.div
               className="tw-relative tw-rounded-2xl tw-p-4 tw-bg-white tw-shadow-[0_12px_40px_rgba(15,23,42,0.06)] tw-flex tw-items-start tw-gap-4 tw-overflow-hidden"
               style={{ border: "1px solid rgba(148,163,184,0.5)" }}
               whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 160, damping: 16 }}
             >
-              <p className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0">
+              <Link
+                href={
+                  APP_PATH.services.technologyAndDigitalRecruitmentServices.path
+                }
+                className="tw-text-sm md:tw-text-base tw-font-medium tw-text-slate-900 tw-m-0"
+              >
                 IT Consultant Agency
-              </p>
-            </motion.a>
+              </Link>
+            </motion.div>
 
             {/* Card 2 */}
             <motion.div
@@ -146,9 +150,15 @@ export default function MarketMappingCTA(): JSX.Element {
                   <span style={{ color: "var(--accent-600)", fontWeight: 700 }}>
                     ›
                   </span>
-                  <span className="tw-text-sm tw-text-slate-700">
+                  <Link
+                    href={
+                      APP_PATH.services.technologyAndDigitalRecruitmentServices
+                        .path
+                    }
+                    className="tw-text-sm tw-text-slate-700"
+                  >
                     IT Consultant Agency
-                  </span>
+                  </Link>
                 </li>
                 <li className="tw-flex tw-items-center tw-gap-3">
                   <span style={{ color: "var(--accent-600)", fontWeight: 700 }}>

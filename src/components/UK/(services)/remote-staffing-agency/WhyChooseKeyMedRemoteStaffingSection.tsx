@@ -99,8 +99,14 @@ const WhyChooseKeyMedRemoteStaffingSection: React.FC = () => {
           </p>
 
           <p className="tw-text-sm sm:tw-text-base tw-text-slate-700">
-            Hiring in the Southwest? Partner with Key MedSolutions, one of the
-            &nbsp;
+            Hiring in the Southwest? Partner with&nbsp;
+            <Link
+              href={APP_PATH.home.path}
+              className="tw-font-semibold tw-text-inherit"
+            >
+              Key MedSolutions
+            </Link>
+            , one of the &nbsp;
             <Link
               href={
                 APP_PATH.services.recruitmentProcessOutsourcingServices.path

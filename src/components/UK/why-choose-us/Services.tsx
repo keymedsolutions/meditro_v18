@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Services: React.FC = () => {
@@ -42,8 +44,7 @@ const Services: React.FC = () => {
       ],
       footerDescription:
         "Our team brings over 10+ years of combined experience, meaning you’re never guessing, you’re guided by specialists.",
-      mainImage:
-        "/assets/images/our-services/rpo-main.jpg",
+      mainImage: "/assets/images/our-services/rpo-main.jpg",
       smallImage: "/assets/images/our-services/ScreeningServices.jpg",
     },
 
@@ -51,7 +52,17 @@ const Services: React.FC = () => {
       id: 3,
       title: "Cost Efficiency: Reduce Hiring Costs, Improve Output",
       descriptions: [
-        "Recruitment can be expensive,  but it doesn’t have to be. With Key Medsolutions UK, businesses save 60–75% compared to traditional hiring, thanks to scalable offshore teams and lean, tech-enabled processes.",
+        <>
+          Recruitment can be expensive, but it doesn’t have to be. With&nbsp;
+          <Link
+            href={APP_PATH.home.path}
+            className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+          >
+            Key Medsolutions UK
+          </Link>
+          , businesses save 60–75% compared to traditional hiring, thanks to
+          scalable offshore teams and lean, tech-enabled processes.
+        </>,
         "You save on:",
       ],
       insideDescription: [
@@ -63,8 +74,7 @@ const Services: React.FC = () => {
       ],
       footerDescription:
         "The result? Faster hiring. Lower spend. Higher quality. And a recruitment engine that grows with you.",
-      mainImage:
-        "/assets/images/why-choose-us/CostEfficiency.jpg",
+      mainImage: "/assets/images/why-choose-us/CostEfficiency.jpg",
       smallImage: "/assets/images/our-services/AdministrativeServices.jpg",
     },
     {
@@ -84,8 +94,7 @@ const Services: React.FC = () => {
       ],
       footerDescription:
         "This tech + human blend gives you accuracy, clarity, and a much better candidate experience.",
-      mainImage:
-        "/assets/images/why-choose-us/TechnologyIntegration.jpg",
+      mainImage: "/assets/images/why-choose-us/TechnologyIntegration.jpg",
       smallImage: "/assets/images/our-services/FinanceOutsourcingService.jpg",
     },
     {
@@ -104,8 +113,7 @@ const Services: React.FC = () => {
       footerDescription:
         "We operate with strict UK GDPR compliance, ethical recruitment practices, and clear documentation, so you always know exactly what you’re getting.",
       smallImage: "/assets/images/our-services/",
-      mainImage:
-        "/assets/images/why-choose-us/Transparency.jpg",
+      mainImage: "/assets/images/why-choose-us/Transparency.jpg",
     },
     {
       id: 6,
@@ -140,11 +148,21 @@ const Services: React.FC = () => {
         "Improved candidate quality",
         "Higher operational efficiency",
       ],
-      footerDescription:
-        "We’ve supported recruitment agencies, SMEs, and enterprise clients, helping them grow, scale, and operate more efficiently through world-class recruitment delivery.",
+      footerDescription: (
+        <>
+          We’ve supported&nbsp;
+          <Link
+            href={APP_PATH.services.recruitmentProcessOutsourcingServices.path}
+            className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+          >
+            recruitment agencies
+          </Link>
+          , SMEs, and enterprise clients, helping them grow, scale, and operate
+          more efficiently through world-class recruitment delivery.
+        </>
+      ),
       smallImage: "/assets/images/our-services/",
-      mainImage:
-        "/assets/images/why-choose-us/SocialProof.jpg",
+      mainImage: "/assets/images/why-choose-us/SocialProof.jpg",
     },
   ];
 

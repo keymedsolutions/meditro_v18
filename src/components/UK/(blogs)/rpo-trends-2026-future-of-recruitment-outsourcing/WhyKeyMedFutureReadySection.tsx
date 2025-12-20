@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export const WhyKeyMedFutureReadySection = () => {
   return (
     <section className="tw-bg-white tw-py-24">
-      <div className="tw-container tw-mx-auto tw-max-w-5xl tw-px-4 md:tw-px-8">
+      <div className="tw-container tw-mx-auto tw-max-w-6xl tw-px-4 md:tw-px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -16,9 +16,14 @@ export const WhyKeyMedFutureReadySection = () => {
             Why Key Medsolutions UK Is the Ideal Partner for{" "}
             <span className="tw-text-accent-600">Future Ready Hiring</span>
           </h2>
-
+          <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed tw-mb-6">
+            Choosing the right RPO provider is essential. Here is what sets Key
+            Medsolutions UK apart:
+          </p>
           <ul className="tw-space-y-4 tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
-            <li>• A technology forward model, supported by AI and automation.</li>
+            <li>
+              • A technology forward model, supported by AI and automation.
+            </li>
             <li>
               • Proven capability in global hiring through our Global RPO
               Solutions offering.

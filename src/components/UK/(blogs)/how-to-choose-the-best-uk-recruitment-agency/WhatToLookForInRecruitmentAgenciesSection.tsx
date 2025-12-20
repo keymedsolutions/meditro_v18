@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const WhatToLookForInRecruitmentAgenciesSection = () => {
   return (
@@ -24,9 +26,18 @@ const WhatToLookForInRecruitmentAgenciesSection = () => {
           </h2>
 
           <p className="tw-text-slate-700 tw-text-base tw-text-center sm:tw-text-lg tw-mx-auto tw-leading-relaxed tw-mb-4">
-            When people search for the best recruitment agencies in the UK, they
-            often look at location or brand names. But choosing a recruitment
-            partner should be a strategic decision, not just a convenience.
+            When people search for the&nbsp;
+            <Link
+              href={
+                APP_PATH.services.candidateSourcingAndScreeningServices.path
+              }
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            >
+              best recruitment agencies
+            </Link>
+            &nbsp;in the UK, they often look at location or brand names. But
+            choosing a recruitment partner should be a strategic decision, not
+            just a convenience.
           </p>
 
           <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-text-center tw-mx-auto tw-leading-relaxed">

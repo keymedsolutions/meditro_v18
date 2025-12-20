@@ -109,7 +109,7 @@ const WhyKeyMedsolutionsUKExecutiveSearch: React.FC = () => {
           <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-text-center">
             <Link
               href={APP_PATH.home.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
             >
               Key Medsolutions UK
             </Link>

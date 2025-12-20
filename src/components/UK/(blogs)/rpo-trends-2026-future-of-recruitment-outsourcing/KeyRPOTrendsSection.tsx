@@ -39,10 +39,13 @@ export const KeyRPOTrendsSection = () => {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h2 className="tw-text-2xl sm:tw-text-3xl tw-font-semibold tw-text-slate-900 tw-mb-10">
+          <h2 className="tw-text-2xl sm:tw-text-3xl tw-font-semibold tw-text-slate-900 tw-mb-8">
             Key Recruitment Process Outsourcing Trends Shaping{" "}
             <span className="tw-text-accent-600">2026</span>
           </h2>
+          <p className="tw-text-slate-700 tw-mb-8">
+            Below is a quick overview of the trends transforming the RPO market.
+          </p>
 
           <div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 lg:tw-grid-cols-3 tw-gap-6">
             {trends.map((item, i) => (

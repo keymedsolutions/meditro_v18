@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 const SpecialisedTechRecruitmentSection: React.FC = () => {
@@ -35,9 +37,16 @@ const SpecialisedTechRecruitmentSection: React.FC = () => {
             <div className="tw-space-y-4 tw-max-w-2xl">
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
                 Technology is moving quickly, so your hiring strategy needs to
-                move just as fast. At Key Medsolutions UK, we help you tap into
-                high-performing tech and digital candidates without the long
-                search times or complicated hiring processes.
+                move just as fast. At&nbsp;
+                <Link
+                  href={APP_PATH.home.path}
+                  className="tw-font-semibold tw-text-inherit"
+                >
+                  Key Medsolutions UK
+                </Link>
+                , we help you tap into high-performing tech and digital
+                candidates without the long search times or complicated hiring
+                processes.
               </p>
 
               <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">

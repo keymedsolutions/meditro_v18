@@ -179,78 +179,28 @@
 
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
-// const models = [
-//   {
-//     title: "Partial Recruitment Outsourcing (PRO)",
-//     subtitle: "Flexible support where you need it most",
-//     content: [
-//       "What it covers: Sourcing candidates, screening, assessments, interview coordination, employer branding support, market mapping.",
-//       "Best for: Startups, SMEs with limited TA resources, or seasonal hiring spikes.",
-//       "Benefits: Quick deployment, cost-efficient, strengthens your internal team without overloading them.",
-//     ],
-//     cta: "Explore Partial Recruitment Outsourcing",
-//   },
-//   {
-//     title: "Full RPO (Full-Cycle RPO)",
-//     subtitle: "End-to-end talent acquisition",
-//     content: [
-//       "What it includes: Workforce planning to onboarding, dedicated recruiters, tech stack, and full compliance management.",
-//       "Best for: High-volume hiring, multi-location enterprises, or fast-growing scale-ups.",
-//       "Benefits: Up to 60% cost reduction per hire, consistent pipelines, improved candidate quality, mature TA processes.",
-//     ],
-//     cta: "Learn About Full RPO",
-//   },
-//   {
-//     title: "On-Demand Recruitment Support",
-//     subtitle: "Hire fast, scale instantly",
-//     content: [
-//       "When to use: Sudden hiring surges, critical roles, short-term projects, TA coverage.",
-//       "Features: Rapid activation, flexible hours, no long-term commitment.",
-//       "Benefits: Pay only for what you need, faster hiring without overhead.",
-//     ],
-//     cta: "Discover On-Demand Recruitment Support",
-//   },
-//   {
-//     title: "Dedicated Offshore Teams",
-//     subtitle: "Scale globally without complexity",
-//     content: [
-//       "Roles provided: Talent sourcers, recruiters, CV screeners, admin/back office, payroll & compliance teams.",
-//       "Ideal for: Fast-growing companies, staffing agencies, large enterprises.",
-//       "Benefits: Save up to 70%, same timezone alignment, zero compliance headaches.",
-//     ],
-//     cta: "Set Up Dedicated Offshore Teams",
-//   },
-//   {
-//     title: "Project-Based Recruitment Support",
-//     subtitle: "Focused hiring for defined outcomes",
-//     content: [
-//       "Use cases: New branches, seasonal hiring, market entry, temporary surges.",
-//       "Benefits: Predictable budgets, dedicated project teams, fast turnaround.",
-//     ],
-//     cta: "Start Project-Based Recruitment Support",
-//   },
-//   {
-//     title: "Custom Recruitment Services",
-//     subtitle: "Designed around your TA strategy",
-//     content: [
-//       "Customisable elements: Sourcing, screening, headhunting, tech add-ons, market intelligence, compliance-only support.",
-//       "Best for: Hybrid or unique recruitment needs, TA transformation projects.",
-//       "Benefits: Full flexibility, high ROI, tailored to your goals.",
-//     ],
-//     cta: "Explore Custom Recruitment Services",
-//   },
-// ];
 
 const data = [
   {
     title: "Partial Recruitment Outsourcing (PRO)",
     subtitle: "Flexible support where you need it most",
     content: [
-      "What it covers: Sourcing candidates, screening, assessments, interview coordination, employer branding support, market mapping.",
+      <>
+        What it covers:&nbsp;
+        <Link
+          href={APP_PATH.services.candidateSourcingAndScreeningServices.path}
+          className="tw-font-semibold tw-text-inherit hover:tw-text-white active:tw-text-inherit focus:tw-text-inherit"
+        >
+          Sourcing candidates
+        </Link>
+        , screening, assessments, interview coordination, employer branding
+        support, market mapping
+      </>,
       "Best for: Startups, SMEs with limited TA resources, or seasonal hiring spikes.",
       "Benefits: Quick deployment, cost-efficient, strengthens your internal team without overloading them.",
     ],
@@ -283,7 +233,17 @@ const data = [
     title: "Dedicated Offshore Teams",
     subtitle: "Scale globally without complexity",
     content: [
-      "Roles provided: Talent sourcers, recruiters, CV screeners, admin/back office, payroll & compliance teams.",
+      <>
+        Roles provided: Talent sourcers, recruiters, CV screeners, admin/back
+        office,&nbsp;
+        <Link
+          href={APP_PATH.services.payrollAndFinanceOutsourcingServices.path}
+          className="tw-font-semibold tw-text-inherit hover:tw-text-white active:tw-text-inherit focus:tw-text-inherit"
+        >
+          payroll & compliance
+        </Link>
+        &nbsp;teams.
+      </>,
       "Ideal for: Fast-growing companies, staffing agencies, large enterprises.",
       "Benefits: Save up to 70%, same timezone alignment, zero compliance headaches.",
     ],
@@ -304,7 +264,16 @@ const data = [
     title: "Custom Recruitment Services",
     subtitle: "Designed around your TA strategy",
     content: [
-      "Customisable elements: Sourcing, screening, headhunting, tech add-ons, market intelligence, compliance-only support.",
+      <>
+        Customisable elements: Sourcing, screening,&nbsp;
+        <Link
+          href={APP_PATH.services.executiveSearchAndHeadhuntingServices.path}
+          className="tw-font-semibold tw-text-inherit hover:tw-text-white active:tw-text-inherit focus:tw-text-inherit"
+        >
+          headhunting
+        </Link>
+        , tech add-ons, market intelligence, compliance-only support.
+      </>,
       "Best for: Hybrid or unique recruitment needs, TA transformation projects.",
       "Benefits: Full flexibility, high ROI, tailored to your goals.",
     ],
@@ -331,12 +300,8 @@ const RecruitmentDeliveryModelsSection: React.FC = () => {
           className="tw-text-center tw-max-w-3xl tw-mx-auto tw-mb-20"
         >
           <h2 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-mb-4">
-            Industries We Serve
+            Our Recruitment Delivery Models
           </h2>
-          <p className="tw-text-sm sm:tw-text-base tw-text-slate-600">
-            Industry-specialised recruitment solutions built for speed,
-            compliance, and long-term success.
-          </p>
         </motion.div>
 
         {/* Floating Cards Layout */}

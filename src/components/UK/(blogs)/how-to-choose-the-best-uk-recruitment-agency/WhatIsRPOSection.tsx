@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const WhatIsRPOSection = () => {
   return (
@@ -42,9 +44,9 @@ const WhatIsRPOSection = () => {
 
             <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
               Through our{" "}
-              <span className="tw-font-medium tw-text-slate-900">
+              <Link href={APP_PATH.services.recruitmentProcessOutsourcingServices.path} className="tw-font-semibold tw-text-slate-900 focus:tw-text-slate-900">
                 Global RPO Solutions
-              </span>
+              </Link>
               , we also help companies expand their talent reach internationally.
             </p>
           </motion.div>
