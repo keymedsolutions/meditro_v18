@@ -71,9 +71,9 @@ const WhyPickKeyMedsolutions = () => {
               </div>
 
               {/* Title */}
-              <h1 className="tw-font-bold tw-text-accent-500 tw-text-xl tw-pt-6">
+              <div className="tw-font-bold tw-text-accent-500 tw-text-xl tw-pt-6">
                 {item.title}
-              </h1>
+              </div>
 
               {/* Description */}
               <p className="tw-text-sm tw-text-zinc-500 tw-leading-6">

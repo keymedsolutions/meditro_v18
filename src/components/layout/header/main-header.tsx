@@ -98,7 +98,7 @@ const MainHeader = () => {
                   aria-label={isOpen ? "Close menu" : "Open menu"}
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Menu className="tw-h-10 tw-w-10" />
+                  <Menu className={`tw-h-10 tw-w-10 ${isWhiteLogoPage ? "tw-text-white" :"tw-text-black"}`} />
                 </button>
               )}
 

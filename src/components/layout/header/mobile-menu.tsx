@@ -55,7 +55,7 @@ export const MobileMenu = ({ items, isOpen, onClose }: MobileMenuProps) => {
               href={item.path}
               target="_blank"
               rel="noopener noreferrer"
-              className="tw-flex tw-items-center tw-py-3 tw-px-3 tw-w-full tw-text-gray-700 hover:tw-text-blue-600 tw-transition-colors"
+              className="tw-flex tw-items-center tw-py-3 tw-px-3 tw-w-full tw-text-gray-700 hover:tw-text-accent-600 tw-transition-colors"
               style={{ paddingLeft }}
             >
               {item.label}
@@ -65,7 +65,7 @@ export const MobileMenu = ({ items, isOpen, onClose }: MobileMenuProps) => {
               <Link
                 href={item.path}
                 className={cn(
-                  "tw-flex tw-items-center tw-py-3 tw-px-3 tw-text-gray-700 hover:tw-text-blue-600 tw-transition-colors",
+                  "tw-flex tw-items-center tw-py-3 tw-px-3 tw-text-gray-700 hover:tw-text-accent-600 tw-transition-colors",
                   hasSubMenu ? "tw-w-4/5" : "tw-w-full"
                 )}
                 onClick={() => setOpenSubMenus({})}

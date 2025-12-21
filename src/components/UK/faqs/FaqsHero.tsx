@@ -393,9 +393,9 @@ const FaqsHero: React.FC = () => {
         <section className="tw-relative tw-bg-[#f8fbff] tw-py-28 tw-overflow-hidden tw-isolate">
           {index == 0 && (
             <div className="tw-text-center tw-absolute tw-right-0 tw-left-0 tw-mb-16  tw-z-20">
-              <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
+              <h1 className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
                 Frequently Asked Questions (FAQs)
-              </p>
+              </h1>
             </div>
           )}
           <div

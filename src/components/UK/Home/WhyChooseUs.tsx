@@ -5,7 +5,7 @@ import { NumberTicker } from "../ui/NumberTicker";
 
 const WhyChooseUs = () => {
   return (
-    <section className="tw-w-full tw-flex md:tw-flex-row tw-flex-col tw-items-stretch tw-gap-0 tw-p-0 tw-h-full tw-bg-accent-500">
+    <section className="tw-w-full tw-flex md:tw-flex-row tw-flex-col tw-items-stretch tw-gap-0 tw-p-0 tw-h-full tw-bg-accent-700">
       {/* LEFT SIDE IMAGE */}
       <div className="md:tw-w-[40%] tw-w-full tw-relative tw-min-h-[500px] sm:tw-min-h-[420px] md:tw-min-h-full">
         <Image

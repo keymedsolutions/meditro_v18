@@ -17,11 +17,14 @@ export default function MainBanner() {
       <div className="tw-absolute tw-inset-0 tw-z-0">
         <Image
           src="/assets/images/main-banner/bg-image.png" // You'll need to add your background image
-          alt="Background"
+          alt="Modern talent acquisition and recruitment solutions"
           fill
           priority
+          sizes="(max-width: 640px) 100vw,
+         (max-width: 1024px) 100vw,
+         1200px"
           className="tw-object-cover"
-          quality={100}
+          quality={75}
         />
 
         {/* Gradient Overlay from left to center */}
@@ -63,10 +66,10 @@ export default function MainBanner() {
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              <button className="tw-border-none tw-text-white tw-bg-accent-500 tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-text-lg hover:tw-bg-accent-600 tw-transition-colors tw-duration-300 tw-shadow-lg">
+              <button className="tw-border-none tw-text-white tw-bg-accent-700 tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-text-lg hover:tw-bg-accent-800 tw-transition-colors tw-duration-300 tw-shadow-lg">
                 Build Your Team
               </button>
-              <button className="tw-border-none tw-text-white tw-bg-accent-500 tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-text-lg hover:tw-bg-accent-600 tw-transition-colors tw-duration-300 tw-shadow-lg">
+              <button className="tw-border-none tw-text-white tw-bg-accent-700 tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-text-lg hover:tw-bg-accent-800 tw-transition-colors tw-duration-300 tw-shadow-lg">
                 Speak to an Expert
               </button>
             </motion.div>
