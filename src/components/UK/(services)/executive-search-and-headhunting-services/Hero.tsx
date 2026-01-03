@@ -89,11 +89,21 @@ export default function ExecutiveSearchHero() {
                 animate={isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 }}
               >
-                <button className="tw-bg-accent-600 hover:tw-bg-accent-700 tw-text-white tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-shadow-lg tw-transition">
+                <button
+                  className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-full tw-px-5 tw-py-2.5 tw-text-sm sm:tw-text-base tw-font-semibold tw-bg-accent-500 tw-text-white tw-shadow-lg tw-shadow-accent-300/70 tw-transition tw-duration-200 hover:tw-translate-y-[1px]"
+                  style={{
+                    border: "1px solid rgba(255,255,255,0.9)",
+                  }}
+                >
                   Book a Strategy Call
                 </button>
 
-                <button className="tw-bg-slate-900 hover:tw-bg-slate-800 tw-text-white tw-px-8 tw-py-3 tw-rounded-full tw-font-semibold tw-shadow-lg tw-transition">
+                <button
+                  className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-full tw-px-5 tw-py-2.5 tw-text-sm sm:tw-text-base tw-font-semibold tw-bg-white tw-text-slate-900 tw-shadow-sm tw-border-transparent tw-transition tw-duration-200 hover:tw-translate-y-[1px]"
+                  style={{
+                    border: "1px solid rgba(148,163,184,0.4)",
+                  }}
+                >
                   Speak to an Executive Search Consultant
                 </button>
               </motion.div>
