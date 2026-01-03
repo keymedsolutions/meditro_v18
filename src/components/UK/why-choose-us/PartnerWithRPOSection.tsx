@@ -50,7 +50,7 @@ const PartnerWithRPOSection: React.FC = () => {
                 href={
                   APP_PATH.services.candidateSourcingAndScreeningServices.path
                 }
-                className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+                className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
               >
                 global talent
               </Link>

@@ -90,7 +90,7 @@ const WhyOutsourceCandidateSourcingSection: React.FC = () => {
                   href={
                     APP_PATH.services.recruitmentProcessOutsourcingServices.path
                   }
-                  className="tw-font-semibold tw-text-inherit"
+                  className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
                 >
                   Recruitment Process Outsourcing
                 </Link>

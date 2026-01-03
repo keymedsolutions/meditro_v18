@@ -1,26 +1,21 @@
 "use client";
 
 import React from "react";
+import { Target, Rocket, TrendingDown } from "lucide-react";
 
 const CaseStudyHighlights = () => {
   const data = [
     {
-      icon: "🎯",
+      icon: Target,
       label: "60% average operational cost savings for our clients.",
-      className:
-        "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
     },
     {
-      icon: "🚀",
+      icon: Rocket,
       label: "45% improvement in time efficiency for administrative tasks.",
-      className:
-        "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },
     {
-      icon: "📉",
+      icon: TrendingDown,
       label: "99.8% reduction in administrative and data entry errors.",
-      className:
-        "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
     },
   ];
 
@@ -33,29 +28,21 @@ const CaseStudyHighlights = () => {
           </p>
         </div>
 
-        <div className="row">
+        <div className="tw-grid tw-grid-cols-1 sm:tw-grid-cols-2 tw-gap-5 tw-mb-8">
           {data.map((item, index) => {
             return (
-              <div key={index} className="col-12 mb-30 mb-sm-20">
-                <div
-                  className={`feature-container feature-bx1 feature2  ${item.className}`}
-                >
-                  <div className="icon-md">
-                    <span className="icon-cell">
-                      <span
-                        style={{
-                          fontSize: "3rem",
-                        }}
-                        className="!tw-text-4xl text-icon"
-                      >
-                        {item.icon}
-                      </span>
-                    </span>
-                  </div>
-                  <div className="icon-content">
-                    <h4 className="ttr-title">{item.label}</h4>
-                  </div>
+              <div
+                key={index}
+                className="tw-flex tw-items-center tw-gap-3 tw-rounded-2xl tw-bg-[#f7f9ff] tw-px-4 tw-py-3.5"
+                style={{ border: "1px solid rgba(226,232,240,0.9)" }}
+              >
+                <div className="tw-h-9 tw-w-9 tw-rounded-2xl tw-flex tw-items-center tw-justify-center tw-bg-white">
+                  <item.icon className="tw-w-4 tw-h-4 tw-text-accent-600" />
                 </div>
+
+                <p className="tw-text-sm tw-text-slate-800 tw-leading-relaxed tw-mb-0">
+                  <span className="tw-font-semibold">{item.label}</span>
+                </p>
               </div>
             );
           })}

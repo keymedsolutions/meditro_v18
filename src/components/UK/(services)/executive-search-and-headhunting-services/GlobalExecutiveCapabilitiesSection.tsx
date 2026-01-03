@@ -134,7 +134,7 @@ const GlobalExecutiveCapabilitiesSection: React.FC = () => {
                 Through our&nbsp;
                 <Link
                   href={APP_PATH.services.remoteStaffingAgency.path}
-                  className="tw-text-inherit tw-font-semibold"
+                  className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
                 >
                   “Remote staffing agency
                 </Link>
@@ -288,7 +288,7 @@ const GlobalExecutiveCapabilitiesSection: React.FC = () => {
                   href={
                     APP_PATH.services.candidateSourcingAndScreeningServices.path
                   }
-                  className="tw-font-semibold tw-text-inherit"
+                  className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
                 >
                   Candidate Sourcing and Screening company
                 </Link>

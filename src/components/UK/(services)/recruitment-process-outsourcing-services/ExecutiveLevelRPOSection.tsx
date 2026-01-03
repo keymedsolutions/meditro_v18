@@ -55,7 +55,7 @@ const ExecutiveLevelRPOSection: React.FC = () => {
                   href={
                     APP_PATH.services.executiveSearchAndHeadhuntingServices.path
                   }
-                  className="tw-font-semibold tw-text-inherit"
+                  className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inheri"
                 >
                   executive search and headhunting
                 </Link>

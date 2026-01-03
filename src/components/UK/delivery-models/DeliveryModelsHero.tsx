@@ -6,7 +6,7 @@ import React from "react";
 
 const DeliveryModelsHero: React.FC = () => {
   return (
-    <section className="tw-relative tw-overflow-hidden xl:tw-min-h-[80vh] tw-bg-[#f6f9ff] tw-flex tw-items-center">
+    <section className="tw-relative tw-overflow-hidden xl:tw-min-h-[80vh] tw-flex tw-items-center">
       {/* BACKGROUND IMAGE */}
       <div className="tw-absolute tw-inset-0 tw-pointer-events-none">
         <Image
@@ -18,7 +18,7 @@ const DeliveryModelsHero: React.FC = () => {
         />
 
         {/* ACCENT OVERLAY */}
-        <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-accent-100/70 tw-via-white/60 tw-to-accent-200/60" />
+              <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
       </div>
 
       {/* FLOATING ACCENT SHAPES */}
@@ -41,12 +41,12 @@ const DeliveryModelsHero: React.FC = () => {
           </span>
 
           {/* Heading */}
-          <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-5xl tw-font-semibold tw-text-slate-900 tw-leading-tight tw-mb-6">
+          <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-5xl tw-font-semibold tw-text-accent-400 tw-leading-tight tw-mb-6">
             Flexible Recruitment Delivery Models Designed for Every Hiring Need
           </h1>
 
           {/* Description */}
-          <p className="tw-text-sm sm:tw-text-base lg:tw-text-lg tw-text-slate-700 tw-leading-relaxed tw-max-w-4xl tw-mx-auto tw-mb-10">
+          <p className="tw-text-sm sm:tw-text-base lg:tw-text-lg tw-text-white tw-leading-relaxed tw-max-w-4xl tw-mx-auto tw-mb-10">
             Hiring doesn’t have to be complicated. Whether you need Full RPO,
             On-Demand Recruitment Support, or Dedicated Offshore Teams, Key
             Medsolutions UK makes it simple. Our Recruitment Delivery Models

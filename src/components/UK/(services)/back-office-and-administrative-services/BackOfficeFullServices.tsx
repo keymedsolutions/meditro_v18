@@ -124,11 +124,17 @@ const BackOfficeFullServices: React.FC = () => {
             </h2>
 
             <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-600">
-              We at Key Medsolutions UK offer comprehensive Back Office Process
-              Outsourcing Solutions to handle your essential operational tasks.
-              Our Back Office Outsourcing Services are designed to integrate
-              seamlessly with your business, providing support where you need it
-              most.
+              We at&nbsp;
+              <Link
+                href={APP_PATH.home.path}
+                className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+              >
+                Key Medsolutions UK
+              </Link>
+              &nbsp;offer comprehensive Back Office Process Outsourcing
+              Solutions to handle your essential operational tasks. Our Back
+              Office Outsourcing Services are designed to integrate seamlessly
+              with your business, providing support where you need it most.
             </p>
           </motion.div>
 
@@ -177,10 +183,11 @@ const BackOfficeFullServices: React.FC = () => {
                     fill
                     className="tw-object-cover"
                   />
+                  <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black" />
                 </div>
 
                 {/* Soft overlay */}
-                <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" />
+                {/* <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" /> */}
 
                 {/* connector to center line */}
                 <span
@@ -196,25 +203,25 @@ const BackOfficeFullServices: React.FC = () => {
                   <div className="tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-2xl tw-bg-accent-100 tw-shadow-[0_10px_30px_rgba(56,189,248,0.35)]">
                     <span className="tw-h-2 tw-w-2 tw-rounded-full tw-bg-accent-500" />
                   </div>
-                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 group-hover:tw-text-accent-400 tw-mb-0">
                     Administrative Support Services
                   </p>
                 </div>
 
                 <div className="tw-relative tw-z-[3] tw-space-y-2.5">
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Document Management: Securely organising and accessing your
                     digital files.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Data Entry &amp; Processing: Fast and accurate data handling
                     to maintain clean records.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Email &amp; Calendar Management: Organising schedules and
                     communications efficiently.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Virtual Administrative Support: On-demand assistance for any
                     administrative task.
                   </p>
@@ -244,10 +251,11 @@ const BackOfficeFullServices: React.FC = () => {
                     fill
                     className="tw-object-cover"
                   />
+                  <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black" />
                 </div>
 
                 {/* Soft overlay */}
-                <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" />
+                {/* <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" /> */}
 
                 <span
                   className="tw-hidden md:tw-block tw-absolute tw-top-1/2 tw-left-[-1.75rem] tw-h-[2px] tw-z-[2]"
@@ -261,13 +269,13 @@ const BackOfficeFullServices: React.FC = () => {
                   <div className="tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-2xl tw-bg-accent-100 tw-shadow-[0_10px_30px_rgba(56,189,248,0.35)]">
                     <span className="tw-h-2 tw-w-2 tw-rounded-full tw-bg-accent-500" />
                   </div>
-                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 group-hover:tw-text-accent-400 tw-mb-0">
                     Finance &amp; Accounting Back Office Support
                   </p>
                 </div>
 
                 <div className="tw-relative tw-z-[3] tw-space-y-2.5">
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Our experts can manage your financial tasks, acting as your
                     dedicated&nbsp;
                     <Link
@@ -275,20 +283,20 @@ const BackOfficeFullServices: React.FC = () => {
                         APP_PATH.services.payrollAndFinanceOutsourcingServices
                           .path
                       }
-                      className="tw-font-semibold tw-text-inherit"
+                      className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
                     >
                       Finance Accounting Outsourcing Company.
                     </Link>
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Bookkeeping &amp; Payroll: Ensuring accurate records and
                     timely staff payments.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     AP/AR Processing: Managing your payables and receivables to
                     improve cash flow.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Reconciliation &amp; Reporting: Providing clear financial
                     reports with tools like Xero and QuickBooks.
                   </p>
@@ -318,10 +326,11 @@ const BackOfficeFullServices: React.FC = () => {
                     fill
                     className="tw-object-cover"
                   />
+                  <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black" />
                 </div>
 
                 {/* Soft overlay */}
-                <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" />
+                {/* <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" /> */}
 
                 <span
                   className="tw-hidden md:tw-block tw-absolute tw-top-1/2 tw-right-[-1.75rem] tw-h-[2px] tw-z-[2]"
@@ -335,27 +344,35 @@ const BackOfficeFullServices: React.FC = () => {
                   <div className="tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-2xl tw-bg-accent-100 tw-shadow-[0_10px_30px_rgba(56,189,248,0.35)]">
                     <span className="tw-h-2 tw-w-2 tw-rounded-full tw-bg-accent-500" />
                   </div>
-                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 group-hover:tw-text-accent-400 tw-mb-0">
                     HR &amp; Recruitment Back Office Support
                   </p>
                 </div>
 
                 <div className="tw-relative tw-z-[3] tw-space-y-2.5">
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
-                    Partner with our team, a leading Recruitment Process
-                    Outsourcing (RPO) agency, to handle your HR and
-                    administrative needs efficiently—serving clients in the UK
-                    and globally.
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
+                    Partner with our team, a leading&nbsp;
+                    <Link
+                      href={
+                        APP_PATH.services
+                          .recruitmentProcessOutsourcingServices.path
+                      }
+                      className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+                    >
+                      Recruitment Process Outsourcing
+                    </Link>
+                    &nbsp;(RPO) agency, to handle your HR and administrative
+                    needs efficiently—serving clients in the UK and globally.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Compliance &amp; Onboarding: Handling new hire paperwork and
                     compliance checks.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Timesheet Management: Tracking employee hours for accurate
                     payroll.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     CRM &amp; ATS Management: Keeping your candidate and client
                     databases up-to-date.
                   </p>
@@ -385,10 +402,11 @@ const BackOfficeFullServices: React.FC = () => {
                     fill
                     className="tw-object-cover"
                   />
+                  <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black" />
                 </div>
 
                 {/* Soft overlay */}
-                <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" />
+                {/* <div className="tw-absolute tw-inset-0 tw-z-[1] tw-bg-gradient-to-br tw-from-white/90 tw-via-white/80 tw-to-white/40 group-hover:tw-from-white/55 group-hover:tw-via-white/45 group-hover:tw-to-white/20 tw-transition-all tw-duration-500" /> */}
 
                 <span
                   className="tw-hidden md:tw-block tw-absolute tw-top-1/2 tw-left-[-1.75rem] tw-h-[2px] tw-z-[2]"
@@ -402,21 +420,21 @@ const BackOfficeFullServices: React.FC = () => {
                   <div className="tw-flex tw-h-8 tw-w-8 tw-items-center tw-justify-center tw-rounded-2xl tw-bg-accent-100 tw-shadow-[0_10px_30px_rgba(56,189,248,0.35)]">
                     <span className="tw-h-2 tw-w-2 tw-rounded-full tw-bg-accent-500" />
                   </div>
-                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-font-semibold tw-text-slate-900 group-hover:tw-text-accent-400 tw-mb-0">
                     Operations Support
                   </p>
                 </div>
 
                 <div className="tw-relative tw-z-[3] tw-space-y-2.5">
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Vendor Coordination: Liaising with suppliers and managing
                     relationships.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Order Processing: Efficiently managing customer orders from
                     start to finish.
                   </p>
-                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
+                  <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 group-hover:tw-text-white tw-mb-0">
                     Inventory Updates: Keeping your stock levels accurate and
                     current.
                   </p>

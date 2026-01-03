@@ -194,7 +194,7 @@ const data = [
         What it covers:&nbsp;
         <Link
           href={APP_PATH.services.candidateSourcingAndScreeningServices.path}
-          className="tw-font-semibold tw-text-inherit hover:tw-text-white active:tw-text-inherit focus:tw-text-inherit"
+          className="tw-font-semibold tw-text-inherit  active:tw-text-inherit focus:tw-text-inherit"
         >
           Sourcing candidates
         </Link>
@@ -238,7 +238,7 @@ const data = [
         office,&nbsp;
         <Link
           href={APP_PATH.services.payrollAndFinanceOutsourcingServices.path}
-          className="tw-font-semibold tw-text-inherit hover:tw-text-white active:tw-text-inherit focus:tw-text-inherit"
+          className="tw-font-semibold tw-text-inherit  active:tw-text-inherit focus:tw-text-inherit"
         >
           payroll & compliance
         </Link>
@@ -268,7 +268,7 @@ const data = [
         Customisable elements: Sourcing, screening,&nbsp;
         <Link
           href={APP_PATH.services.executiveSearchAndHeadhuntingServices.path}
-          className="tw-font-semibold tw-text-inherit hover:tw-text-white active:tw-text-inherit focus:tw-text-inherit"
+          className="tw-font-semibold tw-text-inherit  active:tw-text-inherit focus:tw-text-inherit"
         >
           headhunting
         </Link>
@@ -327,15 +327,15 @@ const RecruitmentDeliveryModelsSection: React.FC = () => {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
 
-                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/90 tw-via-accent-500/65 tw-to-white/95" />
+                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
               </div>
 
               <div className="tw-relative tw-z-10 tw-h-full tw-p-6 md:tw-p-7 tw-flex tw-flex-col">
-                <h3 className="tw-text-lg sm:tw-text-xl tw-font-semibold tw-text-slate-900 tw-mb-1">
+                <h3 className="tw-text-lg sm:tw-text-xl tw-font-semibold tw-text-slate-900 group-hover:tw-text-accent-400 tw-mb-1">
                   {item.title}
                 </h3>
 
-                <p className="tw-text-sm tw-font-medium tw-text-accent-600 group-hover:tw-text-accent-900 tw-mb-3">
+                <p className="tw-text-sm tw-font-medium tw-text-accent-600 group-hover:tw-text-accent-600 tw-mb-3">
                   {item.subtitle}
                 </p>
 
@@ -349,7 +349,7 @@ const RecruitmentDeliveryModelsSection: React.FC = () => {
                         <div className="tw-flex tw-h-8 tw-w-8 tw-shrink-0 tw-items-center tw-justify-center tw-rounded-full tw-bg-accent-100 tw-shadow-[0_6px_16px_rgba(56,189,248,0.35)]">
                           <span className="tw-h-2 tw-w-2 tw-rounded-full tw-bg-accent-500" />
                         </div>
-                        <p className="tw-text-sm md:tw-text-base  tw-text-slate-600 group-hover:tw-text-black tw-mb-0">
+                        <p className="tw-text-sm md:tw-text-base  tw-text-slate-600 group-hover:tw-text-white tw-mb-0">
                           {desc}
                         </p>
                       </div>

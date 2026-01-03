@@ -6,15 +6,16 @@ import React from "react";
 
 const IndustriesWeServeHero: React.FC = () => {
   return (
-    <section className="tw-relative tw-w-full tw-overflow-hidden tw-bg-[#f7faff] tw-py-20 md:tw-py-28">
+    <section className="tw-relative tw-w-full tw-overflow-hidden  tw-py-20 md:tw-py-28">
       {/* OPTIONAL LIGHT BACKGROUND IMAGE */}
-      <div className="tw-pointer-events-none tw-absolute tw-inset-0 tw-opacity-[0.30]">
+      <div className="tw-absolute tw-inset-0 tw-z-0">
         <Image
           src="/assets/images/industries/industries-hero-bg.jpg" // optional, very light
           alt=""
           fill
           className="tw-object-cover"
         />
+        <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
       </div>
 
       {/* ACCENT GRADIENT LAYERS */}
@@ -39,12 +40,12 @@ const IndustriesWeServeHero: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-leading-snug tw-mb-5">
+            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-white tw-leading-snug tw-mb-5">
               Empowering UK And Global Businesses with Industry-Specialised
               Talent Solutions
             </h1>
 
-            <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-max-w-xl tw-mb-8">
+            <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-white/80 tw-max-w-xl tw-mb-8">
               Recruitment shouldn’t feel stressful. Whether you’re growing a
               tech team, filling urgent healthcare roles, or boosting your
               customer support, we help you access qualified talent quickly and

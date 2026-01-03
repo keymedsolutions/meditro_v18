@@ -1,3 +1,5 @@
+import { APP_PATH } from "@/data/PATH_APP";
+import Link from "next/link";
 import React from "react";
 
 const IndustriesWeServe = () => {
@@ -19,9 +21,14 @@ const IndustriesWeServe = () => {
       <div className="tw-container tw-mx-auto tw-flex tw-flex-col tw-gap-y-16">
         {/* Section Heading */}
         <div className="tw-text-center tw-space-y-3">
-          <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
-            Industries We Serve
-          </p>
+          <Link
+            href={APP_PATH.services.industries.path}
+            className=" tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+          >
+            <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
+              Industries We Serve
+            </p>
+          </Link>
           <p className="tw-text-slate-600 tw-max-w-2xl tw-mx-auto tw-text-sm md:tw-text-base">
             We’re proud to work with businesses across a variety of industries,
             including:

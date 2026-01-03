@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const ServicesDynamicSection: React.FC = () => {
@@ -9,6 +11,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 1,
       title: "Recruitment Process Outsourcing (RPO) Services",
+      link: APP_PATH.services.recruitmentProcessOutsourcingServices.path,
       descriptions: [
         "Recruitment can drain your time and energy. You don’t have to do it all yourself. With our RPO services, you hand over as much of your recruitment as you want. We take care of everything with care and skill.",
         "Here’s how it works. First, we sit down together to map out your workforce planning. We look at the roles you need to fill now as well as future hires. Once the plan is set, we get to work immediately and search for candidates everywhere. We don’t stop at job boards. We use our networks, dig into referrals, and target both active and passive talent.",
@@ -22,6 +25,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 2,
       title: "Candidate Sourcing & Screening Services",
+      link: APP_PATH.services.candidateSourcingAndScreeningServices.path,
       descriptions: [
         "It all starts with the right people. Our candidate sourcing and screening services help you build a solid pool of potential hires who are ready to contribute immediately. We use every tool available. Some of it is advanced digital tools; some is traditional people skills.",
         "When we source, we search everywhere. We look at popular job boards, but also professional networks and trusted referrals. We conduct a thorough, wide-ranging search. For every candidate, we go deeper than the basics. We examine their CVs, assess skills, run tests when needed, and always consider cultural fit with your team.",
@@ -35,6 +39,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 3,
       title: "Back Office & Administrative Services",
+      link: APP_PATH.services.backOfficeAndAdministrativeServices.path,
       descriptions: [
         "Admin is necessary, but it shouldn’t slow you down. Our back office team takes the routine work off your hands, so your recruiters can focus on what they do best: building relationships and making smart decisions.",
         "We manage everything: updating databases, maintaining your applicant tracking system, setting schedules, sending and tracking emails, and keeping all your documents organised. Compliance paperwork? We’re on it, nothing is overlooked.",
@@ -46,6 +51,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 4,
       title: "Payroll & Finance Outsourcing Services",
+      link: APP_PATH.services.payrollAndFinanceOutsourcingServices.path,
       descriptions: [
         "Payroll and finance matter for every business. But they can take up time you would rather use on growth. Let our skilled payroll and finance team handle it for you, and you’ll see the benefits straightaway.",
         "We take care of processing timesheets, paying salaries, handling expenses, and responding to anything HMRC needs. Got vendors or contractors? We’ll pay them on time and record every detail clearly. We do your bookkeeping, manage accounts receivable and payable, and create the financial reports you need to plan ahead.",
@@ -57,6 +63,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 5,
       title: "Market Mapping Services",
+      link: APP_PATH.services.marketMappingRecruitmentServices.path,
       descriptions: [
         "Want to know what your competitors are doing with their teams? Curious about going rates for top talent or where the next big opportunities are emerging? Our market mapping service gives you the answers.",
         "We research the talent landscape in your field. Our reports show you what other companies are offering, where they find people, and which skills are getting harder to find. Salary benchmarking keeps your offers competitive, and our passive talent mapping builds a pool of future hires in advance of demand.",
@@ -68,6 +75,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 6,
       title: "Executive Search & Headhunting Services",
+      link: APP_PATH.services.executiveSearchAndHeadhuntingServices.path,
       descriptions: [
         "Your business’s leaders play a key part in future success. We help you find outstanding executives and managers who are ready to take on new challenges and strategic responsibilities. Our process is discreet and focused on trust.",
         "We use our deep network to reach candidates you won’t find in ordinary searches. For each leader, we review their professional records, leadership track, achievements, and personality. We also check how their values fit with your company culture.",
@@ -79,6 +87,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 7,
       title: "Remote Staffing Services",
+      link: APP_PATH.services.remoteStaffingAgency.path,
       descriptions: [
         "The world is your talent pool. If you want to fill roles quickly, control costs, or need specific expertise, remote staffing makes sense. Our service helps you find great people no matter where they are.",
         "We help with IT, administration, finance, creative roles, customer support, and more. Need help only for a project? Want to run your support team around the clock? We can source the right people for you, quickly and efficiently.",
@@ -90,6 +99,7 @@ const ServicesDynamicSection: React.FC = () => {
     {
       id: 8,
       title: "Technology & Digital Recruitment Services",
+      link: APP_PATH.services.technologyAndDigitalRecruitmentServices.path,
       descriptions: [
         "The tech world moves fast. We’re here so you never fall behind. Our team focuses on technology and digital roles, from developers and data specialists to marketing experts and security professionals.",
         "We use industry knowledge to find hard-to-reach talent. Every tech candidate is carefully reviewed for both skills and experience. We test what they can do, not just what they say they’ve done. Everything complies with UK rules, so there are no unexpected issues.",
@@ -177,10 +187,14 @@ const ServicesDynamicSection: React.FC = () => {
       viewport={{ once: true, amount: 0.2 }}
       className="tw-text-left"
     >
-      <h2 className="tw-text-xl sm:tw-text-2xl lg:tw-text-3xl tw-font-semibold tw-mb-5">
-        {item.id}. {item.title}
-      </h2>
-
+      <Link
+        href={item.link}
+        className=" tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+      >
+        <h2 className="tw-text-xl sm:tw-text-2xl lg:tw-text-3xl tw-font-semibold tw-mb-5">
+          {item.id}. {item.title}
+        </h2>
+      </Link>
       <div className="tw-space-y-4 tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-100/90">
         {item.descriptions.map((desc, i) => (
           <p key={i}>{desc}</p>

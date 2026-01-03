@@ -64,7 +64,7 @@ const CandidateScreeningTechnologySection: React.FC = () => {
               href={
                 APP_PATH.services.candidateSourcingAndScreeningServices.path
               }
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
             >
               Candidate Screening Solution
             </Link>

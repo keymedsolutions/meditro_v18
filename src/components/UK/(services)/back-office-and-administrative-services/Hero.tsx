@@ -6,9 +6,9 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="tw-relative tw-w-full tw-min-h-screen tw-overflow-hidden tw-bg-[#f4f7ff] sm:tw-py-0 tw-py-10">
+    <section className="tw-relative tw-w-full tw-min-h-screen tw-overflow-hidden  sm:tw-py-0 tw-py-10">
       {/* RIGHT-SIDE BACKGROUND IMAGE */}
-      <div className="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-w-full tw-opacity-80">
+      <div className="tw-pointer-events-none tw-absolute tw-inset-y-0 tw-right-0 tw-w-full tw-opacity-90">
         <div className="tw-relative tw-h-full">
           <Image
             src="/assets/images/back-office-and-administrative-services/hero.jpg"
@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
             fill
             className="tw-object-cover"
           />
-          <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-br tw-from-white/80 tw-via-white/60 tw-to-white/80" />
+        <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black" />
         </div>
       </div>
 
@@ -43,12 +43,12 @@ const Hero: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-leading-snug tw-mb-4">
+            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-accent-500 tw-leading-snug tw-mb-4">
               Streamlined Back Office &amp; Administrative Support Services for
               UK &amp; Global Businesses
             </h1>
 
-            <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-max-w-xl tw-mb-8">
+            <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-white tw-max-w-xl tw-mb-8">
               Reduce operational workload, reduce costs, and boost efficiency
               with our expert back office outsourcing solutions.
             </p>

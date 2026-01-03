@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import { ClipboardList, Users, CheckCircle2, FileCheck } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const ProcessStepsSection: React.FC = () => {
@@ -148,8 +150,16 @@ const ProcessStepsSection: React.FC = () => {
           </motion.div>
         </div>
         <div className="tw-rounded-lg tw-p-6 tw-mt-6 border tw-border-accent-500 tw-bg-accent-500/5 tw-text-md tw-font-semibold tw-text-accent-700 tw-shadow-md tw-shadow-accent-200">
-          Optional add-ons: Job description writing, employer branding, digital
-          sourcing solutions.
+          Optional add-ons: Job description writing, employer branding,&nbsp;
+          <Link
+            href={
+              APP_PATH.services.technologyAndDigitalRecruitmentServices.path
+            }
+            className="tw-font-bold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+          >
+            digital sourcing
+          </Link>
+          &nbsp;solutions.
         </div>
       </div>
     </section>

@@ -91,7 +91,7 @@ const WhyChooseKeyMedRemoteStaffingSection: React.FC = () => {
               href={
                 APP_PATH.services.executiveSearchAndHeadhuntingServices.path
               }
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
             >
               executive search and headhunting
             </Link>
@@ -102,7 +102,7 @@ const WhyChooseKeyMedRemoteStaffingSection: React.FC = () => {
             Hiring in the Southwest? Partner with&nbsp;
             <Link
               href={APP_PATH.home.path}
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
             >
               Key MedSolutions
             </Link>
@@ -111,7 +111,7 @@ const WhyChooseKeyMedRemoteStaffingSection: React.FC = () => {
               href={
                 APP_PATH.services.recruitmentProcessOutsourcingServices.path
               }
-              className="tw-font-semibold tw-text-inherit"
+              className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
             >
               best recruitment agencies
             </Link>

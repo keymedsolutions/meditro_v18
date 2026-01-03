@@ -6,7 +6,7 @@ import React from "react";
 
 const TechnologyDigitalRecruitmentHero: React.FC = () => {
   return (
-    <section className="tw-relative tw-w-full tw-overflow-hidden  tw-py-20 lg:tw-py-28">
+    <section className="tw-relative tw-w-full tw-overflow-hidden lg:tw-h-screen tw-py-20 lg:tw-py-28">
       {/* LIGHTWEIGHT BACKGROUND IMAGE */}
       <div className="tw-pointer-events-none tw-absolute tw-inset-0">
         <Image
@@ -16,7 +16,7 @@ const TechnologyDigitalRecruitmentHero: React.FC = () => {
           priority
           className="tw-object-cover tw-opacity-[0.40]"
         />
-        {/* <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-b tw-from-white tw-via-white/90 tw-to-[#f7f9ff]" /> */}
+        <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
       </div>
 
       {/* Soft animated accents */}
@@ -40,7 +40,7 @@ const TechnologyDigitalRecruitmentHero: React.FC = () => {
               </span>
             </div>
 
-            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl xl:tw-text-5xl tw-font-semibold tw-text-slate-900 tw-leading-tight tw-mb-5">
+            <h1 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl xl:tw-text-5xl tw-font-semibold tw-text-white tw-leading-tight tw-mb-5">
               Technology &amp; Digital Recruitment Services
               <br />
               <span className="tw-text-accent-600">
@@ -49,20 +49,20 @@ const TechnologyDigitalRecruitmentHero: React.FC = () => {
             </h1>
 
             <div className="tw-space-y-4 tw-max-w-2xl">
-              <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
+              <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-white">
                 Finding great tech talent shouldn’t feel like a never-ending
                 challenge. Whether you're scaling fast, building a new product,
                 or filling a specialist role, Key Medsolutions UK makes hiring
                 simpler, faster, and far more predictable.
               </p>
 
-              <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
+              <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-white">
                 We specialise in Technology and Digital Recruitment, helping
                 businesses connect with skilled professionals who can deliver
                 real impact from day one.
               </p>
 
-              <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700">
+              <p className="tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-white">
                 As a trusted Technology Recruitment Agency, we support startups,
                 scaleups, and large enterprises across the UK and global
                 markets, delivering talent that truly aligns with your vision.

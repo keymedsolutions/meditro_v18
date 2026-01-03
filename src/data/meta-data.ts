@@ -58,7 +58,7 @@ export const SiteMetaData: ISiteMetaData = {
       "Hire top tech talent across the UK & globally with Key Medsolutions UK. Specialist technology & digital recruitment for startups, scaleups, and enterprises.",
   },
   [APP_PATH.services.industries.path]: {
-    title: "Industries We Serve",
+    title: "Industries We Serve | RPO Company – Key MedSolutions UK",
     description:
       "Hire top talent across Healthcare, IT, Logistics, Finance & more. Key Medsolutions UK delivers fast, reliable, and compliant recruitment solutions.",
   },

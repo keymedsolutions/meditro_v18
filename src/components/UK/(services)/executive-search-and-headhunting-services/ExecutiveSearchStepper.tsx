@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
 
-
 const steps = [
   {
     title: "Role Analysis;",
@@ -20,7 +19,7 @@ const steps = [
         Using advanced research tools&nbsp;
         <Link
           href={APP_PATH.services.marketMappingRecruitmentServices.path}
-          className="tw-font-semibold tw-text-inherit"
+          className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
         >
           Market Mapping Firms
         </Link>

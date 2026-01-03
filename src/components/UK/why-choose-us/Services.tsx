@@ -56,7 +56,7 @@ const Services: React.FC = () => {
           Recruitment can be expensive, but it doesn’t have to be. With&nbsp;
           <Link
             href={APP_PATH.home.path}
-            className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
           >
             Key Medsolutions UK
           </Link>
@@ -153,7 +153,7 @@ const Services: React.FC = () => {
           We’ve supported&nbsp;
           <Link
             href={APP_PATH.services.recruitmentProcessOutsourcingServices.path}
-            className="tw-font-semibold tw-text-inherit focus:tw-text-inherit"
+            className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
           >
             recruitment agencies
           </Link>

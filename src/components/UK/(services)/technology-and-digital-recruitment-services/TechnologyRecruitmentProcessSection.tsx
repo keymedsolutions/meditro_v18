@@ -27,10 +27,8 @@ const TechnologyRecruitmentProcessSection: React.FC = () => {
         <>
           As a leading&nbsp;
           <Link
-            href={
-              APP_PATH.services.candidateSourcingAndScreeningServices.path
-            }
-            className="tw-font-semibold tw-text-inherit"
+            href={APP_PATH.services.candidateSourcingAndScreeningServices.path}
+            className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
           >
             Candidate Screening company
           </Link>

@@ -40,7 +40,7 @@ const RecruitmentDeliveryModelsIntroSection: React.FC = () => {
               At&nbsp;
               <Link
                 href={APP_PATH.home.path}
-                className="tw-font-semibold tw-text-inherit"
+                className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
               >
                 Key Medsolutions UK
               </Link>

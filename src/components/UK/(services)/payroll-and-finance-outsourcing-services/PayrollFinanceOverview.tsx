@@ -1,7 +1,9 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const PayrollFinanceOverview: React.FC = () => {
@@ -51,11 +53,17 @@ const PayrollFinanceOverview: React.FC = () => {
                 className="tw-text-sm sm:tw-text-[0.98rem] lg:tw-text-base tw-leading-relaxed tw-text-accent-800 tw-opacity-90 tw-space-y-2.5 tw-transition-all"
               >
                 <span className="tw-block">
-                  At Key Medsolutions UK, we’re proud to be a leading finance
-                  payroll outsourcing provider. We help SMEs, enterprises,
-                  recruiters, tech startups, accountants, and global businesses
-                  get ahead with reliable Payroll and Finance Outsourcing
-                  Services.
+                  At&nbsp;
+                  <Link
+                    href={APP_PATH.home.path}
+                    className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+                  >
+                    Key Medsolutions UK
+                  </Link>
+                  , we’re proud to be a leading finance payroll outsourcing
+                  provider. We help SMEs, enterprises, recruiters, tech
+                  startups, accountants, and global businesses get ahead with
+                  reliable Payroll and Finance Outsourcing Services.
                 </span>
                 <span className="tw-block tw-mt-2.5">
                   Our Outsourced Finance and Accounting Services are built

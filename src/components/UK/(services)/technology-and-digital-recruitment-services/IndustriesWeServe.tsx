@@ -2,6 +2,8 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { APP_PATH } from "@/data/PATH_APP";
 const IndustriesWeServe = () => {
   const industries = [
     {
@@ -26,9 +28,14 @@ const IndustriesWeServe = () => {
             <span className="tw-h-[2px] tw-w-20 tw-rounded-full tw-bg-accent-300" />
           </div>
 
-          <h2 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-leading-snug tw-mb-4 tw-text-center">
-            Industries We Support
-          </h2>
+          <Link
+            href={APP_PATH.services.industries.path}
+            className=" tw-text-inherit  active:tw-text-inherit focus:tw-text-inherit"
+          >
+            <h2 className="tw-text-2xl sm:tw-text-3xl lg:tw-text-4xl tw-font-semibold tw-text-slate-900 tw-leading-snug tw-mb-4 tw-text-center">
+              Industries We Support
+            </h2>
+          </Link>
           <p className="tw-text-slate-600 tw-max-w-2xl tw-mx-auto tw-text-sm md:tw-text-base">
             We offer remote staffing to a wide range of high-growth sectors,
             giving businesses access to global expertise while maintaining UK

@@ -103,9 +103,7 @@ const FAQ = () => {
 
           <div className="tw-relative tw-z-[1] tw-flex tw-flex-col lg:tw-flex-row tw-items-start lg:tw-items-center tw-justify-between tw-gap-5">
             <div className="tw-space-y-2">
-              <h3 className="tw-text-lg md:tw-text-xl tw-font-semibold tw-text-slate-900">
-                Final CTA
-              </h3>
+             
               <p className="tw-text-sm md:tw-text-base tw-leading-relaxed tw-text-slate-700 tw-mb-0">
                 Ready to hire transformational leaders? Contact our UK-based
                 Executive Search Consultants today and access top talent across

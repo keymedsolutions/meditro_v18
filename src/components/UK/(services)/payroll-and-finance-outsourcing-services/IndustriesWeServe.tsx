@@ -1,3 +1,5 @@
+import { APP_PATH } from "@/data/PATH_APP";
+import Link from "next/link";
 import React from "react";
 
 const IndustriesWeServe = () => {
@@ -23,16 +25,27 @@ const IndustriesWeServe = () => {
       <div className="tw-container tw-mx-auto tw-flex tw-flex-col tw-gap-y-16">
         {/* Section Heading */}
         <div className="tw-text-center tw-space-y-3">
-          <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
-            Industries We Serve
-          </p>
+          <Link
+            href={APP_PATH.services.industries.path}
+            className=" tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+          >
+            <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
+              Industries We Serve
+            </p>
+          </Link>
           <p className="tw-text-slate-600 tw-max-w-2xl tw-mx-auto tw-text-sm md:tw-text-base">
             We are a trusted Global Finance Outsourcing Company, providing
             Payroll and Finance Outsourcing Services across the UK and
-            World-wide. Through our role as an Outsource Back Office Agency in
-            the UK, Canada, Germany, France, Netherlands, India, Philippines,
-            Poland, China, USA, Japan, and beyond, our wide reach ensures expert
-            service wherever you are.
+            World-wide. Through our role as an Outsource&nbsp;
+            <Link
+              href={APP_PATH.services.backOfficeAndAdministrativeServices.path}
+              className="tw-font-semibold tw-text-inherit active:tw-text-inherit focus:tw-text-inherit"
+            >
+              Back Office Agency
+            </Link>
+            &nbsp;in the UK, Canada, Germany, France, Netherlands, India,
+            Philippines, Poland, China, USA, Japan, and beyond, our wide reach
+            ensures expert service wherever you are.
           </p>
           <p className="tw-text-slate-600 tw-max-w-2xl tw-mx-auto tw-text-sm md:tw-text-base">
             Industries we support include:

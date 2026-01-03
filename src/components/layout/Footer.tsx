@@ -85,7 +85,7 @@ const Footer = () => {
 
       <div className="tw-container tw-mx-auto tw-px-4 tw-relative tw-z-10">
         <motion.div
-          className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 xl:tw-grid-cols-4 tw-gap-10 tw-mb-16"
+          className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 min-[1364px]:tw-grid-cols-4 tw-gap-10 tw-mb-16"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -160,9 +160,9 @@ const Footer = () => {
                   label: "Why Choose Us",
                 },
                 {
-                 href: APP_PATH.blogs.path,
-                 label: "Blogs",
-               },
+                  href: APP_PATH.blogs.path,
+                  label: "Blogs",
+                },
                 { href: APP_PATH.services.faqs.path, label: "faqS" },
               ].map((link, i) => (
                 <li key={i}>
@@ -245,7 +245,7 @@ const Footer = () => {
 
             <div className="tw-bg-white  tborder tw-border-slate-200  tw-rounded-2xl tw-p-6 tw-space-y-5">
               <div className="tw-flex tw-gap-4">
-                <div className="tw-h-11 tw-w-11 tw-rounded-full tw-bg-accent-500/15 tw-flex tw-items-center tw-justify-center">
+                <div className="tw-h-11 tw-w-11 tw-rounded-full tw-bg-accent-500/15 tw-flex tw-items-center tw-justify-center tw-shrink-0">
                   <i className="fas fa-phone-alt tw-text-accent-600" />
                 </div>
                 <div>
@@ -259,15 +259,15 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="tw-flex tw-gap-4">
-                <div className="tw-h-11 tw-w-11 tw-rounded-full tw-bg-accent-500/15 tw-flex tw-items-center tw-justify-center">
+              <div className="tw-flex tw-gap-4 tw-flex-shrink-0">
+                <div className="tw-h-11 tw-w-11 tw-rounded-full tw-bg-accent-500/15 tw-flex tw-items-center tw-justify-center tw-shrink-0">
                   <i className="fas fa-envelope tw-text-accent-600" />
                 </div>
                 <div>
                   <span className="tw-text-xs tw-text-slate-500">Email us</span>
                   <a
                     href={`mailto:${ContactInfo.email}`}
-                    className="tw-block tw-text-slate-900  hover:tw-text-accent-500 tw-break-all"
+                    className="tw-block tw-text-slate-900  hover:tw-text-accent-500"
                   >
                     {ContactInfo.email}
                   </a>

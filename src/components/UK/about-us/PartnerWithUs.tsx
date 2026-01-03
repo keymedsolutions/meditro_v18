@@ -32,7 +32,7 @@ export default function PartnerWithUs() {
                 className="tw-object-cover"
               />
               {/* Overlay for readability */}
-              <div className="tw-absolute tw-inset-0 tw-bg-white/70" />
+         <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
             </div>
 
             {/* Content ON TOP of image */}
@@ -41,11 +41,11 @@ export default function PartnerWithUs() {
                 {/* Accent divider */}
                 <span className="tw-inline-block tw-h-1 tw-w-16 tw-rounded-full tw-bg-accent-500 tw-mb-6" />
 
-                <h2 className="tw-text-slate-900 tw-text-2xl sm:tw-text-3xl md:tw-text-4xl tw-font-semibold tw-leading-snug tw-mb-5">
+                <h2 className="tw-text-accent-400 tw-text-2xl sm:tw-text-3xl md:tw-text-4xl tw-font-semibold tw-leading-snug tw-mb-5">
                   Your Invitation to Partner With Us
                 </h2>
 
-                <p className="tw-text-slate-700 tw-text-base sm:tw-text-lg tw-leading-relaxed">
+                <p className="tw-text-white/80 tw-text-base sm:tw-text-lg tw-leading-relaxed">
                   If you’re ready for a recruitment experience that’s truly
                   personal, supportive, and straightforward, let’s connect. Key
                   Medsolutions UK is the Trusted RPO Partner Across Global, and

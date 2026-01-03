@@ -1,6 +1,8 @@
 "use client";
 
+import { APP_PATH } from "@/data/PATH_APP";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 
 const WhatIsRPOSection: React.FC = () => {
@@ -48,12 +50,18 @@ const WhatIsRPOSection: React.FC = () => {
                 className="tw-space-y-4 tw-text-sm sm:tw-text-base tw-leading-relaxed tw-text-slate-700"
               >
                 <p>
-                  If you’ve ever wondered what Recruitment Process Outsourcing
-                  actually means, you’re not alone. Simply put, RPO lets you
-                  hand over all or part of your hiring process to specialists,
-                  like us! Think of it as having a dedicated, expert recruitment
-                  team, but with all the flexibility and know-how of the
-                  recruitment process outsourcing industry.
+                  If you’ve ever wondered what&nbsp;
+                  <Link
+                    href={APP_PATH.howToChooseTheBestUkRecruitmentAgency.path}
+                    className="tw-font-semibold tw-text-inherit  active:tw-text-inherit focus:tw-text-inherit"
+                  >
+                    Recruitment Process Outsourcing
+                  </Link>
+                  &nbsp;actually means, you’re not alone. Simply put, RPO lets
+                  you hand over all or part of your hiring process to
+                  specialists, like us! Think of it as having a dedicated,
+                  expert recruitment team, but with all the flexibility and
+                  know-how of the recruitment process outsourcing industry.
                 </p>
                 <p>
                   What does RPO stand for? It stands for Recruitment Process

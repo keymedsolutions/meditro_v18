@@ -113,19 +113,19 @@ const IndustriesWeServeSection: React.FC = () => {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
 
-                <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/90 tw-via-accent-500/65 tw-to-white/95" />
+              <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
               </div>
 
               <div className="tw-relative tw-z-10 tw-h-full tw-p-6 md:tw-p-7 tw-flex tw-flex-col">
-                <h3 className="tw-text-lg sm:tw-text-xl tw-font-semibold tw-text-slate-900 tw-mb-1">
+                <h3 className="tw-text-lg sm:tw-text-xl tw-font-semibold tw-text-slate-900 group-hover:tw-text-accent-400 tw-mb-1">
                   {item.title}
                 </h3>
 
-                <p className="tw-text-sm tw-font-medium tw-text-accent-600 group-hover:tw-text-accent-900 tw-mb-3">
+                <p className="tw-text-sm tw-font-medium tw-text-accent-600 group-hover:tw-text-accent-600 tw-mb-3">
                   {item.subtitle}
                 </p>
 
-                <p className="tw-text-sm sm:tw-text-base group-hover:tw-text-black tw-leading-relaxed tw-text-slate-700 tw-flex-1">
+                <p className="tw-text-sm sm:tw-text-base group-hover:tw-text-white tw-leading-relaxed tw-text-slate-700 tw-flex-1">
                   {item.description}
                 </p>
 

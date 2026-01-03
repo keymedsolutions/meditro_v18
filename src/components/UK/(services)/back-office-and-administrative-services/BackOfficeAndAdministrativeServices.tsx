@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./Hero";
 import AdministrativeServices from "./AdministrativeServices";
-import BackOfficeOfferings from "./BackOfficeOfferings";
+// import BackOfficeOfferings from "./BackOfficeOfferings";
 import BackOfficeFullServices from "./BackOfficeFullServices";
 import TechnologyToolsBackOffice from "./TechnologyToolsBackOffice";
 import WhyChooseUs from "./WhyChooseUs";
@@ -16,7 +16,7 @@ const BackOfficeAndAdministrativeServices = () => {
     <main className="tw-overflow-hidden">
       <Hero />
       <AdministrativeServices />
-      <BackOfficeOfferings />
+      {/* <BackOfficeOfferings /> */}
       <BackOfficeFullServices />
       <TechnologyToolsBackOffice />
       <WhyChooseUs />
