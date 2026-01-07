@@ -137,7 +137,7 @@ export default function MainBanner() {
         <div className="tw-absolute tw-inset-0 tw-bg-gradient-to-t tw-from-accent-500/80 tw-via-black/70 tw-to-black/90" />
       </div>
 
-      <div className="tw-container tw-mx-auto tw-relative tw-z-10 tw-px-4 tw-flex tw-items-center tw-min-h-screen">
+      <div className="tw-container tw-mx-auto tw-relative tw-z-10 tw-px-4 tw-flex tw-items-center tw-min-h-screen sm:tw-pt-0 tw-pt-24">
         <div className="tw-grid tw-grid-cols-1 lg:tw-grid-cols-12 tw-gap-10 tw-w-full">
           {/* CONTENT */}
           <motion.div

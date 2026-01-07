@@ -16,7 +16,7 @@ const IndustriesWeServe = () => {
     { title: "Executive & Senior Corporate Roles" },
     {
       title:
-        "Information Technology, including expert Technology and Digital Recruitment solutions that give you access to the same global talent as leading IT recruitment agencies in London.",
+        "Information Technology",
     },
   ];
 

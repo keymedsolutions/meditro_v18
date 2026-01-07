@@ -38,7 +38,7 @@ const Hero = () => {
       <div className="tw-pointer-events-none tw-absolute tw-top-[45%] tw-right-[22%] tw-h-28 tw-w-28 tw-rounded-full tw-border tw-border-accent-500/40 orb-rotate" />
 
       {/* ================= CONTENT ================= */}
-      <div className="tw-container tw-relative tw-z-10 tw-mx-auto tw-px-4 tw-min-h-screen tw-flex tw-items-center">
+      <div className="tw-container tw-relative tw-z-10 tw-mx-auto tw-px-4 tw-min-h-screen tw-flex tw-items-center sm:tw-pt-0 tw-pt-10">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={mounted ? { opacity: 1, y: 0 } : {}}
