@@ -159,10 +159,10 @@ const OurServices = () => {
       </div>
       <div className="tw-flex tw-justify-center tw-items-center tw-mt-10">
         <button
-          className=" tw-rounded-lg tw-bg-transparent"
-          style={{ border: "2px solid var(--accent-500)" }}
+          className="tw-rounded-lg tw-bg-transparent"
+          style={{ border: "2px solid var(--accent-700)" }}
         >
-          <span className="tw-inline-block tw-font-bold tw-text-accent-500 tw-px-10 tw-py-3 tw-rounded-md tw-shadow-md tw-transition-transform tw-duration-300 hover:tw-scale-105 tw-uppercase">
+          <span className="tw-inline-block tw-font-bold tw-text-accent-700 tw-px-10 tw-py-3 tw-rounded-md tw-shadow-md tw-transition-transform tw-duration-300 hover:tw-scale-105 tw-uppercase">
             Learn More About Us
           </span>
         </button>

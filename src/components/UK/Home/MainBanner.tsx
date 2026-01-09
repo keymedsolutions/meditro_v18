@@ -174,10 +174,20 @@ export default function MainBanner() {
                 transition={{ delay: 0.3 }}
               >
                 <button
-                  className="tw-inline-flex tw-items-center tw-justify-center tw-rounded-full tw-px-5 tw-py-2.5 tw-text-sm sm:tw-text-base tw-font-semibold tw-bg-accent-500 tw-text-white tw-shadow-lg tw-shadow-accent-300/70 tw-transition tw-duration-200 hover:tw-translate-y-[1px]"
-                  style={{
-                    border: "1px solid rgba(255,255,255,0.9)",
-                  }}
+                  className="
+    tw-inline-flex tw-items-center tw-justify-center
+    tw-rounded-full tw-px-5 tw-py-2.5
+    tw-text-sm sm:tw-text-base
+    tw-font-semibold
+    tw-bg-accent-600
+    tw-text-white
+    tw-shadow-lg tw-shadow-black/30
+    tw-transition-transform tw-duration-200
+    hover:tw-translate-y-[1px]
+    focus-visible:tw-outline-none
+    focus-visible:tw-ring-2
+    focus-visible:tw-ring-white/80
+  "
                 >
                   Build Your Team
                 </button>

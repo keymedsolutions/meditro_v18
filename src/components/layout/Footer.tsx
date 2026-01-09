@@ -112,26 +112,38 @@ const Footer = () => {
 
             <div className="tw-flex tw-gap-3 tw-mt-6">
               {[
-                SocialAccountLinks.FACEBOOK,
-                SocialAccountLinks.LINKEDIN,
-                SocialAccountLinks.INSTAGRAM,
-              ].map((link, index) => (
+                {
+                  href: SocialAccountLinks.FACEBOOK,
+                  label: "Follow us on Facebook",
+                  icon: "facebook",
+                },
+                {
+                  href: SocialAccountLinks.LINKEDIN,
+                  label: "Follow us on LinkedIn",
+                  icon: "linkedin",
+                },
+                {
+                  href: SocialAccountLinks.INSTAGRAM,
+                  label: "Follow us on Instagram",
+                  icon: "instagram",
+                },
+              ].map((item, index) => (
                 <motion.a
                   key={index}
-                  href={link}
+                  href={item.href}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={item.label}
                   whileHover={{ scale: 1.15 }}
-                  className="tw-h-10 tw-w-10 tw-rounded-full tw-bg-white  border tw-border-slate-200  tw-flex tw-items-center tw-justify-center hover:tw-bg-accent-500/15"
+                  className="tw-h-10 tw-w-10 tw-rounded-full tw-bg-white tw-border tw-border-slate-200 tw-flex tw-items-center tw-justify-center hover:tw-bg-accent-500/15"
                 >
+                  {/* Screen reader text */}
+                  <span className="tw-sr-only">{item.label}</span>
+
+                  {/* Icon */}
                   <i
-                    className={`fab fa-${
-                      index === 0
-                        ? "facebook"
-                        : index === 1
-                        ? "linkedin"
-                        : "instagram"
-                    } tw-text-slate-700 `}
+                    aria-hidden="true"
+                    className={`fab fa-${item.icon} tw-text-slate-700`}
                   />
                 </motion.a>
               ))}
@@ -279,12 +291,18 @@ const Footer = () => {
 
         {/* FOOTER BOTTOM */}
         <div className="tw-border-t tw-border-slate-200  tw-pt-6 tw-text-center">
-          <p className="tw-text-slate-500">© {currentYear} Key MedSolutions</p>
-          <p className="tw-text-slate-500">
+          <p className="tw-text-slate-600">© {currentYear} Key MedSolutions</p>
+          <p className="tw-text-slate-600">
             Key MedSolutions operates under the domain{" "}
             <Link
               href="/"
-              className="tw-text-slate-900  hover:tw-text-accent-500"
+              className="
+    tw-text-slate-900
+    tw-underline
+    tw-decoration-slate-400
+    tw-underline-offset-4
+    hover:tw-text-accent-700
+  "
             >
               keymedsolution.com
             </Link>

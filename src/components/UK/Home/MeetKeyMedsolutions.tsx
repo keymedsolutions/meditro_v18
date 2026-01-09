@@ -31,9 +31,9 @@ const MeetKeyMedsolutions = () => {
             <div className="tw-flex tw-items-center tw-gap-x-3">
               <div
                 className="tw-inline-flex tw-items-center tw-justify-center tw-p-2 tw-rounded-full tw-bg-blue-50"
-                style={{ border: "1px solid var(--accent-500)" }}
+                style={{ border: "1px solid var(--accent-700)" }}
               >
-                <Globe2 className="tw-w-8 tw-h-8 tw-text-accent-500" />
+                <Globe2 className="tw-w-8 tw-h-8 tw-text-accent-700" />
               </div>
               <span className="tw-text-2xl tw-font-semibold tw-text-accent-500">
                 Global Talent
@@ -55,9 +55,9 @@ const MeetKeyMedsolutions = () => {
             <div className="tw-flex tw-items-center tw-gap-x-3">
               <div
                 className="tw-inline-flex tw-items-center tw-justify-center tw-p-2 tw-rounded-full tw-bg-emerald-50"
-                style={{ border: "1px solid var(--accent-500)" }}
+                style={{ border: "1px solid var(--accent-700)" }}
               >
-                <Cpu className="tw-w-8 tw-h-8 tw-text-accent-500" />
+                <Cpu className="tw-w-8 tw-h-8 tw-text-accent-700" />
               </div>
               <span className="tw-text-2xl tw-font-semibold tw-text-accent-500">
                 Tech-Driven
@@ -81,9 +81,9 @@ const MeetKeyMedsolutions = () => {
             <div className="tw-flex tw-items-center tw-gap-x-3">
               <div
                 className="tw-inline-flex tw-items-center tw-justify-center tw-p-2 tw-rounded-full tw-bg-indigo-50"
-                style={{ border: "1px solid var(--accent-500)" }}
+                style={{ border: "1px solid var(--accent-700)" }}
               >
-                <Users className="tw-w-8 tw-h-8  tw-text-accent-500" />
+                <Users className="tw-w-8 tw-h-8  tw-text-accent-700" />
               </div>
               <span className="tw-text-2xl tw-font-semibold tw-text-accent-500">
                 A True Partner
@@ -101,9 +101,9 @@ const MeetKeyMedsolutions = () => {
         <div className="tw-flex tw-justify-center tw-items-center">
           <button
             className=" tw-rounded-lg tw-bg-transparent"
-            style={{ border: "2px solid var(--accent-500)" }}
+            style={{ border: "2px solid var(--accent-700)" }}
           >
-            <span className="tw-inline-block tw-font-bold tw-text-accent-500 tw-px-10 tw-py-3 tw-rounded-md tw-shadow-md tw-transition-transform tw-duration-300 hover:tw-scale-105 tw-uppercase">
+            <span className="tw-inline-block tw-font-bold tw-text-accent-700 tw-px-10 tw-py-3 tw-rounded-md tw-shadow-md tw-transition-transform tw-duration-300 hover:tw-scale-105 tw-uppercase">
               Learn More About Us
             </span>
           </button>

@@ -63,9 +63,9 @@ export function WhatOurClientsSay() {
   return (
     <section className="container tw-mx-auto tw-py-12 tw-relative">
       <div className="tw-text-center tw-space-y-3 tw-mb-8">
-        <p className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
+        <h2 className="tw-text-sm tw-font-semibold tw-tracking-[0.18em] tw-uppercase tw-text-accent-600">
           What Our Clients Say
-        </p>
+        </h2>
       </div>
       <Carousel
         className="tw-w-full"
@@ -139,9 +139,9 @@ export function WhatOurClientsSay() {
                           </div>
                         </div>
                         <div className="tw-ml-3">
-                          <h4 className="tw-font-bold tw-text-gray-900 tw-text-sm lg:tw-text-base group-hover:tw-text-accent-700 tw-transition-colors tw-duration-300">
+                          <p className="tw-font-bold tw-text-gray-900 tw-text-sm lg:tw-text-base group-hover:tw-text-accent-700 tw-transition-colors tw-duration-300">
                             {testimonial.author}
-                          </h4>
+                          </p>
                           <p className="tw-text-gray-600 tw-text-xs lg:tw-text-sm">
                             {testimonial.role &&
                               `${testimonial.role}${

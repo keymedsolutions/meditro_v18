@@ -44,7 +44,7 @@ const IndustriesWeServe = () => {
              tw-shadow-lg tw-shadow-accent-200"
             >
               {/* NUMBER TAG */}
-              <div className="tw-bg-accent-500 tw-text-white tw-rounded-lg sm:tw-p-6 tw-p-4 tw-inline-block tw-absolute tw-top-0 sm:tw-left-[3.15rem] tw-left-[2.2rem] tw-translate-x-[-5px] tw-translate-y-[-50%]">
+              <div className="tw-bg-accent-400 tw-text-black tw-font-bold tw-rounded-lg sm:tw-p-6 tw-p-4 tw-inline-block tw-absolute tw-top-0 sm:tw-left-[3.15rem] tw-left-[2.2rem] tw-translate-x-[-5px] tw-translate-y-[-50%]">
                 {String(index + 1).padStart(2, "0")}
               </div>
 

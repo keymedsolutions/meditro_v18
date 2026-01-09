@@ -111,7 +111,7 @@ export function HowItWorks() {
                       <div className="tw-relative">
                         <div className="tw-absolute tw-inset-0 tw-bg-keymed-100 tw-rounded-lg tw-transform  tw-scale-110"></div>
                         <img
-                          src="/assets/images/main-banner/HowItWorks.jpg"
+                          src="/assets/images/main-banner/HowItWorks.webp"
                           alt="Medical billing professional"
                           className="tw-rounded-2xl tw-shadow-lg tw-relative tw-z-10 tw-h-full tw-w-full tw-object-cover"
                         />
@@ -156,9 +156,9 @@ export function HowItWorks() {
           <div className="tw-flex tw-justify-center tw-items-center tw-mt-6">
             <button
               className=" tw-rounded-lg tw-bg-transparent"
-              style={{ border: "2px solid var(--accent-500)" }}
+              style={{ border: "2px solid var(--accent-700)" }}
             >
-              <span className="tw-inline-block tw-font-bold tw-text-accent-500 tw-px-10 tw-py-3 tw-rounded-md tw-shadow-md tw-transition-transform tw-duration-300 hover:tw-scale-105 tw-uppercase">
+              <span className="tw-inline-block tw-font-bold tw-text-accent-700 tw-px-10 tw-py-3 tw-rounded-md tw-shadow-md tw-transition-transform tw-duration-300 hover:tw-scale-105 tw-uppercase">
                 Speak to an Expert Today
               </span>
             </button>

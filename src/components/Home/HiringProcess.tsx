@@ -4,10 +4,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Clock, DollarSign, Globe, Shield } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
-import imgFaster from "../../../public/assets/images/hiring-process/faster-hiring.jpg";
-import imgCost from "../../../public/assets/images/hiring-process/cost-efficient.jpg";
-import imgGlobal from "../../../public/assets/images/hiring-process/global-talent.jpg";
-import imgZero from "../../../public/assets/images/hiring-process/zero-compliance.jpg";
+import imgFaster from "../../../public/assets/images/hiring-process/faster-hiring.webp";
+import imgCost from "../../../public/assets/images/hiring-process/cost-efficient.webp";
+import imgGlobal from "../../../public/assets/images/hiring-process/global-talent.webp";
+import imgZero from "../../../public/assets/images/hiring-process/zero-compliance.webp";
 import Image from "next/image";
 import { useMediaQuery } from "usehooks-ts";
 import {
