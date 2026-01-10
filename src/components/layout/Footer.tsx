@@ -8,6 +8,7 @@ import { motion, type Variants } from "framer-motion";
 import { useState } from "react";
 import { APP_PATH } from "@/data/PATH_APP";
 import type { Easing } from "framer-motion";
+import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -115,17 +116,17 @@ const Footer = () => {
                 {
                   href: SocialAccountLinks.FACEBOOK,
                   label: "Follow us on Facebook",
-                  icon: "facebook",
+                  icon: <Facebook size={18} className="tw-text-slate-600"/>,
                 },
                 {
                   href: SocialAccountLinks.LINKEDIN,
                   label: "Follow us on LinkedIn",
-                  icon: "linkedin",
+                  icon: <Linkedin size={18} className="tw-text-slate-600"/>,
                 },
                 {
                   href: SocialAccountLinks.INSTAGRAM,
                   label: "Follow us on Instagram",
-                  icon: "instagram",
+                  icon: <Instagram size={18} className="tw-text-slate-600"/>,
                 },
               ].map((item, index) => (
                 <motion.a
@@ -141,10 +142,7 @@ const Footer = () => {
                   <span className="tw-sr-only">{item.label}</span>
 
                   {/* Icon */}
-                  <i
-                    aria-hidden="true"
-                    className={`fab fa-${item.icon} tw-text-slate-700`}
-                  />
+                 {item.icon}
                 </motion.a>
               ))}
             </div>
@@ -258,7 +256,7 @@ const Footer = () => {
             <div className="tw-bg-white  tborder tw-border-slate-200  tw-rounded-2xl tw-p-6 tw-space-y-5">
               <div className="tw-flex tw-gap-4">
                 <div className="tw-h-11 tw-w-11 tw-rounded-full tw-bg-accent-500/15 tw-flex tw-items-center tw-justify-center tw-shrink-0">
-                  <i className="fas fa-phone-alt tw-text-accent-600" />
+                  <Phone className="tw-text-accent-600" size={18}/>
                 </div>
                 <div>
                   <span className="tw-text-xs tw-text-slate-500">Call us</span>
@@ -273,7 +271,8 @@ const Footer = () => {
 
               <div className="tw-flex tw-gap-4 tw-flex-shrink-0">
                 <div className="tw-h-11 tw-w-11 tw-rounded-full tw-bg-accent-500/15 tw-flex tw-items-center tw-justify-center tw-shrink-0">
-                  <i className="fas fa-envelope tw-text-accent-600" />
+                  {/* <i className="fas fa-envelope tw-text-accent-600" /> */}
+                  <Mail className="tw-text-accent-600" size={18}/>
                 </div>
                 <div>
                   <span className="tw-text-xs tw-text-slate-500">Email us</span>

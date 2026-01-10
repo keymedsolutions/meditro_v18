@@ -4,13 +4,13 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import type { Metadata } from "next";
 // Fonts
-import "../vendor/line-awesome/css/line-awesome.min.css";
-import "../vendor/font-awesome/css/all.min.css";
-import "../vendor/themify/themify-icons.css";
+// import "../vendor/line-awesome/css/line-awesome.min.css";
+// import "../vendor/font-awesome/css/all.min.css";
+// import "../vendor/themify/themify-icons.css";
 import "./globals.css";
 import "../App.scss"
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import { headers } from "next/headers";
 import { GeratePageMetaData } from "@/lib/utils";
 import { jsonLdSchema } from "@/data/jsonLd-schema";
