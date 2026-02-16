@@ -13,8 +13,7 @@ const PlansAndPricing = () => {
 
   return (
     <div className="tw-w-full tw-my-8">
-      <div className="tw-flex tw-justify-center">
-        {/* ✅ Correct ARIA structure */}
+      {/* <div className="tw-flex tw-justify-center">
         <ul
           className="tw-flex tw-gap-x-1 tw-px-1.5 tw-py-1.5 tw-list-none tw-rounded-full tw-bg-purple-200/70"
           role="tablist"
@@ -38,10 +37,10 @@ const PlansAndPricing = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
 
       <div className="tw-relative before:tw-content-[''] before:tw-absolute before:tw-inset-0 before:tw-rounded-2xl before:tw-bg-purple-300 before:tw-blur-3xl before:tw-opacity-30 before:tw-z-[-1]">
-        {activeTab === "rcm" && (
+        {/* {activeTab === "rcm" && ( */}
           <div
             id="panel-rcm"
             role="tabpanel"
@@ -67,7 +66,7 @@ const PlansAndPricing = () => {
               <RCMPlansList />
             </div>
           </div>
-        )}
+        {/* )}
 
         {activeTab === "training" && (
           <div
@@ -78,7 +77,7 @@ const PlansAndPricing = () => {
           >
             <PricingPlans isHomePage={true} />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

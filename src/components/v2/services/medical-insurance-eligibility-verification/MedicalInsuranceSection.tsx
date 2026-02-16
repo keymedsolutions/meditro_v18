@@ -77,9 +77,15 @@ const MedicalInsuranceSection = () => {
                   </div>
                   <div>
                     <p className="tw-text-gray-600 tw-text-sm">Call Us:</p>
-                    <p className="tw-text-gray-900 tw-font-medium">
+                    {/* <p className="tw-text-gray-900 tw-font-medium">
                       +1 (336) 499-92994
-                    </p>
+                    </p> */}
+                    <a
+                      href={`tel:+133649992994`}
+                      className="tw-text-gray-900  tw-font-medium"
+                    >
+                      +1 (336) 499-92994
+                    </a>
                   </div>
                 </div>
 
@@ -89,9 +95,9 @@ const MedicalInsuranceSection = () => {
                   </div>
                   <div>
                     <p className="tw-text-gray-600 tw-text-sm">Email:</p>
-                    <p className="tw-text-gray-900 tw-font-medium tw-break-all">
+                    <a  href={`mailto:info@keymedsolution.com`} className="tw-text-gray-900 tw-font-medium tw-break-all">
                       info@keymedsolution.com
-                    </p>
+                    </a>
                   </div>
                 </div>
               </motion.div>

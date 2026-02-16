@@ -58,13 +58,13 @@ const ReadyToTransformYourPractice = () => {
             {/* Contact Info Section */}
             <div className="tw-mt-4 tw-space-y-2 ">
               <p className="tw-text-white">
-                <span className="tw-font-bold tw-text-gray-400">
+                <span className="tw-font-bold ">
                   Call Us&nbsp;:
                 </span>{" "}
                 +1 (336) 499-92994
               </p>
               <p className="tw-text-white">
-                <span className="tw-font-bold  tw-text-gray-400">
+                <span className="tw-font-bold  ">
                   Email&nbsp;:
                 </span>{" "}
                 info@keymedsolution.com

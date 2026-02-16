@@ -15,6 +15,7 @@ import { HeroSection } from "./HeroSection";
 import { WhyChooseSection } from "./WhyChooseSection";
 import { motion } from "framer-motion";
 import { APP_PATH } from "@/data/PATH_APP";
+import { Activity, HeartPulse, Hospital, Microscope, Stethoscope } from "lucide-react";
 
 const MedicalClaimBillingV2 = () => {
   const services = [
@@ -75,11 +76,11 @@ const MedicalClaimBillingV2 = () => {
   ];
 
   const clientTypes = [
-    { icon: "🦷", text: "Dental Practices" },
-    { icon: "❤️", text: "Cardiology Clinics" },
-    { icon: "🏥", text: "Multi-Specialty and Primary Care" },
-    { icon: "🏨", text: "Surgical and Outpatient Centers" },
-    { icon: "🔬", text: "Diagnostic and Imaging Centers" },
+    { icon: HeartPulse, text: "Dental Practices" },
+    { icon: Activity, text: "Cardiology Clinics" },
+    { icon: Stethoscope, text: "Multi-Specialty and Primary Care" },
+    { icon: Hospital, text: "Surgical and Outpatient Centers" },
+    { icon: Microscope, text: "Diagnostic and Imaging Centers" },
   ];
 
   const faqs = [

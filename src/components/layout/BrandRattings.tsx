@@ -8,14 +8,14 @@ const achievements = [
     name: "GoodFirms",
     logo: "/images/logo/1.png",
     rating: null,
-    description: "Top Medical Biling Company ",
+    description: "Trusted Medical Billing Company in USA",
     link: "https://www.goodfirms.co/company/key-medsolutions",
   },
   {
     name: "Crunchbase",
     logo: "/images/logo/2.png",
     rating: null,
-    description: "Top Medical Biling Company ",
+    description: "Best Medical Billing Company in USA",
     link: "https://www.crunchbase.com/organization/key-medsolutions",
   },
   // {
@@ -26,14 +26,14 @@ const achievements = [
     name: "Clutch",
     logo: "/images/logo/3.png",
     rating: null,
-    description: "Top Medical Biling Company",
+    description: "Top Medical Billing Company in USA",
     link: "https://clutch.co/profile/key-medsolutions",
   },
   {
     name: "TrueFirms",
     logo: "/images/logo/4.png",
     rating: null,
-    description: "Top Medical Biling Company",
+    description: "Best Medical Billing Company in Greensboro",
     link: "https://www.truefirms.co/company/Key-MedSolutions/3265",
   },
   {
@@ -41,7 +41,7 @@ const achievements = [
     logo: "/images/logo/6.png",
     
     rating: null,
-    description: "Top Medical Biling Company ",
+    description: "Best Medical Billing Agency in Greensboro",
     link: "https://businessfirms.co/company/key-medsolutions",
   },
   {

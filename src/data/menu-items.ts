@@ -120,22 +120,22 @@ export const MenuItems: any = [
   },
   { label: "Our Specialties", path: "/our-specialities" },
   { label: "Blogs", path: "/blogs" },
-  {
-    label: "Pricing",
-    path: "",
-    subMenu: [
-      {
-        label: "RCM Plan",
-        path: "/rcm-plans",
-        icon: BarChart3,
-      },
-      {
-        label: "Training and Placement",
-        path: "/pricing",
-        icon: GraduationCap,
-      },
-    ],
-  },
+  // {
+  //   label: "Pricing",
+  //   path: "",
+  //   subMenu: [
+  //     {
+  //       label: "RCM Plan",
+  //       path: "/rcm-plans",
+  //       icon: BarChart3,
+  //     },
+  //     {
+  //       label: "Training and Placement",
+  //       path: "/pricing",
+  //       icon: GraduationCap,
+  //     },
+  //   ],
+  // },
   // {
   //   label: "Book an Appointment",
   //   path: "https://calendly.com/key_medsolutions_inc/30min",

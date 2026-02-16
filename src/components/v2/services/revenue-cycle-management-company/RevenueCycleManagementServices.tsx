@@ -1,7 +1,6 @@
 // components/RevenueCycleManagementServices.js
 import { motion } from "framer-motion";
-import { FileText, Target, Shield, BarChart3, ArrowRight } from "lucide-react";
-import { array } from "zod";
+import { ShieldCheck, FileText, CheckCircle, BarChart3 } from "lucide-react";
 
 const RevenueCycleManagementServices = () => {
   const steps = [
@@ -10,30 +9,31 @@ const RevenueCycleManagementServices = () => {
       className:
         "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
       label: "Insurance Verification",
-      icon: "🛡️", // replace with lucide icon
+      icon: ShieldCheck,
     },
     {
       step: 2,
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
       label: "Claims Processing",
-      icon: "📄",
+      icon: FileText,
     },
     {
       step: 3,
       className:
         "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
       label: "Denial Management",
-      icon: "✅",
+      icon: CheckCircle,
     },
     {
       step: 4,
       className:
         "!tw-border-2 !tw-border-red-300 tw-bg-red-100 after:!tw-bg-red-300",
       label: "Performance Reporting",
-      icon: "📊",
+      icon: BarChart3,
     },
   ];
+
   return (
     <div className="tw-relative tw-min-h-screen tw-flex tw-items-center tw-justify-center tw-py-12 tw-px-4 sm:tw-px-6 lg:tw-px-8 tw-overflow-hidden">
       {/* Geometric background elements */}
@@ -157,40 +157,48 @@ const RevenueCycleManagementServices = () => {
           >
             <div className="tw-relative tw-bg-white sm:tw-p-8 tw-p-4 tw-rounded-3xl tw-shadow-lg border">
               <div className="tw-relative">
-                {steps.map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 80 }} // start hidden and pushed right
-                    whileInView={{ opacity: 1, x: 0 }} // slide in to position
-                    transition={{
-                      duration: 0.6,
-                      ease: "easeOut",
-                      delay: index * 0.2, // staggered animation
-                    }}
-                    viewport={{ once: true }} // run only once when scrolled into view
-                    className={index !== steps.length - 1 ? "tw-mb-6" : ""}
-                  >
-                    <div
-                      className={`feature-container feature-bx1 feature2  ${item.className}`}
+                {steps.map((item, index) => {
+                  const Icon = item.icon;
+
+                  return (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: 80 }} // start hidden and pushed right
+                      whileInView={{ opacity: 1, x: 0 }} // slide in to position
+                      transition={{
+                        duration: 0.6,
+                        ease: "easeOut",
+                        delay: index * 0.2, // staggered animation
+                      }}
+                      viewport={{ once: true }} // run only once when scrolled into view
+                      className={index !== steps.length - 1 ? "tw-mb-6" : ""}
                     >
-                      <div className="icon-md">
-                        <span className="icon-cell">
-                          <span
-                            style={{
-                              fontSize: "3rem",
-                            }}
-                            className="!tw-text-4xl text-icon"
-                          >
-                            {item.icon}
+                      <div
+                        className={`feature-container feature-bx1 feature2  ${item.className}`}
+                      >
+                        <div className="icon-md">
+                          <span className="icon-cell">
+                            <span
+                              style={{
+                                fontSize: "3rem",
+                              }}
+                              className="!tw-text-4xl text-icon"
+                            >
+                              <Icon
+                                size={48}
+                                strokeWidth={1}
+                                className="text-icon"
+                              />
+                            </span>
                           </span>
-                        </span>
+                        </div>
+                        <div className="icon-content">
+                          <h4 className="ttr-title">{item.label}</h4>
+                        </div>
                       </div>
-                      <div className="icon-content">
-                        <h4 className="ttr-title">{item.label}</h4>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                    </motion.div>
+                  );
+                })}
               </div>
             </div>
           </motion.div>

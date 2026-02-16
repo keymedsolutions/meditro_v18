@@ -1,35 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  UserRound,
+  Stethoscope,
+  Hospital,
+  FlaskConical,
+  FileText,
+} from "lucide-react";
 
 const WhoWeServe = () => {
   const data = [
     {
-      icon: "👩‍⚕️",
+      icon: UserRound,
       label: "Independent Medical Practices",
       className:
         "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
     },
     {
-      icon: "🩺",
+      icon: Stethoscope,
       label:
         "Specialty Clinics (Cardiology, Radiology, Internal Medicine, and more)",
       className:
         "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
     },
     {
-      icon: "🏥",
+      icon: Hospital,
       label: "Hospitals & Multi-Specialty Health Systems",
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },
     {
-      icon: "🧪",
+      icon: FlaskConical,
       label: "Diagnostic Labs & Imaging Centers",
       className:
         "!tw-border-2 !tw-border-gray-300 tw-bg-gray-100 after:!tw-bg-gray-300",
     },
     {
-      icon: "📑",
+      icon: FileText,
       label: "Medical Billing Companies & RCM Providers",
       className:
         "!tw-border-2 !tw-border-red-300 tw-bg-red-100 after:!tw-bg-red-300",
@@ -60,6 +67,8 @@ const WhoWeServe = () => {
           </motion.div>
           <div className="row">
             {data.map((item, index) => {
+              const Icon = item.icon;
+
               return (
                 <div key={index} className="col-lg-6 col-sm-6 mb-30 mb-sm-20">
                   <div
@@ -73,7 +82,11 @@ const WhoWeServe = () => {
                           }}
                           className="!tw-text-4xl text-icon"
                         >
-                          {item.icon}
+                          <Icon
+                            size={48}
+                            strokeWidth={1}
+                            className="text-icon"
+                          />
                         </span>
                       </span>
                     </div>

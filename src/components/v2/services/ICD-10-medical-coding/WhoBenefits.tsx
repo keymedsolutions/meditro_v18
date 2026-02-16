@@ -1,40 +1,48 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  Hospital,
+  UserRound,
+  Stethoscope,
+  FileText,
+  FlaskConical,
+} from "lucide-react";
 
 const WhoBenefits = () => {
   const data = [
     {
-      icon: "🏥",
+      icon: Hospital,
       label: "Hospitals and Health Systems",
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },
     {
-      icon: "👨‍⚕️",
+      icon: UserRound,
       label: "Group and Solo Physician Practices",
       className:
         "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
     },
     {
-      icon: "🩺",
+      icon: Stethoscope,
       label: "Specialty Clinics (e.g., orthopaedics, cardiology, and more)",
       className:
         "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
     },
     {
-      icon: "📑",
+      icon: FileText,
       label:
         "Medical Billing Companies seeking scalable outsourcing medical billing solutions",
       className:
         "!tw-border-2 !tw-border-red-300 tw-bg-red-100 after:!tw-bg-red-300",
     },
     {
-      icon: "🧪",
+      icon: FlaskConical,
       label: "Diagnostic Laboratories",
       className:
         "!tw-border-2 !tw-border-gray-300 tw-bg-gray-100 after:!tw-bg-gray-300",
     },
   ];
+
   return (
     <section className="benefits-section-home1 mt-5 tw-bg-gradient-to-br tw-from-keymed-50 tw-to-teal-50 tw-relative tw-overflow-hidden">
       <div className="tw-absolute tw-top-0 tw-right-0 tw-w-64 tw-h-64  tw-rounded-full tw-opacity-50 tw-transform tw-translate-x-1/2 -tw-translate-y-1/2"></div>
@@ -61,6 +69,8 @@ const WhoBenefits = () => {
           </motion.div>
           <div className="row">
             {data.map((item, index) => {
+              const Icon = item.icon;
+
               return (
                 <div key={index} className="col-lg-6 col-sm-6 mb-30 mb-sm-20">
                   <div
@@ -74,7 +84,11 @@ const WhoBenefits = () => {
                           }}
                           className="!tw-text-4xl text-icon"
                         >
-                          {item.icon}
+                          <Icon
+                            size={48}
+                            strokeWidth={1}
+                            className="text-icon"
+                          />
                         </span>
                       </span>
                     </div>

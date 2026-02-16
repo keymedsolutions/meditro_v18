@@ -1,27 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { DollarSign, TrendingUp, Zap } from "lucide-react";
 
 const FinancialProfitEnhancementCritical = () => {
   const data = [
     {
-      icon: "📈",
+      icon: TrendingUp,
       label: "A decrease in claims denials by up to 30%.",
       className:
         "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
     },
     {
-      icon: "💰",
+      icon: DollarSign,
       label: "$100 recovered from underpaid or unpaid claims.",
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },
     {
-      icon: "⚡",
+      icon: Zap,
       label: "Faster accounts receivable turnaround, improving cash flow.",
       className:
         "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
     },
   ];
+
   return (
     <section className="container tw-py-20 ">
       <div className="tw-max-w-5xl tw-mx-auto tw-px-6">
@@ -61,6 +63,8 @@ const FinancialProfitEnhancementCritical = () => {
 
         <div className="row">
           {data.map((item, index) => {
+            const Icon = item.icon;
+
             return (
               <div key={index} className="col-12 mb-30 mb-sm-20">
                 <div
@@ -74,7 +78,7 @@ const FinancialProfitEnhancementCritical = () => {
                         }}
                         className="!tw-text-4xl text-icon"
                       >
-                        {item.icon}
+                        <Icon size={48} strokeWidth={1} className="text-icon" />
                       </span>
                     </span>
                   </div>

@@ -56,7 +56,7 @@ const TestimonialSection = () => {
             <h2 className="title m-b0">What Our Clients Are Saying</h2>
             <p className="tw-max-w-xl !tw-text-xl  tw-mx-auto">
               Explore how we’ve made a difference for businesses like yours.
-              Real stories, real results—straight from the people who know us
+              Real stories, real results straight from the people who know us
               best.
             </p>
           </div>

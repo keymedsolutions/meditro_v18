@@ -11,7 +11,14 @@ export default function MedicalBillingLanding() {
   const [isHovered, setIsHovered] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [particles, setParticles] = useState<
-    { id: number; top: string; left: string; size: number; duration: number; delay: number }[]
+    {
+      id: number;
+      top: string;
+      left: string;
+      size: number;
+      duration: number;
+      delay: number;
+    }[]
   >([]);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -30,7 +37,7 @@ export default function MedicalBillingLanding() {
   }, []);
 
   // ✅ Detect section visibility
-  useEffect(():any => {
+  useEffect((): any => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
@@ -81,11 +88,11 @@ export default function MedicalBillingLanding() {
             viewport={{ once: true, amount: 0.2 }}
             className="tw-text-center tw-max-w-4xl tw-mx-auto"
           >
-            <h1 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-text-gray-900 tw-mb-6 tw-leading-tight">
-              We Handle Your <span className="tw-text-blue-600">Billing</span> So
-              You Can Handle Your{" "}
+            <h2 className="tw-text-5xl md:tw-text-6xl tw-font-bold tw-text-gray-900 tw-mb-6 tw-leading-tight">
+              We Handle Your <span className="tw-text-blue-600">Billing</span>{" "}
+              So You Can Handle Your{" "}
               <span className="tw-text-green-600">Patients</span>
-            </h1>
+            </h2>
 
             <p className="tw-text-lg tw-text-gray-700 tw-mb-12 tw-max-w-3xl tw-mx-auto">
               At Key MedSolutions, we simplify your medical billing so you can
@@ -126,11 +133,6 @@ export default function MedicalBillingLanding() {
 
           {/* ✅ CTA Buttons */}
           <div className="tw-flex tw-flex-col sm:tw-flex-row tw-gap-4 tw-justify-center tw-mt-10">
-            <Link href={APP_PATH.contactus.path}>
-              <button className="button-get-started">
-                <span className="inner">Get Started Today</span>
-              </button>
-            </Link>
             <Link href={APP_PATH.contactus.path}>
               <button className="tw-relative tw-flex tw-items-center tw-gap-2 tw-bg-gray-900 tw-text-white tw-px-6 tw-py-3 tw-rounded-md tw-transition-colors hover:tw-bg-orange-600">
                 <Phone size={18} />
@@ -225,9 +227,11 @@ export default function MedicalBillingLanding() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="tw-flex tw-flex-col tw-justify-center tw-text-center md:tw-text-left"
           >
-            <span className="tw-inline-block tw-px-3 tw-py-1 tw-bg-blue-400/20 tw-text-blue-200 tw-rounded-full tw-text-sm tw-mb-4">
-              Next Generation Technology
-            </span>
+            <div className="tw-pb-4">
+              <span className=" tw-px-3 tw-py-1 tw-bg-blue-400/20 tw-text-blue-200 tw-rounded-full tw-text-sm tw-mb-4">
+                Next Generation Technology
+              </span>
+            </div>
             <h2 className="tw-text-4xl md:tw-text-5xl tw-font-bold tw-text-white tw-mb-6">
               Seamless Technology{" "}
               <span className="tw-text-blue-300">Integration</span>

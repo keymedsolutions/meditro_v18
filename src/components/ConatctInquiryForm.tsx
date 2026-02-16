@@ -26,7 +26,7 @@ const ConatctInquiryForm = () => {
                                     <div className="icon-box">
                                         <h3 className="title"><i className="ti-id-badge"></i> Email &amp; Phone</h3>
                                         <a href={`mailto:${ContactInfo.email}`} className="text-white">{ContactInfo.email}</a><br />
-                                        <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className='tw-text-white'>{ContactInfo.phone}</a>
+                                        <a href={`tel:${sanitizePhoneNumber(ContactInfo.phone)}`} className='tw-text-white hover:tw-text-white'>{ContactInfo.phone}</a>
                                     </div>
                                     <div className="icon-box">
                                         <h3 className="title"><i className="ti-world"></i> Follow Us</h3>

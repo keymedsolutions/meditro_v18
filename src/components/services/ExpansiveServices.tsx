@@ -46,7 +46,7 @@ const ExpansiveServices = () => {
         "No two practices are alike. We personalize your billing solutions, adapting to your specialty’s needs, so you can maximize income while minimizing stress.",
     },
     {
-      title: "Cardiology Medical Billing Services, Radiology Medical Billing Services, Nephrology Billing Services, and Internal Medicine Services",
+      title: "Cardiology Medical Billing Services",
       description:
         "Dedicated expertise in high-complexity, high-volume specialties, ensuring accurate and compliant billing regardless of the healthcare field you practice in.",
     },

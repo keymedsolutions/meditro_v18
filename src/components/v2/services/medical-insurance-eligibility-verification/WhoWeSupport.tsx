@@ -1,40 +1,48 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  UserRound,
+  Building2,
+  Hospital,
+  BarChart3,
+  Monitor,
+  RefreshCcw,
+} from "lucide-react";
 
 const WhoWeSupport = () => {
   const data = [
     {
-      icon: "👩‍⚕️",
+      icon: UserRound,
       label: "Independent practices and physician groups",
       className:
         "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
     },
     {
-      icon: "🏥",
+      icon: Building2,
       label: "Multi-specialty clinics and diagnostic centers",
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },
     {
-      icon: "🏨",
+      icon: Hospital,
       label: "Hospitals and outpatient networks",
       className:
         "!tw-border-2 !tw-border-purple-300 tw-bg-purple-100 after:!tw-bg-purple-300",
     },
     {
-      icon: "📊",
+      icon: BarChart3,
       label: "Medical billing firms seek accuracy and efficiency",
       className:
         "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
     },
     {
-      icon: "💻",
+      icon: Monitor,
       label: "Telemedicine and virtual care organizations",
       className:
         "!tw-border-2 !tw-border-pink-300 tw-bg-pink-100 after:!tw-bg-pink-300",
     },
     {
-      icon: "🔄",
+      icon: RefreshCcw,
       label: "Revenue cycle management and health systems",
       className:
         "!tw-border-2 !tw-border-indigo-300 tw-bg-indigo-100 after:!tw-bg-indigo-300",
@@ -73,6 +81,7 @@ const WhoWeSupport = () => {
 
         <div className="row">
           {data.map((item, index) => {
+            const Icon = item.icon;
             return (
               <div key={index} className="col-12 mb-30 mb-sm-20">
                 <div
@@ -86,7 +95,7 @@ const WhoWeSupport = () => {
                         }}
                         className="!tw-text-4xl text-icon"
                       >
-                        {item.icon}
+                        <Icon size={48} strokeWidth={1} className="text-icon" />
                       </span>
                     </span>
                   </div>

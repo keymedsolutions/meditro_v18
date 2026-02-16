@@ -26,7 +26,7 @@ const MainLayout = async ({ children }: { children: React.ReactNode }) => {
       ) : (
         <Footer />
       )}
-      <SplashCursor />
+      {/* <SplashCursor /> */}
     </div>
 
     <ScriptLoad />

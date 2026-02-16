@@ -60,7 +60,7 @@ const OutsourcingAdvantages = () => {
   ];
 
   return (
-    <section className="tw-pb-20 tw-px-4">
+    <section className="tw-pb-20 tw-pt-10 tw-px-4">
       <div className="tw-max-w-7xl tw-mx-auto">
         <motion.div {...fadeInUp} className="tw-text-center tw-mb-16">
           <div className="heading-bx text-center">
