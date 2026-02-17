@@ -104,7 +104,7 @@ const ConatctDetsilsForm1 = () => {
           >
             <option value="">I am a</option>
             <option value="Practicing Doctor"> Practicing Doctor</option>
-            <option value="Student">Student</option>
+            {/* <option value="Student">Student</option> */}
           </select>
           {errors.iAmA && <small className="text-danger">{errors.iAmA.message}</small>}
         </div>

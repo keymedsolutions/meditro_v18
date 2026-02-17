@@ -354,7 +354,7 @@ const Footer = () => {
               {[
                 { href: "/about-us", label: "About Us" },
                 { href: "/contact-us", label: "Contact Us" },
-                { href: "/pricing", label: "Pricing and Plans" },
+                // { href: "/pricing", label: "Pricing and Plans" },
                 { href: "/privacy-policy", label: "Privacy Policy" },
               ].map((link, index) => (
                 <motion.li

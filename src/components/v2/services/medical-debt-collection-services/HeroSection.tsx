@@ -96,50 +96,34 @@ function HeroSection() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
-                duration: 0.8,
+                duration: 0.6,
                 delay: 0.2,
-                ease: [0.22, 1, 0.36, 1],
+                ease: "easeOut",
               }}
-              className="tw-relative"
+              className="tw-w-full"
             >
-              <motion.div
-                animate={{
-                  y: [0, -15, 0], // move up 15px and back down
-                }}
-                transition={{
-                  duration: 3, // smoothness (slower = smoother)
-                  repeat: Infinity,
-                  repeatType: "reverse",
-                  ease: "easeInOut",
-                }}
-                className="tw-inline-block"
-              >
-                <div className="tw-p-2 sm:tw-py-10 sm:tw-px-16 tw-backdrop-blur-xl tw-rounded-2xl ">
-                  {/* Background Image */}
-                  <img
-                    src="/images/home/medicatioIconBg.png"
-                    alt="Background"
-                    className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-z-[-10]"
-                  />
+              <div className="tw-relative tw-p-10 tw-rounded-xl tw-bg-gray-100">
+                {/* Background Pattern */}
+                <img
+                  src="/images/home/medicatioIconBg.png"
+                  alt="Background"
+                  className="tw-absolute tw-inset-0 tw-w-full tw-h-full tw-object-cover tw-opacity-20 tw-rounded-xl"
+                />
 
-                  <div className="tw-flex tw-flex-col tw-z-50">
-                    <p>
-                      If you are seeking to outsource healthcare debt collection
-                      services and secure your organization’s financial
-                      stability, Key MedSolutions stands out as a top-tier
-                      partner. We are a top medical debt collection agency
-                      committed to helping healthcare providers throughout the
-                      United States. Our comprehensive suite of healthcare debt
-                      collection services empowers your organization to maximize
-                      revenue, reduce bad debt, and maintain trust with your
-                      patients.
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
+                <p className="tw-relative tw-text-gray-700 tw-leading-relaxed tw-text-lg">
+                  If you are seeking to outsource healthcare debt collection
+                  services and secure your organization’s financial stability,
+                  Key MedSolutions stands out as a top-tier partner. We are a
+                  top medical debt collection agency committed to helping
+                  healthcare providers throughout the United States. Our
+                  comprehensive suite of healthcare debt collection services
+                  empowers your organization to maximize revenue, reduce bad
+                  debt, and maintain trust with your patients.
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>

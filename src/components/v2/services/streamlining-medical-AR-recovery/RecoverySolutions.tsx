@@ -1,34 +1,41 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  UserRound,
+  Building2,
+  Hospital,
+  Monitor,
+  BarChart3,
+} from "lucide-react";
 
 const RecoverySolutions = () => {
   const data = [
     {
-      icon: "👨‍⚕️",
+      icon: UserRound,
       label: "Independent Physicians & Specialty Clinics",
       className:
         "!tw-border-2 !tw-border-blue-300 tw-bg-blue-100 after:!tw-bg-blue-300",
     },
     {
-      icon: "🏥",
+      icon: Building2,
       label: "Multispecialty Practices & Diagnostic Centers",
       className:
         "!tw-border-2 !tw-border-green-300 tw-bg-green-100 after:!tw-bg-green-300",
     },
     {
-      icon: "🏨",
+      icon: Hospital,
       label: "Hospitals & Ambulatory Care Facilities",
       className:
         "!tw-border-2 !tw-border-yellow-300 tw-bg-yellow-100 after:!tw-bg-yellow-300",
     },
     {
-      icon: "💻",
+      icon: Monitor,
       label: "Telehealth Providers & Urgent Care Centers",
       className:
         "!tw-border-2 !tw-border-red-300 tw-bg-red-100 after:!tw-bg-red-300",
     },
     {
-      icon: "📊",
+      icon: BarChart3,
       label: "Healthcare Billing Companies & MSOs",
       className:
         "!tw-border-2 !tw-border-gray-300 tw-bg-gray-100 after:!tw-bg-gray-300",
@@ -65,6 +72,8 @@ const RecoverySolutions = () => {
 
         <div className="row">
           {data.map((item, index) => {
+            const Icon = item.icon;
+
             return (
               <div key={index} className="col-12 mb-30 mb-sm-20">
                 <div
@@ -78,7 +87,7 @@ const RecoverySolutions = () => {
                         }}
                         className="!tw-text-4xl text-icon"
                       >
-                        {item.icon}
+                        <Icon size={48} strokeWidth={1} className="text-icon" />
                       </span>
                     </span>
                   </div>
